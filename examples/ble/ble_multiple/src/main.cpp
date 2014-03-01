@@ -174,6 +174,11 @@ protected:
 //
 // main loop
 //
+#if __USE_USB
+#undef __USE_USB
+#define __USE_USB	0
+#endif
+
 int main(void) {
 
 #ifdef DEBUG
@@ -373,7 +378,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-128];
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-256];	// reduce pool size to increase global stack
 
 //
 // setup before the system startup

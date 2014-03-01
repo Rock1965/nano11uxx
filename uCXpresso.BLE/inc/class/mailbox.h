@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : mutex.h
  Author      : Jason
- Version     : v1.0.5
- Date		 : 2013/6/12
+ Version     : v1.0.6
+ Date		 : 2014/3/1
  Copyright   : Copyright (C) www.embeda.com.tw
  Description :
  ===============================================================================
@@ -18,6 +18,7 @@
  2013/4/19	v1.0.3	Add CMailBox::reset() member function			Jason
  2013/4/26	v1.0.4  Modify CMailBox::post default timeout to zero.  Jason
  2013/6/12	v1.0.5	Add CMailBox::peek() member function			Jason
+ 2014/3/1	v1.0.6	Add non stack post() member function			Jason
  ===============================================================================
  */
 #ifndef MAILBOX_H_
@@ -71,6 +72,10 @@ public:
 	 * \return number of message.
 	 */
 	virtual int  count();	// how many mail in query
+
+	/** Call the member function to send a message to receiver
+	 */
+	virtual bool post(MESSAGE_T msg, uint32_t timeout=0);
 
 	/**Call the member function to send a message to receiver which the same mailbox name.
 	 * \param name is a string to point to which the same name of mailbox to be received the message.
