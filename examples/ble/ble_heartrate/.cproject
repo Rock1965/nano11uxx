@@ -25,7 +25,7 @@
 							<tool id="com.crt.advproject.cpp.exe.debug.1483493055" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug">
 								<option id="com.crt.advproject.cpp.arch.1102231436" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm0" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.thumb.1701646863" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.cpp.hdrlib.1974037914" name="Use headers for C library" superClass="com.crt.advproject.cpp.hdrlib"/>
+								<option id="com.crt.advproject.cpp.hdrlib.1974037914" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1700828260" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -50,7 +50,7 @@
 							<tool id="com.crt.advproject.gcc.exe.debug.126978168" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
 								<option id="com.crt.advproject.gcc.arch.540036564" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm0" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.thumb.998120378" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.gcc.hdrlib.2136297029" name="Use headers for C library" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.hdrlib.2136297029" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.560053609" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -74,7 +74,7 @@
 								<option id="com.crt.advproject.gas.arch.1060042768" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm0" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.thumb.1807094891" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.both.asm.option.flags.crt.1333479404" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
-								<option id="com.crt.advproject.gas.hdrlib.1229979545" name="Use headers for C library" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.hdrlib.1229979545" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="gnu.both.asm.option.include.paths.1039552930" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1024131575" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.277739403" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
@@ -89,7 +89,7 @@
 									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
 									<listOptionValue builtIn="false" value="--gc-sections"/>
 								</option>
-								<option id="com.crt.advproject.link.cpp.hdrlib.537482538" name="Use C library" superClass="com.crt.advproject.link.cpp.hdrlib"/>
+								<option id="com.crt.advproject.link.cpp.hdrlib.537482538" name="Library" superClass="com.crt.advproject.link.cpp.hdrlib"/>
 								<option id="gnu.cpp.link.option.libs.555133240" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="uCXpresso.BLE"/>
 								</option>
@@ -137,7 +137,7 @@
 							<tool id="com.crt.advproject.cpp.exe.debug.1977079744" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug">
 								<option id="com.crt.advproject.cpp.arch.1706714625" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm0" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.thumb.613233929" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.cpp.hdrlib.1367278445" name="Use headers for C library" superClass="com.crt.advproject.cpp.hdrlib"/>
+								<option id="com.crt.advproject.cpp.hdrlib.1367278445" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1892729631" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
@@ -155,13 +155,13 @@
 								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.328512438" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.optimization.flags.19059095" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-Os" valueType="string"/>
 								<option id="com.crt.advproject.cpp.exe.debug.option.debugging.level.493667998" name="Debug Level" superClass="com.crt.advproject.cpp.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
-								<option id="com.crt.advproject.cpp.misc.dialect.635430684" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.635430684" name="C++ Dialect" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1258414338" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.207295104" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
 								<option id="com.crt.advproject.gcc.arch.557019895" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm0" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.thumb.1813030609" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.gcc.hdrlib.175539547" name="Use headers for C library" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.hdrlib.175539547" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.511216365" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
@@ -184,7 +184,7 @@
 								<option id="com.crt.advproject.gas.arch.1359376430" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm0" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.thumb.1937376430" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.both.asm.option.flags.crt.1038876792" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
-								<option id="com.crt.advproject.gas.hdrlib.494513808" name="Use headers for C library" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.hdrlib.494513808" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="gnu.both.asm.option.include.paths.1835852604" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1329260253" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.2129250279" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
@@ -199,12 +199,13 @@
 									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
 									<listOptionValue builtIn="false" value="--gc-sections"/>
 								</option>
-								<option id="com.crt.advproject.link.cpp.hdrlib.136589668" name="Use C library" superClass="com.crt.advproject.link.cpp.hdrlib"/>
+								<option id="com.crt.advproject.link.cpp.hdrlib.136589668" name="Library" superClass="com.crt.advproject.link.cpp.hdrlib"/>
 								<option id="gnu.cpp.link.option.libs.1148043183" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="uCXpresso.BLE"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.440625837" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.BLE/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.BLE/Release}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.crpenable.1981323490" name="Enable Code Read Protect" superClass="com.crt.advproject.link.cpp.crpenable"/>
 								<option id="com.crt.advproject.link.cpp.multicore.slave.416250988" name="Multicore slave" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
