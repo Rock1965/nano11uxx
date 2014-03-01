@@ -73,7 +73,7 @@ public:
 	//
 	// Advertising setup (optional)
 	// Remark:
-	// A valid Adv. have to call before the enable() member!!
+	// the advertising() have to call before the enable() member.
 	//
 	void advertising(uint16_t advInterval,					// advInterval : Advertising interval (default 500ms, must >=100ms)
 			   int8_t txPowerLevel=DEF_BLE_TXPOWER,			// txPowerLevel: Advertising txPowerLevel (dBm)
@@ -101,6 +101,16 @@ public:
 	void disable();
 
 	//
+	// Watchdog for App crash
+	// the tm (timeout) default is 10 seconds. if tm=0, to disable watchdog
+	//
+	void watchdog(uint32_t tm);
+
+	// Watchdog event before disconnection
+	void onWatchdog();			// watchdog timeout event will disconnect automatically.
+
+
+	//
 	// Polling Interval (for Power Save)
 	//
 	void pollInterval(uint32_t ms);	// default 50ms
@@ -109,10 +119,8 @@ public:
 	// PHY functions
 	//
 	bool	isActived();	// RF front end activity indicator
-
 	bool	disconnect(BLE_DISCONNECT_REASON_T reason=BLE_TERMINATED);
 	bool	setRadioTxPower(BLE_TX_POWER_T power);
-
 	uint8_t getPhyVersion();
 
 	//
@@ -181,6 +189,7 @@ private:
 	CTimeout	m_tmACK;
 	CPin		m_active;
 	uint32_t	m_pollInterval;
+	uint32_t	m_tmWatch;
 
 	//
 	// Friend Classes

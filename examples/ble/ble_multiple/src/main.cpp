@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : main.cpp
  Author      : Jason
- Version     : 1.0.2
- Date		 : 2014/2/22
+ Version     : 1.0.4
+ Date		 : 2014/3/2
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : a BLE Firmat & multiple services Demo
@@ -16,6 +16,7 @@
  2014/1/20	v1.0.1  Add Battery Level and Health Thermometer demo	Jason
  2014/2/22	v1.0.2	Add tone in myProximity class					Jason
  2014/2/28	v1.0.3	Add Device Information Service					Jason
+ 2014/3/2	v1.0.4	Add onWatchdog() event in myBLE class.			Jason
  ===============================================================================
  */
 
@@ -78,7 +79,7 @@ public:
 		DBG("Standby\n");
 	}
 	//
-	// Override the CSerialBLE::onConnected()
+	// Override the bleSerial::onConnected() event
 	//
 	virtual void onConnected() {
 		bleSerial::onConnected();
@@ -88,7 +89,7 @@ public:
 	}
 
 	//
-	// Override the CSerialBLE::onDisconnected()
+	// Override the bleSerial::onDisconnected() event
 	//
 	virtual void onDisconnected() {
 		bleSerial::onDisconnected();
@@ -101,7 +102,20 @@ public:
 	}
 
 	//
-	// Override the CSerialBLE::onBleRecv(...)
+	// Override the bleSerial::onWatchdog() event
+	//
+	virtual void onWatchdog() {
+		bleSerial::onWatchdog();
+
+		// your watchdog event code here
+		systemResetCallback();
+		ledCON = LED_OFF;	// turn OFF all LEDS
+		ledRXD = LED_OFF;
+		ledTXD = LED_OFF;
+	}
+
+	//
+	// Override the bleSerial::onBleRecv(...)
 	//
 	virtual void onBleRecv(uint8_t *buf, int len) {
 		bleSerial::onBleRecv(buf, len);
@@ -111,7 +125,7 @@ public:
 	}
 
 	//
-	// Override the CSerialBLE::onBleSend()
+	// Override the bleSerial::onBleSend()
 	//
 	virtual void onBleSend(uint8_t ack) {
 		bleSerial::onBleSend(ack);
