@@ -174,11 +174,6 @@ protected:
 //
 // main loop
 //
-#if __USE_USB
-#undef __USE_USB
-#define __USE_USB	0
-#endif
-
 int main(void) {
 
 #ifdef DEBUG
