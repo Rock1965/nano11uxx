@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : Jason
- Version     : 1.0.10
- Date		 : 2014/2/24
+ Version     : 1.0.11
+ Date		 : 2014/3/2
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -11,19 +11,21 @@
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
- 2014/1/1	v1.0.0	Initialize										Jason
- 2014/1/4	v1.0.1	Add onAckTimeout() event for ACK timeout.		Jason
- 2014/1/18	v1.0.2	Rename to bleSerial Class						Jason
- 2014/1/19	v1.0.3	Add onAlert / onLinkLose / setTxPowerLevel		Jason
- 2014/1/20	v1.0.4	Modify ble engine process for RTOS				Jason
- 2014/1/22	v1.0.5	Add parameter 'stack' for enable() member		Jason
+ 2014/1/1	v1.0.0	Initialize											Jason
+ 2014/1/4	v1.0.1	Add onAckTimeout() event for ACK timeout.			Jason
+ 2014/1/18	v1.0.2	Rename to bleSerial Class							Jason
+ 2014/1/19	v1.0.3	Add onAlert / onLinkLose / setTxPowerLevel			Jason
+ 2014/1/20	v1.0.4	Modify ble engine process for RTOS					Jason
+ 2014/1/22	v1.0.5	Add parameter 'stack' for enable() member			Jason
  	 	 	 	 	Add available() member to UART service check.
  2014/2/05	v1.0.6	Add isReadyForNotify() member for notify service.
- 2014/2/11	v1.0.7	Add setup() member function.					Jason
- 2014/2/18	v1.0.8	Add m_semDataCredit semaphore.					Jason
- 2014/2/21	v1.0.9	Add connInterval & connTimeout parameters in	Jason
+ 2014/2/11	v1.0.7	Add setup() member function.						Jason
+ 2014/2/18	v1.0.8	Add m_semDataCredit semaphore.						Jason
+ 2014/2/21	v1.0.9	Add connInterval & connTimeout parameters in		Jason
  	 	 	 	 	setup() member function.
- 2014/2/24	v1.0.10 Rename setup() to advertising() 				Jason
+ 2014/2/24	v1.0.10 Rename setup() to advertising() 					Jason
+ 2014/3/2	v1.0.11 Add onError event to indicate an error occurred.	Jason
+ 	 	 	 	 	Move setTxPowerLevel member to bleProximity class.
  ===============================================================================
  */
 
@@ -49,6 +51,15 @@ typedef enum {
 	BLE_TX_m6dBm	= 2,	// -6dBm
 	BLE_TX_0dBm 	= 3		//  0dBm	(High)
 }BLE_TX_POWER_T;
+
+typedef enum {
+	BLE_ERR_OK	= 0,
+	BLE_ERR_HW,				// Hardware Error
+	BLE_ERR_BUF,			// Sender Queue Buffer Full
+	BLE_ERR_ACK_TIMEOUT,	// ACK Timeout
+	BLE_ERR_RSP_TIMEOUT,	// Response Timeout
+	BLE_ERR_DAT_TIMEOUT		// Core Data Timeout
+}BLE_ERR_T;
 
 #define BLE_RESPONSE_TIMEOUT	3000
 #define DEF_BLE_DEVICENAME		"uCXpresso.BLE"
@@ -100,23 +111,11 @@ public:
 #endif
 	void disable();
 
-	//
-	// Watchdog for App crash
-	// the tm (timeout) default is 10 seconds. if tm=0, to disable watchdog
-	//
-	void watchdog(uint32_t tm);
-
-	// Watchdog event before disconnection
-	void onWatchdog();			// watchdog timeout event will disconnect automatically.
-
+	void pollInterval(uint32_t ms);	// Task poll interval, default 50ms
+	void watchdog(uint32_t tm);		// The WD timeout will reset the BLE core automatically when APP crash to cause the BLE core lock,
 
 	//
-	// Polling Interval (for Power Save)
-	//
-	void pollInterval(uint32_t ms);	// default 50ms
-
-	//
-	// PHY functions
+	// PHY Function
 	//
 	bool	isActived();	// RF front end activity indicator
 	bool	disconnect(BLE_DISCONNECT_REASON_T reason=BLE_TERMINATED);
@@ -124,16 +123,18 @@ public:
 	uint8_t getPhyVersion();
 
 	//
-	// PHY Events
+	// Events
 	//
 	virtual void onConnected();
 	virtual void onDisconnected();
+	virtual void onWatchdog();										// onWatchdog() event will disconnect & reset BLE core automatically.
+	virtual void onError(BLE_ERR_T err, LPCTSTR id="bleSerial"){}	// onError() Event indicate the error code when an error occurred.
 
 	//
 	// for BLE UART Service
 	// Implement the virtual functions of CStream class
 	//
-	inline bool isAvailable() { return writeable(); }		// check service is available or not
+	inline  bool isAvailable() { return writeable(); }		// check service is available or not
 	virtual int	 readable();
 	virtual int	 writeable();
 	virtual int  read(void *buf, int len, bool block=true);
@@ -146,7 +147,6 @@ public:
 	//
 	virtual void onAlert(uint8_t level);
 	virtual void onLoseLink(uint8_t level);
-	virtual void setTxPowerLevel(int8_t dBm);	// range: -120 ~ +20 dBm
 
 	//
 	// for Heart Rate service (internal use)

@@ -75,7 +75,7 @@ public:
 
 	/** Call the member function to send a message to receiver
 	 */
-	virtual bool post(MESSAGE_T msg, uint32_t timeout=0);
+	virtual bool post(MESSAGE_T msg, uint32_t timeout=MAX_DELAY_TIME);
 
 	/**Call the member function to send a message to receiver which the same mailbox name.
 	 * \param name is a string to point to which the same name of mailbox to be received the message.

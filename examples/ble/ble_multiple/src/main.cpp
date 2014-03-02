@@ -17,6 +17,7 @@
  2014/2/22	v1.0.2	Add tone in myProximity class					Jason
  2014/2/28	v1.0.3	Add Device Information Service					Jason
  2014/3/2	v1.0.4	Add onWatchdog() event in myBLE class.			Jason
+ 	 	 	 	 	Add onError() event in myBLE class.
  ===============================================================================
  */
 
@@ -75,9 +76,7 @@ public:
 	myBLE(): bleSerial("BLE-Multiple") {
 		// nothing
 	}
-	virtual void onStandby() {
-		DBG("Standby\n");
-	}
+
 	//
 	// Override the bleSerial::onConnected() event
 	//
@@ -112,6 +111,13 @@ public:
 		ledCON = LED_OFF;	// turn OFF all LEDS
 		ledRXD = LED_OFF;
 		ledTXD = LED_OFF;
+	}
+
+	//
+	// Override the bleSerial::onError() event
+	//
+	virtual void onError(BLE_ERR_T err, LPCTSTR id) {
+		DBG("Error %d on %s\n", err, id);
 	}
 
 	//
@@ -213,8 +219,8 @@ int main(void) {
 	// BLE Engine (Serial Stream)
 	//
 	myBLE ble;
-	ble.advertising(100);	// set adv. interval = 100ms
-	ble.enable();			// start the ble engine first!!
+	ble.advertising(100, -70, 8);	// set adv. interval = 100ms, calibrater tx power = -70dBm, conn. interval=8ms
+	ble.enable();					// start the ble engine first!!
 
 	//
 	// Device Information Service
