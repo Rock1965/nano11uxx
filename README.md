@@ -1,13 +1,15 @@
-uCXpresso.BLE RTOS Framework (C/C++)
+nano11Uxx (LPC11U3x + nRF BLE)
 =========
 
-uCXpresso BLE Framework for LPC11U3x (ARM Cortex-M0)
+uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
 v1.0.2 rc1 2th March 2014<br/>
-    1. Add BLE ACI Queue (use CMailBox class) buffer for Hardware. (More Speed up & smooth)<br/>
-    2. Add post member function in CMailBox class.<br/>
-    3. Add watch-dog in BLE core, default watch-dog timeout is 10 seconds.<br/>
-    4. Add onWatchdog Event in bleSerial class, call back then onWatchdog event when App crash.<br/>
+    1. Add BLE ACI queue buffer (use CMailBox class)for BLE core transaction. (More Speed up & smooth)<br/>
+    2. Add non static post() member function in CMailBox class.<br/>
+    3. Add watchdog in BLE core, default watchdog timeout is 10 seconds.<br/>
+    4. Add onWatchdog Event in bleSerial class, call back when App crash and BLE core WD timeout.<br/>
+    5. Add onError Event in bleSerial class to indicate the BLE core error information.<br/>
+    6. Move setTxPowerLevel service from bleSerail to bleProxmity class.<br/>
 
 v1.0.2 rc0 1th March 2014<br/>
     1. Build by GCC 4.8.3 <br/>
