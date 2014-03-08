@@ -111,12 +111,9 @@ $(document).ready(function(){initNavTree('d0/d26/class_c_thread.html','../../');
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d4/d18/class_c_thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CThread Class Reference</div>  </div>
+<div class="title">CThread Class Reference<div class="ingroups"><a class="el" href="../../d8/dba/group___r_t_o_s.html">RTOS</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>The <a class="el" href="../../d0/d26/class_c_thread.html" title="The CThread class provide the multi-tasking services. ">CThread</a> class provide the multi-tasking services.  
- <a href="../../d0/d26/class_c_thread.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="../../db/dd5/thread_8h_source.html">class/thread.h</a>&quot;</code></p>
 <div class="dynheader">
@@ -188,8 +185,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2723c18f3f7659cdd93610fd1654d564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="../../d0/d26/class_c_thread.html" title="The CThread class provide the multi-tasking services. ">CThread</a> class provide the multi-tasking services. </p>
-<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d26/class_c_thread.html" title="The CThread class provide the multi-tasking services. ">CThread</a> class is an abstract class!! </dd></dl>
+<div class="textblock"><p>The <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> class provide the multi-tasking services. </p>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> class is an abstract class, child class have to implement the <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> member. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3ebabcc071634508511ae2fc7b868ab7"></a>
 <div class="memitem">
@@ -280,7 +277,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Call the member function to start the thread. </p>
-<dl class="section note"><dt>Note</dt><dd>the <a class="el" href="../../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec">start()</a> is an overload member function of <a class="el" href="../../d0/d26/class_c_thread.html" title="The CThread class provide the multi-tasking services. ">CThread</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the <a class="el" href="../../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec">start()</a> is an overload member function of <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a>. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d4/d37/class_c_debug.html#a40d1b7f50b76311b3a7fb148e5b7e2ea">CDebug</a>, and <a class="el" href="../../de/dba/class_c_shell.html#a670f66f552494dfce94ee297ae0f659a">CShell</a>.</p>
 
@@ -558,7 +555,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread()</a>, check the class is inherited from <a class="el" href="../../d0/d26/class_c_thread.html" title="The CThread class provide the multi-tasking services. ">CThread</a> </p>
+<p><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread()</a>, check the class is inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> </p>
 
 <p>Reimplemented from <a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">CObject</a>.</p>
 
@@ -698,7 +695,7 @@ Protected Attributes</h2></td></tr>
 <div class="line">            ...</div>
 <div class="line">        }</div>
 </div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> is a pure virtual function, must reimplement by inheritor. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if end the <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> member function, the <a class="el" href="../../d0/d26/class_c_thread.html" title="The CThread class provide the multi-tasking services. ">CThread</a> object will be deleted and collected. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if end the <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> member function, the <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> object will be deleted and collected. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">CDebug</a>, and <a class="el" href="../../de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f">CShell</a>.</p>
 
@@ -734,7 +731,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d26/class_c_thread.html">CThread</a></li>
-    <li class="footer">Generated on Sat Mar 8 2014 23:42:13 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun Mar 9 2014 00:38:50 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

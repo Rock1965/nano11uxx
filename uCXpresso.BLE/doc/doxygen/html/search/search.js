@@ -14,7 +14,7 @@ var indexSectionsWithContent =
   4: "h",
   5: "bhu",
   6: "bhu",
-  7: "b"
+  7: "br"
 };
 
 var indexSectionNames =

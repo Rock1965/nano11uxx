@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"de/dba/class_c_shell.html#a7731a22b0b80a4facc431f6e07db2599":[1,0,28,12],
 "de/dba/class_c_shell.html#a7adec131871fb1931300eb0f6b31b3f5":[1,0,28,5],
 "de/dba/class_c_shell.html#a8cb6ac07d2290e4d51c641af1d152b1f":[1,0,28,10],
 "de/dba/class_c_shell.html#a99cd1946dd501dd788accc421ffb883c":[1,0,28,8],

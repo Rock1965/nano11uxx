@@ -3,7 +3,7 @@
 }
 
 
-{\ttfamily \#include $<$event.\-h$>$}
+{\ttfamily \#include \char`\"{}class/event.\-h\char`\"{}}
 
 Inheritance diagram for C\-Event\-Bit\-:\begin{figure}[H]
 \begin{center}
@@ -16,8 +16,6 @@ Inheritance diagram for C\-Event\-Bit\-:\begin{figure}[H]
 \item 
 \hyperlink{class_c_event_bit_afaccf4ea2315ce05229a3a0ae37ba6af}{C\-Event\-Bit} ()
 \item 
-virtual \hyperlink{class_c_event_bit_a1e275ddfeada2601f70b1b6215cdc7cb}{$\sim$\-C\-Event\-Bit} ()
-\item 
 virtual uint32\-\_\-t \hyperlink{class_c_event_bit_a0b05da65aa8bb0b77dd75f0a84b8fbb0}{set} (uint32\-\_\-t bits)
 \item 
 virtual uint32\-\_\-t \hyperlink{class_c_event_bit_ade8e4420bd49ab351417ca955bb293e3}{clr} (uint32\-\_\-t bits)
@@ -28,12 +26,10 @@ virtual uint32\-\_\-t \hyperlink{class_c_event_bit_a4183fe9b9d9cc00cd0ae806c9aab
 \item 
 virtual uint32\-\_\-t \hyperlink{class_c_event_bit_a4a50fd1376946d508762fa00d01034ce}{sync} (uint32\-\_\-t bits\-To\-Set, uint32\-\_\-t bits\-To\-Wait, uint32\-\_\-t timeout=M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-T\-I\-M\-E)
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-x\-Handle \hyperlink{class_c_event_bit_a99560a5eb8518d37c62dd30d3382c17e}{m\-\_\-event}
-\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Event\-Bit are used to indicate if an event has occurred or not. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_c_event_bit_afaccf4ea2315ce05229a3a0ae37ba6af}{\index{C\-Event\-Bit@{C\-Event\-Bit}!C\-Event\-Bit@{C\-Event\-Bit}}
@@ -43,13 +39,6 @@ x\-Handle \hyperlink{class_c_event_bit_a99560a5eb8518d37c62dd30d3382c17e}{m\-\_\
 {}
 \end{DoxyParamCaption}
 )}}\label{class_c_event_bit_afaccf4ea2315ce05229a3a0ae37ba6af}
-\hypertarget{class_c_event_bit_a1e275ddfeada2601f70b1b6215cdc7cb}{\index{C\-Event\-Bit@{C\-Event\-Bit}!$\sim$\-C\-Event\-Bit@{$\sim$\-C\-Event\-Bit}}
-\index{$\sim$\-C\-Event\-Bit@{$\sim$\-C\-Event\-Bit}!CEventBit@{C\-Event\-Bit}}
-\subsubsection[{$\sim$\-C\-Event\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Event\-Bit\-::$\sim$\-C\-Event\-Bit (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_event_bit_a1e275ddfeada2601f70b1b6215cdc7cb}
 
 
 \subsection{Member Function Documentation}
@@ -93,12 +82,6 @@ x\-Handle \hyperlink{class_c_event_bit_a99560a5eb8518d37c62dd30d3382c17e}{m\-\_\
 \item[{uint32\-\_\-t}]{timeout = {\ttfamily MAX\-\_\-DELAY\-\_\-TIME}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_event_bit_a4a50fd1376946d508762fa00d01034ce}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{class_c_event_bit_a99560a5eb8518d37c62dd30d3382c17e}{\index{C\-Event\-Bit@{C\-Event\-Bit}!m\-\_\-event@{m\-\_\-event}}
-\index{m\-\_\-event@{m\-\_\-event}!CEventBit@{C\-Event\-Bit}}
-\subsubsection[{m\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}x\-Handle C\-Event\-Bit\-::m\-\_\-event\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_event_bit_a99560a5eb8518d37c62dd30d3382c17e}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
