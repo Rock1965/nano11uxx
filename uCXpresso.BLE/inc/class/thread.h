@@ -68,7 +68,7 @@ public:
 	 * 		protected:
 	 * 			virtual void run() {
 	 * 				CPin led(LED2);
-	 * 				while(1) {
+	 * 				while( isAlive() ) {	// Is thread in alive?  (when thread be kill, the isAlive will return false)
 	 * 					led = !led;
 	 * 					sleep(200);
 	 * 				}

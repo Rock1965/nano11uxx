@@ -1,0 +1,170 @@
+\hypertarget{class_c_mail_box}{\section{C\-Mail\-Box Class Reference}
+\label{class_c_mail_box}\index{C\-Mail\-Box@{C\-Mail\-Box}}
+}
+
+
+Use the C\-Mailbox to receive a message pointer from sender.  
+
+
+
+
+{\ttfamily \#include \char`\"{}class/mailbox.\-h\char`\"{}}
+
+Inheritance diagram for C\-Mail\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/d26/class_c_mail_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mail_box_a860c64ec622b6bb2641f8e69748ba9e6}{C\-Mail\-Box} (L\-P\-C\-T\-S\-T\-R name, int \hyperlink{class_c_mail_box_a11592da3e55cf9bedc8d2cf36d56e9bd}{count}=D\-E\-F\-\_\-\-M\-A\-I\-L\-\_\-\-C\-O\-U\-N\-T)
+\item 
+virtual M\-E\-S\-S\-A\-G\-E\-\_\-\-T \hyperlink{class_c_mail_box_ad03ed94ae07a9309d9f42695c9df7e94}{wait} (uint32\-\_\-t timeout=M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-T\-I\-M\-E)
+\item 
+virtual M\-E\-S\-S\-A\-G\-E\-\_\-\-T \hyperlink{class_c_mail_box_adc923a33209756bb2ed9e1838b12b68c}{peek} (uint32\-\_\-t timeout=M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-T\-I\-M\-E)
+\item 
+virtual int \hyperlink{class_c_mail_box_a11592da3e55cf9bedc8d2cf36d56e9bd}{count} ()
+\item 
+virtual bool \hyperlink{class_c_mail_box_a5ab581cd317944e824efbbc6f7f4d14d}{post} (M\-E\-S\-S\-A\-G\-E\-\_\-\-T msg, uint32\-\_\-t timeout=M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-T\-I\-M\-E)
+\item 
+void \hyperlink{class_c_mail_box_a73d5b694b1e7ce4e05c7ccc8f1dfd695}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_c_mail_box_a96075bbd5308e6b1d0aaf5bd5fa2e645}{post} (L\-P\-C\-T\-S\-T\-R name, M\-E\-S\-S\-A\-G\-E\-\_\-\-T msg, uint32\-\_\-t timeout=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use the C\-Mailbox to receive a message pointer from sender. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_mail_box_a860c64ec622b6bb2641f8e69748ba9e6}{\index{C\-Mail\-Box@{C\-Mail\-Box}!C\-Mail\-Box@{C\-Mail\-Box}}
+\index{C\-Mail\-Box@{C\-Mail\-Box}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{C\-Mail\-Box}]{\setlength{\rightskip}{0pt plus 5cm}C\-Mail\-Box\-::\-C\-Mail\-Box (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-T\-S\-T\-R}]{name, }
+\item[{int}]{count = {\ttfamily DEF\-\_\-MAIL\-\_\-COUNT}}
+\end{DoxyParamCaption}
+)}}\label{class_c_mail_box_a860c64ec622b6bb2641f8e69748ba9e6}
+Constructs a \hyperlink{class_c_mail_box}{C\-Mail\-Box} object. 
+\begin{DoxyParams}{Parameters}
+{\em name} & is a string to point to describe the name of mailbox. \\
+\hline
+{\em count} & is a integer value to specified the maximum number of message can be contain.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+Example:
+        \textcolor{keyword}{class }CLedTask: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run() \{
+            \hyperlink{class_c_bus}{CBus} leds(LED2, LED3, LED4, END);
+            \hyperlink{class_c_mail_box}{CMailBox} mail(\textcolor{stringliteral}{"LED"});
+            \textcolor{keywordtype}{int} *i;
+            \textcolor{keywordflow}{while}(1) \{
+                i = (\textcolor{keywordtype}{int} *) mail.wait();
+                \textcolor{keywordflow}{if} ( i ) \{
+                    leds[*i] = !leds[*i];
+                \}
+            \}
+            \}
+    \};
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_mail_box_ad03ed94ae07a9309d9f42695c9df7e94}{\index{C\-Mail\-Box@{C\-Mail\-Box}!wait@{wait}}
+\index{wait@{wait}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{wait}]{\setlength{\rightskip}{0pt plus 5cm}virtual M\-E\-S\-S\-A\-G\-E\-\_\-\-T C\-Mail\-Box\-::wait (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{timeout = {\ttfamily MAX\-\_\-DELAY\-\_\-TIME}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mail_box_ad03ed94ae07a9309d9f42695c9df7e94}
+Call the member function to wait a message from sender. 
+\begin{DoxyParams}{Parameters}
+{\em timeout} & is an amount of time the task should block for a message to receive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\-E\-S\-S\-A\-G\-E\-\_\-\-T 
+\end{DoxyReturn}
+\hypertarget{class_c_mail_box_adc923a33209756bb2ed9e1838b12b68c}{\index{C\-Mail\-Box@{C\-Mail\-Box}!peek@{peek}}
+\index{peek@{peek}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{peek}]{\setlength{\rightskip}{0pt plus 5cm}virtual M\-E\-S\-S\-A\-G\-E\-\_\-\-T C\-Mail\-Box\-::peek (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{timeout = {\ttfamily MAX\-\_\-DELAY\-\_\-TIME}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mail_box_adc923a33209756bb2ed9e1838b12b68c}
+Receive a message from mail box without remove \hypertarget{class_c_mail_box_a11592da3e55cf9bedc8d2cf36d56e9bd}{\index{C\-Mail\-Box@{C\-Mail\-Box}!count@{count}}
+\index{count@{count}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Mail\-Box\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mail_box_a11592da3e55cf9bedc8d2cf36d56e9bd}
+Call the member function to retrieve the number of message stored in the mailbox. \begin{DoxyReturn}{Returns}
+number of message. 
+\end{DoxyReturn}
+\hypertarget{class_c_mail_box_a5ab581cd317944e824efbbc6f7f4d14d}{\index{C\-Mail\-Box@{C\-Mail\-Box}!post@{post}}
+\index{post@{post}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{post}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Mail\-Box\-::post (
+\begin{DoxyParamCaption}
+\item[{M\-E\-S\-S\-A\-G\-E\-\_\-\-T}]{msg, }
+\item[{uint32\-\_\-t}]{timeout = {\ttfamily MAX\-\_\-DELAY\-\_\-TIME}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mail_box_a5ab581cd317944e824efbbc6f7f4d14d}
+Call the member function to send a message to receiver \hypertarget{class_c_mail_box_a96075bbd5308e6b1d0aaf5bd5fa2e645}{\index{C\-Mail\-Box@{C\-Mail\-Box}!post@{post}}
+\index{post@{post}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{post}]{\setlength{\rightskip}{0pt plus 5cm}static bool C\-Mail\-Box\-::post (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-T\-S\-T\-R}]{name, }
+\item[{M\-E\-S\-S\-A\-G\-E\-\_\-\-T}]{msg, }
+\item[{uint32\-\_\-t}]{timeout = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_mail_box_a96075bbd5308e6b1d0aaf5bd5fa2e645}
+Call the member function to send a message to receiver which the same mailbox name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & is a string to point to which the same name of mailbox to be received the message. \\
+\hline
+{\em msg} & is a pointer to the message (void$\ast$). \\
+\hline
+{\em timeout} & is a time to wait for post. (Default zero) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if post the message successful; otherwise, pose failed.
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+Example:
+    \textcolor{keyword}{class }Task1: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+    \textcolor{keyword}{protected}:
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run() \{
+        \textcolor{keywordtype}{int} i=0;
+        \textcolor{keywordflow}{while}(1) \{
+            \hyperlink{class_c_mail_box_a5ab581cd317944e824efbbc6f7f4d14d}{CMailBox::post}(MAIL\_LED, &i);
+            sleep(500);
+        \}
+    \}
+ \};
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+The \hyperlink{class_c_mail_box_a5ab581cd317944e824efbbc6f7f4d14d}{C\-Mail\-Box\-::post} is a static function. 
+\end{DoxyRemark}
+\hypertarget{class_c_mail_box_a73d5b694b1e7ce4e05c7ccc8f1dfd695}{\index{C\-Mail\-Box@{C\-Mail\-Box}!reset@{reset}}
+\index{reset@{reset}!CMailBox@{C\-Mail\-Box}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Mail\-Box\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_mail_box_a73d5b694b1e7ce4e05c7ccc8f1dfd695}
+Reset the mail box to original empty state. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+mailbox.\-h\end{DoxyCompactItemize}

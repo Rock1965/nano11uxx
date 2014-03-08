@@ -1,0 +1,346 @@
+\hypertarget{class_c_thread}{\section{C\-Thread Class Reference}
+\label{class_c_thread}\index{C\-Thread@{C\-Thread}}
+}
+
+
+The \hyperlink{class_c_thread}{C\-Thread} class provide the multi-\/tasking services.  
+
+
+
+
+{\ttfamily \#include \char`\"{}class/thread.\-h\char`\"{}}
+
+Inheritance diagram for C\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/d26/class_c_thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_c_thread_a3ebabcc071634508511ae2fc7b868ab7}{start} (const char $\ast$name, int stack=D\-E\-F\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-C\-K, P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T priority=P\-R\-I\-\_\-\-L\-O\-W)
+\item 
+virtual bool \hyperlink{class_c_thread_aacf955d1852e74da1f989251955ee6ec}{start} ()
+\item 
+virtual void \hyperlink{class_c_thread_ac8c53aa8c145fc4ac70fa6d825b95742}{resume} ()
+\item 
+virtual void \hyperlink{class_c_thread_a53e71e6db2221cd1c45aec21953d4aad}{suspend} ()
+\item 
+uint32\-\_\-t \hyperlink{class_c_thread_ac0227eda51725b795a461a768703f588}{get\-Stack\-High\-Water\-Mark} ()
+\item 
+virtual bool \hyperlink{class_c_thread_a51dbe9909ce528b4113d2cc27314e965}{is\-Suspend} ()
+\item 
+T\-A\-S\-K\-\_\-\-S\-T\-A\-T\-E\-\_\-\-T \hyperlink{class_c_thread_a1e9cce461d8dfb3889cea24f1a703f6f}{get\-State} ()
+\item 
+virtual void \hyperlink{class_c_thread_a6b0703ae0cc085a0c0aaa55b6945575b}{set\-Priority} (P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T p)
+\item 
+virtual P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T \hyperlink{class_c_thread_ac30b0a1f51549a97b88771692319c0e4}{get\-Priority} ()
+\item 
+L\-P\-C\-T\-S\-T\-R \hyperlink{class_c_thread_aa291909bc3ff7cc0decf46c885a7a725}{get\-Name} ()
+\item 
+virtual bool \hyperlink{class_c_thread_a4a0f0727be4714cef1e24150a869d403}{is\-Alive} ()
+\item 
+virtual void \hyperlink{class_c_thread_a15041136818470124d097d790d55a6e5}{kill} ()
+\item 
+virtual bool \hyperlink{class_c_thread_ab2513fd0fcad30e2e6605609c91f1984}{is\-Thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_thread_a743d4325b7e7da494283f3292773ff77}{resume\-All} ()
+\item 
+static void \hyperlink{class_c_thread_a2c09328581bd4e4a3e9e793f3376a92a}{suspend\-All} ()
+\item 
+static void \hyperlink{class_c_thread_aeb4cafe42d6cfc41294cf5dedcee8678}{enter\-Critical\-Section} ()
+\item 
+static void \hyperlink{class_c_thread_aab3a51062666552690be49b8e8027161}{exit\-Critical\-Section} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{class_c_thread_a2723c18f3f7659cdd93610fd1654d564}{m\-\_\-flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_c_thread}{C\-Thread} class provide the multi-\/tasking services. 
+
+\begin{DoxyNote}{Note}
+The \hyperlink{class_c_thread}{C\-Thread} class is an abstract class!! 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_thread_a3ebabcc071634508511ae2fc7b868ab7}{\index{C\-Thread@{C\-Thread}!start@{start}}
+\index{start@{start}!CThread@{C\-Thread}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Thread\-::start (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{int}]{stack = {\ttfamily DEF\-\_\-THREAD\-\_\-STACK}, }
+\item[{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T}]{priority = {\ttfamily PRI\-\_\-LOW}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_a3ebabcc071634508511ae2fc7b868ab7}
+Call the member function to start the thread. 
+\begin{DoxyParams}{Parameters}
+{\em name} & is a descriptive name for the task. \\
+\hline
+{\em stack} & is a integer value to specified as the number of stack can hold-\/not the number of bytes. \\
+\hline
+{\em priority} & at which the task should run. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful; otherwise, crate task failed.
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+Example:
+        \textcolor{keyword}{class }CLedTask: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run}() \{
+                \hyperlink{class_c_pin}{CPin} led(LED2);
+                \textcolor{keywordflow}{while}( \hyperlink{class_c_thread_a4a0f0727be4714cef1e24150a869d403}{isAlive}() ) \{    \textcolor{comment}{// Is thread in alive?  (when thread be kill, the isAlive
+       will return false)}
+                    led = !led;
+                    sleep(200);
+                \}
+            \}
+        \};
+
+        \textcolor{keywordtype}{int} main() \{
+            ...
+            CLedTask ledTask;
+            ledTask.start(\textcolor{stringliteral}{"led"});   \textcolor{comment}{// default stack=128, default priority=low}
+            ...
+        \}
+\end{DoxyCode}
+ \hypertarget{class_c_thread_aacf955d1852e74da1f989251955ee6ec}{\index{C\-Thread@{C\-Thread}!start@{start}}
+\index{start@{start}!CThread@{C\-Thread}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Thread\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_aacf955d1852e74da1f989251955ee6ec}
+Call the member function to start the thread. \begin{DoxyNote}{Note}
+the \hyperlink{class_c_thread_aacf955d1852e74da1f989251955ee6ec}{start()} is an overload member function of \hyperlink{class_c_thread}{C\-Thread}. 
+\end{DoxyNote}
+
+
+Reimplemented in \hyperlink{class_c_debug_a40d1b7f50b76311b3a7fb148e5b7e2ea}{C\-Debug}, and \hyperlink{class_c_shell_a670f66f552494dfce94ee297ae0f659a}{C\-Shell}.
+
+\hypertarget{class_c_thread_ac8c53aa8c145fc4ac70fa6d825b95742}{\index{C\-Thread@{C\-Thread}!resume@{resume}}
+\index{resume@{resume}!CThread@{C\-Thread}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Thread\-::resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_ac8c53aa8c145fc4ac70fa6d825b95742}
+Call the member function to resume the thread.
+
+
+\begin{DoxyCode}
+Example:
+    \textcolor{keywordtype}{int} main() \{
+        ...
+        CLedTask ledTask;
+        ledTask.start(\textcolor{stringliteral}{"led"});
+        ...
+        ledTask.suspend();      \textcolor{comment}{// suspend the ledTask}
+        ...
+        \textcolor{keywordflow}{if} ( ledTask.isSuspend() ) \{
+            ledTask.resume();   \textcolor{comment}{// resume the ledTask}
+        \}
+        ...
+    \}
+\end{DoxyCode}
+ \hypertarget{class_c_thread_a53e71e6db2221cd1c45aec21953d4aad}{\index{C\-Thread@{C\-Thread}!suspend@{suspend}}
+\index{suspend@{suspend}!CThread@{C\-Thread}}
+\subsubsection[{suspend}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Thread\-::suspend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_a53e71e6db2221cd1c45aec21953d4aad}
+Call the member function to suspend the thread.
+
+
+\begin{DoxyCode}
+Example:
+    \textcolor{keywordtype}{int} main() \{
+        ...
+        CLedTask ledTask;
+        ledTask.start(\textcolor{stringliteral}{"led"});
+        ...
+        ledTask.suspend();      \textcolor{comment}{// suspend the ledTask}
+        ...
+        \textcolor{keywordflow}{if} ( ledTask.isSuspend() ) \{
+            ledTask.resume();   \textcolor{comment}{// resume the ledTask}
+        \}
+        ...
+    \}
+\end{DoxyCode}
+ \hypertarget{class_c_thread_ac0227eda51725b795a461a768703f588}{\index{C\-Thread@{C\-Thread}!get\-Stack\-High\-Water\-Mark@{get\-Stack\-High\-Water\-Mark}}
+\index{get\-Stack\-High\-Water\-Mark@{get\-Stack\-High\-Water\-Mark}!CThread@{C\-Thread}}
+\subsubsection[{get\-Stack\-High\-Water\-Mark}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t C\-Thread\-::get\-Stack\-High\-Water\-Mark (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_thread_ac0227eda51725b795a461a768703f588}
+Call the member function to check the stack high water mark. \begin{DoxyNote}{Note}
+Or use the shell and type 'task' to check all tasks status. 
+\end{DoxyNote}
+\hypertarget{class_c_thread_a51dbe9909ce528b4113d2cc27314e965}{\index{C\-Thread@{C\-Thread}!is\-Suspend@{is\-Suspend}}
+\index{is\-Suspend@{is\-Suspend}!CThread@{C\-Thread}}
+\subsubsection[{is\-Suspend}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Thread\-::is\-Suspend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_a51dbe9909ce528b4113d2cc27314e965}
+Call the member function to check the task is in suspended or not. \begin{DoxyReturn}{Returns}
+true if task in suspended. otherwise, the task in running. 
+\end{DoxyReturn}
+\hypertarget{class_c_thread_a1e9cce461d8dfb3889cea24f1a703f6f}{\index{C\-Thread@{C\-Thread}!get\-State@{get\-State}}
+\index{get\-State@{get\-State}!CThread@{C\-Thread}}
+\subsubsection[{get\-State}]{\setlength{\rightskip}{0pt plus 5cm}T\-A\-S\-K\-\_\-\-S\-T\-A\-T\-E\-\_\-\-T C\-Thread\-::get\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_thread_a1e9cce461d8dfb3889cea24f1a703f6f}
+Retrieve the state of thread object (task) \hypertarget{class_c_thread_a6b0703ae0cc085a0c0aaa55b6945575b}{\index{C\-Thread@{C\-Thread}!set\-Priority@{set\-Priority}}
+\index{set\-Priority@{set\-Priority}!CThread@{C\-Thread}}
+\subsubsection[{set\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Thread\-::set\-Priority (
+\begin{DoxyParamCaption}
+\item[{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_a6b0703ae0cc085a0c0aaa55b6945575b}
+Call the member function to change the task's priority. 
+\begin{DoxyParams}{Parameters}
+{\em p} & is P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T to set a new priority for the task. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_thread_ac30b0a1f51549a97b88771692319c0e4}{\index{C\-Thread@{C\-Thread}!get\-Priority@{get\-Priority}}
+\index{get\-Priority@{get\-Priority}!CThread@{C\-Thread}}
+\subsubsection[{get\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}virtual P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T C\-Thread\-::get\-Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_ac30b0a1f51549a97b88771692319c0e4}
+Call the member function to get the task's priority. \begin{DoxyReturn}{Returns}
+P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T 
+\end{DoxyReturn}
+\hypertarget{class_c_thread_aa291909bc3ff7cc0decf46c885a7a725}{\index{C\-Thread@{C\-Thread}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!CThread@{C\-Thread}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}L\-P\-C\-T\-S\-T\-R C\-Thread\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_thread_aa291909bc3ff7cc0decf46c885a7a725}
+Call the member function to retrieve the task's name. \hypertarget{class_c_thread_a4a0f0727be4714cef1e24150a869d403}{\index{C\-Thread@{C\-Thread}!is\-Alive@{is\-Alive}}
+\index{is\-Alive@{is\-Alive}!CThread@{C\-Thread}}
+\subsubsection[{is\-Alive}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Thread\-::is\-Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_a4a0f0727be4714cef1e24150a869d403}
+is\-Alive is to check the thread is in alive (for run-\/loop) \hypertarget{class_c_thread_a15041136818470124d097d790d55a6e5}{\index{C\-Thread@{C\-Thread}!kill@{kill}}
+\index{kill@{kill}!CThread@{C\-Thread}}
+\subsubsection[{kill}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Thread\-::kill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_thread_a15041136818470124d097d790d55a6e5}
+kill the thread, call the kill the \hyperlink{class_c_thread_a4a0f0727be4714cef1e24150a869d403}{is\-Alive()} will return false \hypertarget{class_c_thread_ab2513fd0fcad30e2e6605609c91f1984}{\index{C\-Thread@{C\-Thread}!is\-Thread@{is\-Thread}}
+\index{is\-Thread@{is\-Thread}!CThread@{C\-Thread}}
+\subsubsection[{is\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Thread\-::is\-Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_thread_ab2513fd0fcad30e2e6605609c91f1984}
+\hyperlink{class_c_thread_ab2513fd0fcad30e2e6605609c91f1984}{is\-Thread()}, check the class is inherited from \hyperlink{class_c_thread}{C\-Thread} 
+
+Reimplemented from \hyperlink{class_c_object_a26a76c241a4d62d2efdac57d2cfe4c0f}{C\-Object}.
+
+\hypertarget{class_c_thread_a743d4325b7e7da494283f3292773ff77}{\index{C\-Thread@{C\-Thread}!resume\-All@{resume\-All}}
+\index{resume\-All@{resume\-All}!CThread@{C\-Thread}}
+\subsubsection[{resume\-All}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-Thread\-::resume\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_thread_a743d4325b7e7da494283f3292773ff77}
+The resume\-All is a static (global) function to resume all suspended tasks. \hypertarget{class_c_thread_a2c09328581bd4e4a3e9e793f3376a92a}{\index{C\-Thread@{C\-Thread}!suspend\-All@{suspend\-All}}
+\index{suspend\-All@{suspend\-All}!CThread@{C\-Thread}}
+\subsubsection[{suspend\-All}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-Thread\-::suspend\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_thread_a2c09328581bd4e4a3e9e793f3376a92a}
+The suspend\-All is a static (globa) function to suspend all running tasks. \hypertarget{class_c_thread_aeb4cafe42d6cfc41294cf5dedcee8678}{\index{C\-Thread@{C\-Thread}!enter\-Critical\-Section@{enter\-Critical\-Section}}
+\index{enter\-Critical\-Section@{enter\-Critical\-Section}!CThread@{C\-Thread}}
+\subsubsection[{enter\-Critical\-Section}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-Thread\-::enter\-Critical\-Section (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_thread_aeb4cafe42d6cfc41294cf5dedcee8678}
+\hypertarget{class_c_thread_aab3a51062666552690be49b8e8027161}{\index{C\-Thread@{C\-Thread}!exit\-Critical\-Section@{exit\-Critical\-Section}}
+\index{exit\-Critical\-Section@{exit\-Critical\-Section}!CThread@{C\-Thread}}
+\subsubsection[{exit\-Critical\-Section}]{\setlength{\rightskip}{0pt plus 5cm}static void C\-Thread\-::exit\-Critical\-Section (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_thread_aab3a51062666552690be49b8e8027161}
+\hypertarget{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{\index{C\-Thread@{C\-Thread}!run@{run}}
+\index{run@{run}!CThread@{C\-Thread}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Thread\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}
+The run member function is the task main procedure, and callback by R\-T\-O\-S when task start.
+
+
+\begin{DoxyCode}
+Example:
+        \textcolor{keyword}{class }CLedTask: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run}() \{
+                \hyperlink{class_c_pin}{CPin} led(LED2);
+                \textcolor{keywordflow}{while}(1) \{
+                    led = !led;
+                    sleep(200);
+                \}
+            \}
+        \};
+
+        \textcolor{keywordtype}{int} main() \{
+            ...
+            CLedTask ledTask;
+            ledTask.start(\textcolor{stringliteral}{"led"});   \textcolor{comment}{// default stack=128, default priority=low}
+            ...
+        \}
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+The \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run()} is a pure virtual function, must reimplement by inheritor. 
+\end{DoxyRemark}
+\begin{DoxyNote}{Note}
+if end the \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run()} member function, the \hyperlink{class_c_thread}{C\-Thread} object will be deleted and collected. 
+\end{DoxyNote}
+
+
+Reimplemented in \hyperlink{class_c_debug_a9a3e40cc8ee5d0c2a41577f658779c71}{C\-Debug}, and \hyperlink{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}{C\-Shell}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_thread_a2723c18f3f7659cdd93610fd1654d564}{\index{C\-Thread@{C\-Thread}!m\-\_\-flag@{m\-\_\-flag}}
+\index{m\-\_\-flag@{m\-\_\-flag}!CThread@{C\-Thread}}
+\subsubsection[{m\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t C\-Thread\-::m\-\_\-flag\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_thread_a2723c18f3f7659cdd93610fd1654d564}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+thread.\-h\end{DoxyCompactItemize}

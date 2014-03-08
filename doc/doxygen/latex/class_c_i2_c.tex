@@ -1,0 +1,83 @@
+\hypertarget{class_c_i2_c}{\section{C\-I2\-C Class Reference}
+\label{class_c_i2_c}\index{C\-I2\-C@{C\-I2\-C}}
+}
+Inheritance diagram for C\-I2\-C\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_i2_c}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_i2_c_aeff3f958457f68d453fe125b031c4539}{void {\bfseries enable} ()}\label{class_c_i2_c_aeff3f958457f68d453fe125b031c4539}
+
+\item 
+\hypertarget{class_c_i2_c_a36a89b063ac68ff1710193258e76ea73}{void {\bfseries disable} ()}\label{class_c_i2_c_a36a89b063ac68ff1710193258e76ea73}
+
+\item 
+\hypertarget{class_c_i2_c_ab5158b0fe99495c186200ac1d6ef4e52}{virtual void {\bfseries frequency} (uint32\-\_\-t hz)}\label{class_c_i2_c_ab5158b0fe99495c186200ac1d6ef4e52}
+
+\item 
+\hypertarget{class_c_i2_c_a20801c3b9529bb0b3b29d51630a399de}{virtual void {\bfseries on\-State} (uint32\-\_\-t value)}\label{class_c_i2_c_a20801c3b9529bb0b3b29d51630a399de}
+
+\item 
+\hypertarget{class_c_i2_c_a1517b47af85f0129355d2242f124dfbc}{virtual bool {\bfseries start} ()}\label{class_c_i2_c_a1517b47af85f0129355d2242f124dfbc}
+
+\item 
+\hypertarget{class_c_i2_c_a68800b62b81e6fb291c24db5e0618e56}{virtual bool {\bfseries stop} ()}\label{class_c_i2_c_a68800b62b81e6fb291c24db5e0618e56}
+
+\item 
+\hypertarget{class_c_i2_c_ab0776700fc48c94f200774e832081c7f}{virtual I2\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T {\bfseries engine} (uint32\-\_\-t timeout=I2\-C\-\_\-\-T\-I\-M\-E\-O\-U\-T)}\label{class_c_i2_c_ab0776700fc48c94f200774e832081c7f}
+
+\item 
+\hypertarget{class_c_i2_c_ac1730f4db280cd2c9b0d73a03317776e}{virtual void {\bfseries read} (uint8\-\_\-t $\ast$data, int length)}\label{class_c_i2_c_ac1730f4db280cd2c9b0d73a03317776e}
+
+\item 
+\hypertarget{class_c_i2_c_a379c419607c235a7d723ab4391c2ff2c}{virtual void {\bfseries write} (uint8\-\_\-t $\ast$data, int length)}\label{class_c_i2_c_a379c419607c235a7d723ab4391c2ff2c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_i2_c_afe268dd16ca42e8542c67a7f574df789}{\hyperlink{class_c_semaphore}{C\-Semaphore} {\bfseries m\-\_\-sem\-Irq}}\label{class_c_i2_c_afe268dd16ca42e8542c67a7f574df789}
+
+\item 
+\hypertarget{class_c_i2_c_aed6c05c74c281a6ae0dcc8e0203511b1}{\hyperlink{class_c_semaphore}{C\-Semaphore} {\bfseries m\-\_\-sem\-State}}\label{class_c_i2_c_aed6c05c74c281a6ae0dcc8e0203511b1}
+
+\item 
+\hypertarget{class_c_i2_c_aa2da331d3ad66d64a25d63405882be4c}{uint32\-\_\-t {\bfseries m\-\_\-state}}\label{class_c_i2_c_aa2da331d3ad66d64a25d63405882be4c}
+
+\item 
+\hypertarget{class_c_i2_c_a4c29db1010457d99b12ac6097219bcc8}{uint32\-\_\-t {\bfseries m\-\_\-flag}}\label{class_c_i2_c_a4c29db1010457d99b12ac6097219bcc8}
+
+\item 
+\hypertarget{class_c_i2_c_ae7fd0860329b89d55cfe5ca214b705e2}{uint8\-\_\-t $\ast$ {\bfseries m\-\_\-\-Master\-Buffer}}\label{class_c_i2_c_ae7fd0860329b89d55cfe5ca214b705e2}
+
+\item 
+\hypertarget{class_c_i2_c_a4ef901e7efdef3f95faa2dd08d548aed}{uint8\-\_\-t $\ast$ {\bfseries m\-\_\-\-Slave\-Buffer}}\label{class_c_i2_c_a4ef901e7efdef3f95faa2dd08d548aed}
+
+\item 
+\hypertarget{class_c_i2_c_ad8b02ac3b8cfe93c0e123f7c4d79709b}{int {\bfseries m\-\_\-rd\-Index}}\label{class_c_i2_c_ad8b02ac3b8cfe93c0e123f7c4d79709b}
+
+\item 
+\hypertarget{class_c_i2_c_ad2e77f79779205f9c2ae13f7a4fc9168}{int {\bfseries m\-\_\-wr\-Index}}\label{class_c_i2_c_ad2e77f79779205f9c2ae13f7a4fc9168}
+
+\item 
+\hypertarget{class_c_i2_c_afc1ac8b1f15f1e74dd4a884fb9fe342a}{int {\bfseries m\-\_\-wr\-Length}}\label{class_c_i2_c_afc1ac8b1f15f1e74dd4a884fb9fe342a}
+
+\item 
+\hypertarget{class_c_i2_c_a517d08ec5c1a44662ab923bb74c6a25c}{int {\bfseries m\-\_\-rd\-Length}}\label{class_c_i2_c_a517d08ec5c1a44662ab923bb74c6a25c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_i2_c_aef073fe282d448add47eb63b3f481205}{x\-Handle {\bfseries m\-\_\-handle}}\label{class_c_i2_c_aef073fe282d448add47eb63b3f481205}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+i2c.\-h\end{DoxyCompactItemize}

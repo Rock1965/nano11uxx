@@ -1,0 +1,325 @@
+\hypertarget{classble_heart_rate}{\section{ble\-Heart\-Rate Class Reference}
+\label{classble_heart_rate}\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}}
+}
+
+
+{\ttfamily \#include $<$ble\-\_\-heartrate.\-h$>$}
+
+Inheritance diagram for ble\-Heart\-Rate\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d3/d81/classble_heart_rate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classble_heart_rate_af5e0bc81b5d2f8e290b6cba8050f80c2}{ble\-Heart\-Rate} (\hyperlink{classble_serial}{ble\-Serial} \&ble)
+\item 
+virtual bool \hyperlink{classble_heart_rate_a822019806bf50f6d25ae075b62a838ab}{is\-Available} ()
+\item 
+void \hyperlink{classble_heart_rate_acd5a0148a2df6692893a274a18710431}{support\-Contact} (bool enable)
+\item 
+void \hyperlink{classble_heart_rate_a4b05ceb33ffe7fcfe9f1a3dbf9679882}{contact\-Status} (bool enable)
+\item 
+void \hyperlink{classble_heart_rate_a9c822ea4fafcb609e009427feb0949c2}{set\-Sensor\-Location} (hrsl\-\_\-code\-\_\-t code)
+\item 
+bool \hyperlink{classble_heart_rate_a2b7329b1756f03c99334b6575e14c090}{send\-Measure} (uint8\-\_\-t meas\-\_\-hr)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (8 bits). \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_a9f69ad22553dabc5b992bf9a15aa6667}{send\-Measure} (uint16\-\_\-t meas\-\_\-hr)
+\begin{DoxyCompactList}\small\item\em Function to send a heart rate measurement (16 bits). \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_ac0bd83937f2997c2451918a421c277c2}{send\-Measure} (uint8\-\_\-t meas\-\_\-hr, uint16\-\_\-t expended\-\_\-energy)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (8 bits) with expended energy. \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_a34a055d4b926b2447ca78a4f63691d30}{send\-Measure} (uint16\-\_\-t meas\-\_\-hr, uint16\-\_\-t expended\-\_\-energy)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (16 bits) with expended energy. \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_ab511f6fcb6b7b57c09132911b5f87cb7}{send\-Measure} (uint8\-\_\-t meas\-\_\-hr, uint16\-\_\-t $\ast$p\-\_\-rr\-\_\-intervals, uint8\-\_\-t nb\-\_\-intervals)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (8 bits) with rr\-\_\-intervals. \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_a1d3fd3348703d304cd445620e7bb4998}{send\-Measure} (uint16\-\_\-t meas\-\_\-hr, uint16\-\_\-t $\ast$p\-\_\-rr\-\_\-intervals, uint8\-\_\-t nb\-\_\-intervals)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (16 bits) with rr\-\_\-intervals. \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_a2a6d1f10ea9a92ad5a953fc683125c50}{send\-Measure} (uint8\-\_\-t meas\-\_\-hr, uint16\-\_\-t expended\-\_\-energy, uint16\-\_\-t $\ast$p\-\_\-rr\-\_\-intervals, uint8\-\_\-t nb\-\_\-intervals)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (8 bits) with expended energy with rr\-\_\-intervals. \end{DoxyCompactList}\item 
+bool \hyperlink{classble_heart_rate_ab5cf3fd6c2e5909af4d51150c865d8b0}{send\-Measure} (uint16\-\_\-t meas\-\_\-hr, uint16\-\_\-t expended\-\_\-energy, uint16\-\_\-t $\ast$p\-\_\-rr\-\_\-intervals, uint8\-\_\-t nb\-\_\-intervals)
+\begin{DoxyCompactList}\small\item\em Overload function to send a heart rate measurement (16 bits) with expended energy with rr\-\_\-intervals. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classble_heart_rate_a4764687c0e158518141b3dba9103b5d2}{on\-Reset\-Energy\-Expended} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The ble\-Hear\-Rate class exposes heart rate and other data from a Heart Rate Sensor intended for fitness applications. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classble_heart_rate_af5e0bc81b5d2f8e290b6cba8050f80c2}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!ble\-Heart\-Rate@{ble\-Heart\-Rate}}
+\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{ble\-Heart\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}ble\-Heart\-Rate\-::ble\-Heart\-Rate (
+\begin{DoxyParamCaption}
+\item[{{\bf ble\-Serial} \&}]{ble}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_af5e0bc81b5d2f8e290b6cba8050f80c2}
+\hyperlink{classble_heart_rate}{ble\-Heart\-Rate} constructor 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} main() \{
+...
+    \hyperlink{classble_serial}{bleSerial} ble(\textcolor{stringliteral}{"myBLE"});
+    ble.enable();
+
+    \hyperlink{classble_heart_rate}{bleHeartRate} hr(ble);
+    hr.sendMeasure(BPM);
+ ...
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em ble} & is a \hyperlink{classble_serial}{ble\-Serial} class object. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classble_heart_rate_a822019806bf50f6d25ae075b62a838ab}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!is\-Available@{is\-Available}}
+\index{is\-Available@{is\-Available}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{is\-Available}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ble\-Heart\-Rate\-::is\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_heart_rate_a822019806bf50f6d25ae075b62a838ab}
+Use is\-Available to check the service whether opened by remote (App). \begin{DoxyReturn}{Returns}
+true, if service is available. otherwise, the service is not in used. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_acd5a0148a2df6692893a274a18710431}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!support\-Contact@{support\-Contact}}
+\index{support\-Contact@{support\-Contact}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{support\-Contact}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Heart\-Rate\-::support\-Contact (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_acd5a0148a2df6692893a274a18710431}
+Set supported Contact sensor feature 
+\begin{DoxyParams}{Parameters}
+{\em enable} & true, if support the contact sensor. otherwise, no contact sensor supported. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classble_heart_rate_a4b05ceb33ffe7fcfe9f1a3dbf9679882}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!contact\-Status@{contact\-Status}}
+\index{contact\-Status@{contact\-Status}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{contact\-Status}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Heart\-Rate\-::contact\-Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a4b05ceb33ffe7fcfe9f1a3dbf9679882}
+Set contact sensor status. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & is a boolean value, set true, if contact is detected. otherwise, contact is not detected. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classble_heart_rate_a9c822ea4fafcb609e009427feb0949c2}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!set\-Sensor\-Location@{set\-Sensor\-Location}}
+\index{set\-Sensor\-Location@{set\-Sensor\-Location}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{set\-Sensor\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Heart\-Rate\-::set\-Sensor\-Location (
+\begin{DoxyParamCaption}
+\item[{hrsl\-\_\-code\-\_\-t}]{code}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a9c822ea4fafcb609e009427feb0949c2}
+Set sensor location. 
+\begin{DoxyParams}{Parameters}
+{\em code} & is a hrsl\-\_\-code\-\_\-t enumeration. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classble_heart_rate_a2b7329b1756f03c99334b6575e14c090}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{meas\-\_\-hr}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a2b7329b1756f03c99334b6575e14c090}
+
+
+Overload function to send a heart rate measurement (8 bits). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_a9f69ad22553dabc5b992bf9a15aa6667}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{meas\-\_\-hr}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a9f69ad22553dabc5b992bf9a15aa6667}
+
+
+Function to send a heart rate measurement (16 bits). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_ac0bd83937f2997c2451918a421c277c2}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{meas\-\_\-hr, }
+\item[{uint16\-\_\-t}]{expended\-\_\-energy}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_ac0bd83937f2997c2451918a421c277c2}
+
+
+Overload function to send a heart rate measurement (8 bits) with expended energy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+{\em expended\-\_\-energy} & Measured expended energy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_a34a055d4b926b2447ca78a4f63691d30}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{meas\-\_\-hr, }
+\item[{uint16\-\_\-t}]{expended\-\_\-energy}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a34a055d4b926b2447ca78a4f63691d30}
+
+
+Overload function to send a heart rate measurement (16 bits) with expended energy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+{\em expended\-\_\-energy} & Measured expended energy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_ab511f6fcb6b7b57c09132911b5f87cb7}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{meas\-\_\-hr, }
+\item[{uint16\-\_\-t $\ast$}]{p\-\_\-rr\-\_\-intervals, }
+\item[{uint8\-\_\-t}]{nb\-\_\-intervals}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_ab511f6fcb6b7b57c09132911b5f87cb7}
+
+
+Overload function to send a heart rate measurement (8 bits) with rr\-\_\-intervals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+{\em p\-\_\-rr\-\_\-intervals} & Pointer to rr\-\_\-intervals values. \\
+\hline
+{\em nb\-\_\-intervals} & Number of rr\-\_\-intervals. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_a1d3fd3348703d304cd445620e7bb4998}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{meas\-\_\-hr, }
+\item[{uint16\-\_\-t $\ast$}]{p\-\_\-rr\-\_\-intervals, }
+\item[{uint8\-\_\-t}]{nb\-\_\-intervals}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a1d3fd3348703d304cd445620e7bb4998}
+
+
+Overload function to send a heart rate measurement (16 bits) with rr\-\_\-intervals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+{\em p\-\_\-rr\-\_\-intervals} & Pointer to rr\-\_\-intervals values. \\
+\hline
+{\em nb\-\_\-intervals} & Number of rr\-\_\-intervals. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_a2a6d1f10ea9a92ad5a953fc683125c50}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{meas\-\_\-hr, }
+\item[{uint16\-\_\-t}]{expended\-\_\-energy, }
+\item[{uint16\-\_\-t $\ast$}]{p\-\_\-rr\-\_\-intervals, }
+\item[{uint8\-\_\-t}]{nb\-\_\-intervals}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_a2a6d1f10ea9a92ad5a953fc683125c50}
+
+
+Overload function to send a heart rate measurement (8 bits) with expended energy with rr\-\_\-intervals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & Measured heart\-\_\-rate to send. \\
+\hline
+{\em expended\-\_\-energy} & Measured expended energy. \\
+\hline
+{\em p\-\_\-rr\-\_\-intervals} & Pointer to rr\-\_\-intervals values. \\
+\hline
+{\em nb\-\_\-intervals} & Number of rr\-\_\-intervals. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_ab5cf3fd6c2e5909af4d51150c865d8b0}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!send\-Measure@{send\-Measure}}
+\index{send\-Measure@{send\-Measure}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{send\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Heart\-Rate\-::send\-Measure (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{meas\-\_\-hr, }
+\item[{uint16\-\_\-t}]{expended\-\_\-energy, }
+\item[{uint16\-\_\-t $\ast$}]{p\-\_\-rr\-\_\-intervals, }
+\item[{uint8\-\_\-t}]{nb\-\_\-intervals}
+\end{DoxyParamCaption}
+)}}\label{classble_heart_rate_ab5cf3fd6c2e5909af4d51150c865d8b0}
+
+
+Overload function to send a heart rate measurement (16 bits) with expended energy with rr\-\_\-intervals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meas\-\_\-hr} & measured heart\-\_\-rate to send. \\
+\hline
+{\em expended\-\_\-energy} & Measured expended energy. \\
+\hline
+{\em p\-\_\-rr\-\_\-intervals} & Pointer to rr\-\_\-intervals values. \\
+\hline
+{\em nb\-\_\-intervals} & Number of rr\-\_\-intervals. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: True when the command send successfully. 
+\end{DoxyReturn}
+\hypertarget{classble_heart_rate_a4764687c0e158518141b3dba9103b5d2}{\index{ble\-Heart\-Rate@{ble\-Heart\-Rate}!on\-Reset\-Energy\-Expended@{on\-Reset\-Energy\-Expended}}
+\index{on\-Reset\-Energy\-Expended@{on\-Reset\-Energy\-Expended}!bleHeartRate@{ble\-Heart\-Rate}}
+\subsubsection[{on\-Reset\-Energy\-Expended}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ble\-Heart\-Rate\-::on\-Reset\-Energy\-Expended (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classble_heart_rate_a4764687c0e158518141b3dba9103b5d2}
+On reset energy expended event call by B\-L\-E task when receive remote (App) command. \begin{DoxyNote}{Note}
+The on\-Reset\-Energy\-Expended is a virtual empty function, and implement by child class. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+ble\-\_\-heartrate.\-h\end{DoxyCompactItemize}

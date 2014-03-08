@@ -1,0 +1,398 @@
+\hypertarget{class_console}{\section{Console Class Reference}
+\label{class_console}\index{Console@{Console}}
+}
+
+
+The \hyperlink{class_console}{Console} class provides a lightweight input/output stream to console.  
+
+
+
+
+{\ttfamily \#include \char`\"{}class/console.\-h\char`\"{}}
+
+Inheritance diagram for Console\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_console}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_console_a8374ffffac8edeaa0775bdd1923bdc10}{Console} (\hyperlink{class_c_stream}{C\-Stream} \&io)
+\item 
+virtual bool \hyperlink{class_console_a855191be30cd0e1eeaea2d6ab7cda03b}{is\-Connected} ()
+\item 
+virtual void \hyperlink{class_console_a78bb22aa6e31673a5675986c9c5e3529}{echo} (bool set)
+\item 
+virtual void \hyperlink{class_console_a61f9d57ebeecfd8553f02a84b4939e69}{clear} ()
+\item 
+virtual int \hyperlink{class_console_a1427b8f1d904381c49188a1f8d8da083}{putchar} (int ch)
+\item 
+virtual int \hyperlink{class_console_a404cc62475ef74f818d9102bdde09584}{getchar} ()
+\item 
+virtual int \hyperlink{class_console_a0a229393c4d71b47cb68d30397d5de1e}{putstr} (L\-P\-C\-T\-S\-T\-R str)
+\item 
+virtual int \hyperlink{class_console_ab28b81a0b1e462ec0df65ba0a573921f}{getstr} (L\-P\-T\-S\-T\-R strbuf, size\-\_\-t size)
+\item 
+virtual int \hyperlink{class_console_a3ff57fe349e1335039230e14b9fc0cb1}{write} (const void $\ast$buf, int size)
+\item 
+virtual int \hyperlink{class_console_a10df5763117e36da9f029d1dfa9641be}{read} (void $\ast$buf, int size)
+\item 
+virtual void \hyperlink{class_console_ae80d540e36c5522b8653359e1e4d6839}{operator$>$$>$} (char \&ch)
+\item 
+virtual void \hyperlink{class_console_a33c9beff5456efdd13209b8321df1a74}{operator$>$$>$} (uint8\-\_\-t \&b)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_afc5355f4c4fee0a91c4ba5ae6647f07d}{operator$<$$<$} (T\-C\-H\-A\-R ch)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_aa05d7169f95dc3a36b11a291e35c84ae}{operator$<$$<$} (L\-P\-C\-T\-S\-T\-R str)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_a01e2cf3bdbb5ff14689a8858e12da5ad}{operator$<$$<$} (int val)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_adaabaa6205705e13193e472a4cf7f194}{operator$<$$<$} (float val)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_ab765a1b1954e26b2cb725dc49c35fdeb}{operator$<$$<$} (double val)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_a756e1e290f184491bf98dfaa1247fff7}{operator$<$$<$} (size\-\_\-t val)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_a1da129a9f12eff89f82fc694bdc59231}{operator$<$$<$} (uint16\-\_\-t val)
+\item 
+\hypertarget{class_console_ad2d3cf94e3a31436681cc0839b760a75}{virtual \hyperlink{class_console}{Console} \& {\bfseries operator$<$$<$} (uint32\-\_\-t val)}\label{class_console_ad2d3cf94e3a31436681cc0839b760a75}
+
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_a0b13c2318c5e62763b679c190223de54}{operator$<$$<$} (uint8\-\_\-t val)
+\item 
+virtual \hyperlink{class_console}{Console} \& \hyperlink{class_console_aed5d1ad55ac69f1173f610d7c75793a6}{operator$<$$<$} (C\-O\-N\-S\-O\-L\-E\-\_\-\-C\-T\-R\-L\-\_\-\-T ctrl)
+\item 
+\hyperlink{class_c_stream}{C\-Stream} $\ast$ \hyperlink{class_console_ad4d21815c5cbc33e9015ba5babf5bf09}{i\-Stream} ()
+\item 
+\hyperlink{class_c_stream}{C\-Stream} $\ast$ \hyperlink{class_console_af6941f3b8ce87a9e53f58c5a74936d49}{o\-Stream} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_console}{Console} class provides a lightweight input/output stream to console. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_console_a8374ffffac8edeaa0775bdd1923bdc10}{\index{Console@{Console}!Console@{Console}}
+\index{Console@{Console}!Console@{Console}}
+\subsubsection[{Console}]{\setlength{\rightskip}{0pt plus 5cm}Console\-::\-Console (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Stream} \&}]{io}
+\end{DoxyParamCaption}
+)}}\label{class_console_a8374ffffac8edeaa0775bdd1923bdc10}
+Constructs a console object. 
+\begin{DoxyParams}{Parameters}
+{\em io} & is a \hyperlink{class_c_stream}{C\-Stream} object to provide the input/output stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+Example:
+        \hyperlink{class_c_serial}{CSerial} cdc(USB);       \textcolor{comment}{// create an USB serial stream object.}
+        \hyperlink{class_console}{Console} con(cdc);       \textcolor{comment}{// create a console by the USB stream.}
+
+        \textcolor{keywordflow}{if} ( con.isConnected() ) \{
+            con << \textcolor{stringliteral}{"Hello World"} << endl;
+        \}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_console_a61f9d57ebeecfd8553f02a84b4939e69}{\index{Console@{Console}!clear@{clear}}
+\index{clear@{clear}!Console@{Console}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Console\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a61f9d57ebeecfd8553f02a84b4939e69}
+Call the member function to clear the screen of console. \hypertarget{class_console_a78bb22aa6e31673a5675986c9c5e3529}{\index{Console@{Console}!echo@{echo}}
+\index{echo@{echo}!Console@{Console}}
+\subsubsection[{echo}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Console\-::echo (
+\begin{DoxyParamCaption}
+\item[{bool}]{set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a78bb22aa6e31673a5675986c9c5e3529}
+Call the member function to enable or disable the echo. 
+\begin{DoxyParams}{Parameters}
+{\em set} & is a boolean value, set true to enable the echo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_console_a404cc62475ef74f818d9102bdde09584}{\index{Console@{Console}!getchar@{getchar}}
+\index{getchar@{getchar}!Console@{Console}}
+\subsubsection[{getchar}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Console\-::getchar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_a404cc62475ef74f818d9102bdde09584}
+Call the member function to get a character from the serial stream of console. \begin{DoxyReturn}{Returns}
+the received character. 
+\end{DoxyReturn}
+\hypertarget{class_console_ab28b81a0b1e462ec0df65ba0a573921f}{\index{Console@{Console}!getstr@{getstr}}
+\index{getstr@{getstr}!Console@{Console}}
+\subsubsection[{getstr}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Console\-::getstr (
+\begin{DoxyParamCaption}
+\item[{L\-P\-T\-S\-T\-R}]{strbuf, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_ab28b81a0b1e462ec0df65ba0a573921f}
+Call the member function to get a string from the serial stream of console. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em strbuf} & is a string pointer where the string stored. \\
+\hline
+\mbox{\tt in}  & {\em size} & is a size\-\_\-t to represent the size of strbuf to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the how many characters received. 
+\end{DoxyReturn}
+\hypertarget{class_console_a855191be30cd0e1eeaea2d6ab7cda03b}{\index{Console@{Console}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!Console@{Console}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Console\-::is\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a855191be30cd0e1eeaea2d6ab7cda03b}
+Call the member function to check the stream is ready to read (or write).
+
+
+\begin{DoxyCode}
+Example:
+        \hyperlink{class_c_serial}{CSerial} cdc(USB);       \textcolor{comment}{// create an USB serial stream object.}
+        \hyperlink{class_console}{Console} con(cdc);       \textcolor{comment}{// create a console by the USB stream.}
+
+        \textcolor{keywordflow}{if} ( con.isConnected() ) \{
+            con << \textcolor{stringliteral}{"Hello World"} << endl;
+        \}
+\end{DoxyCode}
+ \hypertarget{class_console_ad4d21815c5cbc33e9015ba5babf5bf09}{\index{Console@{Console}!i\-Stream@{i\-Stream}}
+\index{i\-Stream@{i\-Stream}!Console@{Console}}
+\subsubsection[{i\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Stream}$\ast$ Console\-::i\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_console_ad4d21815c5cbc33e9015ba5babf5bf09}
+Call the member function to retrieve the input stream. \begin{DoxyReturn}{Returns}
+a \hyperlink{class_c_stream}{C\-Stream} object for input. 
+\end{DoxyReturn}
+\hypertarget{class_console_afc5355f4c4fee0a91c4ba5ae6647f07d}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{T\-C\-H\-A\-R}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_afc5355f4c4fee0a91c4ba5ae6647f07d}
+A shorthand for write a character to console. \begin{DoxyReturn}{Returns}
+$\ast$this.
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+Example:
+        con << \textcolor{charliteral}{'?'} << \textcolor{stringliteral}{"Whate is it this year? "} << 2012 << endl;
+\end{DoxyCode}
+ \hypertarget{class_console_aa05d7169f95dc3a36b11a291e35c84ae}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-T\-S\-T\-R}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_aa05d7169f95dc3a36b11a291e35c84ae}
+A shorthand for write a string to console. \begin{DoxyReturn}{Returns}
+$\ast$this.
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+Example:
+        con << \textcolor{charliteral}{'?'} << \textcolor{stringliteral}{"Whate is it this year? "} << 2012 << endl;
+\end{DoxyCode}
+ \hypertarget{class_console_a01e2cf3bdbb5ff14689a8858e12da5ad}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_a01e2cf3bdbb5ff14689a8858e12da5ad}
+A shorthand for write a integer value to console. \begin{DoxyReturn}{Returns}
+$\ast$this.
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+Example:
+        con << \textcolor{charliteral}{'?'} << \textcolor{stringliteral}{"Whate is it this year? "} << 2012 << endl;
+\end{DoxyCode}
+ \hypertarget{class_console_adaabaa6205705e13193e472a4cf7f194}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_adaabaa6205705e13193e472a4cf7f194}
+A shorthand for write a float value to console. \begin{DoxyReturn}{Returns}
+$\ast$this. 
+\end{DoxyReturn}
+\hypertarget{class_console_ab765a1b1954e26b2cb725dc49c35fdeb}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_ab765a1b1954e26b2cb725dc49c35fdeb}
+A shorthand for write a double value to console. \begin{DoxyReturn}{Returns}
+$\ast$this. 
+\end{DoxyReturn}
+\hypertarget{class_console_a756e1e290f184491bf98dfaa1247fff7}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_a756e1e290f184491bf98dfaa1247fff7}
+A shorthand for write a size\-\_\-t value to console. \begin{DoxyReturn}{Returns}
+$\ast$this; 
+\end{DoxyReturn}
+\hypertarget{class_console_a1da129a9f12eff89f82fc694bdc59231}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_a1da129a9f12eff89f82fc694bdc59231}
+A shorthand for write a unsigned integer 16 bits value to console. \begin{DoxyReturn}{Returns}
+$\ast$this. 
+\end{DoxyReturn}
+\hypertarget{class_console_a0b13c2318c5e62763b679c190223de54}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_a0b13c2318c5e62763b679c190223de54}
+A shorthand for write a unsigned integer 8 bits value to console. \begin{DoxyReturn}{Returns}
+$\ast$this. 
+\end{DoxyReturn}
+\hypertarget{class_console_aed5d1ad55ac69f1173f610d7c75793a6}{\index{Console@{Console}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Console@{Console}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Console}\& Console\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{C\-O\-N\-S\-O\-L\-E\-\_\-\-C\-T\-R\-L\-\_\-\-T}]{ctrl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_aed5d1ad55ac69f1173f610d7c75793a6}
+A shorthand for write a control operator to console. \begin{DoxyReturn}{Returns}
+$\ast$this;
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+Example:
+        con << \textcolor{charliteral}{'?'} << \textcolor{stringliteral}{"Whate is it this year? "} << 2012 << endl;
+\end{DoxyCode}
+ \hypertarget{class_console_ae80d540e36c5522b8653359e1e4d6839}{\index{Console@{Console}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Console@{Console}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Console\-::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{char \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_ae80d540e36c5522b8653359e1e4d6839}
+A shorthand for read a character.
+
+
+\begin{DoxyCode}
+Examle:
+        \textcolor{keywordtype}{char} c;
+        con >> c;
+\end{DoxyCode}
+ \hypertarget{class_console_a33c9beff5456efdd13209b8321df1a74}{\index{Console@{Console}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Console@{Console}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Console\-::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a33c9beff5456efdd13209b8321df1a74}
+A shorthand for read a byte value.
+
+
+\begin{DoxyCode}
+Example:
+        byte c;
+        con >> c;
+\end{DoxyCode}
+ \hypertarget{class_console_af6941f3b8ce87a9e53f58c5a74936d49}{\index{Console@{Console}!o\-Stream@{o\-Stream}}
+\index{o\-Stream@{o\-Stream}!Console@{Console}}
+\subsubsection[{o\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Stream}$\ast$ Console\-::o\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_console_af6941f3b8ce87a9e53f58c5a74936d49}
+Call the member function to retrieve the output stream. \begin{DoxyReturn}{Returns}
+a C\-Strea object for output. 
+\end{DoxyReturn}
+\hypertarget{class_console_a1427b8f1d904381c49188a1f8d8da083}{\index{Console@{Console}!putchar@{putchar}}
+\index{putchar@{putchar}!Console@{Console}}
+\subsubsection[{putchar}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Console\-::putchar (
+\begin{DoxyParamCaption}
+\item[{int}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_console_a1427b8f1d904381c49188a1f8d8da083}
+Call the member function to put a character to the serial stream of console. 
+\begin{DoxyParams}{Parameters}
+{\em ch} & is a integer value of character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the same value, if put a character successful; 
+\end{DoxyReturn}
+\hypertarget{class_console_a0a229393c4d71b47cb68d30397d5de1e}{\index{Console@{Console}!putstr@{putstr}}
+\index{putstr@{putstr}!Console@{Console}}
+\subsubsection[{putstr}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Console\-::putstr (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-T\-S\-T\-R}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a0a229393c4d71b47cb68d30397d5de1e}
+Call the member function to put a string to console. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & is a string pointer to be written. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the how many character sent. 
+\end{DoxyReturn}
+\hypertarget{class_console_a10df5763117e36da9f029d1dfa9641be}{\index{Console@{Console}!read@{read}}
+\index{read@{read}!Console@{Console}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Console\-::read (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a10df5763117e36da9f029d1dfa9641be}
+Call the member function to read a block buffer from the serial stream of console. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em buf} & is a pointer to a block data where the content read will be stored. \\
+\hline
+\mbox{\tt in}  & {\em size} & is integer value to represent the size of block to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the how many byte to be read. 
+\end{DoxyReturn}
+\hypertarget{class_console_a3ff57fe349e1335039230e14b9fc0cb1}{\index{Console@{Console}!write@{write}}
+\index{write@{write}!Console@{Console}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Console\-::write (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buf, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_console_a3ff57fe349e1335039230e14b9fc0cb1}
+Call the member function to write a block buffer to the serial stream of console. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & is a pointer to a block data with the content to be written. \\
+\hline
+\mbox{\tt in}  & {\em size} & is a integer value to specified the size of block to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the how many bytes to write. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+console.\-h\end{DoxyCompactItemize}

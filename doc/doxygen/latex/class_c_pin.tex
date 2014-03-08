@@ -1,0 +1,97 @@
+\hypertarget{class_c_pin}{\section{C\-Pin Class Reference}
+\label{class_c_pin}\index{C\-Pin@{C\-Pin}}
+}
+
+
+pin output/input control.  
+
+
+
+
+{\ttfamily \#include \char`\"{}class/pin.\-h\char`\"{}}
+
+Inheritance diagram for C\-Pin\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_pin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_pin_a7338f2960b4d8992c43f3c6067742ded}{C\-Pin} (P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T p)
+\item 
+\hypertarget{class_c_pin_a84cd9c4613a9b53f00e52c23b4eed050}{virtual void {\bfseries output} (P\-I\-N\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T mode=N\-O\-T\-\_\-\-O\-P\-E\-N, P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T def\-Value=L\-O\-W)}\label{class_c_pin_a84cd9c4613a9b53f00e52c23b4eed050}
+
+\item 
+\hypertarget{class_c_pin_a21aa5b473c1a3637a487c7724f8b9fcf}{virtual void {\bfseries input} (P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T mode=I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-P\-U\-L\-L\-\_\-\-U\-P)}\label{class_c_pin_a21aa5b473c1a3637a487c7724f8b9fcf}
+
+\item 
+\hypertarget{class_c_pin_a1fc3486f4afea4de56ae677c20600551}{virtual void {\bfseries write} (P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T val)}\label{class_c_pin_a1fc3486f4afea4de56ae677c20600551}
+
+\item 
+\hypertarget{class_c_pin_a02060b0c9bbf0f75dead7bef1c75ce6b}{virtual P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T {\bfseries read} ()}\label{class_c_pin_a02060b0c9bbf0f75dead7bef1c75ce6b}
+
+\item 
+\hypertarget{class_c_pin_a240de24c726724aeda90bfacf1d50cc5}{virtual void {\bfseries invert} ()}\label{class_c_pin_a240de24c726724aeda90bfacf1d50cc5}
+
+\item 
+\hypertarget{class_c_pin_a7d125bef83689d0f1db13b3f1acbd05e}{void {\bfseries operator=} (P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T val)}\label{class_c_pin_a7d125bef83689d0f1db13b3f1acbd05e}
+
+\item 
+\hypertarget{class_c_pin_a01428eca1b98e2e194bd0848b3eb8904}{void {\bfseries operator=} (\hyperlink{class_c_pin}{C\-Pin} \&pin)}\label{class_c_pin_a01428eca1b98e2e194bd0848b3eb8904}
+
+\item 
+\hypertarget{class_c_pin_a9037649d1e88192f5fde46b810c71299}{{\bfseries operator P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T} ()}\label{class_c_pin_a9037649d1e88192f5fde46b810c71299}
+
+\item 
+\hypertarget{class_c_pin_a5ec08fca85a5f9472e82588a6a895b8f}{P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T {\bfseries operator!} ()}\label{class_c_pin_a5ec08fca85a5f9472e82588a6a895b8f}
+
+\item 
+\hypertarget{class_c_pin_ae9f57493334eeb6e69a77a0cf4e50f95}{bool {\bfseries operator==} (P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T val)}\label{class_c_pin_ae9f57493334eeb6e69a77a0cf4e50f95}
+
+\item 
+\hypertarget{class_c_pin_aae98a7d34d72ccc58b6d799f7ad2e12e}{bool {\bfseries operator!=} (P\-I\-N\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T val)}\label{class_c_pin_aae98a7d34d72ccc58b6d799f7ad2e12e}
+
+\item 
+\hypertarget{class_c_pin_a5e6cdf81b6a8869e3c1e78dffb6ddca5}{P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T {\bfseries name} ()}\label{class_c_pin_a5e6cdf81b6a8869e3c1e78dffb6ddca5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+pin output/input control. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_pin_a7338f2960b4d8992c43f3c6067742ded}{\index{C\-Pin@{C\-Pin}!C\-Pin@{C\-Pin}}
+\index{C\-Pin@{C\-Pin}!CPin@{C\-Pin}}
+\subsubsection[{C\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}C\-Pin\-::\-C\-Pin (
+\begin{DoxyParamCaption}
+\item[{P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_c_pin_a7338f2960b4d8992c43f3c6067742ded}
+Constructs a \hyperlink{class_c_pin}{C\-Pin} object to connect to the specified pin. 
+\begin{DoxyParams}{Parameters}
+{\em p} & ... are P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T to specified a pin to the object.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+Example:
+        \hyperlink{class_c_pin}{CPin} key(P21);      \textcolor{comment}{// Create a key object to connect to pin 21.}
+        key.input();        \textcolor{comment}{// set the key object as a input.}
+
+        \textcolor{keywordflow}{if} ( key==LOW ) \{   \textcolor{comment}{// check the pin level}
+
+        \}
+\end{DoxyCode}
+
+
+\begin{DoxyRemark}{Remarks}
+to 'E\-N\-D' of the pin arguments is M\-U\-S\-T!! 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+pin.\-h\end{DoxyCompactItemize}

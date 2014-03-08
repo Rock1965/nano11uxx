@@ -1,0 +1,299 @@
+\hypertarget{class_c_serial}{\section{C\-Serial Class Reference}
+\label{class_c_serial}\index{C\-Serial@{C\-Serial}}
+}
+Inheritance diagram for C\-Serial\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_serial}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T} \{ \\*
+\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E} = 4, 
+\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40aa157a4ef710e04651e3aaf61a4d96ad9}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-O\-D\-D} = 0, 
+\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a4b7452e8ef848287eca86b7ea4411e65}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-E\-V\-E\-N} = 1, 
+\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a20c9bc3b3fa95b78898159cd2680e007}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-1} = 2, 
+\\*
+\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a660aab6ba15f9c94cc9963ff226a77eb}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-0} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em U\-A\-R\-T Parity type definitions. \end{DoxyCompactList}\item 
+enum \hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T} \{ \hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a7ac317a766becd83f58a2daa007fed1e}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-5} = 0, 
+\hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a6c31f7e06c7a6779b6d72d37aba52fb1}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-6}, 
+\hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3abf533a46435efaddb8e38b9b9fe53eff}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-7}, 
+\hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}
+ \}
+\begin{DoxyCompactList}\small\item\em U\-A\-R\-T Databit type definitions. \end{DoxyCompactList}\item 
+enum \hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04b}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T} \{ \hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1} = (0), 
+\hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04bafe7ff299f68959471436234643298e71}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-2}
+ \}
+\begin{DoxyCompactList}\small\item\em U\-A\-R\-T Stop bit type definitions. \end{DoxyCompactList}\item 
+enum \hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1}{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T} \{ \hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0} = 0, 
+\hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a2d29eb800e28d845f00b9fd5df1b955c}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V1}, 
+\hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a3ca31e41f3d74e387b0ff625a927bcf4}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V2}, 
+\hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a6893ab299c8d6be2e17efb39cd05e1a1}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V3}
+ \}
+\begin{DoxyCompactList}\small\item\em R\-X F\-I\-F\-O Trigger Level type definitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_serial_ad528b7355f527eabc415f6a8017745f4}{C\-Serial} (size\-\_\-t fifo\-\_\-size=32)
+\item 
+virtual void \hyperlink{class_c_serial_aff7c822bada51065ad52542fb9515be6}{enable} (uint32\-\_\-t baudrate, \hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T} parity=\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E}, \hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T} databits=\hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}, \hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04b}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T} stopbits=\hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1}, \hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1}{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T} level=\hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0})
+\item 
+\hypertarget{class_c_serial_a0c80ea521e310305579e787f21a55233}{void {\bfseries settings} (uint32\-\_\-t baudrate, \hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T} parity=\hyperlink{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E}, \hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T} databits=\hyperlink{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}, \hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04b}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T} stopbits=\hyperlink{class_c_serial_af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1}, \hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1}{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T} level=\hyperlink{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0})}\label{class_c_serial_a0c80ea521e310305579e787f21a55233}
+
+\item 
+virtual int \hyperlink{class_c_serial_a0748723f610ddcfdc34286dbbfbd4917}{readable} ()
+\item 
+virtual int \hyperlink{class_c_serial_ac59cfe80216e1fb7eb479017f0bb8e7f}{writeable} ()
+\item 
+virtual int \hyperlink{class_c_serial_a9b658bf4bc4d81413627bc2fe81e1471}{read} (void $\ast$buf, int len, bool block=true)
+\item 
+virtual int \hyperlink{class_c_serial_adef6d3e77843c65617b7cb555c2f8732}{write} (const void $\ast$buf, int len, bool block=true)
+\item 
+virtual void \hyperlink{class_c_serial_a68aecf6351423ae0e8791870c9e694bf}{flush} ()
+\item 
+virtual void \hyperlink{class_c_serial_a678403bcefc3bd7dfc603c334383b8df}{begin} (uint32\-\_\-t speed)
+\item 
+virtual void \hyperlink{class_c_serial_a4fb5a06c1d1f746c834088c8beeb3097}{end} ()
+\item 
+virtual int \hyperlink{class_c_serial_a5c142221c0841e7c961e962c45bd2db7}{available} ()
+\item 
+virtual bool \hyperlink{class_c_serial_ae7c133c4586cd5ca729cd026f813a8a0}{is\-Connected} ()
+\item 
+void \hyperlink{class_c_serial_a9dc5498e6cae5a2d0d12cb57fc6ee335}{handshaking} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3}{\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T}}
+\index{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T}!CSerial@{C\-Serial}}
+\subsubsection[{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-Serial\-::\-U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T}}}\label{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3}
+
+
+U\-A\-R\-T Databit type definitions. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-5@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-5}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-5@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-5}}\item[{\em 
+\hypertarget{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a7ac317a766becd83f58a2daa007fed1e}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-5}\label{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a7ac317a766becd83f58a2daa007fed1e}
+}]U\-A\-R\-T 5 bit data mode \index{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-6@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-6}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-6@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-6}}\item[{\em 
+\hypertarget{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a6c31f7e06c7a6779b6d72d37aba52fb1}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-6}\label{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a6c31f7e06c7a6779b6d72d37aba52fb1}
+}]U\-A\-R\-T 6 bit data mode \index{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-7@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-7}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-7@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-7}}\item[{\em 
+\hypertarget{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3abf533a46435efaddb8e38b9b9fe53eff}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-7}\label{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3abf533a46435efaddb8e38b9b9fe53eff}
+}]U\-A\-R\-T 7 bit data mode \index{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8@{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}}\item[{\em 
+\hypertarget{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25}{U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}\label{class_c_serial_a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25}
+}]U\-A\-R\-T 8 bit data mode \end{description}
+\end{Desc}
+\hypertarget{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1}{\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T@{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T}}
+\index{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T@{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T}!CSerial@{C\-Serial}}
+\subsubsection[{U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-Serial\-::\-U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T}}}\label{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1}
+
+
+R\-X F\-I\-F\-O Trigger Level type definitions. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0}}\item[{\em 
+\hypertarget{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0}\label{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de}
+}]U\-A\-R\-T F\-I\-F\-O trigger level 0\-: 1 character \index{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V1@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V1}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V1@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V1}}\item[{\em 
+\hypertarget{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a2d29eb800e28d845f00b9fd5df1b955c}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V1}\label{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a2d29eb800e28d845f00b9fd5df1b955c}
+}]U\-A\-R\-T F\-I\-F\-O trigger level 1\-: 4 character \index{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V2@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V2}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V2@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V2}}\item[{\em 
+\hypertarget{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a3ca31e41f3d74e387b0ff625a927bcf4}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V2}\label{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a3ca31e41f3d74e387b0ff625a927bcf4}
+}]U\-A\-R\-T F\-I\-F\-O trigger level 2\-: 8 character \index{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V3@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V3}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V3@{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V3}}\item[{\em 
+\hypertarget{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a6893ab299c8d6be2e17efb39cd05e1a1}{U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V3}\label{class_c_serial_a767bb157f0f469eb5bf5c99b8ada42f1a6893ab299c8d6be2e17efb39cd05e1a1}
+}]U\-A\-R\-T F\-I\-F\-O trigger level 3\-: 14 character \end{description}
+\end{Desc}
+\hypertarget{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40}{\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T}}
+\index{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T}!CSerial@{C\-Serial}}
+\subsubsection[{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-Serial\-::\-U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T}}}\label{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40}
+
+
+U\-A\-R\-T Parity type definitions. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E}\label{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4}
+}]No parity \index{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-O\-D\-D@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-O\-D\-D}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-O\-D\-D@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-O\-D\-D}}\item[{\em 
+\hypertarget{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40aa157a4ef710e04651e3aaf61a4d96ad9}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-O\-D\-D}\label{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40aa157a4ef710e04651e3aaf61a4d96ad9}
+}]Odd parity \index{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-E\-V\-E\-N@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-E\-V\-E\-N}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-E\-V\-E\-N@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-E\-V\-E\-N}}\item[{\em 
+\hypertarget{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a4b7452e8ef848287eca86b7ea4411e65}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-E\-V\-E\-N}\label{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a4b7452e8ef848287eca86b7ea4411e65}
+}]Even parity \index{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-1@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-1}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-1@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-1}}\item[{\em 
+\hypertarget{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a20c9bc3b3fa95b78898159cd2680e007}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-1}\label{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a20c9bc3b3fa95b78898159cd2680e007}
+}]Forced \char`\"{}1\char`\"{} stick parity \index{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-0@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-0}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-0@{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-0}}\item[{\em 
+\hypertarget{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a660aab6ba15f9c94cc9963ff226a77eb}{U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-S\-P\-\_\-0}\label{class_c_serial_ad38b0926868c6cfabb59e2da94f1cf40a660aab6ba15f9c94cc9963ff226a77eb}
+}]Forced \char`\"{}0\char`\"{} stick parity \end{description}
+\end{Desc}
+\hypertarget{class_c_serial_af02af389f5596b7b40cf0d2ece57b04b}{\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T@{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T}}
+\index{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T@{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T}!CSerial@{C\-Serial}}
+\subsubsection[{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-Serial\-::\-U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T}}}\label{class_c_serial_af02af389f5596b7b40cf0d2ece57b04b}
+
+
+U\-A\-R\-T Stop bit type definitions. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1@{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1@{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1}}\item[{\em 
+\hypertarget{class_c_serial_af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1}\label{class_c_serial_af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907}
+}]U\-A\-R\-T 1 Stop Bits Select \index{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-2@{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-2}!C\-Serial@{C\-Serial}}\index{C\-Serial@{C\-Serial}!U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-2@{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-2}}\item[{\em 
+\hypertarget{class_c_serial_af02af389f5596b7b40cf0d2ece57b04bafe7ff299f68959471436234643298e71}{U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-2}\label{class_c_serial_af02af389f5596b7b40cf0d2ece57b04bafe7ff299f68959471436234643298e71}
+}]U\-A\-R\-T Two Stop Bits Select \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_serial_ad528b7355f527eabc415f6a8017745f4}{\index{C\-Serial@{C\-Serial}!C\-Serial@{C\-Serial}}
+\index{C\-Serial@{C\-Serial}!CSerial@{C\-Serial}}
+\subsubsection[{C\-Serial}]{\setlength{\rightskip}{0pt plus 5cm}C\-Serial\-::\-C\-Serial (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{fifo\-\_\-size = {\ttfamily 32}}
+\end{DoxyParamCaption}
+)}}\label{class_c_serial_ad528b7355f527eabc415f6a8017745f4}
+Constructs a \hyperlink{class_c_serial}{C\-Serial} object. 
+\begin{DoxyParams}{Parameters}
+{\em fifo\-\_\-size} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_serial_a5c142221c0841e7c961e962c45bd2db7}{\index{C\-Serial@{C\-Serial}!available@{available}}
+\index{available@{available}!CSerial@{C\-Serial}}
+\subsubsection[{available}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Serial\-::available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_serial_a5c142221c0841e7c961e962c45bd2db7}
+Call the member function to check that receive buffer is ready. \begin{DoxyNote}{Note}
+The 'available' is an inline code to call the exist \hyperlink{class_c_serial_a0748723f610ddcfdc34286dbbfbd4917}{readable()} member function. 
+\end{DoxyNote}
+\hypertarget{class_c_serial_a678403bcefc3bd7dfc603c334383b8df}{\index{C\-Serial@{C\-Serial}!begin@{begin}}
+\index{begin@{begin}!CSerial@{C\-Serial}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Serial\-::begin (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_serial_a678403bcefc3bd7dfc603c334383b8df}
+Call the member function to begin the serial port. \begin{DoxyNote}{Note}
+The 'begin' is an inline code to call the exist settings() member function. 
+\end{DoxyNote}
+\hypertarget{class_c_serial_aff7c822bada51065ad52542fb9515be6}{\index{C\-Serial@{C\-Serial}!enable@{enable}}
+\index{enable@{enable}!CSerial@{C\-Serial}}
+\subsubsection[{enable}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Serial\-::enable (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{baudrate, }
+\item[{{\bf U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T}}]{parity = {\ttfamily {\bf U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-N\-O\-N\-E}}, }
+\item[{{\bf U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T}}]{databits = {\ttfamily {\bf U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-8}}, }
+\item[{{\bf U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T}}]{stopbits = {\ttfamily {\bf U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-1}}, }
+\item[{{\bf U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T}}]{level = {\ttfamily {\bf U\-A\-R\-T\-\_\-\-F\-I\-F\-O\-\_\-\-T\-R\-G\-L\-E\-V0}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_serial_aff7c822bada51065ad52542fb9515be6}
+Call the member function to enable the serial port. 
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & is a unsigned long integer to specified the data baud-\/rate. \\
+\hline
+{\em parity} & is an U\-A\-R\-T\-\_\-\-P\-A\-R\-I\-T\-Y\-\_\-\-T enumerations. \\
+\hline
+{\em databits} & is an U\-A\-R\-T\-\_\-\-D\-A\-T\-A\-B\-I\-T\-\_\-\-T enumerations. \\
+\hline
+{\em stopbits} & is an U\-A\-R\-T\-\_\-\-S\-T\-O\-P\-B\-I\-T\-\_\-\-T enumerations. \\
+\hline
+{\em level} & is U\-A\-R\-T\-\_\-\-F\-I\-T\-O\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T to trigger how many receiver U\-A\-R\-Tn F\-I\-F\-O characters must be written before an interrupt or D\-M\-A request is activated. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_serial_a4fb5a06c1d1f746c834088c8beeb3097}{\index{C\-Serial@{C\-Serial}!end@{end}}
+\index{end@{end}!CSerial@{C\-Serial}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Serial\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_serial_a4fb5a06c1d1f746c834088c8beeb3097}
+Call the member function to end the serial port. \hypertarget{class_c_serial_a68aecf6351423ae0e8791870c9e694bf}{\index{C\-Serial@{C\-Serial}!flush@{flush}}
+\index{flush@{flush}!CSerial@{C\-Serial}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Serial\-::flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_serial_a68aecf6351423ae0e8791870c9e694bf}
+Call the member function to wait for transmission of outgoing serial data to complete. \hypertarget{class_c_serial_a9dc5498e6cae5a2d0d12cb57fc6ee335}{\index{C\-Serial@{C\-Serial}!handshaking@{handshaking}}
+\index{handshaking@{handshaking}!CSerial@{C\-Serial}}
+\subsubsection[{handshaking}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Serial\-::handshaking (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_serial_a9dc5498e6cae5a2d0d12cb57fc6ee335}
+Enable hardware handshaking R\-T\-S/\-C\-T\-S pins \hypertarget{class_c_serial_ae7c133c4586cd5ca729cd026f813a8a0}{\index{C\-Serial@{C\-Serial}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!CSerial@{C\-Serial}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Serial\-::is\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_serial_ae7c133c4586cd5ca729cd026f813a8a0}
+Call the member function to check that serial port is ready. \hypertarget{class_c_serial_a9b658bf4bc4d81413627bc2fe81e1471}{\index{C\-Serial@{C\-Serial}!read@{read}}
+\index{read@{read}!CSerial@{C\-Serial}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Serial\-::read (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len, }
+\item[{bool}]{block = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_serial_a9b658bf4bc4d81413627bc2fe81e1471}
+Call the member function to read a data block from serial port. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em buf} & is a pointer which contain the data block from serial port. \\
+\hline
+\mbox{\tt in}  & {\em len} & is a integer to specified the buffer length. \\
+\hline
+\mbox{\tt in}  & {\em block} & is a boolean value to specified to wait for reading. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_serial_a0748723f610ddcfdc34286dbbfbd4917}{\index{C\-Serial@{C\-Serial}!readable@{readable}}
+\index{readable@{readable}!CSerial@{C\-Serial}}
+\subsubsection[{readable}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Serial\-::readable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_serial_a0748723f610ddcfdc34286dbbfbd4917}
+Call the member function to check that receive buffer is ready to read. \begin{DoxyReturn}{Returns}
+greater than zero if receive data from serial port. 
+\end{DoxyReturn}
+\hypertarget{class_c_serial_adef6d3e77843c65617b7cb555c2f8732}{\index{C\-Serial@{C\-Serial}!write@{write}}
+\index{write@{write}!CSerial@{C\-Serial}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Serial\-::write (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buf, }
+\item[{int}]{len, }
+\item[{bool}]{block = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_serial_adef6d3e77843c65617b7cb555c2f8732}
+Call the member function to write a data block to serial port 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & is a pointer which data block want to send to serial port. \\
+\hline
+\mbox{\tt in}  & {\em len} & is a integer value to specified the buffer length. \\
+\hline
+\mbox{\tt in}  & {\em block} & is a boolean value to specified to wait for writing. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_serial_ac59cfe80216e1fb7eb479017f0bb8e7f}{\index{C\-Serial@{C\-Serial}!writeable@{writeable}}
+\index{writeable@{writeable}!CSerial@{C\-Serial}}
+\subsubsection[{writeable}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Serial\-::writeable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_serial_ac59cfe80216e1fb7eb479017f0bb8e7f}
+Call the member function to check that transmit buffer is ready to write. \begin{DoxyReturn}{Returns}
+how many bytes can be write to transmit buffer. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+serial.\-h\end{DoxyCompactItemize}

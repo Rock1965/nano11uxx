@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : Jason
- Version     : 1.0.11
- Date		 : 2014/3/2
+ Version     : 1.0.12
+ Date		 : 2014/3/8
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -26,6 +26,8 @@
  2014/2/24	v1.0.10 Rename setup() to advertising() 					Jason
  2014/3/2	v1.0.11 Add onError event to indicate an error occurred.	Jason
  	 	 	 	 	Move setTxPowerLevel member to bleProximity class.
+ 2014/3/8	v1.0.12 Rename member onLoseLink to onLinkLoss				Jason
+ 	 	 	 	 	Rename member onHrControl to onHeartRateControl
  ===============================================================================
  */
 
@@ -40,26 +42,11 @@
 #include "class/mutex.h"
 #include "class/timeout.h"
 
-typedef enum {
-	BLE_TERMINATED =1,
-	BLE_UNACCEPTABLE = 2
-} BLE_DISCONNECT_REASON_T;
-
-typedef enum {
-	BLE_TX_m18dBm 	= 0,	// -18dBm  	(Low)
-	BLE_TX_m12dBm 	= 1,	// -12dBm
-	BLE_TX_m6dBm	= 2,	// -6dBm
-	BLE_TX_0dBm 	= 3		//  0dBm	(High)
-}BLE_TX_POWER_T;
-
-typedef enum {
-	BLE_ERR_OK	= 0,
-	BLE_ERR_HW,				// Hardware Error
-	BLE_ERR_BUF,			// Sender Queue Buffer Full
-	BLE_ERR_ACK_TIMEOUT,	// ACK Timeout
-	BLE_ERR_RSP_TIMEOUT,	// Response Timeout
-	BLE_ERR_DAT_TIMEOUT		// Core Data Timeout
-}BLE_ERR_T;
+/**
+ * \defgroup BLE
+ * BLE is meant the Bluetooth Low Energy
+ *
+ */
 
 #define BLE_RESPONSE_TIMEOUT	3000
 #define DEF_BLE_DEVICENAME		"uCXpresso.BLE"
@@ -71,28 +58,76 @@ typedef enum {
 #define DEF_BLE_CONN_TIMEOUT	1000	// default connection timeout 3sec
 #define DEF_BLE_MFG_DATA		0x1234
 
-//
-// bleSerial stream class
-//
+
+/**\class bleSerial ble_serial.h "class/ble_serial.h"
+ * \brief bleSerial class is a ble core, and inherit from CStream class to provide the stream virtual functions for serial input and output.
+ * the bleSerial class also inherit from the CThread class and can work in background.
+ * \ingroup BLE
+ */
 class bleSerial: public CStream, public CThread {
 public:
-	//
-	// construct
-	//
+	/**Disconnect a BLE connection with a reason.
+	 */
+	typedef enum {
+		BLE_TERMINATED =1,		///< Request termination of the connection with the peer device with the reason "Remote user terminated connection"
+		BLE_UNACCEPTABLE = 2	///< Request termination of the link with the peer device with the reason "Unacceptable connection timing"
+	} BLE_DISCONNECT_REASON_T;
+
+	/**setTxPower sets the output power level of the Bluetooth Low Energy radio.
+	 */
+	typedef enum {
+		BLE_TX_m18dBm 	= 0,	///< -18dBm	(Low)
+		BLE_TX_m12dBm 	= 1,	///< -12dBm
+		BLE_TX_m6dBm	= 2,	///< -6dBm
+		BLE_TX_0dBm 	= 3		///<  0dBm	(High)
+	}BLE_TX_POWER_T;
+
+	/**BLE error code
+	 */
+	typedef enum {
+		BLE_ERR_OK	= 0,
+		BLE_ERR_HW,				///< Hardware Error
+		BLE_ERR_BUF,			///< Sender queue buffer was full
+		BLE_ERR_ACK_TIMEOUT,	///< ACK timeout
+		BLE_ERR_RSP_TIMEOUT,	///< Response timeout
+		BLE_ERR_DAT_TIMEOUT		///< Core data timeout
+	}BLE_ERR_T;
+
+public:
+	/**bleSerial constructor
+	 * \brief bleSerial constructor with a GAT device name.
+	 * \code
+	 * int main() {
+	 * 		...
+	 * 		bleSerial ble("myBLE");
+	 * 		ble.advertising(100);	// set advertising interval 100ms
+	 * 		ble.enable();
+	 * 		...
+	 * 		...
+	 * \endcode
+	 * \param deviceName point to a LPCTSTR string to indicate
+	 * the GAT device name of Bluetooth.
+	 */
 	bleSerial(LPCTSTR deviceName=DEF_BLE_DEVICENAME);
 
-	//
-	// Advertising setup (optional)
-	// Remark:
-	// the advertising() have to call before the enable() member.
-	//
-	void advertising(uint16_t advInterval,					// advInterval : Advertising interval (default 500ms, must >=100ms)
-			   int8_t txPowerLevel=DEF_BLE_TXPOWER,			// txPowerLevel: Advertising txPowerLevel (dBm)
-			   uint16_t connInterval=DEF_BLE_CONN_INTERVAL,	// connInterval: Connection interval (default 10ms)
-			   uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,	// connTimeout : Connection timeout (default 1000ms)
-			   uint16_t manufactureData=DEF_BLE_MFG_DATA);	// manufacture Data
+	/**Broadcast the advertising message when device is not in BLE connection.
+	 * \param advInterval To broadcast the advertising message with the interval time in millisecond.
+	 * \param txPowerLevel To expose the "TxPowerLevel" on the advertising message.
+	 * \param connInterval To expose the "connection interval" on the advertising message.
+	 * \param connTimeout  To expose the "connection timeout" on the advertising message.
+	 * \param manufactureData To expose the "Manufacture Data" on the advertising message.
+	 * \remark advertising(...) have to call before the enable() member.
+	 * \see bleSerial()
+	 */
+	void advertising(uint16_t advInterval,
+			   int8_t txPowerLevel=DEF_BLE_TXPOWER,
+			   uint16_t connInterval=DEF_BLE_CONN_INTERVAL,
+			   uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,
+			   uint16_t manufactureData=DEF_BLE_MFG_DATA);
 
-	// redirect to advertising(...)
+	/**An inline function redirect to advertising() member function.
+	 * \see advertising
+	 */
 	inline void setup(uint16_t advInterval,
 			   int8_t txPowerLevel=DEF_BLE_TXPOWER,
 			   uint16_t connInterval=DEF_BLE_CONN_INTERVAL,
@@ -104,37 +139,136 @@ public:
 	//
 	// Controls
 	//
+
+	/**The enable member is to call the CThread:start() to start the ble engine task.
+	 * \code
+	 * #include "class/ble_serial.h"
+	 * int main() {
+	 * 		bleSerial ble("myBLE");
+	 * 		ble.enable();	// to start the BLE core and Task.
+	 * 		...
+	 * 		...
+	 * }
+	 * \endcode
+	 * \param stack To indicate the stack size of BLE task. default is 128 bytes.
+	 * \return true if start the ble task successful, otherwise is failed.
+	 */
 #ifdef DEBUG
 	bool enable(uint32_t stack=190);
 #else
 	bool enable(uint32_t stack=128);
 #endif
+
+	/**The disable member is to suspend the bleSerail task.
+	 * \note Call enable member to resume the bleSerail task.
+	 */
 	void disable();
 
+	/**Poll the BLE core with the interval time in milliseconds.
+	 * \param ms A millisecond value.
+	 * \note The member is a optional function, and default is 50ms.
+	 */
 	void pollInterval(uint32_t ms);	// Task poll interval, default 50ms
+
+	/**Enable a watchdog on a BLE connection. The watchdog feature will cause the BLE core reset
+	 * when remote (App) crash or lose the connection.
+	 * \param tm A timeout value in millisecond, recommend value is 500~30000. If set the tm to zero, it is meant to disable the watchdog.
+	 * \note The member is an optional function, and default is 10,000ms (10 seconds).
+	 */
 	void watchdog(uint32_t tm);		// The WD timeout will reset the BLE core automatically when APP crash to cause the BLE core lock,
 
 	//
 	// PHY Function
 	//
-	bool	isActived();	// RF front end activity indicator
+	/**To check that radio is activated before the radio becomes active.
+	 * \return true if the radio is activated, otherwise if the radio is inactivated.
+	 */
+	bool	isActived();
+
+	/**To disconnect current connection with a reason.
+	 * \param reason is a BLE_DISCONNECT_REASON_T enumeration.
+	 * \return true if disconnect successful, otherwise, disconnect failed.
+	 */
 	bool	disconnect(BLE_DISCONNECT_REASON_T reason=BLE_TERMINATED);
+
+	/**Set the ouptut power level of the Bluetooth Low Energy radio.
+	 * \param power is a BLE_TX_POWER_T enumeration.
+	 * \return true if set radio power successful, otherwise is failed.
+	 */
 	bool	setRadioTxPower(BLE_TX_POWER_T power);
+
+	/**Get BLE core hardware version.
+	 * \return An uint8_t type value.
+	 */
 	uint8_t getPhyVersion();
 
 	//
 	// Events
 	//
+
+	/**An virtual function call by BLE task and occurs when remote (App) is already to connect the BLE device.
+	 * \remark To override the virtual, the onConnection of child have to call the onConnection of supper class.
+	 * \code
+	 * class myBle: public bleSerial {
+	 * public:
+	 * 		// override the onConnected() virtual function
+	 * 		virtual onConnected() {
+	 * 			bleSerial::onConnection();		// call to parent class
+	 *
+	 * 			// your onConnection event code here:
+	 * 			...
+	 * 			...
+	 * 		}
+	 * 	};
+	 * 	\endcode
+	 */
 	virtual void onConnected();
+
+	/**An virtual function call by BLE task and occurs when remote (App) is already to disconnect the BLE device.
+	 * \remark To override the virtual, the onDisconnection of child have to call the onDisconnection of parent class.
+	 * \code
+	 * class myBle: public bleSerial {
+	 * public:
+	 * 		// override the onConnected() virtual function
+	 * 		virtual onDisconnected() {
+	 * 			bleSerial::onDisconnection();	// call to parent class
+	 *
+	 * 			// your onDisonnection event code here:
+	 * 			...
+	 * 			...
+	 * 		}
+	 * 	};
+	 * 	\endcode
+	 */
 	virtual void onDisconnected();
-	virtual void onWatchdog();										// onWatchdog() event will disconnect & reset BLE core automatically.
+
+	/**An virtual function call by BLE task and occurs when a watchdog timeout on a connection.
+	 * \remark The onWatchdog member will call the reset() member function to reset the BLE core.
+	 */
+	virtual void onWatchdog();
+
+	/**An virtual function call by BLE task and occurs when a BLE hardware error.
+	 * \param error A BLE_ERR_T enumeration.
+	 * \param id A string to a class name. (for debug)
+	 * \note The onError event is a empty function in bleSerial class.
+	 */
 	virtual void onError(BLE_ERR_T err, LPCTSTR id="bleSerial"){}	// onError() Event indicate the error code when an error occurred.
 
 	//
 	// for BLE UART Service
 	// Implement the virtual functions of CStream class
 	//
-	inline  bool isAvailable() { return writeable(); }		// check service is available or not
+
+	/**Use isAvailable to check the service whether opened by remote (App).
+	 * \return true, if service is available. otherwise, the service is not in used.
+	 * \note This isAvailable member is an inline function to redirect to the writeable() member.
+	 * \see writeable
+	 */
+	inline  bool isAvailable() { return writeable(); }
+
+	//
+	// Implement the virtual functions from CStream class
+	//
 	virtual int	 readable();
 	virtual int	 writeable();
 	virtual int  read(void *buf, int len, bool block=true);
@@ -142,20 +276,11 @@ public:
 	virtual bool isConnected();
 	virtual void flush();
 
-	//
-	// for Immediate Alert Service (for Proximity and internal use)
-	//
-	virtual void onAlert(uint8_t level);
-	virtual void onLoseLink(uint8_t level);
-
-	//
-	// for Heart Rate service (internal use)
-	//
-	virtual void onHrControl(uint8_t ctrl);
 
 	//
 	// PRIVATE, internal used
 	//
+	/*! \cond PRIVATE */
 	virtual ~bleSerial();
 			void reset();
 	virtual void onResponseCommandHook(void *data);
@@ -171,6 +296,15 @@ public:
 	uint16_t m_conTimeout;
 	uint16_t m_mfgData;
 	int8_t	 m_txPowerLevel;
+
+	virtual void onAlert(uint8_t level);
+	virtual void onLinkLoss(uint8_t level);
+
+	/**onHeartRateControl is call by BLE task.
+	 * \param ctrl if 1, resets the value of the Energy Expended field in the Heart Rate Measurement. otherwise reserved.
+	 */
+	virtual void onHeartRateControl(uint8_t ctrl);
+
 
 protected:
 	//
@@ -212,6 +346,7 @@ friend class bleDeviceInfo;
 #undef BLE_PROXIMITY_H_
 #undef BLE_HEARTRATE_H_
 #undef BLE_DEVINFO_H_
+	/*! \endcond */
 };
 
 extern bleSerial *objBLE;

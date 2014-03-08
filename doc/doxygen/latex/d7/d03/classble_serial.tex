@@ -1,0 +1,552 @@
+\hypertarget{classble_serial}{\section{ble\-Serial Class Reference}
+\label{classble_serial}\index{ble\-Serial@{ble\-Serial}}
+}
+
+
+\hyperlink{classble_serial}{ble\-Serial} class is a ble core, and inherit from \hyperlink{class_c_stream}{C\-Stream} class to provide the stream virtual functions for serial input and output. the \hyperlink{classble_serial}{ble\-Serial} class also inherit from the \hyperlink{class_c_thread}{C\-Thread} class and can work in background.  
+
+
+
+
+{\ttfamily \#include \char`\"{}class/ble\-\_\-serial.\-h\char`\"{}}
+
+Inheritance diagram for ble\-Serial\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d7/d03/classble_serial}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classble_serial_a5a50139216d995997ee79d3bd058bfe6}{B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T} \{ \hyperlink{classble_serial_a5a50139216d995997ee79d3bd058bfe6aed29c5e9584bc5b1a88b9fb00e9962f3}{B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D} =1, 
+\hyperlink{classble_serial_a5a50139216d995997ee79d3bd058bfe6a81c6b69282982367c7145cb4e438a2cb}{B\-L\-E\-\_\-\-U\-N\-A\-C\-C\-E\-P\-T\-A\-B\-L\-E} = 2
+ \}
+\item 
+enum \hyperlink{classble_serial_a5a80fa5bef696de05146980acdd68f3c}{B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T} \{ \hyperlink{classble_serial_a5a80fa5bef696de05146980acdd68f3ca27638a73c01d8094a95adaf459c9eb2b}{B\-L\-E\-\_\-\-T\-X\-\_\-m18d\-Bm} = 0, 
+\hyperlink{classble_serial_a5a80fa5bef696de05146980acdd68f3caba061502901a1f7ea1256511ed1b2b29}{B\-L\-E\-\_\-\-T\-X\-\_\-m12d\-Bm} = 1, 
+\hyperlink{classble_serial_a5a80fa5bef696de05146980acdd68f3ca858fa427361b25178ae80cb31bc4cddc}{B\-L\-E\-\_\-\-T\-X\-\_\-m6d\-Bm} = 2, 
+\hyperlink{classble_serial_a5a80fa5bef696de05146980acdd68f3ca4193a6771ef19e12f25a26af196184ff}{B\-L\-E\-\_\-\-T\-X\-\_\-0d\-Bm} = 3
+ \}
+\item 
+enum \hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T} \{ \\*
+\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2a8cd412532141e50b0d447d2bcd997dbe}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-O\-K} = 0, 
+\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2a276e0d38e986fe60284f6a985ac53689}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-H\-W}, 
+\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2a17a9d88bfd8cf2ceb25a09c8e87a006b}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-B\-U\-F}, 
+\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2ae4611cf47cef2fe6faf9f27d4e5b4ae5}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-A\-C\-K\-\_\-\-T\-I\-M\-E\-O\-U\-T}, 
+\\*
+\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2afc80c13721c45e057beb1d051378d122}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-R\-S\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T}, 
+\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2ae0166099b514f110064fb8962bf1b292}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-D\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classble_serial_a835c884c9209b074cf82e5a3f0a322ec}{ble\-Serial} (L\-P\-C\-T\-S\-T\-R device\-Name=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-D\-E\-V\-I\-C\-E\-N\-A\-M\-E)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classble_serial}{ble\-Serial} constructor with a G\-A\-T device name. \end{DoxyCompactList}\item 
+void \hyperlink{classble_serial_a0ee4ea2d6d4a38bbd64968336f85c2e9}{advertising} (uint16\-\_\-t adv\-Interval, int8\-\_\-t tx\-Power\-Level=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-T\-X\-P\-O\-W\-E\-R, uint16\-\_\-t conn\-Interval=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-C\-O\-N\-N\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L, uint16\-\_\-t conn\-Timeout=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-C\-O\-N\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T, uint16\-\_\-t manufacture\-Data=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-M\-F\-G\-\_\-\-D\-A\-T\-A)
+\item 
+void \hyperlink{classble_serial_acc1e214474c9e98705fb7f363a3eee74}{setup} (uint16\-\_\-t adv\-Interval, int8\-\_\-t tx\-Power\-Level=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-T\-X\-P\-O\-W\-E\-R, uint16\-\_\-t conn\-Interval=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-C\-O\-N\-N\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L, uint16\-\_\-t conn\-Timeout=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-C\-O\-N\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T, uint16\-\_\-t manufacture\-Data=D\-E\-F\-\_\-\-B\-L\-E\-\_\-\-M\-F\-G\-\_\-\-D\-A\-T\-A)
+\item 
+bool \hyperlink{classble_serial_a3ff1e4b271a7d225e73abd337043d8e4}{enable} (uint32\-\_\-t stack=128)
+\item 
+void \hyperlink{classble_serial_a08b3a82e95aa527433c04b4a6a3d81d4}{disable} ()
+\item 
+void \hyperlink{classble_serial_a4188fc1bab7e077cf1d573024f092c7b}{poll\-Interval} (uint32\-\_\-t ms)
+\item 
+void \hyperlink{classble_serial_a2588b21bf80d35a866dc7e47f97142df}{watchdog} (uint32\-\_\-t tm)
+\item 
+bool \hyperlink{classble_serial_ab766015c18f219e359edc1c560d66893}{is\-Actived} ()
+\item 
+bool \hyperlink{classble_serial_a5e63823fd7ff0ef0ac5447cd265b5a5c}{disconnect} (\hyperlink{classble_serial_a5a50139216d995997ee79d3bd058bfe6}{B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T} reason=\hyperlink{classble_serial_a5a50139216d995997ee79d3bd058bfe6aed29c5e9584bc5b1a88b9fb00e9962f3}{B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D})
+\item 
+bool \hyperlink{classble_serial_acddad359ad714bd31358c96966839a61}{set\-Radio\-Tx\-Power} (\hyperlink{classble_serial_a5a80fa5bef696de05146980acdd68f3c}{B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T} power)
+\item 
+uint8\-\_\-t \hyperlink{classble_serial_a6aea16b265aa98f0a540f71b75965408}{get\-Phy\-Version} ()
+\item 
+virtual void \hyperlink{classble_serial_adb930ce55295ff7eb6ab5bdbeb702749}{on\-Connected} ()
+\item 
+virtual void \hyperlink{classble_serial_aa6f5116c8bcf05011a05ad5e2967c318}{on\-Disconnected} ()
+\item 
+virtual void \hyperlink{classble_serial_a8af315789cc459a1fde96ac80ca9ffb7}{on\-Watchdog} ()
+\item 
+virtual void \hyperlink{classble_serial_a8a0622f5d10fe2242978a16b2d1e6ee4}{on\-Error} (\hyperlink{classble_serial_a46e393eb31428307fde06a2788920ce2}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T} err, L\-P\-C\-T\-S\-T\-R id=\char`\"{}ble\-Serial\char`\"{})
+\item 
+bool \hyperlink{classble_serial_a1691c5c5655043512bf1c462e6928488}{is\-Available} ()
+\item 
+virtual int \hyperlink{classble_serial_a59dca8e3e2d6945a699347f4c4708fd4}{readable} ()
+\item 
+virtual int \hyperlink{classble_serial_ac42a8f805e6784e0fa2064270b5288a1}{writeable} ()
+\item 
+virtual int \hyperlink{classble_serial_a186e09706d9b6e58a6213ac0b6a220ad}{read} (void $\ast$buf, int len, bool block=true)
+\item 
+virtual int \hyperlink{classble_serial_ab9d147e7dcb9436f390f2ad29d539930}{write} (const void $\ast$buf, int len, bool block=true)
+\item 
+virtual bool \hyperlink{classble_serial_aebfde0d9a7583cb641ac60f02df7cd77}{is\-Connected} ()
+\item 
+virtual void \hyperlink{classble_serial_ad41b78cc1b0fc02ce65248147b32ffa8}{flush} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classble_serial}{ble\-Serial} class is a ble core, and inherit from \hyperlink{class_c_stream}{C\-Stream} class to provide the stream virtual functions for serial input and output. the \hyperlink{classble_serial}{ble\-Serial} class also inherit from the \hyperlink{class_c_thread}{C\-Thread} class and can work in background. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classble_serial_a5a50139216d995997ee79d3bd058bfe6}{\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T@{B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T}}
+\index{B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T@{B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T}!bleSerial@{ble\-Serial}}
+\subsubsection[{B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ble\-Serial\-::\-B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T}}}\label{classble_serial_a5a50139216d995997ee79d3bd058bfe6}
+Disconnect a B\-L\-E connection with a reason. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D@{B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D@{B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}}\item[{\em 
+\hypertarget{classble_serial_a5a50139216d995997ee79d3bd058bfe6aed29c5e9584bc5b1a88b9fb00e9962f3}{B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}\label{classble_serial_a5a50139216d995997ee79d3bd058bfe6aed29c5e9584bc5b1a88b9fb00e9962f3}
+}]Request termination of the connection with the peer device with the reason \char`\"{}\-Remote user terminated connection\char`\"{}. \index{B\-L\-E\-\_\-\-U\-N\-A\-C\-C\-E\-P\-T\-A\-B\-L\-E@{B\-L\-E\-\_\-\-U\-N\-A\-C\-C\-E\-P\-T\-A\-B\-L\-E}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-U\-N\-A\-C\-C\-E\-P\-T\-A\-B\-L\-E@{B\-L\-E\-\_\-\-U\-N\-A\-C\-C\-E\-P\-T\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{classble_serial_a5a50139216d995997ee79d3bd058bfe6a81c6b69282982367c7145cb4e438a2cb}{B\-L\-E\-\_\-\-U\-N\-A\-C\-C\-E\-P\-T\-A\-B\-L\-E}\label{classble_serial_a5a50139216d995997ee79d3bd058bfe6a81c6b69282982367c7145cb4e438a2cb}
+}]Request termination of the link with the peer device with the reason \char`\"{}\-Unacceptable connection timing\char`\"{}. \end{description}
+\end{Desc}
+\hypertarget{classble_serial_a5a80fa5bef696de05146980acdd68f3c}{\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T@{B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T}}
+\index{B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T@{B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T}!bleSerial@{ble\-Serial}}
+\subsubsection[{B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ble\-Serial\-::\-B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T}}}\label{classble_serial_a5a80fa5bef696de05146980acdd68f3c}
+set\-Tx\-Power sets the output power level of the Bluetooth Low Energy radio. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\-L\-E\-\_\-\-T\-X\-\_\-m18d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-m18d\-Bm}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-T\-X\-\_\-m18d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-m18d\-Bm}}\item[{\em 
+\hypertarget{classble_serial_a5a80fa5bef696de05146980acdd68f3ca27638a73c01d8094a95adaf459c9eb2b}{B\-L\-E\-\_\-\-T\-X\-\_\-m18d\-Bm}\label{classble_serial_a5a80fa5bef696de05146980acdd68f3ca27638a73c01d8094a95adaf459c9eb2b}
+}]-\/18d\-Bm (Low) \index{B\-L\-E\-\_\-\-T\-X\-\_\-m12d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-m12d\-Bm}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-T\-X\-\_\-m12d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-m12d\-Bm}}\item[{\em 
+\hypertarget{classble_serial_a5a80fa5bef696de05146980acdd68f3caba061502901a1f7ea1256511ed1b2b29}{B\-L\-E\-\_\-\-T\-X\-\_\-m12d\-Bm}\label{classble_serial_a5a80fa5bef696de05146980acdd68f3caba061502901a1f7ea1256511ed1b2b29}
+}]-\/12d\-Bm \index{B\-L\-E\-\_\-\-T\-X\-\_\-m6d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-m6d\-Bm}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-T\-X\-\_\-m6d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-m6d\-Bm}}\item[{\em 
+\hypertarget{classble_serial_a5a80fa5bef696de05146980acdd68f3ca858fa427361b25178ae80cb31bc4cddc}{B\-L\-E\-\_\-\-T\-X\-\_\-m6d\-Bm}\label{classble_serial_a5a80fa5bef696de05146980acdd68f3ca858fa427361b25178ae80cb31bc4cddc}
+}]-\/6d\-Bm \index{B\-L\-E\-\_\-\-T\-X\-\_\-0d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-0d\-Bm}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-T\-X\-\_\-0d\-Bm@{B\-L\-E\-\_\-\-T\-X\-\_\-0d\-Bm}}\item[{\em 
+\hypertarget{classble_serial_a5a80fa5bef696de05146980acdd68f3ca4193a6771ef19e12f25a26af196184ff}{B\-L\-E\-\_\-\-T\-X\-\_\-0d\-Bm}\label{classble_serial_a5a80fa5bef696de05146980acdd68f3ca4193a6771ef19e12f25a26af196184ff}
+}]0d\-Bm (High) \end{description}
+\end{Desc}
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2}{\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T}}
+\index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T}!bleSerial@{ble\-Serial}}
+\subsubsection[{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ble\-Serial\-::\-B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T}}}\label{classble_serial_a46e393eb31428307fde06a2788920ce2}
+B\-L\-E error code \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-O\-K@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-O\-K}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-O\-K@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-O\-K}}\item[{\em 
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2a8cd412532141e50b0d447d2bcd997dbe}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-O\-K}\label{classble_serial_a46e393eb31428307fde06a2788920ce2a8cd412532141e50b0d447d2bcd997dbe}
+}]\index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-H\-W@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-H\-W}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-H\-W@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-H\-W}}\item[{\em 
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2a276e0d38e986fe60284f6a985ac53689}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-H\-W}\label{classble_serial_a46e393eb31428307fde06a2788920ce2a276e0d38e986fe60284f6a985ac53689}
+}]Hardware Error. \index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-B\-U\-F@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-B\-U\-F}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-B\-U\-F@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-B\-U\-F}}\item[{\em 
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2a17a9d88bfd8cf2ceb25a09c8e87a006b}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-B\-U\-F}\label{classble_serial_a46e393eb31428307fde06a2788920ce2a17a9d88bfd8cf2ceb25a09c8e87a006b}
+}]Sender queue buffer was full. \index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-A\-C\-K\-\_\-\-T\-I\-M\-E\-O\-U\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-A\-C\-K\-\_\-\-T\-I\-M\-E\-O\-U\-T}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-A\-C\-K\-\_\-\-T\-I\-M\-E\-O\-U\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-A\-C\-K\-\_\-\-T\-I\-M\-E\-O\-U\-T}}\item[{\em 
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2ae4611cf47cef2fe6faf9f27d4e5b4ae5}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-A\-C\-K\-\_\-\-T\-I\-M\-E\-O\-U\-T}\label{classble_serial_a46e393eb31428307fde06a2788920ce2ae4611cf47cef2fe6faf9f27d4e5b4ae5}
+}]A\-C\-K timeout. \index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-R\-S\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-R\-S\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-R\-S\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-R\-S\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T}}\item[{\em 
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2afc80c13721c45e057beb1d051378d122}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-R\-S\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T}\label{classble_serial_a46e393eb31428307fde06a2788920ce2afc80c13721c45e057beb1d051378d122}
+}]Response timeout. \index{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-D\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-D\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}!ble\-Serial@{ble\-Serial}}\index{ble\-Serial@{ble\-Serial}!B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-D\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T@{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-D\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}}\item[{\em 
+\hypertarget{classble_serial_a46e393eb31428307fde06a2788920ce2ae0166099b514f110064fb8962bf1b292}{B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-D\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}\label{classble_serial_a46e393eb31428307fde06a2788920ce2ae0166099b514f110064fb8962bf1b292}
+}]Core data timeout. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classble_serial_a835c884c9209b074cf82e5a3f0a322ec}{\index{ble\-Serial@{ble\-Serial}!ble\-Serial@{ble\-Serial}}
+\index{ble\-Serial@{ble\-Serial}!bleSerial@{ble\-Serial}}
+\subsubsection[{ble\-Serial}]{\setlength{\rightskip}{0pt plus 5cm}ble\-Serial\-::ble\-Serial (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-T\-S\-T\-R}]{device\-Name = {\ttfamily DEF\-\_\-BLE\-\_\-DEVICENAME}}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a835c884c9209b074cf82e5a3f0a322ec}
+
+
+\hyperlink{classble_serial}{ble\-Serial} constructor with a G\-A\-T device name. 
+
+\hyperlink{classble_serial}{ble\-Serial} constructor 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} main() \{
+        ...
+        \hyperlink{classble_serial}{bleSerial} ble(\textcolor{stringliteral}{"myBLE"});
+        ble.advertising(100);   \textcolor{comment}{// set advertising interval 100ms}
+        ble.enable();
+        ...
+        ...
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em device\-Name} & point to a L\-P\-C\-T\-S\-T\-R string to indicate the G\-A\-T device name of Bluetooth. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classble_serial_a0ee4ea2d6d4a38bbd64968336f85c2e9}{\index{ble\-Serial@{ble\-Serial}!advertising@{advertising}}
+\index{advertising@{advertising}!bleSerial@{ble\-Serial}}
+\subsubsection[{advertising}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Serial\-::advertising (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{adv\-Interval, }
+\item[{int8\-\_\-t}]{tx\-Power\-Level = {\ttfamily DEF\-\_\-BLE\-\_\-TXPOWER}, }
+\item[{uint16\-\_\-t}]{conn\-Interval = {\ttfamily DEF\-\_\-BLE\-\_\-CONN\-\_\-INTERVAL}, }
+\item[{uint16\-\_\-t}]{conn\-Timeout = {\ttfamily DEF\-\_\-BLE\-\_\-CONN\-\_\-TIMEOUT}, }
+\item[{uint16\-\_\-t}]{manufacture\-Data = {\ttfamily DEF\-\_\-BLE\-\_\-MFG\-\_\-DATA}}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a0ee4ea2d6d4a38bbd64968336f85c2e9}
+Broadcast the advertising message when device is not in B\-L\-E connection. 
+\begin{DoxyParams}{Parameters}
+{\em adv\-Interval} & To broadcast the advertising message with the interval time in millisecond. \\
+\hline
+{\em tx\-Power\-Level} & To indicate the \char`\"{}\-Tx\-Power\-Level\char`\"{} on the advertising message. \\
+\hline
+{\em conn\-Interval} & To indicate the \char`\"{}connection interval\char`\"{} on the advertising message. \\
+\hline
+{\em conn\-Timeout} & To indicate the \char`\"{}connection timeout\char`\"{} on the advertising message. \\
+\hline
+{\em manufacture\-Data} & To indicate the \char`\"{}\-Manufacture Data\char`\"{} on the advertising message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+advertising(...) have to call before the \hyperlink{classble_serial_a3ff1e4b271a7d225e73abd337043d8e4}{enable()} member. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classble_serial_a835c884c9209b074cf82e5a3f0a322ec}{ble\-Serial()} 
+\end{DoxySeeAlso}
+\hypertarget{classble_serial_acc1e214474c9e98705fb7f363a3eee74}{\index{ble\-Serial@{ble\-Serial}!setup@{setup}}
+\index{setup@{setup}!bleSerial@{ble\-Serial}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Serial\-::setup (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{adv\-Interval, }
+\item[{int8\-\_\-t}]{tx\-Power\-Level = {\ttfamily DEF\-\_\-BLE\-\_\-TXPOWER}, }
+\item[{uint16\-\_\-t}]{conn\-Interval = {\ttfamily DEF\-\_\-BLE\-\_\-CONN\-\_\-INTERVAL}, }
+\item[{uint16\-\_\-t}]{conn\-Timeout = {\ttfamily DEF\-\_\-BLE\-\_\-CONN\-\_\-TIMEOUT}, }
+\item[{uint16\-\_\-t}]{manufacture\-Data = {\ttfamily DEF\-\_\-BLE\-\_\-MFG\-\_\-DATA}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classble_serial_acc1e214474c9e98705fb7f363a3eee74}
+An inline function redirect to \hyperlink{classble_serial_a0ee4ea2d6d4a38bbd64968336f85c2e9}{advertising()} member function. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classble_serial_a0ee4ea2d6d4a38bbd64968336f85c2e9}{advertising} 
+\end{DoxySeeAlso}
+\hypertarget{classble_serial_a3ff1e4b271a7d225e73abd337043d8e4}{\index{ble\-Serial@{ble\-Serial}!enable@{enable}}
+\index{enable@{enable}!bleSerial@{ble\-Serial}}
+\subsubsection[{enable}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Serial\-::enable (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{stack = {\ttfamily 128}}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a3ff1e4b271a7d225e73abd337043d8e4}
+The enable member is to call the \hyperlink{class_c_thread}{C\-Thread}\-:\hyperlink{class_c_thread_aacf955d1852e74da1f989251955ee6ec}{start()} to start the ble engine task. 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "class/ble\_serial.h"}
+\textcolor{keywordtype}{int} main() \{
+        \hyperlink{classble_serial}{bleSerial} ble(\textcolor{stringliteral}{"myBLE"});
+        ble.enable();   \textcolor{comment}{// to start the BLE core and Task.}
+        ...
+        ...
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em stack} & To indicate the stack size of B\-L\-E task. default is 128 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if start the ble task successful, otherwise is failed. 
+\end{DoxyReturn}
+\hypertarget{classble_serial_a08b3a82e95aa527433c04b4a6a3d81d4}{\index{ble\-Serial@{ble\-Serial}!disable@{disable}}
+\index{disable@{disable}!bleSerial@{ble\-Serial}}
+\subsubsection[{disable}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Serial\-::disable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a08b3a82e95aa527433c04b4a6a3d81d4}
+The disable member is to suspend the ble\-Serail task. \begin{DoxyNote}{Note}
+Call enable member to resume the ble\-Serail task. 
+\end{DoxyNote}
+\hypertarget{classble_serial_a4188fc1bab7e077cf1d573024f092c7b}{\index{ble\-Serial@{ble\-Serial}!poll\-Interval@{poll\-Interval}}
+\index{poll\-Interval@{poll\-Interval}!bleSerial@{ble\-Serial}}
+\subsubsection[{poll\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Serial\-::poll\-Interval (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{ms}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a4188fc1bab7e077cf1d573024f092c7b}
+Poll the B\-L\-E core with the interval time in milliseconds. 
+\begin{DoxyParams}{Parameters}
+{\em ms} & A millisecond value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The member is a optional function, and default is 50ms. 
+\end{DoxyNote}
+\hypertarget{classble_serial_a2588b21bf80d35a866dc7e47f97142df}{\index{ble\-Serial@{ble\-Serial}!watchdog@{watchdog}}
+\index{watchdog@{watchdog}!bleSerial@{ble\-Serial}}
+\subsubsection[{watchdog}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Serial\-::watchdog (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{tm}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a2588b21bf80d35a866dc7e47f97142df}
+Enable a watchdog on a B\-L\-E connection. The watchdog feature will cause the B\-L\-E core reset when remote (App) crash or lose the connection. 
+\begin{DoxyParams}{Parameters}
+{\em tm} & A timeout value in millisecond, recommend value is 500$\sim$30000. If set the tm to zero, it is meant to disable the watchdog. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The member is an optional function, and default is 10,000ms (10 seconds). 
+\end{DoxyNote}
+\hypertarget{classble_serial_ab766015c18f219e359edc1c560d66893}{\index{ble\-Serial@{ble\-Serial}!is\-Actived@{is\-Actived}}
+\index{is\-Actived@{is\-Actived}!bleSerial@{ble\-Serial}}
+\subsubsection[{is\-Actived}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Serial\-::is\-Actived (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_ab766015c18f219e359edc1c560d66893}
+To check that radio is activated before the radio becomes active. \begin{DoxyReturn}{Returns}
+true if the radio is activated, otherwise if the radio is inactivated. 
+\end{DoxyReturn}
+\hypertarget{classble_serial_a5e63823fd7ff0ef0ac5447cd265b5a5c}{\index{ble\-Serial@{ble\-Serial}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!bleSerial@{ble\-Serial}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Serial\-::disconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T}}]{reason = {\ttfamily {\bf B\-L\-E\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}}}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a5e63823fd7ff0ef0ac5447cd265b5a5c}
+To disconnect current connection with a reason. 
+\begin{DoxyParams}{Parameters}
+{\em reason} & is a B\-L\-E\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-A\-S\-O\-N\-\_\-\-T enumeration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if disconnect successful, otherwise, disconnect failed. 
+\end{DoxyReturn}
+\hypertarget{classble_serial_acddad359ad714bd31358c96966839a61}{\index{ble\-Serial@{ble\-Serial}!set\-Radio\-Tx\-Power@{set\-Radio\-Tx\-Power}}
+\index{set\-Radio\-Tx\-Power@{set\-Radio\-Tx\-Power}!bleSerial@{ble\-Serial}}
+\subsubsection[{set\-Radio\-Tx\-Power}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Serial\-::set\-Radio\-Tx\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T}}]{power}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_acddad359ad714bd31358c96966839a61}
+Set the ouptut power level of the Bluetooth Low Energy radio. 
+\begin{DoxyParams}{Parameters}
+{\em power} & is a B\-L\-E\-\_\-\-T\-X\-\_\-\-P\-O\-W\-E\-R\-\_\-\-T enumeration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if set radio power successful, otherwise is failed. 
+\end{DoxyReturn}
+\hypertarget{classble_serial_a6aea16b265aa98f0a540f71b75965408}{\index{ble\-Serial@{ble\-Serial}!get\-Phy\-Version@{get\-Phy\-Version}}
+\index{get\-Phy\-Version@{get\-Phy\-Version}!bleSerial@{ble\-Serial}}
+\subsubsection[{get\-Phy\-Version}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ble\-Serial\-::get\-Phy\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classble_serial_a6aea16b265aa98f0a540f71b75965408}
+Get B\-L\-E core hardware version. \begin{DoxyReturn}{Returns}
+An uint8\-\_\-t type value. 
+\end{DoxyReturn}
+\hypertarget{classble_serial_adb930ce55295ff7eb6ab5bdbeb702749}{\index{ble\-Serial@{ble\-Serial}!on\-Connected@{on\-Connected}}
+\index{on\-Connected@{on\-Connected}!bleSerial@{ble\-Serial}}
+\subsubsection[{on\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ble\-Serial\-::on\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_adb930ce55295ff7eb6ab5bdbeb702749}
+An virtual function call by B\-L\-E task and occurs when remote (App) is already to connect the B\-L\-E device. \begin{DoxyRemark}{Remarks}
+To override the virtual, the on\-Connection of child have to call the on\-Connection of supper class. 
+\begin{DoxyCode}
+\textcolor{keyword}{class }myBle: \textcolor{keyword}{public} \hyperlink{classble_serial}{bleSerial} \{
+\textcolor{keyword}{public}:
+        \textcolor{comment}{// override the onConnected() virtual function}
+        \textcolor{keyword}{virtual} \hyperlink{classble_serial_adb930ce55295ff7eb6ab5bdbeb702749}{onConnected}() \{
+            bleSerial::onConnection();      \textcolor{comment}{// call to parent class}
+
+            \textcolor{comment}{// your onConnection event code here:}
+            ...
+            ...
+        \}
+    \};
+\end{DoxyCode}
+ 
+\end{DoxyRemark}
+\hypertarget{classble_serial_aa6f5116c8bcf05011a05ad5e2967c318}{\index{ble\-Serial@{ble\-Serial}!on\-Disconnected@{on\-Disconnected}}
+\index{on\-Disconnected@{on\-Disconnected}!bleSerial@{ble\-Serial}}
+\subsubsection[{on\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ble\-Serial\-::on\-Disconnected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_aa6f5116c8bcf05011a05ad5e2967c318}
+An virtual function call by B\-L\-E task and occurs when remote (App) is already to disconnect the B\-L\-E device. \begin{DoxyRemark}{Remarks}
+To override the virtual, the on\-Disconnection of child have to call the on\-Disconnection of parent class. 
+\begin{DoxyCode}
+\textcolor{keyword}{class }myBle: \textcolor{keyword}{public} \hyperlink{classble_serial}{bleSerial} \{
+\textcolor{keyword}{public}:
+        \textcolor{comment}{// override the onConnected() virtual function}
+        \textcolor{keyword}{virtual} \hyperlink{classble_serial_aa6f5116c8bcf05011a05ad5e2967c318}{onDisconnected}() \{
+            bleSerial::onDisconnection();   \textcolor{comment}{// call to parent class}
+
+            \textcolor{comment}{// your onDisonnection event code here:}
+            ...
+            ...
+        \}
+    \};
+\end{DoxyCode}
+ 
+\end{DoxyRemark}
+\hypertarget{classble_serial_a8af315789cc459a1fde96ac80ca9ffb7}{\index{ble\-Serial@{ble\-Serial}!on\-Watchdog@{on\-Watchdog}}
+\index{on\-Watchdog@{on\-Watchdog}!bleSerial@{ble\-Serial}}
+\subsubsection[{on\-Watchdog}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ble\-Serial\-::on\-Watchdog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_a8af315789cc459a1fde96ac80ca9ffb7}
+An virtual function call by B\-L\-E task and occurs when a watchdog timeout on a connection. \begin{DoxyRemark}{Remarks}
+The on\-Watchdog member will call the reset() member function to reset the B\-L\-E core. 
+\end{DoxyRemark}
+\hypertarget{classble_serial_a8a0622f5d10fe2242978a16b2d1e6ee4}{\index{ble\-Serial@{ble\-Serial}!on\-Error@{on\-Error}}
+\index{on\-Error@{on\-Error}!bleSerial@{ble\-Serial}}
+\subsubsection[{on\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ble\-Serial\-::on\-Error (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T}}]{err, }
+\item[{L\-P\-C\-T\-S\-T\-R}]{id = {\ttfamily \char`\"{}bleSerial\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classble_serial_a8a0622f5d10fe2242978a16b2d1e6ee4}
+An virtual function call by B\-L\-E task and occurs when a B\-L\-E hardware error. 
+\begin{DoxyParams}{Parameters}
+{\em error} & A B\-L\-E\-\_\-\-E\-R\-R\-\_\-\-T enumeration. \\
+\hline
+{\em id} & A string to a class name. (for debug) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The on\-Error event is a empty function in \hyperlink{classble_serial}{ble\-Serial} class. 
+\end{DoxyNote}
+\hypertarget{classble_serial_a1691c5c5655043512bf1c462e6928488}{\index{ble\-Serial@{ble\-Serial}!is\-Available@{is\-Available}}
+\index{is\-Available@{is\-Available}!bleSerial@{ble\-Serial}}
+\subsubsection[{is\-Available}]{\setlength{\rightskip}{0pt plus 5cm}bool ble\-Serial\-::is\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classble_serial_a1691c5c5655043512bf1c462e6928488}
+Use is\-Available to check the service whether opened by remote (App). \begin{DoxyReturn}{Returns}
+true, if service is available. otherwise, the service is not in used. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is\-Available member is an inline function to redirect to the \hyperlink{classble_serial_ac42a8f805e6784e0fa2064270b5288a1}{writeable()} member. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classble_serial_ac42a8f805e6784e0fa2064270b5288a1}{writeable} 
+\end{DoxySeeAlso}
+\hypertarget{classble_serial_a59dca8e3e2d6945a699347f4c4708fd4}{\index{ble\-Serial@{ble\-Serial}!readable@{readable}}
+\index{readable@{readable}!bleSerial@{ble\-Serial}}
+\subsubsection[{readable}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ble\-Serial\-::readable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_a59dca8e3e2d6945a699347f4c4708fd4}
+Determine how many data bytes are available to read. \begin{DoxyReturn}{Returns}
+A value to indicate how many data byte is available in the input buffer. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+A pure virtual function have to implement by child class. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{class_c_stream_a96328807241e15017868b845b06fd9e4}{C\-Stream}.
+
+\hypertarget{classble_serial_ac42a8f805e6784e0fa2064270b5288a1}{\index{ble\-Serial@{ble\-Serial}!writeable@{writeable}}
+\index{writeable@{writeable}!bleSerial@{ble\-Serial}}
+\subsubsection[{writeable}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ble\-Serial\-::writeable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_ac42a8f805e6784e0fa2064270b5288a1}
+Determine how many data space are available to write. \begin{DoxyReturn}{Returns}
+A value to indicate how many data space is available in the output buffer. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+A pure virtual function have to implement by child class. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{class_c_stream_a56ec27ee664f1a4eb9910988b78833d5}{C\-Stream}.
+
+\hypertarget{classble_serial_a186e09706d9b6e58a6213ac0b6a220ad}{\index{ble\-Serial@{ble\-Serial}!read@{read}}
+\index{read@{read}!bleSerial@{ble\-Serial}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ble\-Serial\-::read (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len, }
+\item[{bool}]{block = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_a186e09706d9b6e58a6213ac0b6a220ad}
+To read the stream to buffer. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & Destination buffer. \\
+\hline
+\mbox{\tt in}  & {\em len} & Length of destination buffer. \\
+\hline
+\mbox{\tt in}  & {\em block} & If true, to block in the read function unit to the indication length (len) be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value to indicate how many data bytes to read. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+A pure virtual function have to implement by child class. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{class_c_stream_a80977482ffb2f7b626a9f29f437b7d8d}{C\-Stream}.
+
+\hypertarget{classble_serial_ab9d147e7dcb9436f390f2ad29d539930}{\index{ble\-Serial@{ble\-Serial}!write@{write}}
+\index{write@{write}!bleSerial@{ble\-Serial}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ble\-Serial\-::write (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buf, }
+\item[{int}]{len, }
+\item[{bool}]{block = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_ab9d147e7dcb9436f390f2ad29d539930}
+To write the buffer to stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em buf} & Source buffer. \\
+\hline
+\mbox{\tt in}  & {\em len} & Length of source buffer. \\
+\hline
+\mbox{\tt in}  & {\em block} & If true, to block in the write function unit to the indication length (len) be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value to indicate how many data bytes to write. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+A pure virtual function have to implement by child class. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{class_c_stream_a172fe857c74488b881007c65cc2e9552}{C\-Stream}.
+
+\hypertarget{classble_serial_aebfde0d9a7583cb641ac60f02df7cd77}{\index{ble\-Serial@{ble\-Serial}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!bleSerial@{ble\-Serial}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ble\-Serial\-::is\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_aebfde0d9a7583cb641ac60f02df7cd77}
+Check the current connection is valid or not. \begin{DoxyReturn}{Returns}
+true if current connection is valid. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+A pure virtual function have to implement by child class. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{class_c_stream_a7a152e6bda8654064634428d81bd81cb}{C\-Stream}.
+
+\hypertarget{classble_serial_ad41b78cc1b0fc02ce65248147b32ffa8}{\index{ble\-Serial@{ble\-Serial}!flush@{flush}}
+\index{flush@{flush}!bleSerial@{ble\-Serial}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ble\-Serial\-::flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classble_serial_ad41b78cc1b0fc02ce65248147b32ffa8}
+Flush the stream the both input and output buffer \begin{DoxyRemark}{Remarks}
+A pure virtual function have to implement by child class. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{class_c_stream_a5bd707b33627e01c2069b14bbf10694a}{C\-Stream}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+ble\-\_\-serial.\-h\end{DoxyCompactItemize}

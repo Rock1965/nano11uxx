@@ -25,23 +25,49 @@
 #include "class/peripheral.h"
 #include "class/ble_serial.h"
 
+/**The bleBatteryLevel class exposes the state of a battery within a device.
+ * \class bleBatteryLevel ble_battery.h "class/ble_battery.h"
+ * \ingroup BLE
+ */
 class bleBatteryLevel : virtual public CPeripheral {
 public:
+	/**bleBatteryLevel constructor.
+	 * \code
+	 * int main() {
+	 * 		...
+	 * 		bleSerial ble("myBLE");
+	 * 		ble.enable();
+	 * 		...
+	 * 		bleBatteryLevel bat(ble);
+	 * 		...
+	 * 		float val;
+	 * 		uint8_t level;
+	 *
+	 * 		if ( bat.readSystemVoltage(val) ) {
+	 *  		 level = map(val, 2.0f, 3.3f, 0, 100);
+	 *  		 bat.sendBatteryLevel(level);
+	 * 		}
+	 * 		...
+	 * \endcode
+	 * \param[in] ble is a bleSerial class object.
+	 */
 	bleBatteryLevel(bleSerial &ble);
 
-	//
-	// Read System Voltage from Phy (2.0V ~ 3.6V)
-	//
+	/**Use readSystemVoltage to retrieve the voltage of system (V3.3).
+	 * \param[out] voltage is a float type data to receive the system voltage.
+	 * \return true, if read system voltage successful. otherwise, read failed.
+	 */
 	virtual bool readSystemVoltage(float &voltage);
 
-	//
-	// Send Battery Level to Host, (value range: 0 to 100 (0~100%))
-	//
+	/**Use sendBatteryLevel to send the battery level to remote (App).
+	 * \param[in] level is an unit8_t type integer to indicate the battery level percentage. (0~100%)
+	 * \return true, if send battery level successful. otherwise, if send failed.
+	 */
 	virtual bool  sendBatteryLevel(uint8_t level);
 
-	//
-	// check service available or not
-	//
+	/**Use isAvailable to check the service whether opened by remote (App).
+	 * \return true, if service is available. otherwise, the service is not in used.
+	 */
 	virtual bool isAvailable();
 
 protected:

@@ -1,0 +1,246 @@
+\hypertarget{class_c_shell}{\section{C\-Shell Class Reference}
+\label{class_c_shell}\index{C\-Shell@{C\-Shell}}
+}
+
+
+{\ttfamily \#include $<$shell.\-h$>$}
+
+Inheritance diagram for C\-Shell\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{de/dba/class_c_shell}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_shell_a66915a194065db1d82873d79ee6ec8c6}{C\-Shell} (\hyperlink{class_c_stream}{C\-Stream} \&s)
+\item 
+virtual bool \hyperlink{class_c_shell_a670f66f552494dfce94ee297ae0f659a}{start} ()
+\item 
+virtual void \hyperlink{class_c_shell_a16e1dae0dedda35c0be64d1c8f40e6b4}{on\-Query} (\hyperlink{class_c_string}{C\-String} \&str)
+\item 
+virtual void \hyperlink{class_c_shell_a34dfa6d370ce6fb517e1307d38a4982b}{show\-\_\-welcome} ()
+\item 
+virtual void \hyperlink{class_c_shell_a7adec131871fb1931300eb0f6b31b3f5}{show\-\_\-prompt} ()
+\item 
+virtual void \hyperlink{class_c_shell_ab499caffc2baf478802c3f89d606fc6c}{show\-\_\-menu} ()
+\item 
+virtual void \hyperlink{class_c_shell_ac9f0aa22624f3168256f6b6c851ec885}{show\-\_\-task} ()
+\item 
+virtual void \hyperlink{class_c_shell_a99cd1946dd501dd788accc421ffb883c}{show\-\_\-heap} ()
+\item 
+virtual void \hyperlink{class_c_shell_a4aed8c6a1e01a50595d9e8da8d1f88b2}{show\-\_\-version} ()
+\item 
+virtual void \hyperlink{class_c_shell_a8cb6ac07d2290e4d51c641af1d152b1f}{show\-\_\-clear} ()
+\item 
+bool \hyperlink{class_c_shell_ae0f6cb34ee627c44b1690d16d76d628f}{is\-Debug\-Mode} ()
+\item 
+int \hyperlink{class_c_shell_a7731a22b0b80a4facc431f6e07db2599}{dbg\-Wait\-Key} (uint32\-\_\-t t=M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-T\-I\-M\-E)
+\item 
+virtual void \hyperlink{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}{run} ()
+\item 
+virtual void \hyperlink{class_c_shell_a74d294faaebd969b295366f4a861cf02}{on\-Debug} ()
+\item 
+virtual void \hyperlink{class_c_shell_a27a37bf5a22eaba1426655409decc188}{on\-Close} ()
+\item 
+virtual \hyperlink{class_c_shell_a342aa70c0ff0ba0f990942edfbc59bb6}{$\sim$\-C\-Shell} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_console}{Console} \hyperlink{class_c_shell_ac555f42f70f60653dbd5e0c8ec9c4dcf}{m\-\_\-console}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_stream}{C\-Stream} $\ast$ \hyperlink{class_c_shell_ab0eaa18213db8965c68f978538050162}{m\-\_\-sock}
+\item 
+\hyperlink{class_c_string}{C\-String} \hyperlink{class_c_shell_aa5ef2d56e802b9925cf0ae7d36741bda}{cmd}
+\item 
+\hyperlink{class_c_semaphore}{C\-Semaphore} \hyperlink{class_c_shell_aa81828c40c17f38821ec395aaf38ee98}{m\-\_\-sem\-Input}
+\item 
+int \hyperlink{class_c_shell_ab2b6ca1616128e6a8a05c8c235c7b011}{m\-\_\-dbg\-Key}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_shell_a66915a194065db1d82873d79ee6ec8c6}{\index{C\-Shell@{C\-Shell}!C\-Shell@{C\-Shell}}
+\index{C\-Shell@{C\-Shell}!CShell@{C\-Shell}}
+\subsubsection[{C\-Shell}]{\setlength{\rightskip}{0pt plus 5cm}C\-Shell\-::\-C\-Shell (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Stream} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_c_shell_a66915a194065db1d82873d79ee6ec8c6}
+\hypertarget{class_c_shell_a342aa70c0ff0ba0f990942edfbc59bb6}{\index{C\-Shell@{C\-Shell}!$\sim$\-C\-Shell@{$\sim$\-C\-Shell}}
+\index{$\sim$\-C\-Shell@{$\sim$\-C\-Shell}!CShell@{C\-Shell}}
+\subsubsection[{$\sim$\-C\-Shell}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Shell\-::$\sim$\-C\-Shell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a342aa70c0ff0ba0f990942edfbc59bb6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_shell_a670f66f552494dfce94ee297ae0f659a}{\index{C\-Shell@{C\-Shell}!start@{start}}
+\index{start@{start}!CShell@{C\-Shell}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Shell\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a670f66f552494dfce94ee297ae0f659a}
+Call the member function to start the thread. \begin{DoxyNote}{Note}
+the \hyperlink{class_c_shell_a670f66f552494dfce94ee297ae0f659a}{start()} is an overload member function of \hyperlink{class_c_thread}{C\-Thread}. 
+\end{DoxyNote}
+
+
+Reimplemented from \hyperlink{class_c_thread_aacf955d1852e74da1f989251955ee6ec}{C\-Thread}.
+
+\hypertarget{class_c_shell_a16e1dae0dedda35c0be64d1c8f40e6b4}{\index{C\-Shell@{C\-Shell}!on\-Query@{on\-Query}}
+\index{on\-Query@{on\-Query}!CShell@{C\-Shell}}
+\subsubsection[{on\-Query}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::on\-Query (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-String} \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a16e1dae0dedda35c0be64d1c8f40e6b4}
+\hypertarget{class_c_shell_a34dfa6d370ce6fb517e1307d38a4982b}{\index{C\-Shell@{C\-Shell}!show\-\_\-welcome@{show\-\_\-welcome}}
+\index{show\-\_\-welcome@{show\-\_\-welcome}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-welcome}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-welcome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a34dfa6d370ce6fb517e1307d38a4982b}
+\hypertarget{class_c_shell_a7adec131871fb1931300eb0f6b31b3f5}{\index{C\-Shell@{C\-Shell}!show\-\_\-prompt@{show\-\_\-prompt}}
+\index{show\-\_\-prompt@{show\-\_\-prompt}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-prompt}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-prompt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a7adec131871fb1931300eb0f6b31b3f5}
+\hypertarget{class_c_shell_ab499caffc2baf478802c3f89d606fc6c}{\index{C\-Shell@{C\-Shell}!show\-\_\-menu@{show\-\_\-menu}}
+\index{show\-\_\-menu@{show\-\_\-menu}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-menu}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_ab499caffc2baf478802c3f89d606fc6c}
+\hypertarget{class_c_shell_ac9f0aa22624f3168256f6b6c851ec885}{\index{C\-Shell@{C\-Shell}!show\-\_\-task@{show\-\_\-task}}
+\index{show\-\_\-task@{show\-\_\-task}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-task}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_ac9f0aa22624f3168256f6b6c851ec885}
+\hypertarget{class_c_shell_a99cd1946dd501dd788accc421ffb883c}{\index{C\-Shell@{C\-Shell}!show\-\_\-heap@{show\-\_\-heap}}
+\index{show\-\_\-heap@{show\-\_\-heap}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-heap}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-heap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a99cd1946dd501dd788accc421ffb883c}
+\hypertarget{class_c_shell_a4aed8c6a1e01a50595d9e8da8d1f88b2}{\index{C\-Shell@{C\-Shell}!show\-\_\-version@{show\-\_\-version}}
+\index{show\-\_\-version@{show\-\_\-version}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a4aed8c6a1e01a50595d9e8da8d1f88b2}
+\hypertarget{class_c_shell_a8cb6ac07d2290e4d51c641af1d152b1f}{\index{C\-Shell@{C\-Shell}!show\-\_\-clear@{show\-\_\-clear}}
+\index{show\-\_\-clear@{show\-\_\-clear}!CShell@{C\-Shell}}
+\subsubsection[{show\-\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::show\-\_\-clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a8cb6ac07d2290e4d51c641af1d152b1f}
+\hypertarget{class_c_shell_ae0f6cb34ee627c44b1690d16d76d628f}{\index{C\-Shell@{C\-Shell}!is\-Debug\-Mode@{is\-Debug\-Mode}}
+\index{is\-Debug\-Mode@{is\-Debug\-Mode}!CShell@{C\-Shell}}
+\subsubsection[{is\-Debug\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Shell\-::is\-Debug\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_shell_ae0f6cb34ee627c44b1690d16d76d628f}
+\hypertarget{class_c_shell_a7731a22b0b80a4facc431f6e07db2599}{\index{C\-Shell@{C\-Shell}!dbg\-Wait\-Key@{dbg\-Wait\-Key}}
+\index{dbg\-Wait\-Key@{dbg\-Wait\-Key}!CShell@{C\-Shell}}
+\subsubsection[{dbg\-Wait\-Key}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Shell\-::dbg\-Wait\-Key (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{t = {\ttfamily MAX\-\_\-DELAY\-\_\-TIME}}
+\end{DoxyParamCaption}
+)}}\label{class_c_shell_a7731a22b0b80a4facc431f6e07db2599}
+\hypertarget{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}{\index{C\-Shell@{C\-Shell}!run@{run}}
+\index{run@{run}!CShell@{C\-Shell}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}
+The run member function is the task main procedure, and callback by R\-T\-O\-S when task start.
+
+
+\begin{DoxyCode}
+Example:
+        \textcolor{keyword}{class }CLedTask: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}{run}() \{
+                \hyperlink{class_c_pin}{CPin} led(LED2);
+                \textcolor{keywordflow}{while}(1) \{
+                    led = !led;
+                    sleep(200);
+                \}
+            \}
+        \};
+
+        \textcolor{keywordtype}{int} main() \{
+            ...
+            CLedTask ledTask;
+            ledTask.start(\textcolor{stringliteral}{"led"});   \textcolor{comment}{// default stack=128, default priority=low}
+            ...
+        \}
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+The \hyperlink{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}{run()} is a pure virtual function, must reimplement by inheritor. 
+\end{DoxyRemark}
+\begin{DoxyNote}{Note}
+if end the \hyperlink{class_c_shell_a1565a93fad9a1e35e05a597889ad130f}{run()} member function, the \hyperlink{class_c_thread}{C\-Thread} object will be deleted and collected. 
+\end{DoxyNote}
+
+
+Reimplemented from \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{C\-Thread}.
+
+\hypertarget{class_c_shell_a74d294faaebd969b295366f4a861cf02}{\index{C\-Shell@{C\-Shell}!on\-Debug@{on\-Debug}}
+\index{on\-Debug@{on\-Debug}!CShell@{C\-Shell}}
+\subsubsection[{on\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::on\-Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_shell_a74d294faaebd969b295366f4a861cf02}
+\hypertarget{class_c_shell_a27a37bf5a22eaba1426655409decc188}{\index{C\-Shell@{C\-Shell}!on\-Close@{on\-Close}}
+\index{on\-Close@{on\-Close}!CShell@{C\-Shell}}
+\subsubsection[{on\-Close}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Shell\-::on\-Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_shell_a27a37bf5a22eaba1426655409decc188}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_shell_ac555f42f70f60653dbd5e0c8ec9c4dcf}{\index{C\-Shell@{C\-Shell}!m\-\_\-console@{m\-\_\-console}}
+\index{m\-\_\-console@{m\-\_\-console}!CShell@{C\-Shell}}
+\subsubsection[{m\-\_\-console}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console} C\-Shell\-::m\-\_\-console}}\label{class_c_shell_ac555f42f70f60653dbd5e0c8ec9c4dcf}
+\hypertarget{class_c_shell_ab0eaa18213db8965c68f978538050162}{\index{C\-Shell@{C\-Shell}!m\-\_\-sock@{m\-\_\-sock}}
+\index{m\-\_\-sock@{m\-\_\-sock}!CShell@{C\-Shell}}
+\subsubsection[{m\-\_\-sock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Stream}$\ast$ C\-Shell\-::m\-\_\-sock\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_shell_ab0eaa18213db8965c68f978538050162}
+\hypertarget{class_c_shell_aa5ef2d56e802b9925cf0ae7d36741bda}{\index{C\-Shell@{C\-Shell}!cmd@{cmd}}
+\index{cmd@{cmd}!CShell@{C\-Shell}}
+\subsubsection[{cmd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-String} C\-Shell\-::cmd\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_shell_aa5ef2d56e802b9925cf0ae7d36741bda}
+\hypertarget{class_c_shell_aa81828c40c17f38821ec395aaf38ee98}{\index{C\-Shell@{C\-Shell}!m\-\_\-sem\-Input@{m\-\_\-sem\-Input}}
+\index{m\-\_\-sem\-Input@{m\-\_\-sem\-Input}!CShell@{C\-Shell}}
+\subsubsection[{m\-\_\-sem\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Semaphore} C\-Shell\-::m\-\_\-sem\-Input\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_shell_aa81828c40c17f38821ec395aaf38ee98}
+\hypertarget{class_c_shell_ab2b6ca1616128e6a8a05c8c235c7b011}{\index{C\-Shell@{C\-Shell}!m\-\_\-dbg\-Key@{m\-\_\-dbg\-Key}}
+\index{m\-\_\-dbg\-Key@{m\-\_\-dbg\-Key}!CShell@{C\-Shell}}
+\subsubsection[{m\-\_\-dbg\-Key}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Shell\-::m\-\_\-dbg\-Key\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_shell_ab2b6ca1616128e6a8a05c8c235c7b011}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+shell.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{class_c_mutex}{\section{C\-Mutex Class Reference}
+\label{class_c_mutex}\index{C\-Mutex@{C\-Mutex}}
+}
+
+
+Use the \hyperlink{class_c_mutex}{C\-Mutex} class to lock or unlock a resource.  
+
+
+
+
+{\ttfamily \#include \char`\"{}class/mutex.\-h\char`\"{}}
+
+Inheritance diagram for C\-Mutex\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/d0d/class_c_mutex}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}{lock} ()
+\item 
+virtual bool \hyperlink{class_c_mutex_adb89cb4258a492458db9fb614c1681a9}{try\-Lock} (uint32\-\_\-t delay=0)
+\item 
+virtual void \hyperlink{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}{unlock} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use the \hyperlink{class_c_mutex}{C\-Mutex} class to lock or unlock a resource. 
+
+\begin{DoxyNote}{Note}
+Mutexes and binary semaphores are very similar but have some subtle differences\-: Mutexes include a priority inheritance mechanism, binary semaphores do not. This makes binary semaphores the better choice for implementing synchronisation (between tasks or between tasks and an interrupt), and mutexes the better choice for implementing simple mutual exclusion. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}{\index{C\-Mutex@{C\-Mutex}!lock@{lock}}
+\index{lock@{lock}!CMutex@{C\-Mutex}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Mutex\-::lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}
+Call the member function to lock (take semaphore) a resource with block when resource in used.
+
+
+\begin{DoxyCode}
+Example:
+        \hyperlink{class_c_mutex}{CMutex} mutex;
+
+        \hyperlink{class_c_serial}{CSerial} cdc(USB);
+        \hyperlink{class_console}{Console} (cdc);
+
+        \textcolor{keyword}{class }Task1: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{while}(1) \{
+                \textcolor{keywordflow}{if} ( cdc.isConnected() ) \{
+                    mutex.\hyperlink{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}{lock}();
+                    con << \textcolor{stringliteral}{"1111111111"} << endl;
+                    mutex.\hyperlink{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}{unlock}();
+                \}
+            \}
+            \}
+        \};
+
+        \textcolor{keyword}{class }Task2: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{while}(1) \{
+                \textcolor{keywordflow}{if} ( cdc.isConnected() ) \{
+                    mutex.\hyperlink{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}{lock}();
+                    con << \textcolor{stringliteral}{"2222222222"} << endl;
+                    mutex.\hyperlink{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}{unlock}();
+                \}
+            \}
+            \}
+        \};
+\end{DoxyCode}
+ \hypertarget{class_c_mutex_adb89cb4258a492458db9fb614c1681a9}{\index{C\-Mutex@{C\-Mutex}!try\-Lock@{try\-Lock}}
+\index{try\-Lock@{try\-Lock}!CMutex@{C\-Mutex}}
+\subsubsection[{try\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Mutex\-::try\-Lock (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{delay = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mutex_adb89cb4258a492458db9fb614c1681a9}
+Call the member function to lock (take) a resource without block when resource in used. \begin{DoxyReturn}{Returns}
+true if lock successful; otherwise, failed. 
+\end{DoxyReturn}
+\hypertarget{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}{\index{C\-Mutex@{C\-Mutex}!unlock@{unlock}}
+\index{unlock@{unlock}!CMutex@{C\-Mutex}}
+\subsubsection[{unlock}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Mutex\-::unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}
+Call the member function to unlock (release) a resource.
+
+
+\begin{DoxyCode}
+Example:
+        \hyperlink{class_c_mutex}{CMutex} mutex;
+
+        \hyperlink{class_c_serial}{CSerial} cdc(USB);
+        \hyperlink{class_console}{Console} (cdc);
+
+        \textcolor{keyword}{class }Task1: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{while}(1) \{
+                \textcolor{keywordflow}{if} ( cdc.isConnected() ) \{
+                    mutex.\hyperlink{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}{lock}();
+                    con << \textcolor{stringliteral}{"1111111111"} << endl;
+                    mutex.\hyperlink{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}{unlock}();
+                \}
+            \}
+            \}
+        \};
+
+        \textcolor{keyword}{class }Task2: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
+        \textcolor{keyword}{protected}:
+            \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{while}(1) \{
+                \textcolor{keywordflow}{if} ( cdc.isConnected() ) \{
+                    mutex.\hyperlink{class_c_mutex_a820d77775dfd7d5dddfdac6bbf89b67a}{lock}();
+                    con << \textcolor{stringliteral}{"2222222222"} << endl;
+                    mutex.\hyperlink{class_c_mutex_aee0e6661ae4b790104a9a4205910d53d}{unlock}();
+                \}
+            \}
+            \}
+        \};
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+mutex.\-h\end{DoxyCompactItemize}
