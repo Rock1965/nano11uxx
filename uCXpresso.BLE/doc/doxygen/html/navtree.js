@@ -21,7 +21,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d6/dc5/classusb_c_d_c.html#ae4f03edf64316170547608292d2d4c0e",
-"de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63"
+"de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
