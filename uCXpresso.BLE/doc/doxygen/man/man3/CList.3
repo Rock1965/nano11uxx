@@ -1,0 +1,176 @@
+.TH "CList" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <list\&.h>\fP
+.PP
+Inherits \fBCObject\fP\&.
+.PP
+Inherited by \fBCListT< CType >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCList\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CList\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBcount\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBisEmpty\fP ()"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBaddHead\fP (ELEM_PTR elem)"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBaddTail\fP (ELEM_PTR elem)"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBgetHead\fP ()"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBgetTail\fP ()"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBgetAt\fP (LIST_POS pos)"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBgetAt\fP (int index)"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBremoveHead\fP ()"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBremoveTail\fP ()"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBremoveAt\fP (LIST_POS pos)"
+.br
+.ti -1c
+.RI "virtual void \fBremoveAll\fP (bool free_elem=false, bool isObj=false)"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBgetHeadPos\fP ()"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBgetTailPos\fP ()"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBgetNext\fP (LIST_POS pos)"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBgetPrev\fP (LIST_POS pos)"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBfind\fP (ELEM_PTR elem)"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBinsertBefore\fP (LIST_POS pos, ELEM_PTR elem)"
+.br
+.ti -1c
+.RI "virtual LIST_POS \fBinsertAfter\fP (LIST_POS pos, ELEM_PTR elem)"
+.br
+.ti -1c
+.RI "virtual ELEM_PTR \fBoperator[]\fP (int index)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual LIST_POS \fBalloc\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBfree\fP (LIST_POS pos)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCMutex\fP \fBm_mutex\fP"
+.br
+.ti -1c
+.RI "LIST_POS \fBm_ndHead\fP"
+.br
+.ti -1c
+.RI "LIST_POS \fBm_ndTail\fP"
+.br
+.ti -1c
+.RI "int \fBlength\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CList::CList ()"
+
+.SS "virtual CList::~CList ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual LIST_POS CList::alloc ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "virtual void CList::free (LIST_POSpos)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "virtual int CList::count ()\fC [virtual]\fP"
+
+.SS "virtual bool CList::isEmpty ()\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::addHead (ELEM_PTRelem)\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::addTail (ELEM_PTRelem)\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::getHead ()\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::getTail ()\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::getAt (LIST_POSpos)\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::getAt (intindex)\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::removeHead ()\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::removeTail ()\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::removeAt (LIST_POSpos)\fC [virtual]\fP"
+
+.SS "virtual void CList::removeAll (boolfree_elem = \fCfalse\fP, boolisObj = \fCfalse\fP)\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::getHeadPos ()\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::getTailPos ()\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::getNext (LIST_POSpos)\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::getPrev (LIST_POSpos)\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::find (ELEM_PTRelem)\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::insertBefore (LIST_POSpos, ELEM_PTRelem)\fC [virtual]\fP"
+
+.SS "virtual LIST_POS CList::insertAfter (LIST_POSpos, ELEM_PTRelem)\fC [virtual]\fP"
+
+.SS "virtual ELEM_PTR CList::operator[] (intindex)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCMutex\fP CList::m_mutex\fC [protected]\fP"
+
+.SS "LIST_POS CList::m_ndHead\fC [protected]\fP"
+
+.SS "LIST_POS CList::m_ndTail\fC [protected]\fP"
+
+.SS "int CList::length\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

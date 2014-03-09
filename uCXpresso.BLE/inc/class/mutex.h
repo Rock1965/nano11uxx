@@ -20,9 +20,13 @@
 
 #include "class/object.h"
 
-/*! \class CMutex mutex.h "class/mutex.h"
- *  \brief Use the CMutex class to lock or unlock a resource.
- *  \note Mutexes and binary semaphores are very similar but have some subtle differences: Mutexes include a priority inheritance mechanism, binary semaphores do not. This makes binary semaphores the better choice for implementing synchronisation (between tasks or between tasks and an interrupt), and mutexes the better choice for implementing simple mutual exclusion.
+/**Use the CMutex class to lock or unlock a resource.
+ *  \note Mutexes and binary semaphores are very similar but have some subtle differences:
+ *  Mutexes include a priority inheritance mechanism, binary semaphores do not. This makes binary semaphores
+ *  the better choice for implementing synchronisation (between tasks or between tasks and an interrupt),
+ *  and mutexes the better choice for implementing simple mutual exclusion.
+ *  \class CMutex mutex.h "class/mutex.h"
+ *  \ingroup RTOS
  */
 class CMutex: public CObject {
 public:

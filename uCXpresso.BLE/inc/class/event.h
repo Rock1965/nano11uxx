@@ -19,10 +19,13 @@
 
 #include "class/object.h"
 
+/**EventBit are used to indicate if an event has occurred or not.
+ * \class CEventBit event.h "class/event.h"
+ * \ingroup RTOS
+ */
 class CEventBit: public CObject {
 public:
 	CEventBit();
-	virtual ~CEventBit();
 
 	virtual uint32_t set(uint32_t bits);
 	virtual uint32_t clr(uint32_t bits);
@@ -36,9 +39,12 @@ public:
 	virtual uint32_t sync(uint32_t bitsToSet,
 				  	  	  uint32_t bitsToWait,
 				  	  	  uint32_t timeout=MAX_DELAY_TIME);
+	/// @cond
+	virtual ~CEventBit();
 
 protected:
 	xHandle	m_event;
+	/// @endcond
 };
 
 #endif /* EVENT_H_ */

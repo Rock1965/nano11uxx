@@ -304,7 +304,7 @@ $(document).ready(function(){initNavTree('da/d87/spi_8h_source.html','../../');}
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">     *      Return:</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">     *          None</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="../../d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800">CSpiMaster</a>(PIN_NAME_T selPin);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="../../d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800">CSpiMaster</a>(<a class="code" href="../../dd/d36/group___peripheral.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> selPin);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="../../d9/d9b/class_c_spi_master.html#a13d1514765c41561d16dd46eefb9926e">readwrite</a>(<span class="keywordtype">void</span> *txbuf, <span class="keywordtype">void</span> *rxbuf, uint32_t length);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;};</div>
@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('da/d87/spi_8h_source.html','../../');}
 <div class="ttc" id="class_c_s_p_i_html_a0cdfe6a4d42e835cf7b67ba99ae115ca"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#a0cdfe6a4d42e835cf7b67ba99ae115ca">CSPI::readwrite</a></div><div class="ttdeci">int readwrite(uint8_t tx, uint8_t &amp;rx)</div><div class="ttdef"><b>Definition:</b> spi.h:155</div></div>
 <div class="ttc" id="class_c_s_p_i_html_a2b91318925ae9de3f295abd2418285c4"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#a2b91318925ae9de3f295abd2418285c4">CSPI::write</a></div><div class="ttdeci">uint8_t write(uint8_t tx)</div><div class="ttdef"><b>Definition:</b> spi.h:165</div></div>
 <div class="ttc" id="class_c_s_p_i_html_ab237c0acc917287a8f7cdca7e91e87c6"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#ab237c0acc917287a8f7cdca7e91e87c6">CSPI::isSlave</a></div><div class="ttdeci">bool isSlave()</div></div>
-<div class="ttc" id="class_c_pin_html"><div class="ttname"><a href="../../d7/db9/class_c_pin.html">CPin</a></div><div class="ttdoc">pin output/input control. </div><div class="ttdef"><b>Definition:</b> pin.h:105</div></div>
+<div class="ttc" id="class_c_pin_html"><div class="ttname"><a href="../../d7/db9/class_c_pin.html">CPin</a></div><div class="ttdef"><b>Definition:</b> pin.h:95</div></div>
 <div class="ttc" id="class_c_spi_master_html_ae8d9da2cee5e13a06c8ed5e4146e4800"><div class="ttname"><a href="../../d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800">CSpiMaster::CSpiMaster</a></div><div class="ttdeci">CSpiMaster(PIN_NAME_T selPin)</div></div>
 <div class="ttc" id="class_c_s_p_i_html_a7dc9ce9f0b38a59f7332e6f4f39864e8"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#a7dc9ce9f0b38a59f7332e6f4f39864e8">CSPI::enable</a></div><div class="ttdeci">virtual void enable(SPI_ROLE_T role=SPI_MASTER)</div></div>
 <div class="ttc" id="class_c_s_p_i_html_accc9a5c831ee85e95f0bb5567de5f529"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#accc9a5c831ee85e95f0bb5567de5f529">CSPI::format</a></div><div class="ttdeci">void format(SPI_DATABIT_T bits, SPI_MODE_T mode=SPI_MODE_0)</div></div>
@@ -333,15 +333,16 @@ $(document).ready(function(){initNavTree('da/d87/spi_8h_source.html','../../');}
 <div class="ttc" id="class_c_spi_master_html_aee50dcd7bb052ad758e8bb5bf0362eb4"><div class="ttname"><a href="../../d9/d9b/class_c_spi_master.html#aee50dcd7bb052ad758e8bb5bf0362eb4">CSpiMaster::m_cs</a></div><div class="ttdeci">CPin m_cs</div><div class="ttdef"><b>Definition:</b> spi.h:192</div></div>
 <div class="ttc" id="class_c_s_p_i_html_a9a8f9843e54bf4f11dd871cf798fe337"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#a9a8f9843e54bf4f11dd871cf798fe337">CSPI::end</a></div><div class="ttdeci">void end()</div><div class="ttdef"><b>Definition:</b> spi.h:150</div></div>
 <div class="ttc" id="class_c_s_p_i_html_a5215a320db4cb5f2792ea18f8d6e0671"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#a5215a320db4cb5f2792ea18f8d6e0671">CSPI::readwrite</a></div><div class="ttdeci">virtual int readwrite(void *txbuf, void *rxbuf, uint32_t length)</div></div>
+<div class="ttc" id="group___peripheral_html_ga65a2241721e4acb573e0c3fe29ac432f"><div class="ttname"><a href="../../dd/d36/group___peripheral.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a></div><div class="ttdeci">PIN_NAME_T</div><div class="ttdef"><b>Definition:</b> pin.h:27</div></div>
 <div class="ttc" id="class_c_s_p_i_html_a44669f2150e9312a3bd022c000574f81"><div class="ttname"><a href="../../d2/d3f/class_c_s_p_i.html#a44669f2150e9312a3bd022c000574f81">CSPI::m_port</a></div><div class="ttdeci">SPI_PORT_T m_port</div><div class="ttdef"><b>Definition:</b> spi.h:180</div></div>
-<div class="ttc" id="class_c_peripheral_html"><div class="ttname"><a href="../../d9/db6/class_c_peripheral.html">CPeripheral</a></div><div class="ttdef"><b>Definition:</b> peripheral.h:18</div></div>
+<div class="ttc" id="class_c_peripheral_html"><div class="ttname"><a href="../../d9/db6/class_c_peripheral.html">CPeripheral</a></div><div class="ttdef"><b>Definition:</b> peripheral.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>spi.h</b></li>
-    <li class="footer">Generated on Sun Mar 9 2014 00:38:49 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun Mar 9 2014 10:53:18 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

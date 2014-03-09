@@ -19,13 +19,13 @@
 #define BUS_H_
 
 #include <stdarg.h>
-#include "class/object.h"
 #include "class/pin.h"
 
-/*! \class CBus bus.h "class/bus.h"
- * \brief A digital input/output bus, used for reading/writing the state of a collection of pins.
+/**A digital input/output bus, used for reading/writing the state of a collection of pins.
+ * \class CBus bus.h "class/bus.h"
+ * \ingroup Peripheral
  */
-class CBus: public CObject {
+class CBus: public CPeripheral {
 public:
 	/**Constructs a CBus object to connect to the specified pins.
 	 * \param pin ... are PIN_NAME_T to specified one or more pins to the CBus.
@@ -118,7 +118,6 @@ public:
 	virtual ~CBus();
 	void assign(PIN_NAME_T pin, ...);
 	void assign(PIN_NAME_T p, va_list pins);
-
 
 protected:
 	CPin    *m_pins;

@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 1095.890411
+%%BoundingBox: 0 0 500 1164.383562
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.456250 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.429412 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 16 def
+/rows 17 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -181,6 +181,7 @@ boxfont setfont
 (bleHeartRate) cw
 (bleProximity) cw
 (CAdc) cw
+(CBus) cw
 (CI2C) cw
 (CPin) cw
 (CPowerSave) cw
@@ -200,16 +201,17 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (CPeripheral) 0.000000 14.000000 box
+ (CPeripheral) 0.000000 15.000000 box
 dashed
- (CObject) 0.000000 15.000000 box
+ (CObject) 0.000000 16.000000 box
 solid
- (bleBatteryLevel) 1.000000 13.000000 box
- (bleDeviceInfo) 1.000000 12.000000 box
- (bleHealthThermometer) 1.000000 11.000000 box
- (bleHeartRate) 1.000000 10.000000 box
- (bleProximity) 1.000000 9.000000 box
- (CAdc) 1.000000 8.000000 box
+ (bleBatteryLevel) 1.000000 14.000000 box
+ (bleDeviceInfo) 1.000000 13.000000 box
+ (bleHealthThermometer) 1.000000 12.000000 box
+ (bleHeartRate) 1.000000 11.000000 box
+ (bleProximity) 1.000000 10.000000 box
+ (CAdc) 1.000000 9.000000 box
+ (CBus) 1.000000 8.000000 box
  (CI2C) 1.000000 7.000000 box
 1.000000 7.000000 mark
  (CPin) 1.000000 6.000000 box
@@ -225,11 +227,13 @@ solid
 % ----- relations -----
 
 solid
-0 0.000000 14.000000 out
+0 0.000000 15.000000 out
 solid
-1 0.000000 15.000000 in
+1 0.000000 16.000000 in
 solid
-1 0.000000 13.250000 out
+1 0.000000 14.250000 out
+solid
+0 0.000000 14.500000 hedge
 solid
 0 0.000000 13.500000 hedge
 solid
@@ -259,4 +263,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 14.000000 0.500000 vedge
+0.000000 15.000000 0.500000 vedge

@@ -21,7 +21,8 @@
 
 #include "class/peripheral.h"
 
-/*	\enum PIN_NAME_T
+/**Pins defines in enumeration
+ * \ingroup Peripheral
  */
 typedef enum {
 	END		= 0,
@@ -57,33 +58,27 @@ typedef enum {
 //	P30		= 30,	V3.3
 }PIN_NAME_T;
 
-/*
-When PIN as an input, the PIN_MODE control the input mode of all ports.
-This includes the use of the on-chip pull-up/pull-down resistor feature
-and a special open drain operating mode.
+/**When PIN as an input, the PIN_MODE control the input mode of all ports.
+ * This includes the use of the on-chip pull-up/pull-down resistor feature
+ * and a special open drain operating mode.
+ * \ingroup Peripheral
 */
 typedef enum PIN_INPUT_MODE {
-	// Pin has an on-chip pull-up resistor enabled
-	INTERNAL_PULL_UP = 2,
-	// enables the pull-up resistor if the pin is at a logic high
-	// enables the pull-down resistor if the pin is at a logic low
-	REPEATER = 3,
-	// Pin has neither pull-up nor pull-down resistor enabled
-	NEITHER	= 0,
-	// Pin has an on-chip pull-down resistor enabled
-	INTERNAL_PULL_DOWN = 1
+	INTERNAL_PULL_UP = 2,	///< Pin has an on-chip pull-up resistor enabled
+	REPEATER = 3,			///< enables the pull-up resistor if the pin is at a logic high, <br/>
+							///< enables the pull-down resistor if the pin is at a logic low
+	NEITHER	= 0,			///< Pin has neither pull-up nor pull-down resistor enabled
+	INTERNAL_PULL_DOWN = 1	///< Pin has an on-chip pull-down resistor enabled
 }PIN_INPUT_MODE_T;
 
-/*
-When pin as an output, the open drain mode causes the pin to be pulled low normally
-if it is configured as an output and the data value is 0.
-If the data value is 1, the output drive of the pin is turned off
+/**When pin as an output, the open drain mode causes the pin to be pulled low normally
+ * if it is configured as an output and the data value is 0.
+ * If the data value is 1, the output drive of the pin is turned off
+ * \ingroup Peripheral
  */
 typedef enum PIN_OUTPUT_MODE {
-	// Pin is in the normal (not open drain) mode
-	NOT_OPEN = 0,
-	// Pin is in the open drain mode.
-	OPEN_DRAIN = 1
+	NOT_OPEN = 0,	///< Pin is in the normal (not open drain) mode
+	OPEN_DRAIN = 1	///< Pin is in the open drain mode.
 }PIN_OUTPUT_MODE_T;
 
 typedef enum PIN_LEVEL {
@@ -93,14 +88,9 @@ typedef enum PIN_LEVEL {
 	LED_ON = HIGH
 }PIN_LEVEL_T;
 
-/*
- *  CPin,
-*Constructs:
- *  	p = Pin Number = 5~30
- *  	d = PIN_DIR = OUTPUT or INPUT, Default is OUTPUT
- */
-/*!	\class CPin pin.h "class/pin.h"
- *	\brief pin output/input control.
+/**Pin define class
+ * 	\class CPin pin.h "class/pin.h"
+ *	\ingroup Peripheral
  */
 class CPin: public CPeripheral {
 public:

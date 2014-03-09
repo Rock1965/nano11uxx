@@ -70,8 +70,10 @@ public:
 	 */
 	virtual bool isAvailable();
 
+	/// @cond
 protected:
 	bleSerial	*m_ble;	// ble Engine
+	/// @endcond
 };
 
 

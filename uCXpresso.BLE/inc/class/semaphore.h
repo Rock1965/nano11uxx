@@ -25,9 +25,10 @@
 
 #include "class/object.h"
 
-/*! \class CSemaphore semaphore.h "class/semaphore.h"
- * \brief The CSemaphore class provides two kinds semaphore which counting and binary.
+/**The CSemaphore class provides two kinds semaphore which counting and binary.
  * \note CSemaphore cannot be used before a call to member counting or binary.
+ * \class CSemaphore semaphore.h "class/semaphore.h"
+ * \ingroup RTOS
  */
 class CSemaphore: public CObject {
 public:

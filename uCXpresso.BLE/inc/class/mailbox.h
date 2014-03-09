@@ -29,8 +29,9 @@
 
 #define MESSAGE_T	xHandle
 
-/*! \class CMailBox mailbox.h "class/mailbox.h"
- * \brief Use the CMailbox to receive a message pointer from sender.
+/**Use the CMailbox to receive a message pointer from sender.
+ * \class CMailBox mailbox.h "class/mailbox.h"
+ * \ingroup RTOS
  */
 class CMailBox: public CObject {
 public:

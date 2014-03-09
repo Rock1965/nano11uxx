@@ -1,0 +1,144 @@
+.TH "CSPI" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CSPI \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <spi\&.h>\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.PP
+Inherited by \fBCSpiMaster\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCSPI\fP (SPI_PORT_T port=SPI0, bool pullup=true)"
+.br
+.ti -1c
+.RI "virtual \fB~CSPI\fP ()"
+.br
+.ti -1c
+.RI "void \fBformat\fP (SPI_DATABIT_T bits, SPI_MODE_T mode=SPI_MODE_0)"
+.br
+.ti -1c
+.RI "void \fBbitOrder\fP (SPI_BIT_ORDER_T value)"
+.br
+.ti -1c
+.RI "bool \fBfrequency\fP (uint32_t hz)"
+.br
+.ti -1c
+.RI "virtual void \fBenable\fP (SPI_ROLE_T role=SPI_MASTER)"
+.br
+.ti -1c
+.RI "virtual void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisSlave\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin\fP (SPI_ROLE_T role=SPI_MASTER)"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBreadwrite\fP (void *txbuf, void *rxbuf, uint32_t length)"
+.br
+.ti -1c
+.RI "int \fBreadwrite\fP (uint8_t tx, uint8_t &rx)"
+.br
+.ti -1c
+.RI "uint8_t \fBreadwrite\fP (uint8_t tx)"
+.br
+.ti -1c
+.RI "uint8_t \fBwrite\fP (uint8_t tx)"
+.br
+.ti -1c
+.RI "void \fBoperator>>\fP (uint8_t &val)"
+.br
+.ti -1c
+.RI "void \fBoperator<<\fP (uint8_t val)"
+.br
+.ti -1c
+.RI "void \fBoperator>>\fP (uint16_t &val)"
+.br
+.ti -1c
+.RI "void \fBoperator<<\fP (uint16_t val)"
+.br
+.ti -1c
+.RI "void \fBoperator>>\fP (uint32_t &val)"
+.br
+.ti -1c
+.RI "void \fBoperator<<\fP (uint32_t val)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "SPI_PORT_T \fBm_port\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBm_nFlag\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CSPI::CSPI (SPI_PORT_Tport = \fCSPI0\fP, boolpullup = \fCtrue\fP)"
+
+.SS "virtual CSPI::~CSPI ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CSPI::format (SPI_DATABIT_Tbits, SPI_MODE_Tmode = \fCSPI_MODE_0\fP)"
+
+.SS "void CSPI::bitOrder (SPI_BIT_ORDER_Tvalue)"
+
+.SS "bool CSPI::frequency (uint32_thz)"
+
+.SS "virtual void CSPI::enable (SPI_ROLE_Trole = \fCSPI_MASTER\fP)\fC [virtual]\fP"
+
+.SS "virtual void CSPI::disable ()\fC [virtual]\fP"
+
+.SS "bool CSPI::isSlave ()"
+
+.SS "void CSPI::begin (SPI_ROLE_Trole = \fCSPI_MASTER\fP)\fC [inline]\fP"
+
+.SS "void CSPI::end ()\fC [inline]\fP"
+
+.SS "virtual int CSPI::readwrite (void *txbuf, void *rxbuf, uint32_tlength)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCSpiMaster\fP\&.
+.SS "int CSPI::readwrite (uint8_ttx, uint8_t &rx)\fC [inline]\fP"
+
+.SS "uint8_t CSPI::readwrite (uint8_ttx)\fC [inline]\fP"
+
+.SS "uint8_t CSPI::write (uint8_ttx)\fC [inline]\fP"
+
+.SS "void CSPI::operator>> (uint8_t &val)\fC [inline]\fP"
+
+.SS "void CSPI::operator<< (uint8_tval)\fC [inline]\fP"
+
+.SS "void CSPI::operator>> (uint16_t &val)\fC [inline]\fP"
+
+.SS "void CSPI::operator<< (uint16_tval)\fC [inline]\fP"
+
+.SS "void CSPI::operator>> (uint32_t &val)\fC [inline]\fP"
+
+.SS "void CSPI::operator<< (uint32_tval)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "SPI_PORT_T CSPI::m_port\fC [protected]\fP"
+
+.SS "uint32_t CSPI::m_nFlag\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

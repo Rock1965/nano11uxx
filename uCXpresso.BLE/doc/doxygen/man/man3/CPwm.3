@@ -1,0 +1,123 @@
+.TH "CPwm" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CPwm \- 
+.PP
+Pulse-width modulated output\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'class/pwm\&.h'\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCPwm\fP (PWM_CH_T ch)"
+.br
+.ti -1c
+.RI "virtual void \fBenable\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdutyCycle\fP (float percentage)"
+.br
+.ti -1c
+.RI "virtual void \fBpulseWidth\fP (float sec)"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP ()"
+.br
+.ti -1c
+.RI "void \fBwrite\fP (float percentage)"
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (float sec)"
+.br
+.ti -1c
+.RI "\fBoperator float\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBperiod\fP (float sec)"
+.br
+.ti -1c
+.RI "static void \fBfrequency\fP (uint32_t f)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Pulse-width modulated output\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CPwm::CPwm (PWM_CH_Tch)"
+Constructs a \fBCPwm\fP object to connect to the specified PWM channel\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP \&.\&.\&. are PWM_CH_T to specified a PWM channel to the object\&.
+.RE
+.PP
+.PP
+.nf
+Example:
+        CPwm::period(0\&.02); // Set PWM period time = 20ms
+        CPwm::start();      // Start the core PWM peripheral
+
+        CPwm servo(PWM1);   // create a servo objecj
+        servo\&.dutyCycle(80);// set servo object to 80% dutyCycle
+        servo\&.begin();      // begin the servo PWM output
+.fi
+.PP
+.PP
+\fBRemarks:\fP
+.RS 4
+to 'END' of the pin arguments is MUST!! 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CPwm::enable ()\fC [virtual]\fP"
+enable the PWM channel output 
+.SS "virtual void CPwm::disable ()\fC [virtual]\fP"
+disable of the PWM channel output 
+.SS "virtual void CPwm::dutyCycle (floatpercentage)\fC [virtual]\fP"
+Set the output duty-cycle, specified as a percentage (float) 
+.SS "virtual void CPwm::pulseWidth (floatsec)\fC [virtual]\fP"
+Set the PWM pulse-width, specified in seconds (float) 
+.SS "virtual float CPwm::read ()\fC [virtual]\fP"
+
+.SS "void CPwm::write (floatpercentage)\fC [inline]\fP"
+Set output duty-cycle; inline function call to the member \fBdutyCycle()\fP 
+.SS "void CPwm::operator= (floatsec)\fC [inline]\fP"
+A shorthand to call the member \fBpulseWidth()\fP 
+.SS "CPwm::operator float ()\fC [inline]\fP"
+
+.SS "static void CPwm::period (floatsec)\fC [static]\fP"
+A static member function\&. Set the PWM MAIN period (or frequency), specified in seconds (float)\&. 
+.SS "static void CPwm::frequency (uint32_tf)\fC [static]\fP"
+
+.SS "void CPwm::begin ()\fC [inline]\fP"
+inline functions 
+.SS "void CPwm::end ()\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

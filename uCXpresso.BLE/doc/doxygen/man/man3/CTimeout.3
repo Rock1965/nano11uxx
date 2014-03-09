@@ -1,0 +1,77 @@
+.TH "CTimeout" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CTimeout \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <timeout\&.h>\fP
+.PP
+Inherits \fBCObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCTimeout\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBwait\fP (int ms)"
+.br
+.ti -1c
+.RI "virtual void \fBwait\fP (float sec)"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBelapsed\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBisExpired\fP (uint32_t to)"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBm_tick\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CTimeout::CTimeout ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CTimeout::reset ()\fC [virtual]\fP"
+
+.SS "virtual void CTimeout::wait (intms)\fC [virtual]\fP"
+
+.SS "virtual void CTimeout::wait (floatsec)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual uint32_t CTimeout::elapsed ()\fC [virtual]\fP"
+
+.SS "virtual bool CTimeout::isExpired (uint32_tto)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual float CTimeout::read ()\fC [inline]\fP, \fC [virtual]\fP"
+Reterive timeout value 
+.PP
+\fBReturns:\fP
+.RS 4
+float second 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t CTimeout::m_tick\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

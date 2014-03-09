@@ -46,8 +46,9 @@ typedef enum {
 }ADC_CH_T;
 
 
-/*!	\class CAdc adc.h "class/adc.h"
-	\brief an Analog-to-Digital converter class.
+/**an Analog-to-Digital converter class.
+ * \class CAdc adc.h "class/adc.h"
+ * \ingroup Peripheral
  */
 class CAdc: public CPeripheral {
 public:

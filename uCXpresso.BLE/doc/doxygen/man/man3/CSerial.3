@@ -1,0 +1,258 @@
+.TH "CSerial" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CSerial \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <serial\&.h>\fP
+.PP
+Inherits \fBCStream\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBUART_PARITY_T\fP { \fBUART_PARITY_NONE\fP = 4, \fBUART_PARITY_ODD\fP = 0, \fBUART_PARITY_EVEN\fP = 1, \fBUART_PARITY_SP_1\fP = 2, \fBUART_PARITY_SP_0\fP = 3 }"
+.br
+.RI "\fIUART Parity type definitions\&. \fP"
+.ti -1c
+.RI "enum \fBUART_DATABIT_T\fP { \fBUART_DATABIT_5\fP = 0, \fBUART_DATABIT_6\fP, \fBUART_DATABIT_7\fP, \fBUART_DATABIT_8\fP }"
+.br
+.RI "\fIUART Databit type definitions\&. \fP"
+.ti -1c
+.RI "enum \fBUART_STOPBIT_T\fP { \fBUART_STOPBIT_1\fP = (0), \fBUART_STOPBIT_2\fP }"
+.br
+.RI "\fIUART Stop bit type definitions\&. \fP"
+.ti -1c
+.RI "enum \fBUART_FITO_LEVEL_T\fP { \fBUART_FIFO_TRGLEV0\fP = 0, \fBUART_FIFO_TRGLEV1\fP, \fBUART_FIFO_TRGLEV2\fP, \fBUART_FIFO_TRGLEV3\fP }"
+.br
+.RI "\fIRX FIFO Trigger Level type definitions\&. \fP"
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCSerial\fP (size_t fifo_size=32)"
+.br
+.ti -1c
+.RI "virtual void \fBenable\fP (uint32_t baudrate, \fBUART_PARITY_T\fP parity=\fBUART_PARITY_NONE\fP, \fBUART_DATABIT_T\fP databits=\fBUART_DATABIT_8\fP, \fBUART_STOPBIT_T\fP stopbits=\fBUART_STOPBIT_1\fP, \fBUART_FITO_LEVEL_T\fP level=\fBUART_FIFO_TRGLEV0\fP)"
+.br
+.ti -1c
+.RI "void \fBsettings\fP (uint32_t baudrate, \fBUART_PARITY_T\fP parity=\fBUART_PARITY_NONE\fP, \fBUART_DATABIT_T\fP databits=\fBUART_DATABIT_8\fP, \fBUART_STOPBIT_T\fP stopbits=\fBUART_STOPBIT_1\fP, \fBUART_FITO_LEVEL_T\fP level=\fBUART_FIFO_TRGLEV0\fP)"
+.br
+.ti -1c
+.RI "virtual int \fBreadable\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBwriteable\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBread\fP (void *buf, int len, bool block=true)"
+.br
+.ti -1c
+.RI "virtual int \fBwrite\fP (const void *buf, int len, bool block=true)"
+.br
+.ti -1c
+.RI "virtual void \fBflush\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBbegin\fP (uint32_t speed)"
+.br
+.ti -1c
+.RI "virtual void \fBend\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBavailable\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBisConnected\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandshaking\fP ()"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCSerial::UART_PARITY_T\fP"
+
+.PP
+UART Parity type definitions\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUART_PARITY_NONE \fP\fP
+No parity 
+.TP
+\fB\fIUART_PARITY_ODD \fP\fP
+Odd parity 
+.TP
+\fB\fIUART_PARITY_EVEN \fP\fP
+Even parity 
+.TP
+\fB\fIUART_PARITY_SP_1 \fP\fP
+Forced '1' stick parity 
+.TP
+\fB\fIUART_PARITY_SP_0 \fP\fP
+Forced '0' stick parity 
+.SS "enum \fBCSerial::UART_DATABIT_T\fP"
+
+.PP
+UART Databit type definitions\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUART_DATABIT_5 \fP\fP
+UART 5 bit data mode 
+.TP
+\fB\fIUART_DATABIT_6 \fP\fP
+UART 6 bit data mode 
+.TP
+\fB\fIUART_DATABIT_7 \fP\fP
+UART 7 bit data mode 
+.TP
+\fB\fIUART_DATABIT_8 \fP\fP
+UART 8 bit data mode 
+.SS "enum \fBCSerial::UART_STOPBIT_T\fP"
+
+.PP
+UART Stop bit type definitions\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUART_STOPBIT_1 \fP\fP
+UART 1 Stop Bits Select 
+.TP
+\fB\fIUART_STOPBIT_2 \fP\fP
+UART Two Stop Bits Select 
+.SS "enum \fBCSerial::UART_FITO_LEVEL_T\fP"
+
+.PP
+RX FIFO Trigger Level type definitions\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUART_FIFO_TRGLEV0 \fP\fP
+UART FIFO trigger level 0: 1 character 
+.TP
+\fB\fIUART_FIFO_TRGLEV1 \fP\fP
+UART FIFO trigger level 1: 4 character 
+.TP
+\fB\fIUART_FIFO_TRGLEV2 \fP\fP
+UART FIFO trigger level 2: 8 character 
+.TP
+\fB\fIUART_FIFO_TRGLEV3 \fP\fP
+UART FIFO trigger level 3: 14 character 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CSerial::CSerial (size_tfifo_size = \fC32\fP)"
+Constructs a \fBCSerial\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfifo_size\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CSerial::enable (uint32_tbaudrate, \fBUART_PARITY_T\fPparity = \fC\fBUART_PARITY_NONE\fP\fP, \fBUART_DATABIT_T\fPdatabits = \fC\fBUART_DATABIT_8\fP\fP, \fBUART_STOPBIT_T\fPstopbits = \fC\fBUART_STOPBIT_1\fP\fP, \fBUART_FITO_LEVEL_T\fPlevel = \fC\fBUART_FIFO_TRGLEV0\fP\fP)\fC [virtual]\fP"
+Call the member function to enable the serial port\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbaudrate\fP is a unsigned long integer to specified the data baud-rate\&. 
+.br
+\fIparity\fP is an UART_PARITY_T enumerations\&. 
+.br
+\fIdatabits\fP is an UART_DATABIT_T enumerations\&. 
+.br
+\fIstopbits\fP is an UART_STOPBIT_T enumerations\&. 
+.br
+\fIlevel\fP is UART_FITO_LEVEL_T to trigger how many receiver UARTn FIFO characters must be written before an interrupt or DMA request is activated\&. 
+.RE
+.PP
+
+.SS "void CSerial::settings (uint32_tbaudrate, \fBUART_PARITY_T\fPparity = \fC\fBUART_PARITY_NONE\fP\fP, \fBUART_DATABIT_T\fPdatabits = \fC\fBUART_DATABIT_8\fP\fP, \fBUART_STOPBIT_T\fPstopbits = \fC\fBUART_STOPBIT_1\fP\fP, \fBUART_FITO_LEVEL_T\fPlevel = \fC\fBUART_FIFO_TRGLEV0\fP\fP)\fC [inline]\fP"
+
+.SS "virtual int CSerial::readable ()\fC [virtual]\fP"
+Call the member function to check that receive buffer is ready to read\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+greater than zero if receive data from serial port\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBCStream\fP\&.
+.SS "virtual int CSerial::writeable ()\fC [virtual]\fP"
+Call the member function to check that transmit buffer is ready to write\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+how many bytes can be write to transmit buffer\&. 
+.RE
+.PP
+
+.SS "virtual int CSerial::read (void *buf, intlen, boolblock = \fCtrue\fP)\fC [virtual]\fP"
+Call the member function to read a data block from serial port\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbuf\fP is a pointer which contain the data block from serial port\&. 
+.br
+\fIlen\fP is a integer to specified the buffer length\&. 
+.br
+\fIblock\fP is a boolean value to specified to wait for reading\&. 
+.RE
+.PP
+
+.SS "virtual int CSerial::write (const void *buf, intlen, boolblock = \fCtrue\fP)\fC [virtual]\fP"
+Call the member function to write a data block to serial port 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbuf\fP is a pointer which data block want to send to serial port\&. 
+.br
+\fIlen\fP is a integer value to specified the buffer length\&. 
+.br
+\fIblock\fP is a boolean value to specified to wait for writing\&. 
+.RE
+.PP
+
+.SS "virtual void CSerial::flush ()\fC [virtual]\fP"
+Call the member function to wait for transmission of outgoing serial data to complete\&. 
+.SS "virtual void CSerial::begin (uint32_tspeed)\fC [inline]\fP, \fC [virtual]\fP"
+Call the member function to begin the serial port\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The 'begin' is an inline code to call the exist \fBsettings()\fP member function\&. 
+.RE
+.PP
+
+.SS "virtual void CSerial::end ()\fC [inline]\fP, \fC [virtual]\fP"
+Call the member function to end the serial port\&. 
+.SS "virtual int CSerial::available ()\fC [inline]\fP, \fC [virtual]\fP"
+Call the member function to check that receive buffer is ready\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The 'available' is an inline code to call the exist \fBreadable()\fP member function\&. 
+.RE
+.PP
+
+.SS "virtual bool CSerial::isConnected ()\fC [inline]\fP, \fC [virtual]\fP"
+Call the member function to check that serial port is ready\&. 
+.SS "void CSerial::handshaking ()"
+Enable hardware handshaking RTS/CTS pins 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

@@ -23,28 +23,34 @@
 
 #define HR_MAX_PAYLOAD	19
 
-/** Body Sensor Location */
+/**Body Sensor Location
+ * \ingroup BLE
+ */
 typedef enum {
-	HRSL_OTHER = 0,
-	HRSL_CHEST,
-	HRSL_WRIST,
-	HRSL_FINGER,
-	HRSL_HAND,
-	HRSL_EAR_LOBE,
-	HRSL_FOOT
+	HRSL_OTHER = 0,		///< Other
+	HRSL_CHEST,			///< Chest
+	HRSL_WRIST,			///< Wrist
+	HRSL_FINGER,		///< Finger
+	HRSL_HAND,			///< Hand
+	HRSL_EAR_LOBE,		///< Ear Lobe
+	HRSL_FOOT			///< Foot
 } hrsl_code_t;
 
-/** Possible Heart Rate Control Point Opcodes */
-typedef enum hrcp_op_codes_t{
-  HRCP_OPCODE_NULL                     = 0x00, /**<Reserved for future use (Operator:N/A)*/
-  HRCP_OPCODE_RESET_ENERY_EXPENDED     = 0x01  /**<Resets the value of the Energy Expended field in the Heart Rate Measurement characteristic to 0*/
+/**Possible Heart Rate Control Point Opcodes
+ * \ingroup BLE
+ */
+typedef enum {
+  HRCP_OPCODE_NULL                     = 0x00, ///< Reserved for future use (Operator:N/A)
+  HRCP_OPCODE_RESET_ENERY_EXPENDED     = 0x01  ///< Resets the value of the Energy Expended field in the Heart Rate Measurement characteristic to 0
 } hrcp_op_codes_t;
 
-/**Attribute Protocol Application Error codes*/
+/**Attribute Protocol Application Error codes
+ * \ingroup BLE
+ */
 typedef enum
 {
-  HRCP_ERR_OK                          = 0x00, /**<No error in control point command.*/
-  HRCP_ERR_CONTROL_POINT_NOT_SUPPORTED = 0x80  /**<The received Heart Rate Control Point value is not supported.*/
+  HRCP_ERR_OK                          = 0x00, ///< No error in control point command.
+  HRCP_ERR_CONTROL_POINT_NOT_SUPPORTED = 0x80  ///< The received Heart Rate Control Point value is not supported.
 } hrcp_error_codes_t;
 
 /**The bleHearRate class exposes heart rate and other data from a Heart Rate Sensor intended for fitness applications.

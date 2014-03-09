@@ -1,0 +1,104 @@
+.TH "CTimer" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CTimer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <timer\&.h>\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCTimer\fP (TIMER_T t)"
+.br
+.ti -1c
+.RI "virtual \fB~CTimer\fP ()"
+.br
+.ti -1c
+.RI "void \fBsecond\fP (float sec)"
+.br
+.ti -1c
+.RI "void \fBmillisecond\fP (uint32_t ms)"
+.br
+.ti -1c
+.RI "void \fBenable\fP ()"
+.br
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "bool \fBwait\fP (uint32_t timeout=MAX_DELAY_TIME)"
+.br
+.ti -1c
+.RI "uint32_t \fBcount\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static TIMER_T \fBgetUnused\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCSemaphore\fP \fBm_semIrq\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBm_count\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CTimer::CTimer (TIMER_Tt)"
+
+.SS "virtual CTimer::~CTimer ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CTimer::second (floatsec)"
+
+.SS "void CTimer::millisecond (uint32_tms)\fC [inline]\fP"
+
+.SS "void CTimer::enable ()"
+
+.SS "void CTimer::disable ()"
+
+.SS "void CTimer::begin ()\fC [inline]\fP"
+
+.SS "void CTimer::end ()\fC [inline]\fP"
+
+.SS "void CTimer::reset ()"
+
+.SS "bool CTimer::wait (uint32_ttimeout = \fCMAX_DELAY_TIME\fP)"
+
+.SS "uint32_t CTimer::count ()"
+
+.SS "static TIMER_T CTimer::getUnused ()\fC [static]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCSemaphore\fP CTimer::m_semIrq"
+
+.SS "uint32_t CTimer::m_count"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

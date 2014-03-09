@@ -15,6 +15,11 @@
 
 #include "class/object.h"
 
+/**
+ * \defgroup Peripheral
+ * The MCU peripheral group
+ */
+
 class CPeripheral: virtual public CObject {
 	/*! \cond PRIVATE */
 public:

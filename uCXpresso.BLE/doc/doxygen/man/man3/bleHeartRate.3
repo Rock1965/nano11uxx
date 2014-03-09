@@ -1,0 +1,297 @@
+.TH "bleHeartRate" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bleHeartRate \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ble_heartrate\&.h>\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbleHeartRate\fP (\fBbleSerial\fP &ble)"
+.br
+.ti -1c
+.RI "virtual bool \fBisAvailable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsupportContact\fP (bool enable)"
+.br
+.ti -1c
+.RI "void \fBcontactStatus\fP (bool enable)"
+.br
+.ti -1c
+.RI "void \fBsetSensorLocation\fP (hrsl_code_t code)"
+.br
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint8_t meas_hr)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (8 bits)\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint16_t meas_hr)"
+.br
+.RI "\fIFunction to send a heart rate measurement (16 bits)\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint8_t meas_hr, uint16_t expended_energy)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (8 bits) with expended energy\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint16_t meas_hr, uint16_t expended_energy)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (16 bits) with expended energy\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint8_t meas_hr, uint16_t *p_rr_intervals, uint8_t nb_intervals)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (8 bits) with rr_intervals\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint16_t meas_hr, uint16_t *p_rr_intervals, uint8_t nb_intervals)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (16 bits) with rr_intervals\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint8_t meas_hr, uint16_t expended_energy, uint16_t *p_rr_intervals, uint8_t nb_intervals)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (8 bits) with expended energy with rr_intervals\&. \fP"
+.ti -1c
+.RI "bool \fBsendMeasure\fP (uint16_t meas_hr, uint16_t expended_energy, uint16_t *p_rr_intervals, uint8_t nb_intervals)"
+.br
+.RI "\fIOverload function to send a heart rate measurement (16 bits) with expended energy with rr_intervals\&. \fP"
+.ti -1c
+.RI "virtual void \fBonResetEnergyExpended\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The bleHearRate class exposes heart rate and other data from a Heart Rate Sensor intended for fitness applications\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "bleHeartRate::bleHeartRate (\fBbleSerial\fP &ble)"
+\fBbleHeartRate\fP constructor 
+.PP
+.nf
+int main() {
+\&.\&.\&.
+    bleSerial ble("myBLE");
+    ble\&.enable();
+
+    bleHeartRate hr(ble);
+    hr\&.sendMeasure(BPM);
+ \&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIble\fP is a \fBbleSerial\fP class object\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool bleHeartRate::isAvailable ()\fC [virtual]\fP"
+Use isAvailable to check the service whether opened by remote (App)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true, if service is available\&. otherwise, the service is not in used\&. 
+.RE
+.PP
+
+.SS "void bleHeartRate::supportContact (boolenable)"
+Set supported Contact sensor feature 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIenable\fP true, if support the contact sensor\&. otherwise, no contact sensor supported\&. 
+.RE
+.PP
+
+.SS "void bleHeartRate::contactStatus (boolenable)"
+Set contact sensor status\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIenable\fP is a boolean value, set true, if contact is detected\&. otherwise, contact is not detected\&. 
+.RE
+.PP
+
+.SS "void bleHeartRate::setSensorLocation (hrsl_code_tcode)"
+Set sensor location\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcode\fP is a hrsl_code_t enumeration\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint8_tmeas_hr)"
+
+.PP
+Overload function to send a heart rate measurement (8 bits)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint16_tmeas_hr)"
+
+.PP
+Function to send a heart rate measurement (16 bits)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint8_tmeas_hr, uint16_texpended_energy)"
+
+.PP
+Overload function to send a heart rate measurement (8 bits) with expended energy\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.br
+\fIexpended_energy\fP Measured expended energy\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint16_tmeas_hr, uint16_texpended_energy)"
+
+.PP
+Overload function to send a heart rate measurement (16 bits) with expended energy\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.br
+\fIexpended_energy\fP Measured expended energy\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint8_tmeas_hr, uint16_t *p_rr_intervals, uint8_tnb_intervals)"
+
+.PP
+Overload function to send a heart rate measurement (8 bits) with rr_intervals\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.br
+\fIp_rr_intervals\fP Pointer to rr_intervals values\&. 
+.br
+\fInb_intervals\fP Number of rr_intervals\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint16_tmeas_hr, uint16_t *p_rr_intervals, uint8_tnb_intervals)"
+
+.PP
+Overload function to send a heart rate measurement (16 bits) with rr_intervals\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.br
+\fIp_rr_intervals\fP Pointer to rr_intervals values\&. 
+.br
+\fInb_intervals\fP Number of rr_intervals\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint8_tmeas_hr, uint16_texpended_energy, uint16_t *p_rr_intervals, uint8_tnb_intervals)"
+
+.PP
+Overload function to send a heart rate measurement (8 bits) with expended energy with rr_intervals\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP Measured heart_rate to send\&. 
+.br
+\fIexpended_energy\fP Measured expended energy\&. 
+.br
+\fIp_rr_intervals\fP Pointer to rr_intervals values\&. 
+.br
+\fInb_intervals\fP Number of rr_intervals\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "bool bleHeartRate::sendMeasure (uint16_tmeas_hr, uint16_texpended_energy, uint16_t *p_rr_intervals, uint8_tnb_intervals)"
+
+.PP
+Overload function to send a heart rate measurement (16 bits) with expended energy with rr_intervals\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImeas_hr\fP measured heart_rate to send\&. 
+.br
+\fIexpended_energy\fP Measured expended energy\&. 
+.br
+\fIp_rr_intervals\fP Pointer to rr_intervals values\&. 
+.br
+\fInb_intervals\fP Number of rr_intervals\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: True when the command send successfully\&. 
+.RE
+.PP
+
+.SS "virtual void bleHeartRate::onResetEnergyExpended ()\fC [inline]\fP, \fC [virtual]\fP"
+On reset energy expended event call by BLE task when receive remote (App) command\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The onResetEnergyExpended is a virtual empty function, and implement by child class\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

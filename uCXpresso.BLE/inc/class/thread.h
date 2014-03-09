@@ -27,7 +27,13 @@
 
 #include "class/object.h"
 
-/*! \enum PRIORITIES_T
+/**
+ * \defgroup RTOS
+ * The RTOS group is power by FreeRTOS
+ */
+
+/**Task priorities define
+ * \ingroup RTOS
  */
 typedef enum {
 	PRI_LOW = 0,	///< low priorities is for all normal tasks used.
@@ -37,22 +43,24 @@ typedef enum {
 	PRI_HARDWARE	///< for hardware interrupt
 }PRIORITIES_T;
 
-/*! Task states returned by eTaskStateGet.
+/**Task states returned by eTaskStateGet.
+ * \ingroup RTOS
  */
 typedef enum
 {
-	RUNNING = 0,	/* A task is querying the state of itself, so must be running. */
-	READY,			/* The task being queried is in a read or pending ready list. */
-	BLOCKED,		/* The task being queried is in the Blocked state. */
-	SUSPENDED,		/* The task being queried is in the Suspended state, or is in the Blocked state with an infinite time out. */
-	DELETED		/* The task being queried has been deleted, but its TCB has not yet been freed. */
+	RUNNING = 0,	///< A task is querying the state of itself, so must be running.
+	READY,			///< The task being queried is in a read or pending ready list.
+	BLOCKED,		///< The task being queried is in the Blocked state.
+	SUSPENDED,		///< The task being queried is in the Suspended state, or is in the Blocked state with an infinite time out.
+	DELETED			///< The task being queried has been deleted, but its TCB has not yet been freed.
 }TASK_STATE_T;
 
 #define DEF_THREAD_STACK	80
 
-/*!	\class CThread thread.h "class/thread.h"
- * \brief The CThread class provide the multi-tasking services.
- * \note The CThread class is an abstract class!!
+/**The CThread class provide the multi-tasking services.
+ * \note The CThread class is an abstract class, child class have to implement the run() member.
+ * \class CThread thread.h "class/thread.h"
+ * \ingroup RTOS
  */
 class CThread: virtual public CObject {
 public:

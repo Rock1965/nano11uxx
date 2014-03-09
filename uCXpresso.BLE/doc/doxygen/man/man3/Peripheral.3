@@ -1,0 +1,358 @@
+.TH "Peripheral" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peripheral \- 
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCAdc\fP"
+.br
+.ti -1c
+.RI "class \fBCBus\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The MCU peripheral group 
+.SH "Class Documentation"
+.PP 
+.SH "class CAdc"
+.PP 
+an Analog-to-Digital converter class\&. 
+.PP
+Inherits \fBCPeripheral\fP\&.
+.PP
+.in -1c
+.RI "\fBPublic Member Functions\fP"
+.in +1c
+
+.in +1c
+.ti -1c
+.RI "\fBCAdc\fP (ADC_CH_T ch)"
+.br
+.ti -1c
+.RI "virtual void \fBenable\fP (bool filtr=true)"
+.br
+.ti -1c
+.RI "virtual void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBread\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBread\fP (float filter, int count=3)"
+.br
+.ti -1c
+.RI "virtual int \fBread\fP (int samples, \fBCTimer\fP &interval)"
+.br
+.ti -1c
+.RI "virtual \fBoperator float\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CAdc::CAdc (ADC_CH_Tch)"
+Constructs a \fBCAdc\fP object with an AD pin\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP is a ADC_CH_T to specified an AD pin to connected to the object\&.
+.RE
+.PP
+.PP
+.nf
+Example:
+    CAdc ad(AD5);
+    ad\&.begin();
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CAdc::enable (boolfiltr = \fCtrue\fP)\fC [virtual]\fP"
+Enable the ADC function on the object 
+.SS "virtual void CAdc::disable ()\fC [virtual]\fP"
+Disable the ADC function on the object 
+.SS "virtual int CAdc::read ()\fC [virtual]\fP"
+Read the ADC value from the AD pin 
+.PP
+\fBReturns:\fP
+.RS 4
+10 bits resolution (0~1023) ADC value, if return -1, an overrun error\&. 
+.RE
+.PP
+
+.SS "virtual int CAdc::read (floatfilter, intcount = \fC3\fP)\fC [virtual]\fP"
+Read the ADC value from the AD pin with Compare-Filter 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilter\fP a float value to identify the offset range with last value\&. (0\&.1 = 10%, 0\&.25=25%) 
+.br
+\fIcount\fP a integer value to identify to retry count if ADC value over the filter range\&. (default value is 3) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+12 bits resolution (0~4095) ADC value
+.RE
+.PP
+.PP
+.nf
+Example:
+    CAdc ad(AD0);
+    ad\&.begin();
+    int value = ad\&.read(0\&.25, 3);   // if AD value over 25% with last value, try to read the AD value 3 times\&.
+.fi
+.PP
+ 
+.SS "virtual int CAdc::read (intsamples, \fBCTimer\fP &interval)\fC [virtual]\fP"
+Read the ADC value from the AD pin with Median-Filter 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsamples\fP a integer to identify how many ADC value read in sample buffer\&. 
+.br
+\fIinterval\fP a \fBCTimer\fP object to provide the interval timer service\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+12 bits resolution (0~4095) ADC value
+.RE
+.PP
+.PP
+.nf
+Example:
+        CAdc ad(AD0);
+        ad\&.begin();
+
+        CTime t(TIMER0);
+        t\&.setting(10, 50);          // 10x50 = 500us interval
+        t\&.begin();
+
+        int value = ad\&.read(5, t);  // ADC value with Median-Filter, total 5 samples, interval 500us
+.fi
+.PP
+ \fCWiKi for Median Filter\fP 
+.SS "virtual CAdc::operator float ()\fC [inline]\fP, \fC [virtual]\fP"
+A shorthand operator code to read ADC value 
+.PP
+\fBReturns:\fP
+.RS 4
+a float value, divide by MAX_ADC_VALUE
+.RE
+.PP
+.PP
+.nf
+Example:
+    CAdc ad(AD5);
+    ad\&.begin();
+
+    float value = ad;
+.fi
+.PP
+ 
+.SS "void CAdc::begin ()\fC [inline]\fP"
+
+.SS "void CAdc::end ()\fC [inline]\fP"
+
+.SH "class CBus"
+.PP 
+A digital input/output bus, used for reading/writing the state of a collection of pins\&. 
+.PP
+Inherits \fBCPeripheral\fP\&.
+.PP
+.in -1c
+.RI "\fBPublic Member Functions\fP"
+.in +1c
+
+.in +1c
+.ti -1c
+.RI "\fBCBus\fP (PIN_NAME_T \fBpin\fP,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "void \fBoutput\fP ()"
+.br
+.ti -1c
+.RI "void \fBinput\fP (PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP)"
+.br
+.ti -1c
+.RI "virtual void \fBwrite\fP (uint32_t val)"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBread\fP ()"
+.br
+.ti -1c
+.RI "\fBCPin\fP & \fBpin\fP (int index)"
+.br
+.ti -1c
+.RI "\fBoperator uint32_t\fP ()"
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (uint32_t val)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (uint32_t val)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (uint32_t val)"
+.br
+.ti -1c
+.RI "\fBCPin\fP & \fBoperator[]\fP (int index)"
+.br
+.ti -1c
+.RI "int \fBcount\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CBus::CBus (PIN_NAME_Tpin, \&.\&.\&.)"
+Constructs a \fBCBus\fP object to connect to the specified pins\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin\fP \&.\&.\&. are PIN_NAME_T to specified one or more pins to the \fBCBus\fP\&.
+.RE
+.PP
+.PP
+.nf
+Example:
+        CBus bus(P21, P22, P23, P24, END);  // Collect P21~P24 in the CBus object\&.
+        bus\&.output();                       // Set the bus as output pins\&.
+.fi
+.PP
+ 
+.PP
+\fBRemarks:\fP
+.RS 4
+to 'END' of the pin arguments is MUST!! 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CBus::output ()"
+Call the member function to set the bus as output pins\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImode\fP is a PIN_OUTPUT_MODE_T, default is OPEN_DRAIN (provide current)\&. 
+.RE
+.PP
+
+.SS "void CBus::input (PIN_INPUT_MODE_Tmode = \fCINTERNAL_PULL_UP\fP)"
+Call the member function to set the bus as input pins 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImode\fP is a PIN_INPUT_MODE_T, default is INTERNAL_PUTT_UP\&. 
+.RE
+.PP
+
+.SS "virtual void CBus::write (uint32_tval)\fC [virtual]\fP"
+Call the member function to write a value to the bus\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP is a unsigned integer to map the bit wide value to pins\&. 
+.RE
+.PP
+
+.SS "virtual uint32_t CBus::read ()\fC [virtual]\fP"
+Call the member function to retrieve a value from pins\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+a unsigned integer value that map the bit-wide of pins\&. 
+.RE
+.PP
+
+.SS "\fBCPin\fP& CBus::pin (intindex)"
+Call the member function to retrieve a identity pin from bus\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBCPin\fP 
+.RE
+.PP
+
+.SS "CBus::operator uint32_t ()\fC [inline]\fP"
+A shorthand for read
+.PP
+.PP
+.nf
+Example:
+        CBus bus(P21, P22, P23, P24, END);  // Collect P21~P24 in the CBus object\&.
+        bus\&.input();                        // Set the bus as input pins\&.
+        uint32_t val = bus;                 // Read a value from bus\&.
+.fi
+.PP
+ 
+.SS "void CBus::operator= (uint32_tval)\fC [inline]\fP"
+A shorthand for write
+.PP
+.PP
+.nf
+Example:
+        CBus bus(P21, P22, P23, P24, END);  // Collect P21~P24 in the CBus object\&.
+        bus\&.output();                       // Set the bus as output pins\&.
+        bus = 0x05;                         // Write 0x05 to bus\&.
+.fi
+.PP
+ 
+.SS "bool CBus::operator== (uint32_tval)\fC [inline]\fP"
+A shorthand for equal to\&.\&.\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the bus==val, otherwise, failed\&. 
+.RE
+.PP
+
+.SS "bool CBus::operator!= (uint32_tval)\fC [inline]\fP"
+A shorthand for not equal to\&.\&.\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the bus not equal the val; otherwise, failed\&. 
+.RE
+.PP
+
+.SS "\fBCPin\fP& CBus::operator[] (intindex)\fC [inline]\fP"
+A shorthand for array 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBCPin\fP
+.RE
+.PP
+.PP
+.nf
+Example:
+        CBus bus(P21, P22, P23, P24, END);  // Collect P21~P24 in the CBus object\&.
+        bus\&.output();                       // Set the bus as output pins\&.
+    bus[2] = LOW;                       // Set P23 is LOW\&.
+.fi
+.PP
+ 
+.SS "int CBus::count ()\fC [inline]\fP"
+Call the member function to retrieve the number of pins in the bus\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+integer value\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

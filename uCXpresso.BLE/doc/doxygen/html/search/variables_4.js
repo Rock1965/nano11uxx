@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flags',['flags',['../d9/dca/structble_health_thermometer_1_1h__thermo__temp__measure__t.html#ad2beee2a9d16609e0171df720eea4fc4',1,'bleHealthThermometer::h_thermo_temp_measure_t']]]
+  ['flags',['flags',['../d7/d86/structh__thermo__temp__measure__s.html#a7f97533e88c97363a67d7e5239d9583d',1,'h_thermo_temp_measure_s']]]
 ];

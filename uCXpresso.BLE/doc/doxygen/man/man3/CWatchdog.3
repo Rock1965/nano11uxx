@@ -1,0 +1,89 @@
+.TH "CWatchdog" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CWatchdog \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <watchdog\&.h>\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCWatchdog\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTimeout\fP (float second)"
+.br
+.ti -1c
+.RI "void \fBenable\fP (float warming)"
+.br
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBwait\fP (uint32_t timeout=MAX_DELAY_TIME)"
+.br
+.ti -1c
+.RI "void \fBasWakeupSource\fP ()"
+.br
+.ti -1c
+.RI "uint32_t \fBcount\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CWatchdog\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBfeed\fP ()"
+.br
+.ti -1c
+.RI "static uint32_t \fBfrequence\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCSemaphore\fP \fBm_semIrq\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CWatchdog::CWatchdog ()"
+
+.SS "virtual CWatchdog::~CWatchdog ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CWatchdog::setTimeout (floatsecond)"
+
+.SS "void CWatchdog::enable (floatwarming)"
+
+.SS "void CWatchdog::disable ()"
+
+.SS "static void CWatchdog::feed ()\fC [static]\fP"
+
+.SS "static uint32_t CWatchdog::frequence ()\fC [static]\fP"
+
+.SS "virtual bool CWatchdog::wait (uint32_ttimeout = \fCMAX_DELAY_TIME\fP)\fC [virtual]\fP"
+
+.SS "void CWatchdog::asWakeupSource ()"
+
+.SS "uint32_t CWatchdog::count ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCSemaphore\fP CWatchdog::m_semIrq"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

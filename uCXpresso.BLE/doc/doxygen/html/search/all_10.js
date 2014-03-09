@@ -5,6 +5,7 @@ var searchData=
   ['readsystemvoltage',['readSystemVoltage',['../d8/d3b/classble_battery_level.html#a2c6fae51a8653f720eb50169b094f7a5',1,'bleBatteryLevel']]],
   ['readtemperature',['readTemperature',['../d9/d26/classble_health_thermometer.html#a8d54f2c7e49f12ca5846e55dcab0ab3b',1,'bleHealthThermometer']]],
   ['readwrite',['readwrite',['../d7/db9/class_c_i2_c_master.html#aeea55afb38b9788048b5f7458616d208',1,'CI2CMaster::readwrite()'],['../d9/d52/class_c_i2_c_slave.html#a1fe39972f6786151907517439c34acc3',1,'CI2CSlave::readwrite()'],['../d2/d3f/class_c_s_p_i.html#a5215a320db4cb5f2792ea18f8d6e0671',1,'CSPI::readwrite(void *txbuf, void *rxbuf, uint32_t length)'],['../d2/d3f/class_c_s_p_i.html#a0cdfe6a4d42e835cf7b67ba99ae115ca',1,'CSPI::readwrite(uint8_t tx, uint8_t &amp;rx)'],['../d2/d3f/class_c_s_p_i.html#acf2e1695f717fa88620e4bddd7871ea3',1,'CSPI::readwrite(uint8_t tx)'],['../d9/d9b/class_c_spi_master.html#a13d1514765c41561d16dd46eefb9926e',1,'CSpiMaster::readwrite()']]],
+  ['ready',['READY',['../d8/dba/group___r_t_o_s.html#gga25ee4013cc565a18ac2f4039b4ad441ba6564f2f3e15be06b670547bbcaaf0798',1,'thread.h']]],
   ['release',['release',['../db/d2c/class_c_pin_i_n_t.html#abe0ce7ac090423e11d460e75c8838128',1,'CPinINT::release()'],['../d0/d06/class_c_semaphore.html#aa1a25ff1be26f8dfdd0f008aeabec8b1',1,'CSemaphore::release()']]],
   ['removeall',['removeAll',['../df/db6/class_c_list.html#a5ee3e7395c54395c7f603c08a1b9d5cf',1,'CList']]],
   ['removeallt',['removeAllT',['../da/d59/class_c_list_t.html#a33519401fb498e0b5f64e2da041726cc',1,'CListT']]],
@@ -14,11 +15,13 @@ var searchData=
   ['removeheadt',['removeHeadT',['../da/d59/class_c_list_t.html#a8d5f6f7d4251425a6583f4ffe6ccdd37',1,'CListT']]],
   ['removetail',['removeTail',['../df/db6/class_c_list.html#adc7cb308e77a9e0550eecce9333b071b',1,'CList']]],
   ['removetailt',['removeTailT',['../da/d59/class_c_list_t.html#acb8c0cc7df7297b766065d3d89eba530',1,'CListT']]],
+  ['repeater',['REPEATER',['../dd/d36/group___peripheral.html#gga16ce6180d8bb2eb23a7df8f8923ea581a415b70b8108c51e396b88eeeaa0ffb1a',1,'pin.h']]],
   ['replace',['replace',['../df/d99/class_c_string.html#a2330b9d10792cbf3dec9ccd747c67da1',1,'CString']]],
   ['reset',['reset',['../d5/df3/class_c_r_c16.html#ad948d7638a1d07540db96cb649ce0d52',1,'CRC16::reset()'],['../d8/d26/class_c_mail_box.html#a73d5b694b1e7ce4e05c7ccc8f1dfd695',1,'CMailBox::reset()'],['../d5/d5b/class_c_timeout.html#a663a09bb51c1de8f8d83bd62fdc1a688',1,'CTimeout::reset()'],['../db/de1/class_c_timer.html#a6234aac53e301116247e33254cd2f585',1,'CTimer::reset()']]],
   ['result',['result',['../d5/df3/class_c_r_c16.html#aa70e96e936eea96361292dfc3f1a71fc',1,'CRC16']]],
   ['resume',['resume',['../d0/d26/class_c_thread.html#ac8c53aa8c145fc4ac70fa6d825b95742',1,'CThread']]],
   ['resumeall',['resumeAll',['../d0/d26/class_c_thread.html#a743d4325b7e7da494283f3292773ff77',1,'CThread']]],
   ['rtos',['RTOS',['../d8/dba/group___r_t_o_s.html',1,'']]],
-  ['run',['run',['../de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f',1,'CShell::run()'],['../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7',1,'CThread::run()'],['../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71',1,'CDebug::run()']]]
+  ['run',['run',['../de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f',1,'CShell::run()'],['../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7',1,'CThread::run()'],['../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71',1,'CDebug::run()']]],
+  ['running',['RUNNING',['../d8/dba/group___r_t_o_s.html#gga25ee4013cc565a18ac2f4039b4ad441ba1061be6c3fb88d32829cba6f6b2be304',1,'thread.h']]]
 ];

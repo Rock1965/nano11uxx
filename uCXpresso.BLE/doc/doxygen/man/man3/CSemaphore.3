@@ -1,0 +1,185 @@
+.TH "CSemaphore" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CSemaphore \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'class/semaphore\&.h'\fP
+.PP
+Inherits \fBCObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBcounting\fP (int count, int init=0)"
+.br
+.ti -1c
+.RI "virtual bool \fBbinary\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBwait\fP (int timeout=MAX_DELAY_TIME)"
+.br
+.ti -1c
+.RI "virtual int \fBrelease\fP (bool fromISR=false)"
+.br
+.ti -1c
+.RI "virtual int \fBwaiting\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBCSemaphore\fP class provides two kinds semaphore which counting and binary\&. 
+.PP
+\fBNote:\fP
+.RS 4
+\fBCSemaphore\fP cannot be used before a call to member counting or binary\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool CSemaphore::counting (intcount, intinit = \fC0\fP)\fC [virtual]\fP"
+Call the member function to creates a counting semaphore\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcount\fP is a integer value to specified the maximum count thate can be reached\&. 
+.br
+\fIinit\fP is a integer value to assigned to the semaphore when it is created\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if create semaphore successful; otherwise, failed\&. 
+.RE
+.PP
+
+.SS "virtual bool CSemaphore::binary ()\fC [virtual]\fP"
+Call the member function to creates a binary semaphore\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if create semaphore successful; otherwise, failed\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+Binary semaphores and mutexes are very similar but have some subtle differences: Mutexes include a priority inheritance mechanism, binary semaphores do not\&. This makes binary semaphores the better choice for implementing synchronisation (between tasks or between tasks and an interrupt), and mutexes the better choice for implementing simple mutual exclusion\&. 
+.RE
+.PP
+
+.SS "virtual bool CSemaphore::wait (inttimeout = \fCMAX_DELAY_TIME\fP)\fC [virtual]\fP"
+Call the member function to wait a semaphore available\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItimeout\fP is a integer value to specified the millisecond to wait for the semaphore to become available\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if create semaphore successful; otherwise, failed\&.
+.RE
+.PP
+.PP
+.nf
+Example:
+        CSemaphore semLED;
+
+        // resource
+        CBus leds(LED1, LED2, LED3, LED4, END);
+        int  index;
+
+        // task1
+        class Task1: public CThread {
+        protected:
+            virtual void run() {
+                while(1) {
+                    index = rand() % 4;     // get a random value in 0~3\&.
+                    semLED\&.release();       // release resource\&.
+                    sleep(500);
+                }
+            }
+        };
+
+        // task2
+        class Task2: public CThread {
+    protected:
+            virtual void run() {
+                while(1) {
+                    semLED\&.wait();          // wait resource available\&.
+                    leds[index] = !leds[index];
+                }
+            }
+        }
+
+        void main() {
+            \&.\&.\&.
+            semLED\&.binary();    // set the semaphore in binary mode
+            \&.\&.\&.
+        }
+.fi
+.PP
+ 
+.SS "virtual int CSemaphore::release (boolfromISR = \fCfalse\fP)\fC [virtual]\fP"
+Call the member function to release a semaphore\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfromISR\fP is a boolean to specified the release occur from interrupt routine\&. (internal used) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a integer value to identify the context switch wake\&. (internal used)
+.RE
+.PP
+.PP
+.nf
+Example:
+        CSemaphore semLED;
+
+        // resource
+        CBus leds(LED1, LED2, LED3, LED4, END);
+        int  index;
+
+        // task1
+        class Task1: public CThread {
+        protected:
+            virtual void run() {
+                while(1) {
+                    index = rand() % 4;     // get a random value in 0~3\&.
+                    semLED\&.release();       // release resource\&.
+                    sleep(500);
+                }
+            }
+        };
+
+        // task2
+        class Task2: public CThread {
+    protected:
+            virtual void run() {
+                while(1) {
+                    semLED\&.wait();          // wait resource available\&.
+                    leds[index] = !leds[index];
+                }
+            }
+        }
+
+        void main() {
+            \&.\&.\&.
+            semLED\&.binary();    // set the semaphore in binary mode
+            \&.\&.\&.
+        }
+.fi
+.PP
+ 
+.SS "virtual int CSemaphore::waiting ()\fC [virtual]\fP"
+Number of task in waiting 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

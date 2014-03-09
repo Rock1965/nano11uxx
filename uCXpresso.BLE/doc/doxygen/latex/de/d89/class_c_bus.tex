@@ -3,27 +3,22 @@
 }
 
 
-A digital input/output bus, used for reading/writing the state of a collection of pins.  
-
-
-
-
 {\ttfamily \#include \char`\"{}class/bus.\-h\char`\"{}}
 
 Inheritance diagram for C\-Bus\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{de/d89/class_c_bus}
+\includegraphics[height=3.000000cm]{de/d89/class_c_bus}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_c_bus_a5f859ac1582a6cbe9b5b420c6c051e63}{C\-Bus} (P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T \hyperlink{class_c_bus_a94da38619defc1c41c16c04c4c7991f8}{pin},...)
+\hyperlink{class_c_bus_a5f859ac1582a6cbe9b5b420c6c051e63}{C\-Bus} (\hyperlink{group___peripheral_ga65a2241721e4acb573e0c3fe29ac432f}{P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T} \hyperlink{class_c_bus_a94da38619defc1c41c16c04c4c7991f8}{pin},...)
 \item 
 void \hyperlink{class_c_bus_a5f797dca77eb5a86048c65e567a2d233}{output} ()
 \item 
-void \hyperlink{class_c_bus_ad45a06493f12aef3d096ac3ed86a3b8f}{input} (P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T mode=I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-P\-U\-L\-L\-\_\-\-U\-P)
+void \hyperlink{class_c_bus_ad45a06493f12aef3d096ac3ed86a3b8f}{input} (\hyperlink{group___peripheral_gad5705547b72a4480dc714447b3bbfb64}{P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T} mode=\hyperlink{group___peripheral_gga16ce6180d8bb2eb23a7df8f8923ea581a781a7f23ae9b0dbdc6edfdcfd3be75df}{I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-P\-U\-L\-L\-\_\-\-U\-P})
 \item 
 virtual void \hyperlink{class_c_bus_a4852669ff7ae53e68cf125aa49a87bd0}{write} (uint32\-\_\-t val)
 \item 
@@ -53,7 +48,7 @@ A digital input/output bus, used for reading/writing the state of a collection o
 \index{C\-Bus@{C\-Bus}!CBus@{C\-Bus}}
 \subsubsection[{C\-Bus}]{\setlength{\rightskip}{0pt plus 5cm}C\-Bus\-::\-C\-Bus (
 \begin{DoxyParamCaption}
-\item[{P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T}]{pin, }
+\item[{{\bf P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T}}]{pin, }
 \item[{}]{...}
 \end{DoxyParamCaption}
 )}}\label{class_c_bus_a5f859ac1582a6cbe9b5b420c6c051e63}
@@ -65,7 +60,7 @@ Constructs a \hyperlink{class_c_bus}{C\-Bus} object to connect to the specified 
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(P21, P22, P23, P24, END);  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.output();                       \textcolor{comment}{// Set the bus as output pins.}
 \end{DoxyCode}
  \begin{DoxyRemark}{Remarks}
@@ -90,7 +85,7 @@ Call the member function to set the bus as output pins.
 \index{input@{input}!CBus@{C\-Bus}}
 \subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Bus\-::input (
 \begin{DoxyParamCaption}
-\item[{P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T}]{mode = {\ttfamily INTERNAL\-\_\-PULL\-\_\-UP}}
+\item[{{\bf P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T}}]{mode = {\ttfamily {\bf I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-P\-U\-L\-L\-\_\-\-U\-P}}}
 \end{DoxyParamCaption}
 )}}\label{class_c_bus_ad45a06493f12aef3d096ac3ed86a3b8f}
 Call the member function to set the bus as input pins 
@@ -142,7 +137,7 @@ A shorthand for read
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(P21, P22, P23, P24, END);  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.input();                        \textcolor{comment}{// Set the bus as input pins.}
         uint32\_t val = bus;                 \textcolor{comment}{// Read a value from bus.}
 \end{DoxyCode}
@@ -158,7 +153,7 @@ A shorthand for write
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(P21, P22, P23, P24, END);  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.output();                       \textcolor{comment}{// Set the bus as output pins.}
         bus = 0x05;                         \textcolor{comment}{// Write 0x05 to bus.}
 \end{DoxyCode}
@@ -195,7 +190,7 @@ A shorthand for array \begin{DoxyReturn}{Returns}
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(P21, P22, P23, P24, END);  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.output();                       \textcolor{comment}{// Set the bus as output pins.}
     bus[2] = LOW;                       \textcolor{comment}{// Set P23 is LOW.}
 \end{DoxyCode}

@@ -1,0 +1,238 @@
+.TH "CThread" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CThread \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'class/thread\&.h'\fP
+.PP
+Inherits \fBCObject\fP\&.
+.PP
+Inherited by \fBbleSerial\fP, \fBCDebug\fP, and \fBCShell\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBstart\fP (const char *name, int stack=DEF_THREAD_STACK, PRIORITIES_T priority=PRI_LOW)"
+.br
+.ti -1c
+.RI "virtual bool \fBstart\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBresume\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBsuspend\fP ()"
+.br
+.ti -1c
+.RI "uint32_t \fBgetStackHighWaterMark\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBisSuspend\fP ()"
+.br
+.ti -1c
+.RI "TASK_STATE_T \fBgetState\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBsetPriority\fP (PRIORITIES_T p)"
+.br
+.ti -1c
+.RI "virtual PRIORITIES_T \fBgetPriority\fP ()"
+.br
+.ti -1c
+.RI "LPCTSTR \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBisAlive\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBkill\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBisThread\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBresumeAll\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsuspendAll\fP ()"
+.br
+.ti -1c
+.RI "static void \fBenterCriticalSection\fP ()"
+.br
+.ti -1c
+.RI "static void \fBexitCriticalSection\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBCThread\fP class provide the multi-tasking services\&. 
+.PP
+\fBNote:\fP
+.RS 4
+The \fBCThread\fP class is an abstract class, child class have to implement the run() member\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool CThread::start (const char *name, intstack = \fCDEF_THREAD_STACK\fP, PRIORITIES_Tpriority = \fCPRI_LOW\fP)\fC [virtual]\fP"
+Call the member function to start the thread\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP is a descriptive name for the task\&. 
+.br
+\fIstack\fP is a integer value to specified as the number of stack can hold-not the number of bytes\&. 
+.br
+\fIpriority\fP at which the task should run\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful; otherwise, crate task failed\&.
+.RE
+.PP
+.PP
+.nf
+Example:
+        class CLedTask: public CThread {
+        protected:
+            virtual void run() {
+                CPin led(LED2);
+                while( isAlive() ) {    // Is thread in alive?  (when thread be kill, the isAlive will return false)
+                    led = !led;
+                    sleep(200);
+                }
+            }
+        };
+
+        int main() {
+            \&.\&.\&.
+            CLedTask ledTask;
+            ledTask\&.start("led");   // default stack=128, default priority=low
+            \&.\&.\&.
+        }
+.fi
+.PP
+ 
+.SS "virtual bool CThread::start ()\fC [virtual]\fP"
+Call the member function to start the thread\&. 
+.PP
+\fBNote:\fP
+.RS 4
+the \fBstart()\fP is an overload member function of \fBCThread\fP\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBCDebug\fP, and \fBCShell\fP\&.
+.SS "virtual void CThread::resume ()\fC [virtual]\fP"
+Call the member function to resume the thread\&.
+.PP
+.PP
+.nf
+Example:
+    int main() {
+        \&.\&.\&.
+        CLedTask ledTask;
+        ledTask\&.start("led");
+        \&.\&.\&.
+        ledTask\&.suspend();      // suspend the ledTask
+        \&.\&.\&.
+        if ( ledTask\&.isSuspend() ) {
+            ledTask\&.resume();   // resume the ledTask
+        }
+        \&.\&.\&.
+    }
+.fi
+.PP
+ 
+.SS "virtual void CThread::suspend ()\fC [virtual]\fP"
+Call the member function to suspend the thread\&.
+.PP
+.PP
+.nf
+Example:
+    int main() {
+        \&.\&.\&.
+        CLedTask ledTask;
+        ledTask\&.start("led");
+        \&.\&.\&.
+        ledTask\&.suspend();      // suspend the ledTask
+        \&.\&.\&.
+        if ( ledTask\&.isSuspend() ) {
+            ledTask\&.resume();   // resume the ledTask
+        }
+        \&.\&.\&.
+    }
+.fi
+.PP
+ 
+.SS "uint32_t CThread::getStackHighWaterMark ()"
+Call the member function to check the stack high water mark\&. 
+.PP
+\fBNote:\fP
+.RS 4
+Or use the shell and type 'task' to check all tasks status\&. 
+.RE
+.PP
+
+.SS "virtual bool CThread::isSuspend ()\fC [virtual]\fP"
+Call the member function to check the task is in suspended or not\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if task in suspended\&. otherwise, the task in running\&. 
+.RE
+.PP
+
+.SS "TASK_STATE_T CThread::getState ()"
+Retrieve the state of thread object (task) 
+.SS "virtual void CThread::setPriority (PRIORITIES_Tp)\fC [virtual]\fP"
+Call the member function to change the task's priority\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp\fP is PRIORITIES_T to set a new priority for the task\&. 
+.RE
+.PP
+
+.SS "virtual PRIORITIES_T CThread::getPriority ()\fC [virtual]\fP"
+Call the member function to get the task's priority\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+PRIORITIES_T 
+.RE
+.PP
+
+.SS "LPCTSTR CThread::getName ()"
+Call the member function to retrieve the task's name\&. 
+.SS "virtual bool CThread::isAlive ()\fC [virtual]\fP"
+isAlive is to check the thread is in alive (for run-loop) 
+.SS "virtual void CThread::kill ()\fC [virtual]\fP"
+kill the thread, call the kill the \fBisAlive()\fP will return false 
+.SS "virtual bool CThread::isThread ()\fC [inline]\fP, \fC [virtual]\fP"
+\fBisThread()\fP, check the class is inherited from \fBCThread\fP 
+.PP
+Reimplemented from \fBCObject\fP\&.
+.SS "static void CThread::resumeAll ()\fC [static]\fP"
+The resumeAll is a static (global) function to resume all suspended tasks\&. 
+.SS "static void CThread::suspendAll ()\fC [static]\fP"
+The suspendAll is a static (globa) function to suspend all running tasks\&. 
+.SS "static void CThread::enterCriticalSection ()\fC [static]\fP"
+
+.SS "static void CThread::exitCriticalSection ()\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

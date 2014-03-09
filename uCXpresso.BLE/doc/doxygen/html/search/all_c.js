@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['m_5fble',['m_ble',['../d8/d3b/classble_battery_level.html#ac1466f5cc1995a2af27914beb432dedb',1,'bleBatteryLevel::m_ble()'],['../d3/dc5/classble_device_info.html#a12a144e14c48090240505c6be43c6eac',1,'bleDeviceInfo::m_ble()']]],
+  ['m_5fble',['m_ble',['../d3/dc5/classble_device_info.html#a12a144e14c48090240505c6be43c6eac',1,'bleDeviceInfo']]],
   ['m_5fch',['m_ch',['../db/d2c/class_c_pin_i_n_t.html#a563b913b2126f003c0e1e2f3400a2ed2',1,'CPinINT']]],
   ['m_5fconsole',['m_console',['../de/dba/class_c_shell.html#ac555f42f70f60653dbd5e0c8ec9c4dcf',1,'CShell']]],
   ['m_5fcount',['m_count',['../db/de1/class_c_timer.html#a0ab331eadfa7223dfe9344db39dac615',1,'CTimer']]],
@@ -40,7 +40,7 @@ var searchData=
   ['makelower',['makeLower',['../df/d99/class_c_string.html#af4236022a2befbcee7c1eaad21ba6798',1,'CString']]],
   ['makereverse',['makeReverse',['../df/d99/class_c_string.html#a0b2512a4d0efb8c0317ef7a969268f07',1,'CString']]],
   ['makeupper',['makeUpper',['../df/d99/class_c_string.html#a7a027f50c1bede9a37d12ec9d2cc6616',1,'CString']]],
-  ['measurement',['measurement',['../d9/dca/structble_health_thermometer_1_1h__thermo__temp__measure__t.html#ae65911e1474d1271d982d70b2624609f',1,'bleHealthThermometer::h_thermo_temp_measure_t']]],
+  ['measurement',['measurement',['../d7/d86/structh__thermo__temp__measure__s.html#a5e89c0b96d36798f0119b2908a86cd2c',1,'h_thermo_temp_measure_s']]],
   ['measurementinterval',['measurementInterval',['../d9/d26/classble_health_thermometer.html#acd9cde127f632f06615382b3d03299fd',1,'bleHealthThermometer']]],
   ['mfgid',['mfgId',['../d4/d75/struct_s_y_s___i_d___t.html#a36a75b1bc4c8e4866eb039880b8aad9e',1,'SYS_ID_T']]],
   ['mid',['mid',['../df/d99/class_c_string.html#aae1e4a3db1f724363a300d706eae78b8',1,'CString']]],

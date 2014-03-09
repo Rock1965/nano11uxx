@@ -1,23 +1,5 @@
 var classble_serial =
 [
-    [ "BLE_DISCONNECT_REASON_T", "d7/d03/classble_serial.html#a5a50139216d995997ee79d3bd058bfe6", [
-      [ "BLE_TERMINATED", "d7/d03/classble_serial.html#a5a50139216d995997ee79d3bd058bfe6aed29c5e9584bc5b1a88b9fb00e9962f3", null ],
-      [ "BLE_UNACCEPTABLE", "d7/d03/classble_serial.html#a5a50139216d995997ee79d3bd058bfe6a81c6b69282982367c7145cb4e438a2cb", null ]
-    ] ],
-    [ "BLE_TX_POWER_T", "d7/d03/classble_serial.html#a5a80fa5bef696de05146980acdd68f3c", [
-      [ "BLE_TX_m18dBm", "d7/d03/classble_serial.html#a5a80fa5bef696de05146980acdd68f3ca27638a73c01d8094a95adaf459c9eb2b", null ],
-      [ "BLE_TX_m12dBm", "d7/d03/classble_serial.html#a5a80fa5bef696de05146980acdd68f3caba061502901a1f7ea1256511ed1b2b29", null ],
-      [ "BLE_TX_m6dBm", "d7/d03/classble_serial.html#a5a80fa5bef696de05146980acdd68f3ca858fa427361b25178ae80cb31bc4cddc", null ],
-      [ "BLE_TX_0dBm", "d7/d03/classble_serial.html#a5a80fa5bef696de05146980acdd68f3ca4193a6771ef19e12f25a26af196184ff", null ]
-    ] ],
-    [ "BLE_ERR_T", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2", [
-      [ "BLE_ERR_OK", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2a8cd412532141e50b0d447d2bcd997dbe", null ],
-      [ "BLE_ERR_HW", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2a276e0d38e986fe60284f6a985ac53689", null ],
-      [ "BLE_ERR_BUF", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2a17a9d88bfd8cf2ceb25a09c8e87a006b", null ],
-      [ "BLE_ERR_ACK_TIMEOUT", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2ae4611cf47cef2fe6faf9f27d4e5b4ae5", null ],
-      [ "BLE_ERR_RSP_TIMEOUT", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2afc80c13721c45e057beb1d051378d122", null ],
-      [ "BLE_ERR_DAT_TIMEOUT", "d7/d03/classble_serial.html#a46e393eb31428307fde06a2788920ce2ae0166099b514f110064fb8962bf1b292", null ]
-    ] ],
     [ "bleSerial", "d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec", null ],
     [ "advertising", "d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9", null ],
     [ "setup", "d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74", null ],

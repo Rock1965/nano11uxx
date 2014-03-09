@@ -1,0 +1,75 @@
+.TH "CPowerSave" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CPowerSave \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <power\&.h>\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCPowerSave\fP ()"
+.br
+.ti -1c
+.RI "void \fBenable\fP (PS_MODE_T mode=DEEP_SLEEP)"
+.br
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CPowerSave\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonSleep\fP (uint32_t ulExpectedIdleTime)"
+.br
+.ti -1c
+.RI "virtual void \fBonWakeup\fP (uint32_t *pExpectedIdleTime)"
+.br
+.ti -1c
+.RI "virtual bool \fBisEnable\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBm_flag\fP"
+.br
+.ti -1c
+.RI "\fBCWatchdog\fP \fBm_wdt\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CPowerSave::CPowerSave ()"
+
+.SS "virtual CPowerSave::~CPowerSave ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CPowerSave::enable (PS_MODE_Tmode = \fCDEEP_SLEEP\fP)"
+
+.SS "void CPowerSave::disable ()"
+
+.SS "virtual void CPowerSave::onSleep (uint32_tulExpectedIdleTime)\fC [virtual]\fP"
+
+.SS "virtual void CPowerSave::onWakeup (uint32_t *pExpectedIdleTime)\fC [virtual]\fP"
+
+.SS "virtual bool CPowerSave::isEnable ()\fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "uint32_t CPowerSave::m_flag\fC [protected]\fP"
+
+.SS "\fBCWatchdog\fP CPowerSave::m_wdt\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

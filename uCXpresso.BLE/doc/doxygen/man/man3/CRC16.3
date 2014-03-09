@@ -1,0 +1,80 @@
+.TH "CRC16" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CRC16 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <crc16\&.h>\fP
+.PP
+Inherits \fBCObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCRC16\fP (uint16_t init=0xffff, uint16_t poly=0x1021)"
+.br
+.ti -1c
+.RI "virtual \fB~CRC16\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (uint8_t data)"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (uint8_t *buf, int length)"
+.br
+.ti -1c
+.RI "virtual uint16_t \fBresult\fP ()"
+.br
+.ti -1c
+.RI "\fBoperator uint16_t\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBm_poly\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBm_init\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBm_crc\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CRC16::CRC16 (uint16_tinit = \fC0xffff\fP, uint16_tpoly = \fC0x1021\fP)"
+
+.SS "virtual CRC16::~CRC16 ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CRC16::reset ()\fC [virtual]\fP"
+
+.SS "virtual void CRC16::update (uint8_tdata)\fC [virtual]\fP"
+
+.SS "virtual void CRC16::update (uint8_t *buf, intlength)\fC [virtual]\fP"
+
+.SS "virtual uint16_t CRC16::result ()\fC [virtual]\fP"
+
+.SS "CRC16::operator uint16_t ()\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "uint16_t CRC16::m_poly\fC [protected]\fP"
+
+.SS "uint16_t CRC16::m_init\fC [protected]\fP"
+
+.SS "uint16_t CRC16::m_crc\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

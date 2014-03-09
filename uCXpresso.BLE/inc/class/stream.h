@@ -28,13 +28,13 @@ public:
 
 	/**Determine how many data bytes are available to read.
 	 * \return A value to indicate how many data byte is available in the input buffer.
-	 * \remark A pure virtual function have to implement by child class.
+	 * \remark the pure virtual function have to implement by child class.
 	 */
 	virtual int	 readable() = PURE_VIRTUAL_FUNC;
 
 	/**Determine how many data space are available to write.
 	 * \return A value to indicate how many data space is available in the output buffer.
-	 * \remark A pure virtual function have to implement by child class.
+	 * \remark the pure virtual function have to implement by child class.
 	 */
 	virtual int	 writeable() = PURE_VIRTUAL_FUNC;
 
@@ -43,7 +43,7 @@ public:
 	 * \param[in] len Length of destination buffer.
 	 * \param[in] block If true, to block in the read function unit to the indication length (len) be read.
 	 * \return A value to indicate how many data bytes to read.
-	 * \remark A pure virtual function have to implement by child class.
+	 * \remark the pure virtual function have to implement by child class.
 	 */
 	virtual int  read(void *buf, int len, bool block=true) = PURE_VIRTUAL_FUNC;
 
@@ -52,18 +52,18 @@ public:
 	 * \param[in] len Length of source buffer.
 	 * \param[in] block If true, to block in the write function unit to the indication length (len) be sent.
 	 * \return A value to indicate how many data bytes to write.
-	 * \remark A pure virtual function have to implement by child class.
+	 * \remark the pure virtual function have to implement by child class.
 	 */
 	virtual int  write(const void *buf, int len, bool block=true) = PURE_VIRTUAL_FUNC;
 
 	/**Check the current connection is valid or not.
 	 * \return true if current connection is valid.
-	 * \remark A pure virtual function have to implement by child class.
+	 * \remark the pure virtual function have to implement by child class.
 	 */
 	virtual bool isConnected() = PURE_VIRTUAL_FUNC;
 
 	/**Flush the stream the both input and output buffer
-	 * \remark A pure virtual function have to implement by child class.
+	 * \remark the pure virtual function have to implement by child class.
 	 */
 	virtual void flush() = PURE_VIRTUAL_FUNC;
 

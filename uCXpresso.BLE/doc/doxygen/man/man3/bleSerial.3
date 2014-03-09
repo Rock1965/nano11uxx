@@ -1,0 +1,455 @@
+.TH "bleSerial" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bleSerial \- 
+.PP
+\fBbleSerial\fP class is a ble core, and inherit from \fBCStream\fP class to provide the stream virtual functions for serial input and output\&. the \fBbleSerial\fP class also inherit from the \fBCThread\fP class and can work in background\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'class/ble_serial\&.h'\fP
+.PP
+Inherits \fBCStream\fP, and \fBCThread\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBLE_DISCONNECT_REASON_T\fP { \fBBLE_TERMINATED\fP =1, \fBBLE_UNACCEPTABLE\fP = 2 }"
+.br
+.ti -1c
+.RI "enum \fBBLE_TX_POWER_T\fP { \fBBLE_TX_m18dBm\fP = 0, \fBBLE_TX_m12dBm\fP = 1, \fBBLE_TX_m6dBm\fP = 2, \fBBLE_TX_0dBm\fP = 3 }"
+.br
+.ti -1c
+.RI "enum \fBBLE_ERR_T\fP { \fBBLE_ERR_OK\fP = 0, \fBBLE_ERR_HW\fP, \fBBLE_ERR_BUF\fP, \fBBLE_ERR_ACK_TIMEOUT\fP, \fBBLE_ERR_RSP_TIMEOUT\fP, \fBBLE_ERR_DAT_TIMEOUT\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbleSerial\fP (LPCTSTR deviceName=DEF_BLE_DEVICENAME)"
+.br
+.RI "\fI\fBbleSerial\fP constructor with a GAT device name\&. \fP"
+.ti -1c
+.RI "void \fBadvertising\fP (uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint16_t manufactureData=DEF_BLE_MFG_DATA)"
+.br
+.ti -1c
+.RI "void \fBsetup\fP (uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint16_t manufactureData=DEF_BLE_MFG_DATA)"
+.br
+.ti -1c
+.RI "bool \fBenable\fP (uint32_t stack=128)"
+.br
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "void \fBpollInterval\fP (uint32_t ms)"
+.br
+.ti -1c
+.RI "void \fBwatchdog\fP (uint32_t tm)"
+.br
+.ti -1c
+.RI "bool \fBisActived\fP ()"
+.br
+.ti -1c
+.RI "bool \fBdisconnect\fP (\fBBLE_DISCONNECT_REASON_T\fP reason=\fBBLE_TERMINATED\fP)"
+.br
+.ti -1c
+.RI "bool \fBsetRadioTxPower\fP (\fBBLE_TX_POWER_T\fP power)"
+.br
+.ti -1c
+.RI "uint8_t \fBgetPhyVersion\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonConnected\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonDisconnected\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonWatchdog\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonError\fP (\fBBLE_ERR_T\fP err, LPCTSTR id='bleSerial')"
+.br
+.ti -1c
+.RI "bool \fBisAvailable\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBreadable\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBwriteable\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBread\fP (void *buf, int len, bool block=true)"
+.br
+.ti -1c
+.RI "virtual int \fBwrite\fP (const void *buf, int len, bool block=true)"
+.br
+.ti -1c
+.RI "virtual bool \fBisConnected\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBflush\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBbleSerial\fP class is a ble core, and inherit from \fBCStream\fP class to provide the stream virtual functions for serial input and output\&. the \fBbleSerial\fP class also inherit from the \fBCThread\fP class and can work in background\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBbleSerial::BLE_DISCONNECT_REASON_T\fP"
+Disconnect a BLE connection with a reason\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBLE_TERMINATED \fP\fP
+Request termination of the connection with the peer device with the reason 'Remote user terminated connection'\&. 
+.TP
+\fB\fIBLE_UNACCEPTABLE \fP\fP
+Request termination of the link with the peer device with the reason 'Unacceptable connection timing'\&. 
+.SS "enum \fBbleSerial::BLE_TX_POWER_T\fP"
+setTxPower sets the output power level of the Bluetooth Low Energy radio\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBLE_TX_m18dBm \fP\fP
+-18dBm (Low) 
+.TP
+\fB\fIBLE_TX_m12dBm \fP\fP
+-12dBm 
+.TP
+\fB\fIBLE_TX_m6dBm \fP\fP
+-6dBm 
+.TP
+\fB\fIBLE_TX_0dBm \fP\fP
+0dBm (High) 
+.SS "enum \fBbleSerial::BLE_ERR_T\fP"
+BLE error code 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBLE_ERR_OK \fP\fP
+.TP
+\fB\fIBLE_ERR_HW \fP\fP
+Hardware Error\&. 
+.TP
+\fB\fIBLE_ERR_BUF \fP\fP
+Sender queue buffer was full\&. 
+.TP
+\fB\fIBLE_ERR_ACK_TIMEOUT \fP\fP
+ACK timeout\&. 
+.TP
+\fB\fIBLE_ERR_RSP_TIMEOUT \fP\fP
+Response timeout\&. 
+.TP
+\fB\fIBLE_ERR_DAT_TIMEOUT \fP\fP
+Core data timeout\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "bleSerial::bleSerial (LPCTSTRdeviceName = \fCDEF_BLE_DEVICENAME\fP)"
+
+.PP
+\fBbleSerial\fP constructor with a GAT device name\&. \fBbleSerial\fP constructor 
+.PP
+.nf
+int main() {
+        \&.\&.\&.
+        bleSerial ble("myBLE");
+        ble\&.advertising(100);   // set advertising interval 100ms
+        ble\&.enable();
+        \&.\&.\&.
+        \&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdeviceName\fP point to a LPCTSTR string to indicate the GAT device name of Bluetooth\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void bleSerial::advertising (uint16_tadvInterval, int8_ttxPowerLevel = \fCDEF_BLE_TXPOWER\fP, uint16_tconnInterval = \fCDEF_BLE_CONN_INTERVAL\fP, uint16_tconnTimeout = \fCDEF_BLE_CONN_TIMEOUT\fP, uint16_tmanufactureData = \fCDEF_BLE_MFG_DATA\fP)"
+Broadcast the advertising message when device is not in BLE connection\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIadvInterval\fP To broadcast the advertising message with the interval time in millisecond\&. 
+.br
+\fItxPowerLevel\fP To expose the 'TxPowerLevel' on the advertising message\&. 
+.br
+\fIconnInterval\fP To expose the 'connection interval' on the advertising message\&. 
+.br
+\fIconnTimeout\fP To expose the 'connection timeout' on the advertising message\&. 
+.br
+\fImanufactureData\fP To expose the 'Manufacture Data' on the advertising message\&. 
+.RE
+.PP
+\fBRemarks:\fP
+.RS 4
+advertising(\&.\&.\&.) have to call before the \fBenable()\fP member\&. 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBbleSerial()\fP 
+.RE
+.PP
+
+.SS "void bleSerial::setup (uint16_tadvInterval, int8_ttxPowerLevel = \fCDEF_BLE_TXPOWER\fP, uint16_tconnInterval = \fCDEF_BLE_CONN_INTERVAL\fP, uint16_tconnTimeout = \fCDEF_BLE_CONN_TIMEOUT\fP, uint16_tmanufactureData = \fCDEF_BLE_MFG_DATA\fP)\fC [inline]\fP"
+An inline function redirect to \fBadvertising()\fP member function\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBadvertising\fP 
+.RE
+.PP
+
+.SS "bool bleSerial::enable (uint32_tstack = \fC128\fP)"
+The enable member is to call the \fBCThread\fP:\fBstart()\fP to start the ble engine task\&. 
+.PP
+.nf
+#include "class/ble_serial\&.h"
+int main() {
+        bleSerial ble("myBLE");
+        ble\&.enable();   // to start the BLE core and Task\&.
+        \&.\&.\&.
+        \&.\&.\&.
+}
+
+.fi
+.PP
+ 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstack\fP To indicate the stack size of BLE task\&. default is 128 bytes\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if start the ble task successful, otherwise is failed\&. 
+.RE
+.PP
+
+.SS "void bleSerial::disable ()"
+The disable member is to suspend the bleSerail task\&. 
+.PP
+\fBNote:\fP
+.RS 4
+Call enable member to resume the bleSerail task\&. 
+.RE
+.PP
+
+.SS "void bleSerial::pollInterval (uint32_tms)"
+Poll the BLE core with the interval time in milliseconds\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIms\fP A millisecond value\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The member is a optional function, and default is 50ms\&. 
+.RE
+.PP
+
+.SS "void bleSerial::watchdog (uint32_ttm)"
+Enable a watchdog on a BLE connection\&. The watchdog feature will cause the BLE core reset when remote (App) crash or lose the connection\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItm\fP A timeout value in millisecond, recommend value is 500~30000\&. If set the tm to zero, it is meant to disable the watchdog\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The member is an optional function, and default is 10,000ms (10 seconds)\&. 
+.RE
+.PP
+
+.SS "bool bleSerial::isActived ()"
+To check that radio is activated before the radio becomes active\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the radio is activated, otherwise if the radio is inactivated\&. 
+.RE
+.PP
+
+.SS "bool bleSerial::disconnect (\fBBLE_DISCONNECT_REASON_T\fPreason = \fC\fBBLE_TERMINATED\fP\fP)"
+To disconnect current connection with a reason\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreason\fP is a BLE_DISCONNECT_REASON_T enumeration\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if disconnect successful, otherwise, disconnect failed\&. 
+.RE
+.PP
+
+.SS "bool bleSerial::setRadioTxPower (\fBBLE_TX_POWER_T\fPpower)"
+Set the ouptut power level of the Bluetooth Low Energy radio\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpower\fP is a BLE_TX_POWER_T enumeration\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if set radio power successful, otherwise is failed\&. 
+.RE
+.PP
+
+.SS "uint8_t bleSerial::getPhyVersion ()"
+Get BLE core hardware version\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An uint8_t type value\&. 
+.RE
+.PP
+
+.SS "virtual void bleSerial::onConnected ()\fC [virtual]\fP"
+An virtual function call by BLE task and occurs when remote (App) is already to connect the BLE device\&. 
+.PP
+\fBRemarks:\fP
+.RS 4
+To override the virtual, the onConnection of child have to call the onConnection of supper class\&. 
+.PP
+.nf
+class myBle: public bleSerial {
+public:
+        // override the onConnected() virtual function
+        virtual onConnected() {
+            bleSerial::onConnection();      // call to parent class
+
+            // your onConnection event code here:
+            \&.\&.\&.
+            \&.\&.\&.
+        }
+    };
+
+.fi
+.PP
+ 
+.RE
+.PP
+
+.SS "virtual void bleSerial::onDisconnected ()\fC [virtual]\fP"
+An virtual function call by BLE task and occurs when remote (App) is already to disconnect the BLE device\&. 
+.PP
+\fBRemarks:\fP
+.RS 4
+To override the virtual, the onDisconnection of child have to call the onDisconnection of parent class\&. 
+.PP
+.nf
+class myBle: public bleSerial {
+public:
+        // override the onConnected() virtual function
+        virtual onDisconnected() {
+            bleSerial::onDisconnection();   // call to parent class
+
+            // your onDisonnection event code here:
+            \&.\&.\&.
+            \&.\&.\&.
+        }
+    };
+
+.fi
+.PP
+ 
+.RE
+.PP
+
+.SS "virtual void bleSerial::onWatchdog ()\fC [virtual]\fP"
+An virtual function call by BLE task and occurs when a watchdog timeout on a connection\&. 
+.PP
+\fBRemarks:\fP
+.RS 4
+The onWatchdog member will call the reset() member function to reset the BLE core\&. 
+.RE
+.PP
+
+.SS "virtual void bleSerial::onError (\fBBLE_ERR_T\fPerr, LPCTSTRid = \fC'bleSerial'\fP)\fC [inline]\fP, \fC [virtual]\fP"
+An virtual function call by BLE task and occurs when a BLE hardware error\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIerror\fP A BLE_ERR_T enumeration\&. 
+.br
+\fIid\fP A string to a class name\&. (for debug) 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The onError event is a empty function in \fBbleSerial\fP class\&. 
+.RE
+.PP
+
+.SS "bool bleSerial::isAvailable ()\fC [inline]\fP"
+Use isAvailable to check the service whether opened by remote (App)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true, if service is available\&. otherwise, the service is not in used\&. 
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+This isAvailable member is an inline function to redirect to the \fBwriteable()\fP member\&. 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBwriteable\fP 
+.RE
+.PP
+
+.SS "virtual int bleSerial::readable ()\fC [virtual]\fP"
+Determine how many data bytes are available to read\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A value to indicate how many data byte is available in the input buffer\&. 
+.RE
+.PP
+\fBRemarks:\fP
+.RS 4
+the pure virtual function have to implement by child class\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBCStream\fP\&.
+.SS "virtual int bleSerial::writeable ()\fC [virtual]\fP"
+
+.SS "virtual int bleSerial::read (void *buf, intlen, boolblock = \fCtrue\fP)\fC [virtual]\fP"
+
+.SS "virtual int bleSerial::write (const void *buf, intlen, boolblock = \fCtrue\fP)\fC [virtual]\fP"
+
+.SS "virtual bool bleSerial::isConnected ()\fC [virtual]\fP"
+
+.SS "virtual void bleSerial::flush ()\fC [virtual]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

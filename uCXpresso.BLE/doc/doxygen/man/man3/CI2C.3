@@ -1,0 +1,146 @@
+.TH "CI2C" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CI2C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <i2c\&.h>\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.PP
+Inherited by \fBCI2CMaster\fP, and \fBCI2CSlave\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCI2C\fP ()"
+.br
+.ti -1c
+.RI "void \fBenable\fP ()"
+.br
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBfrequency\fP (uint32_t hz)"
+.br
+.ti -1c
+.RI "virtual void \fBonState\fP (uint32_t value)"
+.br
+.ti -1c
+.RI "virtual bool \fBstart\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBstop\fP ()"
+.br
+.ti -1c
+.RI "virtual I2C_ERROR_T \fBengine\fP (uint32_t timeout=I2C_TIMEOUT)"
+.br
+.ti -1c
+.RI "virtual void \fBread\fP (uint8_t *data, int length)"
+.br
+.ti -1c
+.RI "virtual void \fBwrite\fP (uint8_t *data, int length)"
+.br
+.ti -1c
+.RI "virtual \fB~CI2C\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCSemaphore\fP \fBm_semIrq\fP"
+.br
+.ti -1c
+.RI "\fBCSemaphore\fP \fBm_semState\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBm_state\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBm_flag\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBm_MasterBuffer\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBm_SlaveBuffer\fP"
+.br
+.ti -1c
+.RI "int \fBm_rdIndex\fP"
+.br
+.ti -1c
+.RI "int \fBm_wrIndex\fP"
+.br
+.ti -1c
+.RI "int \fBm_wrLength\fP"
+.br
+.ti -1c
+.RI "int \fBm_rdLength\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "xHandle \fBm_handle\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CI2C::CI2C ()"
+
+.SS "virtual CI2C::~CI2C ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CI2C::enable ()"
+
+.SS "void CI2C::disable ()"
+
+.SS "virtual void CI2C::frequency (uint32_thz)\fC [virtual]\fP"
+
+.SS "virtual void CI2C::onState (uint32_tvalue)\fC [virtual]\fP"
+
+.SS "virtual bool CI2C::start ()\fC [virtual]\fP"
+
+.SS "virtual bool CI2C::stop ()\fC [virtual]\fP"
+
+.SS "virtual I2C_ERROR_T CI2C::engine (uint32_ttimeout = \fCI2C_TIMEOUT\fP)\fC [virtual]\fP"
+
+.SS "virtual void CI2C::read (uint8_t *data, intlength)\fC [virtual]\fP"
+
+.SS "virtual void CI2C::write (uint8_t *data, intlength)\fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCSemaphore\fP CI2C::m_semIrq"
+
+.SS "\fBCSemaphore\fP CI2C::m_semState"
+
+.SS "uint32_t CI2C::m_state"
+
+.SS "uint32_t CI2C::m_flag"
+
+.SS "uint8_t* CI2C::m_MasterBuffer"
+
+.SS "uint8_t* CI2C::m_SlaveBuffer"
+
+.SS "int CI2C::m_rdIndex"
+
+.SS "int CI2C::m_wrIndex"
+
+.SS "int CI2C::m_wrLength"
+
+.SS "int CI2C::m_rdLength"
+
+.SS "xHandle CI2C::m_handle\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

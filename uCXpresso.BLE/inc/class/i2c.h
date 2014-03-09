@@ -35,9 +35,10 @@ typedef enum {
 #define I2C_TIMEOUT	3000
 
 
-//
-// I2C base Class
-//
+/**I2C base Class
+ * \class CI2C i2c.h "class/i2c.h"
+ * \ingroup Peripheral
+ */
 class CI2C: public CPeripheral {
 public:
 	//

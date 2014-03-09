@@ -26,35 +26,39 @@
 #include "class/peripheral.h"
 #include "class/ble_serial.h"
 
+/**Temperature measurement type
+ * \ingroup BLE
+ */
+typedef enum
+{
+	H_TYPE_NOT_INCLUDED                  = 0, 	///< No Included
+	H_TYPE_ARMPIT                        = 1,	///< Armpit
+	H_TYPE_BODY                          = 2,	///< Body
+	H_TYPE_EAR                           = 3,	///< Ear
+	H_TYPE_FINGER                        = 4,	///< Finger
+	H_TYPE_GASTRO_INTESTINAL_TRACT       = 5,	///< Gastro intestinal tract
+	H_TYPE_MOUTH                         = 6,	///< Mouth
+	H_TYPE_RECTUM                        = 7,	///< Rectum
+	H_TYPE_TOE                           = 8,	///< Toe
+	H_TYPE_TYMPANUM                      = 9,	///< Tympanum
+}h_temp_type_t;
+
+/** Temperature measurement structure
+ * \ingroup BLE
+ */
+typedef struct PACK_STRUCT h_thermo_temp_measure_s
+{
+	uint8_t flags;
+	uint8_t measurement[4];
+	uint8_t time_type[8];
+}h_thermo_temp_measure_t;
+
+
 /**The bleHealthThermometer class exposes temperature and other data from a thermometer intended for healthcare and fitness applications.
  * \class bleHealthThermometer ble_ht.h "class/ble_ht.h"
  * \ingroup BLE
  */
 class bleHealthThermometer: public CPeripheral {
-public:
-	/**Temperature measurement type */
-	typedef enum h_temp_type_t
-	{
-	    H_TYPE_NOT_INCLUDED                  = 0,
-	    H_TYPE_ARMPIT                        = 1,
-	    H_TYPE_BODY                          = 2,
-	    H_TYPE_EAR                           = 3,
-	    H_TYPE_FINGER                        = 4,
-	    H_TYPE_GASTRO_INTESTINAL_TRACT       = 5,
-	    H_TYPE_MOUTH                         = 6,
-	    H_TYPE_RECTUM                        = 7,
-	    H_TYPE_TOE                           = 8,
-	    H_TYPE_TYMPANUM                      = 9,
-	}h_temp_type_t;
-
-	/** Temperature measurement structure*/
-	typedef struct PACK_STRUCT h_thermo_temp_measure_t
-	{
-	    uint8_t flags;
-	    uint8_t measurement[4];
-	    uint8_t time_type[8];
-	}h_thermo_temp_measure_t;
-
 public:
 	/**bleHealthThermometer constructor.
 	 * \code

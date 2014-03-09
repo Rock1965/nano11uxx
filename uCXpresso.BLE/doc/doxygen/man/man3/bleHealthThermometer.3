@@ -1,0 +1,172 @@
+.TH "bleHealthThermometer" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bleHealthThermometer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'class/ble_ht\&.h'\fP
+.PP
+Inherits \fBCPeripheral\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBh_temp_type_t\fP { \fBH_TYPE_NOT_INCLUDED\fP = 0, \fBH_TYPE_ARMPIT\fP = 1, \fBH_TYPE_BODY\fP = 2, \fBH_TYPE_EAR\fP = 3, \fBH_TYPE_FINGER\fP = 4, \fBH_TYPE_GASTRO_INTESTINAL_TRACT\fP = 5, \fBH_TYPE_MOUTH\fP = 6, \fBH_TYPE_RECTUM\fP = 7, \fBH_TYPE_TOE\fP = 8, \fBH_TYPE_TYMPANUM\fP = 9 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbleHealthThermometer\fP (\fBbleSerial\fP &ble, \fBh_temp_type_t\fP type=\fBH_TYPE_NOT_INCLUDED\fP)"
+.br
+.ti -1c
+.RI "void \fBunit_c\fP ()"
+.br
+.ti -1c
+.RI "void \fBunit_f\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBmeasurementInterval\fP (uint16_t sec)"
+.br
+.ti -1c
+.RI "virtual bool \fBsendMeasure\fP (float temp)"
+.br
+.ti -1c
+.RI "virtual void \fBsetDynamicType\fP (\fBh_temp_type_t\fP in_type)"
+.br
+.ti -1c
+.RI "virtual bool \fBisAvailable\fP ()"
+.br
+.ti -1c
+.RI "bool \fBreadTemperature\fP (float &temp)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBbleHealthThermometer\fP class exposes temperature and other data from a thermometer intended for healthcare and fitness applications\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBbleHealthThermometer::h_temp_type_t\fP"
+Temperature measurement type 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIH_TYPE_NOT_INCLUDED \fP\fP
+.TP
+\fB\fIH_TYPE_ARMPIT \fP\fP
+.TP
+\fB\fIH_TYPE_BODY \fP\fP
+.TP
+\fB\fIH_TYPE_EAR \fP\fP
+.TP
+\fB\fIH_TYPE_FINGER \fP\fP
+.TP
+\fB\fIH_TYPE_GASTRO_INTESTINAL_TRACT \fP\fP
+.TP
+\fB\fIH_TYPE_MOUTH \fP\fP
+.TP
+\fB\fIH_TYPE_RECTUM \fP\fP
+.TP
+\fB\fIH_TYPE_TOE \fP\fP
+.TP
+\fB\fIH_TYPE_TYMPANUM \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "bleHealthThermometer::bleHealthThermometer (\fBbleSerial\fP &ble, \fBh_temp_type_t\fPtype = \fC\fBH_TYPE_NOT_INCLUDED\fP\fP)"
+\fBbleHealthThermometer\fP constructor\&. 
+.PP
+.nf
+int main() {
+    \&.\&.\&.
+    bleSerial ble("myBLE");
+    ble\&.enable();
+    \&.\&.\&.
+    bleHealthThermometer ht(ble);
+    ht\&.unit_c();
+    ht\&.measurementInterval(3);  // set measurement interval 3 seconds
+    \&.\&.\&.
+    ht\&.sendMeasure(temp);
+    \&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIble\fP is a \fBbleSerial\fP class object\&. 
+.br
+\fItype\fP is a h_temp_type_t enumeration\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void bleHealthThermometer::unit_c ()"
+Set temperature unit to Celsius\&. 
+.SS "void bleHealthThermometer::unit_f ()"
+Set temperature unit to Fahrenheit\&. 
+.SS "virtual void bleHealthThermometer::measurementInterval (uint16_tsec)\fC [virtual]\fP"
+Set measurement interval (unit second, default 3 seconds) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsec\fP is an uint16_t integer to indicate the measurement interval\&. 
+.RE
+.PP
+
+.SS "virtual bool bleHealthThermometer::sendMeasure (floattemp)\fC [virtual]\fP"
+send temperature measurement 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItemp\fP is a floating value to indicate the temperature\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true, if send measure successful\&. otherwise, send failed\&. 
+.RE
+.PP
+
+.SS "virtual void bleHealthThermometer::setDynamicType (\fBh_temp_type_t\fPin_type)\fC [virtual]\fP"
+Set the temperature dynamic type 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin_type\fP is a h_temp_type enumeration\&. 
+.RE
+.PP
+
+.SS "virtual bool bleHealthThermometer::isAvailable ()\fC [virtual]\fP"
+Use isAvailable to check the service whether opened by remote (App)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true, if service is available\&. otherwise, the service is not in used\&. 
+.RE
+.PP
+
+.SS "bool bleHealthThermometer::readTemperature (float &temp)"
+Use readTemperature to read the temperature from BLE core sensor 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItemp\fP is a floating value to receive the temperature\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true, if read temperature successful\&. otherwise, read failed\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

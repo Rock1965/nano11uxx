@@ -1,0 +1,57 @@
+.TH "CEventBit" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CEventBit \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'class/event\&.h'\fP
+.PP
+Inherits \fBCObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCEventBit\fP ()"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBset\fP (uint32_t bits)"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBclr\fP (uint32_t bits)"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBget\fP ()"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBwait\fP (uint32_t bitsToWait, bool clearOnExit=true, bool waitForAll=true, uint32_t timeout=MAX_DELAY_TIME)"
+.br
+.ti -1c
+.RI "virtual uint32_t \fBsync\fP (uint32_t bitsToSet, uint32_t bitsToWait, uint32_t timeout=MAX_DELAY_TIME)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+EventBit are used to indicate if an event has occurred or not\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CEventBit::CEventBit ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual uint32_t CEventBit::set (uint32_tbits)\fC [virtual]\fP"
+
+.SS "virtual uint32_t CEventBit::clr (uint32_tbits)\fC [virtual]\fP"
+
+.SS "virtual uint32_t CEventBit::get ()\fC [virtual]\fP"
+
+.SS "virtual uint32_t CEventBit::wait (uint32_tbitsToWait, boolclearOnExit = \fCtrue\fP, boolwaitForAll = \fCtrue\fP, uint32_ttimeout = \fCMAX_DELAY_TIME\fP)\fC [virtual]\fP"
+
+.SS "virtual uint32_t CEventBit::sync (uint32_tbitsToSet, uint32_tbitsToWait, uint32_ttimeout = \fCMAX_DELAY_TIME\fP)\fC [virtual]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.

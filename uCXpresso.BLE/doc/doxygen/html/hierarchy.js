@@ -2,7 +2,6 @@ var hierarchy =
 [
     [ "_cdc_line_coding_", "de/d43/struct__cdc__line__coding__.html", null ],
     [ "CObject", "dc/dac/class_c_object.html", [
-      [ "CBus", "de/d89/class_c_bus.html", null ],
       [ "CEventBit", "dd/d60/class_c_event_bit.html", null ],
       [ "CList", "df/db6/class_c_list.html", [
         [ "CListT< CType >", "da/d59/class_c_list_t.html", null ]
@@ -16,6 +15,7 @@ var hierarchy =
         [ "bleHeartRate", "d3/d81/classble_heart_rate.html", null ],
         [ "bleProximity", "de/d67/classble_proximity.html", null ],
         [ "CAdc", "d7/d0f/class_c_adc.html", null ],
+        [ "CBus", "de/d89/class_c_bus.html", null ],
         [ "CI2C", "d0/dce/class_c_i2_c.html", [
           [ "CI2CMaster", "d7/db9/class_c_i2_c_master.html", null ],
           [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html", null ]
@@ -51,7 +51,7 @@ var hierarchy =
       [ "CTimeout", "d5/d5b/class_c_timeout.html", null ]
     ] ],
     [ "fifo_t", "db/d53/structfifo__t.html", null ],
-    [ "bleHealthThermometer::h_thermo_temp_measure_t", "d9/dca/structble_health_thermometer_1_1h__thermo__temp__measure__t.html", null ],
+    [ "h_thermo_temp_measure_s", "d7/d86/structh__thermo__temp__measure__s.html", null ],
     [ "IP_ADDR_T", "d0/dcc/union_i_p___a_d_d_r___t.html", null ],
     [ "SYS_ID_T", "d4/d75/struct_s_y_s___i_d___t.html", null ]
 ];

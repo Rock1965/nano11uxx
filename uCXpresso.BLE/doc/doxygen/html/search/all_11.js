@@ -34,6 +34,7 @@ var searchData=
   ['supportcontact',['supportContact',['../d3/d81/classble_heart_rate.html#acd5a0148a2df6692893a274a18710431',1,'bleHeartRate']]],
   ['suspend',['suspend',['../d0/d26/class_c_thread.html#a53e71e6db2221cd1c45aec21953d4aad',1,'CThread']]],
   ['suspendall',['suspendAll',['../d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a',1,'CThread']]],
+  ['suspended',['SUSPENDED',['../d8/dba/group___r_t_o_s.html#gga25ee4013cc565a18ac2f4039b4ad441ba1c2114335a42993ac5cc5dbf65f83d41',1,'thread.h']]],
   ['sync',['sync',['../dd/d60/class_c_event_bit.html#a4a50fd1376946d508762fa00d01034ce',1,'CEventBit']]],
   ['sys_5fid_5ft',['SYS_ID_T',['../d4/d75/struct_s_y_s___i_d___t.html',1,'']]]
 ];

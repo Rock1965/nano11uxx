@@ -58,6 +58,35 @@
 #define DEF_BLE_CONN_TIMEOUT	1000	// default connection timeout 3sec
 #define DEF_BLE_MFG_DATA		0x1234
 
+/**Disconnect a BLE connection with a reason.
+ * \ingroup BLE
+ */
+typedef enum {
+	BLE_TERMINATED =1,		///< Request termination of the connection with the peer device with the reason "Remote user terminated connection"
+	BLE_UNACCEPTABLE = 2	///< Request termination of the link with the peer device with the reason "Unacceptable connection timing"
+} BLE_DISCONNECT_REASON_T;
+
+/**setTxPower sets the output power level of the Bluetooth Low Energy radio.
+ * \ingroup BLE
+ */
+typedef enum {
+	BLE_TX_m18dBm 	= 0,	///< -18dBm	(Low)
+	BLE_TX_m12dBm 	= 1,	///< -12dBm
+	BLE_TX_m6dBm	= 2,	///< -6dBm
+	BLE_TX_0dBm 	= 3		///<  0dBm	(High)
+}BLE_TX_POWER_T;
+
+/**BLE error code
+ * \ingroup BLE
+ */
+typedef enum {
+	BLE_ERR_OK	= 0,
+	BLE_ERR_HW,				///< Hardware Error
+	BLE_ERR_BUF,			///< Sender queue buffer was full
+	BLE_ERR_ACK_TIMEOUT,	///< ACK timeout
+	BLE_ERR_RSP_TIMEOUT,	///< Response timeout
+	BLE_ERR_DAT_TIMEOUT		///< Core data timeout
+}BLE_ERR_T;
 
 /**\class bleSerial ble_serial.h "class/ble_serial.h"
  * \brief bleSerial class is a ble core, and inherit from CStream class to provide the stream virtual functions for serial input and output.
@@ -65,34 +94,6 @@
  * \ingroup BLE
  */
 class bleSerial: public CStream, public CThread {
-public:
-	/**Disconnect a BLE connection with a reason.
-	 */
-	typedef enum {
-		BLE_TERMINATED =1,		///< Request termination of the connection with the peer device with the reason "Remote user terminated connection"
-		BLE_UNACCEPTABLE = 2	///< Request termination of the link with the peer device with the reason "Unacceptable connection timing"
-	} BLE_DISCONNECT_REASON_T;
-
-	/**setTxPower sets the output power level of the Bluetooth Low Energy radio.
-	 */
-	typedef enum {
-		BLE_TX_m18dBm 	= 0,	///< -18dBm	(Low)
-		BLE_TX_m12dBm 	= 1,	///< -12dBm
-		BLE_TX_m6dBm	= 2,	///< -6dBm
-		BLE_TX_0dBm 	= 3		///<  0dBm	(High)
-	}BLE_TX_POWER_T;
-
-	/**BLE error code
-	 */
-	typedef enum {
-		BLE_ERR_OK	= 0,
-		BLE_ERR_HW,				///< Hardware Error
-		BLE_ERR_BUF,			///< Sender queue buffer was full
-		BLE_ERR_ACK_TIMEOUT,	///< ACK timeout
-		BLE_ERR_RSP_TIMEOUT,	///< Response timeout
-		BLE_ERR_DAT_TIMEOUT		///< Core data timeout
-	}BLE_ERR_T;
-
 public:
 	/**bleSerial constructor
 	 * \brief bleSerial constructor with a GAT device name.

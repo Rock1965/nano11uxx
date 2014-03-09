@@ -1,0 +1,149 @@
+.TH "CShell" 3 "Sun Mar 9 2014" "Version v1.0.2" "uCXpresso.BLE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CShell \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <shell\&.h>\fP
+.PP
+Inherits \fBCThread\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCShell\fP (\fBCStream\fP &s)"
+.br
+.ti -1c
+.RI "virtual bool \fBstart\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonQuery\fP (\fBCString\fP &str)"
+.br
+.ti -1c
+.RI "virtual void \fBshow_welcome\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBshow_prompt\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBshow_menu\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBshow_task\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBshow_heap\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBshow_version\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBshow_clear\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisDebugMode\fP ()"
+.br
+.ti -1c
+.RI "int \fBdbgWaitKey\fP (uint32_t t=MAX_DELAY_TIME)"
+.br
+.ti -1c
+.RI "virtual void \fBrun\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonDebug\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonClose\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CShell\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBConsole\fP \fBm_console\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCStream\fP * \fBm_sock\fP"
+.br
+.ti -1c
+.RI "\fBCString\fP \fBcmd\fP"
+.br
+.ti -1c
+.RI "\fBCSemaphore\fP \fBm_semInput\fP"
+.br
+.ti -1c
+.RI "int \fBm_dbgKey\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CShell::CShell (\fBCStream\fP &s)"
+
+.SS "virtual CShell::~CShell ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool CShell::start ()\fC [virtual]\fP"
+Call the member function to start the thread\&. 
+.PP
+\fBNote:\fP
+.RS 4
+the \fBstart()\fP is an overload member function of \fBCThread\fP\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBCThread\fP\&.
+.SS "virtual void CShell::onQuery (\fBCString\fP &str)\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_welcome ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_prompt ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_menu ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_task ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_heap ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_version ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::show_clear ()\fC [virtual]\fP"
+
+.SS "bool CShell::isDebugMode ()"
+
+.SS "int CShell::dbgWaitKey (uint32_tt = \fCMAX_DELAY_TIME\fP)"
+
+.SS "virtual void CShell::run ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::onDebug ()\fC [virtual]\fP"
+
+.SS "virtual void CShell::onClose ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBConsole\fP CShell::m_console"
+
+.SS "\fBCStream\fP* CShell::m_sock\fC [protected]\fP"
+
+.SS "\fBCString\fP CShell::cmd\fC [protected]\fP"
+
+.SS "\fBCSemaphore\fP CShell::m_semInput\fC [protected]\fP"
+
+.SS "int CShell::m_dbgKey\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for uCXpresso\&.BLE from the source code\&.
