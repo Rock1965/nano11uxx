@@ -22,12 +22,12 @@
 #include "class/semaphore.h"
 #include "utils/fifo.h"
 
-typedef struct PACK_STRUCT _cdc_line_coding_ {
+typedef struct {
   uint32_t dwDTERate;                            /* Data terminal rate in bits per second */
   uint8_t  bCharFormat;                          /* Number of stop bits */
   uint8_t  bParityType;                          /* Parity bit type */
   uint8_t  bDataBits;                            /* Number of data bits */
-} CDC_LINE_CODING_T;
+} PACK_STRUCT CDC_LINE_CODING_T;
 
 class usbCDC: public CStream {
 public:
@@ -62,6 +62,7 @@ public:
 //
 //private:
 //
+	/// @cond
 	~usbCDC();
 	int  on_usb_send();
 	void on_usb_recv();
@@ -77,6 +78,7 @@ protected:
 	xHandle		m_irqTask;
 	uint8_t		*abBulkBuf;
 	uint32_t	pbuf;
+	/// @endcond
 };
 
 #endif /* USB_CDC_H_ */

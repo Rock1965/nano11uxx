@@ -39,38 +39,6 @@ virtual int \hyperlink{classusb_c_d_c_a340c728ca722a61a3a457a546a301dec}{write} 
 virtual bool \hyperlink{classusb_c_d_c_a0c0cb27d108bed8763e68a4121efee32}{is\-Connected} ()
 \item 
 virtual void \hyperlink{classusb_c_d_c_afebca0ce341d46537cc6e2a811bede72}{flush} ()
-\item 
-\hyperlink{classusb_c_d_c_a6cb0b7368918527f61c4f47d67090ecd}{$\sim$usb\-C\-D\-C} ()
-\item 
-int \hyperlink{classusb_c_d_c_abbbc7fbe6d45daa397f1fe796ce28d97}{on\-\_\-usb\-\_\-send} ()
-\item 
-void \hyperlink{classusb_c_d_c_a7b1bd30708c95c47753461f865439cbb}{on\-\_\-usb\-\_\-recv} ()
-\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-x\-Handle \hyperlink{classusb_c_d_c_a8af7c1d1489eaa3fa35d140c1fb3e36b}{m\-\_\-h\-Usb}
-\item 
-\hyperlink{class_c_semaphore}{C\-Semaphore} \hyperlink{classusb_c_d_c_a9904020c60c4f19f92d12f539293dd1f}{m\-\_\-sem\-Irq}
-\item 
-\hyperlink{structfifo__t}{F\-I\-F\-O\-\_\-\-T} \hyperlink{classusb_c_d_c_acc8bfa27e6d3005950ccce1493de8f7b}{m\-\_\-tx\-Fi\-Fo}
-\item 
-\hyperlink{structfifo__t}{F\-I\-F\-O\-\_\-\-T} \hyperlink{classusb_c_d_c_abded5563b5ed9b2b05773e2756b4b147}{m\-\_\-rx\-Fi\-Fo}
-\item 
-uint16\-\_\-t \hyperlink{classusb_c_d_c_ae4f03edf64316170547608292d2d4c0e}{m\-\_\-state}
-\item 
-uint32\-\_\-t \hyperlink{classusb_c_d_c_a65b3a5365936dd08f69243e9d433d132}{m\-\_\-flag}
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-x\-Handle \hyperlink{classusb_c_d_c_a3e75d771150245f193312bd7bc8e6c6c}{m\-\_\-h\-Cdc}
-\item 
-x\-Handle \hyperlink{classusb_c_d_c_a9dd6cfe134ba6032c33b1f37b5260c73}{m\-\_\-irq\-Task}
-\item 
-uint8\-\_\-t $\ast$ \hyperlink{classusb_c_d_c_a6e7ef41e22502fc36c48311c8654bc37}{ab\-Bulk\-Buf}
-\item 
-uint32\-\_\-t \hyperlink{classusb_c_d_c_a4a1f881b570687525bb133ef2edfd8ae}{pbuf}
 \end{DoxyCompactItemize}
 
 
@@ -82,13 +50,6 @@ uint32\-\_\-t \hyperlink{classusb_c_d_c_a4a1f881b570687525bb133ef2edfd8ae}{pbuf}
 \item[{int}]{F\-I\-F\-O\-\_\-\-S\-I\-Z\-E = {\ttfamily 128}}
 \end{DoxyParamCaption}
 )}}\label{classusb_c_d_c_a6eb4d9401ac17bab0bfb869bf6fc6315}
-\hypertarget{classusb_c_d_c_a6cb0b7368918527f61c4f47d67090ecd}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!$\sim$usb\-C\-D\-C@{$\sim$usb\-C\-D\-C}}
-\index{$\sim$usb\-C\-D\-C@{$\sim$usb\-C\-D\-C}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{$\sim$usb\-C\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}usb\-C\-D\-C\-::$\sim$usb\-C\-D\-C (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classusb_c_d_c_a6cb0b7368918527f61c4f47d67090ecd}
 
 
 \subsection{Member Function Documentation}
@@ -255,53 +216,6 @@ the pure virtual function have to implement by child class.
 
 Reimplemented from \hyperlink{class_c_stream_a5bd707b33627e01c2069b14bbf10694a}{C\-Stream}.
 
-\hypertarget{classusb_c_d_c_abbbc7fbe6d45daa397f1fe796ce28d97}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!on\-\_\-usb\-\_\-send@{on\-\_\-usb\-\_\-send}}
-\index{on\-\_\-usb\-\_\-send@{on\-\_\-usb\-\_\-send}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{on\-\_\-usb\-\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}int usb\-C\-D\-C\-::on\-\_\-usb\-\_\-send (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classusb_c_d_c_abbbc7fbe6d45daa397f1fe796ce28d97}
-\hypertarget{classusb_c_d_c_a7b1bd30708c95c47753461f865439cbb}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!on\-\_\-usb\-\_\-recv@{on\-\_\-usb\-\_\-recv}}
-\index{on\-\_\-usb\-\_\-recv@{on\-\_\-usb\-\_\-recv}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{on\-\_\-usb\-\_\-recv}]{\setlength{\rightskip}{0pt plus 5cm}void usb\-C\-D\-C\-::on\-\_\-usb\-\_\-recv (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classusb_c_d_c_a7b1bd30708c95c47753461f865439cbb}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{classusb_c_d_c_a8af7c1d1489eaa3fa35d140c1fb3e36b}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-h\-Usb@{m\-\_\-h\-Usb}}
-\index{m\-\_\-h\-Usb@{m\-\_\-h\-Usb}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-h\-Usb}]{\setlength{\rightskip}{0pt plus 5cm}x\-Handle usb\-C\-D\-C\-::m\-\_\-h\-Usb}}\label{classusb_c_d_c_a8af7c1d1489eaa3fa35d140c1fb3e36b}
-\hypertarget{classusb_c_d_c_a9904020c60c4f19f92d12f539293dd1f}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-sem\-Irq@{m\-\_\-sem\-Irq}}
-\index{m\-\_\-sem\-Irq@{m\-\_\-sem\-Irq}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-sem\-Irq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Semaphore} usb\-C\-D\-C\-::m\-\_\-sem\-Irq}}\label{classusb_c_d_c_a9904020c60c4f19f92d12f539293dd1f}
-\hypertarget{classusb_c_d_c_acc8bfa27e6d3005950ccce1493de8f7b}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-tx\-Fi\-Fo@{m\-\_\-tx\-Fi\-Fo}}
-\index{m\-\_\-tx\-Fi\-Fo@{m\-\_\-tx\-Fi\-Fo}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-tx\-Fi\-Fo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-I\-F\-O\-\_\-\-T} usb\-C\-D\-C\-::m\-\_\-tx\-Fi\-Fo}}\label{classusb_c_d_c_acc8bfa27e6d3005950ccce1493de8f7b}
-\hypertarget{classusb_c_d_c_abded5563b5ed9b2b05773e2756b4b147}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-rx\-Fi\-Fo@{m\-\_\-rx\-Fi\-Fo}}
-\index{m\-\_\-rx\-Fi\-Fo@{m\-\_\-rx\-Fi\-Fo}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-rx\-Fi\-Fo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-I\-F\-O\-\_\-\-T} usb\-C\-D\-C\-::m\-\_\-rx\-Fi\-Fo}}\label{classusb_c_d_c_abded5563b5ed9b2b05773e2756b4b147}
-\hypertarget{classusb_c_d_c_ae4f03edf64316170547608292d2d4c0e}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-state@{m\-\_\-state}}
-\index{m\-\_\-state@{m\-\_\-state}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t usb\-C\-D\-C\-::m\-\_\-state}}\label{classusb_c_d_c_ae4f03edf64316170547608292d2d4c0e}
-\hypertarget{classusb_c_d_c_a65b3a5365936dd08f69243e9d433d132}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-flag@{m\-\_\-flag}}
-\index{m\-\_\-flag@{m\-\_\-flag}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t usb\-C\-D\-C\-::m\-\_\-flag}}\label{classusb_c_d_c_a65b3a5365936dd08f69243e9d433d132}
-\hypertarget{classusb_c_d_c_a3e75d771150245f193312bd7bc8e6c6c}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-h\-Cdc@{m\-\_\-h\-Cdc}}
-\index{m\-\_\-h\-Cdc@{m\-\_\-h\-Cdc}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-h\-Cdc}]{\setlength{\rightskip}{0pt plus 5cm}x\-Handle usb\-C\-D\-C\-::m\-\_\-h\-Cdc\hspace{0.3cm}{\ttfamily [protected]}}}\label{classusb_c_d_c_a3e75d771150245f193312bd7bc8e6c6c}
-\hypertarget{classusb_c_d_c_a9dd6cfe134ba6032c33b1f37b5260c73}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!m\-\_\-irq\-Task@{m\-\_\-irq\-Task}}
-\index{m\-\_\-irq\-Task@{m\-\_\-irq\-Task}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{m\-\_\-irq\-Task}]{\setlength{\rightskip}{0pt plus 5cm}x\-Handle usb\-C\-D\-C\-::m\-\_\-irq\-Task\hspace{0.3cm}{\ttfamily [protected]}}}\label{classusb_c_d_c_a9dd6cfe134ba6032c33b1f37b5260c73}
-\hypertarget{classusb_c_d_c_a6e7ef41e22502fc36c48311c8654bc37}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!ab\-Bulk\-Buf@{ab\-Bulk\-Buf}}
-\index{ab\-Bulk\-Buf@{ab\-Bulk\-Buf}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{ab\-Bulk\-Buf}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t$\ast$ usb\-C\-D\-C\-::ab\-Bulk\-Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classusb_c_d_c_a6e7ef41e22502fc36c48311c8654bc37}
-\hypertarget{classusb_c_d_c_a4a1f881b570687525bb133ef2edfd8ae}{\index{usb\-C\-D\-C@{usb\-C\-D\-C}!pbuf@{pbuf}}
-\index{pbuf@{pbuf}!usbCDC@{usb\-C\-D\-C}}
-\subsubsection[{pbuf}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t usb\-C\-D\-C\-::pbuf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classusb_c_d_c_a4a1f881b570687525bb133ef2edfd8ae}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

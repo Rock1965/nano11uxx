@@ -134,7 +134,7 @@ int main(void) {
 	// BLE engine (serial stream)
 	//
 	bleSerial	ble("myHRM");
-	ble.enable(96);	// reduce the stack to 96 to save memory. (default stack=128)
+	ble.enable();
 
 	//
 	// Heart Beat Rate Service
@@ -142,6 +142,7 @@ int main(void) {
 	bleHeartRate hrm(ble);
 	hrm.supportContact(true);
 	hrm.contactStatus(true);
+	hrm.setSensorLocation(HRSL_FINGER);
 
 	//
 	// Battery Level & Health Thermometer Service (Use internal sensors)

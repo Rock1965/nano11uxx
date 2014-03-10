@@ -27,7 +27,7 @@
 #include "class/ble_serial.h"
 
 /**Temperature measurement type
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum
 {
@@ -44,15 +44,14 @@ typedef enum
 }h_temp_type_t;
 
 /** Temperature measurement structure
- * \ingroup BLE
+ * \ingroup Structures
  */
-typedef struct PACK_STRUCT h_thermo_temp_measure_s
+typedef struct
 {
 	uint8_t flags;
 	uint8_t measurement[4];
 	uint8_t time_type[8];
-}h_thermo_temp_measure_t;
-
+}PACK_STRUCT h_thermo_temp_measure_t;
 
 /**The bleHealthThermometer class exposes temperature and other data from a thermometer intended for healthcare and fitness applications.
  * \class bleHealthThermometer ble_ht.h "class/ble_ht.h"

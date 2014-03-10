@@ -21,11 +21,21 @@
 
 #include "uCXpresso.h"
 
+/**Enumerator group define
+ * \defgroup Enumerations
+ */
+
+/**CObject class is all classes base.
+ * \class CObject object.h "class/object.h"
+ */
 class CObject {
 public:
 	CObject();
 	virtual ~CObject();
 
+	/**Check current object that inherits from CThread class or not.
+	 * \note The isTherad() will be override by CThread class.
+	 */
 	virtual inline bool isThread() {
 		return false;
 	}

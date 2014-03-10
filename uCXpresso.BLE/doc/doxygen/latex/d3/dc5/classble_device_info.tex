@@ -3,7 +3,7 @@
 }
 
 
-{\ttfamily \#include $<$ble\-\_\-devinfo.\-h$>$}
+{\ttfamily \#include \char`\"{}class/ble\-\_\-devinfo.\-h\char`\"{}}
 
 Inheritance diagram for ble\-Device\-Info\-:\begin{figure}[H]
 \begin{center}
@@ -26,16 +26,14 @@ int \hyperlink{classble_device_info_a0e8825ee5d745fafdca6525fa2c230e7}{set\-Firm
 \item 
 int \hyperlink{classble_device_info_aa2a08fe14dd55d02255719a1d29a484f}{set\-Hardware\-Revision} (L\-P\-C\-T\-S\-T\-R str)
 \item 
-void \hyperlink{classble_device_info_a372ab0246f7e19548fcef771e06dc407}{set\-System\-Id} (\hyperlink{struct_s_y_s___i_d___t}{S\-Y\-S\-\_\-\-I\-D\-\_\-\-T} \&sys\-Id)
+void \hyperlink{classble_device_info_a372ab0246f7e19548fcef771e06dc407}{set\-System\-Id} (S\-Y\-S\-\_\-\-I\-D\-\_\-\-T \&sys\-Id)
 \item 
-void \hyperlink{classble_device_info_a344d50adf41337464686f926c8c85748}{set\-Pn\-P} (V\-I\-D\-\_\-\-S\-O\-U\-R\-C\-E\-\_\-\-T src, uint16\-\_\-t vendor\-Id, uint16\-\_\-t product\-Id, uint16\-\_\-t product\-Version)
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{classble_serial}{ble\-Serial} $\ast$ \hyperlink{classble_device_info_a12a144e14c48090240505c6be43c6eac}{m\-\_\-ble}
+void \hyperlink{classble_device_info_a344d50adf41337464686f926c8c85748}{set\-Pn\-P} (\hyperlink{group___enumerations_ga42b352f4817787f82d2adcffd4793ad9}{V\-I\-D\-\_\-\-S\-O\-U\-R\-C\-E\-\_\-\-T} src, uint16\-\_\-t vendor\-Id, uint16\-\_\-t product\-Id, uint16\-\_\-t product\-Version)
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+\hyperlink{classble_device_info}{ble\-Device\-Info} provides the Device Information service in B\-L\-E device. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classble_device_info_ae5f10713f4db98be9245aff3d482d51d}{\index{ble\-Device\-Info@{ble\-Device\-Info}!ble\-Device\-Info@{ble\-Device\-Info}}
@@ -87,25 +85,19 @@ void \hyperlink{classble_device_info_a344d50adf41337464686f926c8c85748}{set\-Pn\
 \index{set\-System\-Id@{set\-System\-Id}!bleDeviceInfo@{ble\-Device\-Info}}
 \subsubsection[{set\-System\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Device\-Info\-::set\-System\-Id (
 \begin{DoxyParamCaption}
-\item[{{\bf S\-Y\-S\-\_\-\-I\-D\-\_\-\-T} \&}]{sys\-Id}
+\item[{S\-Y\-S\-\_\-\-I\-D\-\_\-\-T \&}]{sys\-Id}
 \end{DoxyParamCaption}
 )}}\label{classble_device_info_a372ab0246f7e19548fcef771e06dc407}
 \hypertarget{classble_device_info_a344d50adf41337464686f926c8c85748}{\index{ble\-Device\-Info@{ble\-Device\-Info}!set\-Pn\-P@{set\-Pn\-P}}
 \index{set\-Pn\-P@{set\-Pn\-P}!bleDeviceInfo@{ble\-Device\-Info}}
 \subsubsection[{set\-Pn\-P}]{\setlength{\rightskip}{0pt plus 5cm}void ble\-Device\-Info\-::set\-Pn\-P (
 \begin{DoxyParamCaption}
-\item[{V\-I\-D\-\_\-\-S\-O\-U\-R\-C\-E\-\_\-\-T}]{src, }
+\item[{{\bf V\-I\-D\-\_\-\-S\-O\-U\-R\-C\-E\-\_\-\-T}}]{src, }
 \item[{uint16\-\_\-t}]{vendor\-Id, }
 \item[{uint16\-\_\-t}]{product\-Id, }
 \item[{uint16\-\_\-t}]{product\-Version}
 \end{DoxyParamCaption}
 )}}\label{classble_device_info_a344d50adf41337464686f926c8c85748}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{classble_device_info_a12a144e14c48090240505c6be43c6eac}{\index{ble\-Device\-Info@{ble\-Device\-Info}!m\-\_\-ble@{m\-\_\-ble}}
-\index{m\-\_\-ble@{m\-\_\-ble}!bleDeviceInfo@{ble\-Device\-Info}}
-\subsubsection[{m\-\_\-ble}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ble\-Serial}$\ast$ ble\-Device\-Info\-::m\-\_\-ble\hspace{0.3cm}{\ttfamily [protected]}}}\label{classble_device_info_a12a144e14c48090240505c6be43c6eac}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

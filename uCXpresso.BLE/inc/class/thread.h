@@ -33,7 +33,7 @@
  */
 
 /**Task priorities define
- * \ingroup RTOS
+ * \ingroup Enumerations
  */
 typedef enum {
 	PRI_LOW = 0,	///< low priorities is for all normal tasks used.
@@ -44,7 +44,7 @@ typedef enum {
 }PRIORITIES_T;
 
 /**Task states returned by eTaskStateGet.
- * \ingroup RTOS
+ * \ingroup Enumerations
  */
 typedef enum
 {

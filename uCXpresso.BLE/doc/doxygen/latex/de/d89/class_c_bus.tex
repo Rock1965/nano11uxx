@@ -14,11 +14,11 @@ Inheritance diagram for C\-Bus\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_c_bus_a5f859ac1582a6cbe9b5b420c6c051e63}{C\-Bus} (\hyperlink{group___peripheral_ga65a2241721e4acb573e0c3fe29ac432f}{P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T} \hyperlink{class_c_bus_a94da38619defc1c41c16c04c4c7991f8}{pin},...)
+\hyperlink{class_c_bus_a5f859ac1582a6cbe9b5b420c6c051e63}{C\-Bus} (\hyperlink{group___enumerations_ga65a2241721e4acb573e0c3fe29ac432f}{P\-I\-N\-\_\-\-N\-A\-M\-E\-\_\-\-T} \hyperlink{class_c_bus_a94da38619defc1c41c16c04c4c7991f8}{pin},...)
 \item 
 void \hyperlink{class_c_bus_a5f797dca77eb5a86048c65e567a2d233}{output} ()
 \item 
-void \hyperlink{class_c_bus_ad45a06493f12aef3d096ac3ed86a3b8f}{input} (\hyperlink{group___peripheral_gad5705547b72a4480dc714447b3bbfb64}{P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T} mode=\hyperlink{group___peripheral_gga16ce6180d8bb2eb23a7df8f8923ea581a781a7f23ae9b0dbdc6edfdcfd3be75df}{I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-P\-U\-L\-L\-\_\-\-U\-P})
+void \hyperlink{class_c_bus_ad45a06493f12aef3d096ac3ed86a3b8f}{input} (\hyperlink{group___enumerations_ga9f8f32709b482732d6e377ff26da36ef}{P\-I\-N\-\_\-\-I\-N\-P\-U\-T\-\_\-\-M\-O\-D\-E\-\_\-\-T} mode=\hyperlink{group___enumerations_gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df}{I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-P\-U\-L\-L\-\_\-\-U\-P})
 \item 
 virtual void \hyperlink{class_c_bus_a4852669ff7ae53e68cf125aa49a87bd0}{write} (uint32\-\_\-t val)
 \item 
@@ -60,7 +60,7 @@ Constructs a \hyperlink{class_c_bus}{C\-Bus} object to connect to the specified 
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.output();                       \textcolor{comment}{// Set the bus as output pins.}
 \end{DoxyCode}
  \begin{DoxyRemark}{Remarks}
@@ -137,7 +137,7 @@ A shorthand for read
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.input();                        \textcolor{comment}{// Set the bus as input pins.}
         uint32\_t val = bus;                 \textcolor{comment}{// Read a value from bus.}
 \end{DoxyCode}
@@ -153,7 +153,7 @@ A shorthand for write
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.output();                       \textcolor{comment}{// Set the bus as output pins.}
         bus = 0x05;                         \textcolor{comment}{// Write 0x05 to bus.}
 \end{DoxyCode}
@@ -190,9 +190,9 @@ A shorthand for array \begin{DoxyReturn}{Returns}
 
 \begin{DoxyCode}
 Example:
-        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
+        \hyperlink{class_c_bus}{CBus} bus(\hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa19b235491a16a3e7f91872f46a33a4a6}{P21}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa7010befcbd538e2d53cf35755cbc4663}{P22}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fac7bf4234043357a0b854b3818a8d33e6}{P23}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa98300b37c344c1c3e73a3f9ddb160bab}{P24}, \hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924}{END});  \textcolor{comment}{// Collect P21~P24 in the CBus object.}
         bus.output();                       \textcolor{comment}{// Set the bus as output pins.}
-    bus[2] = \hyperlink{group___peripheral_gga445f12f54192283394084c5d36ab4dd1a6a226f4143ca3b18999551694cdb72a8}{LOW};                       \textcolor{comment}{// Set P23 is LOW.}
+    bus[2] = \hyperlink{group___enumerations_gga6f24594071a026b31238ab8cb80d6a80a6a226f4143ca3b18999551694cdb72a8}{LOW};                       \textcolor{comment}{// Set P23 is LOW.}
 \end{DoxyCode}
  \hypertarget{class_c_bus_a4fa0e4c537c237278fe8092f4d8e26fb}{\index{C\-Bus@{C\-Bus}!count@{count}}
 \index{count@{count}!CBus@{C\-Bus}}

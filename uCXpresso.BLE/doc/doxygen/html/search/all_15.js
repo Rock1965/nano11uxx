@@ -11,6 +11,5 @@ var searchData=
   ['_7ecstream',['~CStream',['../d4/d16/class_c_stream.html#ab1387be186f7dd1877455ea246b56d5e',1,'CStream']]],
   ['_7ecstring',['~CString',['../df/d99/class_c_string.html#a65b70fc602655e47340e5d8ae53167f3',1,'CString']]],
   ['_7ectimer',['~CTimer',['../db/de1/class_c_timer.html#a9482f3b89043986caeb6136df6d4fd08',1,'CTimer']]],
-  ['_7ecwatchdog',['~CWatchdog',['../d3/d75/class_c_watchdog.html#a95284e312f91b18f52eacd6e6daeacaf',1,'CWatchdog']]],
-  ['_7eusbcdc',['~usbCDC',['../d6/dc5/classusb_c_d_c.html#a6cb0b7368918527f61c4f47d67090ecd',1,'usbCDC']]]
+  ['_7ecwatchdog',['~CWatchdog',['../d3/d75/class_c_watchdog.html#a95284e312f91b18f52eacd6e6daeacaf',1,'CWatchdog']]]
 ];

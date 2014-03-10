@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "_cdc_line_coding_", "de/d43/struct__cdc__line__coding__.html", null ],
     [ "CObject", "dc/dac/class_c_object.html", [
       [ "CEventBit", "dd/d60/class_c_event_bit.html", null ],
       [ "CList", "df/db6/class_c_list.html", [
@@ -51,7 +50,6 @@ var hierarchy =
       [ "CTimeout", "d5/d5b/class_c_timeout.html", null ]
     ] ],
     [ "fifo_t", "db/d53/structfifo__t.html", null ],
-    [ "h_thermo_temp_measure_s", "d7/d86/structh__thermo__temp__measure__s.html", null ],
     [ "IP_ADDR_T", "d0/dcc/union_i_p___a_d_d_r___t.html", null ],
-    [ "SYS_ID_T", "d4/d75/struct_s_y_s___i_d___t.html", null ]
+    [ "PACK_STRUCT", "dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html", null ]
 ];

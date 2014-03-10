@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : main.c
  Author      : Jason
- Version     : v1.0.2
- Date		 : 2014/2/28
+ Version     : v1.0.3
+ Date		 : 2014/3/10
  Copyright   :
  Description : proximity service for BLE
  ===============================================================================
@@ -13,7 +13,8 @@
  ---------+---------+--------------------------------------------+-------------
  2014/1/20 v1.0.0	First Edition									Jason
  2014/2/20 v1.0.1	Add tone										Jason
- 2014/2/28 v1.0.2	Add Device Information Service
+ 2014/2/28 v1.0.2	Add Device Information Service					Jason
+ 2014/3/10 v1.0.3	Rename onLinkLose to onLinkLoss.				Jason
  ===============================================================================
  */
 
@@ -96,7 +97,7 @@ public:
 		}
 	}
 
-	virtual void onLinkLose(uint8_t level) {
+	virtual void onLinkLoss(uint8_t level) {
 		DBG("On Link Lose: %d\n", level);
 	}
 };

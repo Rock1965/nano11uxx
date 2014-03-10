@@ -3,7 +3,7 @@
 }
 
 
-{\ttfamily \#include $<$object.\-h$>$}
+{\ttfamily \#include \char`\"{}class/object.\-h\char`\"{}}
 
 Inheritance diagram for C\-Object\-:\begin{figure}[H]
 \begin{center}
@@ -21,6 +21,9 @@ virtual \hyperlink{class_c_object_adab4f75d2863e088087cd4556f8f37ad}{$\sim$\-C\-
 virtual bool \hyperlink{class_c_object_a26a76c241a4d62d2efdac57d2cfe4c0f}{is\-Thread} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+\hyperlink{class_c_object}{C\-Object} class is all classes base. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_c_object_ac44111d5ac75248a616df61b038c4153}{\index{C\-Object@{C\-Object}!C\-Object@{C\-Object}}
@@ -47,6 +50,9 @@ virtual bool \hyperlink{class_c_object_a26a76c241a4d62d2efdac57d2cfe4c0f}{is\-Th
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_object_a26a76c241a4d62d2efdac57d2cfe4c0f}
+Check current object that inherits from \hyperlink{class_c_thread}{C\-Thread} class or not. \begin{DoxyNote}{Note}
+The is\-Therad() will be override by \hyperlink{class_c_thread}{C\-Thread} class. 
+\end{DoxyNote}
 
 
 Reimplemented in \hyperlink{class_c_thread_ab2513fd0fcad30e2e6605609c91f1984}{C\-Thread}.

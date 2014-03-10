@@ -22,48 +22,48 @@
 #include "class/peripheral.h"
 
 /**Pins defines in enumeration
- * \ingroup Peripheral
+ * \ingroup Enumerations
  */
 typedef enum {
-	END		= 0,
-	LED1 	= 1,
-	LED2 	= 2,
-	LED3 	= 3,
-	LED4 	= 4,
-	P5 		= 5,
-	P6 		= 6,
-	P7 		= 7,
-	P8		= 8,
-	P9		= 9,
-	P10		= 10,
-	P11		= 11,
-	P12		= 12,
-	P13		= 13,
-	P14		= 14,
-//	P15		= 15,	GND
-	P16		= 16,
-	P17		= 17,
-	P18		= 18,
-	P19		= 19,
-	P20		= 20,
-	P21		= 21,
-	P22		= 22,
-	P23		= 23,
-	P24		= 24,	// Open Drain ONLY
-	P25		= 25,	// OPen Drain ONLY
-	P26		= 26,
-	P27		= 27,
-	P28		= 28,
-	P29		= 29,
-//	P30		= 30,	V3.3
+	END		= 0,	///< END (null) for CBus class
+	LED1 	= 1,	///< On board LED1
+	LED2 	= 2,	///< On board LED2
+	LED3 	= 3,	///< On board LED3
+	LED4 	= 4,	///< On board LED4
+	P5 		= 5,	///< Pin 5 / Reset
+	P6 		= 6,	///< Pin 6
+	P7 		= 7,	///< Pin 7
+	P8		= 8,	///< Pin 8
+	P9		= 9,	///< Pin 9  / AD0
+	P10		= 10,	///< Pin 10 / AD1
+	P11		= 11,	///< Pin 11 / AD2
+	P12		= 12,	///< Pin 12 / AD3
+	P13		= 13,	///< Pin 13 / AD4
+	P14		= 14,	///< Pin 14 / AD5
+//	P15		= 15,	///< Pin 15 / GND (illegal IO pin)
+	P16		= 16,	///< Pin 16 / RXD
+	P17		= 17,	///< Pin 17 / TXD
+	P18		= 18,	///< Pin 18 / RTS
+	P19		= 19,	///< Pin 19 / CTS
+	P20		= 20,	///< Pin 20 / PWM1
+	P21		= 21,	///< Pin 21 / PWM2
+	P22		= 22,	///< Pin 22 / PWM3
+	P23		= 23,	///< Pin 23 / PWM4
+	P24		= 24,	///< Pin 24 / SCL (Open Drain ONLY)
+	P25		= 25,	///< Pin 25 / SDA (OPen Drain ONLY)
+	P26		= 26,	///< Pin 26 / SEL
+	P27		= 27,	///< Pin 27 / MOSI
+	P28		= 28,	///< Pin 28 / MISO
+	P29		= 29,	///< Pin 29 / SCK
+//	P30		= 30,	///< Pin 30 / V3.3 (illegal IO pin)
 }PIN_NAME_T;
 
 /**When PIN as an input, the PIN_MODE control the input mode of all ports.
  * This includes the use of the on-chip pull-up/pull-down resistor feature
  * and a special open drain operating mode.
- * \ingroup Peripheral
+ * \ingroup Enumerations
 */
-typedef enum PIN_INPUT_MODE {
+typedef enum {
 	INTERNAL_PULL_UP = 2,	///< Pin has an on-chip pull-up resistor enabled
 	REPEATER = 3,			///< enables the pull-up resistor if the pin is at a logic high, <br/>
 							///< enables the pull-down resistor if the pin is at a logic low
@@ -74,28 +74,31 @@ typedef enum PIN_INPUT_MODE {
 /**When pin as an output, the open drain mode causes the pin to be pulled low normally
  * if it is configured as an output and the data value is 0.
  * If the data value is 1, the output drive of the pin is turned off
- * \ingroup Peripheral
+ * \ingroup Enumerations
  */
-typedef enum PIN_OUTPUT_MODE {
+typedef enum {
 	NOT_OPEN = 0,	///< Pin is in the normal (not open drain) mode
 	OPEN_DRAIN = 1	///< Pin is in the open drain mode.
 }PIN_OUTPUT_MODE_T;
 
-typedef enum PIN_LEVEL {
-	LOW = 0,
-	HIGH = 1,
-	LED_OFF = LOW,
-	LED_ON = HIGH
+/**Pin level defined
+ * \ingroup Enumerations
+ */
+typedef enum {
+	LOW = 0,		///< LOW level
+	HIGH = 1,		///< HIGH level
+	LED_OFF = LOW,	///< LED_OFF
+	LED_ON = HIGH	///< LED_ON
 }PIN_LEVEL_T;
 
 /**Pin define class
  * 	\class CPin pin.h "class/pin.h"
- *	\ingroup Peripheral
+ *	\ingroup Peripherals
  */
 class CPin: public CPeripheral {
 public:
 	/**Constructs a CPin object to connect to the specified pin.
-	 * \param p ... are PIN_NAME_T to specified a pin to the object.
+	 * \param p is a PIN_NAME_T enumeration to a pin of peripheral.
 	 *
 	 * \code
 	 * Example:
@@ -103,31 +106,76 @@ public:
 	 * 		key.input();		// set the key object as a input.
 	 *
 	 * 		if ( key==LOW ) {	// check the pin level
-	 *
+	 *			...
 	 * 		}
 	 * \endcode
-	 *
-	 * \remark to 'END' of the pin arguments is MUST!!
 	 */
 	CPin(PIN_NAME_T p);
 
-	// set as an output pin
+	/**Set the pin as an output pin.
+	 * \code
+	 * CPin myPin(P19);
+	 * myPin.output();		// set the P19 as an output pin. (use the default NOT_OPEN and LOW level output)
+	 * myPin = HIGH;		// set P19 to HIGH (use the operator '=')
+	 * myPin.write(LOW);	// set P19 to LOW  (use the write() member)
+	 * \endcode
+	 * \param mode is a PIN_OUT_MODE_T enumeration to indicate the output mode.
+	 * \param defValue is a PIN_LEVEL_T enumeration to set the default level for the output pin.
+	 */
 	virtual void output(PIN_OUTPUT_MODE_T mode=NOT_OPEN, PIN_LEVEL_T defValue=LOW);
 
-	// set as an input pin
+	/**Set as an input pin
+	 * \code
+	 * PIN_LEVEL_T level;
+	 * CPin myPin(P19);
+	 * myPin.input(); 		// Set the P19 as an input pin. (with default INTERNAL_PULL_UP feature)
+	 * if ( myPin==HIGH ) {	// Read a pin level from myPin. (use the operator '==')
+	 * 		...
+	 * }
+	 * level = myPin;		// Read a pin level from myPin. (use the operator '=')
+	 * level = myPin.read();// Read a pin level from myPin. (use the read() member)
+	 * \endcode
+	 * \param mode is a PIN_INPUT_MODE_T enumeration to indicat the input mode.
+	 */
 	virtual void input(PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP);
 
+	/**Write a Pin Level to the output pin.
+	 * \param val is a PIN_LEVEL_T enumeration to write to the output pin.
+	 * \see output
+	 */
 	virtual void write(PIN_LEVEL_T val);	// write new pin value (for output)
+
+	/**Read a Pin Level from the input pin.
+	 * \return PIN_LEVEL_T is HIGH (or LOW) enumeration.
+	 * \see input
+	 */
 	virtual PIN_LEVEL_T  read();			// read current pin value (for input)
+
+	/**Invert an output pin.
+	 * \code
+	 * CPin myPin(P19);
+	 * myPin.output();
+	 *
+	 * while(1) {
+	 * 		myPin.invert();	// Invert the output pin level. (use the invert() member)
+	 * //   myPin = !myPin; // Invert the output pin level. (use the '!' operator)
+	 * 		sleep(100);
+	 * }
+	 * \endcode
+	 */
 	virtual void invert();					// invert current pin output value (for output)
 
-	// a shorthand operator
+	// Shorthand operators
 	inline void operator =(PIN_LEVEL_T val) { this->write(val); }
 	inline void operator =(CPin &pin) { this->write(pin.read());}
 	inline operator PIN_LEVEL_T() { return read(); }
 	inline PIN_LEVEL_T  operator !() { return (read()==HIGH? LOW : HIGH); }
 	inline bool operator ==(PIN_LEVEL_T val) { return (this->read()==val ? true : false); }
 	inline bool operator !=(PIN_LEVEL_T val) { return (this->read()!=val ? true : false); }
+
+	/**Call the name() member to retrieve the Pin Name of Object
+	 * \return PIN_NAME_T name
+	 */
 	inline PIN_NAME_T name() { return (PIN_NAME_T)m_nPin; }
 
 	/*! \cond PRIVATE */

@@ -37,7 +37,7 @@ typedef enum {
 
 /**I2C base Class
  * \class CI2C i2c.h "class/i2c.h"
- * \ingroup Peripheral
+ * \ingroup Peripherals
  */
 class CI2C: public CPeripheral {
 public:

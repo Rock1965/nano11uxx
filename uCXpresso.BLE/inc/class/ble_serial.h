@@ -45,7 +45,6 @@
 /**
  * \defgroup BLE
  * BLE is meant the Bluetooth Low Energy
- *
  */
 
 #define BLE_RESPONSE_TIMEOUT	3000
@@ -59,7 +58,7 @@
 #define DEF_BLE_MFG_DATA		0x1234
 
 /**Disconnect a BLE connection with a reason.
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum {
 	BLE_TERMINATED =1,		///< Request termination of the connection with the peer device with the reason "Remote user terminated connection"
@@ -67,7 +66,7 @@ typedef enum {
 } BLE_DISCONNECT_REASON_T;
 
 /**setTxPower sets the output power level of the Bluetooth Low Energy radio.
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum {
 	BLE_TX_m18dBm 	= 0,	///< -18dBm	(Low)
@@ -77,7 +76,7 @@ typedef enum {
 }BLE_TX_POWER_T;
 
 /**BLE error code
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum {
 	BLE_ERR_OK	= 0,

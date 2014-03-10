@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('db/d11/serial_8h_source.html','../../'
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -187,62 +187,63 @@ $(document).ready(function(){initNavTree('db/d11/serial_8h_source.html','../../'
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a68aecf6351423ae0e8791870c9e694bf">flush</a>();</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#a678403bcefc3bd7dfc603c334383b8df">  136</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a678403bcefc3bd7dfc603c334383b8df">begin</a>(uint32_t speed) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="../../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233">settings</a>(speed);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#a4fb5a06c1d1f746c834088c8beeb3097">  142</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a4fb5a06c1d1f746c834088c8beeb3097">end</a>() {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="comment">// nothing</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">  149</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">available</a>() {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917">readable</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">  155</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">isConnected</a>() {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a9dc5498e6cae5a2d0d12cb57fc6ee335">handshaking</a>();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d8/d1d/class_c_serial.html">CSerial</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUartRecv();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUartSend();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onLineStatus(uint32_t reg);    <span class="comment">// bitwise line status</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onCharTimeout();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semIrq;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>   m_txFifo;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>   m_rxFifo;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    xHandle  m_handle;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    uint32_t m_flag;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;};</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">// UART Line Status Define (bit position)</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">// for CSerial::onLineStatus()</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">// Refer to : Page 236 of UM10462</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#define UART_LSR_RDR    (1&lt;&lt;0)      // Receiver Data Ready:</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_OE     (1&lt;&lt;1)      // Overrun Error</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_PE     (1&lt;&lt;2)      // Parity Error</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_FE     (1&lt;&lt;3)      // Framing Error</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_BI     (1&lt;&lt;4)      // Break Interrupt</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_THRE   (1&lt;&lt;5)      // Transmitter Holding</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_TEMT   (1&lt;&lt;6)      // Transmitter Empty</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_RXFE   (1&lt;&lt;7)      // Error in RX FIFO</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_TXERR  (1&lt;&lt;8)      // Tx Error</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STREAM_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_c_serial_html_a5c142221c0841e7c961e962c45bd2db7"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">CSerial::available</a></div><div class="ttdeci">virtual int available()</div><div class="ttdef"><b>Definition:</b> serial.h:149</div></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// for Arduino user</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef">  134</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef">begin</a>(uint32_t speed) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="../../d8/d1d/class_c_serial.html#aff7c822bada51065ad52542fb9515be6">enable</a>(speed);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// for Arduino user</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#a21d6a27113d6370eb3a69c26b28b232a">  139</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a21d6a27113d6370eb3a69c26b28b232a">end</a>() {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">// nothing</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">  146</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">available</a>() {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917">readable</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">  152</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">isConnected</a>() {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d1d/class_c_serial.html#a9dc5498e6cae5a2d0d12cb57fc6ee335">handshaking</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d8/d1d/class_c_serial.html">CSerial</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUartRecv();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUartSend();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onLineStatus(uint32_t reg);    <span class="comment">// bitwise line status</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onCharTimeout();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semIrq;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>   m_txFifo;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>   m_rxFifo;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    xHandle  m_handle;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    uint32_t m_flag;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;};</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">// UART Line Status Define (bit position)</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">// for CSerial::onLineStatus()</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">// Refer to : Page 236 of UM10462</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#define UART_LSR_RDR    (1&lt;&lt;0)      // Receiver Data Ready:</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_OE     (1&lt;&lt;1)      // Overrun Error</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_PE     (1&lt;&lt;2)      // Parity Error</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_FE     (1&lt;&lt;3)      // Framing Error</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_BI     (1&lt;&lt;4)      // Break Interrupt</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_THRE   (1&lt;&lt;5)      // Transmitter Holding</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_TEMT   (1&lt;&lt;6)      // Transmitter Empty</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_RXFE   (1&lt;&lt;7)      // Error in RX FIFO</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART_LSR_TXERR  (1&lt;&lt;8)      // Tx Error</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STREAM_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_c_serial_html_a5c142221c0841e7c961e962c45bd2db7"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">CSerial::available</a></div><div class="ttdeci">virtual int available()</div><div class="ttdef"><b>Definition:</b> serial.h:146</div></div>
 <div class="ttc" id="class_c_serial_html_ad38b0926868c6cfabb59e2da94f1cf40a20c9bc3b3fa95b78898159cd2680e007"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a20c9bc3b3fa95b78898159cd2680e007">CSerial::UART_PARITY_SP_1</a></div><div class="ttdef"><b>Definition:</b> serial.h:44</div></div>
 <div class="ttc" id="class_c_serial_html_a0c80ea521e310305579e787f21a55233"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233">CSerial::settings</a></div><div class="ttdeci">void settings(uint32_t baudrate, UART_PARITY_T parity=UART_PARITY_NONE, UART_DATABIT_T databits=UART_DATABIT_8, UART_STOPBIT_T stopbits=UART_STOPBIT_1, UART_FITO_LEVEL_T level=UART_FIFO_TRGLEV0)</div><div class="ttdef"><b>Definition:</b> serial.h:97</div></div>
 <div class="ttc" id="class_c_serial_html_af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907">CSerial::UART_STOPBIT_1</a></div><div class="ttdef"><b>Definition:</b> serial.h:62</div></div>
-<div class="ttc" id="class_c_serial_html_a4fb5a06c1d1f746c834088c8beeb3097"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a4fb5a06c1d1f746c834088c8beeb3097">CSerial::end</a></div><div class="ttdeci">virtual void end()</div><div class="ttdef"><b>Definition:</b> serial.h:142</div></div>
 <div class="ttc" id="class_c_semaphore_html"><div class="ttname"><a href="../../d0/d06/class_c_semaphore.html">CSemaphore</a></div><div class="ttdef"><b>Definition:</b> semaphore.h:33</div></div>
 <div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:21</div></div>
 <div class="ttc" id="class_c_serial_html_ad528b7355f527eabc415f6a8017745f4"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ad528b7355f527eabc415f6a8017745f4">CSerial::CSerial</a></div><div class="ttdeci">CSerial(size_t fifo_size=32)</div></div>
@@ -251,9 +252,10 @@ $(document).ready(function(){initNavTree('db/d11/serial_8h_source.html','../../'
 <div class="ttc" id="class_c_serial_html_a767bb157f0f469eb5bf5c99b8ada42f1a3ca31e41f3d74e387b0ff625a927bcf4"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1a3ca31e41f3d74e387b0ff625a927bcf4">CSerial::UART_FIFO_TRGLEV2</a></div><div class="ttdef"><b>Definition:</b> serial.h:73</div></div>
 <div class="ttc" id="class_c_serial_html_adef6d3e77843c65617b7cb555c2f8732"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#adef6d3e77843c65617b7cb555c2f8732">CSerial::write</a></div><div class="ttdeci">virtual int write(const void *buf, int len, bool block=true)</div></div>
 <div class="ttc" id="class_c_serial_html_ad38b0926868c6cfabb59e2da94f1cf40aa157a4ef710e04651e3aaf61a4d96ad9"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40aa157a4ef710e04651e3aaf61a4d96ad9">CSerial::UART_PARITY_ODD</a></div><div class="ttdef"><b>Definition:</b> serial.h:42</div></div>
+<div class="ttc" id="class_c_serial_html_a21d6a27113d6370eb3a69c26b28b232a"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a21d6a27113d6370eb3a69c26b28b232a">CSerial::end</a></div><div class="ttdeci">void end()</div><div class="ttdef"><b>Definition:</b> serial.h:139</div></div>
 <div class="ttc" id="class_c_serial_html_a628c8c9be04f0315c4dae70ce8ccc5b3a7ac317a766becd83f58a2daa007fed1e"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a7ac317a766becd83f58a2daa007fed1e">CSerial::UART_DATABIT_5</a></div><div class="ttdef"><b>Definition:</b> serial.h:52</div></div>
 <div class="ttc" id="class_c_serial_html_a68aecf6351423ae0e8791870c9e694bf"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a68aecf6351423ae0e8791870c9e694bf">CSerial::flush</a></div><div class="ttdeci">virtual void flush()</div></div>
-<div class="ttc" id="class_c_serial_html_a678403bcefc3bd7dfc603c334383b8df"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a678403bcefc3bd7dfc603c334383b8df">CSerial::begin</a></div><div class="ttdeci">virtual void begin(uint32_t speed)</div><div class="ttdef"><b>Definition:</b> serial.h:136</div></div>
+<div class="ttc" id="class_c_serial_html_a130edee149575f50f62013180a1b5bef"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef">CSerial::begin</a></div><div class="ttdeci">void begin(uint32_t speed)</div><div class="ttdef"><b>Definition:</b> serial.h:134</div></div>
 <div class="ttc" id="class_c_serial_html_ad38b0926868c6cfabb59e2da94f1cf40a660aab6ba15f9c94cc9963ff226a77eb"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a660aab6ba15f9c94cc9963ff226a77eb">CSerial::UART_PARITY_SP_0</a></div><div class="ttdef"><b>Definition:</b> serial.h:45</div></div>
 <div class="ttc" id="class_c_stream_html_a59d24a785259d0f0aa3f8f44a1046fd7"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">CStream::read</a></div><div class="ttdeci">int read()</div><div class="ttdef"><b>Definition:</b> stream.h:87</div></div>
 <div class="ttc" id="class_c_serial_html_a628c8c9be04f0315c4dae70ce8ccc5b3abf533a46435efaddb8e38b9b9fe53eff"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3abf533a46435efaddb8e38b9b9fe53eff">CSerial::UART_DATABIT_7</a></div><div class="ttdef"><b>Definition:</b> serial.h:54</div></div>
@@ -273,14 +275,14 @@ $(document).ready(function(){initNavTree('db/d11/serial_8h_source.html','../../'
 <div class="ttc" id="class_c_serial_html_a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25">CSerial::UART_DATABIT_8</a></div><div class="ttdef"><b>Definition:</b> serial.h:55</div></div>
 <div class="ttc" id="class_c_serial_html_aff7c822bada51065ad52542fb9515be6"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#aff7c822bada51065ad52542fb9515be6">CSerial::enable</a></div><div class="ttdeci">virtual void enable(uint32_t baudrate, UART_PARITY_T parity=UART_PARITY_NONE, UART_DATABIT_T databits=UART_DATABIT_8, UART_STOPBIT_T stopbits=UART_STOPBIT_1, UART_FITO_LEVEL_T level=UART_FIFO_TRGLEV0)</div></div>
 <div class="ttc" id="class_c_serial_html_ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4">CSerial::UART_PARITY_NONE</a></div><div class="ttdef"><b>Definition:</b> serial.h:41</div></div>
-<div class="ttc" id="class_c_serial_html_ae7c133c4586cd5ca729cd026f813a8a0"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">CSerial::isConnected</a></div><div class="ttdeci">virtual bool isConnected()</div><div class="ttdef"><b>Definition:</b> serial.h:155</div></div>
+<div class="ttc" id="class_c_serial_html_ae7c133c4586cd5ca729cd026f813a8a0"><div class="ttname"><a href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">CSerial::isConnected</a></div><div class="ttdeci">virtual bool isConnected()</div><div class="ttdef"><b>Definition:</b> serial.h:152</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>serial.h</b></li>
-    <li class="footer">Generated on Sun Mar 9 2014 22:36:38 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Mar 10 2014 23:39:13 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

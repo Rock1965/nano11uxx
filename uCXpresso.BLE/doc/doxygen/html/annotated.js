@@ -1,6 +1,5 @@
 var annotated =
 [
-    [ "_cdc_line_coding_", "de/d43/struct__cdc__line__coding__.html", "de/d43/struct__cdc__line__coding__" ],
     [ "bleBatteryLevel", "d8/d3b/classble_battery_level.html", "d8/d3b/classble_battery_level" ],
     [ "bleDeviceInfo", "d3/dc5/classble_device_info.html", "d3/dc5/classble_device_info" ],
     [ "bleHealthThermometer", "d9/d26/classble_health_thermometer.html", "d9/d26/classble_health_thermometer" ],
@@ -40,8 +39,7 @@ var annotated =
     [ "CWatchdog", "d3/d75/class_c_watchdog.html", "d3/d75/class_c_watchdog" ],
     [ "EEPROM", "d0/d7a/class_e_e_p_r_o_m.html", "d0/d7a/class_e_e_p_r_o_m" ],
     [ "fifo_t", "db/d53/structfifo__t.html", "db/d53/structfifo__t" ],
-    [ "h_thermo_temp_measure_s", "d7/d86/structh__thermo__temp__measure__s.html", "d7/d86/structh__thermo__temp__measure__s" ],
     [ "IP_ADDR_T", "d0/dcc/union_i_p___a_d_d_r___t.html", "d0/dcc/union_i_p___a_d_d_r___t" ],
-    [ "SYS_ID_T", "d4/d75/struct_s_y_s___i_d___t.html", "d4/d75/struct_s_y_s___i_d___t" ],
+    [ "PACK_STRUCT", "dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html", "dc/d53/struct_p_a_c_k___s_t_r_u_c_t" ],
     [ "usbCDC", "d6/dc5/classusb_c_d_c.html", "d6/dc5/classusb_c_d_c" ]
 ];

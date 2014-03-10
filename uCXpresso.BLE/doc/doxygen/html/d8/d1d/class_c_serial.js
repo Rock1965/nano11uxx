@@ -31,8 +31,8 @@ var class_c_serial =
     [ "read", "d8/d1d/class_c_serial.html#a9b658bf4bc4d81413627bc2fe81e1471", null ],
     [ "write", "d8/d1d/class_c_serial.html#adef6d3e77843c65617b7cb555c2f8732", null ],
     [ "flush", "d8/d1d/class_c_serial.html#a68aecf6351423ae0e8791870c9e694bf", null ],
-    [ "begin", "d8/d1d/class_c_serial.html#a678403bcefc3bd7dfc603c334383b8df", null ],
-    [ "end", "d8/d1d/class_c_serial.html#a4fb5a06c1d1f746c834088c8beeb3097", null ],
+    [ "begin", "d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef", null ],
+    [ "end", "d8/d1d/class_c_serial.html#a21d6a27113d6370eb3a69c26b28b232a", null ],
     [ "available", "d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7", null ],
     [ "isConnected", "d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0", null ],
     [ "handshaking", "d8/d1d/class_c_serial.html#a9dc5498e6cae5a2d0d12cb57fc6ee335", null ]

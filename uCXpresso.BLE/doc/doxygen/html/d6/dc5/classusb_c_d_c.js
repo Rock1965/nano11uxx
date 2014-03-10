@@ -1,7 +1,6 @@
 var classusb_c_d_c =
 [
     [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a6eb4d9401ac17bab0bfb869bf6fc6315", null ],
-    [ "~usbCDC", "d6/dc5/classusb_c_d_c.html#a6cb0b7368918527f61c4f47d67090ecd", null ],
     [ "connect", "d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2", null ],
     [ "disconnect", "d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95", null ],
     [ "onSetLineCode", "d6/dc5/classusb_c_d_c.html#a15d235836f03a59a8d3a12ad5df78cd7", null ],
@@ -13,17 +12,5 @@ var classusb_c_d_c =
     [ "read", "d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799", null ],
     [ "write", "d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec", null ],
     [ "isConnected", "d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32", null ],
-    [ "flush", "d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72", null ],
-    [ "on_usb_send", "d6/dc5/classusb_c_d_c.html#abbbc7fbe6d45daa397f1fe796ce28d97", null ],
-    [ "on_usb_recv", "d6/dc5/classusb_c_d_c.html#a7b1bd30708c95c47753461f865439cbb", null ],
-    [ "m_hUsb", "d6/dc5/classusb_c_d_c.html#a8af7c1d1489eaa3fa35d140c1fb3e36b", null ],
-    [ "m_semIrq", "d6/dc5/classusb_c_d_c.html#a9904020c60c4f19f92d12f539293dd1f", null ],
-    [ "m_txFiFo", "d6/dc5/classusb_c_d_c.html#acc8bfa27e6d3005950ccce1493de8f7b", null ],
-    [ "m_rxFiFo", "d6/dc5/classusb_c_d_c.html#abded5563b5ed9b2b05773e2756b4b147", null ],
-    [ "m_state", "d6/dc5/classusb_c_d_c.html#ae4f03edf64316170547608292d2d4c0e", null ],
-    [ "m_flag", "d6/dc5/classusb_c_d_c.html#a65b3a5365936dd08f69243e9d433d132", null ],
-    [ "m_hCdc", "d6/dc5/classusb_c_d_c.html#a3e75d771150245f193312bd7bc8e6c6c", null ],
-    [ "m_irqTask", "d6/dc5/classusb_c_d_c.html#a9dd6cfe134ba6032c33b1f37b5260c73", null ],
-    [ "abBulkBuf", "d6/dc5/classusb_c_d_c.html#a6e7ef41e22502fc36c48311c8654bc37", null ],
-    [ "pbuf", "d6/dc5/classusb_c_d_c.html#a4a1f881b570687525bb133ef2edfd8ae", null ]
+    [ "flush", "d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72", null ]
 ];

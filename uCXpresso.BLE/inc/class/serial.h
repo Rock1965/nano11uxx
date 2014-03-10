@@ -28,8 +28,9 @@
 
 #define DEF_UART_BAUDRATE	9600
 
-/* \class CSerial serial.h "class/serial.h"
- * \brief Use the CSerial class to transceiver the serial stream.
+/**Use the CSerial class to transceiver the serial stream.
+ * \class CSerial serial.h "class/serial.h"
+ * \ingroup Peripherals
  */
 class CSerial: public CStream {
 public:
@@ -92,7 +93,7 @@ public:
 						  UART_STOPBIT_T stopbits = UART_STOPBIT_1,
 						  UART_FITO_LEVEL_T level=UART_FIFO_TRGLEV0);
 
-	// redirect to enable
+	/**Outmoded, redirect to enable() */
 	inline void settings(uint32_t baudrate,
 			  UART_PARITY_T parity = UART_PARITY_NONE,
 			  UART_DATABIT_T databits = UART_DATABIT_8,
@@ -129,16 +130,13 @@ public:
 	 */
 	virtual void flush();
 
-	/**Call the member function to begin the serial port.
-	 * \note The 'begin' is an inline code to call the exist settings() member function.
-	 */
-	inline virtual void begin(uint32_t speed) {
-		settings(speed);
+	// for Arduino user
+	inline void begin(uint32_t speed) {
+		enable(speed);
 	}
 
-	/**Call the member function to end the serial port.
-	 */
-	virtual void end() {
+	// for Arduino user
+	inline void end() {
 		// nothing
 	}
 

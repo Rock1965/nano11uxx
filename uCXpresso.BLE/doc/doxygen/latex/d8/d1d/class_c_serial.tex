@@ -58,9 +58,9 @@ virtual int \hyperlink{class_c_serial_adef6d3e77843c65617b7cb555c2f8732}{write} 
 \item 
 virtual void \hyperlink{class_c_serial_a68aecf6351423ae0e8791870c9e694bf}{flush} ()
 \item 
-virtual void \hyperlink{class_c_serial_a678403bcefc3bd7dfc603c334383b8df}{begin} (uint32\-\_\-t speed)
+void \hyperlink{class_c_serial_a130edee149575f50f62013180a1b5bef}{begin} (uint32\-\_\-t speed)
 \item 
-virtual void \hyperlink{class_c_serial_a4fb5a06c1d1f746c834088c8beeb3097}{end} ()
+void \hyperlink{class_c_serial_a21d6a27113d6370eb3a69c26b28b232a}{end} ()
 \item 
 virtual int \hyperlink{class_c_serial_a5c142221c0841e7c961e962c45bd2db7}{available} ()
 \item 
@@ -288,24 +288,21 @@ Call the member function to wait for transmission of outgoing serial data to com
 
 Reimplemented from \hyperlink{class_c_stream_a5bd707b33627e01c2069b14bbf10694a}{C\-Stream}.
 
-\hypertarget{class_c_serial_a678403bcefc3bd7dfc603c334383b8df}{\index{C\-Serial@{C\-Serial}!begin@{begin}}
+\hypertarget{class_c_serial_a130edee149575f50f62013180a1b5bef}{\index{C\-Serial@{C\-Serial}!begin@{begin}}
 \index{begin@{begin}!CSerial@{C\-Serial}}
-\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Serial\-::begin (
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Serial\-::begin (
 \begin{DoxyParamCaption}
 \item[{uint32\-\_\-t}]{speed}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_serial_a678403bcefc3bd7dfc603c334383b8df}
-Call the member function to begin the serial port. \begin{DoxyNote}{Note}
-The 'begin' is an inline code to call the exist \hyperlink{class_c_serial_a0c80ea521e310305579e787f21a55233}{settings()} member function. 
-\end{DoxyNote}
-\hypertarget{class_c_serial_a4fb5a06c1d1f746c834088c8beeb3097}{\index{C\-Serial@{C\-Serial}!end@{end}}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_serial_a130edee149575f50f62013180a1b5bef}
+\hypertarget{class_c_serial_a21d6a27113d6370eb3a69c26b28b232a}{\index{C\-Serial@{C\-Serial}!end@{end}}
 \index{end@{end}!CSerial@{C\-Serial}}
-\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-Serial\-::end (
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Serial\-::end (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_serial_a4fb5a06c1d1f746c834088c8beeb3097}
-Call the member function to end the serial port. \hypertarget{class_c_serial_a5c142221c0841e7c961e962c45bd2db7}{\index{C\-Serial@{C\-Serial}!available@{available}}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_serial_a21d6a27113d6370eb3a69c26b28b232a}
+\hypertarget{class_c_serial_a5c142221c0841e7c961e962c45bd2db7}{\index{C\-Serial@{C\-Serial}!available@{available}}
 \index{available@{available}!CSerial@{C\-Serial}}
 \subsubsection[{available}]{\setlength{\rightskip}{0pt plus 5cm}virtual int C\-Serial\-::available (
 \begin{DoxyParamCaption}

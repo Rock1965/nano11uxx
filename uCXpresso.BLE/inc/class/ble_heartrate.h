@@ -24,7 +24,7 @@
 #define HR_MAX_PAYLOAD	19
 
 /**Body Sensor Location
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum {
 	HRSL_OTHER = 0,		///< Other
@@ -37,7 +37,7 @@ typedef enum {
 } hrsl_code_t;
 
 /**Possible Heart Rate Control Point Opcodes
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum {
   HRCP_OPCODE_NULL                     = 0x00, ///< Reserved for future use (Operator:N/A)
@@ -45,7 +45,7 @@ typedef enum {
 } hrcp_op_codes_t;
 
 /**Attribute Protocol Application Error codes
- * \ingroup BLE
+ * \ingroup Enumerations
  */
 typedef enum
 {

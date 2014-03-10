@@ -23,7 +23,7 @@
 
 /**A digital input/output bus, used for reading/writing the state of a collection of pins.
  * \class CBus bus.h "class/bus.h"
- * \ingroup Peripheral
+ * \ingroup Peripherals
  */
 class CBus: public CPeripheral {
 public:

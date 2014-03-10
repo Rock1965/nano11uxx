@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dwdterate',['dwDTERate',['../de/d43/struct__cdc__line__coding__.html#af5653e0a5c72e957e563c9fa04e7190c',1,'_cdc_line_coding_']]]
+  ['dwdterate',['dwDTERate',['../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html#af565415de305bf011dc318681d3d3b1c',1,'PACK_STRUCT']]]
 ];

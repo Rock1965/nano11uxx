@@ -16,10 +16,14 @@
 #include "class/object.h"
 
 /**
- * \defgroup Peripheral
+ * \defgroup Peripherals
  * The MCU peripheral group
  */
 
+/**CPeripheral class is all peripherals base.
+ * \class CPeripheral peripheral.h "class/peripheral.h"
+ * \ingroup Peripherals
+ */
 class CPeripheral: virtual public CObject {
 	/*! \cond PRIVATE */
 public:

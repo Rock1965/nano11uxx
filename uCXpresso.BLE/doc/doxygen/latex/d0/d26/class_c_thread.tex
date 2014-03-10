@@ -14,7 +14,7 @@ Inheritance diagram for C\-Thread\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual bool \hyperlink{class_c_thread_a3ebabcc071634508511ae2fc7b868ab7}{start} (const char $\ast$name, int stack=D\-E\-F\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-C\-K, \hyperlink{group___r_t_o_s_ga51e24e4c0498282f564e92975e020c1d}{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T} priority=\hyperlink{group___r_t_o_s_gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402}{P\-R\-I\-\_\-\-L\-O\-W})
+virtual bool \hyperlink{class_c_thread_a3ebabcc071634508511ae2fc7b868ab7}{start} (const char $\ast$name, int stack=D\-E\-F\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-C\-K, \hyperlink{group___enumerations_ga51e24e4c0498282f564e92975e020c1d}{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T} priority=\hyperlink{group___enumerations_gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402}{P\-R\-I\-\_\-\-L\-O\-W})
 \item 
 virtual bool \hyperlink{class_c_thread_aacf955d1852e74da1f989251955ee6ec}{start} ()
 \item 
@@ -26,11 +26,11 @@ uint32\-\_\-t \hyperlink{class_c_thread_ac0227eda51725b795a461a768703f588}{get\-
 \item 
 virtual bool \hyperlink{class_c_thread_a51dbe9909ce528b4113d2cc27314e965}{is\-Suspend} ()
 \item 
-\hyperlink{group___r_t_o_s_ga25ee4013cc565a18ac2f4039b4ad441b}{T\-A\-S\-K\-\_\-\-S\-T\-A\-T\-E\-\_\-\-T} \hyperlink{class_c_thread_a1e9cce461d8dfb3889cea24f1a703f6f}{get\-State} ()
+\hyperlink{group___enumerations_ga25ee4013cc565a18ac2f4039b4ad441b}{T\-A\-S\-K\-\_\-\-S\-T\-A\-T\-E\-\_\-\-T} \hyperlink{class_c_thread_a1e9cce461d8dfb3889cea24f1a703f6f}{get\-State} ()
 \item 
-virtual void \hyperlink{class_c_thread_a6b0703ae0cc085a0c0aaa55b6945575b}{set\-Priority} (\hyperlink{group___r_t_o_s_ga51e24e4c0498282f564e92975e020c1d}{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T} p)
+virtual void \hyperlink{class_c_thread_a6b0703ae0cc085a0c0aaa55b6945575b}{set\-Priority} (\hyperlink{group___enumerations_ga51e24e4c0498282f564e92975e020c1d}{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T} p)
 \item 
-virtual \hyperlink{group___r_t_o_s_ga51e24e4c0498282f564e92975e020c1d}{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T} \hyperlink{class_c_thread_ac30b0a1f51549a97b88771692319c0e4}{get\-Priority} ()
+virtual \hyperlink{group___enumerations_ga51e24e4c0498282f564e92975e020c1d}{P\-R\-I\-O\-R\-I\-T\-I\-E\-S\-\_\-\-T} \hyperlink{class_c_thread_ac30b0a1f51549a97b88771692319c0e4}{get\-Priority} ()
 \item 
 L\-P\-C\-T\-S\-T\-R \hyperlink{class_c_thread_aa291909bc3ff7cc0decf46c885a7a725}{get\-Name} ()
 \item 
@@ -97,7 +97,7 @@ Example:
         \textcolor{keyword}{class }CLedTask: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
         \textcolor{keyword}{protected}:
             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run}() \{
-                \hyperlink{class_c_pin}{CPin} led(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a}{LED2});
+                \hyperlink{class_c_pin}{CPin} led(\hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a}{LED2});
                 \textcolor{keywordflow}{while}( \hyperlink{class_c_thread_a4a0f0727be4714cef1e24150a869d403}{isAlive}() ) \{    \textcolor{comment}{// Is thread in alive?  (when thread be kill, the isAlive
        will return false)}
                     led = !led;
@@ -301,7 +301,7 @@ Example:
         \textcolor{keyword}{class }CLedTask: \textcolor{keyword}{public} \hyperlink{class_c_thread}{CThread} \{
         \textcolor{keyword}{protected}:
             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_thread_a071c3d3b3c19a7bd6a01aca073a9b4d7}{run}() \{
-                \hyperlink{class_c_pin}{CPin} led(\hyperlink{group___peripheral_gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a}{LED2});
+                \hyperlink{class_c_pin}{CPin} led(\hyperlink{group___enumerations_gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a}{LED2});
                 \textcolor{keywordflow}{while}(1) \{
                     led = !led;
                     sleep(200);

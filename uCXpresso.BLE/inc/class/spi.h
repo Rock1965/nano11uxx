@@ -22,9 +22,9 @@
 #include "class/stream.h"
 #include "class/pin.h"
 
-/**********************************************************
- SPI Data Bits between the 8 and 16
- **********************************************************/
+/**SPI Data Bits between the 8 and 16
+ * \ingroup Enumerations
+ */
 typedef enum {
 	SPI0 = 0,
 	SPI1 = 1
@@ -76,12 +76,10 @@ typedef enum {
 }SPI_ROLE_T;
 
 
-// *****************************************************************************
-// Class Name: CSPI
-// Description:
-// The SPI base class to define hardware interface
-// Default frequency = 2MHz
-// *****************************************************************************
+/**CSPI class provides the Serial Peripheral Interface.
+ * \class CSPI spi.h "class/spi.h"
+ * \ingroup Peripherals
+ */
 class CSPI: public CPeripheral {
 public:
 	/*

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rtos',['RTOS',['../d8/dba/group___r_t_o_s.html',1,'']]]
+  ['peripherals',['Peripherals',['../d1/d6c/group___peripherals.html',1,'']]]
 ];

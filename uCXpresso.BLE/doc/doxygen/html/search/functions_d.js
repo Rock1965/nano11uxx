@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['on_5fusb_5frecv',['on_usb_recv',['../d6/dc5/classusb_c_d_c.html#a7b1bd30708c95c47753461f865439cbb',1,'usbCDC']]],
-  ['on_5fusb_5fsend',['on_usb_send',['../d6/dc5/classusb_c_d_c.html#abbbc7fbe6d45daa397f1fe796ce28d97',1,'usbCDC']]],
   ['onalert',['onAlert',['../de/d67/classble_proximity.html#a43c9187ddcb7237099ff414b74c5b0bd',1,'bleProximity']]],
   ['onclose',['onClose',['../de/dba/class_c_shell.html#a27a37bf5a22eaba1426655409decc188',1,'CShell']]],
   ['onconnected',['onConnected',['../d7/d03/classble_serial.html#adb930ce55295ff7eb6ab5bdbeb702749',1,'bleSerial']]],

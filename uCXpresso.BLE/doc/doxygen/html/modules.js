@@ -1,6 +1,7 @@
 var modules =
 [
     [ "BLE", "df/daf/group___b_l_e.html", "df/daf/group___b_l_e" ],
-    [ "Peripheral", "dd/d36/group___peripheral.html", "dd/d36/group___peripheral" ],
+    [ "Enumerations", "db/dff/group___enumerations.html", "db/dff/group___enumerations" ],
+    [ "Peripherals", "d1/d6c/group___peripherals.html", "d1/d6c/group___peripherals" ],
     [ "RTOS", "d8/dba/group___r_t_o_s.html", "d8/dba/group___r_t_o_s" ]
 ];

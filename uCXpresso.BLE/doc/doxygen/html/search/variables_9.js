@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pbuf',['pbuf',['../d6/dc5/classusb_c_d_c.html#a4a1f881b570687525bb133ef2edfd8ae',1,'usbCDC']]]
+  ['size',['size',['../db/d53/structfifo__t.html#adfe58cd24e80a0d62cf830bcc83f5c01',1,'fifo_t']]]
 ];
