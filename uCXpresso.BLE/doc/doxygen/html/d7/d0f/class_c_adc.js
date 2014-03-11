@@ -1,7 +1,7 @@
 var class_c_adc =
 [
     [ "CAdc", "d7/d0f/class_c_adc.html#a3d122c0e7fe686958371eabc9ed0db3f", null ],
-    [ "enable", "d7/d0f/class_c_adc.html#a11f59e83f9a3815e7980273a0b9bdd5b", null ],
+    [ "enable", "d7/d0f/class_c_adc.html#ae2d5d7175c521f922a3606e470c861eb", null ],
     [ "disable", "d7/d0f/class_c_adc.html#ad3fc0560a6fbbca6d1cae12b187f98b7", null ],
     [ "read", "d7/d0f/class_c_adc.html#aa0748ed4e15aded89101060e388af8be", null ],
     [ "read", "d7/d0f/class_c_adc.html#a20a6e83792c914309d2b0845e798b4d7", null ],

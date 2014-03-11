@@ -2,7 +2,7 @@ var group___peripherals =
 [
     [ "CAdc", "d7/d0f/class_c_adc.html", [
       [ "CAdc", "d7/d0f/class_c_adc.html#a3d122c0e7fe686958371eabc9ed0db3f", null ],
-      [ "enable", "d7/d0f/class_c_adc.html#a11f59e83f9a3815e7980273a0b9bdd5b", null ],
+      [ "enable", "d7/d0f/class_c_adc.html#ae2d5d7175c521f922a3606e470c861eb", null ],
       [ "disable", "d7/d0f/class_c_adc.html#ad3fc0560a6fbbca6d1cae12b187f98b7", null ],
       [ "read", "d7/d0f/class_c_adc.html#aa0748ed4e15aded89101060e388af8be", null ],
       [ "read", "d7/d0f/class_c_adc.html#a20a6e83792c914309d2b0845e798b4d7", null ],
@@ -126,5 +126,16 @@ var group___peripherals =
       [ "operator<<", "d2/d3f/class_c_s_p_i.html#a4d0cd48d0bba271fd72df43d7528e2a0", null ],
       [ "m_port", "d2/d3f/class_c_s_p_i.html#a44669f2150e9312a3bd022c000574f81", null ],
       [ "m_nFlag", "d2/d3f/class_c_s_p_i.html#a63f794ebd52c8a7402c1327cd84986ed", null ]
+    ] ],
+    [ "CWatchdog", "d3/d75/class_c_watchdog.html", [
+      [ "CWatchdog", "d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86", null ],
+      [ "setTimeout", "d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e", null ],
+      [ "enable", "d3/d75/class_c_watchdog.html#a7052ab2e9a2dac4b34e1dca1552a75be", null ],
+      [ "disable", "d3/d75/class_c_watchdog.html#a7b59eeaca4965e03559e327131d76979", null ],
+      [ "feed", "d3/d75/class_c_watchdog.html#a34f816a6e2a53dc92943e9c309244130", null ],
+      [ "frequence", "d3/d75/class_c_watchdog.html#a231300cd97144342d7d3d9606cb9b60c", null ],
+      [ "wait", "d3/d75/class_c_watchdog.html#a252da476793090998b1086c99bbbd1ab", null ],
+      [ "asWakeupSource", "d3/d75/class_c_watchdog.html#ae0b02e76a4c9e853aec3d5526dd33963", null ],
+      [ "count", "d3/d75/class_c_watchdog.html#ac6c20aa855ac46780e63de1f745c4d6b", null ]
     ] ]
 ];

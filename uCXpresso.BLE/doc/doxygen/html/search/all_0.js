@@ -1,5 +1,12 @@
 var searchData=
 [
+  ['ad0',['AD0',['../db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a9a6afaa33efd88ccbd62117ab0555cce',1,'adc.h']]],
+  ['ad1',['AD1',['../db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a96f3b3489a6abb6db7d90ad7c0b5ca34',1,'adc.h']]],
+  ['ad2',['AD2',['../db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a5238b98696dae3c909a0499e9a747401',1,'adc.h']]],
+  ['ad3',['AD3',['../db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a74d15a4a6470a726a55ac804c0ba58a3',1,'adc.h']]],
+  ['ad4',['AD4',['../db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a4b1fd90f9ff0cef6d348ebcbdc6b83f5',1,'adc.h']]],
+  ['ad5',['AD5',['../db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a643049f91d8ecce78006042379d84b76',1,'adc.h']]],
+  ['adc_5fch_5ft',['ADC_CH_T',['../db/dff/group___enumerations.html#gaa2194064f056aee671a1ed1555c2aaf9',1,'adc.h']]],
   ['addhead',['addHead',['../df/db6/class_c_list.html#af77b9f95976788ad6b74e825fad12e94',1,'CList']]],
   ['addheadt',['addHeadT',['../da/d59/class_c_list_t.html#a1135a93b349ac4ae024e45b8fbdc2842',1,'CListT']]],
   ['addr',['addr',['../d0/dcc/union_i_p___a_d_d_r___t.html#a7d804478df76fbcabec9ea3e252b07d4',1,'IP_ADDR_T']]],

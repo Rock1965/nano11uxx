@@ -29,7 +29,7 @@
  * \class bleBatteryLevel ble_battery.h "class/ble_battery.h"
  * \ingroup BLE
  */
-class bleBatteryLevel : virtual public CPeripheral {
+class bleBatteryLevel : public CPeripheral {
 public:
 	/**bleBatteryLevel constructor.
 	 * \code

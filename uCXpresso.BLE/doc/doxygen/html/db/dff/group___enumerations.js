@@ -1,5 +1,13 @@
 var group___enumerations =
 [
+    [ "ADC_CH_T", "db/dff/group___enumerations.html#gaa2194064f056aee671a1ed1555c2aaf9", [
+      [ "AD0", "db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a9a6afaa33efd88ccbd62117ab0555cce", null ],
+      [ "AD1", "db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a96f3b3489a6abb6db7d90ad7c0b5ca34", null ],
+      [ "AD2", "db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a5238b98696dae3c909a0499e9a747401", null ],
+      [ "AD3", "db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a74d15a4a6470a726a55ac804c0ba58a3", null ],
+      [ "AD4", "db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a4b1fd90f9ff0cef6d348ebcbdc6b83f5", null ],
+      [ "AD5", "db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a643049f91d8ecce78006042379d84b76", null ]
+    ] ],
     [ "VID_SOURCE_T", "db/dff/group___enumerations.html#ga42b352f4817787f82d2adcffd4793ad9", [
       [ "VS_REV", "db/dff/group___enumerations.html#gga42b352f4817787f82d2adcffd4793ad9abb49a7689b3186fe7da6b61eeb6a207d", null ],
       [ "VS_SIG", "db/dff/group___enumerations.html#gga42b352f4817787f82d2adcffd4793ad9aee983b596859c3b849a073596459d38c", null ],

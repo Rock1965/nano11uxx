@@ -88,8 +88,8 @@ typedef enum {
 }BLE_ERR_T;
 
 /**\class bleSerial ble_serial.h "class/ble_serial.h"
- * \brief bleSerial class is a ble core, and inherit from CStream class to provide the stream virtual functions for serial input and output.
- * the bleSerial class also inherit from the CThread class and can work in background.
+ * \brief bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual functions for serial input and output.
+ * the bleSerial class also inherits from the CThread class and can be work in background.
  * \ingroup BLE
  */
 class bleSerial: public CStream, public CThread {

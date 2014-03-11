@@ -124,68 +124,49 @@ $(document).ready(function(){initNavTree('d9/da3/watchdog_8h_source.html','../..
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;class/peripheral.h&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;class/semaphore.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d3/d75/class_c_watchdog.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d75/class_c_watchdog.html">CWatchdog</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86">CWatchdog</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// set watchdog timeout</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e">setTimeout</a>(<span class="keywordtype">float</span> second);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// enable watchdog,</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#afbc1961aa586367e2bfaf36388bdbccb">enable</a>(<span class="keywordtype">float</span> warming);</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d3/d75/class_c_watchdog.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d75/class_c_watchdog.html">CWatchdog</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86">CWatchdog</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e">setTimeout</a>(<span class="keywordtype">float</span> second);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// disable watchdog</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a7b59eeaca4965e03559e327131d76979">disable</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Stack Watchdog Feed functions</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a34f816a6e2a53dc92943e9c309244130">feed</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// read WDT clock frequence (Hz)</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> uint32_t <a class="code" href="../../d3/d75/class_c_watchdog.html#a231300cd97144342d7d3d9606cb9b60c">frequence</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a7052ab2e9a2dac4b34e1dca1552a75be">enable</a>(<span class="keywordtype">float</span> warming=0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a7b59eeaca4965e03559e327131d76979">disable</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a34f816a6e2a53dc92943e9c309244130">feed</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// wait for Warming interrupt</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a252da476793090998b1086c99bbbd1ab">wait</a>(uint32_t timeout=MAX_DELAY_TIME);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// for low power use</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#ae0b02e76a4c9e853aec3d5526dd33963">asWakeupSource</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// get current watchdog count</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    uint32_t <a class="code" href="../../d3/d75/class_c_watchdog.html#ac6c20aa855ac46780e63de1f745c4d6b">count</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Private</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a95284e312f91b18f52eacd6e6daeacaf">~CWatchdog</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d3/d75/class_c_watchdog.html#afac017788a234968c352f037ebb77649">   70</a></span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a> <a class="code" href="../../d3/d75/class_c_watchdog.html#afac017788a234968c352f037ebb77649">m_semIrq</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WATCHDOG_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> uint32_t <a class="code" href="../../d3/d75/class_c_watchdog.html#a231300cd97144342d7d3d9606cb9b60c">frequence</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#a252da476793090998b1086c99bbbd1ab">wait</a>(uint32_t timeout=MAX_DELAY_TIME);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/* for Save Power Feature</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d75/class_c_watchdog.html#ae0b02e76a4c9e853aec3d5526dd33963">asWakeupSource</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    uint32_t <a class="code" href="../../d3/d75/class_c_watchdog.html#ac6c20aa855ac46780e63de1f745c4d6b">count</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Private</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> ~<a class="code" href="../../d3/d75/class_c_watchdog.html">CWatchdog</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a> m_semIrq;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WATCHDOG_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_c_watchdog_html_af9dc7eb09403e54c36ffce01e1932f1e"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e">CWatchdog::setTimeout</a></div><div class="ttdeci">void setTimeout(float second)</div></div>
 <div class="ttc" id="class_c_semaphore_html"><div class="ttname"><a href="../../d0/d06/class_c_semaphore.html">CSemaphore</a></div><div class="ttdef"><b>Definition:</b> semaphore.h:33</div></div>
 <div class="ttc" id="class_c_watchdog_html_a7b59eeaca4965e03559e327131d76979"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#a7b59eeaca4965e03559e327131d76979">CWatchdog::disable</a></div><div class="ttdeci">void disable()</div></div>
-<div class="ttc" id="class_c_watchdog_html_a95284e312f91b18f52eacd6e6daeacaf"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#a95284e312f91b18f52eacd6e6daeacaf">CWatchdog::~CWatchdog</a></div><div class="ttdeci">virtual ~CWatchdog()</div></div>
 <div class="ttc" id="class_c_watchdog_html_a252da476793090998b1086c99bbbd1ab"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#a252da476793090998b1086c99bbbd1ab">CWatchdog::wait</a></div><div class="ttdeci">virtual bool wait(uint32_t timeout=MAX_DELAY_TIME)</div></div>
-<div class="ttc" id="class_c_watchdog_html_afac017788a234968c352f037ebb77649"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#afac017788a234968c352f037ebb77649">CWatchdog::m_semIrq</a></div><div class="ttdeci">CSemaphore m_semIrq</div><div class="ttdef"><b>Definition:</b> watchdog.h:70</div></div>
-<div class="ttc" id="class_c_watchdog_html"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html">CWatchdog</a></div><div class="ttdef"><b>Definition:</b> watchdog.h:25</div></div>
-<div class="ttc" id="class_c_watchdog_html_afbc1961aa586367e2bfaf36388bdbccb"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#afbc1961aa586367e2bfaf36388bdbccb">CWatchdog::enable</a></div><div class="ttdeci">void enable(float warming)</div></div>
+<div class="ttc" id="class_c_watchdog_html"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html">CWatchdog</a></div><div class="ttdef"><b>Definition:</b> watchdog.h:29</div></div>
 <div class="ttc" id="class_c_watchdog_html_a231300cd97144342d7d3d9606cb9b60c"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#a231300cd97144342d7d3d9606cb9b60c">CWatchdog::frequence</a></div><div class="ttdeci">static uint32_t frequence()</div></div>
 <div class="ttc" id="class_c_watchdog_html_ab2859bc21e221a86d73e1dc3877b8f86"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86">CWatchdog::CWatchdog</a></div><div class="ttdeci">CWatchdog()</div></div>
 <div class="ttc" id="class_c_watchdog_html_ae0b02e76a4c9e853aec3d5526dd33963"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#ae0b02e76a4c9e853aec3d5526dd33963">CWatchdog::asWakeupSource</a></div><div class="ttdeci">void asWakeupSource()</div></div>
 <div class="ttc" id="class_c_watchdog_html_a34f816a6e2a53dc92943e9c309244130"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#a34f816a6e2a53dc92943e9c309244130">CWatchdog::feed</a></div><div class="ttdeci">static void feed()</div></div>
 <div class="ttc" id="class_c_watchdog_html_ac6c20aa855ac46780e63de1f745c4d6b"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#ac6c20aa855ac46780e63de1f745c4d6b">CWatchdog::count</a></div><div class="ttdeci">uint32_t count()</div></div>
+<div class="ttc" id="class_c_watchdog_html_a7052ab2e9a2dac4b34e1dca1552a75be"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html#a7052ab2e9a2dac4b34e1dca1552a75be">CWatchdog::enable</a></div><div class="ttdeci">void enable(float warming=0)</div><div class="ttdoc">warming is a high water mask for watchdog time count. that will trigger a warming interrupt...</div></div>
 <div class="ttc" id="class_c_peripheral_html"><div class="ttname"><a href="../../d9/db6/class_c_peripheral.html">CPeripheral</a></div><div class="ttdef"><b>Definition:</b> peripheral.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -193,7 +174,7 @@ $(document).ready(function(){initNavTree('d9/da3/watchdog_8h_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>watchdog.h</b></li>
-    <li class="footer">Generated on Mon Mar 10 2014 23:39:13 for uCXpresso.BLE by
+    <li class="footer">Generated on Tue Mar 11 2014 10:13:40 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

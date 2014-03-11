@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task_5fstate_5ft',['TASK_STATE_T',['../db/dff/group___enumerations.html#ga25ee4013cc565a18ac2f4039b4ad441b',1,'thread.h']]]
+  ['spi_5fport_5ft',['SPI_PORT_T',['../db/dff/group___enumerations.html#ga1adbe6bf70e3880dc6b9f86e58bb7f98',1,'spi.h']]]
 ];

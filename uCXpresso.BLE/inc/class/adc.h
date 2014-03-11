@@ -34,7 +34,8 @@
  */
 #define MAX_ADC_CHANNEL		6
 
-/*! \enum ADC_CH_T
+/**ADC Channels
+ * \ingroup Enumerations
  */
 typedef enum {
 	AD0 = 0,	///< pin name to AD0 (P9)
@@ -65,8 +66,9 @@ public:
 	CAdc(ADC_CH_T ch);
 
 	/** Enable the ADC function on the object
+	 * \param filter is true to enable the internal simple filter feature, otherwise disabled.
 	 */
-	virtual void enable(bool filtr=true);
+	virtual void enable(bool filter=true);
 
 	/** Disable the ADC function on the object
 	 */
@@ -85,8 +87,8 @@ public:
 	 * \code
 	 * 	Example:
 	 * 		CAdc ad(AD0);
-	 * 		ad.begin();
-	 * 		int value = ad.read(0.25, 3);	// if AD value over 25% with last value, try to read the AD value 3 times.
+	 * 		ad.enable();
+	 * 		int value = ad.read(0.25, 3);	// return value when AD value < 25% offset with last value in 3 times.
 	 * \endcode
 	 */
 	virtual int read(float filter, int count=3);
@@ -102,8 +104,8 @@ public:
 	 * 		ad.begin();
 	 *
 	 * 		CTime t(TIMER0);
-	 * 		t.setting(10, 50);			// 10x50 = 500us interval
-	 * 		t.begin();
+	 * 		t.second(0.0005);	// 500us interval
+	 * 		t.enable();
 	 *
 	 * 		int value = ad.read(5, t);	// ADC value with Median-Filter, total 5 samples, interval 500us
 	 *
@@ -126,7 +128,7 @@ public:
 	virtual inline operator float() { return map( (float)read(0.2, 3), 0.0f, (float)MAX_ADC_VALUE, 0.0f, 3.3f); }
 
 	//
-	// inline functions
+	// inline functions for ARDUINO
 	//
 	inline void begin() { enable(); }
 	inline void end() { disable(); }
