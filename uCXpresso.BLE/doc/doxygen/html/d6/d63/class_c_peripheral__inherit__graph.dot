@@ -1,0 +1,46 @@
+digraph "CPeripheral"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CPeripheral\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{CObject\n||+ CObject()\l+ ~CObject()\l+ isThread()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dac/class_c_object.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{bleBatteryLevel\n||+ bleBatteryLevel()\l+ readSystemVoltage()\l+ sendBatteryLevel()\l+ isAvailable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3b/classble_battery_level.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{bleDeviceInfo\n||+ bleDeviceInfo()\l+ setManufactureName()\l+ setModelNumber()\l+ setSerialNumber()\l+ setFirmwareRevison()\l+ setHardwareRevision()\l+ setSystemId()\l+ setPnP()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dc5/classble_device_info.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{bleHealthThermometer\n||+ bleHealthThermometer()\l+ unit_c()\l+ unit_f()\l+ measurementInterval()\l+ sendMeasure()\l+ setDynamicType()\l+ isAvailable()\l+ readTemperature()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d26/classble_health_thermometer.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{bleHeartRate\n||+ bleHeartRate()\l+ isAvailable()\l+ supportContact()\l+ contactStatus()\l+ setSensorLocation()\l+ sendMeasure()\l+ sendMeasure()\l+ sendMeasure()\l+ sendMeasure()\l+ sendMeasure()\l+ sendMeasure()\l+ sendMeasure()\l+ sendMeasure()\l+ onResetEnergyExpended()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d81/classble_heart_rate.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{bleProximity\n||+ bleProximity()\l+ onAlert()\l+ onLinkLoss()\l+ sendEvent()\l+ setTxPowerLevel()\l+ isAvailable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d67/classble_proximity.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{CAdc\n||+ CAdc()\l+ enable()\l+ disable()\l+ read()\l+ read()\l+ read()\l+ operator float()\l+ begin()\l+ end()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d0f/class_c_adc.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{CBus\n||+ CBus()\l+ output()\l+ input()\l+ write()\l+ read()\l+ pin()\l+ operator uint32_t()\l+ operator=()\l+ operator==()\l+ operator!=()\l+ operator[]()\l+ count()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d89/class_c_bus.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node10 [label="{CI2C\n|+ m_semIrq\l+ m_semState\l+ m_state\l+ m_flag\l+ m_MasterBuffer\l+ m_SlaveBuffer\l+ m_rdIndex\l+ m_wrIndex\l+ m_wrLength\l+ m_rdLength\l# m_handle\l|+ CI2C()\l+ enable()\l+ disable()\l+ frequency()\l+ onState()\l+ start()\l+ stop()\l+ engine()\l+ read()\l+ write()\l+ ~CI2C()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dce/class_c_i2_c.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node11 [label="{CI2CMaster\n||+ readwrite()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/db9/class_c_i2_c_master.html"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node12 [label="{CI2CSlave\n||+ CI2CSlave()\l+ readwrite()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d52/class_c_i2_c_slave.html"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node13 [label="{CPin\n||+ CPin()\l+ output()\l+ input()\l+ write()\l+ read()\l+ invert()\l+ operator=()\l+ operator=()\l+ operator PIN_LEVEL_T()\l+ operator!()\l+ operator==()\l+ operator!=()\l+ name()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/db9/class_c_pin.html"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node14 [label="{CPinINT\n|+ m_semIrq\l+ m_event\l# m_ch\l|+ CPinINT()\l+ CPinINT()\l+ enable()\l+ disable()\l+ begin()\l+ end()\l+ wait()\l+ release()\l+ asWeakupSource()\l+ ~CPinINT()\l# assign()\l# getFreeChannel()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2c/class_c_pin_i_n_t.html"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node15 [label="{CPowerSave\n|# m_flag\l# m_wdt\l|+ CPowerSave()\l+ enable()\l+ disable()\l+ ~CPowerSave()\l+ onSleep()\l+ onWakeup()\l+ isEnable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d3e/class_c_power_save.html"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node16 [label="{CPwm\n||+ CPwm()\l+ enable()\l+ disable()\l+ dutyCycle()\l+ pulseWidth()\l+ read()\l+ write()\l+ operator=()\l+ operator float()\l+ begin()\l+ end()\l+ period()\l+ frequency()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d9f/class_c_pwm.html",tooltip="Pulse-width modulated output. "];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node17 [label="{CSPI\n|# m_port\l# m_nFlag\l|+ CSPI()\l+ ~CSPI()\l+ format()\l+ bitOrder()\l+ frequency()\l+ enable()\l+ disable()\l+ isSlave()\l+ begin()\l+ end()\land 10 more...\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3f/class_c_s_p_i.html"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node18 [label="{CSpiMaster\n|# m_cs\l|+ CSpiMaster()\l+ readwrite()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d9b/class_c_spi_master.html"];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node19 [label="{CTimer\n|+ m_semIrq\l+ m_count\l|+ CTimer()\l+ ~CTimer()\l+ second()\l+ millisecond()\l+ enable()\l+ disable()\l+ begin()\l+ end()\l+ reset()\l+ wait()\l+ count()\l+ getUnused()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/de1/class_c_timer.html"];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node20 [label="{CWatchdog\n||+ CWatchdog()\l+ setTimeout()\l+ enable()\l+ disable()\l+ wait()\l+ asWakeupSource()\l+ count()\l+ feed()\l+ frequence()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d75/class_c_watchdog.html"];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node21 [label="{EEPROM\n||+ read()\l+ write()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d7a/class_e_e_p_r_o_m.html"];
+}

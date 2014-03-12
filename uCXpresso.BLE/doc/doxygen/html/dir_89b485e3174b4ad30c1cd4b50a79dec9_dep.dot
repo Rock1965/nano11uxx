@@ -1,0 +1,13 @@
+digraph "uCXpresso.BLE" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bc2544560b94a5512f672a61310393b1 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ucxpresso.lite" fontname="Helvetica", fontsize="10", URL="dir_bc2544560b94a5512f672a61310393b1.html"]
+  subgraph clusterdir_89b485e3174b4ad30c1cd4b50a79dec9 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_89b485e3174b4ad30c1cd4b50a79dec9.html"];
+    dir_89b485e3174b4ad30c1cd4b50a79dec9 [shape=plaintext label="uCXpresso.BLE"];
+    dir_ef35519cefd621f663612ebad34cbfc9 [shape=box label="inc" color="red" fillcolor="white" style="filled" URL="dir_ef35519cefd621f663612ebad34cbfc9.html"];
+  }
+  }
+}

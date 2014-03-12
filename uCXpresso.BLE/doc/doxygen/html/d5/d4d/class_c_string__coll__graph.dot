@@ -1,0 +1,10 @@
+digraph "CString"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CString\n||+ CString()\l+ CString()\l+ CString()\l+ CString()\l+ ~CString()\l+ getBufSize()\l+ getBuffer()\l+ chkLength()\l+ freeExtra()\l+ length()\land 31 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{CSmallPrintf\n||+ CSmallPrintf()\l+ printf()\l+ printf()\l+ putv()\l+ putv()\l+ putv()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db4/class_c_small_printf.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{CObject\n||+ CObject()\l+ ~CObject()\l+ isThread()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dac/class_c_object.html"];
+}

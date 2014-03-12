@@ -1,0 +1,13 @@
+digraph "Firmware" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d9ab3e09413249e340719d1c246acc66 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Jason Project" fontname="Helvetica", fontsize="10", URL="dir_d9ab3e09413249e340719d1c246acc66.html"]
+  subgraph clusterdir_e60b0d0338763df7a227cbecf5ac6106 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e60b0d0338763df7a227cbecf5ac6106.html"];
+    dir_e60b0d0338763df7a227cbecf5ac6106 [shape=plaintext label="Firmware"];
+    dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4 [shape=box label="lpcxpresso" color="red" fillcolor="white" style="filled" URL="dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html"];
+  }
+  }
+}
