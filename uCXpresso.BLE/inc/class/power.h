@@ -29,7 +29,8 @@ typedef enum {
 	POWER_DOWN = 2	///< power down
 }PS_MODE_T;
 
-/**CPowerSave provides the low power feature with the Tickless Technology.
+/**CPowerSave provides the low power feature by Tickless Technology.
+ * \remark Don't use the CPowerSave and CWatchdog together, because the CPowerSave will use the watchdog as a weakup source.
  * \class CPowerSave power.h "class/power.h"
  * \ingroup Peripherals
  */

@@ -128,31 +128,31 @@ $(document).ready(function(){initNavTree('d3/d6a/power_8h_source.html','../../')
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa">   29</a></span>&#160;    <a class="code" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa">POWER_DOWN</a> = 2  </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}<a class="code" href="../../db/dff/group___enumerations.html#gab0f874168f0e852de8b43f54553826d5">PS_MODE_T</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d5/d3e/class_c_power_save.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d3e/class_c_power_save.html">CPowerSave</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d3e/class_c_power_save.html#a47741a6376b9b3065422d37d49851f25">enable</a>(<a class="code" href="../../db/dff/group___enumerations.html#gab0f874168f0e852de8b43f54553826d5">PS_MODE_T</a> mode=<a class="code" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a3c282494db59c58249a6b608e20050bf">DEEP_SLEEP</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d3e/class_c_power_save.html#a4311f52789a5e20f2a37ebddb1228e36">disable</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// PRIVATE (Internal use)</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d3e/class_c_power_save.html">CPowerSave</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d3e/class_c_power_save.html">CPowerSave</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onSleep(uint32_t ulExpectedIdleTime);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onWakeup(uint32_t *pExpectedIdleTime);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isEnable();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    uint32_t  m_flag;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d3/d75/class_c_watchdog.html">CWatchdog</a> m_wdt;    <span class="comment">// a wakeup source</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span>};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PMU_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d5/d3e/class_c_power_save.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d3e/class_c_power_save.html">CPowerSave</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d3e/class_c_power_save.html#a47741a6376b9b3065422d37d49851f25">enable</a>(<a class="code" href="../../db/dff/group___enumerations.html#gab0f874168f0e852de8b43f54553826d5">PS_MODE_T</a> mode=<a class="code" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a3c282494db59c58249a6b608e20050bf">DEEP_SLEEP</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d3e/class_c_power_save.html#a4311f52789a5e20f2a37ebddb1228e36">disable</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// PRIVATE (Internal use)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d3e/class_c_power_save.html">CPowerSave</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d3e/class_c_power_save.html">CPowerSave</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onSleep(uint32_t ulExpectedIdleTime);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onWakeup(uint32_t *pExpectedIdleTime);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isEnable();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    uint32_t  m_flag;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d3/d75/class_c_watchdog.html">CWatchdog</a> m_wdt;    <span class="comment">// a wakeup source</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span>};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PMU_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_c_power_save_html_a4311f52789a5e20f2a37ebddb1228e36"><div class="ttname"><a href="../../d5/d3e/class_c_power_save.html#a4311f52789a5e20f2a37ebddb1228e36">CPowerSave::disable</a></div><div class="ttdeci">void disable()</div></div>
 <div class="ttc" id="group___enumerations_html_ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa">POWER_DOWN</a></div><div class="ttdoc">power down </div><div class="ttdef"><b>Definition:</b> power.h:29</div></div>
 <div class="ttc" id="class_c_watchdog_html"><div class="ttname"><a href="../../d3/d75/class_c_watchdog.html">CWatchdog</a></div><div class="ttdef"><b>Definition:</b> watchdog.h:29</div></div>
-<div class="ttc" id="class_c_power_save_html"><div class="ttname"><a href="../../d5/d3e/class_c_power_save.html">CPowerSave</a></div><div class="ttdef"><b>Definition:</b> power.h:36</div></div>
+<div class="ttc" id="class_c_power_save_html"><div class="ttname"><a href="../../d5/d3e/class_c_power_save.html">CPowerSave</a></div><div class="ttdef"><b>Definition:</b> power.h:37</div></div>
 <div class="ttc" id="class_c_power_save_html_a47741a6376b9b3065422d37d49851f25"><div class="ttname"><a href="../../d5/d3e/class_c_power_save.html#a47741a6376b9b3065422d37d49851f25">CPowerSave::enable</a></div><div class="ttdeci">void enable(PS_MODE_T mode=DEEP_SLEEP)</div></div>
 <div class="ttc" id="group___enumerations_html_gab0f874168f0e852de8b43f54553826d5"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gab0f874168f0e852de8b43f54553826d5">PS_MODE_T</a></div><div class="ttdeci">PS_MODE_T</div><div class="ttdef"><b>Definition:</b> power.h:27</div></div>
 <div class="ttc" id="group___enumerations_html_ggab0f874168f0e852de8b43f54553826d5a3c282494db59c58249a6b608e20050bf"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a3c282494db59c58249a6b608e20050bf">DEEP_SLEEP</a></div><div class="ttdoc">deep sleep </div><div class="ttdef"><b>Definition:</b> power.h:28</div></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('d3/d6a/power_8h_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>power.h</b></li>
-    <li class="footer">Generated on Thu Mar 13 2014 15:53:27 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Mar 13 2014 16:31:17 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
