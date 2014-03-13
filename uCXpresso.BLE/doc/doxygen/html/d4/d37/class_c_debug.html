@@ -204,9 +204,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1e4ada8bb77d3cbcfaf614f0a657d6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8a50a383cc0f5ddd26efb72d6b4794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d0d/class_c_mutex.html">CMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">m_mutex</a></td></tr>
 <tr class="separator:a5c8a50a383cc0f5ddd26efb72d6b4794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_c_thread"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_thread')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a></td></tr>
-<tr class="memitem:a2723c18f3f7659cdd93610fd1654d564 inherit pro_attribs_class_c_thread"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a2723c18f3f7659cdd93610fd1654d564">m_flag</a></td></tr>
-<tr class="separator:a2723c18f3f7659cdd93610fd1654d564 inherit pro_attribs_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -652,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keyword">protected</span>:</div>
 <div class="line">            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run</a>() {</div>
 <div class="line">                <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a> led(<a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a">LED2</a>);</div>
-<div class="line">                <span class="keywordflow">while</span>(1) {</div>
+<div class="line">                <span class="keywordflow">while</span>( <a class="code" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a>() ) {    <span class="comment">// check thread alive</span></div>
 <div class="line">                    led = !led;</div>
 <div class="line">                    sleep(200);</div>
 <div class="line">                }</div>
@@ -665,8 +662,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">            ledTask.start(<span class="stringliteral">&quot;led&quot;</span>);   <span class="comment">// default stack=128, default priority=low</span></div>
 <div class="line">            ...</div>
 <div class="line">        }</div>
-</div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run()</a> is a pure virtual function, must reimplement by inheritor. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if end the <a class="el" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run()</a> member function, the <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> object will be deleted and collected. </dd></dl>
+</div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run()</a> is a pure virtual function, must implement by inheritor. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if end the <a class="el" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run()</a> member function, the <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> object will be destroyed and collected. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">CThread</a>.</p>
 
@@ -742,7 +739,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d37/class_c_debug.html">CDebug</a></li>
-    <li class="footer">Generated on Tue Mar 11 2014 16:06:26 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Mar 13 2014 12:10:26 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

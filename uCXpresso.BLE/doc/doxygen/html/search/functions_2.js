@@ -5,7 +5,6 @@ var searchData=
   ['cdebug',['CDebug',['../d4/d37/class_c_debug.html#a5e5390068e9a979029fc6df202ad8b6e',1,'CDebug']]],
   ['ceventbit',['CEventBit',['../dd/d60/class_c_event_bit.html#afaccf4ea2315ce05229a3a0ae37ba6af',1,'CEventBit']]],
   ['chklength',['chkLength',['../df/d99/class_c_string.html#a5f5361665c7568d502d058992b14c016',1,'CString']]],
-  ['ci2c',['CI2C',['../d0/dce/class_c_i2_c.html#a2df83a2627a8b8bf91460a68372c9ed5',1,'CI2C']]],
   ['ci2cslave',['CI2CSlave',['../d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad',1,'CI2CSlave']]],
   ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
   ['clist',['CList',['../df/db6/class_c_list.html#ae6434f79bc2d54fbd3617214a313af97',1,'CList']]],

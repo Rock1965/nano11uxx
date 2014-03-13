@@ -47,7 +47,6 @@ var group___r_t_o_s =
       [ "suspendAll", "d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
       [ "enterCriticalSection", "d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
       [ "exitCriticalSection", "d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161", null ],
-      [ "run", "d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7", null ],
-      [ "m_flag", "d0/d26/class_c_thread.html#a2723c18f3f7659cdd93610fd1654d564", null ]
+      [ "run", "d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7", null ]
     ] ]
 ];

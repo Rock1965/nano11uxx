@@ -108,7 +108,6 @@ $(document).ready(function(){initNavTree('d0/d26/class_c_thread.html','../../');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d4/d18/class_c_thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CThread Class Reference<div class="ingroups"><a class="el" href="../../d8/dba/group___r_t_o_s.html">RTOS</a></div></div>  </div>
@@ -178,11 +177,6 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a071c3d3b3c19a7bd6a01aca073a9b4d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run</a> ()</td></tr>
 <tr class="separator:a071c3d3b3c19a7bd6a01aca073a9b4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a2723c18f3f7659cdd93610fd1654d564"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a2723c18f3f7659cdd93610fd1654d564">m_flag</a></td></tr>
-<tr class="separator:a2723c18f3f7659cdd93610fd1654d564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> class provide the multi-tasking services. </p>
@@ -531,7 +525,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>kill the thread, call the kill the <a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive()</a> will return false </p>
+<p>kill the thread and the <a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive()</a> will return false </p>
 
 </div>
 </div>
@@ -581,7 +575,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The resumeAll is a static (global) function to resume all suspended tasks. </p>
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#a743d4325b7e7da494283f3292773ff77">CThread::resumeAll()</a> to resume all suspended tasks. </p>
 
 </div>
 </div>
@@ -605,7 +599,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The suspendAll is a static (globa) function to suspend all running tasks. </p>
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a">CThread::suspendAll()</a> to suspend all running tasks. </p>
 
 </div>
 </div>
@@ -629,6 +623,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678">CThread::enterCriticalSection()</a> to disable interrupts. </p>
 
 </div>
 </div>
@@ -652,6 +647,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161">CThread::exitCriticalSection()</a> to enable interrupts. </p>
 
 </div>
 </div>
@@ -681,7 +677,7 @@ Protected Attributes</h2></td></tr>
 <div class="line">        <span class="keyword">protected</span>:</div>
 <div class="line">            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run</a>() {</div>
 <div class="line">                <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a> led(<a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a">LED2</a>);</div>
-<div class="line">                <span class="keywordflow">while</span>(1) {</div>
+<div class="line">                <span class="keywordflow">while</span>( <a class="code" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a>() ) {    <span class="comment">// check thread alive</span></div>
 <div class="line">                    led = !led;</div>
 <div class="line">                    sleep(200);</div>
 <div class="line">                }</div>
@@ -694,31 +690,10 @@ Protected Attributes</h2></td></tr>
 <div class="line">            ledTask.start(<span class="stringliteral">&quot;led&quot;</span>);   <span class="comment">// default stack=128, default priority=low</span></div>
 <div class="line">            ...</div>
 <div class="line">        }</div>
-</div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> is a pure virtual function, must reimplement by inheritor. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if end the <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> member function, the <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> object will be deleted and collected. </dd></dl>
+</div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> is a pure virtual function, must implement by inheritor. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if end the <a class="el" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run()</a> member function, the <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> object will be destroyed and collected. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">CDebug</a>, and <a class="el" href="../../de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f">CShell</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2723c18f3f7659cdd93610fd1654d564"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t CThread::m_flag</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -731,7 +706,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d26/class_c_thread.html">CThread</a></li>
-    <li class="footer">Generated on Tue Mar 11 2014 16:06:27 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Mar 13 2014 12:10:27 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

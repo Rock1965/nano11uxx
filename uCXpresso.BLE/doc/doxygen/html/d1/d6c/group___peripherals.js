@@ -26,8 +26,6 @@ var group___peripherals =
       [ "count", "de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb", null ]
     ] ],
     [ "CI2C", "d0/dce/class_c_i2_c.html", [
-      [ "CI2C", "d0/dce/class_c_i2_c.html#a2df83a2627a8b8bf91460a68372c9ed5", null ],
-      [ "~CI2C", "d0/dce/class_c_i2_c.html#a1e66eebc5b74b3f79d44e506a6e72810", null ],
       [ "enable", "d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539", null ],
       [ "disable", "d0/dce/class_c_i2_c.html#a36a89b063ac68ff1710193258e76ea73", null ],
       [ "frequency", "d0/dce/class_c_i2_c.html#ab5158b0fe99495c186200ac1d6ef4e52", null ],
@@ -36,18 +34,7 @@ var group___peripherals =
       [ "stop", "d0/dce/class_c_i2_c.html#a68800b62b81e6fb291c24db5e0618e56", null ],
       [ "engine", "d0/dce/class_c_i2_c.html#ab0776700fc48c94f200774e832081c7f", null ],
       [ "read", "d0/dce/class_c_i2_c.html#ac1730f4db280cd2c9b0d73a03317776e", null ],
-      [ "write", "d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c", null ],
-      [ "m_semIrq", "d0/dce/class_c_i2_c.html#afe268dd16ca42e8542c67a7f574df789", null ],
-      [ "m_semState", "d0/dce/class_c_i2_c.html#aed6c05c74c281a6ae0dcc8e0203511b1", null ],
-      [ "m_state", "d0/dce/class_c_i2_c.html#aa2da331d3ad66d64a25d63405882be4c", null ],
-      [ "m_flag", "d0/dce/class_c_i2_c.html#a4c29db1010457d99b12ac6097219bcc8", null ],
-      [ "m_MasterBuffer", "d0/dce/class_c_i2_c.html#ae7fd0860329b89d55cfe5ca214b705e2", null ],
-      [ "m_SlaveBuffer", "d0/dce/class_c_i2_c.html#a4ef901e7efdef3f95faa2dd08d548aed", null ],
-      [ "m_rdIndex", "d0/dce/class_c_i2_c.html#ad8b02ac3b8cfe93c0e123f7c4d79709b", null ],
-      [ "m_wrIndex", "d0/dce/class_c_i2_c.html#ad2e77f79779205f9c2ae13f7a4fc9168", null ],
-      [ "m_wrLength", "d0/dce/class_c_i2_c.html#afc1ac8b1f15f1e74dd4a884fb9fe342a", null ],
-      [ "m_rdLength", "d0/dce/class_c_i2_c.html#a517d08ec5c1a44662ab923bb74c6a25c", null ],
-      [ "m_handle", "d0/dce/class_c_i2_c.html#aef073fe282d448add47eb63b3f481205", null ]
+      [ "write", "d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c", null ]
     ] ],
     [ "CPeripheral", "d9/db6/class_c_peripheral.html", null ],
     [ "CPin", "d7/db9/class_c_pin.html", [
@@ -64,6 +51,32 @@ var group___peripherals =
       [ "operator==", "d7/db9/class_c_pin.html#ae9f57493334eeb6e69a77a0cf4e50f95", null ],
       [ "operator!=", "d7/db9/class_c_pin.html#aae98a7d34d72ccc58b6d799f7ad2e12e", null ],
       [ "name", "d7/db9/class_c_pin.html#a5e6cdf81b6a8869e3c1e78dffb6ddca5", null ]
+    ] ],
+    [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html", [
+      [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html#a71f5452b1d99597b04082bf402f4ae59", null ],
+      [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html#a48e6afdca1e70de51e292d1d3c4bafc5", null ],
+      [ "enable", "db/d2c/class_c_pin_i_n_t.html#a36d2301b10290741be6d3dd86dbc534b", null ],
+      [ "disable", "db/d2c/class_c_pin_i_n_t.html#a08521d6d6892b7a80452bfce7db03e2b", null ],
+      [ "wait", "db/d2c/class_c_pin_i_n_t.html#a45e9fb4b6e6300e4c1c2ed6c13cfc062", null ],
+      [ "release", "db/d2c/class_c_pin_i_n_t.html#abe0ce7ac090423e11d460e75c8838128", null ],
+      [ "asWeakupSource", "db/d2c/class_c_pin_i_n_t.html#ae30634b8f9107d2ce4b6c3a52aeb380a", null ],
+      [ "begin", "db/d2c/class_c_pin_i_n_t.html#a811526191ebf7ba17f0f51dea004d37b", null ],
+      [ "end", "db/d2c/class_c_pin_i_n_t.html#a9f65ac4a7485b63e46b232f8d7ab385f", null ]
+    ] ],
+    [ "CPwm", "d1/d9f/class_c_pwm.html", [
+      [ "CPwm", "d1/d9f/class_c_pwm.html#a53beaa27e8d3982351770f425dffb432", null ],
+      [ "enable", "d1/d9f/class_c_pwm.html#a640f06df704cc299e45fafb9c1a1972e", null ],
+      [ "disable", "d1/d9f/class_c_pwm.html#a47c790491c994cc959bf204415be2aeb", null ],
+      [ "dutyCycle", "d1/d9f/class_c_pwm.html#ae0cb5e7e45453fb3fc049bada896c151", null ],
+      [ "pulseWidth", "d1/d9f/class_c_pwm.html#ae6ea4c5209e4f1360861371c7bf744e7", null ],
+      [ "read", "d1/d9f/class_c_pwm.html#af69709834f0c179df1a6d8e7ad314930", null ],
+      [ "write", "d1/d9f/class_c_pwm.html#a57cbfceb20e1f2970f45b5d1571431d1", null ],
+      [ "operator=", "d1/d9f/class_c_pwm.html#aadc2ad3efd1afe9ae32919462c8286cb", null ],
+      [ "operator float", "d1/d9f/class_c_pwm.html#a34dc590715ddb4b118132c69dad1140f", null ],
+      [ "period", "d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366", null ],
+      [ "frequency", "d1/d9f/class_c_pwm.html#a21081698744ec8596a9e922d3bedc8ed", null ],
+      [ "begin", "d1/d9f/class_c_pwm.html#ae8fdd7f2337005c61ec995196de366de", null ],
+      [ "end", "d1/d9f/class_c_pwm.html#aea8cdf467fe4d3e1b3c1547dbfbce4ce", null ]
     ] ],
     [ "CSerial", "d8/d1d/class_c_serial.html", [
       [ "UART_PARITY_T", "d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40", [

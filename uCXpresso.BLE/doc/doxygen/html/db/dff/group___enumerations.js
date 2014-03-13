@@ -107,9 +107,33 @@ var group___enumerations =
       [ "LED_OFF", "db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80afc0ca8cc6cbe215fd3f1ae6d40255b40", null ],
       [ "LED_ON", "db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d", null ]
     ] ],
+    [ "EDGE_STATE_T", "db/dff/group___enumerations.html#ga8b4e2a4f4daed571cb20270b8a98d247", [
+      [ "FALLING", "db/dff/group___enumerations.html#gga8b4e2a4f4daed571cb20270b8a98d247ad24712a6a30c1d431b927d1ba2f84b66", null ],
+      [ "RISING", "db/dff/group___enumerations.html#gga8b4e2a4f4daed571cb20270b8a98d247ad93abe7aced82e9a4fcac4127a36ece3", null ]
+    ] ],
+    [ "PWM_CH_T", "db/dff/group___enumerations.html#ga8b06d2bf1a2f8d7cd5e4bd6e1191ce93", [
+      [ "PWM1", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93acc6ab0fb66c5ba52524e32ea2ad0bd1a", null ],
+      [ "PWM2", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93af39c2e46e9e25532f62e9967768bba0c", null ],
+      [ "PWM3", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93aec8dabc6a499fe64be322a93f441503e", null ],
+      [ "PWM4", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93a99bf79473a462fcf944a8ffb941bd7ae", null ]
+    ] ],
     [ "SPI_PORT_T", "db/dff/group___enumerations.html#ga1adbe6bf70e3880dc6b9f86e58bb7f98", [
       [ "SPI0", "db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4", null ],
       [ "SPI1", "db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185", null ]
+    ] ],
+    [ "SPI_MODE_T", "db/dff/group___enumerations.html#ga296b79fb83e48fbffa9ee5978d200873", [
+      [ "SPI_MODE_0", "db/dff/group___enumerations.html#gga296b79fb83e48fbffa9ee5978d200873a152359b11fb4b43ed0c5485eb0ab0673", null ],
+      [ "SPI_MODE_1", "db/dff/group___enumerations.html#gga296b79fb83e48fbffa9ee5978d200873a7c1990cc15e9d69621be8e0e757e634c", null ],
+      [ "SPI_MODE_2", "db/dff/group___enumerations.html#gga296b79fb83e48fbffa9ee5978d200873a4d350945d895a4acdc45ae96b0b82fc3", null ],
+      [ "SPI_MODE_3", "db/dff/group___enumerations.html#gga296b79fb83e48fbffa9ee5978d200873af06ec36087996d6f328df39866ff5de6", null ]
+    ] ],
+    [ "SPI_BIT_ORDER_T", "db/dff/group___enumerations.html#ga0d0ec25638f753b00013a2a99fed1ef4", [
+      [ "SPI_MSBFIRST", "db/dff/group___enumerations.html#gga0d0ec25638f753b00013a2a99fed1ef4a3fa35f661bf7fbb96c05ff70827553be", null ],
+      [ "SPI_LSBFIRST", "db/dff/group___enumerations.html#gga0d0ec25638f753b00013a2a99fed1ef4a183d076e845f5ea5d99465cd6aff505f", null ]
+    ] ],
+    [ "SPI_ROLE_T", "db/dff/group___enumerations.html#ga422c6f9cdd9566ccf18ef0b43bcbc654", [
+      [ "SPI_MASTER", "db/dff/group___enumerations.html#gga422c6f9cdd9566ccf18ef0b43bcbc654a84379dc90398ca075038c8d5ee465f6a", null ],
+      [ "SPI_SLAVE", "db/dff/group___enumerations.html#gga422c6f9cdd9566ccf18ef0b43bcbc654abc98c1546fe12d3fceb1f86cf670faa9", null ]
     ] ],
     [ "PRIORITIES_T", "db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d", [
       [ "PRI_LOW", "db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402", null ],

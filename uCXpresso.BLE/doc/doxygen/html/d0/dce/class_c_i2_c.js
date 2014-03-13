@@ -1,7 +1,5 @@
 var class_c_i2_c =
 [
-    [ "CI2C", "d0/dce/class_c_i2_c.html#a2df83a2627a8b8bf91460a68372c9ed5", null ],
-    [ "~CI2C", "d0/dce/class_c_i2_c.html#a1e66eebc5b74b3f79d44e506a6e72810", null ],
     [ "enable", "d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539", null ],
     [ "disable", "d0/dce/class_c_i2_c.html#a36a89b063ac68ff1710193258e76ea73", null ],
     [ "frequency", "d0/dce/class_c_i2_c.html#ab5158b0fe99495c186200ac1d6ef4e52", null ],
@@ -10,16 +8,5 @@ var class_c_i2_c =
     [ "stop", "d0/dce/class_c_i2_c.html#a68800b62b81e6fb291c24db5e0618e56", null ],
     [ "engine", "d0/dce/class_c_i2_c.html#ab0776700fc48c94f200774e832081c7f", null ],
     [ "read", "d0/dce/class_c_i2_c.html#ac1730f4db280cd2c9b0d73a03317776e", null ],
-    [ "write", "d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c", null ],
-    [ "m_semIrq", "d0/dce/class_c_i2_c.html#afe268dd16ca42e8542c67a7f574df789", null ],
-    [ "m_semState", "d0/dce/class_c_i2_c.html#aed6c05c74c281a6ae0dcc8e0203511b1", null ],
-    [ "m_state", "d0/dce/class_c_i2_c.html#aa2da331d3ad66d64a25d63405882be4c", null ],
-    [ "m_flag", "d0/dce/class_c_i2_c.html#a4c29db1010457d99b12ac6097219bcc8", null ],
-    [ "m_MasterBuffer", "d0/dce/class_c_i2_c.html#ae7fd0860329b89d55cfe5ca214b705e2", null ],
-    [ "m_SlaveBuffer", "d0/dce/class_c_i2_c.html#a4ef901e7efdef3f95faa2dd08d548aed", null ],
-    [ "m_rdIndex", "d0/dce/class_c_i2_c.html#ad8b02ac3b8cfe93c0e123f7c4d79709b", null ],
-    [ "m_wrIndex", "d0/dce/class_c_i2_c.html#ad2e77f79779205f9c2ae13f7a4fc9168", null ],
-    [ "m_wrLength", "d0/dce/class_c_i2_c.html#afc1ac8b1f15f1e74dd4a884fb9fe342a", null ],
-    [ "m_rdLength", "d0/dce/class_c_i2_c.html#a517d08ec5c1a44662ab923bb74c6a25c", null ],
-    [ "m_handle", "d0/dce/class_c_i2_c.html#aef073fe282d448add47eb63b3f481205", null ]
+    [ "write", "d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c", null ]
 ];

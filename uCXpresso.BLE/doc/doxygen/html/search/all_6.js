@@ -6,7 +6,6 @@ var searchData=
   ['getbuffer',['getBuffer',['../df/d99/class_c_string.html#ac7b886c37095673cc287d24100a9f3fd',1,'CString']]],
   ['getbufsize',['getBufSize',['../df/d99/class_c_string.html#a1cc58a690ea6c9b8c4d7a9118fe3cc18',1,'CString']]],
   ['getchar',['getchar',['../d6/d56/class_console.html#a404cc62475ef74f818d9102bdde09584',1,'Console']]],
-  ['getfreechannel',['getFreeChannel',['../db/d2c/class_c_pin_i_n_t.html#ac638835b5fd1ca3f7c29af36677e2b0a',1,'CPinINT']]],
   ['gethead',['getHead',['../df/db6/class_c_list.html#acc4c74c1684f630c99988a477b0a3eb7',1,'CList']]],
   ['getheadpos',['getHeadPos',['../df/db6/class_c_list.html#a9d1f8b32387ace522e2fa3a5bf68975a',1,'CList']]],
   ['getheadt',['getHeadT',['../da/d59/class_c_list_t.html#a4645ce0c83fb57db7b7c7b5baeff73ec',1,'CListT']]],
