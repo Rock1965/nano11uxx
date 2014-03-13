@@ -60,6 +60,15 @@ var group___enumerations =
       [ "BLE_ERR_RSP_TIMEOUT", "db/dff/group___enumerations.html#gga6c00522f6a8c33135ee0414877d42c04a1cf05a76d9f21338d5297bbc4bcbc355", null ],
       [ "BLE_ERR_DAT_TIMEOUT", "db/dff/group___enumerations.html#gga6c00522f6a8c33135ee0414877d42c04ac08af44027b924f6026dac945b00cbac", null ]
     ] ],
+    [ "I2C_ERROR_T", "db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177", [
+      [ "I2C_BUSY", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a49e65f3960437d80b8328e7898cc90de", null ],
+      [ "I2C_NO_DATA", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a8d4a8c183322e67bcce1a4d662618923", null ],
+      [ "I2C_NACK_ON_ADDRESS", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a44f16e1b97a6ecfa3a553d527b4c11fc", null ],
+      [ "I2C_NACK_ON_DATA", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177ac7449bc5b9560aca15fd4e9079737bde", null ],
+      [ "I2C_ARBITRATION_LOST", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a5dc03718fec58b738e4267364ed81564", null ],
+      [ "I2C_TIME_OUT", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a2cac9caecd6bbd3b917fcad0abbdece3", null ],
+      [ "I2C_OK", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a", null ]
+    ] ],
     [ "PIN_NAME_T", "db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f", [
       [ "END", "db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924", null ],
       [ "LED1", "db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fadac6477842247cab1a8c02c65f431b44", null ],
@@ -111,6 +120,10 @@ var group___enumerations =
       [ "FALLING", "db/dff/group___enumerations.html#gga8b4e2a4f4daed571cb20270b8a98d247ad24712a6a30c1d431b927d1ba2f84b66", null ],
       [ "RISING", "db/dff/group___enumerations.html#gga8b4e2a4f4daed571cb20270b8a98d247ad93abe7aced82e9a4fcac4127a36ece3", null ]
     ] ],
+    [ "PS_MODE_T", "db/dff/group___enumerations.html#gab0f874168f0e852de8b43f54553826d5", [
+      [ "DEEP_SLEEP", "db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a3c282494db59c58249a6b608e20050bf", null ],
+      [ "POWER_DOWN", "db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa", null ]
+    ] ],
     [ "PWM_CH_T", "db/dff/group___enumerations.html#ga8b06d2bf1a2f8d7cd5e4bd6e1191ce93", [
       [ "PWM1", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93acc6ab0fb66c5ba52524e32ea2ad0bd1a", null ],
       [ "PWM2", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93af39c2e46e9e25532f62e9967768bba0c", null ],
@@ -120,6 +133,21 @@ var group___enumerations =
     [ "SPI_PORT_T", "db/dff/group___enumerations.html#ga1adbe6bf70e3880dc6b9f86e58bb7f98", [
       [ "SPI0", "db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4", null ],
       [ "SPI1", "db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185", null ]
+    ] ],
+    [ "SPI_DATABIT_T", "db/dff/group___enumerations.html#gae74cec5e96015c8083810d69358f8f08", [
+      [ "SPI_DATABIT_4", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a64705286435d5114a76f86a968ef8792", null ],
+      [ "SPI_DATABIT_5", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a3c054e565748e039f8a993cc3c1bbd12", null ],
+      [ "SPI_DATABIT_6", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08ad1b40902d4a6ea8e530dba2726f02207", null ],
+      [ "SPI_DATABIT_7", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08ae6ee06dab1f176913de97aa2387245e8", null ],
+      [ "SPI_DATABIT_8", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08aacec2971122bd7fe38869827a0a8e5d7", null ],
+      [ "SPI_DATABIT_9", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a4c0d551df55cd135ec1ab1b3e5ae968b", null ],
+      [ "SPI_DATABIT_10", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a61458c0785d8b1c087c058d209b14132", null ],
+      [ "SPI_DATABIT_11", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a2e29ad47c0b74b24c367774b3a522430", null ],
+      [ "SPI_DATABIT_12", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a0df5bd143f03fd13eb9473e72e809a65", null ],
+      [ "SPI_DATABIT_13", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08ae62ac0809dac7a9204dfa9dbac921c3d", null ],
+      [ "SPI_DATABIT_14", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a5e4d710eb39940ae4a60ce5c55adb219", null ],
+      [ "SPI_DATABIT_15", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1e09b3d06036c301c246ed91e5d525f3", null ],
+      [ "SPI_DATABIT_16", "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1fdcee481a470c70530db784d721d226", null ]
     ] ],
     [ "SPI_MODE_T", "db/dff/group___enumerations.html#ga296b79fb83e48fbffa9ee5978d200873", [
       [ "SPI_MODE_0", "db/dff/group___enumerations.html#gga296b79fb83e48fbffa9ee5978d200873a152359b11fb4b43ed0c5485eb0ab0673", null ],
@@ -148,5 +176,10 @@ var group___enumerations =
       [ "BLOCKED", "db/dff/group___enumerations.html#gga25ee4013cc565a18ac2f4039b4ad441ba376c1b6a3f75d283a2efacf737438d61", null ],
       [ "SUSPENDED", "db/dff/group___enumerations.html#gga25ee4013cc565a18ac2f4039b4ad441ba1c2114335a42993ac5cc5dbf65f83d41", null ],
       [ "DELETED", "db/dff/group___enumerations.html#gga25ee4013cc565a18ac2f4039b4ad441baae88752b9379248f07e2c3fdc064d998", null ]
+    ] ],
+    [ "TIMER_T", "db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3", [
+      [ "TIMER_BUSY", "db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1", null ],
+      [ "TIMER0", "db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3aa73b8bf071cada8f26f46555396534e0", null ],
+      [ "TIMER1", "db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6", null ]
     ] ]
 ];

@@ -29,25 +29,40 @@ typedef struct {
   uint8_t  bDataBits;                            /* Number of data bits */
 } PACK_STRUCT CDC_LINE_CODING_T;
 
+/**usbCDC class provides the USB CDC virtual COM. port.
+ * \class usbCDC usb_cdc.h "class/usb_cdc.h"
+ * \ingroup Peripherals
+ */
 class usbCDC: public CStream {
 public:
+	/**usbCDC constructor
+	 * \param FIFO_SIZE is an integer value to indicate the RX/TX fifo size
+	 */
 	usbCDC(int FIFO_SIZE=128);
 
-	//
-	// Line Control
-	//
-	bool connect();
-	bool disconnect();
+	/**Enable the usb cdc in core
+	 */
+	bool enable();
+
+	/**Disable the usb cdc in core
+	 */
+	bool disable();
+
+	/**On line code change event
+	 */
 	void onSetLineCode(CDC_LINE_CODING_T *line);
+
+	/**On control line state change event
+	 */
 	void onCtrlLineState(uint16_t state);
 
-	inline bool enable() {
-		return connect();
-	}
-
-	inline bool disable() {
-		return disconnect();
-	}
+	//
+	// old style function call
+	//
+	/**Inline function, and redirect to enable() member function. */
+	inline bool connect() {	return enable(); }
+	/**Inline function, and redirect to disable() member function. */
+	inline bool disconnect() { return disable(); }
 
 	//
 	// implement the CStream virtual functions

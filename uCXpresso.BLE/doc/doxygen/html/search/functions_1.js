@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['begin',['begin',['../d7/d0f/class_c_adc.html#ad27b537dba363079fc68ee48050183d6',1,'CAdc::begin()'],['../db/d2c/class_c_pin_i_n_t.html#a811526191ebf7ba17f0f51dea004d37b',1,'CPinINT::begin()'],['../d1/d9f/class_c_pwm.html#ae8fdd7f2337005c61ec995196de366de',1,'CPwm::begin()'],['../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef',1,'CSerial::begin()'],['../d2/d3f/class_c_s_p_i.html#a98fb4712f52c9977d4973430f5f505b8',1,'CSPI::begin()'],['../db/de1/class_c_timer.html#ab94e07fab4cea184d1b02de1c9435b02',1,'CTimer::begin()']]],
+  ['begin',['begin',['../d7/d0f/class_c_adc.html#ad27b537dba363079fc68ee48050183d6',1,'CAdc::begin()'],['../db/d2c/class_c_pin_i_n_t.html#a811526191ebf7ba17f0f51dea004d37b',1,'CPinINT::begin()'],['../d1/d9f/class_c_pwm.html#ae8fdd7f2337005c61ec995196de366de',1,'CPwm::begin()'],['../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef',1,'CSerial::begin()'],['../d2/d3f/class_c_s_p_i.html#a98fb4712f52c9977d4973430f5f505b8',1,'CSPI::begin()']]],
   ['binary',['binary',['../d0/d06/class_c_semaphore.html#a0fc078dfd286cb3321c6cbaf7bcbb7b2',1,'CSemaphore']]],
   ['bitorder',['bitOrder',['../d2/d3f/class_c_s_p_i.html#aa7a160dad74689b9afb720c78d63558f',1,'CSPI']]],
   ['blebatterylevel',['bleBatteryLevel',['../d8/d3b/classble_battery_level.html#a212d349975b73b6f6020ce496ed68834',1,'bleBatteryLevel']]],

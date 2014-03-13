@@ -23,39 +23,65 @@
 #include "class/pin.h"
 #include "class/list.h"
 
+/**Interrupt Edge Enumerations
+ * \ingroup Enumerations
+ */
 typedef enum {
 	FALLING = 0,
 	RISING = 1
 }EDGE_STATE_T;
 
+/**Pin interrupt service
+ * \class CPinINT pinint.h "class/pinint.h"
+ * \ingroup Peripherals
+ */
 class CPinINT: public CPin {
 public:
-	// construct for EDGE mode
+	/**construct for EDGE mode
+	 * \param pin to specify a PIN_NAME_T for IRQ.
+	 * \param edge to specify the EDGE_STATE_T to active the interrupt.
+	 * \param mode to set the PIN_INPUT_MODE_T.
+	 */
 	CPinINT(PIN_NAME_T pin, EDGE_STATE_T edge, PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP);
 
-	// construct for LEVEL mode
+	/**construct for LEVEL mode
+	 * \param pin to specify a PIN_NAME_T for IRQ.
+	 * \param level to specify the PIN_LEVEL_T to active the interrupt.
+	 * \param mode to set the PIN_INPUT_MODE_T.
+	 */
 	CPinINT(PIN_NAME_T pin, PIN_LEVEL_T level, PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP);
 
 
-	// enable / disable
+	/**enable the interrupt object
+	 */
 	virtual void enable();
+
+	/**disable the interrupt object
+	 */
 	virtual void disable();
+
+	/**Waiting for interrupt active
+	 * \param tm is a waiting timeout and unit in millisecond.
+	 * \return trun if an interrupt occurred.
+	 */
+	virtual bool wait(uint32_t tm=MAX_DELAY_TIME);
+
+	/**Trigger by software
+	 */
+	virtual void release();
+
+	/**As a weakup source for Power Save Feature
+	 * \brief The interrupt will weakup the MCU from power down mode.
+	 */
+	void asWeakupSource();	// set the pin IRQ as Power weakup source
+
+	// inline function for ARDUINO
 	inline void begin() { enable(); }
 	inline void end() { disable(); }
 
-	virtual bool wait(uint32_t tm=MAX_DELAY_TIME);
-
-	// trigger by software
-	virtual void release();
-
-	//
-	// for Power Management Unit (PMU)
-	//
-	void asWeakupSource();	// set the pin IRQ as Power weakup source
-
 	//
 	// PRIVATE
-	//
+	/// @cond
 	virtual ~CPinINT();
 	CSemaphore	m_semIrq;
 	uint32_t	m_event;
@@ -63,8 +89,8 @@ public:
 protected:
 	virtual void assign(PIN_NAME_T pin, PIN_INPUT_MODE_T mode);
 	static  int  getFreeChannel();
-
 	int 		m_ch;
+	/// @endcond
 };
 
 #endif /* PININT_H_ */

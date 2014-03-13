@@ -1,7 +1,6 @@
 var class_c_s_p_i =
 [
     [ "CSPI", "d2/d3f/class_c_s_p_i.html#a45ebc1852b74f5f0ccfbb97b302cf5e9", null ],
-    [ "~CSPI", "d2/d3f/class_c_s_p_i.html#ade8c01d1d751682ededa1cb27ab85409", null ],
     [ "format", "d2/d3f/class_c_s_p_i.html#accc9a5c831ee85e95f0bb5567de5f529", null ],
     [ "bitOrder", "d2/d3f/class_c_s_p_i.html#aa7a160dad74689b9afb720c78d63558f", null ],
     [ "frequency", "d2/d3f/class_c_s_p_i.html#ad8143fa5be48bc62762fda52b86d630a", null ],
@@ -19,7 +18,5 @@ var class_c_s_p_i =
     [ "operator>>", "d2/d3f/class_c_s_p_i.html#ac53ab106be8d0f369b349f82b3db6813", null ],
     [ "operator<<", "d2/d3f/class_c_s_p_i.html#a272f5e518d21194dbc996f5f5475ae02", null ],
     [ "operator>>", "d2/d3f/class_c_s_p_i.html#aaf1a92290aaee5a93f8fc2db9ce4a512", null ],
-    [ "operator<<", "d2/d3f/class_c_s_p_i.html#a4d0cd48d0bba271fd72df43d7528e2a0", null ],
-    [ "m_port", "d2/d3f/class_c_s_p_i.html#a44669f2150e9312a3bd022c000574f81", null ],
-    [ "m_nFlag", "d2/d3f/class_c_s_p_i.html#a63f794ebd52c8a7402c1327cd84986ed", null ]
+    [ "operator<<", "d2/d3f/class_c_s_p_i.html#a4d0cd48d0bba271fd72df43d7528e2a0", null ]
 ];

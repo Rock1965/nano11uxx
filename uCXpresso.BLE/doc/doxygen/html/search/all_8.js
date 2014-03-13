@@ -1,5 +1,13 @@
 var searchData=
 [
+  ['i2c_5farbitration_5flost',['I2C_ARBITRATION_LOST',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a5dc03718fec58b738e4267364ed81564',1,'i2c.h']]],
+  ['i2c_5fbusy',['I2C_BUSY',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a49e65f3960437d80b8328e7898cc90de',1,'i2c.h']]],
+  ['i2c_5ferror_5ft',['I2C_ERROR_T',['../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177',1,'i2c.h']]],
+  ['i2c_5fnack_5fon_5faddress',['I2C_NACK_ON_ADDRESS',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a44f16e1b97a6ecfa3a553d527b4c11fc',1,'i2c.h']]],
+  ['i2c_5fnack_5fon_5fdata',['I2C_NACK_ON_DATA',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177ac7449bc5b9560aca15fd4e9079737bde',1,'i2c.h']]],
+  ['i2c_5fno_5fdata',['I2C_NO_DATA',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a8d4a8c183322e67bcce1a4d662618923',1,'i2c.h']]],
+  ['i2c_5fok',['I2C_OK',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a',1,'i2c.h']]],
+  ['i2c_5ftime_5fout',['I2C_TIME_OUT',['../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a2cac9caecd6bbd3b917fcad0abbdece3',1,'i2c.h']]],
   ['input',['input',['../de/d89/class_c_bus.html#ad45a06493f12aef3d096ac3ed86a3b8f',1,'CBus::input()'],['../d7/db9/class_c_pin.html#a21aa5b473c1a3637a487c7724f8b9fcf',1,'CPin::input()']]],
   ['insertafter',['insertAfter',['../df/db6/class_c_list.html#ac30a5a1368438fbcf58b13bf4f2f44ad',1,'CList']]],
   ['insertaftert',['insertAfterT',['../da/d59/class_c_list_t.html#abcd6ee703a0256c5ecd6f04fd7c83e6b',1,'CListT']]],
@@ -16,7 +24,6 @@ var searchData=
   ['isconnected',['isConnected',['../d7/d03/classble_serial.html#aebfde0d9a7583cb641ac60f02df7cd77',1,'bleSerial::isConnected()'],['../d6/d56/class_console.html#a855191be30cd0e1eeaea2d6ab7cda03b',1,'Console::isConnected()'],['../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0',1,'CSerial::isConnected()'],['../d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb',1,'CStream::isConnected()'],['../d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32',1,'usbCDC::isConnected()']]],
   ['isdebugmode',['isDebugMode',['../de/dba/class_c_shell.html#ae0f6cb34ee627c44b1690d16d76d628f',1,'CShell::isDebugMode()'],['../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224',1,'CDebug::isDebugMode()']]],
   ['isempty',['isEmpty',['../df/db6/class_c_list.html#ab4db98accd12debb4330ad97b8b1dc37',1,'CList']]],
-  ['isenable',['isEnable',['../d5/d3e/class_c_power_save.html#ae7f5e81053c530c03deef192c10f93d5',1,'CPowerSave']]],
   ['isexpired',['isExpired',['../d5/d5b/class_c_timeout.html#a3841c7c53689d2ef8559a6c5e402aa5b',1,'CTimeout']]],
   ['isslave',['isSlave',['../d2/d3f/class_c_s_p_i.html#ab237c0acc917287a8f7cdca7e91e87c6',1,'CSPI']]],
   ['issuspend',['isSuspend',['../d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965',1,'CThread']]],

@@ -170,7 +170,7 @@ public:
 	 */
 	virtual bool isAlive();
 
-	/**kill the thread, call the kill the isAlive() will return false
+	/**kill the thread and the isAlive() will return false
 	 */
 	virtual void kill();
 
@@ -178,17 +178,22 @@ public:
 	 */
 	virtual inline bool isThread() { return true; }
 
-	// global control
+	// global static functions
 public:
-	/**The resumeAll is a static (global) function to resume all suspended tasks.
+	/**Call the CThread::resumeAll() to resume all suspended tasks.
 	 */
 	static void resumeAll();
 
-	/**The suspendAll is a static (globa) function to suspend all running tasks.
+	/**Call the CThread::suspendAll() to suspend all running tasks.
 	 */
 	static void suspendAll();
 
+	/**Call the CThread::enterCriticalSection() to disable interrupts.
+	 */
 	static void enterCriticalSection();
+
+	/**Call the CThread::exitCriticalSection() to enable interrupts.
+	 */
 	static void exitCriticalSection();
 
 protected:
@@ -200,7 +205,7 @@ protected:
 	 * 		protected:
 	 * 			virtual void run() {
 	 * 				CPin led(LED2);
-	 * 				while(1) {
+	 * 				while( isAlive() ) {	// check thread alive
 	 * 					led = !led;
 	 * 					sleep(200);
 	 * 				}
@@ -214,17 +219,17 @@ protected:
 	 * 			...
 	 * 		}
 	 * \endcode
-	 * \remark The run() is a pure virtual function, must reimplement by inheritor.
-	 * \note if end the run() member function, the CThread object will be deleted and collected.
+	 * \remark The run() is a pure virtual function, must implement by inheritor.
+	 * \note if end the run() member function, the CThread object will be destroyed and collected.
 	 */
 	virtual void run()=PURE_VIRTUAL_FUNC;
-	uint32_t	m_flag;
 
 
 	/*! \cond PRIVATE */
 public:
 	CThread();
 	~CThread();
+	uint32_t	m_flag;
 
 private:
 	xHandle	 	m_xHandle;

@@ -40,18 +40,53 @@ typedef struct {
 
 /**bleDeviceInfo provides the Device Information service in BLE device.
  * \class bleDeviceInfo ble_devinfo.h "class/ble_devinfo.h"
+ * \ingroup BLE
  */
 class bleDeviceInfo: public CPeripheral {
 public:
+	/**bleDeviceInfo constructor
+	 * \param ble engine adaptor.
+	 */
 	bleDeviceInfo(bleSerial &ble);
 
+	/**Set manufacture name string
+	 * \param str is an UTF8 string to point to the manufacture name.
+	 * \remark the string max. length is 20 bytes
+	 */
 	int setManufactureName(LPCTSTR str);			// max 20 bytes
+
+	/**Set model number string
+	 * \param str is an UTF8 string to point to the model number.
+	 * \remark the string max. length is 10 bytes
+	 */
 	int setModelNumber(LPCTSTR str);				// max 10 bytes
+
+	/**Set serial number string
+	 * \param str is an UTF8 string to point to the serial number.
+	 * \remark the string max. length is 10 bytes
+	 */
 	int setSerialNumber(LPCTSTR str); 				// max 10 bytes
-	int setFirmwareRevison(LPCTSTR str);			// max 10 bytes
+
+	/**Set firmware revision string
+	 * \param str is an UTF8 string to point to the firmware revision.
+	 * \remark the string max. length is 10 bytes
+	 */
+	int setFirmwareRevision(LPCTSTR str);			// max 10 bytes
+
+	/**Set hardware revision string
+	 * \param str is an UTF8 string to point to the hardware revision.
+	 * \remark the string max. length is 2 bytes
+	 */
 	int setHardwareRevision(LPCTSTR str);			// max 2 bytes
 
+	/**Set System Id
+	 *
+	 */
 	void setSystemId(SYS_ID_T &sysId);				// max 8 bytes (first 40bit=MFG. ID, last 24bit=ORG.UID)
+
+	/**Set PnP
+	 *
+	 */
 	void setPnP(VID_SOURCE_T src, uint16_t vendorId, uint16_t productId, uint16_t productVersion);
 
 	/// @cond

@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('d3/dc5/classble_device_info.html','../
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d4/d1b/classble_device_info-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bleDeviceInfo Class Reference</div>  </div>
+<div class="title">bleDeviceInfo Class Reference<div class="ingroups"><a class="el" href="../../df/daf/group___b_l_e.html">BLE</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e6a9696bb974ba0175968b3057e68d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03fce5e655451a1245643987ca15ba71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classble_device_info.html#a03fce5e655451a1245643987ca15ba71">setSerialNumber</a> (LPCTSTR str)</td></tr>
 <tr class="separator:a03fce5e655451a1245643987ca15ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e8825ee5d745fafdca6525fa2c230e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classble_device_info.html#a0e8825ee5d745fafdca6525fa2c230e7">setFirmwareRevison</a> (LPCTSTR str)</td></tr>
-<tr class="separator:a0e8825ee5d745fafdca6525fa2c230e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b02024663982b4ebef818f46cd1cba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classble_device_info.html#a7b02024663982b4ebef818f46cd1cba1">setFirmwareRevision</a> (LPCTSTR str)</td></tr>
+<tr class="separator:a7b02024663982b4ebef818f46cd1cba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a08fe14dd55d02255719a1d29a484f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classble_device_info.html#aa2a08fe14dd55d02255719a1d29a484f">setHardwareRevision</a> (LPCTSTR str)</td></tr>
 <tr class="separator:aa2a08fe14dd55d02255719a1d29a484f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372ab0246f7e19548fcef771e06dc407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classble_device_info.html#a372ab0246f7e19548fcef771e06dc407">setSystemId</a> (SYS_ID_T &amp;sysId)</td></tr>
@@ -166,6 +166,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="el" href="../../d3/dc5/classble_device_info.html">bleDeviceInfo</a> constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ble</td><td>engine adaptor. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -183,6 +190,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set manufacture name string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>is an UTF8 string to point to the manufacture name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the string max. length is 20 bytes </dd></dl>
 
 </div>
 </div>
@@ -199,6 +214,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set model number string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>is an UTF8 string to point to the model number. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the string max. length is 10 bytes </dd></dl>
 
 </div>
 </div>
@@ -215,15 +238,23 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set serial number string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>is an UTF8 string to point to the serial number. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the string max. length is 10 bytes </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0e8825ee5d745fafdca6525fa2c230e7"></a>
+<a class="anchor" id="a7b02024663982b4ebef818f46cd1cba1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int bleDeviceInfo::setFirmwareRevison </td>
+          <td class="memname">int bleDeviceInfo::setFirmwareRevision </td>
           <td>(</td>
           <td class="paramtype">LPCTSTR&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -231,6 +262,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set firmware revision string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>is an UTF8 string to point to the firmware revision. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the string max. length is 10 bytes </dd></dl>
 
 </div>
 </div>
@@ -247,6 +286,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set hardware revision string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>is an UTF8 string to point to the hardware revision. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the string max. length is 2 bytes </dd></dl>
 
 </div>
 </div>
@@ -263,6 +310,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set System Id </p>
 
 </div>
 </div>
@@ -301,6 +349,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set PnP </p>
 
 </div>
 </div>
@@ -313,7 +362,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dc5/classble_device_info.html">bleDeviceInfo</a></li>
-    <li class="footer">Generated on Thu Mar 13 2014 12:10:26 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Mar 13 2014 15:53:27 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

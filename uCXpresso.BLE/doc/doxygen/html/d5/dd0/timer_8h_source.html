@@ -125,84 +125,77 @@ $(document).ready(function(){initNavTree('d5/dd0/timer_8h_source.html','../../')
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;class/peripheral.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;class/semaphore.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    TIMER_BUSY = -1,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    TIMER0 = 0,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    TIMER1 = 1,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}TIMER_T;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/de1/class_c_timer.html">CTimer</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f">CTimer</a>(TIMER_T t);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../db/de1/class_c_timer.html#a9482f3b89043986caeb6136df6d4fd08">~CTimer</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// settings</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf">second</a>(<span class="keywordtype">float</span> sec);</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1">   30</a></span>&#160;    <a class="code" href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1">TIMER_BUSY</a> = -1,    </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3aa73b8bf071cada8f26f46555396534e0">   31</a></span>&#160;    <a class="code" href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3aa73b8bf071cada8f26f46555396534e0">TIMER0</a> = 0,         </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6">   32</a></span>&#160;    <a class="code" href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6">TIMER1</a> = 1,         </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}<a class="code" href="../../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3">TIMER_T</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/de1/class_c_timer.html">CTimer</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df">millisecond</a>(uint32_t ms) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf">second</a>((<span class="keywordtype">float</span>) (ms/1000.0f));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// control</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#aeffc80e8f34a8c1e5e0850da92b7ee17">enable</a>();  <span class="comment">// start</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a61c79a568b4337520ed58e5f248a068e">disable</a>(); <span class="comment">// stop</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html#ab94e07fab4cea184d1b02de1c9435b02">   52</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#ab94e07fab4cea184d1b02de1c9435b02">begin</a>() {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../db/de1/class_c_timer.html#aeffc80e8f34a8c1e5e0850da92b7ee17">enable</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html#a7258888c2b3954fa3922201595e562a8">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a7258888c2b3954fa3922201595e562a8">end</a>() {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="../../db/de1/class_c_timer.html#a61c79a568b4337520ed58e5f248a068e">disable</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f">CTimer</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3">TIMER_T</a> t);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf">second</a>(<span class="keywordtype">float</span> sec);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df">millisecond</a>(uint32_t ms) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="../../db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf">second</a>((<span class="keywordtype">float</span>) (ms/1000.0f));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a6234aac53e301116247e33254cd2f585">reset</a>();   <span class="comment">// restart &amp; recount</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../db/de1/class_c_timer.html#a9e63f073da87bd67b2afded332d2aa2d">wait</a>(uint32_t timeout=MAX_DELAY_TIME);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// get current count</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    uint32_t <a class="code" href="../../db/de1/class_c_timer.html#a54ec6171b2f4f7af4fd5f3b43a486d02">count</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> TIMER_T <a class="code" href="../../db/de1/class_c_timer.html#a2021fd4d79d43498822c376625dd511b">getUnused</a>(); <span class="comment">// get Unused timer, if all in used, return -1</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// PRIVATE</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html#a1bd7d3dbb8bfeeb5e603a7f7c0eed5c7">   72</a></span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  <a class="code" href="../../db/de1/class_c_timer.html#a1bd7d3dbb8bfeeb5e603a7f7c0eed5c7">m_semIrq</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../db/de1/class_c_timer.html#a0ab331eadfa7223dfe9344db39dac615">   73</a></span>&#160;    uint32_t    <a class="code" href="../../db/de1/class_c_timer.html#a0ab331eadfa7223dfe9344db39dac615">m_count</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    TIMER_T  m_timer;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TIMER_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_c_timer_html_a80328fea91b61d9ffb154671b5cae6df"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df">CTimer::millisecond</a></div><div class="ttdeci">void millisecond(uint32_t ms)</div><div class="ttdef"><b>Definition:</b> timer.h:42</div></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#aeffc80e8f34a8c1e5e0850da92b7ee17">enable</a>();  <span class="comment">// start</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a61c79a568b4337520ed58e5f248a068e">disable</a>(); <span class="comment">// stop</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/de1/class_c_timer.html#a6234aac53e301116247e33254cd2f585">reset</a>();   <span class="comment">// restart &amp; recount</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../db/de1/class_c_timer.html#a9e63f073da87bd67b2afded332d2aa2d">wait</a>(uint32_t timeout=MAX_DELAY_TIME);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    uint32_t <a class="code" href="../../db/de1/class_c_timer.html#a54ec6171b2f4f7af4fd5f3b43a486d02">count</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3">TIMER_T</a> <a class="code" href="../../db/de1/class_c_timer.html#a2021fd4d79d43498822c376625dd511b">getUnused</a>(); <span class="comment">// get Unused timer, if all in used, return -1</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// PRIVATE</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// for arduino user</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> begin() { <a class="code" href="../../db/de1/class_c_timer.html#aeffc80e8f34a8c1e5e0850da92b7ee17">enable</a>(); }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> end() { <a class="code" href="../../db/de1/class_c_timer.html#a61c79a568b4337520ed58e5f248a068e">disable</a>(); }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../db/de1/class_c_timer.html">CTimer</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semIrq;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    uint32_t    m_count;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3">TIMER_T</a>  m_timer;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TIMER_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_c_timer_html_a80328fea91b61d9ffb154671b5cae6df"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df">CTimer::millisecond</a></div><div class="ttdeci">void millisecond(uint32_t ms)</div><div class="ttdef"><b>Definition:</b> timer.h:56</div></div>
 <div class="ttc" id="class_c_semaphore_html"><div class="ttname"><a href="../../d0/d06/class_c_semaphore.html">CSemaphore</a></div><div class="ttdef"><b>Definition:</b> semaphore.h:33</div></div>
-<div class="ttc" id="class_c_timer_html_a1bd7d3dbb8bfeeb5e603a7f7c0eed5c7"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a1bd7d3dbb8bfeeb5e603a7f7c0eed5c7">CTimer::m_semIrq</a></div><div class="ttdeci">CSemaphore m_semIrq</div><div class="ttdef"><b>Definition:</b> timer.h:72</div></div>
 <div class="ttc" id="class_c_timer_html_a54ec6171b2f4f7af4fd5f3b43a486d02"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a54ec6171b2f4f7af4fd5f3b43a486d02">CTimer::count</a></div><div class="ttdeci">uint32_t count()</div></div>
-<div class="ttc" id="class_c_timer_html_a9482f3b89043986caeb6136df6d4fd08"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a9482f3b89043986caeb6136df6d4fd08">CTimer::~CTimer</a></div><div class="ttdeci">virtual ~CTimer()</div></div>
-<div class="ttc" id="class_c_timer_html"><div class="ttname"><a href="../../db/de1/class_c_timer.html">CTimer</a></div><div class="ttdef"><b>Definition:</b> timer.h:32</div></div>
+<div class="ttc" id="class_c_timer_html"><div class="ttname"><a href="../../db/de1/class_c_timer.html">CTimer</a></div><div class="ttdef"><b>Definition:</b> timer.h:39</div></div>
 <div class="ttc" id="class_c_timer_html_a01988907cb23d887bf9db237ecac1d8f"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f">CTimer::CTimer</a></div><div class="ttdeci">CTimer(TIMER_T t)</div></div>
 <div class="ttc" id="class_c_timer_html_aeffc80e8f34a8c1e5e0850da92b7ee17"><div class="ttname"><a href="../../db/de1/class_c_timer.html#aeffc80e8f34a8c1e5e0850da92b7ee17">CTimer::enable</a></div><div class="ttdeci">void enable()</div></div>
-<div class="ttc" id="class_c_timer_html_a0ab331eadfa7223dfe9344db39dac615"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a0ab331eadfa7223dfe9344db39dac615">CTimer::m_count</a></div><div class="ttdeci">uint32_t m_count</div><div class="ttdef"><b>Definition:</b> timer.h:73</div></div>
-<div class="ttc" id="class_c_timer_html_a7258888c2b3954fa3922201595e562a8"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a7258888c2b3954fa3922201595e562a8">CTimer::end</a></div><div class="ttdeci">void end()</div><div class="ttdef"><b>Definition:</b> timer.h:56</div></div>
 <div class="ttc" id="class_c_timer_html_a6234aac53e301116247e33254cd2f585"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a6234aac53e301116247e33254cd2f585">CTimer::reset</a></div><div class="ttdeci">void reset()</div></div>
 <div class="ttc" id="class_c_timer_html_aa4d48f568d057eccc1842748034fadbf"><div class="ttname"><a href="../../db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf">CTimer::second</a></div><div class="ttdeci">void second(float sec)</div></div>
-<div class="ttc" id="class_c_timer_html_ab94e07fab4cea184d1b02de1c9435b02"><div class="ttname"><a href="../../db/de1/class_c_timer.html#ab94e07fab4cea184d1b02de1c9435b02">CTimer::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdef"><b>Definition:</b> timer.h:52</div></div>
+<div class="ttc" id="group___enumerations_html_gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6">TIMER1</a></div><div class="ttdoc">Timer 1. </div><div class="ttdef"><b>Definition:</b> timer.h:32</div></div>
+<div class="ttc" id="group___enumerations_html_ga17f00bfa542197547c31260bf04f9ab3"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3">TIMER_T</a></div><div class="ttdeci">TIMER_T</div><div class="ttdef"><b>Definition:</b> timer.h:29</div></div>
+<div class="ttc" id="group___enumerations_html_gga17f00bfa542197547c31260bf04f9ab3aa73b8bf071cada8f26f46555396534e0"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3aa73b8bf071cada8f26f46555396534e0">TIMER0</a></div><div class="ttdoc">Timer 0. </div><div class="ttdef"><b>Definition:</b> timer.h:31</div></div>
 <div class="ttc" id="class_c_timer_html_a61c79a568b4337520ed58e5f248a068e"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a61c79a568b4337520ed58e5f248a068e">CTimer::disable</a></div><div class="ttdeci">void disable()</div></div>
 <div class="ttc" id="class_c_timer_html_a2021fd4d79d43498822c376625dd511b"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a2021fd4d79d43498822c376625dd511b">CTimer::getUnused</a></div><div class="ttdeci">static TIMER_T getUnused()</div></div>
 <div class="ttc" id="class_c_timer_html_a9e63f073da87bd67b2afded332d2aa2d"><div class="ttname"><a href="../../db/de1/class_c_timer.html#a9e63f073da87bd67b2afded332d2aa2d">CTimer::wait</a></div><div class="ttdeci">bool wait(uint32_t timeout=MAX_DELAY_TIME)</div></div>
 <div class="ttc" id="class_c_peripheral_html"><div class="ttname"><a href="../../d9/db6/class_c_peripheral.html">CPeripheral</a></div><div class="ttdef"><b>Definition:</b> peripheral.h:27</div></div>
+<div class="ttc" id="group___enumerations_html_gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1">TIMER_BUSY</a></div><div class="ttdoc">All in used. </div><div class="ttdef"><b>Definition:</b> timer.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>timer.h</b></li>
-    <li class="footer">Generated on Thu Mar 13 2014 12:10:26 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Mar 13 2014 15:53:27 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

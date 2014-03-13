@@ -20,7 +20,6 @@ var searchData=
   ['counting',['counting',['../d0/d06/class_c_semaphore.html#af4e913cd2861355f8be2211ae21753ba',1,'CSemaphore']]],
   ['cpin',['CPin',['../d7/db9/class_c_pin.html#a7338f2960b4d8992c43f3c6067742ded',1,'CPin']]],
   ['cpinint',['CPinINT',['../db/d2c/class_c_pin_i_n_t.html#a71f5452b1d99597b04082bf402f4ae59',1,'CPinINT::CPinINT(PIN_NAME_T pin, EDGE_STATE_T edge, PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP)'],['../db/d2c/class_c_pin_i_n_t.html#a48e6afdca1e70de51e292d1d3c4bafc5',1,'CPinINT::CPinINT(PIN_NAME_T pin, PIN_LEVEL_T level, PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP)']]],
-  ['cpowersave',['CPowerSave',['../d5/d3e/class_c_power_save.html#a85df3a4f0a12d27e4be3fab19f3af7c5',1,'CPowerSave']]],
   ['cpwm',['CPwm',['../d1/d9f/class_c_pwm.html#a53beaa27e8d3982351770f425dffb432',1,'CPwm']]],
   ['crc16',['CRC16',['../d5/df3/class_c_r_c16.html#a2317eff72b4509289399f5c6b6306db2',1,'CRC16']]],
   ['cserial',['CSerial',['../d8/d1d/class_c_serial.html#ad528b7355f527eabc415f6a8017745f4',1,'CSerial']]],

@@ -25,16 +25,24 @@ var group___peripherals =
       [ "operator[]", "de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2", null ],
       [ "count", "de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb", null ]
     ] ],
+    [ "EEPROM", "d0/d7a/class_e_e_p_r_o_m.html", [
+      [ "read", "d0/d7a/class_e_e_p_r_o_m.html#a47f3f52eed97b6e43b830ce4a1dc495e", null ],
+      [ "write", "d0/d7a/class_e_e_p_r_o_m.html#a8c397be98d4762869715a2a07866af6b", null ]
+    ] ],
     [ "CI2C", "d0/dce/class_c_i2_c.html", [
       [ "enable", "d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539", null ],
       [ "disable", "d0/dce/class_c_i2_c.html#a36a89b063ac68ff1710193258e76ea73", null ],
       [ "frequency", "d0/dce/class_c_i2_c.html#ab5158b0fe99495c186200ac1d6ef4e52", null ],
-      [ "onState", "d0/dce/class_c_i2_c.html#a20801c3b9529bb0b3b29d51630a399de", null ],
-      [ "start", "d0/dce/class_c_i2_c.html#a1517b47af85f0129355d2242f124dfbc", null ],
-      [ "stop", "d0/dce/class_c_i2_c.html#a68800b62b81e6fb291c24db5e0618e56", null ],
-      [ "engine", "d0/dce/class_c_i2_c.html#ab0776700fc48c94f200774e832081c7f", null ],
       [ "read", "d0/dce/class_c_i2_c.html#ac1730f4db280cd2c9b0d73a03317776e", null ],
-      [ "write", "d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c", null ]
+      [ "write", "d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c", null ],
+      [ "engine", "d0/dce/class_c_i2_c.html#ab0776700fc48c94f200774e832081c7f", null ]
+    ] ],
+    [ "CI2CMaster", "d7/db9/class_c_i2_c_master.html", [
+      [ "readwrite", "d7/db9/class_c_i2_c_master.html#aeea55afb38b9788048b5f7458616d208", null ]
+    ] ],
+    [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html", [
+      [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad", null ],
+      [ "readwrite", "d9/d52/class_c_i2_c_slave.html#a1874c56435dd2a13dc4efa829bf10964", null ]
     ] ],
     [ "CPeripheral", "d9/db6/class_c_peripheral.html", null ],
     [ "CPin", "d7/db9/class_c_pin.html", [
@@ -62,6 +70,10 @@ var group___peripherals =
       [ "asWeakupSource", "db/d2c/class_c_pin_i_n_t.html#ae30634b8f9107d2ce4b6c3a52aeb380a", null ],
       [ "begin", "db/d2c/class_c_pin_i_n_t.html#a811526191ebf7ba17f0f51dea004d37b", null ],
       [ "end", "db/d2c/class_c_pin_i_n_t.html#a9f65ac4a7485b63e46b232f8d7ab385f", null ]
+    ] ],
+    [ "CPowerSave", "d5/d3e/class_c_power_save.html", [
+      [ "enable", "d5/d3e/class_c_power_save.html#a47741a6376b9b3065422d37d49851f25", null ],
+      [ "disable", "d5/d3e/class_c_power_save.html#a4311f52789a5e20f2a37ebddb1228e36", null ]
     ] ],
     [ "CPwm", "d1/d9f/class_c_pwm.html", [
       [ "CPwm", "d1/d9f/class_c_pwm.html#a53beaa27e8d3982351770f425dffb432", null ],
@@ -118,7 +130,6 @@ var group___peripherals =
     ] ],
     [ "CSPI", "d2/d3f/class_c_s_p_i.html", [
       [ "CSPI", "d2/d3f/class_c_s_p_i.html#a45ebc1852b74f5f0ccfbb97b302cf5e9", null ],
-      [ "~CSPI", "d2/d3f/class_c_s_p_i.html#ade8c01d1d751682ededa1cb27ab85409", null ],
       [ "format", "d2/d3f/class_c_s_p_i.html#accc9a5c831ee85e95f0bb5567de5f529", null ],
       [ "bitOrder", "d2/d3f/class_c_s_p_i.html#aa7a160dad74689b9afb720c78d63558f", null ],
       [ "frequency", "d2/d3f/class_c_s_p_i.html#ad8143fa5be48bc62762fda52b86d630a", null ],
@@ -136,9 +147,37 @@ var group___peripherals =
       [ "operator>>", "d2/d3f/class_c_s_p_i.html#ac53ab106be8d0f369b349f82b3db6813", null ],
       [ "operator<<", "d2/d3f/class_c_s_p_i.html#a272f5e518d21194dbc996f5f5475ae02", null ],
       [ "operator>>", "d2/d3f/class_c_s_p_i.html#aaf1a92290aaee5a93f8fc2db9ce4a512", null ],
-      [ "operator<<", "d2/d3f/class_c_s_p_i.html#a4d0cd48d0bba271fd72df43d7528e2a0", null ],
-      [ "m_port", "d2/d3f/class_c_s_p_i.html#a44669f2150e9312a3bd022c000574f81", null ],
-      [ "m_nFlag", "d2/d3f/class_c_s_p_i.html#a63f794ebd52c8a7402c1327cd84986ed", null ]
+      [ "operator<<", "d2/d3f/class_c_s_p_i.html#a4d0cd48d0bba271fd72df43d7528e2a0", null ]
+    ] ],
+    [ "CSpiMaster", "d9/d9b/class_c_spi_master.html", [
+      [ "CSpiMaster", "d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800", null ],
+      [ "readwrite", "d9/d9b/class_c_spi_master.html#a13d1514765c41561d16dd46eefb9926e", null ]
+    ] ],
+    [ "CTimer", "db/de1/class_c_timer.html", [
+      [ "CTimer", "db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f", null ],
+      [ "second", "db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf", null ],
+      [ "millisecond", "db/de1/class_c_timer.html#a80328fea91b61d9ffb154671b5cae6df", null ],
+      [ "enable", "db/de1/class_c_timer.html#aeffc80e8f34a8c1e5e0850da92b7ee17", null ],
+      [ "disable", "db/de1/class_c_timer.html#a61c79a568b4337520ed58e5f248a068e", null ],
+      [ "reset", "db/de1/class_c_timer.html#a6234aac53e301116247e33254cd2f585", null ],
+      [ "wait", "db/de1/class_c_timer.html#a9e63f073da87bd67b2afded332d2aa2d", null ],
+      [ "count", "db/de1/class_c_timer.html#a54ec6171b2f4f7af4fd5f3b43a486d02", null ],
+      [ "getUnused", "db/de1/class_c_timer.html#a2021fd4d79d43498822c376625dd511b", null ]
+    ] ],
+    [ "usbCDC", "d6/dc5/classusb_c_d_c.html", [
+      [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a6eb4d9401ac17bab0bfb869bf6fc6315", null ],
+      [ "enable", "d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697", null ],
+      [ "disable", "d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9", null ],
+      [ "onSetLineCode", "d6/dc5/classusb_c_d_c.html#a15d235836f03a59a8d3a12ad5df78cd7", null ],
+      [ "onCtrlLineState", "d6/dc5/classusb_c_d_c.html#ad20e467624da633a79b150a435667619", null ],
+      [ "connect", "d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2", null ],
+      [ "disconnect", "d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95", null ],
+      [ "readable", "d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80", null ],
+      [ "writeable", "d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a", null ],
+      [ "read", "d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799", null ],
+      [ "write", "d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec", null ],
+      [ "isConnected", "d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32", null ],
+      [ "flush", "d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72", null ]
     ] ],
     [ "CWatchdog", "d3/d75/class_c_watchdog.html", [
       [ "CWatchdog", "d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86", null ],

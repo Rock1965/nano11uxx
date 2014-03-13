@@ -20,22 +20,23 @@
 
 #include "class/peripheral.h"
 
-/*	\enum PWM_CH_T
- *
+/**PWM Channels
+ * \ingroup Enumerations
  */
 typedef enum {
-	PWM1 = 1,
-	PWM2,
-	PWM3,
-	PWM4,
+	PWM1 = 1,	///< PWM1 (P19)
+	PWM2,		///< PWM2 (P20)
+	PWM3,		///< PWM3 (P21)
+	PWM4,		///< PWM4 (P22)
 }PWM_CH_T;
 
 /*! \def Max frequency
  */
 #define MAX_PWM_FREQUENCY	48000	// 48KHz (period=20.83us)
 
-/*!	\class CPwm pwm.h "class/pwm.h"
- *	\brief Pulse-width modulated output.
+/**Pulse-width modulated output.
+ * \class CPwm pwm.h "class/pwm.h"
+ * \ingroup Peripherals
  */
 class CPwm: public CPeripheral {
 public:
@@ -44,15 +45,12 @@ public:
 	 *
 	 * \code
 	 * Example:
-	 * 		CPwm::period(0.02);	// Set PWM period time = 20ms
-	 * 		CPwm::start();		// Start the core PWM peripheral
+	 * 		CPwm::period(0.02);	// Set global PWM period time = 20ms
 	 *
 	 * 		CPwm servo(PWM1);	// create a servo objecj
 	 * 		servo.dutyCycle(80);// set servo object to 80% dutyCycle
 	 * 		servo.begin();		// begin the servo PWM output
 	 * \endcode
-	 *
-	 * \remark to 'END' of the pin arguments is MUST!!
 	 */
 	CPwm(PWM_CH_T ch);
 
@@ -100,8 +98,7 @@ public:
 	static void period(float sec);
 	static void frequency(uint32_t f);
 
-	/**inline functions
-	 *
+	/**inline functions for ARDUINO
 	 */
 	inline void begin() { enable(); }
 	inline void end() { disable(); }

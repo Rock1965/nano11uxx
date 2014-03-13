@@ -13,7 +13,6 @@ var searchData=
   ['isconnected',['isConnected',['../d7/d03/classble_serial.html#aebfde0d9a7583cb641ac60f02df7cd77',1,'bleSerial::isConnected()'],['../d6/d56/class_console.html#a855191be30cd0e1eeaea2d6ab7cda03b',1,'Console::isConnected()'],['../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0',1,'CSerial::isConnected()'],['../d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb',1,'CStream::isConnected()'],['../d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32',1,'usbCDC::isConnected()']]],
   ['isdebugmode',['isDebugMode',['../de/dba/class_c_shell.html#ae0f6cb34ee627c44b1690d16d76d628f',1,'CShell::isDebugMode()'],['../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224',1,'CDebug::isDebugMode()']]],
   ['isempty',['isEmpty',['../df/db6/class_c_list.html#ab4db98accd12debb4330ad97b8b1dc37',1,'CList']]],
-  ['isenable',['isEnable',['../d5/d3e/class_c_power_save.html#ae7f5e81053c530c03deef192c10f93d5',1,'CPowerSave']]],
   ['isexpired',['isExpired',['../d5/d5b/class_c_timeout.html#a3841c7c53689d2ef8559a6c5e402aa5b',1,'CTimeout']]],
   ['isslave',['isSlave',['../d2/d3f/class_c_s_p_i.html#ab237c0acc917287a8f7cdca7e91e87c6',1,'CSPI']]],
   ['issuspend',['isSuspend',['../d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965',1,'CThread']]],

@@ -229,7 +229,7 @@ int main(void) {
 	info.setManufactureName(u8"英倍達國際");	// u8 mean to use the UTF-8 string
 	info.setModelNumber("nano11U37");
 	info.setSerialNumber("140226000");
-	info.setFirmwareRevison(uCXpresso_VER_STR);
+	info.setFirmwareRevision(uCXpresso_VER_STR);
 	info.setHardwareRevision("R1");
 	info.setPnP(VS_USB, 1, 2, 0x3456);		// vendor Id=1, product Id = 2,  product ver. = 0x3456
 

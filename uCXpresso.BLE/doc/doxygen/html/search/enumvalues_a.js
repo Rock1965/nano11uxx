@@ -24,6 +24,7 @@ var searchData=
   ['p7',['P7',['../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fae544b12da6aab8e794fc4a95291e79d0',1,'pin.h']]],
   ['p8',['P8',['../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fafc188cab65e9ef22b16cffc65fc01db6',1,'pin.h']]],
   ['p9',['P9',['../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432facb5ce0e03e0d15f312bcce7c393ab209',1,'pin.h']]],
+  ['power_5fdown',['POWER_DOWN',['../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa',1,'power.h']]],
   ['pri_5fhardware',['PRI_HARDWARE',['../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1da47d8cd9e6c142378614cf48f5ecd78e5',1,'thread.h']]],
   ['pri_5fhigh',['PRI_HIGH',['../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1dae366c91784dd520e388c90d0e3770b2b',1,'thread.h']]],
   ['pri_5flow',['PRI_LOW',['../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402',1,'thread.h']]],

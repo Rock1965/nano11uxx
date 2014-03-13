@@ -6,6 +6,16 @@ var group___b_l_e =
       [ "sendBatteryLevel", "d8/d3b/classble_battery_level.html#ad770083f87f2f193b897ca767593e716", null ],
       [ "isAvailable", "d8/d3b/classble_battery_level.html#a8cfd4674c5b405183b6b282e663849e4", null ]
     ] ],
+    [ "bleDeviceInfo", "d3/dc5/classble_device_info.html", [
+      [ "bleDeviceInfo", "d3/dc5/classble_device_info.html#ae5f10713f4db98be9245aff3d482d51d", null ],
+      [ "setManufactureName", "d3/dc5/classble_device_info.html#a98d7f5689f1e769f396282e3511edb99", null ],
+      [ "setModelNumber", "d3/dc5/classble_device_info.html#a9e6a9696bb974ba0175968b3057e68d0", null ],
+      [ "setSerialNumber", "d3/dc5/classble_device_info.html#a03fce5e655451a1245643987ca15ba71", null ],
+      [ "setFirmwareRevision", "d3/dc5/classble_device_info.html#a7b02024663982b4ebef818f46cd1cba1", null ],
+      [ "setHardwareRevision", "d3/dc5/classble_device_info.html#aa2a08fe14dd55d02255719a1d29a484f", null ],
+      [ "setSystemId", "d3/dc5/classble_device_info.html#a372ab0246f7e19548fcef771e06dc407", null ],
+      [ "setPnP", "d3/dc5/classble_device_info.html#a344d50adf41337464686f926c8c85748", null ]
+    ] ],
     [ "bleHeartRate", "d3/d81/classble_heart_rate.html", [
       [ "bleHeartRate", "d3/d81/classble_heart_rate.html#af5e0bc81b5d2f8e290b6cba8050f80c2", null ],
       [ "isAvailable", "d3/d81/classble_heart_rate.html#a822019806bf50f6d25ae075b62a838ab", null ],

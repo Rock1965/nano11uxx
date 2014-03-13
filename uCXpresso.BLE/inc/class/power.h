@@ -21,20 +21,34 @@
 #include "class/peripheral.h"
 #include "class/watchdog.h"
 
+/**Power Save Mode Enumeration
+ * \ingroup Enumerations
+ */
 typedef enum {
-	DEEP_SLEEP = 1,
-	POWER_DOWN = 2
+	DEEP_SLEEP = 1,	///< deep sleep
+	POWER_DOWN = 2	///< power down
 }PS_MODE_T;
 
+/**CPowerSave provides the low power feature with the Tickless Technology.
+ * \class CPowerSave power.h "class/power.h"
+ * \ingroup Peripherals
+ */
 class CPowerSave: public CPeripheral {
 public:
-	CPowerSave();
+
+	/**Enable the power save feature
+	 * \param mode is a PS_MODE_T to indicate the power save mode.
+	 */
 	void enable(PS_MODE_T mode=DEEP_SLEEP);
+
+	/**Disable the power save feature
+	 */
 	void disable();
 
 	//
 	// PRIVATE (Internal use)
-	//
+	/// @cond
+	CPowerSave();
 	virtual ~CPowerSave();
 	virtual void onSleep(uint32_t ulExpectedIdleTime);
 	virtual void onWakeup(uint32_t *pExpectedIdleTime);
@@ -43,6 +57,7 @@ public:
 protected:
 	uint32_t  m_flag;
 	CWatchdog m_wdt;	// a wakeup source
+	/// @endcond
 };
 
 #endif /* PMU_H_ */

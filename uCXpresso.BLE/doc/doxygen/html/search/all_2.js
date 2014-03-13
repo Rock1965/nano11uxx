@@ -26,7 +26,7 @@ var searchData=
   ['cperipheral',['CPeripheral',['../d9/db6/class_c_peripheral.html',1,'']]],
   ['cpin',['CPin',['../d7/db9/class_c_pin.html',1,'CPin'],['../d7/db9/class_c_pin.html#a7338f2960b4d8992c43f3c6067742ded',1,'CPin::CPin()']]],
   ['cpinint',['CPinINT',['../db/d2c/class_c_pin_i_n_t.html',1,'CPinINT'],['../db/d2c/class_c_pin_i_n_t.html#a71f5452b1d99597b04082bf402f4ae59',1,'CPinINT::CPinINT(PIN_NAME_T pin, EDGE_STATE_T edge, PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP)'],['../db/d2c/class_c_pin_i_n_t.html#a48e6afdca1e70de51e292d1d3c4bafc5',1,'CPinINT::CPinINT(PIN_NAME_T pin, PIN_LEVEL_T level, PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP)']]],
-  ['cpowersave',['CPowerSave',['../d5/d3e/class_c_power_save.html',1,'CPowerSave'],['../d5/d3e/class_c_power_save.html#a85df3a4f0a12d27e4be3fab19f3af7c5',1,'CPowerSave::CPowerSave()']]],
+  ['cpowersave',['CPowerSave',['../d5/d3e/class_c_power_save.html',1,'']]],
   ['cpwm',['CPwm',['../d1/d9f/class_c_pwm.html',1,'CPwm'],['../d1/d9f/class_c_pwm.html#a53beaa27e8d3982351770f425dffb432',1,'CPwm::CPwm()']]],
   ['crc16',['CRC16',['../d5/df3/class_c_r_c16.html',1,'CRC16'],['../d5/df3/class_c_r_c16.html#a2317eff72b4509289399f5c6b6306db2',1,'CRC16::CRC16()']]],
   ['csemaphore',['CSemaphore',['../d0/d06/class_c_semaphore.html',1,'']]],

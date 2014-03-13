@@ -22,14 +22,17 @@
 #include "class/stream.h"
 #include "class/semaphore.h"
 
+/**I2C Error Code
+ * \ingroup Enumerations
+ */
 typedef enum {
-	I2C_BUSY = 6,
-	I2C_NO_DATA = 7,
-	I2C_NACK_ON_ADDRESS = 8,
-	I2C_NACK_ON_DATA = 9,
-	I2C_ARBITRATION_LOST = 10,
-	I2C_TIME_OUT = 11,
-	I2C_OK = 12
+	I2C_BUSY = 6,				///<
+	I2C_NO_DATA = 7,			///<
+	I2C_NACK_ON_ADDRESS = 8,	///<
+	I2C_NACK_ON_DATA = 9,		///<
+	I2C_ARBITRATION_LOST = 10,	///<
+	I2C_TIME_OUT = 11,			///<
+	I2C_OK = 12					///<
 }I2C_ERROR_T;
 
 #define I2C_TIMEOUT	3000
@@ -41,32 +44,43 @@ typedef enum {
  */
 class CI2C: public CPeripheral {
 public:
-	//
-	// Construct
-	//
-	CI2C();
 
-	//
-	// I2C Interface Control
-	//
+	/**Enable I2C interface
+	 */
 	void enable();
+
+	/**Disable I2C interface
+	 */
 	void disable();
+
+	/**Set I2C frequency
+	 * \param hz a unsigned long to indicate the frequency of I2C.
+	 */
 	virtual void frequency(uint32_t hz);
-	virtual void onState(uint32_t value);
-	virtual bool 	 start();	// Create I2C start condition
-	virtual bool 	 stop();	// Set the I2C stop condition
+
+	/**Indicate the receive buffer
+	 *
+	 */
+	virtual void read(uint8_t *data, int length);
+
+	/**Indicate the transmit buffer
+	 *
+	 */
+	virtual void write(uint8_t *data, int length);
+
+	/**Begin transmit and receive the I2C data
+	 */
 	virtual I2C_ERROR_T engine(uint32_t timeout=I2C_TIMEOUT);
 
 	//
-	// I2C Data Read/Write
-	//
-	virtual void read(uint8_t *data, int length);
-	virtual void write(uint8_t *data, int length);
-
-	//
 	//	PRIVATE
-	//
+	/// @cond
+	CI2C();
 	virtual 	~CI2C();
+
+	virtual void onState(uint32_t value);
+	virtual bool start();	// Create I2C start condition
+	virtual bool stop();	// Set the I2C stop condition
 
 	// irq & status control
 	CSemaphore	m_semIrq;
@@ -84,23 +98,36 @@ public:
 
 protected:
 	xHandle		m_handle;
+	/// @endcond
 };
 
-//
-// I2C Master Class
-//
+/**I2C Master Class
+ * \class CI2CMaster i2c.h "class/i2c.h"
+ * \ingroup Peripherals
+ */
 class CI2CMaster: public CI2C {
 public:
+	/**Transmit and receive the data from I2C interface.
+	 *
+	 */
 	virtual I2C_ERROR_T readwrite(uint8_t slaveAddr, void *txbuf, int txsize, void *rxbuf, int rxsize);
 };
 
-//
-//
-//
+/**I2C Slave Class
+ * \class CI2CSlave i2c.h "class/i2c.h"
+ * \ingroup Peripherals
+ */
 class CI2CSlave: public CI2C {
 public:
+	/**CI2CSlave Constructor
+	 * \prarm slaveAddr is uint8_t value to indicate the I2C address in slave mode.
+	 */
 	CI2CSlave(uint8_t slaveAddr);
-	virtual I2C_ERROR_T readwrite(uint8_t slaveAddr, void *txbuf, int txsize, void *rxbuf, int rxsize);
+
+	/**Transmit & receive the data from I2C Interface.
+	 *
+	 */
+	virtual I2C_ERROR_T readwrite(void *txbuf, int txsize, void *rxbuf, int rxsize);
 };
 
 

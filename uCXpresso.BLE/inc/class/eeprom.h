@@ -20,6 +20,10 @@
 
 #include "class/peripheral.h"
 
+/**EEPROM class provides to read and write the EEPROM memory.
+ * \class EEPROM eeprom.h "class/eeprom.h"
+ * \ingroup Peripherals
+ */
 class EEPROM: public CPeripheral {
 public:
 	static bool read(unsigned addr, void *buf, unsigned size);
