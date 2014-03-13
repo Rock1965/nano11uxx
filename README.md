@@ -4,9 +4,9 @@ nano11Uxx (LPC11U3x + nRF BLE)
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
 v1.0.2 released 13th March 2014 <br/>
-	Feature in the version:<br/>
-		When host APP crash or other, the BLE will lock in a connection loop. This version add a Watchdog feature on a BLE connection, the watchdog will force to disconnect a invalid connection.<br/>
-		We provide a offline manual in the "doc" folder for reference.<br/>
+	Features:<br/>
+		1. When host APP crash or other, the BLE will lock in a connection loop. This version add a Watchdog feature on a BLE connection, the watchdog will force to disconnect a invalid connection.<br/>
+		2. We provide a offline manual in the "doc" folder for reference.<br/>
 	
 	Details:
 	1. Add "doc" folder in "/uCXpresso.BLE" framework.<br/>
