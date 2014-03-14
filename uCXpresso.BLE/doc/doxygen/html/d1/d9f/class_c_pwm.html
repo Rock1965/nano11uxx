@@ -188,11 +188,11 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <div class="fragment"><div class="line">Example:</div>
-<div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366">CPwm::period</a>(0.02); <span class="comment">// Set global PWM period time = 20ms</span></div>
+<div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366">CPwm::period</a>(0.02);     <span class="comment">// Set global PWM period time = 20ms</span></div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html">CPwm</a> servo(<a class="code" href="../../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93acc6ab0fb66c5ba52524e32ea2ad0bd1a">PWM1</a>);   <span class="comment">// create a servo objecj</span></div>
-<div class="line">        servo.dutyCycle(80);<span class="comment">// set servo object to 80% dutyCycle</span></div>
-<div class="line">        servo.begin();      <span class="comment">// begin the servo PWM output</span></div>
+<div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html">CPwm</a> servo(<a class="code" href="../../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93acc6ab0fb66c5ba52524e32ea2ad0bd1a">PWM1</a>);       <span class="comment">// create a servo objecj</span></div>
+<div class="line">        servo.dutyCycle(0.8);   <span class="comment">// set servo object to 80% dutyCycle</span></div>
+<div class="line">        servo.enable();         <span class="comment">// begin the servo PWM output</span></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -496,7 +496,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></li>
-    <li class="footer">Generated on Thu Mar 13 2014 16:31:18 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri Mar 14 2014 18:20:39 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

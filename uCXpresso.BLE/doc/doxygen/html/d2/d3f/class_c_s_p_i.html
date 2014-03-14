@@ -147,12 +147,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a8f9843e54bf4f11dd871cf798fe337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5215a320db4cb5f2792ea18f8d6e0671"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#a5215a320db4cb5f2792ea18f8d6e0671">readwrite</a> (void *txbuf, void *rxbuf, uint32_t length)</td></tr>
 <tr class="separator:a5215a320db4cb5f2792ea18f8d6e0671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cdfe6a4d42e835cf7b67ba99ae115ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#a0cdfe6a4d42e835cf7b67ba99ae115ca">readwrite</a> (uint8_t tx, uint8_t &amp;rx)</td></tr>
-<tr class="separator:a0cdfe6a4d42e835cf7b67ba99ae115ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2e1695f717fa88620e4bddd7871ea3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#acf2e1695f717fa88620e4bddd7871ea3">readwrite</a> (uint8_t tx)</td></tr>
-<tr class="separator:acf2e1695f717fa88620e4bddd7871ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b91318925ae9de3f295abd2418285c4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#a2b91318925ae9de3f295abd2418285c4">write</a> (uint8_t tx)</td></tr>
-<tr class="separator:a2b91318925ae9de3f295abd2418285c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab702047e1d0378b4c9b893bce96a2863"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#ab702047e1d0378b4c9b893bce96a2863">readwrite</a> (uint8_t tx, uint8_t &amp;rx)</td></tr>
+<tr class="separator:ab702047e1d0378b4c9b893bce96a2863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173cd30c8b9d9b1a40d6f849a517932b"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#a173cd30c8b9d9b1a40d6f849a517932b">write</a> (uint8_t tx)</td></tr>
+<tr class="separator:a173cd30c8b9d9b1a40d6f849a517932b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24ca202a0494b84a92ff56d10725ce40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#a24ca202a0494b84a92ff56d10725ce40">operator&gt;&gt;</a> (uint8_t &amp;val)</td></tr>
 <tr class="separator:a24ca202a0494b84a92ff56d10725ce40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce438bee4e3c087e44b3cf2b1690ecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#a3ce438bee4e3c087e44b3cf2b1690ecd">operator&lt;&lt;</a> (uint8_t val)</td></tr>
@@ -462,7 +460,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0cdfe6a4d42e835cf7b67ba99ae115ca"></a>
+<a class="anchor" id="ab702047e1d0378b4c9b893bce96a2863"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -470,7 +468,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int CSPI::readwrite </td>
+          <td class="memname">virtual int CSPI::readwrite </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>tx</em>, </td>
@@ -489,7 +487,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -505,7 +503,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acf2e1695f717fa88620e4bddd7871ea3"></a>
+<a class="anchor" id="a173cd30c8b9d9b1a40d6f849a517932b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -513,7 +511,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t CSPI::readwrite </td>
+          <td class="memname">virtual uint8_t CSPI::write </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>tx</em></td><td>)</td>
@@ -522,39 +520,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Transmit and receive a byte (overload functions) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tx</td><td>is a byte which send to spi interface. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a byte which receive from spi interface. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2b91318925ae9de3f295abd2418285c4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t CSPI::write </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>tx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -722,7 +688,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d3f/class_c_s_p_i.html">CSPI</a></li>
-    <li class="footer">Generated on Thu Mar 13 2014 16:31:18 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri Mar 14 2014 18:20:40 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
