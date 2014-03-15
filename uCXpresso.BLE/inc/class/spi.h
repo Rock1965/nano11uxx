@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : spi.h
  Author      : Jason
- Version     : v1.0.0
- Date		 : 2014/1/1
+ Version     : v1.0.1
+ Date		 : 2014/3/14
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : SPI class
  ===============================================================================
@@ -12,6 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
+ 2014/3/14	v1.0.1	modify inline write() member function			Jason
  ===============================================================================
  */
 
@@ -142,7 +143,7 @@ public:
 	 * \param rx is a byte which receive from spi interface.
 	 * \return 1 if successful, otherwise failed.
 	 */
-	inline int readwrite(uint8_t tx, uint8_t &rx) {
+	virtual inline int readwrite(uint8_t tx, uint8_t &rx) {
 		return readwrite(&tx, &rx, 1);
 	}
 
@@ -150,23 +151,15 @@ public:
 	 * \param tx is a byte which send to spi interface.
 	 * \return a byte which receive from spi interface.
 	 */
-	inline uint8_t readwrite(uint8_t tx) {
+	virtual inline uint8_t write(uint8_t tx) {
 		uint8_t rx;
 		readwrite(&tx, &rx, 1);
 		return rx;
 	}
 
-	/**Transmit and receive a byte (overload functions)
-	 * \param tx is a byte which send to spi interface.
-	 * \return a byte which receive from spi interface.
-	 */
-	inline uint8_t write(uint8_t tx) {
-		uint8_t rx;
-		readwrite(&tx, &rx, 1);
-		return rx;
-	}
-
-	// inline shorthand operator
+	//
+	// inline shorthand operators
+	//
 	inline void operator >> (uint8_t &val) { readwrite(NULL, &val, 1); }
 	inline void operator << (uint8_t val)  { readwrite(&val, NULL, 1); }
 	inline void operator >> (uint16_t &val) { readwrite(NULL, &val, 2); }

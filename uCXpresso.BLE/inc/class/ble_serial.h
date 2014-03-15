@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : Jason
- Version     : 1.0.12
- Date		 : 2014/3/8
+ Version     : 1.0.13
+ Date		 : 2014/3/15
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -28,6 +28,7 @@
  	 	 	 	 	Move setTxPowerLevel member to bleProximity class.
  2014/3/8	v1.0.12 Rename member onLoseLink to onLinkLoss				Jason
  	 	 	 	 	Rename member onHrControl to onHeartRateControl
+ 2014/3/15	v1.0.13 Change BLE polling to interrupt method.				Jason
  ===============================================================================
  */
 
@@ -91,6 +92,8 @@ typedef enum {
  * \brief bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual functions for serial input and output.
  * the bleSerial class also inherits from the CThread class and can be work in background.
  * \ingroup BLE
+ * \remark 1.The bleSerial will use an interrupt resource, so remain 7 interrupts can be used.<br/>
+ * 		   2.The bleSerial will become to a Weakup Source for Power Save Features.
  */
 class bleSerial: public CStream, public CThread {
 public:
@@ -163,12 +166,6 @@ public:
 	 * \note Call enable member to resume the bleSerail task.
 	 */
 	void disable();
-
-	/**Poll the BLE core with the interval time in milliseconds.
-	 * \param ms A millisecond value.
-	 * \note The member is a optional function, and default is 50ms.
-	 */
-	void pollInterval(uint32_t ms);	// Task poll interval, default 50ms
 
 	/**Enable a watchdog on a BLE connection. The watchdog feature will cause the BLE core reset
 	 * when remote (App) crash or lose the connection.
@@ -322,7 +319,6 @@ protected:
 private:
 	CTimeout	m_tmACK;
 	CPin		m_active;
-	uint32_t	m_pollInterval;
 	uint32_t	m_tmWatch;
 
 	//

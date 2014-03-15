@@ -45,11 +45,11 @@ public:
 	 *
 	 * \code
 	 * Example:
-	 * 		CPwm::period(0.02);	// Set global PWM period time = 20ms
+	 * 		CPwm::period(0.02);		// Set global PWM period time = 20ms
 	 *
-	 * 		CPwm servo(PWM1);	// create a servo objecj
-	 * 		servo.dutyCycle(80);// set servo object to 80% dutyCycle
-	 * 		servo.begin();		// begin the servo PWM output
+	 * 		CPwm servo(PWM1);		// create a servo objecj
+	 * 		servo.dutyCycle(0.8);	// set servo object to 80% dutyCycle
+	 * 		servo.enable();			// begin the servo PWM output
 	 * \endcode
 	 */
 	CPwm(PWM_CH_T ch);

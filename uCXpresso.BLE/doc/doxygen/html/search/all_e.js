@@ -33,7 +33,6 @@ var searchData=
   ['pin_5flevel_5ft',['PIN_LEVEL_T',['../db/dff/group___enumerations.html#ga6f24594071a026b31238ab8cb80d6a80',1,'pin.h']]],
   ['pin_5fname_5ft',['PIN_NAME_T',['../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f',1,'pin.h']]],
   ['pin_5foutput_5fmode_5ft',['PIN_OUTPUT_MODE_T',['../db/dff/group___enumerations.html#gac16e35b75166ad7286b8bb78bd244ed2',1,'pin.h']]],
-  ['pollinterval',['pollInterval',['../d7/d03/classble_serial.html#a4188fc1bab7e077cf1d573024f092c7b',1,'bleSerial']]],
   ['post',['post',['../d8/d26/class_c_mail_box.html#a5ab581cd317944e824efbbc6f7f4d14d',1,'CMailBox::post(MESSAGE_T msg, uint32_t timeout=MAX_DELAY_TIME)'],['../d8/d26/class_c_mail_box.html#a96075bbd5308e6b1d0aaf5bd5fa2e645',1,'CMailBox::post(LPCTSTR name, MESSAGE_T msg, uint32_t timeout=0)']]],
   ['power_5fdown',['POWER_DOWN',['../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa',1,'power.h']]],
   ['pri_5fhardware',['PRI_HARDWARE',['../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1da47d8cd9e6c142378614cf48f5ecd78e5',1,'thread.h']]],

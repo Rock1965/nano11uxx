@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.2</span>
+   &#160;<span id="projectnumber">v1.0.3 rc1</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -142,8 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3ff1e4b271a7d225e73abd337043d8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b3a82e95aa527433c04b4a6a3d81d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4">disable</a> ()</td></tr>
 <tr class="separator:a08b3a82e95aa527433c04b4a6a3d81d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4188fc1bab7e077cf1d573024f092c7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a4188fc1bab7e077cf1d573024f092c7b">pollInterval</a> (uint32_t ms)</td></tr>
-<tr class="separator:a4188fc1bab7e077cf1d573024f092c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2588b21bf80d35a866dc7e47f97142df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df">watchdog</a> (uint32_t tm)</td></tr>
 <tr class="separator:a2588b21bf80d35a866dc7e47f97142df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab766015c18f219e359edc1c560d66893"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#ab766015c18f219e359edc1c560d66893">isActived</a> ()</td></tr>
@@ -235,6 +233,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> class is a ble core, and inherits from <a class="el" href="../../d4/d16/class_c_stream.html">CStream</a> class to provide the stream virtual functions for serial input and output. the <a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> class also inherits from the <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> class and can be work in background. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>1.The <a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> will use an interrupt resource, so remain 7 interrupts can be used.<br/>
+ 2.The <a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> will become to a Weakup Source for Power Save Features. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a835c884c9209b074cf82e5a3f0a322ec"></a>
 <div class="memitem">
@@ -425,30 +425,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>The disable member is to suspend the bleSerail task. </p>
 <dl class="section note"><dt>Note</dt><dd>Call enable member to resume the bleSerail task. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4188fc1bab7e077cf1d573024f092c7b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bleSerial::pollInterval </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ms</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Poll the BLE core with the interval time in milliseconds. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ms</td><td>A millisecond value. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The member is a optional function, and default is 50ms. </dd></dl>
 
 </div>
 </div>
@@ -951,7 +927,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d03/classble_serial.html">bleSerial</a></li>
-    <li class="footer">Generated on Fri Mar 14 2014 18:20:38 for uCXpresso.BLE by
+    <li class="footer">Generated on Sat Mar 15 2014 14:14:24 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

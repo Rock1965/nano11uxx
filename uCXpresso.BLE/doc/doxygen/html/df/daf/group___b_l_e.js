@@ -56,7 +56,6 @@ var group___b_l_e =
       [ "setup", "d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74", null ],
       [ "enable", "d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4", null ],
       [ "disable", "d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4", null ],
-      [ "pollInterval", "d7/d03/classble_serial.html#a4188fc1bab7e077cf1d573024f092c7b", null ],
       [ "watchdog", "d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df", null ],
       [ "isActived", "d7/d03/classble_serial.html#ab766015c18f219e359edc1c560d66893", null ],
       [ "disconnect", "d7/d03/classble_serial.html#a5e63823fd7ff0ef0ac5447cd265b5a5c", null ],

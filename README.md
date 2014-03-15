@@ -3,6 +3,12 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
+v1.0.3 rc1 15th March 2014 <br/>
+	Details:
+	1. Change BLE polling to interrupt method to speed up the BLE core.
+	2. BLE become to a Weakup Source for Power Save Features.
+
+
 v1.0.2 released 13th March 2014 <br/>
 	Features:<br/>
 	1. When host APP crash or other, the BLE will lock in a connection loop.<br/>

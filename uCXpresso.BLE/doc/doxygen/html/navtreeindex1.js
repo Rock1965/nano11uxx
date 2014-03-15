@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d7/db9/class_c_pin.html#a7d125bef83689d0f1db13b3f1acbd05e":[0,2,7,6],
 "d7/db9/class_c_pin.html#a84cd9c4613a9b53f00e52c23b4eed050":[0,2,7,1],
 "d7/db9/class_c_pin.html#a9037649d1e88192f5fde46b810c71299":[0,2,7,8],
 "d7/db9/class_c_pin.html#aae98a7d34d72ccc58b6d799f7ad2e12e":[0,2,7,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177ac7449bc5b9560aca15fd4e9079737bde":[0,1,9,3],
 "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a":[0,1,9,6],
 "db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a0df5bd143f03fd13eb9473e72e809a65":[0,1,18,8],
-"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1e09b3d06036c301c246ed91e5d525f3":[0,1,18,11]
+"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1e09b3d06036c301c246ed91e5d525f3":[0,1,18,11],
+"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1fdcee481a470c70530db784d721d226":[0,1,18,12]
 };
