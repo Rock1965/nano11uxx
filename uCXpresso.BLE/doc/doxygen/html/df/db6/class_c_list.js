@@ -1,9 +1,5 @@
 var class_c_list =
 [
-    [ "CList", "df/db6/class_c_list.html#ae6434f79bc2d54fbd3617214a313af97", null ],
-    [ "~CList", "df/db6/class_c_list.html#aba485cb512089f00dcd7a08720d8e5de", null ],
-    [ "alloc", "df/db6/class_c_list.html#acdb91815d21dabe0572e67da9bfd4c27", null ],
-    [ "free", "df/db6/class_c_list.html#aff212aceabad23dbb4370273ac91d814", null ],
     [ "count", "df/db6/class_c_list.html#aba5942fb294f8f3381bef96ffc8f5054", null ],
     [ "isEmpty", "df/db6/class_c_list.html#ab4db98accd12debb4330ad97b8b1dc37", null ],
     [ "addHead", "df/db6/class_c_list.html#af77b9f95976788ad6b74e825fad12e94", null ],
@@ -23,9 +19,5 @@ var class_c_list =
     [ "find", "df/db6/class_c_list.html#ac10ff6ad96cb1a7aebb866d2a1cf62bf", null ],
     [ "insertBefore", "df/db6/class_c_list.html#a02ae0a29f9466904e349a984d287a756", null ],
     [ "insertAfter", "df/db6/class_c_list.html#ac30a5a1368438fbcf58b13bf4f2f44ad", null ],
-    [ "operator[]", "df/db6/class_c_list.html#aab328a02021b5988496f2dbb631bd71c", null ],
-    [ "m_mutex", "df/db6/class_c_list.html#a76347b2a51428a724cc7698074e08639", null ],
-    [ "m_ndHead", "df/db6/class_c_list.html#a3ffa4c25b7b0604451366791aede5af7", null ],
-    [ "m_ndTail", "df/db6/class_c_list.html#aeeb0d3cb327800216a8f0fa112efa8d6", null ],
-    [ "length", "df/db6/class_c_list.html#adb228ed98190b1f57080840440f2eb2b", null ]
+    [ "operator[]", "df/db6/class_c_list.html#aab328a02021b5988496f2dbb631bd71c", null ]
 ];

@@ -1,0 +1,62 @@
+var group___miscellaneous =
+[
+    [ "Console", "d6/d56/class_console.html", [
+      [ "Console", "d6/d56/class_console.html#a8374ffffac8edeaa0775bdd1923bdc10", null ],
+      [ "isConnected", "d6/d56/class_console.html#a855191be30cd0e1eeaea2d6ab7cda03b", null ],
+      [ "echo", "d6/d56/class_console.html#a78bb22aa6e31673a5675986c9c5e3529", null ],
+      [ "clear", "d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69", null ],
+      [ "putchar", "d6/d56/class_console.html#a1427b8f1d904381c49188a1f8d8da083", null ],
+      [ "getchar", "d6/d56/class_console.html#a404cc62475ef74f818d9102bdde09584", null ],
+      [ "putstr", "d6/d56/class_console.html#a0a229393c4d71b47cb68d30397d5de1e", null ],
+      [ "getstr", "d6/d56/class_console.html#ab28b81a0b1e462ec0df65ba0a573921f", null ],
+      [ "write", "d6/d56/class_console.html#a3ff57fe349e1335039230e14b9fc0cb1", null ],
+      [ "read", "d6/d56/class_console.html#a10df5763117e36da9f029d1dfa9641be", null ],
+      [ "operator>>", "d6/d56/class_console.html#ae80d540e36c5522b8653359e1e4d6839", null ],
+      [ "operator>>", "d6/d56/class_console.html#a33c9beff5456efdd13209b8321df1a74", null ],
+      [ "operator<<", "d6/d56/class_console.html#afc5355f4c4fee0a91c4ba5ae6647f07d", null ],
+      [ "operator<<", "d6/d56/class_console.html#aa05d7169f95dc3a36b11a291e35c84ae", null ],
+      [ "operator<<", "d6/d56/class_console.html#a01e2cf3bdbb5ff14689a8858e12da5ad", null ],
+      [ "operator<<", "d6/d56/class_console.html#adaabaa6205705e13193e472a4cf7f194", null ],
+      [ "operator<<", "d6/d56/class_console.html#ab765a1b1954e26b2cb725dc49c35fdeb", null ],
+      [ "operator<<", "d6/d56/class_console.html#a756e1e290f184491bf98dfaa1247fff7", null ],
+      [ "operator<<", "d6/d56/class_console.html#a1da129a9f12eff89f82fc694bdc59231", null ],
+      [ "operator<<", "d6/d56/class_console.html#ad2d3cf94e3a31436681cc0839b760a75", null ],
+      [ "operator<<", "d6/d56/class_console.html#a0b13c2318c5e62763b679c190223de54", null ],
+      [ "operator<<", "d6/d56/class_console.html#aed5d1ad55ac69f1173f610d7c75793a6", null ],
+      [ "iStream", "d6/d56/class_console.html#ad4d21815c5cbc33e9015ba5babf5bf09", null ],
+      [ "oStream", "d6/d56/class_console.html#af6941f3b8ce87a9e53f58c5a74936d49", null ]
+    ] ],
+    [ "CRC16", "d5/df3/class_c_r_c16.html", [
+      [ "CRC16", "d5/df3/class_c_r_c16.html#a2317eff72b4509289399f5c6b6306db2", null ],
+      [ "reset", "d5/df3/class_c_r_c16.html#ad948d7638a1d07540db96cb649ce0d52", null ],
+      [ "update", "d5/df3/class_c_r_c16.html#afd577ee51489a3e07c4de201b8a3fdf4", null ],
+      [ "update", "d5/df3/class_c_r_c16.html#aea5d7fae41950ebc9ab79ec0445900f5", null ],
+      [ "result", "d5/df3/class_c_r_c16.html#aa70e96e936eea96361292dfc3f1a71fc", null ],
+      [ "operator uint16_t", "d5/df3/class_c_r_c16.html#ac6704db61d9df8cf08e8f5697b7f8b31", null ]
+    ] ],
+    [ "CList", "df/db6/class_c_list.html", [
+      [ "count", "df/db6/class_c_list.html#aba5942fb294f8f3381bef96ffc8f5054", null ],
+      [ "isEmpty", "df/db6/class_c_list.html#ab4db98accd12debb4330ad97b8b1dc37", null ],
+      [ "addHead", "df/db6/class_c_list.html#af77b9f95976788ad6b74e825fad12e94", null ],
+      [ "addTail", "df/db6/class_c_list.html#a81c34b9127ccce385b6699b9eaa799d1", null ],
+      [ "getHead", "df/db6/class_c_list.html#acc4c74c1684f630c99988a477b0a3eb7", null ],
+      [ "getTail", "df/db6/class_c_list.html#a4bb6b07562fdd0cc376e7f300ed3b9c0", null ],
+      [ "getAt", "df/db6/class_c_list.html#a54795f456c006f4ab3647d5abfaa806c", null ],
+      [ "getAt", "df/db6/class_c_list.html#abec03f2f356c1bcd44ff3ddfa3e1e65a", null ],
+      [ "removeHead", "df/db6/class_c_list.html#a0e0dfa3bc3d93b9708d4a454e91d0994", null ],
+      [ "removeTail", "df/db6/class_c_list.html#adc7cb308e77a9e0550eecce9333b071b", null ],
+      [ "removeAt", "df/db6/class_c_list.html#a4baf624e719e27016de00005bbbc0f7b", null ],
+      [ "removeAll", "df/db6/class_c_list.html#a5ee3e7395c54395c7f603c08a1b9d5cf", null ],
+      [ "getHeadPos", "df/db6/class_c_list.html#a9d1f8b32387ace522e2fa3a5bf68975a", null ],
+      [ "getTailPos", "df/db6/class_c_list.html#a8cfadd6c7dd3dd6688e314b732e7b48f", null ],
+      [ "getNext", "df/db6/class_c_list.html#a30c0314e7dc83d1ba735f673b09e4deb", null ],
+      [ "getPrev", "df/db6/class_c_list.html#a4cf8035d25af022ba9c054c1b4f5b61c", null ],
+      [ "find", "df/db6/class_c_list.html#ac10ff6ad96cb1a7aebb866d2a1cf62bf", null ],
+      [ "insertBefore", "df/db6/class_c_list.html#a02ae0a29f9466904e349a984d287a756", null ],
+      [ "insertAfter", "df/db6/class_c_list.html#ac30a5a1368438fbcf58b13bf4f2f44ad", null ],
+      [ "operator[]", "df/db6/class_c_list.html#aab328a02021b5988496f2dbb631bd71c", null ]
+    ] ],
+    [ "CObject", "dc/dac/class_c_object.html", [
+      [ "isThread", "dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ]
+    ] ]
+];

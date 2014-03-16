@@ -7,11 +7,9 @@ var searchData=
   ['chklength',['chkLength',['../df/d99/class_c_string.html#a5f5361665c7568d502d058992b14c016',1,'CString']]],
   ['ci2cslave',['CI2CSlave',['../d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad',1,'CI2CSlave']]],
   ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
-  ['clist',['CList',['../df/db6/class_c_list.html#ae6434f79bc2d54fbd3617214a313af97',1,'CList']]],
   ['clone',['clone',['../df/d99/class_c_string.html#aeebb301ee8968688fd6ea8029a95ce9c',1,'CString']]],
   ['clr',['clr',['../dd/d60/class_c_event_bit.html#ade8e4420bd49ab351417ca955bb293e3',1,'CEventBit']]],
   ['cmailbox',['CMailBox',['../d8/d26/class_c_mail_box.html#a860c64ec622b6bb2641f8e69748ba9e6',1,'CMailBox']]],
-  ['cobject',['CObject',['../dc/dac/class_c_object.html#ac44111d5ac75248a616df61b038c4153',1,'CObject']]],
   ['connect',['connect',['../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2',1,'usbCDC']]],
   ['console',['Console',['../d6/d56/class_console.html#a8374ffffac8edeaa0775bdd1923bdc10',1,'Console']]],
   ['contactstatus',['contactStatus',['../d3/d81/classble_heart_rate.html#a4b05ceb33ffe7fcfe9f1a3dbf9679882',1,'bleHeartRate']]],
@@ -29,7 +27,6 @@ var searchData=
   ['cspimaster',['CSpiMaster',['../d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800',1,'CSpiMaster']]],
   ['cstream',['CStream',['../d4/d16/class_c_stream.html#acd9fd6c1ed458608829da8288047515c',1,'CStream']]],
   ['cstring',['CString',['../df/d99/class_c_string.html#a3cb66b8f688676f29cdb51c914a15cf7',1,'CString::CString(int size=DEF_STRBUF_SIZE)'],['../df/d99/class_c_string.html#a4866844f29a912ee7eb7afcb641ffb8f',1,'CString::CString(const CString &amp;str)'],['../df/d99/class_c_string.html#a233297b331dbc4c342745d67ad166b97',1,'CString::CString(LPCTSTR str, int length=0)'],['../df/d99/class_c_string.html#a4cc7726fc9fbaa450876ffd98e3e6ff4',1,'CString::CString(LPTSTR buf)']]],
-  ['ctimeout',['CTimeout',['../d5/d5b/class_c_timeout.html#ac01d1f8a0d214687ff63cd6d915729de',1,'CTimeout']]],
   ['ctimer',['CTimer',['../db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f',1,'CTimer']]],
   ['cwatchdog',['CWatchdog',['../d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86',1,'CWatchdog']]]
 ];

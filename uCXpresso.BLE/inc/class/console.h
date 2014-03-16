@@ -32,6 +32,7 @@ typedef enum {
 
 /** \class Console console.h "class/console.h"
  * \brief The Console class provides a lightweight input/output stream to console.
+ * \ingroup Miscellaneous
  */
 class Console: public CSmallPrintf {
 public:

@@ -117,60 +117,60 @@ $(document).ready(function(){initNavTree('d8/d95/stream_8h_source.html','../../'
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;class/object.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d4/d16/class_c_stream.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d16/class_c_stream.html">CStream</a>: <span class="keyword">public</span> <a class="code" href="../../dc/dac/class_c_object.html">CObject</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d4/d16/class_c_stream.html#acd9fd6c1ed458608829da8288047515c">CStream</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d4/d16/class_c_stream.html#ab1387be186f7dd1877455ea246b56d5e">~CStream</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">readable</a>() = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5">writeable</a>() = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">read</a>(<span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>) = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>) = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb">isConnected</a>() = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a">flush</a>() = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// inline functions</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f">   79</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f">write</a>(<span class="keywordtype">int</span> ch) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">write</a>(&amp;ch, 1);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">   87</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">read</a>() {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">int</span> ch=0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">read</a>(&amp;ch,1) ) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> ch;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STREAM_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d4/d16/class_c_stream.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d16/class_c_stream.html">CStream</a>: <span class="keyword">public</span> <a class="code" href="../../dc/dac/class_c_object.html">CObject</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d4/d16/class_c_stream.html#acd9fd6c1ed458608829da8288047515c">CStream</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d4/d16/class_c_stream.html#ab1387be186f7dd1877455ea246b56d5e">~CStream</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">readable</a>() = PURE_VIRTUAL_FUNC;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5">writeable</a>() = PURE_VIRTUAL_FUNC;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">read</a>(<span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>) = PURE_VIRTUAL_FUNC;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>) = PURE_VIRTUAL_FUNC;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb">isConnected</a>() = PURE_VIRTUAL_FUNC;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a">flush</a>() = PURE_VIRTUAL_FUNC;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// inline functions</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f">   80</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f">write</a>(<span class="keywordtype">int</span> ch) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">write</a>(&amp;ch, 1);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">   88</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">read</a>() {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">int</span> ch=0;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">read</a>(&amp;ch,1) ) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> ch;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STREAM_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_c_stream_html_acd9fd6c1ed458608829da8288047515c"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#acd9fd6c1ed458608829da8288047515c">CStream::CStream</a></div><div class="ttdeci">CStream()</div></div>
-<div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:21</div></div>
+<div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:22</div></div>
 <div class="ttc" id="class_c_stream_html_a56ec27ee664f1a4eb9910988b78833d5"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5">CStream::writeable</a></div><div class="ttdeci">virtual int writeable()</div></div>
 <div class="ttc" id="class_c_stream_html_a5bd707b33627e01c2069b14bbf10694a"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a">CStream::flush</a></div><div class="ttdeci">virtual void flush()</div></div>
 <div class="ttc" id="class_c_stream_html_ab1387be186f7dd1877455ea246b56d5e"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#ab1387be186f7dd1877455ea246b56d5e">CStream::~CStream</a></div><div class="ttdeci">virtual ~CStream()</div></div>
 <div class="ttc" id="class_c_stream_html_a172fe857c74488b881007c65cc2e9552"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">CStream::write</a></div><div class="ttdeci">virtual int write(const void *buf, int len, bool block=true)</div></div>
 <div class="ttc" id="class_c_stream_html_a7a152e6bda8654064634428d81bd81cb"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb">CStream::isConnected</a></div><div class="ttdeci">virtual bool isConnected()</div></div>
-<div class="ttc" id="class_c_stream_html_a59d24a785259d0f0aa3f8f44a1046fd7"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">CStream::read</a></div><div class="ttdeci">int read()</div><div class="ttdef"><b>Definition:</b> stream.h:87</div></div>
+<div class="ttc" id="class_c_stream_html_a59d24a785259d0f0aa3f8f44a1046fd7"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7">CStream::read</a></div><div class="ttdeci">int read()</div><div class="ttdef"><b>Definition:</b> stream.h:88</div></div>
 <div class="ttc" id="class_c_stream_html_a96328807241e15017868b845b06fd9e4"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">CStream::readable</a></div><div class="ttdeci">virtual int readable()</div></div>
-<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="../../dc/dac/class_c_object.html">CObject</a></div><div class="ttdef"><b>Definition:</b> object.h:31</div></div>
-<div class="ttc" id="class_c_stream_html_aa5c2d9723e67ba97a65a890f0b55656f"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f">CStream::write</a></div><div class="ttdeci">int write(int ch)</div><div class="ttdef"><b>Definition:</b> stream.h:79</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="../../dc/dac/class_c_object.html">CObject</a></div><div class="ttdef"><b>Definition:</b> object.h:36</div></div>
+<div class="ttc" id="class_c_stream_html_aa5c2d9723e67ba97a65a890f0b55656f"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f">CStream::write</a></div><div class="ttdeci">int write(int ch)</div><div class="ttdef"><b>Definition:</b> stream.h:80</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>stream.h</b></li>
-    <li class="footer">Generated on Sat Mar 15 2014 14:14:24 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun Mar 16 2014 13:00:15 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

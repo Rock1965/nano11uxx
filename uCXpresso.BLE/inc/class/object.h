@@ -25,20 +25,27 @@
  * \defgroup Enumerations
  */
 
+/**Miscellaneous
+ * \defgroup Miscellaneous
+ */
+
 /**CObject class is all classes base.
  * \class CObject object.h "class/object.h"
+ * \ingroup Miscellaneous
  */
 class CObject {
 public:
-	CObject();
-	virtual ~CObject();
-
 	/**Check current object that inherits from CThread class or not.
 	 * \note The isTherad() will be override by CThread class.
 	 */
 	virtual inline bool isThread() {
 		return false;
 	}
+
+	/// @cond
+	CObject();
+	virtual ~CObject();
+	/// @endcond
 };
 
 #endif /* OBJECT_H_ */

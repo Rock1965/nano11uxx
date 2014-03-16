@@ -17,6 +17,7 @@
 
 /**An abstract class, to define the serial stream input and output interface.
  * \class CStream stream.h "class/stream.h"
+ * \ingroup Peripherals
  */
 class CStream: public CObject {
 public:

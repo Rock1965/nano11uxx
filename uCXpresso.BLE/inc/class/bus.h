@@ -35,7 +35,7 @@ public:
 	 * 		CBus bus(P21, P22, P23, P24, END);	// Collect P21~P24 in the CBus object.
 	 * 		bus.output();						// Set the bus as output pins.
 	 * \endcode
-	 * \remark to 'END' of the pin arguments is MUST!!
+	 * \remark 'END' of the pin arguments is MUST!!
 	 */
 	CBus(PIN_NAME_T pin,...);
 

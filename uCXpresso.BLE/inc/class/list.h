@@ -20,20 +20,12 @@
 typedef void* LIST_POS;
 typedef void* ELEM_PTR;
 
+/**CList class provides the data list service.
+ * \class CList list.h "class/list.h"
+ * \ingroup Miscellaneous
+ */
 class CList: public CObject {
-protected:
-	CMutex m_mutex;
-	LIST_POS m_ndHead;
-	LIST_POS m_ndTail;
-	int length;
-
-	virtual LIST_POS alloc();
-	virtual void free(LIST_POS pos);
-
 public:
-	CList();
-	virtual ~CList();
-
 	virtual int  count();
 	virtual bool isEmpty();
 
@@ -59,6 +51,19 @@ public:
 	virtual inline ELEM_PTR operator [](int index) {
 		return getAt(index);
 	}
+
+	/// @cond
+	CList();
+	virtual ~CList();
+protected:
+	CMutex m_mutex;
+	LIST_POS m_ndHead;
+	LIST_POS m_ndTail;
+	int length;
+
+	virtual LIST_POS alloc();
+	virtual void free(LIST_POS pos);
+	/// @endcond
 };
 
 

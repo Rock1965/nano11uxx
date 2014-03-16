@@ -48,5 +48,13 @@ var group___r_t_o_s =
       [ "enterCriticalSection", "d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
       [ "exitCriticalSection", "d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161", null ],
       [ "run", "d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7", null ]
+    ] ],
+    [ "CTimeout", "d5/d5b/class_c_timeout.html", [
+      [ "reset", "d5/d5b/class_c_timeout.html#a663a09bb51c1de8f8d83bd62fdc1a688", null ],
+      [ "wait", "d5/d5b/class_c_timeout.html#a05315e59fa44ceafe8c9e444af0ac9e8", null ],
+      [ "wait", "d5/d5b/class_c_timeout.html#ab2edd08150efbd3ef36766c7e02f7792", null ],
+      [ "elapsed", "d5/d5b/class_c_timeout.html#a1858ddcad4e18f8056441072616a457f", null ],
+      [ "isExpired", "d5/d5b/class_c_timeout.html#a3841c7c53689d2ef8559a6c5e402aa5b", null ],
+      [ "read", "d5/d5b/class_c_timeout.html#a8af3a09c9ed9172b37e930d05865cfac", null ]
     ] ]
 ];
