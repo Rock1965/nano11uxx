@@ -134,7 +134,7 @@ int main(void) {
 	// BLE engine (serial stream)
 	//
 	bleSerial	ble("myHRM");
-	ble.enable();
+	ble.enable(128);
 
 	//
 	// Heart Beat Rate Service
@@ -160,7 +160,7 @@ int main(void) {
 	// Fade LED task
 	//
 	ledTask led(pulse);
-	led.start("LED");
+	led.start("LED", 58);	// reduce stack size to 58 to increase the heap memory
 
 	//
 	//

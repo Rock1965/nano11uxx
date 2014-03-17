@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : serial.h
  Author      : Jason
- Version     : v1.0.1
- Date		 : 2014/2/28
+ Version     : v1.0.2
+ Date		 : 2014/3/18
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : serial stream class
  ===============================================================================
@@ -15,6 +15,7 @@
  2014/2/28	v1.0.1	Add parameter in onLineStatus() member.			Jason
  	 	 	 	 	Rename settings() to enable()
  	 	 	 	 	Add "pull up" function on TXD, RXD pins.
+ 2014/3/18	v1.0.2	Add semaphore for TX/RX fifo control.			Jason
  ===============================================================================
  */
 
@@ -169,7 +170,8 @@ public:
 protected:
 	FIFO_T 	 m_txFifo;
 	FIFO_T 	 m_rxFifo;
-
+	CSemaphore	m_semRx;	// rx fifo buffer semaphore
+	CSemaphore	m_semTx;	// tx fifo buffer semaphore
 private:
 	xHandle  m_handle;
 	uint32_t m_flag;

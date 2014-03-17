@@ -393,7 +393,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-256];	// reduce pool size to increase global stack
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-384];	// reduce pool size to increase the global stack
 
 //
 // setup before the system startup

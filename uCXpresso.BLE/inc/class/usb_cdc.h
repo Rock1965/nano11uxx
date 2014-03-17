@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : usb_cdc.h
  Author      : Jason
- Version     : v1.0.0
- Date		 : 2014/1/1
+ Version     : v1.0.1
+ Date		 : 2014/3/18
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : USB CDC (virtual comm. port) driver
  ===============================================================================
@@ -12,6 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
+ 2014/3/18	v1.0.1	Add semaphore for TX/RX fifo control.			Jason
  ===============================================================================
  */
 
@@ -38,7 +39,7 @@ public:
 	/**usbCDC constructor
 	 * \param FIFO_SIZE is an integer value to indicate the RX/TX fifo size
 	 */
-	usbCDC(int FIFO_SIZE=128);
+	usbCDC(int FIFO_SIZE=32);
 
 	/**Enable the usb cdc in core
 	 */
@@ -93,6 +94,8 @@ protected:
 	xHandle		m_irqTask;
 	uint8_t		*abBulkBuf;
 	uint32_t	pbuf;
+	CSemaphore	m_semTx;
+	CSemaphore	m_semRx;
 	/// @endcond
 };
 
