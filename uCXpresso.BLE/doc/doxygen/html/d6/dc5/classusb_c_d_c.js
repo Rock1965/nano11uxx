@@ -1,6 +1,6 @@
 var classusb_c_d_c =
 [
-    [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a6eb4d9401ac17bab0bfb869bf6fc6315", null ],
+    [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4", null ],
     [ "enable", "d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697", null ],
     [ "disable", "d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9", null ],
     [ "onSetLineCode", "d6/dc5/classusb_c_d_c.html#a15d235836f03a59a8d3a12ad5df78cd7", null ],

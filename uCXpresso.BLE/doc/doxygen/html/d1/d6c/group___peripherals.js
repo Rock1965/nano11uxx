@@ -153,16 +153,14 @@ var group___peripherals =
       [ "readwrite", "d9/d9b/class_c_spi_master.html#a13d1514765c41561d16dd46eefb9926e", null ]
     ] ],
     [ "CStream", "d4/d16/class_c_stream.html", [
-      [ "CStream", "d4/d16/class_c_stream.html#acd9fd6c1ed458608829da8288047515c", null ],
-      [ "~CStream", "d4/d16/class_c_stream.html#ab1387be186f7dd1877455ea246b56d5e", null ],
       [ "readable", "d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4", null ],
       [ "writeable", "d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5", null ],
       [ "read", "d4/d16/class_c_stream.html#a80977482ffb2f7b626a9f29f437b7d8d", null ],
       [ "write", "d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552", null ],
       [ "isConnected", "d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb", null ],
       [ "flush", "d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a", null ],
-      [ "write", "d4/d16/class_c_stream.html#aa5c2d9723e67ba97a65a890f0b55656f", null ],
-      [ "read", "d4/d16/class_c_stream.html#a59d24a785259d0f0aa3f8f44a1046fd7", null ]
+      [ "operator=", "d4/d16/class_c_stream.html#a739658de5c132ca26560520a49fc0d3a", null ],
+      [ "operator uint8_t", "d4/d16/class_c_stream.html#a54cb3000a96a4d5ab8f6301c83c2d76a", null ]
     ] ],
     [ "CTimer", "db/de1/class_c_timer.html", [
       [ "CTimer", "db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f", null ],
@@ -176,7 +174,7 @@ var group___peripherals =
       [ "getUnused", "db/de1/class_c_timer.html#a2021fd4d79d43498822c376625dd511b", null ]
     ] ],
     [ "usbCDC", "d6/dc5/classusb_c_d_c.html", [
-      [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a6eb4d9401ac17bab0bfb869bf6fc6315", null ],
+      [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4", null ],
       [ "enable", "d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697", null ],
       [ "disable", "d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9", null ],
       [ "onSetLineCode", "d6/dc5/classusb_c_d_c.html#a15d235836f03a59a8d3a12ad5df78cd7", null ],

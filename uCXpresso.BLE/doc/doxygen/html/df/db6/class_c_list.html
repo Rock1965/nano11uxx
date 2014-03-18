@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.3 rc1</span>
+   &#160;<span id="projectnumber">v1.0.3 rc2</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -171,7 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../df/db6/class_c_list.html">CList</a> class provides the data list service. </p>
+<div class="textblock"><p><a class="el" href="../../df/db6/class_c_list.html">CList</a> class provides the data list service.</p>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="../../df/db6/class_c_list.html">CList</a> class will use the <a class="el" href="../../d3/d0d/class_c_mutex.html">CMutex</a> to synchronize the list chain in multi-tasking. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aba5942fb294f8f3381bef96ffc8f5054"></a>
 <div class="memitem">
@@ -193,6 +194,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Call the <a class="el" href="../../df/db6/class_c_list.html#aba5942fb294f8f3381bef96ffc8f5054">count()</a> member to retrieve the number of elements in the list. </p>
+<dl class="section return"><dt>Returns</dt><dd>an integer value to indicate the number of elements in the list. </dd></dl>
 
 </div>
 </div>
@@ -216,6 +219,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Call the <a class="el" href="../../df/db6/class_c_list.html#ab4db98accd12debb4330ad97b8b1dc37">isEmpty()</a> member to check whether list is empty or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if list is empty, otherwise not. </dd></dl>
 
 </div>
 </div>
@@ -240,6 +245,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Add an element in the head of list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elem</td><td>is a point to specify data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the position of element in the list. if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -264,6 +277,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Add an element in the tail of list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elem</td><td>is a point to specify data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the position of element in the list. if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -287,6 +308,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get an element from the head of list. </p>
+<dl class="section return"><dt>Returns</dt><dd>the element point from head of list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -310,6 +333,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get an element from the tail of list. </p>
+<dl class="section return"><dt>Returns</dt><dd>the element point from tail of list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -334,6 +359,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get an element from list with indicated position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>is a list position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the element point from the list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -358,6 +391,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get an element from list with indicated index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>is an integer value to inidcate the position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the element point from the list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -381,6 +422,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Remove element from head of list. </p>
+<dl class="section return"><dt>Returns</dt><dd>the element point from the list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -404,6 +447,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Remove element from tail of list. </p>
+<dl class="section return"><dt>Returns</dt><dd>the element point from the list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -428,6 +473,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Remove element from list with indicated position. </p>
+<dl class="section return"><dt>Returns</dt><dd>the element point from the list, if return NULL, means failed. </dd></dl>
 
 </div>
 </div>
@@ -462,6 +509,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Remove all element from the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">free_elem</td><td>is boolean value to indicate whether free the elements memory. </td></tr>
+    <tr><td class="paramname">isObj</td><td>is boolean value, if free_elem is true, and isObj is true, the elements will be freed with the <a class="el" href="../../dc/dac/class_c_object.html">CObject</a> type. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -485,6 +540,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get head position. </p>
+<dl class="section return"><dt>Returns</dt><dd>the LIST_POS </dd></dl>
 
 </div>
 </div>
@@ -508,6 +565,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get tail position. </p>
+<dl class="section return"><dt>Returns</dt><dd>the LIST_POS </dd></dl>
 
 </div>
 </div>
@@ -532,6 +591,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get next position from current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>is LIST_POS to indicate current position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>LIST_POS to indicate the next position. </dd></dl>
 
 </div>
 </div>
@@ -556,6 +623,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get previous position from current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>is LIST_POS to indicate current position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>LIST_POS to indicate the previous position. </dd></dl>
 
 </div>
 </div>
@@ -580,6 +655,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Find an element position in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elem</td><td>is a point to element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>position (LIST_POS), if return NULL, means not found. </dd></dl>
 
 </div>
 </div>
@@ -614,6 +697,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Insert an element before the indicated position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>is LIST_POS point to indicate where want to insert the element. </td></tr>
+    <tr><td class="paramname">elem</td><td>is an element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>position of the new element in the list. </dd></dl>
 
 </div>
 </div>
@@ -648,6 +740,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Insert an element after the indicated position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>is LIST_POS point to indicate where want to insert the element. </td></tr>
+    <tr><td class="paramname">elem</td><td>is an element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>position of the new element in the list. </dd></dl>
 
 </div>
 </div>
@@ -684,7 +785,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/db6/class_c_list.html">CList</a></li>
-    <li class="footer">Generated on Sun Mar 16 2014 13:00:16 for uCXpresso.BLE by
+    <li class="footer">Generated on Tue Mar 18 2014 15:22:32 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -25,7 +25,6 @@ var searchData=
   ['csmallprintf',['CSmallPrintf',['../de/db4/class_c_small_printf.html#a4d3c439b597dde5df178d189a5eb4024',1,'CSmallPrintf']]],
   ['cspi',['CSPI',['../d2/d3f/class_c_s_p_i.html#a45ebc1852b74f5f0ccfbb97b302cf5e9',1,'CSPI']]],
   ['cspimaster',['CSpiMaster',['../d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800',1,'CSpiMaster']]],
-  ['cstream',['CStream',['../d4/d16/class_c_stream.html#acd9fd6c1ed458608829da8288047515c',1,'CStream']]],
   ['cstring',['CString',['../df/d99/class_c_string.html#a3cb66b8f688676f29cdb51c914a15cf7',1,'CString::CString(int size=DEF_STRBUF_SIZE)'],['../df/d99/class_c_string.html#a4866844f29a912ee7eb7afcb641ffb8f',1,'CString::CString(const CString &amp;str)'],['../df/d99/class_c_string.html#a233297b331dbc4c342745d67ad166b97',1,'CString::CString(LPCTSTR str, int length=0)'],['../df/d99/class_c_string.html#a4cc7726fc9fbaa450876ffd98e3e6ff4',1,'CString::CString(LPTSTR buf)']]],
   ['ctimer',['CTimer',['../db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f',1,'CTimer']]],
   ['cwatchdog',['CWatchdog',['../d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86',1,'CWatchdog']]]
