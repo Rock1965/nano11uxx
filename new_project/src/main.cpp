@@ -83,7 +83,7 @@ int main(void) {
 		// LED Demo (can be removed)
 		//
 		port = led_scripts[i];
-		i = (i+1) < sizeof(led_scripts) ? i+1 : 0;
+		i = (i+1) < (int)sizeof(led_scripts) ? i+1 : 0;
 		sleep(100);
 
 

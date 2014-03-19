@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.3 rc2</span>
+   &#160;<span id="projectnumber">v1.0.3 rc3</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -120,19 +120,23 @@ $(document).ready(function(){initNavTree('d6/dc5/classusb_c_d_c.html','../../');
   <tr class="even"><td class="entry"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a>()</td><td class="entry"><a class="el" href="../../dc/dac/class_c_object.html">CObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#ad20e467624da633a79b150a435667619">onCtrlLineState</a>(uint16_t state)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a15d235836f03a59a8d3a12ad5df78cd7">onSetLineCode</a>(CDC_LINE_CODING_T *line)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a54cb3000a96a4d5ab8f6301c83c2d76a">operator uint8_t</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a739658de5c132ca26560520a49fc0d3a">operator=</a>(uint8_t c)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7">operator char</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#acbaa22d4608c1a015a20104fde6c8ccf">operator uint8_t</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a2c6130bd65b00f278045d8b7b8ea7f84">operator&lt;&lt;</a>(uint8_t c)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#ad2f2d74f0924caa2e863d049fe9ada80">operator&lt;&lt;</a>(CStream &amp;s)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799">read</a>(void *buf, int len, bool block=true)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80">readable</a>()</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4">usbCDC</a>(int FIFO_SIZE=32)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec">write</a>(const void *buf, int len, bool block=true)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">CStream::read</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80">readable</a>()</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4">usbCDC</a>(int FIFO_SIZE=32)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec">write</a>(const void *buf, int len, bool block=true)</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d">CStream::write</a>(uint8_t c)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a">writeable</a>()</td><td class="entry"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 18 2014 15:22:33 for uCXpresso.BLE by
+    <li class="footer">Generated on Wed Mar 19 2014 20:50:15 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

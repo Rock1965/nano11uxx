@@ -159,8 +159,12 @@ var group___peripherals =
       [ "write", "d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552", null ],
       [ "isConnected", "d4/d16/class_c_stream.html#a7a152e6bda8654064634428d81bd81cb", null ],
       [ "flush", "d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a", null ],
-      [ "operator=", "d4/d16/class_c_stream.html#a739658de5c132ca26560520a49fc0d3a", null ],
-      [ "operator uint8_t", "d4/d16/class_c_stream.html#a54cb3000a96a4d5ab8f6301c83c2d76a", null ]
+      [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
+      [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
+      [ "operator<<", "d4/d16/class_c_stream.html#a2c6130bd65b00f278045d8b7b8ea7f84", null ],
+      [ "operator uint8_t", "d4/d16/class_c_stream.html#acbaa22d4608c1a015a20104fde6c8ccf", null ],
+      [ "operator char", "d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7", null ],
+      [ "operator<<", "d4/d16/class_c_stream.html#ad2f2d74f0924caa2e863d049fe9ada80", null ]
     ] ],
     [ "CTimer", "db/de1/class_c_timer.html", [
       [ "CTimer", "db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f", null ],
