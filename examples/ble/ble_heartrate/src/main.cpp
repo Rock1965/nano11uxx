@@ -160,7 +160,7 @@ int main(void) {
 	// Fade LED task
 	//
 	ledTask led(pulse);
-	led.start("LED", 58);	// reduce stack size to 58 to increase the heap memory
+	led.start("LED", 52);	// reduce stack size to 58 to increase the heap memory
 
 	//
 	//

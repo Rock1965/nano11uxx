@@ -3,8 +3,12 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
-v1.0.3 rc3 19th March 2014
+v1.0.3 released 20th March 2014
 --------------------------	
+###Features:
+	1. Use interrupt to handle the BLE core, and puhs BLE in to BLOCK status when BLE is in idle mode.
+	2. CSerial (UART) and usbCDC classes supports the semaphore to control the FIFO buffer.
+
 ###Details:<br/>
 	1. Add more operators in CStream class.
 	2. Add fifo semaphore control in CSerial and usbCDC classes.
@@ -16,7 +20,7 @@ v1.0.3 rc3 19th March 2014
 v1.0.2 released 13th March 2014
 --------------------------------
 ###Features:<br/>
-	1. When host APP crash or other, the BLE will lock in a connection loop.<br/>
+	1. When host APP crash or other, the BLE will lock in a invalid connection loop.<br/>
 	   This version add a Watchdog feature on a BLE connection, <br/>
 	   the watchdog will force to disconnect a invalid connection.<br/>
 	2. We provide a offline manual in the "doc" folder for reference.<br/>
