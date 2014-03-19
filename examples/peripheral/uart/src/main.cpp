@@ -3,23 +3,15 @@
  Name        : main.cpp
  Author      :
  Version     : v1.0.0
- Date		 : 2014/2/28
- Copyright   :
- Description : UART Echo to USB (Short the Pin 16 (RXD) to Pin 17 (TXD))
+ Date		 : 2014/3/19
+ Description : UART TX/RX ECHO Demo
  ===============================================================================
   	 	 	 	 	 	 	 	 History
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
- 2014/2/28 v1.0.0	First Edition									Jason
+
  ===============================================================================
-
- Echo Loop :
-
- PC -> USB RX -> UART TX --
-                          |
- PC <- USB TX <- UART RX __
-
  */
 
 #include "uCXpresso.h"
@@ -36,17 +28,40 @@
 //
 // TODO: insert other include files here
 //
+#include "class/thread.h"
+#include "class/serial.h"
+#include "class/pin.h"
 
 //
 // TODO: insert other definitions and declarations here
 //
 
-//
-// LED Demo (can be removed)
-//
-#include "class/bus.h"
-static const uint8_t led_scripts[] = { // bit0=LED1, bit1=LED2, bit2=LED3, bit4=LED4
-	1, 2, 4, 8, 4, 2
+CSerial uart;
+
+static const char txbuf[] = "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789\n";
+
+class txTask: public CThread {
+protected:
+	virtual void run() {
+		CPin led(LED1);
+		while(1) {
+			led = !led;
+			uart.write(txbuf, sizeof(txbuf));	// write a buffer to tx of uart
+		}
+	}
+};
+
+class rxTask: public CThread {
+protected:
+	virtual void run() {
+		CPin led(LED2);
+		uint8_t ch;
+		while(1) {
+			led = !led;
+			ch = uart;		// read a byte from rx of uart (use C++ operator 'uint8_t')
+			DBG("%c", ch);	// show rx data in Debug Mode
+		}
+	}
 };
 
 //
@@ -54,54 +69,44 @@ static const uint8_t led_scripts[] = { // bit0=LED1, bit1=LED2, bit2=LED3, bit4=
 //
 int main(void) {
 
+#ifdef DEBUG
+	#if __USE_USB
+		usbCDC ser;
+		ser.connect();
+	#else
+		CSerial ser;
+		ser.settings(115200);
+	#endif
+	CDebug dbg(ser);
+	dbg.start();
+#endif
+
 	/*************************************************************************
 	 *
 	 *                         your setup code here
 	 *
 	 **************************************************************************/
-	//
-	// LED Demo (can be removed)
-	//
-	DBG("Hello I'm in debug mode\n");
-	CBus leds(LED1, LED2, LED3, LED4, END);
-	leds.output();	// set all pins as output
+	CPin led(LED4);
 
+	uart.enable(115200);
 
-	usbCDC usb;
-	usb.enable();			// enable USB core
+	rxTask rx;
+	rx.start("rx", 128, PRI_HIGH);	// Increase stack size for DBG(...), Priority set to High for receive data
 
-	CSerial uart;
-	uart.enable(115200);	// enable serial port
+	txTask tx;
+	tx.start("tx");
 
-	int i = 0;
-	uint8_t ch;
+	char *buf = new char[128];
+	buf[0] = 0;
+
 	while(1) {
 		/**********************************************************************
 		 *
 		 *                         your loop code here
 		 *
 		 **********************************************************************/
-
-		//
-		// check uart input
-		//
-		if ( uart.readable() ) {
-			//
-			//
-			// show led scripts
-			leds = led_scripts[i];
-			i = (i+1) < (int)sizeof(led_scripts) ? i+1 : 0;
-
-			usb << uart;	// use CStream operator <<
-		}
-
-		//
-		// check usb input
-		//
-		if ( usb.readable() ) {
-			ch = usb;		// use CStream operator uint8_t
-			uart << ch; 	// use CStream operator <<
-		}
+		led = !led;
+		sleep(100);
 	}
     return 0 ;
 }

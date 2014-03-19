@@ -19,8 +19,8 @@ extern "C" {
 #define uCXpresso_VER_MAJOR		1
 #define uCXpresso_VER_MINOR		0
 #define uCXpresso_VER_REV		3
-#define uCXpresso_VER_RC		2
-#define uCXpresso_VER_BUILD		"2014/3/18"
+#define uCXpresso_VER_RC		3
+#define uCXpresso_VER_BUILD		"2014/3/19"
 #define uCXpresso_VER_STR		"V1.0.3"
 
 //
@@ -182,7 +182,7 @@ extern void *pool_memcpy(void *dest, const void *sour, size_t size);
 extern void *pool_memset(void *dest, int val, size_t size);
 #endif
 
-extern void pool_memadd(unsigned long base, size_t size);
+extern void pool_memadd(uint32_t base, size_t size);
 //#define memcpy(x,y,z)	xMemcpy(x,y,z)
 //#define memset(x,y,z)	xMemset(x,y,z)
 #define IS_FLASH_MEM(x)	(((uint32_t)x)<0x100000)	// Max flash memory 1MB

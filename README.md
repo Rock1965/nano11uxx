@@ -3,13 +3,14 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
-v1.0.3 rc2 18th March 2014
+v1.0.3 rc3 19th March 2014
 --------------------------	
 ###Details:<br/>
-	1. Add fifo semaphore control in CSerial and usbCDC classes.
-	2. Increase more heap memory
-	3. Change BLE polling to interrupt method to speed up the BLE core.<br/>
-	4. BLE become to a Weakup Source for Power Save Features.<br/>
+	1. Add more operators in CStream class.
+	2. Add fifo semaphore control in CSerial and usbCDC classes.
+	3. Increase more heap memory
+	4. Change BLE polling to interrupt method to speed up the BLE core.
+	5. BLE become to a Weakup Source for Power Save Features.
 
 
 v1.0.2 released 13th March 2014

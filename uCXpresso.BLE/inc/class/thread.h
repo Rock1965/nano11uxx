@@ -55,7 +55,7 @@ typedef enum
 	DELETED			///< The task being queried has been deleted, but its TCB has not yet been freed.
 }TASK_STATE_T;
 
-#define DEF_THREAD_STACK	80
+#define DEF_THREAD_STACK	72
 
 /**The CThread class provide the multi-tasking services.
  * \note The CThread class is an abstract class, child class have to implement the run() member.

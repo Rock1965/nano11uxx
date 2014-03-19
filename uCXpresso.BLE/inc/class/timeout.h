@@ -17,7 +17,7 @@
 
 /**CTimeout provides the timeout count service.
  * \class CTimeout timeout.h "class/timeout.h"
- * \ingroup RTOS
+ * \ingroup Miscellaneous
  */
 class CTimeout: public CObject {
 public:

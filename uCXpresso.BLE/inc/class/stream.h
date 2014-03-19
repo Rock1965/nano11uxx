@@ -2,11 +2,16 @@
  ===============================================================================
  Name        : stream.h
  Author      : Jason
- Version     :
- Date		 : 2011/12/18
- Copyright   : Copyright (C) www.embeda.com.tw
- Description :
- History     :
+ Version     : v1.0.1
+ Date		 : 2014/3/19
+ Description : Stream Base Class
+ ===============================================================================
+ 	 	 	 	 	 	 	 	 History
+ ---------+---------+--------------------------------------------+-------------
+ DATE     |	VERSION |	DESCRIPTIONS							 |	By
+ ---------+---------+--------------------------------------------+-------------
+ 2011/12/18	v1.0.0	First Edition									Jason
+ 2014/3/19	v1.0.1	Add more operators								Jason
  ===============================================================================
  */
 
@@ -21,12 +26,6 @@
  */
 class CStream: public CObject {
 public:
-	/**CStream constructor */
-	CStream();
-
-	/**CStream destructor */
-	virtual ~CStream();
-
 	/**Determine how many data bytes are available to read.
 	 * \return A value to indicate how many data byte is available in the input buffer.
 	 * \remark the pure virtual function have to implement by child class.
@@ -69,29 +68,73 @@ public:
 	virtual void flush() = PURE_VIRTUAL_FUNC;
 
 	//
-	// inline functions
+	// read/write for a byte
+	//
+	/**Read a byte from stream
+	 * \return uint8_t (8 bits) data from the stream
+	 */
+	virtual uint8_t read();
+
+	/**Write a byte to stream
+	 * \param c is a uint8_t data to send to the stream.
+	 */
+	virtual void write(uint8_t c);
+
+	//
+	// Operators
 	//
 
-	/**An inline function to write a character to output buffer of stream.
-	 * \param ch is an integer data that will be send to the stream buffer, the data size is one byte.
-	 * \return 1 (length) if write successful, otherwise is fail.
-	 * \note The inline function is a overload function to call to the write() member.
+	/**Operator '<<', to push a byte to stream.
+	 * \code
+	 * CSerial uart;
+	 * uart.enable(19200);
+	 *
+	 * uint8_t ch = 0xA5;
+	 * uart << ch;
+	 * \endcode
 	 */
-	inline int write(int ch) {
-		return write(&ch, 1);
+	virtual inline CStream& operator << (uint8_t c) {
+		write(c);
+		return *this;
 	}
 
-	/**An inline function to read a character from input buffer of stream.
-	 * \return the character value, the character size is one byte.
-	 * \note The inline function is a overload function to call to the read() member.
+	/**Operator 'uint8_t', to receive a byte from stream.
+	 * \code
+	 * CSerial uart;
+	 * uart.enable(19200);
+	 *
+	 * uint8_t ch;
+	 * ch = uart;
+	 * \endcode
 	 */
-	inline int read() {
-		int ch=0;
-		if ( read(&ch,1) ) {
-			return ch;
-		}
-		return -1;
+	virtual inline operator uint8_t () {
+		return read();
 	}
+
+	/**Operator 'char', to receive a char from stream.
+	 * \code
+	 * CSerial uart;
+	 * uart.enable(19200);
+	 *
+	 * char ch;
+	 * ch = uart;
+	 * \endcode
+	 */
+	virtual inline operator char () {
+		return (char)read();
+	}
+
+	/**Read a byte from right stream and send to left stream.
+	 */
+	virtual inline CStream& operator << (CStream &s) {
+		write(s.read());
+		return *this;
+	}
+
+	/// @cond
+	CStream();
+	virtual ~CStream();
+	/// @endcond
 };
 
 #endif /* STREAM_H_ */
