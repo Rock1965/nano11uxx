@@ -17,7 +17,7 @@
 
 #include "servo.h"
 
-#if 1
+#if 0
 #include <debug.h>
 #define DBG	dbg_printf
 #else
@@ -62,7 +62,8 @@ void CServo::write(int value) {
 	// convert microsecond to second
 	pw = pw / 1000000.0;
 
-DBG("servo min=%d, max=%d, val=%d, pw=%0.6f\n", m_minPulseWidth, m_maxPulseWidth, value, pw);
+	DBG("servo min=%d, max=%d, val=%d, pw=%0.6f\n", m_minPulseWidth, m_maxPulseWidth, value, pw);
+
 	// set new pulse width to servo motor
 	m_pwm.pulseWidth(pw);
 }
