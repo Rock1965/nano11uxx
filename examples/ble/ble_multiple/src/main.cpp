@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : main.cpp
  Author      : Jason
- Version     : 1.0.4
- Date		 : 2014/3/2
+ Version     : 1.0.5
+ Date		 : 2014/3/20
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : a BLE Firmat & multiple services Demo
@@ -18,6 +18,7 @@
  2014/2/28	v1.0.3	Add Device Information Service					Jason
  2014/3/2	v1.0.4	Add onWatchdog() event in myBLE class.			Jason
  	 	 	 	 	Add onError() event in myBLE class.
+ 2014/3/20	v1.0.5	Add Servo Motor for BLE Arduino Firmata Demo.	Jason
  ===============================================================================
  */
 
@@ -393,7 +394,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-384];	// reduce pool size to increase the global stack
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-512];	// reduce pool size to increase the global stack
 
 //
 // setup before the system startup

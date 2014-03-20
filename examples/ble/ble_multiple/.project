@@ -26,6 +26,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/servo.cpp</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/uCXpresso.BLE/extensions/lib/motor/servo/servo.cpp</locationURI>
+		</link>
+		<link>
 			<name>src/tone.cpp</name>
 			<type>1</type>
 			<locationURI>WORKSPACE_LOC/uCXpresso.BLE/extensions/lib/arduino/tone.cpp</locationURI>
