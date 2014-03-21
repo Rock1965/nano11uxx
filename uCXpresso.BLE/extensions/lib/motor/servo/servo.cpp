@@ -17,7 +17,7 @@
 
 #include "servo.h"
 
-#if 1
+#if 0
 #include <debug.h>
 #define DBG	dbg_printf
 #else
