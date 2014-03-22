@@ -385,7 +385,7 @@ int main(void) {
 #else
 			ledACT = LED_ON;
 #endif
-			sleep(500);
+			sleep(1000);
 		}
 	}
     return 0 ;

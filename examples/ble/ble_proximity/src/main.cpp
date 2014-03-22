@@ -198,7 +198,7 @@ int main(void) {
 #endif
 			ledAlertH = LED_OFF;
 			ledAlertL = LED_OFF;
-			sleep(500);
+			sleep(3000);
 		}
 	}
     return 0 ;
@@ -207,7 +207,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE];
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-64];	// reduce pool to increase global stack
 
 //
 // setup before the system startup

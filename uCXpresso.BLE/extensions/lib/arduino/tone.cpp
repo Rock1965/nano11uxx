@@ -11,6 +11,8 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/2/16	v1.0.1	Crate CTone class								Jason
+ 2014/3/22	v1.0.2	Rename onTone to noTone.						Jason
+ 	 	 	 	 	Reduce stack of tone task.
  ===============================================================================
  */
 #include "arduino.h"
@@ -132,14 +134,14 @@ bool tone(PIN_NAME_T pin, uint32_t frequency, uint32_t duration, uint16_t count)
 		if ( t>=0 ) {
 			tn = new CTone(pin, t, frequency, duration, count);	// allocate a task
 			if ( tn ) {
-				return tn->start("tone", 96, PRI_SUPER);
+				return tn->start("tone", 56, PRI_HARDWARE);
 			}
 		}
 	}
 	return false;
 }
 
-void onTone(PIN_NAME_T pin) {
+void noTone(PIN_NAME_T pin) {
 	CTone *tone = find(pin);
 	if ( tone ) {
 		tone->kill();
