@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : mutex.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.6
  Date		 : 2014/3/1
  Copyright   : Copyright (C) www.embeda.com.tw

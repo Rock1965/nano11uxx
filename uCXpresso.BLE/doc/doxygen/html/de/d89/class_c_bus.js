@@ -1,7 +1,7 @@
 var class_c_bus =
 [
     [ "CBus", "de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63", null ],
-    [ "output", "de/d89/class_c_bus.html#a5f797dca77eb5a86048c65e567a2d233", null ],
+    [ "output", "de/d89/class_c_bus.html#a1a15e443f8f87426bcd30f9b627fe1c7", null ],
     [ "input", "de/d89/class_c_bus.html#ad45a06493f12aef3d096ac3ed86a3b8f", null ],
     [ "write", "de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0", null ],
     [ "read", "de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1", null ],

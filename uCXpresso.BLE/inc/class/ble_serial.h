@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : ble_serial.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.13
  Date		 : 2014/3/15
  Copyright   : Copyright (C) www.embeda.com.tw
@@ -245,8 +245,8 @@ public:
 	virtual void onWatchdog();
 
 	/**An virtual function call by BLE task and occurs when a BLE hardware error.
-	 * \param error A BLE_ERR_T enumeration.
-	 * \param id A string to a class name. (for debug)
+	 * \param err is a BLE_ERR_T enumeration.
+	 * \param id is a string to point a class name. (for debug)
 	 * \note The onError event is a empty function in bleSerial class.
 	 */
 	virtual void onError(BLE_ERR_T err, LPCTSTR id="bleSerial"){}	// onError() Event indicate the error code when an error occurred.

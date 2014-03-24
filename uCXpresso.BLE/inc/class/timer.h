@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : timer.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.2
  Date		 : 2014/1/8
  Copyright   : Copyright (C) www.embeda.com.tw

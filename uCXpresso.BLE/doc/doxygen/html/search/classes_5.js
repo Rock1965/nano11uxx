@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pack_5fstruct',['PACK_STRUCT',['../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html',1,'']]]
+  ['gc_5ft',['GC_T',['../d2/dc8/struct__gc___1_1_g_c___t.html',1,'_gc_']]],
+  ['gchandlet',['gcHandleT',['../d4/ddd/classgc_handle_t.html',1,'']]]
 ];

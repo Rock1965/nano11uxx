@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : ble_heartrate.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.0
  Date		 : 2014/2/16
  Copyright   : Copyright (C) www.embeda.com.tw
@@ -54,7 +54,7 @@ typedef enum
 } hrcp_error_codes_t;
 
 /**The bleHearRate class exposes heart rate and other data from a Heart Rate Sensor intended for fitness applications.
- * \class bleHeartRate ble_heartrate "class/ble_heartrate.h"
+ * \class bleHeartRate ble_heartrate.h "class/ble_heartrate.h"
  * \ingroup BLE
  */
 class bleHeartRate: public CPeripheral {

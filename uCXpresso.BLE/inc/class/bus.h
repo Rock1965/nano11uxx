@@ -1,17 +1,18 @@
 /*
  ===============================================================================
  Name        : bus.h
- Author      : Jason
- Version     : v1.0.0
- Date		 : 2014/1/1
+ Author      : uCXpresso
+ Version     : v1.0.1
+ Date		 : 2014/3/23
  Copyright   : Copyright (C) www.embeda.com.tw
- Description :
+ Description : A pins collector class
  ===============================================================================
   	 	 	 	 	 	 	 	 History
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	first edition for nano11Uxx						Jason
+ 2014/3/23	v1.0.1	Add mode and defValue for output() member.		Jason
  ===============================================================================
  */
 
@@ -41,8 +42,9 @@ public:
 
 	/**Call the member function to set the bus as output pins.
 	 * \param mode is a PIN_OUTPUT_MODE_T, default is OPEN_DRAIN (provide current).
+	 * \param defValue to the the default PIN_LEVEL_T to initialize the output pin.
 	 */
-	void output();		// set as an output pin
+	void output(PIN_OUTPUT_MODE_T mode=NOT_OPEN, PIN_LEVEL_T defValue=LOW);		// set as an output pin
 
 	/**Call the member function to set the bus as input pins
 	 * \param mode is a PIN_INPUT_MODE_T, default is INTERNAL_PUTT_UP.

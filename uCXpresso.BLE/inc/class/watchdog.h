@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : watchdog.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.1
  Date		 : 2014/1/9
  Copyright   : Copyright (C) www.embeda.com.tw

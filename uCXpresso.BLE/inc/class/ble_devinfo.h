@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : ble_devinfo.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.2
  Date		 : 2014/2/26
  Copyright   : Copyright (C) www.embeda.com.tw

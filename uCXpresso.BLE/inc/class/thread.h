@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : thread.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.7
  Date		 : 2014/1/5
  Copyright   : Copyright (C) www.embeda.com.tw
@@ -27,9 +27,8 @@
 
 #include "class/object.h"
 
-/**
+/**The RTOS group is power by FreeRTOS
  * \defgroup RTOS
- * The RTOS group is power by FreeRTOS
  */
 
 /**Task priorities define

@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : ble_proximity.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.2
  Date		 : 2014/3/2
  Copyright   : Copyright (C) www.embeda.com.tw

@@ -13,7 +13,7 @@ var group___peripherals =
     ] ],
     [ "CBus", "de/d89/class_c_bus.html", [
       [ "CBus", "de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63", null ],
-      [ "output", "de/d89/class_c_bus.html#a5f797dca77eb5a86048c65e567a2d233", null ],
+      [ "output", "de/d89/class_c_bus.html#a1a15e443f8f87426bcd30f9b627fe1c7", null ],
       [ "input", "de/d89/class_c_bus.html#ad45a06493f12aef3d096ac3ed86a3b8f", null ],
       [ "write", "de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0", null ],
       [ "read", "de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1", null ],
@@ -162,6 +162,7 @@ var group___peripherals =
       [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
       [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
       [ "operator<<", "d4/d16/class_c_stream.html#a2c6130bd65b00f278045d8b7b8ea7f84", null ],
+      [ "operator>>", "d4/d16/class_c_stream.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
       [ "operator uint8_t", "d4/d16/class_c_stream.html#acbaa22d4608c1a015a20104fde6c8ccf", null ],
       [ "operator char", "d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7", null ],
       [ "operator<<", "d4/d16/class_c_stream.html#ad2f2d74f0924caa2e863d049fe9ada80", null ]

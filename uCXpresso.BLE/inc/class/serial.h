@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : serial.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.2
  Date		 : 2014/3/18
  Copyright   : Copyright (C) www.embeda.com.tw

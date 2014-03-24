@@ -18,10 +18,10 @@ extern "C" {
 /*! \cond PRIVATE */
 #define uCXpresso_VER_MAJOR		1
 #define uCXpresso_VER_MINOR		0
-#define uCXpresso_VER_REV		3
-#define uCXpresso_VER_RC		RELEASED
-#define uCXpresso_VER_BUILD		"2014/3/20"
-#define uCXpresso_VER_STR		"V1.0.3"
+#define uCXpresso_VER_REV		4
+#define uCXpresso_VER_RC		1
+#define uCXpresso_VER_BUILD		"2014/3/24"
+#define uCXpresso_VER_STR		"V1.0.4"
 
 //
 // Device
@@ -130,38 +130,6 @@ extern uint32_t MAIN_STACK_SIZE;
 #define MAX_DELAY_TIME	0xffffffff
 extern void sleep(int ms);
 extern void sysReboot(void);
-
-//
-//	LWIP
-//
-/*! \union IP_ADDR_T socket.h "class/socket.h"
- */
-typedef union {
-	uint32_t	addr;		///< a 32bits unsigned long integer type address
-	uint8_t		addr8[4];	///< a 4 bytes array address
-}IP_ADDR_T;
-
-// lwip error code
-#ifndef ERR_OK
-#define ERR_OK          0    /* No error, everything OK. */
-#define ERR_MEM        -1    /* Out of memory error.     */
-#define ERR_BUF        -2    /* Buffer error.            */
-#define ERR_TIMEOUT    -3    /* Timeout.                 */
-#define ERR_RTE        -4    /* Routing problem.         */
-#define ERR_INPROGRESS -5    /* Operation in progress    */
-#define ERR_VAL        -6    /* Illegal value.           */
-#define ERR_WOULDBLOCK -7    /* Operation would block.   */
-#define ERR_USE        -8    /* Address in use.          */
-#define ERR_ISCONN     -9    /* Already connected.       */
-#define ERR_ABRT       -10   /* Connection aborted.      */
-#define ERR_RST        -11   /* Connection reset.        */
-#define ERR_CLSD       -12   /* Connection closed.       */
-#define ERR_CONN       -13   /* Not connected.           */
-#define ERR_ARG        -14   /* Illegal argument.        */
-#define ERR_IF         -15   /* Low-level netif error    */
-#define ERR_IS_FATAL(e) ((e) < ERR_ISCONN)
-#endif						// ERROR_CODE
-typedef int				ERR_T;
 
 //
 // Bit Control

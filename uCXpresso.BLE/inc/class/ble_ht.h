@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : ble_ht.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.3
  Date		 : 2014/2/5
  Copyright   : Copyright (C) www.embeda.com.tw

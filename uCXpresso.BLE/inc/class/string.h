@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : string.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.5
  Date		 : 2013/5/21
  Copyright   : Copyright (C) www.embeda.com.tw

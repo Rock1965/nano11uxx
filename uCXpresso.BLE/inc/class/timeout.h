@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : timeout.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.1
  Created on	 : 2012/3/18
  Copyright   : Copyright (C) 2012 Embeda Technology Inc.

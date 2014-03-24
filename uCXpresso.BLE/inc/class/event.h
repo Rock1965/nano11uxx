@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : event.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.0
  Date		 : 2014/2/21
  Description : Event Bit Group (A group = 32 bits)

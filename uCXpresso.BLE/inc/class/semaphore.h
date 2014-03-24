@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : semaphore.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.3
  Date		 : 2013/12/20
  Copyright   : Copyright (C) www.embeda.com.tw

@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : crc16.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.0
  Date		 : 2014/2/11
  Copyright   : Copyright (C) www.embeda.com.tw

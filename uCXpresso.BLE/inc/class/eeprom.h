@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : eeprom.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.0
  Date		 : 2014/1/22
  Copyright   : Copyright (C) www.embeda.com.tw

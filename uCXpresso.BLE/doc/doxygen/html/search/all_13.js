@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['vid_5fsource_5ft',['VID_SOURCE_T',['../db/dff/group___enumerations.html#ga42b352f4817787f82d2adcffd4793ad9',1,'ble_devinfo.h']]],
-  ['vs_5frev',['VS_REV',['../db/dff/group___enumerations.html#gga42b352f4817787f82d2adcffd4793ad9abb49a7689b3186fe7da6b61eeb6a207d',1,'ble_devinfo.h']]],
-  ['vs_5fsig',['VS_SIG',['../db/dff/group___enumerations.html#gga42b352f4817787f82d2adcffd4793ad9aee983b596859c3b849a073596459d38c',1,'ble_devinfo.h']]],
-  ['vs_5fusb',['VS_USB',['../db/dff/group___enumerations.html#gga42b352f4817787f82d2adcffd4793ad9a704d8d311290a7c789e3902af79ae043',1,'ble_devinfo.h']]]
+  ['uart_5fdatabit_5f5',['UART_DATABIT_5',['../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a7ac317a766becd83f58a2daa007fed1e',1,'CSerial']]],
+  ['uart_5fdatabit_5f6',['UART_DATABIT_6',['../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a6c31f7e06c7a6779b6d72d37aba52fb1',1,'CSerial']]],
+  ['uart_5fdatabit_5f7',['UART_DATABIT_7',['../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3abf533a46435efaddb8e38b9b9fe53eff',1,'CSerial']]],
+  ['uart_5fdatabit_5f8',['UART_DATABIT_8',['../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25',1,'CSerial']]],
+  ['uart_5fdatabit_5ft',['UART_DATABIT_T',['../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3',1,'CSerial']]],
+  ['uart_5ffifo_5ftrglev0',['UART_FIFO_TRGLEV0',['../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de',1,'CSerial']]],
+  ['uart_5ffifo_5ftrglev1',['UART_FIFO_TRGLEV1',['../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1a2d29eb800e28d845f00b9fd5df1b955c',1,'CSerial']]],
+  ['uart_5ffifo_5ftrglev2',['UART_FIFO_TRGLEV2',['../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1a3ca31e41f3d74e387b0ff625a927bcf4',1,'CSerial']]],
+  ['uart_5ffifo_5ftrglev3',['UART_FIFO_TRGLEV3',['../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1a6893ab299c8d6be2e17efb39cd05e1a1',1,'CSerial']]],
+  ['uart_5ffito_5flevel_5ft',['UART_FITO_LEVEL_T',['../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1',1,'CSerial']]],
+  ['uart_5fparity_5feven',['UART_PARITY_EVEN',['../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a4b7452e8ef848287eca86b7ea4411e65',1,'CSerial']]],
+  ['uart_5fparity_5fnone',['UART_PARITY_NONE',['../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4',1,'CSerial']]],
+  ['uart_5fparity_5fodd',['UART_PARITY_ODD',['../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40aa157a4ef710e04651e3aaf61a4d96ad9',1,'CSerial']]],
+  ['uart_5fparity_5fsp_5f0',['UART_PARITY_SP_0',['../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a660aab6ba15f9c94cc9963ff226a77eb',1,'CSerial']]],
+  ['uart_5fparity_5fsp_5f1',['UART_PARITY_SP_1',['../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a20c9bc3b3fa95b78898159cd2680e007',1,'CSerial']]],
+  ['uart_5fparity_5ft',['UART_PARITY_T',['../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40',1,'CSerial']]],
+  ['uart_5fstopbit_5f1',['UART_STOPBIT_1',['../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907',1,'CSerial']]],
+  ['uart_5fstopbit_5f2',['UART_STOPBIT_2',['../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04bafe7ff299f68959471436234643298e71',1,'CSerial']]],
+  ['uart_5fstopbit_5ft',['UART_STOPBIT_T',['../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04b',1,'CSerial']]],
+  ['unit_5fc',['unit_c',['../d9/d26/classble_health_thermometer.html#a0f00efd291e5b91fef286071d3441172',1,'bleHealthThermometer']]],
+  ['unit_5ff',['unit_f',['../d9/d26/classble_health_thermometer.html#aafe2468db4033c905394da1d58c83620',1,'bleHealthThermometer']]],
+  ['unlock',['unlock',['../d3/d0d/class_c_mutex.html#aee0e6661ae4b790104a9a4205910d53d',1,'CMutex']]],
+  ['update',['update',['../d5/df3/class_c_r_c16.html#afd577ee51489a3e07c4de201b8a3fdf4',1,'CRC16::update(uint8_t data)'],['../d5/df3/class_c_r_c16.html#aea5d7fae41950ebc9ab79ec0445900f5',1,'CRC16::update(uint8_t *buf, int length)']]],
+  ['uridecode',['uriDecode',['../df/d99/class_c_string.html#aade923167835efe164b5e06fb192e176',1,'CString']]],
+  ['usbcdc',['usbCDC',['../d6/dc5/classusb_c_d_c.html',1,'usbCDC'],['../d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4',1,'usbCDC::usbCDC()']]]
 ];

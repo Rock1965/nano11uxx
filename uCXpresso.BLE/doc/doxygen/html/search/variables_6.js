@@ -2,6 +2,7 @@ var searchData=
 [
   ['m_5fconsole',['m_console',['../de/dba/class_c_shell.html#ac555f42f70f60653dbd5e0c8ec9c4dcf',1,'CShell']]],
   ['m_5fdbgkey',['m_dbgKey',['../de/dba/class_c_shell.html#ab2b6ca1616128e6a8a05c8c235c7b011',1,'CShell']]],
+  ['m_5fgc',['m_gc',['../df/dee/class__gc__.html#a99eeb7570f75b51df025d2a4c8b0c12a',1,'_gc_']]],
   ['m_5fmutex',['m_mutex',['../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794',1,'CDebug']]],
   ['m_5fseminput',['m_semInput',['../de/dba/class_c_shell.html#aa81828c40c17f38821ec395aaf38ee98',1,'CShell']]],
   ['m_5fshell',['m_shell',['../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7',1,'CDebug']]],

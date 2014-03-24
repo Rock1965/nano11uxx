@@ -9,6 +9,7 @@ var class_c_stream =
     [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
     [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
     [ "operator<<", "d4/d16/class_c_stream.html#a2c6130bd65b00f278045d8b7b8ea7f84", null ],
+    [ "operator>>", "d4/d16/class_c_stream.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
     [ "operator uint8_t", "d4/d16/class_c_stream.html#acbaa22d4608c1a015a20104fde6c8ccf", null ],
     [ "operator char", "d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7", null ],
     [ "operator<<", "d4/d16/class_c_stream.html#ad2f2d74f0924caa2e863d049fe9ada80", null ]

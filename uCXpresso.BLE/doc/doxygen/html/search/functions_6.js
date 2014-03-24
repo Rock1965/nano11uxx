@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gchandlet',['gcHandleT',['../d4/ddd/classgc_handle_t.html#aa8e99b3f41bdbdd88425e25dc36f42a6',1,'gcHandleT::gcHandleT(CType *elem=NULL)'],['../d4/ddd/classgc_handle_t.html#a8571d5ecadf1847090b04d1ad57f15d5',1,'gcHandleT::gcHandleT(const gcHandleT&lt; CType &gt; &amp;gc)']]],
   ['get',['get',['../dd/d60/class_c_event_bit.html#a52b137d375dbb670b2473222c8914081',1,'CEventBit']]],
   ['getat',['getAt',['../df/db6/class_c_list.html#a54795f456c006f4ab3647d5abfaa806c',1,'CList::getAt(LIST_POS pos)'],['../df/db6/class_c_list.html#abec03f2f356c1bcd44ff3ddfa3e1e65a',1,'CList::getAt(int index)'],['../df/d99/class_c_string.html#ae1bcd2dd9d59762b41fe898916bfdd23',1,'CString::getAt()']]],
   ['getatt',['getAtT',['../da/d59/class_c_list_t.html#a18acff60ba234e5f4e6728be0c66a171',1,'CListT']]],

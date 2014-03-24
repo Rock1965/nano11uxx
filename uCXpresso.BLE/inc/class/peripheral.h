@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : peripheral.h
- Author      : Jason Liao
+ Author      : uCXpresso Liao
  Version     : 1.0.1
  Created on	 : 2012/3/5
  Copyright   : Copyright (C) 2012 Embeda Technology Inc.

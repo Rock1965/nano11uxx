@@ -17,5 +17,6 @@ var searchData=
   ['isslave',['isSlave',['../d2/d3f/class_c_s_p_i.html#ab237c0acc917287a8f7cdca7e91e87c6',1,'CSPI']]],
   ['issuspend',['isSuspend',['../d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965',1,'CThread']]],
   ['isthread',['isThread',['../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f',1,'CObject::isThread()'],['../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984',1,'CThread::isThread()']]],
-  ['istream',['iStream',['../d6/d56/class_console.html#ad4d21815c5cbc33e9015ba5babf5bf09',1,'Console']]]
+  ['istream',['iStream',['../d6/d56/class_console.html#ad4d21815c5cbc33e9015ba5babf5bf09',1,'Console']]],
+  ['isvalid',['isValid',['../d4/ddd/classgc_handle_t.html#ab35bfc017cd77053934dd6badb162acd',1,'gcHandleT']]]
 ];

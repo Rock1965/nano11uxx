@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.3</span>
+   &#160;<span id="projectnumber">v1.0.4</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -103,89 +104,94 @@ $(document).ready(function(){initNavTree('d4/d9b/bus_8h_source.html','../../');}
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> ===============================================================================</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Name        : bus.h</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> Author      : Jason</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> Version     : v1.0.0</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> Date        : 2014/1/1</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> Author      : uCXpresso</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> Version     : v1.0.1</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> Date        : 2014/3/23</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> Copyright   : Copyright (C) www.embeda.com.tw</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> Description :</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> Description : A pins collector class</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> ===============================================================================</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">                                 History</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> ---------+---------+--------------------------------------------+-------------</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> DATE     | VERSION |   DESCRIPTIONS                             |  By</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> ---------+---------+--------------------------------------------+-------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> 2014/1/1   v1.0.0  first edition for nano11Uxx                     Jason</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> ===============================================================================</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef BUS_H_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BUS_H_</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;class/pin.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d89/class_c_bus.html">CBus</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63">CBus</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> <a class="code" href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">pin</a>,...);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#a5f797dca77eb5a86048c65e567a2d233">output</a>();      <span class="comment">// set as an output pin</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#ad45a06493f12aef3d096ac3ed86a3b8f">input</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef">PIN_INPUT_MODE_T</a> mode=<a class="code" href="../../db/dff/group___enumerations.html#gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df">INTERNAL_PULL_UP</a>); <span class="comment">// set as an input pin</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0">write</a>(uint32_t val);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> uint32_t <a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a>&amp;   <a class="code" href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">pin</a>(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#add3835bd7327b63bdaa480938d5a8adc">   76</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> uint32_t() { <span class="keywordflow">return</span> <a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>(); }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a9f639b395906de4549c51deb0a0ad79c">   87</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#a9f639b395906de4549c51deb0a0ad79c">operator = </a>(uint32_t val) { <a class="code" href="../../de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0">write</a>(val); }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068">   92</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068">operator == </a>(uint32_t val) { <span class="keywordflow">return</span> (<a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>()== val ? <span class="keyword">true</span> : <span class="keyword">false</span>); }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6">   97</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6">operator != </a>(uint32_t val) { <span class="keywordflow">return</span> (<a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>()!= val ? <span class="keyword">true</span> : <span class="keyword">false</span>); }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2">  109</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a>&amp; <a class="code" href="../../de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2">operator [] </a>(<span class="keywordtype">int</span> index)   { <span class="keywordflow">return</span> <a class="code" href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">pin</a>(index); }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb">  114</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span>  <a class="code" href="../../de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb">count</a>() { <span class="keywordflow">return</span> m_nPinCount; }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63">CBus</a>();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../de/d89/class_c_bus.html">CBus</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> assign(<a class="code" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> pin, ...);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> assign(<a class="code" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> p, va_list pins);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a>    *m_pins;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">int</span>     m_nPinCount;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> alloc(va_list pins);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> free();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BUS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> 2014/3/23  v1.0.1  Add mode and defValue for output() member.      Jason</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> ===============================================================================</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef BUS_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BUS_H_</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;class/pin.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d89/class_c_bus.html">CBus</a>: <span class="keyword">public</span> <a class="code" href="../../d9/db6/class_c_peripheral.html">CPeripheral</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63">CBus</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> <a class="code" href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">pin</a>,...);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#a1a15e443f8f87426bcd30f9b627fe1c7">output</a>(<a class="code" href="../../db/dff/group___enumerations.html#gac16e35b75166ad7286b8bb78bd244ed2">PIN_OUTPUT_MODE_T</a> mode=<a class="code" href="../../db/dff/group___enumerations.html#ggac16e35b75166ad7286b8bb78bd244ed2afd68b1a66f2a33ce77d4f6c7f8fc998a">NOT_OPEN</a>, <a class="code" href="../../db/dff/group___enumerations.html#ga6f24594071a026b31238ab8cb80d6a80">PIN_LEVEL_T</a> defValue=<a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80a6a226f4143ca3b18999551694cdb72a8">LOW</a>);     <span class="comment">// set as an output pin</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#ad45a06493f12aef3d096ac3ed86a3b8f">input</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef">PIN_INPUT_MODE_T</a> mode=<a class="code" href="../../db/dff/group___enumerations.html#gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df">INTERNAL_PULL_UP</a>); <span class="comment">// set as an input pin</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0">write</a>(uint32_t val);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> uint32_t <a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a>&amp;   <a class="code" href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">pin</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#add3835bd7327b63bdaa480938d5a8adc">   78</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> uint32_t() { <span class="keywordflow">return</span> <a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>(); }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a9f639b395906de4549c51deb0a0ad79c">   89</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d89/class_c_bus.html#a9f639b395906de4549c51deb0a0ad79c">operator = </a>(uint32_t val) { <a class="code" href="../../de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0">write</a>(val); }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068">   94</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068">operator == </a>(uint32_t val) { <span class="keywordflow">return</span> (<a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>()== val ? <span class="keyword">true</span> : <span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6">   99</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6">operator != </a>(uint32_t val) { <span class="keywordflow">return</span> (<a class="code" href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">read</a>()!= val ? <span class="keyword">true</span> : <span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2">  111</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a>&amp; <a class="code" href="../../de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2">operator [] </a>(<span class="keywordtype">int</span> index)   { <span class="keywordflow">return</span> <a class="code" href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">pin</a>(index); }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb">  116</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span>  <a class="code" href="../../de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb">count</a>() { <span class="keywordflow">return</span> m_nPinCount; }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63">CBus</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../de/d89/class_c_bus.html">CBus</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> assign(<a class="code" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> pin, ...);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> assign(<a class="code" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> p, va_list pins);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a>    *m_pins;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span>     m_nPinCount;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> alloc(va_list pins);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> free();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BUS_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_c_bus_html_a5f859ac1582a6cbe9b5b420c6c051e63"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63">CBus::CBus</a></div><div class="ttdeci">CBus(PIN_NAME_T pin,...)</div></div>
+<div class="ttc" id="group___enumerations_html_gga6f24594071a026b31238ab8cb80d6a80a6a226f4143ca3b18999551694cdb72a8"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80a6a226f4143ca3b18999551694cdb72a8">LOW</a></div><div class="ttdoc">LOW level. </div><div class="ttdef"><b>Definition:</b> pin.h:88</div></div>
 <div class="ttc" id="class_c_bus_html_a4852669ff7ae53e68cf125aa49a87bd0"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a4852669ff7ae53e68cf125aa49a87bd0">CBus::write</a></div><div class="ttdeci">virtual void write(uint32_t val)</div></div>
 <div class="ttc" id="class_c_bus_html_ae5c9d649c6f6b22a93fb29e0152a57c1"><div class="ttname"><a href="../../de/d89/class_c_bus.html#ae5c9d649c6f6b22a93fb29e0152a57c1">CBus::read</a></div><div class="ttdeci">virtual uint32_t read()</div></div>
+<div class="ttc" id="group___enumerations_html_ga6f24594071a026b31238ab8cb80d6a80"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ga6f24594071a026b31238ab8cb80d6a80">PIN_LEVEL_T</a></div><div class="ttdeci">PIN_LEVEL_T</div><div class="ttdef"><b>Definition:</b> pin.h:87</div></div>
 <div class="ttc" id="class_c_bus_html_ad45a06493f12aef3d096ac3ed86a3b8f"><div class="ttname"><a href="../../de/d89/class_c_bus.html#ad45a06493f12aef3d096ac3ed86a3b8f">CBus::input</a></div><div class="ttdeci">void input(PIN_INPUT_MODE_T mode=INTERNAL_PULL_UP)</div></div>
-<div class="ttc" id="class_c_bus_html"><div class="ttname"><a href="../../de/d89/class_c_bus.html">CBus</a></div><div class="ttdef"><b>Definition:</b> bus.h:28</div></div>
-<div class="ttc" id="class_c_bus_html_a9f639b395906de4549c51deb0a0ad79c"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a9f639b395906de4549c51deb0a0ad79c">CBus::operator=</a></div><div class="ttdeci">void operator=(uint32_t val)</div><div class="ttdef"><b>Definition:</b> bus.h:87</div></div>
-<div class="ttc" id="class_c_bus_html_a3ea59ccbb16b92e2763a00b3baa10fd6"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6">CBus::operator!=</a></div><div class="ttdeci">bool operator!=(uint32_t val)</div><div class="ttdef"><b>Definition:</b> bus.h:97</div></div>
+<div class="ttc" id="class_c_bus_html"><div class="ttname"><a href="../../de/d89/class_c_bus.html">CBus</a></div><div class="ttdef"><b>Definition:</b> bus.h:29</div></div>
+<div class="ttc" id="class_c_bus_html_a9f639b395906de4549c51deb0a0ad79c"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a9f639b395906de4549c51deb0a0ad79c">CBus::operator=</a></div><div class="ttdeci">void operator=(uint32_t val)</div><div class="ttdef"><b>Definition:</b> bus.h:89</div></div>
+<div class="ttc" id="class_c_bus_html_a3ea59ccbb16b92e2763a00b3baa10fd6"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6">CBus::operator!=</a></div><div class="ttdeci">bool operator!=(uint32_t val)</div><div class="ttdef"><b>Definition:</b> bus.h:99</div></div>
 <div class="ttc" id="class_c_pin_html"><div class="ttname"><a href="../../d7/db9/class_c_pin.html">CPin</a></div><div class="ttdef"><b>Definition:</b> pin.h:98</div></div>
-<div class="ttc" id="class_c_bus_html_a55d1c493025b37e0f34801b8ced31068"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068">CBus::operator==</a></div><div class="ttdeci">bool operator==(uint32_t val)</div><div class="ttdef"><b>Definition:</b> bus.h:92</div></div>
+<div class="ttc" id="class_c_bus_html_a55d1c493025b37e0f34801b8ced31068"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068">CBus::operator==</a></div><div class="ttdeci">bool operator==(uint32_t val)</div><div class="ttdef"><b>Definition:</b> bus.h:94</div></div>
 <div class="ttc" id="group___enumerations_html_gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df">INTERNAL_PULL_UP</a></div><div class="ttdoc">Pin has an on-chip pull-up resistor enabled. </div><div class="ttdef"><b>Definition:</b> pin.h:67</div></div>
 <div class="ttc" id="group___enumerations_html_ga65a2241721e4acb573e0c3fe29ac432f"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a></div><div class="ttdeci">PIN_NAME_T</div><div class="ttdef"><b>Definition:</b> pin.h:27</div></div>
-<div class="ttc" id="class_c_bus_html_a5f797dca77eb5a86048c65e567a2d233"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a5f797dca77eb5a86048c65e567a2d233">CBus::output</a></div><div class="ttdeci">void output()</div></div>
+<div class="ttc" id="group___enumerations_html_gac16e35b75166ad7286b8bb78bd244ed2"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gac16e35b75166ad7286b8bb78bd244ed2">PIN_OUTPUT_MODE_T</a></div><div class="ttdeci">PIN_OUTPUT_MODE_T</div><div class="ttdef"><b>Definition:</b> pin.h:79</div></div>
 <div class="ttc" id="class_c_bus_html_a94da38619defc1c41c16c04c4c7991f8"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8">CBus::pin</a></div><div class="ttdeci">CPin &amp; pin(int index)</div></div>
-<div class="ttc" id="class_c_bus_html_a12e4d076164971de589cbc5b2f6537e2"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2">CBus::operator[]</a></div><div class="ttdeci">CPin &amp; operator[](int index)</div><div class="ttdef"><b>Definition:</b> bus.h:109</div></div>
+<div class="ttc" id="class_c_bus_html_a12e4d076164971de589cbc5b2f6537e2"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a12e4d076164971de589cbc5b2f6537e2">CBus::operator[]</a></div><div class="ttdeci">CPin &amp; operator[](int index)</div><div class="ttdef"><b>Definition:</b> bus.h:111</div></div>
+<div class="ttc" id="class_c_bus_html_a1a15e443f8f87426bcd30f9b627fe1c7"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a1a15e443f8f87426bcd30f9b627fe1c7">CBus::output</a></div><div class="ttdeci">void output(PIN_OUTPUT_MODE_T mode=NOT_OPEN, PIN_LEVEL_T defValue=LOW)</div></div>
 <div class="ttc" id="group___enumerations_html_ga9f8f32709b482732d6e377ff26da36ef"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef">PIN_INPUT_MODE_T</a></div><div class="ttdeci">PIN_INPUT_MODE_T</div><div class="ttdef"><b>Definition:</b> pin.h:66</div></div>
 <div class="ttc" id="class_c_peripheral_html"><div class="ttname"><a href="../../d9/db6/class_c_peripheral.html">CPeripheral</a></div><div class="ttdef"><b>Definition:</b> peripheral.h:27</div></div>
-<div class="ttc" id="class_c_bus_html_a4fa0e4c537c237278fe8092f4d8e26fb"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb">CBus::count</a></div><div class="ttdeci">int count()</div><div class="ttdef"><b>Definition:</b> bus.h:114</div></div>
+<div class="ttc" id="class_c_bus_html_a4fa0e4c537c237278fe8092f4d8e26fb"><div class="ttname"><a href="../../de/d89/class_c_bus.html#a4fa0e4c537c237278fe8092f4d8e26fb">CBus::count</a></div><div class="ttdeci">int count()</div><div class="ttdef"><b>Definition:</b> bus.h:116</div></div>
+<div class="ttc" id="group___enumerations_html_ggac16e35b75166ad7286b8bb78bd244ed2afd68b1a66f2a33ce77d4f6c7f8fc998a"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ggac16e35b75166ad7286b8bb78bd244ed2afd68b1a66f2a33ce77d4f6c7f8fc998a">NOT_OPEN</a></div><div class="ttdoc">Pin is in the normal (not open drain) mode. </div><div class="ttdef"><b>Definition:</b> pin.h:80</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>bus.h</b></li>
-    <li class="footer">Generated on Wed Mar 19 2014 23:12:33 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Mar 24 2014 22:50:47 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

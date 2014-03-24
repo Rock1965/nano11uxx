@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : stream.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.1
  Date		 : 2014/3/19
  Description : Stream Base Class
@@ -84,7 +84,7 @@ public:
 	// Operators
 	//
 
-	/**Operator '<<', to push a byte to stream.
+	/**Operator '<<', to output a byte to stream.
 	 * \code
 	 * CSerial uart;
 	 * uart.enable(19200);
@@ -95,6 +95,20 @@ public:
 	 */
 	virtual inline CStream& operator << (uint8_t c) {
 		write(c);
+		return *this;
+	}
+
+	/**Operator '>>', to input a byte from stream.
+	 * \code
+	 * CSerial uart;
+	 * uart.enable(19200);
+	 *
+	 * uint8_t ch ;
+	 * uart >> ch;
+	 * \endcode
+	 */
+	virtual inline CStream& operator >> (uint8_t c) {
+		c = read();
 		return *this;
 	}
 

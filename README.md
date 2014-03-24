@@ -3,8 +3,15 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
+v1.0.4 rc1 24th March 2014
+--------------------------------
+###Details:
+	1. Add Garbage Collector Handle Template Class : gcHandleT<CType>
+	2. Update Doxygen Documents.
+
+
 v1.0.3 released 20th March 2014
---------------------------	
+--------------------------------	
 ###Features:
 	1. Use interrupt to handle the BLE core, and puhs BLE in to BLOCK status when BLE is in idle mode.
 	2. CSerial (UART) and usbCDC classes supports the semaphore to control the FIFO buffer.

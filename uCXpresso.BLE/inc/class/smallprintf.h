@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : smallprintf.h
- Author      : Jason
+ Author      : uCXpresso
  Version     :
  Date		 : 2011/12/18
  Copyright   : Copyright (C) www.embeda.com.tw

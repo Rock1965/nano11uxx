@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size',['size',['../db/d53/structfifo__t.html#adfe58cd24e80a0d62cf830bcc83f5c01',1,'fifo_t']]]
+  ['refcount',['refcount',['../d2/dc8/struct__gc___1_1_g_c___t.html#a0ca0af7bbf3c73b50fec32e8d77e64dd',1,'_gc_::GC_T']]]
 ];

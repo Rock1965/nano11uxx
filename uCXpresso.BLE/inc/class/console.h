@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : console.h
- Author      : Jason
+ Author      : uCXpresso
  Version     :
  Date		 : 2014/1/1
  Copyright   : Copyright (C) www.embeda.com.tw

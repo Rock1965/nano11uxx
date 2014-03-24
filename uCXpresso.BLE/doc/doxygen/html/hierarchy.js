@@ -1,6 +1,9 @@
 var hierarchy =
 [
     [ "CObject", "dc/dac/class_c_object.html", [
+      [ "_gc_", "df/dee/class__gc__.html", [
+        [ "gcHandleT< CType >", "d4/ddd/classgc_handle_t.html", null ]
+      ] ],
       [ "CEventBit", "dd/d60/class_c_event_bit.html", null ],
       [ "CList", "df/db6/class_c_list.html", [
         [ "CListT< CType >", "da/d59/class_c_list_t.html", null ]
@@ -50,6 +53,6 @@ var hierarchy =
       [ "CTimeout", "d5/d5b/class_c_timeout.html", null ]
     ] ],
     [ "fifo_t", "db/d53/structfifo__t.html", null ],
-    [ "IP_ADDR_T", "d0/dcc/union_i_p___a_d_d_r___t.html", null ],
+    [ "_gc_::GC_T", "d2/dc8/struct__gc___1_1_g_c___t.html", null ],
     [ "PACK_STRUCT", "dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html", null ]
 ];
