@@ -1,0 +1,13 @@
+digraph "CStream::read"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CStream::read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CStream::operator\>\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d16/class_c_stream.html#af2bd1778d5f5cfab469e5df615e1c8fc"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CStream::operator uint8_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d16/class_c_stream.html#acbaa22d4608c1a015a20104fde6c8ccf"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CStream::operator char",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7"];
+}

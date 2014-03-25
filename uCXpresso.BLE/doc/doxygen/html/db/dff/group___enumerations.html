@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li><a href="../../annotated.html"><span>Classes</span></a></li>
+      <li><a href="../../examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -363,111 +364,108 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga42b352f4817787f82d2adcffd4793ad9"></a>
+<a class="anchor" id="gafdc7d73c1364c4d42f80cfdc702de294"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga42b352f4817787f82d2adcffd4793ad9">VID_SOURCE_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#gafdc7d73c1364c4d42f80cfdc702de294">BLE_DISCONNECT_REASON_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_devinfo.h&gt;</code></p>
-<p>Vendor Id Source for Device Information (BLE). </p>
+<p><code>#include &lt;ble_serial.h&gt;</code></p>
+<p>Disconnect a BLE connection with a reason. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga42b352f4817787f82d2adcffd4793ad9abb49a7689b3186fe7da6b61eeb6a207d"></a>VS_REV</em>&#160;</td><td class="fielddoc">
-<p>Reserved for future use. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b"></a>BLE_TERMINATED</em>&#160;</td><td class="fielddoc">
+<p>Request termination of the connection with the peer device with the reason "Remote user terminated connection". </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga42b352f4817787f82d2adcffd4793ad9aee983b596859c3b849a073596459d38c"></a>VS_SIG</em>&#160;</td><td class="fielddoc">
-<p>Bluetooth SIG assigned Company Identifier value from the Assigned Numbers document. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga42b352f4817787f82d2adcffd4793ad9a704d8d311290a7c789e3902af79ae043"></a>VS_USB</em>&#160;</td><td class="fielddoc">
-<p>USB Implementer’s Forum assigned Vendor ID value. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="ggafdc7d73c1364c4d42f80cfdc702de294a0951f45ff7c03c7b46d1f96332c8fc27"></a>BLE_UNACCEPTABLE</em>&#160;</td><td class="fielddoc">
+<p>Request termination of the link with the peer device with the reason "Unacceptable connection timing". </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga142ef314a313f7071c544be2939c13a3"></a>
+<a class="anchor" id="ga6c00522f6a8c33135ee0414877d42c04"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga142ef314a313f7071c544be2939c13a3">hrsl_code_t</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga6c00522f6a8c33135ee0414877d42c04">BLE_ERR_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_heartrate.h&gt;</code></p>
-<p>Body Sensor Location </p>
+<p><code>#include &lt;ble_serial.h&gt;</code></p>
+<p>BLE error code </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a1fef127f1d4f2ed5625f5cf201319869"></a>HRSL_OTHER</em>&#160;</td><td class="fielddoc">
-<p>Other. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04a4b3ee10917919fa72598e8c8a0131342"></a>BLE_ERR_OK</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a6646a23f8ba502cee080a9a747349dae"></a>HRSL_CHEST</em>&#160;</td><td class="fielddoc">
-<p>Chest. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04aaa0c52ac5b1905e8035c78aeed3d1db4"></a>BLE_ERR_HW</em>&#160;</td><td class="fielddoc">
+<p>Hardware Error. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a69db22e836192e959df20b9d7e322460"></a>HRSL_WRIST</em>&#160;</td><td class="fielddoc">
-<p>Wrist. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04a54530870fb2878254b47f1e0650456ef"></a>BLE_ERR_BUF</em>&#160;</td><td class="fielddoc">
+<p>Sender queue buffer was full. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a677a2bce35979f3240d4c031b4504b3e"></a>HRSL_FINGER</em>&#160;</td><td class="fielddoc">
-<p>Finger. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04aaa3bd3b90312f5e85fc132b5d4a1a62a"></a>BLE_ERR_ACK_TIMEOUT</em>&#160;</td><td class="fielddoc">
+<p>ACK timeout. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a374b43fb17807d51232d35ef7b53dd5f"></a>HRSL_HAND</em>&#160;</td><td class="fielddoc">
-<p>Hand. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04a1cf05a76d9f21338d5297bbc4bcbc355"></a>BLE_ERR_RSP_TIMEOUT</em>&#160;</td><td class="fielddoc">
+<p>Response timeout. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a500c23539eeecc80f5d0895db91dee94"></a>HRSL_EAR_LOBE</em>&#160;</td><td class="fielddoc">
-<p>Ear Lobe. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a3d7f638193a65fda264d54f05ee0275f"></a>HRSL_FOOT</em>&#160;</td><td class="fielddoc">
-<p>Foot. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04ac08af44027b924f6026dac945b00cbac"></a>BLE_ERR_DAT_TIMEOUT</em>&#160;</td><td class="fielddoc">
+<p>Core data timeout. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga05f649a99eaf5a7d66679d1b1d30c2e3"></a>
+<a class="anchor" id="ga3b6d6db9e13e93ae21f2a383d9903617"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga05f649a99eaf5a7d66679d1b1d30c2e3">hrcp_op_codes_t</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga3b6d6db9e13e93ae21f2a383d9903617">BLE_TX_POWER_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_heartrate.h&gt;</code></p>
-<p>Possible Heart Rate Control Point Opcodes </p>
+<p><code>#include &lt;ble_serial.h&gt;</code></p>
+<p>setTxPower sets the output power level of the Bluetooth Low Energy radio. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga05f649a99eaf5a7d66679d1b1d30c2e3a6dc2044db07e52a55ab5d9b2f4b520ba"></a>HRCP_OPCODE_NULL</em>&#160;</td><td class="fielddoc">
-<p>Reserved for future use (Operator:N/A) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a5c98a88cfa9a664b8d96aa6a03ba53d9"></a>BLE_TX_m18dBm</em>&#160;</td><td class="fielddoc">
+<p>-18dBm (Low) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga05f649a99eaf5a7d66679d1b1d30c2e3ad8b7d6844bd068d48dd91bb711719f98"></a>HRCP_OPCODE_RESET_ENERY_EXPENDED</em>&#160;</td><td class="fielddoc">
-<p>Resets the value of the Energy Expended field in the Heart Rate Measurement characteristic to 0. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a3bb453927e41ed489d5783eb01a432b6"></a>BLE_TX_m12dBm</em>&#160;</td><td class="fielddoc">
+<p>-12dBm </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a1db610898779c31e5fe4b7cda75c8b4e"></a>BLE_TX_m6dBm</em>&#160;</td><td class="fielddoc">
+<p>-6dBm </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a657bee3a9a945c511d573971038ccd54"></a>BLE_TX_0dBm</em>&#160;</td><td class="fielddoc">
+<p>0dBm (High) </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga5daf78dd74d394978ce4ceda96dd7492"></a>
+<a class="anchor" id="ga8b4e2a4f4daed571cb20270b8a98d247"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga5daf78dd74d394978ce4ceda96dd7492">hrcp_error_codes_t</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga8b4e2a4f4daed571cb20270b8a98d247">EDGE_STATE_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_heartrate.h&gt;</code></p>
-<p>Attribute Protocol Application Error codes </p>
+<p><code>#include &lt;pinint.h&gt;</code></p>
+<p>Interrupt Edge Enumerations </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga5daf78dd74d394978ce4ceda96dd7492a6dc6b7445a9e853714c84fb090fdf291"></a>HRCP_ERR_OK</em>&#160;</td><td class="fielddoc">
-<p>No error in control point command. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga8b4e2a4f4daed571cb20270b8a98d247ad24712a6a30c1d431b927d1ba2f84b66"></a>FALLING</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga5daf78dd74d394978ce4ceda96dd7492a7940ba0f1405e01e785b902274d80ff1"></a>HRCP_ERR_CONTROL_POINT_NOT_SUPPORTED</em>&#160;</td><td class="fielddoc">
-<p>The received Heart Rate Control Point value is not supported. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga8b4e2a4f4daed571cb20270b8a98d247ad93abe7aced82e9a4fcac4127a36ece3"></a>RISING</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -520,87 +518,85 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gafdc7d73c1364c4d42f80cfdc702de294"></a>
+<a class="anchor" id="ga5daf78dd74d394978ce4ceda96dd7492"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#gafdc7d73c1364c4d42f80cfdc702de294">BLE_DISCONNECT_REASON_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga5daf78dd74d394978ce4ceda96dd7492">hrcp_error_codes_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_serial.h&gt;</code></p>
-<p>Disconnect a BLE connection with a reason. </p>
+<p><code>#include &lt;ble_heartrate.h&gt;</code></p>
+<p>Attribute Protocol Application Error codes </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b"></a>BLE_TERMINATED</em>&#160;</td><td class="fielddoc">
-<p>Request termination of the connection with the peer device with the reason "Remote user terminated connection". </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga5daf78dd74d394978ce4ceda96dd7492a6dc6b7445a9e853714c84fb090fdf291"></a>HRCP_ERR_OK</em>&#160;</td><td class="fielddoc">
+<p>No error in control point command. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggafdc7d73c1364c4d42f80cfdc702de294a0951f45ff7c03c7b46d1f96332c8fc27"></a>BLE_UNACCEPTABLE</em>&#160;</td><td class="fielddoc">
-<p>Request termination of the link with the peer device with the reason "Unacceptable connection timing". </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5daf78dd74d394978ce4ceda96dd7492a7940ba0f1405e01e785b902274d80ff1"></a>HRCP_ERR_CONTROL_POINT_NOT_SUPPORTED</em>&#160;</td><td class="fielddoc">
+<p>The received Heart Rate Control Point value is not supported. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga3b6d6db9e13e93ae21f2a383d9903617"></a>
+<a class="anchor" id="ga05f649a99eaf5a7d66679d1b1d30c2e3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga3b6d6db9e13e93ae21f2a383d9903617">BLE_TX_POWER_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga05f649a99eaf5a7d66679d1b1d30c2e3">hrcp_op_codes_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_serial.h&gt;</code></p>
-<p>setTxPower sets the output power level of the Bluetooth Low Energy radio. </p>
+<p><code>#include &lt;ble_heartrate.h&gt;</code></p>
+<p>Possible Heart Rate Control Point Opcodes </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a5c98a88cfa9a664b8d96aa6a03ba53d9"></a>BLE_TX_m18dBm</em>&#160;</td><td class="fielddoc">
-<p>-18dBm (Low) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga05f649a99eaf5a7d66679d1b1d30c2e3a6dc2044db07e52a55ab5d9b2f4b520ba"></a>HRCP_OPCODE_NULL</em>&#160;</td><td class="fielddoc">
+<p>Reserved for future use (Operator:N/A) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a3bb453927e41ed489d5783eb01a432b6"></a>BLE_TX_m12dBm</em>&#160;</td><td class="fielddoc">
-<p>-12dBm </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a1db610898779c31e5fe4b7cda75c8b4e"></a>BLE_TX_m6dBm</em>&#160;</td><td class="fielddoc">
-<p>-6dBm </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga3b6d6db9e13e93ae21f2a383d9903617a657bee3a9a945c511d573971038ccd54"></a>BLE_TX_0dBm</em>&#160;</td><td class="fielddoc">
-<p>0dBm (High) </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga05f649a99eaf5a7d66679d1b1d30c2e3ad8b7d6844bd068d48dd91bb711719f98"></a>HRCP_OPCODE_RESET_ENERY_EXPENDED</em>&#160;</td><td class="fielddoc">
+<p>Resets the value of the Energy Expended field in the Heart Rate Measurement characteristic to 0. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga6c00522f6a8c33135ee0414877d42c04"></a>
+<a class="anchor" id="ga142ef314a313f7071c544be2939c13a3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga6c00522f6a8c33135ee0414877d42c04">BLE_ERR_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga142ef314a313f7071c544be2939c13a3">hrsl_code_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;ble_serial.h&gt;</code></p>
-<p>BLE error code </p>
+<p><code>#include &lt;ble_heartrate.h&gt;</code></p>
+<p>Body Sensor Location </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04a4b3ee10917919fa72598e8c8a0131342"></a>BLE_ERR_OK</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a1fef127f1d4f2ed5625f5cf201319869"></a>HRSL_OTHER</em>&#160;</td><td class="fielddoc">
+<p>Other. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04aaa0c52ac5b1905e8035c78aeed3d1db4"></a>BLE_ERR_HW</em>&#160;</td><td class="fielddoc">
-<p>Hardware Error. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a6646a23f8ba502cee080a9a747349dae"></a>HRSL_CHEST</em>&#160;</td><td class="fielddoc">
+<p>Chest. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04a54530870fb2878254b47f1e0650456ef"></a>BLE_ERR_BUF</em>&#160;</td><td class="fielddoc">
-<p>Sender queue buffer was full. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a69db22e836192e959df20b9d7e322460"></a>HRSL_WRIST</em>&#160;</td><td class="fielddoc">
+<p>Wrist. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04aaa3bd3b90312f5e85fc132b5d4a1a62a"></a>BLE_ERR_ACK_TIMEOUT</em>&#160;</td><td class="fielddoc">
-<p>ACK timeout. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a677a2bce35979f3240d4c031b4504b3e"></a>HRSL_FINGER</em>&#160;</td><td class="fielddoc">
+<p>Finger. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04a1cf05a76d9f21338d5297bbc4bcbc355"></a>BLE_ERR_RSP_TIMEOUT</em>&#160;</td><td class="fielddoc">
-<p>Response timeout. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a374b43fb17807d51232d35ef7b53dd5f"></a>HRSL_HAND</em>&#160;</td><td class="fielddoc">
+<p>Hand. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6c00522f6a8c33135ee0414877d42c04ac08af44027b924f6026dac945b00cbac"></a>BLE_ERR_DAT_TIMEOUT</em>&#160;</td><td class="fielddoc">
-<p>Core data timeout. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a500c23539eeecc80f5d0895db91dee94"></a>HRSL_EAR_LOBE</em>&#160;</td><td class="fielddoc">
+<p>Ear Lobe. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga142ef314a313f7071c544be2939c13a3a3d7f638193a65fda264d54f05ee0275f"></a>HRSL_FOOT</em>&#160;</td><td class="fielddoc">
+<p>Foot. </p>
 </td></tr>
 </table>
 
@@ -632,6 +628,65 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggae2de52b3324336037756b7c011706177a2cac9caecd6bbd3b917fcad0abbdece3"></a>I2C_TIME_OUT</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a"></a>I2C_OK</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga9f8f32709b482732d6e377ff26da36ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef">PIN_INPUT_MODE_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;pin.h&gt;</code></p>
+<p>When PIN as an input, the PIN_MODE control the input mode of all ports. This includes the use of the on-chip pull-up/pull-down resistor feature and a special open drain operating mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df"></a>INTERNAL_PULL_UP</em>&#160;</td><td class="fielddoc">
+<p>Pin has an on-chip pull-up resistor enabled. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa415b70b8108c51e396b88eeeaa0ffb1a"></a>REPEATER</em>&#160;</td><td class="fielddoc">
+<p>enables the pull-up resistor if the pin is at a logic high, <br/>
+ &lt; enables the pull-down resistor if the pin is at a logic low </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa013572cb02b52b1022858df73a528a08"></a>NEITHER</em>&#160;</td><td class="fielddoc">
+<p>Pin has neither pull-up nor pull-down resistor enabled. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa1d483952a85ba6abceffda2c06623326"></a>INTERNAL_PULL_DOWN</em>&#160;</td><td class="fielddoc">
+<p>Pin has an on-chip pull-down resistor enabled. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga6f24594071a026b31238ab8cb80d6a80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga6f24594071a026b31238ab8cb80d6a80">PIN_LEVEL_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;pin.h&gt;</code></p>
+<p>Pin level defined </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80a6a226f4143ca3b18999551694cdb72a8"></a>LOW</em>&#160;</td><td class="fielddoc">
+<p>LOW level. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80a0c3a1dacf94061154b3ee354359c5893"></a>HIGH</em>&#160;</td><td class="fielddoc">
+<p>HIGH level. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80afc0ca8cc6cbe215fd3f1ae6d40255b40"></a>LED_OFF</em>&#160;</td><td class="fielddoc">
+<p>LED_OFF. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d"></a>LED_ON</em>&#160;</td><td class="fielddoc">
+<p>LED_ON. </p>
 </td></tr>
 </table>
 
@@ -741,36 +796,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9f8f32709b482732d6e377ff26da36ef"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef">PIN_INPUT_MODE_T</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>#include &lt;pin.h&gt;</code></p>
-<p>When PIN as an input, the PIN_MODE control the input mode of all ports. This includes the use of the on-chip pull-up/pull-down resistor feature and a special open drain operating mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df"></a>INTERNAL_PULL_UP</em>&#160;</td><td class="fielddoc">
-<p>Pin has an on-chip pull-up resistor enabled. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa415b70b8108c51e396b88eeeaa0ffb1a"></a>REPEATER</em>&#160;</td><td class="fielddoc">
-<p>enables the pull-up resistor if the pin is at a logic high, <br/>
- &lt; enables the pull-down resistor if the pin is at a logic low </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa013572cb02b52b1022858df73a528a08"></a>NEITHER</em>&#160;</td><td class="fielddoc">
-<p>Pin has neither pull-up nor pull-down resistor enabled. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga9f8f32709b482732d6e377ff26da36efa1d483952a85ba6abceffda2c06623326"></a>INTERNAL_PULL_DOWN</em>&#160;</td><td class="fielddoc">
-<p>Pin has an on-chip pull-down resistor enabled. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a class="anchor" id="gac16e35b75166ad7286b8bb78bd244ed2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -794,51 +819,33 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga6f24594071a026b31238ab8cb80d6a80"></a>
+<a class="anchor" id="ga51e24e4c0498282f564e92975e020c1d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga6f24594071a026b31238ab8cb80d6a80">PIN_LEVEL_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>#include &lt;pin.h&gt;</code></p>
-<p>Pin level defined </p>
+<p><code>#include &lt;thread.h&gt;</code></p>
+<p>Task priorities define </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80a6a226f4143ca3b18999551694cdb72a8"></a>LOW</em>&#160;</td><td class="fielddoc">
-<p>LOW level. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402"></a>PRI_LOW</em>&#160;</td><td class="fielddoc">
+<p>low priorities is for all normal tasks used. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80a0c3a1dacf94061154b3ee354359c5893"></a>HIGH</em>&#160;</td><td class="fielddoc">
-<p>HIGH level. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1da79f9a58f2b2fb4dcce4589cd93a5e3f8"></a>PRI_MEDIUM</em>&#160;</td><td class="fielddoc">
+<p>medium </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80afc0ca8cc6cbe215fd3f1ae6d40255b40"></a>LED_OFF</em>&#160;</td><td class="fielddoc">
-<p>LED_OFF. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1dae366c91784dd520e388c90d0e3770b2b"></a>PRI_HIGH</em>&#160;</td><td class="fielddoc">
+<p>high </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d"></a>LED_ON</em>&#160;</td><td class="fielddoc">
-<p>LED_ON. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1dae497885a7abaca97e8daf75b84bb67da"></a>PRI_SUPER</em>&#160;</td><td class="fielddoc">
+<p>super </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga8b4e2a4f4daed571cb20270b8a98d247"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga8b4e2a4f4daed571cb20270b8a98d247">EDGE_STATE_T</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>#include &lt;pinint.h&gt;</code></p>
-<p>Interrupt Edge Enumerations </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga8b4e2a4f4daed571cb20270b8a98d247ad24712a6a30c1d431b927d1ba2f84b66"></a>FALLING</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8b4e2a4f4daed571cb20270b8a98d247ad93abe7aced82e9a4fcac4127a36ece3"></a>RISING</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1da47d8cd9e6c142378614cf48f5ecd78e5"></a>PRI_HARDWARE</em>&#160;</td><td class="fielddoc">
+<p>for hardware interrupt </p>
 </td></tr>
 </table>
 
@@ -896,24 +903,23 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1adbe6bf70e3880dc6b9f86e58bb7f98"></a>
+<a class="anchor" id="ga0d0ec25638f753b00013a2a99fed1ef4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga1adbe6bf70e3880dc6b9f86e58bb7f98">SPI_PORT_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga0d0ec25638f753b00013a2a99fed1ef4">SPI_BIT_ORDER_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;spi.h&gt;</code></p>
-<p>SPI Data Bits between the 8 and 16 </p>
+<p>SPI Bit Order </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4"></a>SPI0</em>&#160;</td><td class="fielddoc">
-<p>default spi port </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga0d0ec25638f753b00013a2a99fed1ef4a3fa35f661bf7fbb96c05ff70827553be"></a>SPI_MSBFIRST</em>&#160;</td><td class="fielddoc">
+<p>default </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185"></a>SPI1</em>&#160;</td><td class="fielddoc">
-<p>internal used!! </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga0d0ec25638f753b00013a2a99fed1ef4a183d076e845f5ea5d99465cd6aff505f"></a>SPI_LSBFIRST</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -992,23 +998,24 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0d0ec25638f753b00013a2a99fed1ef4"></a>
+<a class="anchor" id="ga1adbe6bf70e3880dc6b9f86e58bb7f98"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga0d0ec25638f753b00013a2a99fed1ef4">SPI_BIT_ORDER_T</a></td>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga1adbe6bf70e3880dc6b9f86e58bb7f98">SPI_PORT_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;spi.h&gt;</code></p>
-<p>SPI Bit Order </p>
+<p>SPI Data Bits between the 8 and 16 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga0d0ec25638f753b00013a2a99fed1ef4a3fa35f661bf7fbb96c05ff70827553be"></a>SPI_MSBFIRST</em>&#160;</td><td class="fielddoc">
-<p>default </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4"></a>SPI0</em>&#160;</td><td class="fielddoc">
+<p>default spi port </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga0d0ec25638f753b00013a2a99fed1ef4a183d076e845f5ea5d99465cd6aff505f"></a>SPI_LSBFIRST</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185"></a>SPI1</em>&#160;</td><td class="fielddoc">
+<p>internal used!! </p>
 </td></tr>
 </table>
 
@@ -1032,38 +1039,6 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga422c6f9cdd9566ccf18ef0b43bcbc654abc98c1546fe12d3fceb1f86cf670faa9"></a>SPI_SLAVE</em>&#160;</td><td class="fielddoc">
 <p>Slave. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga51e24e4c0498282f564e92975e020c1d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>#include &lt;thread.h&gt;</code></p>
-<p>Task priorities define </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402"></a>PRI_LOW</em>&#160;</td><td class="fielddoc">
-<p>low priorities is for all normal tasks used. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1da79f9a58f2b2fb4dcce4589cd93a5e3f8"></a>PRI_MEDIUM</em>&#160;</td><td class="fielddoc">
-<p>medium </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1dae366c91784dd520e388c90d0e3770b2b"></a>PRI_HIGH</em>&#160;</td><td class="fielddoc">
-<p>high </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1dae497885a7abaca97e8daf75b84bb67da"></a>PRI_SUPER</em>&#160;</td><td class="fielddoc">
-<p>super </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga51e24e4c0498282f564e92975e020c1da47d8cd9e6c142378614cf48f5ecd78e5"></a>PRI_HARDWARE</em>&#160;</td><td class="fielddoc">
-<p>for hardware interrupt </p>
 </td></tr>
 </table>
 
@@ -1127,12 +1102,38 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga42b352f4817787f82d2adcffd4793ad9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga42b352f4817787f82d2adcffd4793ad9">VID_SOURCE_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;ble_devinfo.h&gt;</code></p>
+<p>Vendor Id Source for Device Information (BLE). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga42b352f4817787f82d2adcffd4793ad9abb49a7689b3186fe7da6b61eeb6a207d"></a>VS_REV</em>&#160;</td><td class="fielddoc">
+<p>Reserved for future use. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga42b352f4817787f82d2adcffd4793ad9aee983b596859c3b849a073596459d38c"></a>VS_SIG</em>&#160;</td><td class="fielddoc">
+<p>Bluetooth SIG assigned Company Identifier value from the Assigned Numbers document. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga42b352f4817787f82d2adcffd4793ad9a704d8d311290a7c789e3902af79ae043"></a>VS_USB</em>&#160;</td><td class="fielddoc">
+<p>USB Implementer’s Forum assigned Vendor ID value. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 24 2014 22:50:48 for uCXpresso.BLE by
+    <li class="footer">Generated on Tue Mar 25 2014 20:38:14 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

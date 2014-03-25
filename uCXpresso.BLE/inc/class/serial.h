@@ -193,4 +193,9 @@ private:
 #define UART_LSR_RXFE	(1<<7)		// Error in RX FIFO
 #define UART_LSR_TXERR	(1<<8)		// Tx Error
 
+/**\example /peripheral/uart/src/main.cpp
+ * This is an example of how to use the CSerial class.
+ * More details about this example.
+ */
+
 #endif /* STREAM_H_ */

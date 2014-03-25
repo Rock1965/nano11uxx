@@ -1,0 +1,13 @@
+digraph "CBus::read"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CBus::read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CBus::operator uint32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d89/class_c_bus.html#add3835bd7327b63bdaa480938d5a8adc"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CBus::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d89/class_c_bus.html#a55d1c493025b37e0f34801b8ced31068"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CBus::operator!=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d89/class_c_bus.html#a3ea59ccbb16b92e2763a00b3baa10fd6"];
+}

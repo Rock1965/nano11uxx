@@ -198,4 +198,9 @@ protected:
 	/// @endcond
 };
 
+/**\example /peripheral/spi/src/main.cpp
+ * This is an example of how to use the CSpiMaster class.
+ * More details about this example.
+ */
+
 #endif /* SPI_H_ */

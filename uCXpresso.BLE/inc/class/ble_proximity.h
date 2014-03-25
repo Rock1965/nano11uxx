@@ -83,4 +83,9 @@ protected:
 	/*! \endcond */
 };
 
+/**\example /ble/ble_proximity/src/main.cpp
+ * This is an example of how to use the bleProximity class.
+ * More details about this example.
+ */
+
 #endif /* BLE_PROXIMITY_H_ */

@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
+      <li><a href="../../examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -107,6 +108,7 @@ $(document).ready(function(){initNavTree('d4/d37/class_c_debug.html','../../');}
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d8/d0b/class_c_debug-members.html">List of all members</a>  </div>
@@ -161,31 +163,41 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3c07626045ffa3227794e7cc080f5e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1359725fca8337c5967a3c1811c460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/class_c_debug.html#a5a1359725fca8337c5967a3c1811c460">operator bool</a> ()</td></tr>
 <tr class="separator:a5a1359725fca8337c5967a3c1811c460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_c_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_thread')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a></td></tr>
-<tr class="memitem:a3ebabcc071634508511ae2fc7b868ab7 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a3ebabcc071634508511ae2fc7b868ab7">start</a> (const char *name, int stack=DEF_THREAD_STACK, <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a> priority=<a class="el" href="../../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402">PRI_LOW</a>)</td></tr>
-<tr class="separator:a3ebabcc071634508511ae2fc7b868ab7 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8c53aa8c145fc4ac70fa6d825b95742 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ac8c53aa8c145fc4ac70fa6d825b95742">resume</a> ()</td></tr>
-<tr class="separator:ac8c53aa8c145fc4ac70fa6d825b95742 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53e71e6db2221cd1c45aec21953d4aad inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a53e71e6db2221cd1c45aec21953d4aad">suspend</a> ()</td></tr>
-<tr class="separator:a53e71e6db2221cd1c45aec21953d4aad inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0227eda51725b795a461a768703f588 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ac0227eda51725b795a461a768703f588">getStackHighWaterMark</a> ()</td></tr>
-<tr class="separator:ac0227eda51725b795a461a768703f588 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51dbe9909ce528b4113d2cc27314e965 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965">isSuspend</a> ()</td></tr>
-<tr class="separator:a51dbe9909ce528b4113d2cc27314e965 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e9cce461d8dfb3889cea24f1a703f6f inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#ga25ee4013cc565a18ac2f4039b4ad441b">TASK_STATE_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a1e9cce461d8dfb3889cea24f1a703f6f">getState</a> ()</td></tr>
-<tr class="separator:a1e9cce461d8dfb3889cea24f1a703f6f inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b0703ae0cc085a0c0aaa55b6945575b inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a6b0703ae0cc085a0c0aaa55b6945575b">setPriority</a> (<a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a> p)</td></tr>
-<tr class="separator:a6b0703ae0cc085a0c0aaa55b6945575b inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30b0a1f51549a97b88771692319c0e4 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ac30b0a1f51549a97b88771692319c0e4">getPriority</a> ()</td></tr>
-<tr class="separator:ac30b0a1f51549a97b88771692319c0e4 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa291909bc3ff7cc0decf46c885a7a725 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">LPCTSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#aa291909bc3ff7cc0decf46c885a7a725">getName</a> ()</td></tr>
-<tr class="separator:aa291909bc3ff7cc0decf46c885a7a725 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0f0727be4714cef1e24150a869d403 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a> ()</td></tr>
-<tr class="separator:a4a0f0727be4714cef1e24150a869d403 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15041136818470124d097d790d55a6e5 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a15041136818470124d097d790d55a6e5">kill</a> ()</td></tr>
-<tr class="separator:a15041136818470124d097d790d55a6e5 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2513fd0fcad30e2e6605609c91f1984 inherit pub_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread</a> ()</td></tr>
-<tr class="separator:ab2513fd0fcad30e2e6605609c91f1984 inherit pub_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebabcc071634508511ae2fc7b868ab7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a3ebabcc071634508511ae2fc7b868ab7">start</a> (const char *name, int stack=DEF_THREAD_STACK, <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a> priority=<a class="el" href="../../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402">PRI_LOW</a>)</td></tr>
+<tr class="separator:a3ebabcc071634508511ae2fc7b868ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c53aa8c145fc4ac70fa6d825b95742"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ac8c53aa8c145fc4ac70fa6d825b95742">resume</a> ()</td></tr>
+<tr class="separator:ac8c53aa8c145fc4ac70fa6d825b95742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e71e6db2221cd1c45aec21953d4aad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a53e71e6db2221cd1c45aec21953d4aad">suspend</a> ()</td></tr>
+<tr class="separator:a53e71e6db2221cd1c45aec21953d4aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0227eda51725b795a461a768703f588"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ac0227eda51725b795a461a768703f588">getStackHighWaterMark</a> ()</td></tr>
+<tr class="separator:ac0227eda51725b795a461a768703f588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dbe9909ce528b4113d2cc27314e965"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965">isSuspend</a> ()</td></tr>
+<tr class="separator:a51dbe9909ce528b4113d2cc27314e965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9cce461d8dfb3889cea24f1a703f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#ga25ee4013cc565a18ac2f4039b4ad441b">TASK_STATE_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a1e9cce461d8dfb3889cea24f1a703f6f">getState</a> ()</td></tr>
+<tr class="separator:a1e9cce461d8dfb3889cea24f1a703f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0703ae0cc085a0c0aaa55b6945575b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a6b0703ae0cc085a0c0aaa55b6945575b">setPriority</a> (<a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a> p)</td></tr>
+<tr class="separator:a6b0703ae0cc085a0c0aaa55b6945575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30b0a1f51549a97b88771692319c0e4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ac30b0a1f51549a97b88771692319c0e4">getPriority</a> ()</td></tr>
+<tr class="separator:ac30b0a1f51549a97b88771692319c0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa291909bc3ff7cc0decf46c885a7a725"><td class="memItemLeft" align="right" valign="top">LPCTSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#aa291909bc3ff7cc0decf46c885a7a725">getName</a> ()</td></tr>
+<tr class="separator:aa291909bc3ff7cc0decf46c885a7a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0f0727be4714cef1e24150a869d403"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a> ()</td></tr>
+<tr class="separator:a4a0f0727be4714cef1e24150a869d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15041136818470124d097d790d55a6e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a15041136818470124d097d790d55a6e5">kill</a> ()</td></tr>
+<tr class="separator:a15041136818470124d097d790d55a6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2513fd0fcad30e2e6605609c91f1984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread</a> ()</td></tr>
+<tr class="separator:ab2513fd0fcad30e2e6605609c91f1984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a743d4325b7e7da494283f3292773ff77"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a743d4325b7e7da494283f3292773ff77">resumeAll</a> ()</td></tr>
+<tr class="separator:a743d4325b7e7da494283f3292773ff77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c09328581bd4e4a3e9e793f3376a92a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a">suspendAll</a> ()</td></tr>
+<tr class="separator:a2c09328581bd4e4a3e9e793f3376a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4cafe42d6cfc41294cf5dedcee8678"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678">enterCriticalSection</a> ()</td></tr>
+<tr class="separator:aeb4cafe42d6cfc41294cf5dedcee8678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3a51062666552690be49b8e8027161"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161">exitCriticalSection</a> ()</td></tr>
+<tr class="separator:aab3a51062666552690be49b8e8027161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -200,20 +212,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1e4ada8bb77d3cbcfaf614f0a657d6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8a50a383cc0f5ddd26efb72d6b4794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d0d/class_c_mutex.html">CMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">m_mutex</a></td></tr>
 <tr class="separator:a5c8a50a383cc0f5ddd26efb72d6b4794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_class_c_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_c_thread')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a></td></tr>
-<tr class="memitem:a743d4325b7e7da494283f3292773ff77 inherit pub_static_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a743d4325b7e7da494283f3292773ff77">resumeAll</a> ()</td></tr>
-<tr class="separator:a743d4325b7e7da494283f3292773ff77 inherit pub_static_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c09328581bd4e4a3e9e793f3376a92a inherit pub_static_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a">suspendAll</a> ()</td></tr>
-<tr class="separator:a2c09328581bd4e4a3e9e793f3376a92a inherit pub_static_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4cafe42d6cfc41294cf5dedcee8678 inherit pub_static_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678">enterCriticalSection</a> ()</td></tr>
-<tr class="separator:aeb4cafe42d6cfc41294cf5dedcee8678 inherit pub_static_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab3a51062666552690be49b8e8027161 inherit pub_static_methods_class_c_thread"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161">exitCriticalSection</a> ()</td></tr>
-<tr class="separator:aab3a51062666552690be49b8e8027161 inherit pub_static_methods_class_c_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html#_a16">/ble/ble_heartrate/src/main.cpp</a>, <a class="el" href="../../d5/df3/_2ble_2ble_multiple_2src_2main_8cpp-example.html#_a23">/ble/ble_multiple/src/main.cpp</a>, <a class="el" href="../../d7/d19/_2ble_2ble_proximity_2src_2main_8cpp-example.html#_a15">/ble/ble_proximity/src/main.cpp</a>, <a class="el" href="../../db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html#_a15">/misc/garbage_collector/src/main.cpp</a>, <a class="el" href="../../d5/dec/_2peripheral_2adc_2src_2main_8cpp-example.html#_a4">/peripheral/adc/src/main.cpp</a>, <a class="el" href="../../de/dd2/_2peripheral_2eeprom_2src_2main_8cpp-example.html#_a4">/peripheral/eeprom/src/main.cpp</a>, <a class="el" href="../../d9/da4/_2peripheral_2power_2src_2main_8cpp-example.html#_a10">/peripheral/power/src/main.cpp</a>, <a class="el" href="../../d5/d72/_2peripheral_2spi_2src_2main_8cpp-example.html#_a4">/peripheral/spi/src/main.cpp</a>, <a class="el" href="../../d3/d38/_2peripheral_2timer_2src_2main_8cpp-example.html#_a4">/peripheral/timer/src/main.cpp</a>, <a class="el" href="../../d1/d0a/_2peripheral_2uart_2src_2main_8cpp-example.html#_a10">/peripheral/uart/src/main.cpp</a>, <a class="el" href="../../d0/d46/_2peripheral_2watchdog_2src_2main_8cpp-example.html#_a12">/peripheral/watchdog/src/main.cpp</a>, and <a class="el" href="../../da/da9/_2rtos_2blink_thread_2src_2main_8cpp-example.html#_a12">/rtos/blink_thread/src/main.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5e5390068e9a979029fc6df202ad8b6e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +233,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a40d1b7f50b76311b3a7fb148e5b7e2ea"></a>
+<a class="anchor" id="a3c07626045ffa3227794e7cc080f5e36"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -239,9 +241,33 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool CDebug::start </td>
+          <td class="memname">int CDebug::bp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a260233f4b1d98901555a249c3f7ad7be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDebug::breakpoint </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>desc</em> = <code>NULL</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -251,14 +277,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the member function to start the thread. </p>
-<dl class="section note"><dt>Note</dt><dd>the <a class="el" href="../../d4/d37/class_c_debug.html#a40d1b7f50b76311b3a7fb148e5b7e2ea">start()</a> is an overload member function of <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a>. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="../../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec">CThread</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a525c9b7e5f56eca7017ee8a519f86a3e"></a>
+<a class="anchor" id="aeb4cafe42d6cfc41294cf5dedcee8678"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -266,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void CDebug::waitToDebugMode </td>
+          <td class="memname">static void CThread::enterCriticalSection </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -274,7 +296,299 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678">CThread::enterCriticalSection()</a> to disable interrupts. </p>
+
+</div>
+</div>
+<a class="anchor" id="aab3a51062666552690be49b8e8027161"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CThread::exitCriticalSection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161">CThread::exitCriticalSection()</a> to enable interrupts. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa291909bc3ff7cc0decf46c885a7a725"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPCTSTR CThread::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to retrieve the task's name. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac30b0a1f51549a97b88771692319c0e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a> CThread::getPriority </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to get the task's priority. </p>
+<dl class="section return"><dt>Returns</dt><dd>PRIORITIES_T </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0227eda51725b795a461a768703f588"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CThread::getStackHighWaterMark </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to check the stack high water mark. </p>
+<dl class="section note"><dt>Note</dt><dd>Or use the shell and type 'task' to check all tasks status. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e9cce461d8dfb3889cea24f1a703f6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#ga25ee4013cc565a18ac2f4039b4ad441b">TASK_STATE_T</a> CThread::getState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieve the state of thread object (task) </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a0f0727be4714cef1e24150a869d403"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CThread::isAlive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>isAlive is to check the thread is in alive (for run-loop) </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html#a9">/ble/ble_heartrate/src/main.cpp</a>, <a class="el" href="../../db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html#a4">/misc/garbage_collector/src/main.cpp</a>, and <a class="el" href="../../da/da9/_2rtos_2blink_thread_2src_2main_8cpp-example.html#a4">/rtos/blink_thread/src/main.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ad4b4b7f29bf53500532e00aabb62deab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDebug::isAnyKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab90cf9f4b16af5e740ac6a503f612224"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CDebug::isDebugMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51dbe9909ce528b4113d2cc27314e965"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CThread::isSuspend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to check the task is in suspended or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if task in suspended. otherwise, the task in running. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2513fd0fcad30e2e6605609c91f1984"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CThread::isThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread()</a>, check the class is inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> </p>
+
+<p>Reimplemented from <a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">CObject</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15041136818470124d097d790d55a6e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CThread::kill </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>kill the thread and the <a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive()</a> will return false </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a1359725fca8337c5967a3c1811c460"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CDebug::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -455,30 +769,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a260233f4b1d98901555a249c3f7ad7be"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int CDebug::breakpoint </td>
-          <td>(</td>
-          <td class="paramtype">LPCTSTR&#160;</td>
-          <td class="paramname"><em>desc</em> = <code>NULL</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ae83e3ecc41e21c19d2cfbea15459a7c9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -491,52 +781,6 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../df/d99/class_c_string.html">CString</a> &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab90cf9f4b16af5e740ac6a503f612224"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool CDebug::isDebugMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad4b4b7f29bf53500532e00aabb62deab"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int CDebug::isAnyKey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -573,7 +817,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3c07626045ffa3227794e7cc080f5e36"></a>
+<a class="anchor" id="ac8c53aa8c145fc4ac70fa6d825b95742"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -581,7 +825,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int CDebug::bp </td>
+          <td class="memname">virtual void CThread::resume </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -589,14 +833,28 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p>Call the member function to resume the thread.</p>
+<div class="fragment"><div class="line">Example:</div>
+<div class="line">    <span class="keywordtype">int</span> main() {</div>
+<div class="line">        ...</div>
+<div class="line">        CLedTask ledTask;</div>
+<div class="line">        ledTask.start(<span class="stringliteral">&quot;led&quot;</span>);</div>
+<div class="line">        ...</div>
+<div class="line">        ledTask.suspend();      <span class="comment">// suspend the ledTask</span></div>
+<div class="line">        ...</div>
+<div class="line">        <span class="keywordflow">if</span> ( ledTask.isSuspend() ) {</div>
+<div class="line">            ledTask.resume();   <span class="comment">// resume the ledTask</span></div>
+<div class="line">        }</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+</div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="a5a1359725fca8337c5967a3c1811c460"></a>
+<a class="anchor" id="a743d4325b7e7da494283f3292773ff77"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -604,7 +862,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CDebug::operator bool </td>
+          <td class="memname">static void CThread::resumeAll </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -612,10 +870,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#a743d4325b7e7da494283f3292773ff77">CThread::resumeAll()</a> to resume all suspended tasks. </p>
 
 </div>
 </div>
@@ -665,8 +924,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab0e3c0c44f27c27a9fafa30866854cbe"></a>
+<a class="anchor" id="a6b0703ae0cc085a0c0aaa55b6945575b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -674,7 +932,218 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a>* CDebug::m_stream</td>
+          <td class="memname">virtual void CThread::setPriority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to change the task's priority. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>is PRIORITIES_T to set a new priority for the task. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a40d1b7f50b76311b3a7fb148e5b7e2ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CDebug::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to start the thread. </p>
+<dl class="section note"><dt>Note</dt><dd>the <a class="el" href="../../d4/d37/class_c_debug.html#a40d1b7f50b76311b3a7fb148e5b7e2ea">start()</a> is an overload member function of <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a>. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec">CThread</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ebabcc071634508511ae2fc7b868ab7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CThread::start </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stack</em> = <code>DEF_THREAD_STACK</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a>&#160;</td>
+          <td class="paramname"><em>priority</em> = <code><a class="el" href="../../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402">PRI_LOW</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to start the thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>is a descriptive name for the task. </td></tr>
+    <tr><td class="paramname">stack</td><td>is a integer value to specified as the number of stack can hold-not the number of bytes. </td></tr>
+    <tr><td class="paramname">priority</td><td>at which the task should run. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful; otherwise, crate task failed.</dd></dl>
+<div class="fragment"><div class="line">Example:</div>
+<div class="line">        <span class="keyword">class </span>CLedTask: <span class="keyword">public</span> <a class="code" href="../../d0/d26/class_c_thread.html">CThread</a> {</div>
+<div class="line">        <span class="keyword">protected</span>:</div>
+<div class="line">            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run</a>() {</div>
+<div class="line">                <a class="code" href="../../d7/db9/class_c_pin.html">CPin</a> led(<a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a">LED2</a>);</div>
+<div class="line">                <span class="keywordflow">while</span>( <a class="code" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a>() ) {    <span class="comment">// Is thread in alive?  (when thread be kill, the isAlive will return false)</span></div>
+<div class="line">                    led = !led;</div>
+<div class="line">                    sleep(200);</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">        };</div>
+<div class="line"></div>
+<div class="line">        <span class="keywordtype">int</span> main() {</div>
+<div class="line">            ...</div>
+<div class="line">            CLedTask ledTask;</div>
+<div class="line">            ledTask.start(<span class="stringliteral">&quot;led&quot;</span>);   <span class="comment">// default stack=128, default priority=low</span></div>
+<div class="line">            ...</div>
+<div class="line">        }</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="a53e71e6db2221cd1c45aec21953d4aad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CThread::suspend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the member function to suspend the thread.</p>
+<div class="fragment"><div class="line">Example:</div>
+<div class="line">    <span class="keywordtype">int</span> main() {</div>
+<div class="line">        ...</div>
+<div class="line">        CLedTask ledTask;</div>
+<div class="line">        ledTask.start(<span class="stringliteral">&quot;led&quot;</span>);</div>
+<div class="line">        ...</div>
+<div class="line">        ledTask.suspend();      <span class="comment">// suspend the ledTask</span></div>
+<div class="line">        ...</div>
+<div class="line">        <span class="keywordflow">if</span> ( ledTask.isSuspend() ) {</div>
+<div class="line">            ledTask.resume();   <span class="comment">// resume the ledTask</span></div>
+<div class="line">        }</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="a2c09328581bd4e4a3e9e793f3376a92a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CThread::suspendAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call the <a class="el" href="../../d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a">CThread::suspendAll()</a> to suspend all running tasks. </p>
+
+</div>
+</div>
+<a class="anchor" id="a525c9b7e5f56eca7017ee8a519f86a3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CDebug::waitToDebugMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5c8a50a383cc0f5ddd26efb72d6b4794"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d0d/class_c_mutex.html">CMutex</a> CDebug::m_mutex</td>
         </tr>
       </table>
   </td>
@@ -706,7 +1175,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5c8a50a383cc0f5ddd26efb72d6b4794"></a>
+<a class="anchor" id="ab0e3c0c44f27c27a9fafa30866854cbe"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -714,7 +1183,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d0d/class_c_mutex.html">CMutex</a> CDebug::m_mutex</td>
+          <td class="memname"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a>* CDebug::m_stream</td>
         </tr>
       </table>
   </td>
@@ -726,16 +1195,13 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../db/d16/debug_8h_source.html">debug.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d37/class_c_debug.html">CDebug</a></li>
-    <li class="footer">Generated on Mon Mar 24 2014 22:50:48 for uCXpresso.BLE by
+    <li class="footer">Generated on Tue Mar 25 2014 20:38:14 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

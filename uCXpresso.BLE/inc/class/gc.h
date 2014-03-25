@@ -36,10 +36,10 @@ public:
 protected:
 	typedef struct {
 		#if GC_FOR_MULTITASKING
-			CMutex	mutex;
+			CMutex	mutex;		// mutex lock for multi-tasking
 		#endif
-		int		refcount;
-		xHandle elem;
+		int			refcount;	// reference count
+		xHandle 	elem;		// user's data point
 	}GC_T;
 	GC_T	*m_gc;
 };
@@ -172,6 +172,11 @@ public:
 
 	/// \endcond
 };
+
+/** \example /misc/garbage_collector/src/main.cpp
+ * This is an example of how to use the gcHandleT class.
+ * More details about this example.
+ */
 #endif /* gcHandle_H_ */
 
 #else

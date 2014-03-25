@@ -7,7 +7,7 @@ digraph "inc" {
   subgraph clusterdir_ef35519cefd621f663612ebad34cbfc9 {
     graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ef35519cefd621f663612ebad34cbfc9.html"];
     dir_ef35519cefd621f663612ebad34cbfc9 [shape=plaintext label="inc"];
-    dir_23b8956a4518e3beec6402c1bb795b19 [shape=box label="class" color="black" fillcolor="white" style="filled" URL="dir_23b8956a4518e3beec6402c1bb795b19.html"];
+    dir_23b8956a4518e3beec6402c1bb795b19 [shape=box label="class" color="red" fillcolor="white" style="filled" URL="dir_23b8956a4518e3beec6402c1bb795b19.html"];
     dir_578d7caf96c66651f62012e5d8e5c86f [shape=box label="utils" color="black" fillcolor="white" style="filled" URL="dir_578d7caf96c66651f62012e5d8e5c86f.html"];
   }
   }

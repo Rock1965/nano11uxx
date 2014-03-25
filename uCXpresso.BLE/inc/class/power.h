@@ -61,4 +61,9 @@ protected:
 	/// @endcond
 };
 
+/**\example /peripheral/power/src/main.cpp
+ * This is an example of how to use the CPowerSave class.
+ * More details about this example.
+ */
+
 #endif /* PMU_H_ */

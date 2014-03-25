@@ -20,7 +20,7 @@ var annotated =
     [ "CMutex", "d3/d0d/class_c_mutex.html", "d3/d0d/class_c_mutex" ],
     [ "CObject", "dc/dac/class_c_object.html", "dc/dac/class_c_object" ],
     [ "Console", "d6/d56/class_console.html", "d6/d56/class_console" ],
-    [ "CPeripheral", "d9/db6/class_c_peripheral.html", null ],
+    [ "CPeripheral", "d9/db6/class_c_peripheral.html", "d9/db6/class_c_peripheral" ],
     [ "CPin", "d7/db9/class_c_pin.html", "d7/db9/class_c_pin" ],
     [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html", "db/d2c/class_c_pin_i_n_t" ],
     [ "CPowerSave", "d5/d3e/class_c_power_save.html", "d5/d3e/class_c_power_save" ],

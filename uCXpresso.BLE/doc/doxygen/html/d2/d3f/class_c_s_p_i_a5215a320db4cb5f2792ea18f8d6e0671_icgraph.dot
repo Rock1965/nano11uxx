@@ -1,0 +1,15 @@
+digraph "CSPI::readwrite"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CSPI::readwrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CSPI::readwrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3f/class_c_s_p_i.html#ab702047e1d0378b4c9b893bce96a2863"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CSPI::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3f/class_c_s_p_i.html#a173cd30c8b9d9b1a40d6f849a517932b"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CSPI::operator\>\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3f/class_c_s_p_i.html#a24ca202a0494b84a92ff56d10725ce40"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CSPI::operator\<\<",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3f/class_c_s_p_i.html#a3ce438bee4e3c087e44b3cf2b1690ecd"];
+}

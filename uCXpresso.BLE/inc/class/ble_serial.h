@@ -345,6 +345,13 @@ friend class bleDeviceInfo;
 	/*! \endcond */
 };
 
+/**\example /ble/ble_multiple/src/main.cpp
+ * This is an example of how to use the bleSerial class.
+ * More details about this example.
+ */
+
+/// \cond
 extern bleSerial *objBLE;
+/// \endcond
 
 #endif /* BLE_SERIAL_H */

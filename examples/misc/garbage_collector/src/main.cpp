@@ -56,7 +56,7 @@ protected:
 		GCPin pin;
 
 		// wait for led object from mailbox
-		pin = mail.wait();
+		pin = mail.wait();		// use operator '= (xHandle)' to receive the GC object.
 
 		// turn off the LED by CPin operator
 		*pin = LED_OFF;
@@ -86,9 +86,8 @@ void send_mail_test() {
 	*pin = LED_ON;
 
 	// post pin to mail
-	if ( mail.post(pin) ) {
-		// increase reference count for receiver, IF POST SUCCESSFUL.
-		pin.reference();
+	if ( mail.post(pin) ) {		// use operator 'xHandle' to post the GC object.
+		pin.reference();		// increase reference count for receiver, IF POST SUCCESSFUL.
 	}
 
 	// the pin object will be destroyed after the function returned
@@ -103,8 +102,8 @@ void auto_release_test() {
 	GCPin p2(new CPin(LED3));	// Constructs p2 to point to new CPin(LED3)
 	GCPin p3;					// p3 is an empty pointer.
 
-	*p1 = LED_OFF;
-	*p2 = LED_OFF;
+	*p1 = LED_OFF;				// turns OFF the LED2 by operator of CPin class.
+	*p2 = LED_OFF;				// turns OFF the LED3 by operator of CPin class.
 
 	p3 = new CPin(LED4);		// assigns p3 to new CPin(LED4)
 	p3->write(LED_ON);			// turns ON the LED4 by member write() of CPin class.
@@ -113,17 +112,17 @@ void auto_release_test() {
 
 	*p3 = LED_OFF;				// Also can be turned OFF by CPin operator.
 
-	p3 = p1;					// p3 point to p1, and FORGET TO FREE the CPin(LED4)?
+	p3 = p1;					// p3 point to p1, and FORGET TO FREE the CPin(LED4) ?
 	p3->write(LED_ON);			// turns ON the LED2 ?
 
 	p3 = p2;					// p3 point to p2,
 	p3->write(LED_ON);			// turns ON the LED3 ?
 
 	p2 = p1;					// p2 point to p1
-	p1 = p3;					// p1 point to p3, and FORGET TO FREE something?
+	p1 = p3;					// p1 point to p3, and FORGET TO FREE something ?
 
 	p3 = NOTHING;				// forces to releases the p3.
-								// are p1 and p2 freed after function returned?
+								// are p1 and p2 freed after function returned ?
 
 	DBG("auto_release_test out:\n");
 }
@@ -152,7 +151,7 @@ int main(void) {
 	 **************************************************************************/
 	// start the GC Test Thread
 	gcLED gc;
-	gc.start("gc", 180);
+	gc.start("gc", 48);
 
 	// send Pin to mailbox
 	send_mail_test();

@@ -1,9 +1,9 @@
 /*
  ===============================================================================
  Name        : gc.cpp
- Author      : uCXpresso Group
+ Author      : uCXpresso
  Version     : v1.0.1
- Date		 : 2014/3/24
+ Date		 : 2014/3/25
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : Simple Garbage Collector Template Class

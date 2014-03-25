@@ -142,4 +142,9 @@ protected:
 	/*! \endcond */
 };
 
+/**\example /peripheral/adc/src/main.cpp
+ * This is an example of how to use the CAdc class.
+ * More details about this example.
+ */
+
 #endif /* ADC_H_ */

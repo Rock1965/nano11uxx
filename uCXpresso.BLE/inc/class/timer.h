@@ -102,4 +102,9 @@ private:
 	/// @endcond
 };
 
+/**\example /peripheral/timer/src/main.cpp
+ * This is an example of how to use the CTimer class.
+ * More details about this example.
+ */
+
 #endif /* TIMER_H_ */

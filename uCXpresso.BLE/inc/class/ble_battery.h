@@ -76,5 +76,9 @@ protected:
 	/// @endcond
 };
 
+/**\example /ble/ble_multiple/src/main.cpp
+ * This is an example of how to use the bleBatteryLevel class.
+ * More details about this example.
+ */
 
 #endif /* BLE_BATTERY_H_ */

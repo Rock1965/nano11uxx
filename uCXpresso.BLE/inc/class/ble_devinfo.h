@@ -95,4 +95,9 @@ protected:
 	/// @endcond
 };
 
+/**\example /ble/ble_multiple/src/main.cpp
+ * This is an example of how to use the bleDeviceInfo class.
+ * More details about this example.
+ */
+
 #endif /* BLE_DEVINFO_H_ */

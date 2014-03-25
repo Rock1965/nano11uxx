@@ -13,15 +13,17 @@ var NAVTREE =
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d7/d0f/class_c_adc.html#a3d122c0e7fe686958371eabc9ed0db3f",
-"db/dff/group___enumerations.html#ggaa2194064f056aee671a1ed1555c2aaf9a4b1fd90f9ff0cef6d348ebcbdc6b83f5"
+"d6/d56/class_console.html#ad4d21815c5cbc33e9015ba5babf5bf09",
+"db/d2c/class_c_pin_i_n_t.html#a1fc3486f4afea4de56ae677c20600551",
+"de/dba/class_c_shell.html#a342aa70c0ff0ba0f990942edfbc59bb6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

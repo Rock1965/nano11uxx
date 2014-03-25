@@ -1,6 +1,7 @@
 var class_c_small_printf =
 [
     [ "CSmallPrintf", "de/db4/class_c_small_printf.html#a4d3c439b597dde5df178d189a5eb4024", null ],
+    [ "isThread", "de/db4/class_c_small_printf.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
     [ "printf", "de/db4/class_c_small_printf.html#a6213c847987bc1cf18b980619ca49db7", null ],
     [ "printf", "de/db4/class_c_small_printf.html#a651d3546ffbbe986fbbbf4bb1043bb7b", null ],
     [ "putv", "de/db4/class_c_small_printf.html#a158dc1f45a1f19c8edd63e22544c30cc", null ],

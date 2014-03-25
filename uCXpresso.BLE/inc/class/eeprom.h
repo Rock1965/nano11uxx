@@ -30,4 +30,9 @@ public:
 	static bool write(unsigned addr, void *buf, unsigned size);
 };
 
+/**\example /peripheral/eeprom/src/main.cpp
+ * \brief This is an example of how to use the EEPROM class.
+ * More details about this example.
+ */
+
 #endif /* EEPROM_H_ */

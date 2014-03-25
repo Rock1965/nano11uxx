@@ -1,0 +1,11 @@
+digraph "CSmallPrintf::putv"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CSmallPrintf::putv",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Console::operator\<\<",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d56/class_console.html#a01e2cf3bdbb5ff14689a8858e12da5ad"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CString::operator+=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d99/class_c_string.html#ad0593358c21cca96aca2403be6d6ec92"];
+}

@@ -176,4 +176,9 @@ protected:
 	/// @endcond
 };
 
+/**\example /ble/ble_heartrate/src/main.cpp
+ * This is an example of how to use the bleHeartRate class.
+ * More details about this example.
+ */
+
 #endif /* BLE_HEARTRATE_H_ */
