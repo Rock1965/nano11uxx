@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : gc.h
  Author      : uCXpresso
- Version     : v1.0.0
- Date		 : 2014/3/24
+ Version     : v1.0.1
+ Date		 : 2014/3/25
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : Simple Garbage Collector Template Class
@@ -13,6 +13,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/3/24	v1.0.0	First Edition									Jason
+ 2014/3/25	v1.0.1	Add Mutex Lock for Multi-Tasking.				Jason
  ===============================================================================
  */
 #ifdef GC_TEMPLATE
@@ -20,8 +21,10 @@
 #define gcHandle_H_
 
 #include <class/object.h>
+#include <class/mutex.h>
 
-#define NOTHING	((xHandle) NULL)
+#define NOTHING					((xHandle) NULL)
+#define GC_FOR_MULTITASKING		1
 
 /**GC Base Class
  */
@@ -32,6 +35,9 @@ public:
 
 protected:
 	typedef struct {
+		#if GC_FOR_MULTITASKING
+			CMutex	mutex;
+		#endif
 		int		refcount;
 		xHandle elem;
 	}GC_T;

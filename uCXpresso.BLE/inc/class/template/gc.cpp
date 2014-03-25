@@ -2,7 +2,7 @@
  ===============================================================================
  Name        : gc.cpp
  Author      : uCXpresso Group
- Version     : v1.0.0
+ Version     : v1.0.1
  Date		 : 2014/3/24
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
@@ -13,6 +13,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/3/24	v1.0.0	First Edition									Jason
+ 2014/3/25	v1.0.1	Add Mutex Lock for Multi-Tasking.				Jason
  ===============================================================================
  */
 #ifndef GC_TEMPLATE
@@ -48,6 +49,9 @@ gcHandleT<CType>::~gcHandleT() {
 template <class CType>
 void gcHandleT<CType>::release() {
 	if ( m_gc ) {
+#if GC_FOR_MULTITASKING
+		m_gc->mutex.lock();
+#endif
 		if ( m_gc->refcount ) {
 			m_gc->refcount--;
 			if ( m_gc->refcount==0 ) {
@@ -56,6 +60,9 @@ void gcHandleT<CType>::release() {
 				delete m_gc;
 			}
 		}
+#if GC_FOR_MULTITASKING
+		m_gc->mutex.unlock();
+#endif
 		m_gc = NULL;
 	}
 }
@@ -63,7 +70,14 @@ void gcHandleT<CType>::release() {
 template <class CType>
 void gcHandleT<CType>::reference() {
 	if ( m_gc ) {
+#if GC_FOR_MULTITASKING
+		m_gc->mutex.lock();
+#endif
 		m_gc->refcount++;
+
+#if GC_FOR_MULTITASKING
+		m_gc->mutex.unlock();
+#endif
 	}
 }
 
