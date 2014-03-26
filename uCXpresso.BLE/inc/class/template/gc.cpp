@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : gc.cpp
  Author      : uCXpresso
- Version     : v1.0.1
- Date		 : 2014/3/25
+ Version     : v1.0.2
+ Date		 : 2014/3/26
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : Simple Garbage Collector Template Class
@@ -14,6 +14,7 @@
  ---------+---------+--------------------------------------------+-------------
  2014/3/24	v1.0.0	First Edition									Jason
  2014/3/25	v1.0.1	Add Mutex Lock for Multi-Tasking.				Jason
+ 2014/3/26	v1.0.2	Add [] operator for Array						Jason
  ===============================================================================
  */
 #ifndef GC_TEMPLATE
@@ -161,6 +162,11 @@ gcHandleT<CType>::operator CType *() {
 template <class CType>
 CType& gcHandleT<CType>::operator *() {
 	return *((CType *)m_gc->elem);
+}
+
+template <class CType>
+CType& gcHandleT<CType>::operator [] (int index) {
+	return ((CType *)m_gc->elem)[index];
 }
 
 template <class CType>

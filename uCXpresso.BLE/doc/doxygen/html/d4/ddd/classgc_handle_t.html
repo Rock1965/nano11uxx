@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d4/ddd/classgc_handle_t.html','../../'
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d5/d0d/classgc_handle_t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">gcHandleT&lt; CType &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d8/d7e/group___miscellaneous.html">Miscellaneous</a></div></div>  </div>
+<div class="title">gcHandleT&lt; CType &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d8/dba/group___r_t_o_s.html">RTOS</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a04b30dc7412919df10131b7967fbf705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6e285f9f27ef7bad32c68f0d8fd453"><td class="memItemLeft" align="right" valign="top">virtual CType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/classgc_handle_t.html#a2c6e285f9f27ef7bad32c68f0d8fd453">operator*</a> ()</td></tr>
 <tr class="separator:a2c6e285f9f27ef7bad32c68f0d8fd453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fc335ecb4fac2a292f3b7e7ffd33c7"><td class="memItemLeft" align="right" valign="top">virtual CType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/classgc_handle_t.html#aa0fc335ecb4fac2a292f3b7e7ffd33c7">operator[]</a> (int index)</td></tr>
+<tr class="separator:aa0fc335ecb4fac2a292f3b7e7ffd33c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab798d5e461aaea13ad76b25753342346"><td class="memItemLeft" align="right" valign="top">virtual xHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/classgc_handle_t.html#ab798d5e461aaea13ad76b25753342346">operator&amp;</a> ()</td></tr>
 <tr class="separator:ab798d5e461aaea13ad76b25753342346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8ff3df4c03ba3dd69d163058fb877ba"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/classgc_handle_t.html#ab8ff3df4c03ba3dd69d163058fb877ba">operator xHandle</a> ()</td></tr>
@@ -171,6 +173,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab35bfc017cd77053934dd6badb162acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e314e4db601a2de651f69833dd78dc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/classgc_handle_t.html#a2e314e4db601a2de651f69833dd78dc6">operator bool</a> ()</td></tr>
 <tr class="separator:a2e314e4db601a2de651f69833dd78dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958083a4d6cb648dd5cfd3292ec109de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dee/class__gc__.html#a958083a4d6cb648dd5cfd3292ec109de">lock</a> ()</td></tr>
+<tr class="separator:a958083a4d6cb648dd5cfd3292ec109de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787f0334817f64acc6f41eb0839c3f58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dee/class__gc__.html#a787f0334817f64acc6f41eb0839c3f58">unlock</a> ()</td></tr>
+<tr class="separator:a787f0334817f64acc6f41eb0839c3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -339,6 +345,30 @@ template&lt;class CType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a958083a4d6cb648dd5cfd3292ec109de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _gc_::lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lock resource. </p>
+
+</div>
+</div>
 <a class="anchor" id="a2e314e4db601a2de651f69833dd78dc6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +533,7 @@ template&lt;class CType&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Operator '*' to return the element contents. </p>
-<dl class="section return"><dt>Returns</dt><dd>data contents </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>element </dd></dl>
 
 </div>
 </div>
@@ -657,6 +687,34 @@ template&lt;class CType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aa0fc335ecb4fac2a292f3b7e7ffd33c7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual CType&amp; <a class="el" href="../../d4/ddd/classgc_handle_t.html">gcHandleT</a>&lt; CType &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Operator [] array to return the element contents. </p>
+<dl class="section return"><dt>Returns</dt><dd>element </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab382fa1f1681482b3b5acf62df1face2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -710,6 +768,30 @@ template&lt;class CType&gt; </div>
 <p>Releases element </p>
 
 <p>Reimplemented from <a class="el" href="../../df/dee/class__gc__.html#ac58b2d3e3a3762528fffe36dcfa4f0c2">_gc_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a787f0334817f64acc6f41eb0839c3f58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _gc_::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Unlock resource. </p>
 
 </div>
 </div>
@@ -773,7 +855,7 @@ template&lt;class CType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddd/classgc_handle_t.html">gcHandleT</a></li>
-    <li class="footer">Generated on Tue Mar 25 2014 20:57:57 for uCXpresso.BLE by
+    <li class="footer">Generated on Wed Mar 26 2014 10:58:35 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

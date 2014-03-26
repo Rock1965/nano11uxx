@@ -116,7 +116,7 @@ void auto_release_test() {
 	p3->write(LED_ON);			// turns ON the LED2 ?
 
 	p3 = p2;					// p3 point to p2,
-	p3->write(LED_ON);			// turns ON the LED3 ?
+	p3[0] = LED_ON;				// turns ON the LED3 by operator []
 
 	p2 = p1;					// p2 point to p1
 	p1 = p3;					// p1 point to p3, and FORGET TO FREE something ?

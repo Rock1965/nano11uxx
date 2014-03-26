@@ -112,11 +112,11 @@ $(document).ready(function(){initNavTree('df/dee/class__gc__.html','../../');});
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../dd/ddd/class__gc__-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_gc_ Class Reference</div>  </div>
+<div class="title">_gc_ Class Reference<div class="ingroups"><a class="el" href="../../d8/dba/group___r_t_o_s.html">RTOS</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d0/daa/gc_8h_source.html">gc.h</a>&gt;</code></p>
+<p><code>#include &quot;<a class="el" href="../../d0/daa/gc_8h_source.html">class/gc.h</a>&quot;</code></p>
 <div class="dynheader">
 Inheritance diagram for _gc_:</div>
 <div class="dyncontent">
@@ -139,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab889108bb8c0dfe3eabb6e9509f38c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58b2d3e3a3762528fffe36dcfa4f0c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dee/class__gc__.html#ac58b2d3e3a3762528fffe36dcfa4f0c2">release</a> ()</td></tr>
 <tr class="separator:ac58b2d3e3a3762528fffe36dcfa4f0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958083a4d6cb648dd5cfd3292ec109de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dee/class__gc__.html#a958083a4d6cb648dd5cfd3292ec109de">lock</a> ()</td></tr>
+<tr class="separator:a958083a4d6cb648dd5cfd3292ec109de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787f0334817f64acc6f41eb0839c3f58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dee/class__gc__.html#a787f0334817f64acc6f41eb0839c3f58">unlock</a> ()</td></tr>
+<tr class="separator:a787f0334817f64acc6f41eb0839c3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -174,6 +178,30 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>The isTherad() will be override by <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> class. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">CThread</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a958083a4d6cb648dd5cfd3292ec109de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _gc_::lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lock resource. </p>
 
 </div>
 </div>
@@ -227,6 +255,30 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a787f0334817f64acc6f41eb0839c3f58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _gc_::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Unlock resource. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a99eeb7570f75b51df025d2a4c8b0c12a"></a>
 <div class="memitem">
@@ -254,7 +306,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dee/class__gc__.html">_gc_</a></li>
-    <li class="footer">Generated on Tue Mar 25 2014 20:57:57 for uCXpresso.BLE by
+    <li class="footer">Generated on Wed Mar 26 2014 10:58:35 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -9,6 +9,47 @@ var group___r_t_o_s =
       [ "sync", "dd/d60/class_c_event_bit.html#a4a50fd1376946d508762fa00d01034ce", null ],
       [ "wait", "dd/d60/class_c_event_bit.html#a4183fe9b9d9cc00cd0ae806c9aaba461", null ]
     ] ],
+    [ "_gc_", "df/dee/class__gc__.html", [
+      [ "GC_T", "d2/dc8/struct__gc___1_1_g_c___t.html", [
+        [ "elem", "d2/dc8/struct__gc___1_1_g_c___t.html#a1f1a425f4187c332658a36438600d11d", null ],
+        [ "mutex", "d2/dc8/struct__gc___1_1_g_c___t.html#a1e5b7a3167518698084636a0c0251be4", null ],
+        [ "refcount", "d2/dc8/struct__gc___1_1_g_c___t.html#a0ca0af7bbf3c73b50fec32e8d77e64dd", null ]
+      ] ],
+      [ "isThread", "df/dee/class__gc__.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
+      [ "lock", "df/dee/class__gc__.html#a958083a4d6cb648dd5cfd3292ec109de", null ],
+      [ "reference", "df/dee/class__gc__.html#ab889108bb8c0dfe3eabb6e9509f38c12", null ],
+      [ "release", "df/dee/class__gc__.html#ac58b2d3e3a3762528fffe36dcfa4f0c2", null ],
+      [ "unlock", "df/dee/class__gc__.html#a787f0334817f64acc6f41eb0839c3f58", null ],
+      [ "m_gc", "df/dee/class__gc__.html#a99eeb7570f75b51df025d2a4c8b0c12a", null ]
+    ] ],
+    [ "gcHandleT", "d4/ddd/classgc_handle_t.html", [
+      [ "gcHandleT", "d4/ddd/classgc_handle_t.html#aa8e99b3f41bdbdd88425e25dc36f42a6", null ],
+      [ "gcHandleT", "d4/ddd/classgc_handle_t.html#a8571d5ecadf1847090b04d1ad57f15d5", null ],
+      [ "clone", "d4/ddd/classgc_handle_t.html#adea057fa184e0afd46abc0b6e9d4b762", null ],
+      [ "count", "d4/ddd/classgc_handle_t.html#a0b8a2e0f42aec92f550bc40f29576bc0", null ],
+      [ "isThread", "d4/ddd/classgc_handle_t.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
+      [ "isValid", "d4/ddd/classgc_handle_t.html#ab35bfc017cd77053934dd6badb162acd", null ],
+      [ "lock", "d4/ddd/classgc_handle_t.html#a958083a4d6cb648dd5cfd3292ec109de", null ],
+      [ "operator bool", "d4/ddd/classgc_handle_t.html#a2e314e4db601a2de651f69833dd78dc6", null ],
+      [ "operator CType *", "d4/ddd/classgc_handle_t.html#a04b30dc7412919df10131b7967fbf705", null ],
+      [ "operator xHandle", "d4/ddd/classgc_handle_t.html#ab8ff3df4c03ba3dd69d163058fb877ba", null ],
+      [ "operator!=", "d4/ddd/classgc_handle_t.html#aabf6aa22cd176b662a6aec0a7f7fa447", null ],
+      [ "operator!=", "d4/ddd/classgc_handle_t.html#a2ccd0373773e6dfa517108dfdf2cdeb4", null ],
+      [ "operator&", "d4/ddd/classgc_handle_t.html#ab798d5e461aaea13ad76b25753342346", null ],
+      [ "operator*", "d4/ddd/classgc_handle_t.html#a2c6e285f9f27ef7bad32c68f0d8fd453", null ],
+      [ "operator->", "d4/ddd/classgc_handle_t.html#ad7f7dff891cf46e8fb191a13f8a080be", null ],
+      [ "operator=", "d4/ddd/classgc_handle_t.html#afa65ed5c2bf8f467839f30979e507f2d", null ],
+      [ "operator=", "d4/ddd/classgc_handle_t.html#a8c0052d6ceaa6fa5015f569fda8ca08a", null ],
+      [ "operator=", "d4/ddd/classgc_handle_t.html#a8f51ac1db031f84fa5e76037c38f4589", null ],
+      [ "operator==", "d4/ddd/classgc_handle_t.html#aae22cc95ca1d2fd48bc9a70b17c4e56d", null ],
+      [ "operator==", "d4/ddd/classgc_handle_t.html#acb7d1326327b5ab27a935af7dee98b59", null ],
+      [ "operator[]", "d4/ddd/classgc_handle_t.html#aa0fc335ecb4fac2a292f3b7e7ffd33c7", null ],
+      [ "reference", "d4/ddd/classgc_handle_t.html#ab382fa1f1681482b3b5acf62df1face2", null ],
+      [ "release", "d4/ddd/classgc_handle_t.html#ad8a166285a27dad69e0153bca7b6b88d", null ],
+      [ "unlock", "d4/ddd/classgc_handle_t.html#a787f0334817f64acc6f41eb0839c3f58", null ],
+      [ "weakTo", "d4/ddd/classgc_handle_t.html#a6a7c68205da35740e35505fca540fc5b", null ],
+      [ "m_gc", "d4/ddd/classgc_handle_t.html#a99eeb7570f75b51df025d2a4c8b0c12a", null ]
+    ] ],
     [ "CMailBox", "d8/d26/class_c_mail_box.html", [
       [ "CMailBox", "d8/d26/class_c_mail_box.html#a860c64ec622b6bb2641f8e69748ba9e6", null ],
       [ "count", "d8/d26/class_c_mail_box.html#a11592da3e55cf9bedc8d2cf36d56e9bd", null ],

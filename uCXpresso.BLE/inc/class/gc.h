@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : gc.h
  Author      : uCXpresso
- Version     : v1.0.1
- Date		 : 2014/3/25
+ Version     : v1.0.2
+ Date		 : 2014/3/26
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : Simple Garbage Collector Template Class
@@ -14,6 +14,7 @@
  ---------+---------+--------------------------------------------+-------------
  2014/3/24	v1.0.0	First Edition									Jason
  2014/3/25	v1.0.1	Add Mutex Lock for Multi-Tasking.				Jason
+ 2014/3/26	v1.0.2	Add [] operator for Array.						Jason
  ===============================================================================
  */
 #ifdef GC_TEMPLATE
@@ -27,11 +28,23 @@
 #define GC_FOR_MULTITASKING		1
 
 /**GC Base Class
+ * \class _gc_ gc.h "class/gc.h"
+ * \ingroup RTOS
  */
 class _gc_ : public CObject {
 public:
 	virtual void reference() = PURE_VIRTUAL_FUNC;	// increase reference count
 	virtual void release() = PURE_VIRTUAL_FUNC;		// decrease reference count
+
+#if GC_FOR_MULTITASKING
+	/**Lock resource.
+	 */
+	virtual inline void lock() 		{ if ( m_gc ) m_gc->mutex.lock(); }
+
+	/**Unlock resource.
+	 */
+	virtual inline void unlock()	{ if ( m_gc ) m_gc->mutex.unlock(); }
+#endif
 
 protected:
 	typedef struct {
@@ -46,7 +59,7 @@ protected:
 
 /**gcHandleT is a template class to provide a Simple Garbage Collector
  * \class gcHandleT gc.h "class/gc.h"
- * \ingroup Miscellaneous
+ * \ingroup RTOS
  */
 template <class CType>
 class gcHandleT: public _gc_ {
@@ -97,9 +110,14 @@ public:
 	virtual operator CType* ();
 
 	/**Operator '*' to return the element contents.
-	 *  \return data contents
+	 *  \return element
 	 */
 	virtual CType& operator * ();
+
+	/**Operator [] array to return the element contents.
+	 *  \return element
+	 */
+	virtual CType& operator [] (int index);
 
 	/**Operator '&' to return the GC_T point.
 	 */
