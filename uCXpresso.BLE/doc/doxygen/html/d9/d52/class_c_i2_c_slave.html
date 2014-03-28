@@ -131,8 +131,8 @@ Inheritance diagram for CI2CSlave:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adfd2a0e20a0560b382f423eb8a350aad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad">CI2CSlave</a> (uint8_t slaveAddr)</td></tr>
 <tr class="separator:adfd2a0e20a0560b382f423eb8a350aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1874c56435dd2a13dc4efa829bf10964"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d52/class_c_i2_c_slave.html#a1874c56435dd2a13dc4efa829bf10964">readwrite</a> (void *txbuf, int txsize, void *rxbuf, int rxsize)</td></tr>
-<tr class="separator:a1874c56435dd2a13dc4efa829bf10964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa733596da8f4fa463ff4796a12343e32"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d52/class_c_i2_c_slave.html#aa733596da8f4fa463ff4796a12343e32">readwrite</a> (void *txbuf, int txsize, void *rxbuf, int rxsize, uint32_t timeout)</td></tr>
+<tr class="separator:aa733596da8f4fa463ff4796a12343e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff3f958457f68d453fe125b031c4539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539">enable</a> ()</td></tr>
 <tr class="separator:aeff3f958457f68d453fe125b031c4539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a89b063ac68ff1710193258e76ea73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#a36a89b063ac68ff1710193258e76ea73">disable</a> ()</td></tr>
@@ -143,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1730f4db280cd2c9b0d73a03317776e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379c419607c235a7d723ab4391c2ff2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c">write</a> (uint8_t *data, int length)</td></tr>
 <tr class="separator:a379c419607c235a7d723ab4391c2ff2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0776700fc48c94f200774e832081c7f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ab0776700fc48c94f200774e832081c7f">engine</a> (uint32_t timeout=I2C_TIMEOUT)</td></tr>
-<tr class="separator:ab0776700fc48c94f200774e832081c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12b300c2fe02e6792646353bd746de9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ae12b300c2fe02e6792646353bd746de9">engine</a> (uint32_t timeout)</td></tr>
+<tr class="separator:ae12b300c2fe02e6792646353bd746de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -223,7 +223,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab0776700fc48c94f200774e832081c7f"></a>
+<a class="anchor" id="ae12b300c2fe02e6792646353bd746de9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -234,7 +234,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2C::engine </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>I2C_TIMEOUT</code></td><td>)</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -341,7 +341,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1874c56435dd2a13dc4efa829bf10964"></a>
+<a class="anchor" id="aa733596da8f4fa463ff4796a12343e32"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -370,7 +370,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rxsize</em>&#160;</td>
+          <td class="paramname"><em>rxsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -429,7 +435,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d52/class_c_i2_c_slave.html">CI2CSlave</a></li>
-    <li class="footer">Generated on Wed Mar 26 2014 10:58:35 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri Mar 28 2014 22:26:54 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

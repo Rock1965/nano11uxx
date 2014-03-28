@@ -129,8 +129,40 @@ Inheritance diagram for CI2CMaster:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeea55afb38b9788048b5f7458616d208"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#aeea55afb38b9788048b5f7458616d208">readwrite</a> (uint8_t slaveAddr, void *txbuf, int txsize, void *rxbuf, int rxsize)</td></tr>
-<tr class="separator:aeea55afb38b9788048b5f7458616d208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc770bc6186d3b2e5d7832bf69c34adb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#afc770bc6186d3b2e5d7832bf69c34adb">readwrite</a> (uint8_t devAddr, void *txbuf, int txsize, void *rxbuf, int rxsize, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:afc770bc6186d3b2e5d7832bf69c34adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328c3687134f58450d5a0ea571a0cc0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a328c3687134f58450d5a0ea571a0cc0f">readBit</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:a328c3687134f58450d5a0ea571a0cc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc2f84c5b45224112ae27e70e1f8364"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#aecc2f84c5b45224112ae27e70e1f8364">readBitW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t *data, uint16_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:aecc2f84c5b45224112ae27e70e1f8364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f98174a56312ff9432a505a04449bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a48f98174a56312ff9432a505a04449bb">readBits</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:a48f98174a56312ff9432a505a04449bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8810c7c72f4cb57e77cd8073465bb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#afc8810c7c72f4cb57e77cd8073465bb8">readBitsW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:afc8810c7c72f4cb57e77cd8073465bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748148275878f4899f2b3f588e823e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a748148275878f4899f2b3f588e823e0b">readByte</a> (uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:a748148275878f4899f2b3f588e823e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793f53f202ebaa6da62e54d804423e4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a793f53f202ebaa6da62e54d804423e4c">readWord</a> (uint8_t devAddr, uint8_t regAddr, uint16_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:a793f53f202ebaa6da62e54d804423e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa534c046e64b54f0d7422f8849496cf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#aa534c046e64b54f0d7422f8849496cf1">readBytes</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:aa534c046e64b54f0d7422f8849496cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68540492b374099cfc6221138fc3ecc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a68540492b374099cfc6221138fc3ecc9">readWords</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:a68540492b374099cfc6221138fc3ecc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad080989288fe1503a68a97ca0d78f9bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#ad080989288fe1503a68a97ca0d78f9bd">writeBit</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t value)</td></tr>
+<tr class="separator:ad080989288fe1503a68a97ca0d78f9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b41665816fe8de9e6a564a8044df52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a1b41665816fe8de9e6a564a8044df52e">writeBitW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data)</td></tr>
+<tr class="separator:a1b41665816fe8de9e6a564a8044df52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97767680e94cc9d12dc45e44f8c87ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#ab97767680e94cc9d12dc45e44f8c87ce">writeBits</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</td></tr>
+<tr class="separator:ab97767680e94cc9d12dc45e44f8c87ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ff5998b5ae3416e6e271213f6b2c09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#ab0ff5998b5ae3416e6e271213f6b2c09">writeBitsW</a> (uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data)</td></tr>
+<tr class="separator:ab0ff5998b5ae3416e6e271213f6b2c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae919bbeb27f1c3e3d791d8972a498c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#ae919bbeb27f1c3e3d791d8972a498c66">writeByte</a> (uint8_t devAddr, uint8_t regAddr, uint8_t data)</td></tr>
+<tr class="separator:ae919bbeb27f1c3e3d791d8972a498c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade1859abec8ba59c8536e86dde0b74b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#aade1859abec8ba59c8536e86dde0b74b">writeWord</a> (uint8_t devAddr, uint8_t regAddr, uint16_t data)</td></tr>
+<tr class="separator:aade1859abec8ba59c8536e86dde0b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e667cdc2f19401ce0d869482511e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#ac0e667cdc2f19401ce0d869482511e79">writeBytes</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data)</td></tr>
+<tr class="separator:ac0e667cdc2f19401ce0d869482511e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dc3cfe78647f383ad2f8f2545034da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/class_c_i2_c_master.html#a97dc3cfe78647f383ad2f8f2545034da">writeWords</a> (uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data)</td></tr>
+<tr class="separator:a97dc3cfe78647f383ad2f8f2545034da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff3f958457f68d453fe125b031c4539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539">enable</a> ()</td></tr>
 <tr class="separator:aeff3f958457f68d453fe125b031c4539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a89b063ac68ff1710193258e76ea73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#a36a89b063ac68ff1710193258e76ea73">disable</a> ()</td></tr>
@@ -141,8 +173,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1730f4db280cd2c9b0d73a03317776e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379c419607c235a7d723ab4391c2ff2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c">write</a> (uint8_t *data, int length)</td></tr>
 <tr class="separator:a379c419607c235a7d723ab4391c2ff2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0776700fc48c94f200774e832081c7f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ab0776700fc48c94f200774e832081c7f">engine</a> (uint32_t timeout=I2C_TIMEOUT)</td></tr>
-<tr class="separator:ab0776700fc48c94f200774e832081c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12b300c2fe02e6792646353bd746de9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ae12b300c2fe02e6792646353bd746de9">engine</a> (uint32_t timeout)</td></tr>
+<tr class="separator:ae12b300c2fe02e6792646353bd746de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -197,7 +229,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab0776700fc48c94f200774e832081c7f"></a>
+<a class="anchor" id="ae12b300c2fe02e6792646353bd746de9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -208,7 +240,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2C::engine </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>I2C_TIMEOUT</code></td><td>)</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -315,7 +347,455 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeea55afb38b9788048b5f7458616d208"></a>
+<a class="anchor" id="a328c3687134f58450d5a0ea571a0cc0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readBit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read a single bit from an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to read from </td></tr>
+    <tr><td class="paramname">bitNum</td><td>Bit position to read (0-7) </td></tr>
+    <tr><td class="paramname">data</td><td>Container for single bit value </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48f98174a56312ff9432a505a04449bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readBits </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read multiple bits from an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to read from </td></tr>
+    <tr><td class="paramname">bitStart</td><td>First bit position to read (0-7) </td></tr>
+    <tr><td class="paramname">length</td><td>Number of bits to read (not more than 8) </td></tr>
+    <tr><td class="paramname">data</td><td>Container for right-aligned value (i.e. '101' read from any bitStart position will equal 0x05) </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc8810c7c72f4cb57e77cd8073465bb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readBitsW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read multiple bits from a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to read from </td></tr>
+    <tr><td class="paramname">bitStart</td><td>First bit position to read (0-15) </td></tr>
+    <tr><td class="paramname">length</td><td>Number of bits to read (not more than 16) </td></tr>
+    <tr><td class="paramname">data</td><td>Container for right-aligned value (i.e. '101' read from any bitStart position will equal 0x05) </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aecc2f84c5b45224112ae27e70e1f8364"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readBitW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read a single bit from a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to read from </td></tr>
+    <tr><td class="paramname">bitNum</td><td>Bit position to read (0-15) </td></tr>
+    <tr><td class="paramname">data</td><td>Container for single bit value </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a748148275878f4899f2b3f588e823e0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read single byte from an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to read from </td></tr>
+    <tr><td class="paramname">data</td><td>Container for byte value read from device </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa534c046e64b54f0d7422f8849496cf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CI2CMaster::readBytes </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read multiple bytes from an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>First register regAddr to read from </td></tr>
+    <tr><td class="paramname">length</td><td>Number of bytes to read </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer to store read data in </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes read (-1 indicates failure) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a793f53f202ebaa6da62e54d804423e4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readWord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read single word from a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to read from </td></tr>
+    <tr><td class="paramname">data</td><td>Container for word value read from device </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a68540492b374099cfc6221138fc3ecc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CI2CMaster::readWords </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read multiple words from a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>First register regAddr to read from </td></tr>
+    <tr><td class="paramname">length</td><td>Number of words to read </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer to store read data in </td></tr>
+    <tr><td class="paramname">timeout</td><td>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of words read (-1 indicates failure) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc770bc6186d3b2e5d7832bf69c34adb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -326,7 +806,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::readwrite </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>slaveAddr</em>, </td>
+          <td class="paramname"><em>devAddr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -350,7 +830,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rxsize</em>&#160;</td>
+          <td class="paramname"><em>rxsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -365,6 +851,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Transmit and receive the data from I2C interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>is I2C slave device address. </td></tr>
+    <tr><td class="paramname">txbuf</td><td>is a point to transmit buffer. </td></tr>
+    <tr><td class="paramname">txsize</td><td>is the transmit buffer size. </td></tr>
+    <tr><td class="paramname">rxbuf</td><td>is a point to receive buffer. </td></tr>
+    <tr><td class="paramname">rxsize</td><td>is the receive buffer size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>I2C_ERROT_T code. </dd></dl>
 
 </div>
 </div>
@@ -403,13 +900,405 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad080989288fe1503a68a97ca0d78f9bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeBit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>write a single bit in an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to write to </td></tr>
+    <tr><td class="paramname">bitNum</td><td>Bit position to write (0-7) </td></tr>
+    <tr><td class="paramname">value</td><td>New bit value to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of read operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab97767680e94cc9d12dc45e44f8c87ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeBits </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write multiple bits in an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to write to </td></tr>
+    <tr><td class="paramname">bitStart</td><td>First bit position to write (0-7) </td></tr>
+    <tr><td class="paramname">length</td><td>Number of bits to write (not more than 8) </td></tr>
+    <tr><td class="paramname">data</td><td>Right-aligned value to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0ff5998b5ae3416e6e271213f6b2c09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeBitsW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write multiple bits in a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to write to </td></tr>
+    <tr><td class="paramname">bitStart</td><td>First bit position to write (0-15) </td></tr>
+    <tr><td class="paramname">length</td><td>Number of bits to write (not more than 16) </td></tr>
+    <tr><td class="paramname">data</td><td>Right-aligned value to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b41665816fe8de9e6a564a8044df52e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeBitW </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>write a single bit in a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register regAddr to write to </td></tr>
+    <tr><td class="paramname">bitNum</td><td>Bit position to write (0-15) </td></tr>
+    <tr><td class="paramname">value</td><td>New bit value to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae919bbeb27f1c3e3d791d8972a498c66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write single byte to an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register address to write to </td></tr>
+    <tr><td class="paramname">data</td><td>New byte value to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0e667cdc2f19401ce0d869482511e79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeBytes </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write multiple bytes to an 8-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>First register address to write to </td></tr>
+    <tr><td class="paramname">length</td><td>Number of bytes to write </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer to copy new data from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aade1859abec8ba59c8536e86dde0b74b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeWord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write single word to a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>Register address to write to </td></tr>
+    <tr><td class="paramname">data</td><td>New word value to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a97dc3cfe78647f383ad2f8f2545034da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2CMaster::writeWords </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>devAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>regAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write multiple words to a 16-bit device register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devAddr</td><td>I2C slave device address </td></tr>
+    <tr><td class="paramname">regAddr</td><td>First register address to write to </td></tr>
+    <tr><td class="paramname">length</td><td>Number of words to write </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer to copy new data from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation (I2C_OK = success) </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/db9/class_c_i2_c_master.html">CI2CMaster</a></li>
-    <li class="footer">Generated on Wed Mar 26 2014 10:58:35 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri Mar 28 2014 22:26:54 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
