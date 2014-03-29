@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>uCXpresso.BLE: /peripheral/spi/src/main.cpp</title>
+<title>uCXpresso.BLE: /peripheral/i2c_scanner/src/main.cpp</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('d5/d72/_2peripheral_2spi_2src_2main_8cpp-example.html','../../');});
+$(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_2main_8cpp-example.html','../../');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('d5/d72/_2peripheral_2spi_2src_2main_8c
 
 <div class="header">
   <div class="headertitle">
-<div class="title">/peripheral/spi/src/main.cpp</div>  </div>
+<div class="title">/peripheral/i2c_scanner/src/main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>This is an example of how to use the <a class="el" href="../../d9/d9b/class_c_spi_master.html">CSpiMaster</a> class. More details about this example.</p>
+<p>This is an example of how to use the <a class="el" href="../../d7/db9/class_c_i2_c_master.html">CI2CMaster</a> class. More details about this example.</p>
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> ===============================================================================</span></div>
 <div class="line"><span class="comment"> Name        : main.cpp</span></div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('d5/d72/_2peripheral_2spi_2src_2main_8c
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="comment">// TODO: insert other include files here</span></div>
 <div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="preprocessor">#include &quot;class/spi.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;class/i2c.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="comment">// TODO: insert other definitions and declarations here</span></div>
@@ -178,15 +178,9 @@ $(document).ready(function(){initNavTree('d5/d72/_2peripheral_2spi_2src_2main_8c
 <div class="line">    <a name="_a5"></a><a class="code" href="../../de/d89/class_c_bus.html">CBus</a> port(<a name="a6"></a><a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fadac6477842247cab1a8c02c65f431b44">LED1</a>, <a name="a7"></a><a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fa8379bbaa96d151e6adac488b2a147b7a">LED2</a>, <a name="a8"></a><a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fa5dec293e081e0fc78369c842fab8452b">LED3</a>, <a name="a9"></a><a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fad60e39b8d1701d30aa64f80343217342">LED4</a>, <a name="a10"></a><a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432fadc6f24fd6915a3f2786a1b7045406924">END</a>);</div>
 <div class="line">    port.output();  <span class="comment">// set all pins as output</span></div>
 <div class="line"></div>
-<div class="line">    <a name="_a11"></a><a class="code" href="../../d9/d9b/class_c_spi_master.html">CSpiMaster</a> spi(<a name="a12"></a><a class="code" href="../../db/dff/group___enumerations.html#gga65a2241721e4acb573e0c3fe29ac432faca5dec41a95d9f2de2430d25cd9370fe">P26</a>);        <span class="comment">// spi master with selPin=P26</span></div>
-<div class="line">    spi.format(<a name="a13"></a><a class="code" href="../../db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08aacec2971122bd7fe38869827a0a8e5d7">SPI_DATABIT_8</a>);  <span class="comment">// data bit =8, default mode=0</span></div>
-<div class="line">    spi.frequency(MHZ(2));      <span class="comment">// frequency 2MHz</span></div>
-<div class="line">    spi.enable();</div>
-<div class="line"></div>
-<div class="line">    uint8_t txbuf[] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};</div>
-<div class="line">    uint8_t rxbuf[<span class="keyword">sizeof</span>(txbuf)];</div>
-<div class="line">    uint8_t tx, rx;</div>
-<div class="line">    tx = 0xAA;</div>
+<div class="line">    <span class="keywordtype">int</span> devAddr=0;</div>
+<div class="line">    <a name="_a11"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html">CI2CMaster</a> i2c;</div>
+<div class="line">    i2c.<a name="a12"></a><a class="code" href="../../d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539">enable</a>();</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">while</span>(1) {</div>
 <div class="line">        <span class="comment">/**********************************************************************</span></div>
@@ -198,30 +192,31 @@ $(document).ready(function(){initNavTree('d5/d72/_2peripheral_2spi_2src_2main_8c
 <div class="line">        <span class="comment">// LED Demo (can be removed)</span></div>
 <div class="line">        <span class="comment">//</span></div>
 <div class="line">        port = led_scripts[i];</div>
-<div class="line">        i = (i+1) &lt;(uint8_t)<span class="keyword">sizeof</span>(led_scripts) ? i+1 : 0;</div>
+<div class="line">        i = (i+1) &lt; (<span class="keywordtype">int</span>)<span class="keyword">sizeof</span>(led_scripts) ? i+1 : 0;</div>
 <div class="line">        sleep(100);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">//</span></div>
-<div class="line">        <span class="comment">// transmit the txbuf only</span></div>
+<div class="line">        <span class="comment">// Scan I2C Device</span></div>
 <div class="line">        <span class="comment">//</span></div>
-<div class="line">        spi.readwrite(txbuf, NULL, <span class="keyword">sizeof</span>(txbuf));</div>
+<div class="line"><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">switch</span>( dbg.isAnyKey() ) {</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>:</div>
+<div class="line">            devAddr = 1;    <span class="comment">// set address =1 to start the scnner.</span></div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">//</span></div>
-<div class="line">        <span class="comment">// receive to rxbuf only</span></div>
+<div class="line">        <span class="comment">// start to scan when devAddr &gt;0 with timeout 200ms</span></div>
 <div class="line">        <span class="comment">//</span></div>
-<div class="line">        spi.readwrite(NULL, rxbuf, <span class="keyword">sizeof</span>(rxbuf));</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">//</span></div>
-<div class="line">        <span class="comment">// transmit &amp; receive both txbuf and rxbuf.</span></div>
-<div class="line">        <span class="comment">//</span></div>
-<div class="line">        spi.readwrite(txbuf, rxbuf, <span class="keyword">sizeof</span>(txbuf));</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">//</span></div>
-<div class="line">        <span class="comment">// write to read a byte</span></div>
-<div class="line">        <span class="comment">//</span></div>
-<div class="line">        rx = spi.write(tx);</div>
-<div class="line"></div>
-<div class="line">        (void) rx;</div>
+<div class="line">        <span class="keywordflow">if</span> ( devAddr ) {</div>
+<div class="line">            <span class="keywordflow">if</span> ( i2c.<a name="a13"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html#afc770bc6186d3b2e5d7832bf69c34adb">readwrite</a>(devAddr, NULL, 0, NULL, 0, 200)==<a name="a14"></a><a class="code" href="../../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a">I2C_OK</a> ) {</div>
+<div class="line">                DBG(<span class="stringliteral">&quot;I2C device found at address 0x%02X\n&quot;</span>, devAddr);</div>
+<div class="line">            }</div>
+<div class="line">            devAddr = (devAddr+1)&lt;127 ? devAddr+1 : 0;</div>
+<div class="line">        }</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0 ;</div>
 <div class="line">}</div>
