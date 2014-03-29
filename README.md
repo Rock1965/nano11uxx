@@ -3,9 +3,10 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
-v1.0.4 rc2 28th March 2014
+v1.0.4 rc2 30th March 2014
 --------------------------------
 ###Details:
+	1. Fixed I2C lock problem and shift left address bit for Arduino definition.
 	1. Add more read and write member functions in CI2CMaster class.
 	2. Add Garbage Collector Handle Template Class : gcHandleT<CType>
 	3. Update Doxygen Documents.
