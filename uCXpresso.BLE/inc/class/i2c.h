@@ -3,7 +3,7 @@
  Name        : i2c.h
  Author      : uCXpresso
  Version     : v1.0.1
- Date		 : 2014/3/28
+ Date		 : 2014/3/29
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : I2C driver
  ===============================================================================
@@ -12,8 +12,10 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
- 2014/3/28	v1.0.1	Add more read & write member functions in		Jason
- 	 	 	 	 	CMaster class.
+ 2014/3/29	v1.0.1	Add more read & write member functions in		Jason
+ 	 	 	 	 	    CMaster class.
+ 	 	 	 	 	Fixed I2C driver lock problems.
+ 	 	 	 	 	Remove I2C-Slave mode.
  ===============================================================================
  */
 
@@ -34,7 +36,8 @@ typedef enum {
 	I2C_NACK_ON_DATA = 9,		///<
 	I2C_ARBITRATION_LOST = 10,	///<
 	I2C_TIME_OUT = 11,			///<
-	I2C_OK = 12					///<
+	I2C_OK = 12,				///<
+	I2C_BUFFER = 13				///< Memory Buffer Error
 }I2C_ERROR_T;
 
 #define DEF_I2C_TIMEOUT	1000
@@ -85,21 +88,17 @@ public:
 	virtual bool stop();	// Set the I2C stop condition
 
 	// irq & status control
-	CSemaphore	m_semIrq;
 	CSemaphore	m_semState;
 	uint32_t	m_state;
-	uint32_t	m_flag;
 
 	// buffer control
-	uint8_t		*m_MasterBuffer;
-	uint8_t		*m_SlaveBuffer;
-	int			m_rdIndex;
-	int			m_wrIndex;
-	int			m_wrLength;
-	int			m_rdLength;
+	uint8_t		*I2CMasterBuffer;
+	uint8_t		*I2CSlaveBuffer;
+	int			RdIndex;
+	int			WrIndex;
+	int			I2CWriteLength;
+	int			I2CReadLength;
 
-protected:
-	xHandle		m_handle;
 	/// @endcond
 };
 
@@ -272,22 +271,6 @@ public:
 	I2C_ERROR_T writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t* data);
 };
 
-/**I2C Slave Class
- * \class CI2CSlave i2c.h "class/i2c.h"
- * \ingroup Peripherals
- */
-class CI2CSlave: public CI2C {
-public:
-	/**CI2CSlave Constructor
-	 * \param slaveAddr is uint8_t value to indicate the I2C address in slave mode.
-	 */
-	CI2CSlave(uint8_t slaveAddr);
-
-	/**Transmit & receive the data from I2C Interface.
-	 *
-	 */
-	virtual I2C_ERROR_T readwrite(void *txbuf, int txsize, void *rxbuf, int rxsize, uint32_t timeout);
-};
 
 
 #endif /* I2C_H_ */

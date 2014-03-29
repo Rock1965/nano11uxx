@@ -13,7 +13,6 @@ var annotated =
     [ "CEventBit", "dd/d60/class_c_event_bit.html", "dd/d60/class_c_event_bit" ],
     [ "CI2C", "d0/dce/class_c_i2_c.html", "d0/dce/class_c_i2_c" ],
     [ "CI2CMaster", "d7/db9/class_c_i2_c_master.html", "d7/db9/class_c_i2_c_master" ],
-    [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html", "d9/d52/class_c_i2_c_slave" ],
     [ "CList", "df/db6/class_c_list.html", "df/db6/class_c_list" ],
     [ "CListT", "da/d59/class_c_list_t.html", "da/d59/class_c_list_t" ],
     [ "CMailBox", "d8/d26/class_c_mail_box.html", "d8/d26/class_c_mail_box" ],

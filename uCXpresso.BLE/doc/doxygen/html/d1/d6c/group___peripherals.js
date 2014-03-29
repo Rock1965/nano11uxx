@@ -67,17 +67,6 @@ var group___peripherals =
       [ "writeWord", "d7/db9/class_c_i2_c_master.html#aade1859abec8ba59c8536e86dde0b74b", null ],
       [ "writeWords", "d7/db9/class_c_i2_c_master.html#a97dc3cfe78647f383ad2f8f2545034da", null ]
     ] ],
-    [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html", [
-      [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad", null ],
-      [ "disable", "d9/d52/class_c_i2_c_slave.html#a36a89b063ac68ff1710193258e76ea73", null ],
-      [ "enable", "d9/d52/class_c_i2_c_slave.html#aeff3f958457f68d453fe125b031c4539", null ],
-      [ "engine", "d9/d52/class_c_i2_c_slave.html#ae12b300c2fe02e6792646353bd746de9", null ],
-      [ "frequency", "d9/d52/class_c_i2_c_slave.html#ab5158b0fe99495c186200ac1d6ef4e52", null ],
-      [ "isThread", "d9/d52/class_c_i2_c_slave.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
-      [ "read", "d9/d52/class_c_i2_c_slave.html#ac1730f4db280cd2c9b0d73a03317776e", null ],
-      [ "readwrite", "d9/d52/class_c_i2_c_slave.html#aa733596da8f4fa463ff4796a12343e32", null ],
-      [ "write", "d9/d52/class_c_i2_c_slave.html#a379c419607c235a7d723ab4391c2ff2c", null ]
-    ] ],
     [ "CPeripheral", "d9/db6/class_c_peripheral.html", [
       [ "isThread", "d9/db6/class_c_peripheral.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ]
     ] ],

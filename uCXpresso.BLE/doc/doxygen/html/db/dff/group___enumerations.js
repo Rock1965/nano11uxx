@@ -66,7 +66,8 @@ var group___enumerations =
       [ "I2C_NACK_ON_DATA", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177ac7449bc5b9560aca15fd4e9079737bde", null ],
       [ "I2C_ARBITRATION_LOST", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a5dc03718fec58b738e4267364ed81564", null ],
       [ "I2C_TIME_OUT", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a2cac9caecd6bbd3b917fcad0abbdece3", null ],
-      [ "I2C_OK", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a", null ]
+      [ "I2C_OK", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a", null ],
+      [ "I2C_BUFFER", "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a25561df6f4fd24e7c0aa98f5e10ed863", null ]
     ] ],
     [ "PIN_INPUT_MODE_T", "db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef", [
       [ "INTERNAL_PULL_UP", "db/dff/group___enumerations.html#gga9f8f32709b482732d6e377ff26da36efa781a7f23ae9b0dbdc6edfdcfd3be75df", null ],

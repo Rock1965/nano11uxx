@@ -5,7 +5,6 @@ var searchData=
   ['cdebug',['CDebug',['../d4/d37/class_c_debug.html#a5e5390068e9a979029fc6df202ad8b6e',1,'CDebug']]],
   ['ceventbit',['CEventBit',['../dd/d60/class_c_event_bit.html#afaccf4ea2315ce05229a3a0ae37ba6af',1,'CEventBit']]],
   ['chklength',['chkLength',['../df/d99/class_c_string.html#a5f5361665c7568d502d058992b14c016',1,'CString']]],
-  ['ci2cslave',['CI2CSlave',['../d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad',1,'CI2CSlave']]],
   ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
   ['clone',['clone',['../d4/ddd/classgc_handle_t.html#adea057fa184e0afd46abc0b6e9d4b762',1,'gcHandleT::clone()'],['../df/d99/class_c_string.html#aeebb301ee8968688fd6ea8029a95ce9c',1,'CString::clone()']]],
   ['clr',['clr',['../dd/d60/class_c_event_bit.html#ade8e4420bd49ab351417ca955bb293e3',1,'CEventBit']]],

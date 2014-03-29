@@ -6,7 +6,6 @@ var searchData=
   ['ceventbit',['CEventBit',['../dd/d60/class_c_event_bit.html',1,'']]],
   ['ci2c',['CI2C',['../d0/dce/class_c_i2_c.html',1,'']]],
   ['ci2cmaster',['CI2CMaster',['../d7/db9/class_c_i2_c_master.html',1,'']]],
-  ['ci2cslave',['CI2CSlave',['../d9/d52/class_c_i2_c_slave.html',1,'']]],
   ['clist',['CList',['../df/db6/class_c_list.html',1,'']]],
   ['clistt',['CListT',['../da/d59/class_c_list_t.html',1,'']]],
   ['cmailbox',['CMailBox',['../d8/d26/class_c_mail_box.html',1,'']]],

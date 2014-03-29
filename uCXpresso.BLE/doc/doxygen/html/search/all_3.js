@@ -7,7 +7,6 @@ var searchData=
   ['chklength',['chkLength',['../df/d99/class_c_string.html#a5f5361665c7568d502d058992b14c016',1,'CString']]],
   ['ci2c',['CI2C',['../d0/dce/class_c_i2_c.html',1,'']]],
   ['ci2cmaster',['CI2CMaster',['../d7/db9/class_c_i2_c_master.html',1,'']]],
-  ['ci2cslave',['CI2CSlave',['../d9/d52/class_c_i2_c_slave.html',1,'CI2CSlave'],['../d9/d52/class_c_i2_c_slave.html#adfd2a0e20a0560b382f423eb8a350aad',1,'CI2CSlave::CI2CSlave()']]],
   ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
   ['clist',['CList',['../df/db6/class_c_list.html',1,'']]],
   ['clistt',['CListT',['../da/d59/class_c_list_t.html',1,'']]],

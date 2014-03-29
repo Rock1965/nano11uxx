@@ -19,8 +19,7 @@ var hierarchy =
         [ "CAdc", "d7/d0f/class_c_adc.html", null ],
         [ "CBus", "de/d89/class_c_bus.html", null ],
         [ "CI2C", "d0/dce/class_c_i2_c.html", [
-          [ "CI2CMaster", "d7/db9/class_c_i2_c_master.html", null ],
-          [ "CI2CSlave", "d9/d52/class_c_i2_c_slave.html", null ]
+          [ "CI2CMaster", "d7/db9/class_c_i2_c_master.html", null ]
         ] ],
         [ "CPin", "d7/db9/class_c_pin.html", [
           [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html", null ]
