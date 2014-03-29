@@ -6,7 +6,6 @@ var examples =
     [ "/misc/garbage_collector/src/main.cpp", "db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/adc/src/main.cpp", "d5/dec/_2peripheral_2adc_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/eeprom/src/main.cpp", "de/dd2/_2peripheral_2eeprom_2src_2main_8cpp-example.html", null ],
-    [ "/peripheral/i2c_scanner/src/main.cpp", "df/dd4/_2peripheral_2i2c_scanner_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/power/src/main.cpp", "d9/da4/_2peripheral_2power_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/spi/src/main.cpp", "d5/d72/_2peripheral_2spi_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/timer/src/main.cpp", "d3/d38/_2peripheral_2timer_2src_2main_8cpp-example.html", null ],

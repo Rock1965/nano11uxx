@@ -3,7 +3,7 @@
  Name        : i2c.h
  Author      : uCXpresso
  Version     : v1.0.1
- Date		 : 2014/3/30
+ Date		 : 2014/3/29
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : I2C driver
  ===============================================================================
@@ -12,7 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
- 2014/3/30	v1.0.1	Add more read & write member functions in		Jason
+ 2014/3/29	v1.0.1	Add more read & write member functions in		Jason
  	 	 	 	 	    CMaster class.
  	 	 	 	 	Fixed I2C driver lock problems.
  	 	 	 	 	Remove I2C-Slave mode.
@@ -43,7 +43,7 @@ typedef enum {
 #define DEF_I2C_TIMEOUT	1000
 
 
-/**I2C base class
+/**I2C base Class
  * \class CI2C i2c.h "class/i2c.h"
  * \ingroup Peripherals
  */
@@ -102,7 +102,7 @@ public:
 	/// @endcond
 };
 
-/**The I2CMaster class provides the i2c interface and compatibility of i2cdevlib/i2cdev class.
+/**I2C Master Class
  * \class CI2CMaster i2c.h "class/i2c.h"
  * \ingroup Peripherals
  */
@@ -271,9 +271,6 @@ public:
 	I2C_ERROR_T writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t* data);
 };
 
-/**\example /peripheral/i2c_scanner/src/main.cpp
- * This is an example of how to use the CI2CMaster class.
- * More details about this example.
- */
+
 
 #endif /* I2C_H_ */

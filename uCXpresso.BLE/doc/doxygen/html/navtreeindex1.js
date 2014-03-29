@@ -219,7 +219,7 @@ var NAVTREEINDEX1 =
 "d9/d9b/class_c_spi_master.html#accc9a5c831ee85e95f0bb5567de5f529":[0,3,12,6],
 "d9/d9b/class_c_spi_master.html#ad8143fa5be48bc62762fda52b86d630a":[0,3,12,7],
 "d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800":[0,3,12,0],
-"d9/da4/_2peripheral_2power_2src_2main_8cpp-example.html":[2,7],
+"d9/da4/_2peripheral_2power_2src_2main_8cpp-example.html":[2,6],
 "d9/db6/class_c_peripheral.html":[0,3,5],
 "d9/db6/class_c_peripheral.html#a26a76c241a4d62d2efdac57d2cfe4c0f":[0,3,5,0],
 "da/d59/class_c_list_t.html":[0,2,3],

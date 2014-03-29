@@ -113,7 +113,6 @@ var NAVTREEINDEX3 =
 "df/db6/class_c_list.html#acc4c74c1684f630c99988a477b0a3eb7":[0,2,2,6],
 "df/db6/class_c_list.html#adc7cb308e77a9e0550eecce9333b071b":[0,2,2,20],
 "df/db6/class_c_list.html#af77b9f95976788ad6b74e825fad12e94":[0,2,2,0],
-"df/dd4/_2peripheral_2i2c_scanner_2src_2main_8cpp-example.html":[2,6],
 "df/dee/class__gc__.html":[0,4,1],
 "df/dee/class__gc__.html#a26a76c241a4d62d2efdac57d2cfe4c0f":[0,4,1,1],
 "df/dee/class__gc__.html#a787f0334817f64acc6f41eb0839c3f58":[0,4,1,5],
