@@ -76,6 +76,7 @@ int main(void) {
 	int devAddr=0;
 	CI2CMaster i2c;
 	i2c.enable();
+	uint8_t data;
 
 	while(1) {
 		/**********************************************************************
@@ -105,7 +106,7 @@ int main(void) {
 		// start to scan when devAddr >0 with timeout 200ms
 		//
 		if ( devAddr ) {
-			if ( i2c.readwrite(devAddr, NULL, 0, NULL, 0, 200)==I2C_OK ) {
+			if ( i2c.readByte(devAddr, 0, &data)==I2C_OK ) {
 				DBG("I2C device found at address 0x%02X\n", devAddr);
 			}
 			devAddr = (devAddr+1)<127 ? devAddr+1 : 0;
