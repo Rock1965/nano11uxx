@@ -134,7 +134,7 @@ int main(void) {
 	// BLE engine (serial stream)
 	//
 	bleSerial	ble("myHRM");
-	ble.enable(128);
+	ble.enable(96);
 
 	//
 	// Heart Beat Rate Service
@@ -160,7 +160,7 @@ int main(void) {
 	// Fade LED task
 	//
 	ledTask led(pulse);
-	led.start("LED", 52);	// reduce stack size to 58 to increase the heap memory
+	led.start("LED", 50);	// reduce stack size to 58 to increase the heap memory
 
 	//
 	//
@@ -213,7 +213,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE];
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-32];
 
 //
 // setup before the system startup
