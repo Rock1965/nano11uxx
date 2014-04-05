@@ -1,10 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"de/db4/class_c_small_printf.html#a6213c847987bc1cf18b980619ca49db7":[1,0,28,2],
-"de/db4/class_c_small_printf.html#a651d3546ffbbe986fbbbf4bb1043bb7b":[1,0,28,3],
-"de/db4/class_c_small_printf.html#a9158226f537c34067bf2e6a7c25d3f8b":[1,0,28,6],
-"de/dba/class_c_shell.html":[1,0,27],
-"de/dba/class_c_shell.html#a15041136818470124d097d790d55a6e5":[1,0,27,13],
 "de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f":[1,0,27,19],
 "de/dba/class_c_shell.html#a16e1dae0dedda35c0be64d1c8f40e6b4":[1,0,27,16],
 "de/dba/class_c_shell.html#a1e9cce461d8dfb3889cea24f1a703f6f":[1,0,27,8],
@@ -131,8 +126,8 @@ var NAVTREEINDEX3 =
 "functions_enum.html":[1,3,3],
 "functions_eval.html":[1,3,4],
 "functions_f.html":[1,3,0,5],
-"functions_func.html":[1,3,1],
 "functions_func.html":[1,3,1,0],
+"functions_func.html":[1,3,1],
 "functions_func_b.html":[1,3,1,1],
 "functions_func_c.html":[1,3,1,2],
 "functions_func_d.html":[1,3,1,3],

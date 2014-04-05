@@ -181,6 +181,7 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <div class="line">    <span class="keywordtype">int</span> devAddr=0;</div>
 <div class="line">    <a name="_a11"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html">CI2CMaster</a> i2c;</div>
 <div class="line">    i2c.<a name="a12"></a><a class="code" href="../../d0/dce/class_c_i2_c.html#aeff3f958457f68d453fe125b031c4539">enable</a>();</div>
+<div class="line">    uint8_t data;</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">while</span>(1) {</div>
 <div class="line">        <span class="comment">/**********************************************************************</span></div>
@@ -210,7 +211,7 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <div class="line">        <span class="comment">// start to scan when devAddr &gt;0 with timeout 200ms</span></div>
 <div class="line">        <span class="comment">//</span></div>
 <div class="line">        <span class="keywordflow">if</span> ( devAddr ) {</div>
-<div class="line">            <span class="keywordflow">if</span> ( i2c.<a name="a13"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html#afc770bc6186d3b2e5d7832bf69c34adb">readwrite</a>(devAddr, NULL, 0, NULL, 0, 200)==<a name="a14"></a><a class="code" href="../../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a">I2C_OK</a> ) {</div>
+<div class="line">            <span class="keywordflow">if</span> ( i2c.<a name="a13"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html#a748148275878f4899f2b3f588e823e0b">readByte</a>(devAddr, 0, &amp;data)==<a name="a14"></a><a class="code" href="../../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a">I2C_OK</a> ) {</div>
 <div class="line">                DBG(<span class="stringliteral">&quot;I2C device found at address 0x%02X\n&quot;</span>, devAddr);</div>
 <div class="line">            }</div>
 <div class="line">            devAddr = (devAddr+1)&lt;127 ? devAddr+1 : 0;</div>
@@ -241,7 +242,7 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Mar 30 2014 01:14:45 for uCXpresso.BLE by
+    <li class="footer">Generated on Sat Apr 5 2014 21:06:07 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -135,12 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a36a89b063ac68ff1710193258e76ea73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5158b0fe99495c186200ac1d6ef4e52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ab5158b0fe99495c186200ac1d6ef4e52">frequency</a> (uint32_t hz)</td></tr>
 <tr class="separator:ab5158b0fe99495c186200ac1d6ef4e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1730f4db280cd2c9b0d73a03317776e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ac1730f4db280cd2c9b0d73a03317776e">read</a> (uint8_t *data, int length)</td></tr>
-<tr class="separator:ac1730f4db280cd2c9b0d73a03317776e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379c419607c235a7d723ab4391c2ff2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#a379c419607c235a7d723ab4391c2ff2c">write</a> (uint8_t *data, int length)</td></tr>
-<tr class="separator:a379c419607c235a7d723ab4391c2ff2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae12b300c2fe02e6792646353bd746de9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#ae12b300c2fe02e6792646353bd746de9">engine</a> (uint32_t timeout)</td></tr>
-<tr class="separator:ae12b300c2fe02e6792646353bd746de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f05058db3c41dec6abf7edef55c4024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dce/class_c_i2_c.html#a7f05058db3c41dec6abf7edef55c4024">readwrite</a> (void *txbuf, int txsize, void *rxbuf, int rxsize, uint32_t timeout=DEF_I2C_TIMEOUT)</td></tr>
+<tr class="separator:a7f05058db3c41dec6abf7edef55c4024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -178,31 +174,6 @@ Public Member Functions</h2></td></tr>
 <p>Enable I2C interface </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../df/dd4/_2peripheral_2i2c_scanner_2src_2main_8cpp-example.html#a12">/peripheral/i2c_scanner/src/main.cpp</a>.</dd>
 </dl>
-</div>
-</div>
-<a class="anchor" id="ae12b300c2fe02e6792646353bd746de9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2C::engine </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Begin transmit and receive the I2C data </p>
-
 </div>
 </div>
 <a class="anchor" id="ab5158b0fe99495c186200ac1d6ef4e52"></a>
@@ -263,24 +234,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac1730f4db280cd2c9b0d73a03317776e"></a>
+<a class="anchor" id="a7f05058db3c41dec6abf7edef55c4024"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void CI2C::read </td>
+          <td class="memname"><a class="el" href="../../db/dff/group___enumerations.html#gae2de52b3324336037756b7c011706177">I2C_ERROR_T</a> CI2C::readwrite </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>txbuf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>txsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>rxbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rxsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>DEF_I2C_TIMEOUT</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -288,48 +274,8 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Indicate the receive buffer </p>
-
-</div>
-</div>
-<a class="anchor" id="a379c419607c235a7d723ab4391c2ff2c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void CI2C::write </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Indicate the transmit buffer </p>
+<p>start read &amp; write engine </p>
 
 </div>
 </div>
@@ -339,7 +285,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dce/class_c_i2_c.html">CI2C</a></li>
-    <li class="footer">Generated on Sun Mar 30 2014 01:14:46 for uCXpresso.BLE by
+    <li class="footer">Generated on Sat Apr 5 2014 21:06:07 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -3,7 +3,7 @@
  Name        : i2c.h
  Author      : uCXpresso
  Version     : v1.0.1
- Date		 : 2014/3/29
+ Date		 : 2014/4/5
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : I2C driver
  ===============================================================================
@@ -12,10 +12,11 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
- 2014/3/29	v1.0.1	Add more read & write member functions in		Jason
+ 2014/4/5	v1.0.1	Add more read & write member functions in		Jason
  	 	 	 	 	    CMaster class.
  	 	 	 	 	Fixed I2C driver lock problems.
  	 	 	 	 	Remove I2C-Slave mode.
+ 	 	 	 	 	Move readwrite member to base clase.
  ===============================================================================
  */
 
@@ -43,7 +44,7 @@ typedef enum {
 #define DEF_I2C_TIMEOUT	1000
 
 
-/**I2C base Class
+/**I2C base class
  * \class CI2C i2c.h "class/i2c.h"
  * \ingroup Peripherals
  */
@@ -63,25 +64,27 @@ public:
 	 */
 	virtual void frequency(uint32_t hz);
 
-	/**Indicate the receive buffer
-	 *
+	/** start read & write engine
 	 */
-	virtual void read(uint8_t *data, int length);
-
-	/**Indicate the transmit buffer
-	 *
-	 */
-	virtual void write(uint8_t *data, int length);
-
-	/**Begin transmit and receive the I2C data
-	 */
-	virtual I2C_ERROR_T engine(uint32_t timeout);
+	I2C_ERROR_T	readwrite(void *txbuf, int txsize, void *rxbuf, int rxsize, uint32_t timeout=DEF_I2C_TIMEOUT);
 
 	//
 	//	PRIVATE
 	/// @cond
 	CI2C();
 	virtual 	~CI2C();
+
+	/**Indicate the transmit buffer
+	 */
+	virtual void write(uint8_t *data, int length);
+
+	/**Indicate the receive buffer
+	 */
+	virtual void read(uint8_t *data, int length);
+
+	/**Begin transmit and receive the I2C data
+	 */
+	virtual I2C_ERROR_T engine(uint32_t timeout);
 
 	virtual void onState(uint32_t value);
 	virtual bool start();	// Create I2C start condition
@@ -102,21 +105,12 @@ public:
 	/// @endcond
 };
 
-/**I2C Master Class
+/**The I2CMaster class provides the i2c interface and compatibility of i2cdevlib/i2cdev class.
  * \class CI2CMaster i2c.h "class/i2c.h"
  * \ingroup Peripherals
  */
 class CI2CMaster: public CI2C {
 public:
-	/**Transmit and receive the data from I2C interface.
-	 * \param devAddr is I2C slave device address.
-	 * \param txbuf is a point to transmit buffer.
-	 * \param txsize is the transmit buffer size.
-	 * \param rxbuf is a point to receive buffer.
-	 * \param rxsize is the receive buffer size.
-	 * \return I2C_ERROT_T code.
-	 */
-	virtual I2C_ERROR_T readwrite(uint8_t devAddr, void *txbuf, int txsize, void *rxbuf, int rxsize, uint32_t timeout=DEF_I2C_TIMEOUT);
 
 	/** Read a single bit from an 8-bit device register.
 	 * @param devAddr I2C slave device address
@@ -184,9 +178,9 @@ public:
 	 * @param length Number of bytes to read
 	 * @param data Buffer to store read data in
 	 * @param timeout Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout)
-	 * @return Number of bytes read (-1 indicates failure)
+	 * @return Status of read operation (I2C_OK = success)
 	 */
-	int readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint32_t timeout=DEF_I2C_TIMEOUT);
+	I2C_ERROR_T readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint32_t timeout=DEF_I2C_TIMEOUT);
 
 	/** Read multiple words from a 16-bit device register.
 	 * @param devAddr I2C slave device address
@@ -194,9 +188,9 @@ public:
 	 * @param length Number of words to read
 	 * @param data Buffer to store read data in
 	 * @param timeout Optional read timeout in milliseconds (0 to disable, leave off to use default class value in I2Cdev::readTimeout)
-	 * @return Number of words read (-1 indicates failure)
+	 * @return Status of read operation (I2C_OK = success)
 	 */
-	int readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint32_t timeout=DEF_I2C_TIMEOUT);
+	I2C_ERROR_T readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint32_t timeout=DEF_I2C_TIMEOUT);
 
 	/** write a single bit in an 8-bit device register.
 	 * @param devAddr I2C slave device address
@@ -271,6 +265,9 @@ public:
 	I2C_ERROR_T writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t* data);
 };
 
-
+/**\example /peripheral/i2c_scanner/src/main.cpp
+ * This is an example of how to use the CI2CMaster class.
+ * More details about this example.
+ */
 
 #endif /* I2C_H_ */
