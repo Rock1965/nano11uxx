@@ -98,6 +98,7 @@ int main(void) {
 		switch( dbg.isAnyKey() ) {
 		case 't':
 		case 'T':
+			DBG("Start I2C Scanner:\n");
 			devAddr = 1;	// set address =1 to start the scnner.
 			break;
 		}
@@ -110,6 +111,9 @@ int main(void) {
 				DBG("I2C device found at address 0x%02X\n", devAddr);
 			}
 			devAddr = (devAddr+1)<127 ? devAddr+1 : 0;
+			if (devAddr==0 ) {
+				DBG("Stop I2C Scanner.\n");
+			}
 		}
 #endif
 
