@@ -1,17 +1,17 @@
 /*
  ===============================================================================
  Name        : main.cpp
- Author      :
+ Author      : uCXpresso
  Version     : v1.0.0
- Date		 :
- Copyright   :
- Description :
+ Date		 : 2014/4/5
+ License   	 : MIT
+ Description : I2C test for sensor MPU-6050
  ===============================================================================
   	 	 	 	 	 	 	 	 History
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
-
+ 2014/4/5	v1.0.0	First Edition.									Jason
  ===============================================================================
  */
 
@@ -73,10 +73,18 @@ int main(void) {
 	CBus port(LED1, LED2, LED3, LED4, END);
 	port.output();	// set all pins as output
 
+	// class default I2C address is 0x68
+	// specific I2C addresses may be passed as a parameter here
+	// AD0 low = 0x68 (default for InvenSense evaluation board)
+	// AD0 high = 0x69
 	MPU6050 accelgyro;
+
+	// initialize device
 	accelgyro.initialize();
+
+	// check device
 	if ( accelgyro.testConnection() ) {
-		DBG("Connected");
+		port = 0x07;	// turn on all leds
 	}
 
 	int16_t ax, ay, az;
@@ -95,6 +103,9 @@ int main(void) {
 		i = (i+1) < (int)sizeof(led_scripts) ? i+1 : 0;
 		sleep(100);
 
+		//
+		// read raw accel/gyro measurements from device
+		//
 		accelgyro.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
 		DBG("ax=%d, ay=%d, az=%d, gx=%d, gy=%d, gz=%d\n",
 				ax,
@@ -103,7 +114,6 @@ int main(void) {
 				gx,
 				gy,
 				gz);
-
 	}
     return 0 ;
 }
