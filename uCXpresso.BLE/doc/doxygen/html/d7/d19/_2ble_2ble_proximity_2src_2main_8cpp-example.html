@@ -193,10 +193,10 @@ $(document).ready(function(){initNavTree('d7/d19/_2ble_2ble_proximity_2src_2main
 <div class="line">            ledAlertL = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80afc0ca8cc6cbe215fd3f1ae6d40255b40">LED_OFF</a>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> 1:</div>
-<div class="line">            ledAlertL = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d">LED_ON</a>;</div>
+<div class="line">            ledAlertL = !ledAlertL;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> 2:</div>
-<div class="line">            ledAlertH = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d">LED_ON</a>;</div>
+<div class="line">            ledAlertH = !ledAlertH;</div>
 <div class="line">            tone(ALERT_PIN, ALERT_FREQ, 150, 3);    <span class="comment">//  duration=150ms, count=3 times</span></div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('d7/d19/_2ble_2ble_proximity_2src_2main
 <div class="line">    <span class="comment">// your setup code here</span></div>
 <div class="line">    <span class="comment">//</span></div>
 <div class="line">    <a class="code" href="../../d7/d03/classble_serial.html">bleSerial</a> ble(<span class="stringliteral">&quot;myProximity&quot;</span>);</div>
-<div class="line">    ble.advertising(50, -67);   <span class="comment">// set Advertising interval=100ms, txPowerLevel=-67dBm @ 1M</span></div>
+<div class="line">    ble.advertising(100, -67, 500); <span class="comment">// set Advertising interval=500ms, txPowerLevel=-67dBm @ 1M</span></div>
 <div class="line">    ble.enable();</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">//</span></div>
@@ -299,11 +299,9 @@ $(document).ready(function(){initNavTree('d7/d19/_2ble_2ble_proximity_2src_2main
 <div class="line"></div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="preprocessor">#ifndef DEBUG</span></div>
-<div class="line"><span class="preprocessor"></span>            ps.enable();</div>
+<div class="line"><span class="preprocessor"></span>            ps.enable(<a name="a25"></a><a class="code" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa">POWER_DOWN</a>);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>            ledAlertH = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80afc0ca8cc6cbe215fd3f1ae6d40255b40">LED_OFF</a>;</div>
-<div class="line">            ledAlertL = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80afc0ca8cc6cbe215fd3f1ae6d40255b40">LED_OFF</a>;</div>
-<div class="line">            sleep(3000);</div>
+<div class="line"><span class="preprocessor"></span>            sleep(1000);</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0 ;</div>
@@ -329,7 +327,7 @@ $(document).ready(function(){initNavTree('d7/d19/_2ble_2ble_proximity_2src_2main
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 5 2014 21:06:07 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Apr 10 2014 23:46:38 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

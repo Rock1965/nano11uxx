@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"da/da9/_2rtos_2blink_thread_2src_2main_8cpp-example.html":[2,12],
 "db/d2c/class_c_pin_i_n_t.html":[0,3,7],
 "db/d2c/class_c_pin_i_n_t.html#a02060b0c9bbf0f75dead7bef1c75ce6b":[0,3,7,16],
 "db/d2c/class_c_pin_i_n_t.html#a08521d6d6892b7a80452bfce7db03e2b":[0,3,7,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "de/db4/class_c_small_printf.html#a651d3546ffbbe986fbbbf4bb1043bb7b":[1,0,28,3],
 "de/db4/class_c_small_printf.html#a9158226f537c34067bf2e6a7c25d3f8b":[1,0,28,6],
 "de/dba/class_c_shell.html":[1,0,27],
-"de/dba/class_c_shell.html#a15041136818470124d097d790d55a6e5":[1,0,27,13]
+"de/dba/class_c_shell.html#a15041136818470124d097d790d55a6e5":[1,0,27,13],
+"de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f":[1,0,27,19]
 };

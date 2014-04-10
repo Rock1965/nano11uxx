@@ -203,6 +203,7 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <div class="line"><span class="preprocessor"></span>        <span class="keywordflow">switch</span>( dbg.isAnyKey() ) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>:</div>
+<div class="line">            DBG(<span class="stringliteral">&quot;Start I2C Scanner:\n&quot;</span>);</div>
 <div class="line">            devAddr = 1;    <span class="comment">// set address =1 to start the scnner.</span></div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
@@ -215,6 +216,9 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <div class="line">                DBG(<span class="stringliteral">&quot;I2C device found at address 0x%02X\n&quot;</span>, devAddr);</div>
 <div class="line">            }</div>
 <div class="line">            devAddr = (devAddr+1)&lt;127 ? devAddr+1 : 0;</div>
+<div class="line">            <span class="keywordflow">if</span> (devAddr==0 ) {</div>
+<div class="line">                DBG(<span class="stringliteral">&quot;Stop I2C Scanner.\n&quot;</span>);</div>
+<div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor"></span></div>
@@ -242,7 +246,7 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 5 2014 21:06:07 for uCXpresso.BLE by
+    <li class="footer">Generated on Thu Apr 10 2014 23:46:38 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

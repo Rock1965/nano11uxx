@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : servo.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : v1.0.0
  Date		 : 2014/3/20
  License   	 : MIT

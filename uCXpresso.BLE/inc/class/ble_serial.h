@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : uCXpresso
- Version     : 1.0.13
- Date		 : 2014/3/15
+ Version     : 1.0.14
+ Date		 : 2014/4/10
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -29,6 +29,7 @@
  2014/3/8	v1.0.12 Rename member onLoseLink to onLinkLoss				Jason
  	 	 	 	 	Rename member onHrControl to onHeartRateControl
  2014/3/15	v1.0.13 Change BLE polling to interrupt method.				Jason
+ 2014/4/10	v1.0.14 Remove isActived() member for power save features.	Jason
  ===============================================================================
  */
 
@@ -177,11 +178,6 @@ public:
 	//
 	// PHY Function
 	//
-	/**To check that radio is activated before the radio becomes active.
-	 * \return true if the radio is activated, otherwise if the radio is inactivated.
-	 */
-	bool	isActived();
-
 	/**To disconnect current connection with a reason.
 	 * \param reason is a BLE_DISCONNECT_REASON_T enumeration.
 	 * \return true if disconnect successful, otherwise, disconnect failed.
@@ -318,7 +314,6 @@ protected:
 
 private:
 	CTimeout	m_tmACK;
-	CPin		m_active;
 	uint32_t	m_tmWatch;
 
 	//

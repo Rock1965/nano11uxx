@@ -88,10 +88,10 @@ public:
 			ledAlertL = LED_OFF;
 			break;
 		case 1:
-			ledAlertL = LED_ON;
+			ledAlertL = !ledAlertL;
 			break;
 		case 2:
-			ledAlertH = LED_ON;
+			ledAlertH = !ledAlertH;
 			tone(ALERT_PIN, ALERT_FREQ, 150, 3);	//  duration=150ms, count=3 times
 			break;
 		}
@@ -123,7 +123,7 @@ int main(void) {
 	// your setup code here
 	//
 	bleSerial ble("myProximity");
-	ble.advertising(50, -67);	// set Advertising interval=100ms, txPowerLevel=-67dBm @ 1M
+	ble.advertising(100, -67, 500);	// set Advertising interval=500ms, txPowerLevel=-67dBm @ 1M
 	ble.enable();
 
 	//
@@ -194,11 +194,9 @@ int main(void) {
 
 		} else {
 #ifndef DEBUG
-			ps.enable();
+			ps.enable(POWER_DOWN);
 #endif
-			ledAlertH = LED_OFF;
-			ledAlertL = LED_OFF;
-			sleep(3000);
+			sleep(1000);
 		}
 	}
     return 0 ;

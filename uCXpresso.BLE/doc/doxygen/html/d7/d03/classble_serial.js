@@ -13,7 +13,6 @@ var classble_serial =
     [ "getPriority", "d7/d03/classble_serial.html#ac30b0a1f51549a97b88771692319c0e4", null ],
     [ "getStackHighWaterMark", "d7/d03/classble_serial.html#ac0227eda51725b795a461a768703f588", null ],
     [ "getState", "d7/d03/classble_serial.html#a1e9cce461d8dfb3889cea24f1a703f6f", null ],
-    [ "isActived", "d7/d03/classble_serial.html#ab766015c18f219e359edc1c560d66893", null ],
     [ "isAlive", "d7/d03/classble_serial.html#a4a0f0727be4714cef1e24150a869d403", null ],
     [ "isAvailable", "d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488", null ],
     [ "isConnected", "d7/d03/classble_serial.html#aebfde0d9a7583cb641ac60f02df7cd77", null ],

@@ -6,7 +6,6 @@ var searchData=
   ['insertbefore',['insertBefore',['../df/db6/class_c_list.html#a02ae0a29f9466904e349a984d287a756',1,'CList']]],
   ['insertbeforet',['insertBeforeT',['../da/d59/class_c_list_t.html#affdeb2786698f49ea1dda928591cbc5e',1,'CListT']]],
   ['invert',['invert',['../d7/db9/class_c_pin.html#a240de24c726724aeda90bfacf1d50cc5',1,'CPin']]],
-  ['isactived',['isActived',['../d7/d03/classble_serial.html#ab766015c18f219e359edc1c560d66893',1,'bleSerial']]],
   ['isalive',['isAlive',['../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403',1,'CThread']]],
   ['isanykey',['isAnyKey',['../d4/d37/class_c_debug.html#ad4b4b7f29bf53500532e00aabb62deab',1,'CDebug']]],
   ['isavailable',['isAvailable',['../d8/d3b/classble_battery_level.html#a8cfd4674c5b405183b6b282e663849e4',1,'bleBatteryLevel::isAvailable()'],['../d3/d81/classble_heart_rate.html#a822019806bf50f6d25ae075b62a838ab',1,'bleHeartRate::isAvailable()'],['../d9/d26/classble_health_thermometer.html#a39b5e5ae997a87c7393e363cb540c421',1,'bleHealthThermometer::isAvailable()'],['../de/d67/classble_proximity.html#adc2ab90789ee61d11031ce816b3db11c',1,'bleProximity::isAvailable()'],['../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488',1,'bleSerial::isAvailable()']]],

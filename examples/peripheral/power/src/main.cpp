@@ -53,7 +53,7 @@ public:
 		probe = HIGH;
 		led = probe;
 	}
-};
+}; // */
 
 
 //
@@ -94,7 +94,7 @@ int main(void) {
 		} else {
 			ps.enable(POWER_DOWN);
 		}
-		sleep(100);
+		sleep(1000);
 	}
     return 0 ;
 }
