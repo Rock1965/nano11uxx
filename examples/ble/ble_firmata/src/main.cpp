@@ -237,7 +237,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-128];
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-512];
 
 //
 // setup before the system startup
