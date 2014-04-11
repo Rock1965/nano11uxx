@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : callback.cpp
  Author      : Jason
- Version     : 1.0.0
- Date		 : 2013/12/27
+ Version     : 1.0.2
+ Date		 : 2014/3/20
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : for nano11Uxx-BLE
@@ -12,8 +12,9 @@
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
- 2013/12/27	v1.0.0
+ 2013/12/27	v1.0.0	First Edition
  2014/1/7	v1.0.1	Enable UNO Pin 8~13
+ 2014/3/20	v1.0.2	Add Servo Motor
  ===============================================================================
  */
 #include "uCXpresso.h"
@@ -21,6 +22,7 @@
 #include "class/bus.h"
 #include "class/pwm.h"
 #include "class/adc.h"
+#include "motor/servo/servo.h"
 
 //
 // HARDWARE define for UNO.NET
@@ -37,7 +39,7 @@
 #define PIN_TO_ANALOG(p)        ((p) - 14)
 
 #define MAX_QUERIES 				8
-#define MINIMUM_SAMPLING_INTERVAL 	100
+#define MINIMUM_SAMPLING_INTERVAL 	50
 
 //
 // define for NANO11Uxx
@@ -46,6 +48,9 @@
 
 #define IS_PIN_PWM(p)           ((p) >=4 && (p)<=7)	// PWM1-PWM4
 #define PIN_TO_PWM(p)           ((p)-4)
+
+#define IS_PIN_SERVO(p)           ((p) >=4 && (p)<=7)	// PWM1-PWM4
+#define PIN_TO_SERVO(p)           ((p)-4)
 
 static CBus nanoBus(
 		P16, 	// 0 ,
@@ -70,8 +75,9 @@ static CBus nanoBus(
 		P14, 	// 19, A5
 		END);
 
-CPwm pwm[4] = { PWM1, PWM2, PWM3, PWM4};
+CPwm pwm[] = { PWM1, PWM2, PWM3, PWM4};
 CAdc ad[] = {AD0, AD1, AD2, AD3, AD4, AD5};
+CServo servos[] = {PWM1, PWM2, PWM3, PWM4};
 
 #endif
 
@@ -98,7 +104,7 @@ byte pinConfig[TOTAL_PINS];         // configuration of every pin
 byte portConfigInputs[TOTAL_PORTS]; // each bit: 1 = pin in INPUT, 0 = anything else
 int pinState[TOTAL_PINS];           // any value that has been written
 
-int samplingInterval = 100;          // how often to run the main loop (in ms)
+int samplingInterval = MINIMUM_SAMPLING_INTERVAL;          // how often to run the main loop (in ms)
 
 //
 // Functions
@@ -141,7 +147,13 @@ void setPinModeCallback(byte pin, int mode) {
 		break;
 	case INPUT:
 		if (IS_PIN_DIGITAL(pin)) {
-			if ( pinConfig[pin] == ANALOG ) {
+			if ( pinConfig[pin]==SERVO ) {
+				servos[PIN_TO_SERVO(pin)].disable();
+
+			} else if ( IS_PIN_PWM(pin) ) {
+				pwm[PIN_TO_PWM(pin)].disable();
+
+			} else if ( pinConfig[pin] == ANALOG ) {
 				ad[PIN_TO_ANALOG(pin)].disable();
 			}
 			nanoBus[pin].input(INTERNAL_PULL_UP);
@@ -153,8 +165,12 @@ void setPinModeCallback(byte pin, int mode) {
 
 	case OUTPUT:
 		if (IS_PIN_DIGITAL(pin)) {
-			if ( IS_PIN_PWM(pin) ) {// disable PWM
-				pwm[pin-4].disable();
+			if ( pinConfig[pin]==SERVO ) {
+				servos[PIN_TO_SERVO(pin)].disable();
+
+			} else if ( IS_PIN_PWM(pin) ) {
+				pwm[PIN_TO_PWM(pin)].disable();
+
 			} else if ( pinConfig[pin] == ANALOG ) {
 				ad[PIN_TO_ANALOG(pin)].disable();
 			}
@@ -164,11 +180,22 @@ void setPinModeCallback(byte pin, int mode) {
 		break;
 	case PWM:
 		if (IS_PIN_PWM(pin)) {
+			if ( pinConfig[pin]==SERVO ) {
+				servos[PIN_TO_SERVO(pin)].disable();
+			}
 			pwm[PIN_TO_PWM(pin)].enable();
 			pwm[PIN_TO_PWM(pin)].pulseWidth(0.0f);
 			pinConfig[pin] = PWM;
 		}
 		break;
+	case SERVO:
+		if ( IS_PIN_SERVO(pin) ) {
+			if ( pinConfig[pin]==PWM ) {
+				pwm[PIN_TO_PWM(pin)].disable();
+			}
+			servos[PIN_TO_SERVO(pin)].enable();
+			pinConfig[pin] = SERVO;
+		}
 	default:
 		myFirmata.sendString("Unknown pin mode"); // TODO: put error msgs in EEPROM
 	}
@@ -198,11 +225,16 @@ void analogWriteCallback(byte pin, int value) {
 	if (pin < TOTAL_PINS) {
 		switch (pinConfig[pin]) {
 		case SERVO:
+			if ( IS_PIN_SERVO(pin) ) {
+				servos[PIN_TO_SERVO(pin)].write(value);
+				pinState[pin] = value;
+			}
 			break;
 		case PWM:
-			if (IS_PIN_PWM(pin))
+			if (IS_PIN_PWM(pin)) {
 				pwm[PIN_TO_PWM(pin)].dutyCycle( map((float)value, 0.0f, 255.0f, 0.0f, 1.0f) );
-			pinState[pin] = value;
+				pinState[pin] = value;
+			}
 			break;
 		}
 	}
@@ -259,7 +291,7 @@ void systemResetCallback() {
 	}
 
 	// Enable PWM power
-	CPwm::period(0.005); // Set PWM period time = 5ms
+	CPwm::period(SERVO_PWM_PERIOD); // Set PWM period time = 5ms
 
 	// by default, do not report any analog inputs
 	analogInputsToReport = 0;
@@ -373,17 +405,14 @@ void sysexCallback(byte command, byte argc, byte *argv) {
 		break;
 
 	case SERVO_CONFIG:
-/*		if (argc > 4) {
+		if (argc > 4) {
 			// these vars are here for clarity, they'll optimized away by the compiler
 			byte pin = argv[0];
 			int minPulse = argv[1] + (argv[2] << 7);
 			int maxPulse = argv[3] + (argv[4] << 7);
 
 			if (IS_PIN_SERVO(pin)) {
-				if (servos[PIN_TO_SERVO(pin)].attached())
-					servos[PIN_TO_SERVO(pin)].detach();
-				servos[PIN_TO_SERVO(pin)].attach(PIN_TO_DIGITAL(pin), minPulse,
-						maxPulse);
+				servos[PIN_TO_SERVO(pin)].settings(minPulse, maxPulse);
 				setPinModeCallback(pin, SERVO);
 			}
 		} // */

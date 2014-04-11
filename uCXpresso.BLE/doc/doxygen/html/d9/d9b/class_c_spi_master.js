@@ -1,6 +1,6 @@
 var class_c_spi_master =
 [
-    [ "CSpiMaster", "d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800", null ],
+    [ "CSpiMaster", "d9/d9b/class_c_spi_master.html#ad84a4c9c901f4c1793b9d1dfcfa754b0", null ],
     [ "begin", "d9/d9b/class_c_spi_master.html#a98fb4712f52c9977d4973430f5f505b8", null ],
     [ "bitOrder", "d9/d9b/class_c_spi_master.html#aa7a160dad74689b9afb720c78d63558f", null ],
     [ "disable", "d9/d9b/class_c_spi_master.html#a5009ac7cc08bcf2b1d1be19b320424e6", null ],

@@ -182,10 +182,11 @@ protected:
  */
 class CSpiMaster: public CSPI {
 public:
-	/**CSpiMaster Construct
+	/**CSpiMaster Constructor
 	 * \param selPin is a PIN_NAME_T to indicate a user's SEL pin for SPI interface.
+	 * \param pullpu is a boolean to enable the internal pull-up resistors for SPI interface.
 	 */
-	CSpiMaster(PIN_NAME_T selPin);
+	CSpiMaster(PIN_NAME_T selPin, bool pullup=true);
 
 	/**Override function, to transmit and receive the SPI data block. <br/>
 	 * The function provides the SEL pin function in the readwrite member function.<br/>

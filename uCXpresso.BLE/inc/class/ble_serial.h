@@ -121,6 +121,7 @@ public:
 	 * \param connTimeout  To expose the "connection timeout" on the advertising message.
 	 * \param manufactureData To expose the "Manufacture Data" on the advertising message.
 	 * \remark advertising(...) have to call before the enable() member.
+	 * \note The connection interval must be between 8 ms and 4 s.
 	 * \see bleSerial()
 	 */
 	void advertising(uint16_t advInterval,
@@ -268,7 +269,6 @@ public:
 	virtual int  write(const void *buf, int len, bool block=true);
 	virtual bool isConnected();
 	virtual void flush();
-
 
 	//
 	// PRIVATE, internal used

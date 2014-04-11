@@ -183,72 +183,71 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="../../d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec">bleSerial</a>(LPCTSTR deviceName=DEF_BLE_DEVICENAME);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9">advertising</a>(uint16_t advInterval,</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;               int8_t txPowerLevel=DEF_BLE_TXPOWER,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;               uint16_t connInterval=DEF_BLE_CONN_INTERVAL,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;               uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;               uint16_t manufactureData=DEF_BLE_MFG_DATA);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="../../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74">  135</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74">setup</a>(uint16_t advInterval,</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;               int8_t txPowerLevel=DEF_BLE_TXPOWER,</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;               uint16_t connInterval=DEF_BLE_CONN_INTERVAL,</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;               uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;               uint16_t manufactureData=DEF_BLE_MFG_DATA) {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="../../d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9">advertising</a>(advInterval, txPowerLevel, connInterval, connTimeout, manufactureData);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// Controls</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable</a>(uint32_t stack=190);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable</a>(uint32_t stack=128);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4">disable</a>();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df">watchdog</a>(uint32_t tm);     <span class="comment">// The WD timeout will reset the BLE core automatically when APP crash to cause the BLE core lock,</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// PHY Function</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span>    <a class="code" href="../../d7/d03/classble_serial.html#a5e63823fd7ff0ef0ac5447cd265b5a5c">disconnect</a>(<a class="code" href="../../db/dff/group___enumerations.html#gafdc7d73c1364c4d42f80cfdc702de294">BLE_DISCONNECT_REASON_T</a> reason=<a class="code" href="../../db/dff/group___enumerations.html#ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b">BLE_TERMINATED</a>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">bool</span>    <a class="code" href="../../d7/d03/classble_serial.html#acddad359ad714bd31358c96966839a61">setRadioTxPower</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga3b6d6db9e13e93ae21f2a383d9903617">BLE_TX_POWER_T</a> power);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    uint8_t <a class="code" href="../../d7/d03/classble_serial.html#a6aea16b265aa98f0a540f71b75965408">getPhyVersion</a>();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// Events</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#adb930ce55295ff7eb6ab5bdbeb702749">onConnected</a>();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#aa6f5116c8bcf05011a05ad5e2967c318">onDisconnected</a>();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a8af315789cc459a1fde96ac80ca9ffb7">onWatchdog</a>();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="../../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4">  248</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4">onError</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga6c00522f6a8c33135ee0414877d42c04">BLE_ERR_T</a> err, LPCTSTR <span class="keywordtype">id</span>=<span class="stringliteral">&quot;bleSerial&quot;</span>){}   <span class="comment">// onError() Event indicate the error code when an error occurred.</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// for BLE UART Service</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">// Implement the virtual functions of CStream class</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">  260</a></span>&#160;    <span class="keyword">inline</span>  <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">isAvailable</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1">writeable</a>(); }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// Implement the virtual functions from CStream class</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d7/d03/classble_serial.html#a59dca8e3e2d6945a699347f4c4708fd4">readable</a>();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1">writeable</a>();</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">read</a>(<span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d7/d03/classble_serial.html#ab9d147e7dcb9436f390f2ad29d539930">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#aebfde0d9a7583cb641ac60f02df7cd77">isConnected</a>();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#ad41b78cc1b0fc02ce65248147b32ffa8">flush</a>();</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9">advertising</a>(uint16_t advInterval,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;               int8_t txPowerLevel=DEF_BLE_TXPOWER,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;               uint16_t connInterval=DEF_BLE_CONN_INTERVAL,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;               uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;               uint16_t manufactureData=DEF_BLE_MFG_DATA);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="../../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74">  136</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74">setup</a>(uint16_t advInterval,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;               int8_t txPowerLevel=DEF_BLE_TXPOWER,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;               uint16_t connInterval=DEF_BLE_CONN_INTERVAL,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;               uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;               uint16_t manufactureData=DEF_BLE_MFG_DATA) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="../../d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9">advertising</a>(advInterval, txPowerLevel, connInterval, connTimeout, manufactureData);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// Controls</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable</a>(uint32_t stack=190);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable</a>(uint32_t stack=128);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4">disable</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df">watchdog</a>(uint32_t tm);     <span class="comment">// The WD timeout will reset the BLE core automatically when APP crash to cause the BLE core lock,</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// PHY Function</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span>    <a class="code" href="../../d7/d03/classble_serial.html#a5e63823fd7ff0ef0ac5447cd265b5a5c">disconnect</a>(<a class="code" href="../../db/dff/group___enumerations.html#gafdc7d73c1364c4d42f80cfdc702de294">BLE_DISCONNECT_REASON_T</a> reason=<a class="code" href="../../db/dff/group___enumerations.html#ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b">BLE_TERMINATED</a>);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">bool</span>    <a class="code" href="../../d7/d03/classble_serial.html#acddad359ad714bd31358c96966839a61">setRadioTxPower</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga3b6d6db9e13e93ae21f2a383d9903617">BLE_TX_POWER_T</a> power);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    uint8_t <a class="code" href="../../d7/d03/classble_serial.html#a6aea16b265aa98f0a540f71b75965408">getPhyVersion</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">// Events</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#adb930ce55295ff7eb6ab5bdbeb702749">onConnected</a>();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#aa6f5116c8bcf05011a05ad5e2967c318">onDisconnected</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a8af315789cc459a1fde96ac80ca9ffb7">onWatchdog</a>();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="../../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4">  249</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4">onError</a>(<a class="code" href="../../db/dff/group___enumerations.html#ga6c00522f6a8c33135ee0414877d42c04">BLE_ERR_T</a> err, LPCTSTR <span class="keywordtype">id</span>=<span class="stringliteral">&quot;bleSerial&quot;</span>){}   <span class="comment">// onError() Event indicate the error code when an error occurred.</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">// for BLE UART Service</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="comment">// Implement the virtual functions of CStream class</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">  261</a></span>&#160;    <span class="keyword">inline</span>  <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">isAvailable</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1">writeable</a>(); }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// Implement the virtual functions from CStream class</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d7/d03/classble_serial.html#a59dca8e3e2d6945a699347f4c4708fd4">readable</a>();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1">writeable</a>();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">read</a>(<span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d7/d03/classble_serial.html#ab9d147e7dcb9436f390f2ad29d539930">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#aebfde0d9a7583cb641ac60f02df7cd77">isConnected</a>();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d03/classble_serial.html#ad41b78cc1b0fc02ce65248147b32ffa8">flush</a>();</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// PRIVATE, internal used</span></div>
@@ -328,7 +327,7 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <div class="ttc" id="group___enumerations_html_ga3b6d6db9e13e93ae21f2a383d9903617"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ga3b6d6db9e13e93ae21f2a383d9903617">BLE_TX_POWER_T</a></div><div class="ttdeci">BLE_TX_POWER_T</div><div class="ttdef"><b>Definition:</b> ble_serial.h:73</div></div>
 <div class="ttc" id="classble_serial_html_a08b3a82e95aa527433c04b4a6a3d81d4"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4">bleSerial::disable</a></div><div class="ttdeci">void disable()</div></div>
 <div class="ttc" id="classble_serial_html_a3ff1e4b271a7d225e73abd337043d8e4"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">bleSerial::enable</a></div><div class="ttdeci">bool enable(uint32_t stack=128)</div></div>
-<div class="ttc" id="classble_serial_html_a1691c5c5655043512bf1c462e6928488"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">bleSerial::isAvailable</a></div><div class="ttdeci">bool isAvailable()</div><div class="ttdef"><b>Definition:</b> ble_serial.h:260</div></div>
+<div class="ttc" id="classble_serial_html_a1691c5c5655043512bf1c462e6928488"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">bleSerial::isAvailable</a></div><div class="ttdeci">bool isAvailable()</div><div class="ttdef"><b>Definition:</b> ble_serial.h:261</div></div>
 <div class="ttc" id="group___enumerations_html_gga3b6d6db9e13e93ae21f2a383d9903617a5c98a88cfa9a664b8d96aa6a03ba53d9"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga3b6d6db9e13e93ae21f2a383d9903617a5c98a88cfa9a664b8d96aa6a03ba53d9">BLE_TX_m18dBm</a></div><div class="ttdoc">-18dBm (Low) </div><div class="ttdef"><b>Definition:</b> ble_serial.h:74</div></div>
 <div class="ttc" id="group___enumerations_html_ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b">BLE_TERMINATED</a></div><div class="ttdoc">Request termination of the connection with the peer device with the reason &quot;Remote user terminated co...</div><div class="ttdef"><b>Definition:</b> ble_serial.h:66</div></div>
 <div class="ttc" id="classble_proximity_html"><div class="ttname"><a href="../../de/d67/classble_proximity.html">bleProximity</a></div><div class="ttdef"><b>Definition:</b> ble_proximity.h:34</div></div>
@@ -348,12 +347,12 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <div class="ttc" id="class_c_timeout_html"><div class="ttname"><a href="../../d5/d5b/class_c_timeout.html">CTimeout</a></div><div class="ttdef"><b>Definition:</b> timeout.h:22</div></div>
 <div class="ttc" id="classble_serial_html_ad41b78cc1b0fc02ce65248147b32ffa8"><div class="ttname"><a href="../../d7/d03/classble_serial.html#ad41b78cc1b0fc02ce65248147b32ffa8">bleSerial::flush</a></div><div class="ttdeci">virtual void flush()</div></div>
 <div class="ttc" id="classble_serial_html_a8af315789cc459a1fde96ac80ca9ffb7"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a8af315789cc459a1fde96ac80ca9ffb7">bleSerial::onWatchdog</a></div><div class="ttdeci">virtual void onWatchdog()</div></div>
-<div class="ttc" id="classble_serial_html_a8a0622f5d10fe2242978a16b2d1e6ee4"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4">bleSerial::onError</a></div><div class="ttdeci">virtual void onError(BLE_ERR_T err, LPCTSTR id=&quot;bleSerial&quot;)</div><div class="ttdef"><b>Definition:</b> ble_serial.h:248</div></div>
+<div class="ttc" id="classble_serial_html_a8a0622f5d10fe2242978a16b2d1e6ee4"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4">bleSerial::onError</a></div><div class="ttdeci">virtual void onError(BLE_ERR_T err, LPCTSTR id=&quot;bleSerial&quot;)</div><div class="ttdef"><b>Definition:</b> ble_serial.h:249</div></div>
 <div class="ttc" id="class_c_mutex_html"><div class="ttname"><a href="../../d3/d0d/class_c_mutex.html">CMutex</a></div><div class="ttdef"><b>Definition:</b> mutex.h:31</div></div>
 <div class="ttc" id="classble_serial_html_a0ee4ea2d6d4a38bbd64968336f85c2e9"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9">bleSerial::advertising</a></div><div class="ttdeci">void advertising(uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint16_t manufactureData=DEF_BLE_MFG_DATA)</div></div>
 <div class="ttc" id="classble_serial_html_a5e63823fd7ff0ef0ac5447cd265b5a5c"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a5e63823fd7ff0ef0ac5447cd265b5a5c">bleSerial::disconnect</a></div><div class="ttdeci">bool disconnect(BLE_DISCONNECT_REASON_T reason=BLE_TERMINATED)</div></div>
 <div class="ttc" id="class_c_stream_html_af56764abe8954430eede10e253f8994f"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">CStream::read</a></div><div class="ttdeci">virtual uint8_t read()</div></div>
-<div class="ttc" id="classble_serial_html_acc1e214474c9e98705fb7f363a3eee74"><div class="ttname"><a href="../../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74">bleSerial::setup</a></div><div class="ttdeci">void setup(uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint16_t manufactureData=DEF_BLE_MFG_DATA)</div><div class="ttdef"><b>Definition:</b> ble_serial.h:135</div></div>
+<div class="ttc" id="classble_serial_html_acc1e214474c9e98705fb7f363a3eee74"><div class="ttname"><a href="../../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74">bleSerial::setup</a></div><div class="ttdeci">void setup(uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint16_t manufactureData=DEF_BLE_MFG_DATA)</div><div class="ttdef"><b>Definition:</b> ble_serial.h:136</div></div>
 <div class="ttc" id="classble_serial_html"><div class="ttname"><a href="../../d7/d03/classble_serial.html">bleSerial</a></div><div class="ttdoc">bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...</div><div class="ttdef"><b>Definition:</b> ble_serial.h:99</div></div>
 <div class="ttc" id="classble_health_thermometer_html"><div class="ttname"><a href="../../d9/d26/classble_health_thermometer.html">bleHealthThermometer</a></div><div class="ttdef"><b>Definition:</b> ble_ht.h:60</div></div>
 <div class="ttc" id="classble_device_info_html"><div class="ttname"><a href="../../d3/dc5/classble_device_info.html">bleDeviceInfo</a></div><div class="ttdef"><b>Definition:</b> ble_devinfo.h:45</div></div>
@@ -372,7 +371,7 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>ble_serial.h</b></li>
-    <li class="footer">Generated on Thu Apr 10 2014 23:46:39 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri Apr 11 2014 23:43:26 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

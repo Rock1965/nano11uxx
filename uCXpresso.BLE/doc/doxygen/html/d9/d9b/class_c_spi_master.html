@@ -129,8 +129,8 @@ Inheritance diagram for CSpiMaster:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8d9da2cee5e13a06c8ed5e4146e4800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/class_c_spi_master.html#ae8d9da2cee5e13a06c8ed5e4146e4800">CSpiMaster</a> (<a class="el" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> selPin)</td></tr>
-<tr class="separator:ae8d9da2cee5e13a06c8ed5e4146e4800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84a4c9c901f4c1793b9d1dfcfa754b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/class_c_spi_master.html#ad84a4c9c901f4c1793b9d1dfcfa754b0">CSpiMaster</a> (<a class="el" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a> selPin, bool pullup=true)</td></tr>
+<tr class="separator:ad84a4c9c901f4c1793b9d1dfcfa754b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d1514765c41561d16dd46eefb9926e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/class_c_spi_master.html#a13d1514765c41561d16dd46eefb9926e">readwrite</a> (void *txbuf, void *rxbuf, uint32_t length)</td></tr>
 <tr class="separator:a13d1514765c41561d16dd46eefb9926e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accc9a5c831ee85e95f0bb5567de5f529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3f/class_c_s_p_i.html#accc9a5c831ee85e95f0bb5567de5f529">format</a> (<a class="el" href="../../db/dff/group___enumerations.html#gae74cec5e96015c8083810d69358f8f08">SPI_DATABIT_T</a> bits, <a class="el" href="../../db/dff/group___enumerations.html#ga296b79fb83e48fbffa9ee5978d200873">SPI_MODE_T</a> mode=<a class="el" href="../../db/dff/group___enumerations.html#gga296b79fb83e48fbffa9ee5978d200873a152359b11fb4b43ed0c5485eb0ab0673">SPI_MODE_0</a>)</td></tr>
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p><a class="el" href="../../d9/d9b/class_c_spi_master.html">CSpiMaster</a> class and inherit from <a class="el" href="../../d2/d3f/class_c_s_p_i.html">CSPI</a> class, and provides the master sel pin. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/d72/_2peripheral_2spi_2src_2main_8cpp-example.html#_a11">/peripheral/spi/src/main.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae8d9da2cee5e13a06c8ed5e4146e4800"></a>
+<a class="anchor" id="ad84a4c9c901f4c1793b9d1dfcfa754b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -180,15 +180,26 @@ Public Member Functions</h2></td></tr>
           <td class="memname">CSpiMaster::CSpiMaster </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/dff/group___enumerations.html#ga65a2241721e4acb573e0c3fe29ac432f">PIN_NAME_T</a>&#160;</td>
-          <td class="paramname"><em>selPin</em></td><td>)</td>
+          <td class="paramname"><em>selPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pullup</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d9/d9b/class_c_spi_master.html">CSpiMaster</a> Construct </p>
+<p><a class="el" href="../../d9/d9b/class_c_spi_master.html">CSpiMaster</a> Constructor </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">selPin</td><td>is a PIN_NAME_T to indicate a user's SEL pin for SPI interface. </td></tr>
+    <tr><td class="paramname">pullpu</td><td>is a boolean to enable the internal pull-up resistors for SPI interface. </td></tr>
   </table>
   </dd>
 </dl>
@@ -720,7 +731,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d9b/class_c_spi_master.html">CSpiMaster</a></li>
-    <li class="footer">Generated on Thu Apr 10 2014 23:46:39 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri Apr 11 2014 23:43:26 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
