@@ -220,7 +220,7 @@ int main(void) {
 	// BLE Engine (Serial Stream)
 	//
 	myBLE ble;
-	ble.advertising(100, -70, 8);	// set adv. interval = 100ms, calibrater tx power = -70dBm, conn. interval=8ms
+	ble.advertising(100, -70);	// set adv. interval = 100ms, calibrater tx power = -70dBm
 	ble.enable();					// start the ble engine first!!
 
 	//
