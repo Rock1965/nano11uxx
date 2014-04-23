@@ -92,6 +92,7 @@
 								</option>
 								<option id="gnu.cpp.link.option.paths.313720741" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.BLE/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.BLE/Release}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.crpenable.363716836" name="Enable Code Read Protect" superClass="com.crt.advproject.link.cpp.crpenable"/>
 								<option id="com.crt.advproject.link.cpp.multicore.slave.967374958" name="Multicore slave" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
@@ -225,7 +226,7 @@
 	<storageModule moduleId="com.crt.config">
 		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;TargetConfig&gt;
-&lt;Properties property_0="" property_2="LPC11_12_13_128K_8K.cfx" property_3="NXP" property_4="LPC11U37/401" property_count="5" version="60100"/&gt;
+&lt;Properties property_0="" property_2="LPC11_12_13_128K_8K.cfx" property_3="NXP" property_4="LPC11U37/401" property_count="5" version="70002"/&gt;
 &lt;infoList vendor="NXP"&gt;
 &lt;info chip="LPC11U37/401" flash_driver="LPC11_12_13_128K_8K.cfx" match_id="0x00017C40" name="LPC11U37/401" stub="crt_emu_lpc11_13_nxp"&gt;
 &lt;chip&gt;

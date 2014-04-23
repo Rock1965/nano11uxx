@@ -51,7 +51,7 @@ void SWPwm::period(float sec) {
 bool SWPwm::start() {
 	bool ret;
 	m_cycle = 0;
-	ret = CThread::start("swPWM", 120, PRI_HARDWARE);
+	ret = CThread::start("swPWM", 53, PRI_HARDWARE);
 	m_timer.begin();
 	return ret;
 }
