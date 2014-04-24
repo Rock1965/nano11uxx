@@ -19,7 +19,7 @@ extern "C" {
 #define uCXpresso_VER_MAJOR		1
 #define uCXpresso_VER_MINOR		0
 #define uCXpresso_VER_REV		5
-#define uCXpresso_VER_RC		0
+#define uCXpresso_VER_RC		1
 #define uCXpresso_VER_BUILD		"2014/4/24"
 #define uCXpresso_VER_STR		"V1.0.5"
 
@@ -41,9 +41,9 @@ extern "C" {
 			true = !false
 		}bool;
 	#endif
-	#define TRUE	true
-	#define FALSE	false
-	#define BOOL	bool
+//	#define TRUE	true
+//	#define FALSE	false
+//	#define BOOL	bool
 	#define PACK_STRUCT __attribute__ ((__packed__))
 #endif
 
