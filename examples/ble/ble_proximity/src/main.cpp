@@ -123,7 +123,7 @@ int main(void) {
 	// your setup code here
 	//
 	bleSerial ble("myProximity");
-	ble.advertising(100, -67, 500);	// set Advertising interval=500ms, txPowerLevel=-67dBm @ 1M
+	ble.advertising(1000, -67);	// set Advertising interval=1000ms, txPowerLevel=-67dBm @ 1M
 	ble.enable();
 
 	//
@@ -205,7 +205,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-64];	// reduce pool to increase global stack
+static uint8_t mem_pool[DEFAULT_POOL_SIZE];	// reduce pool to increase global stack
 
 //
 // setup before the system startup

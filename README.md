@@ -6,8 +6,9 @@ uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 v1.0.5 rc1 24th April 2014
 --------------------------------
 ###Details:
-	1. Update usbCDC (Virtual COM. port) driver to support the Windows 7 64-bits.
-	2. Add "Battery-Level" BLE notify.
+	1. Update Low Power Features ( 60uA in Activily )
+	2. Update usbCDC (Virtual COM. port) driver to support the Windows 7 64-bits.
+	3. Add "Battery-Level" BLE notify.
 
 v1.0.4 released 13th April 2014
 --------------------------------
