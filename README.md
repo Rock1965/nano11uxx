@@ -3,7 +3,7 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
-v1.0.5 rc1 24th April 2014
+v1.0.5 rc1 25th April 2014
 --------------------------------
 ###Details:
 	1. Update Low Power Features ( 60uA in Activily )
