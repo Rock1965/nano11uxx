@@ -24,15 +24,15 @@
  * \ingroup Enumerations
  */
 typedef enum {
-	PWM1 = 1,	///< PWM1 (P19)
-	PWM2,		///< PWM2 (P20)
-	PWM3,		///< PWM3 (P21)
-	PWM4,		///< PWM4 (P22)
+	PWM1 = 1,	///< PWM1 (P20)
+	PWM2,		///< PWM2 (P21)
+	PWM3,		///< PWM3 (P22)
+	PWM4,		///< PWM4 (P23)
 }PWM_CH_T;
 
 /*! \def Max frequency
  */
-#define MAX_PWM_FREQUENCY	48000	// 48KHz (period=20.83us)
+#define MAX_PWM_FREQUENCY	KHZ(20)	// 20KHz (period time: 50us +/- 5us)
 
 /**Pulse-width modulated output.
  * \class CPwm pwm.h "class/pwm.h"
@@ -104,7 +104,6 @@ public:
 	inline void end() { disable(); }
 
 	/*! \cond PRIVATE */
-	CPwm();
 	virtual ~CPwm();
 
 protected:
