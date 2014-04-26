@@ -3,12 +3,18 @@ nano11Uxx (LPC11U3x + nRF BLE)
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
 
-v1.0.5 rc1 25th April 2014
+v1.0.5 released 26th April 2014
 --------------------------------
+###Features:
+	1. Update "Low Power" Features. 
+	2. Support Virtual COM. port in Windows 7 64-bits.
+	3. Add "BLE Notify" for "Battery-Level" service.
+	
 ###Details:
-	1. Update Low Power Features ( 60uA in Activily )
-	2. Update usbCDC (Virtual COM. port) driver to support the Windows 7 64-bits.
-	3. Add "Battery-Level" BLE notify.
+	1. Update BLE driver.
+	2. Update Low Power Features ( 60uA in Activily )
+	3. Update usbCDC (Virtual COM. port) driver to support the Windows 7 64-bits.
+	4. Add "Battery-Level" BLE notify.
 
 v1.0.4 released 13th April 2014
 --------------------------------
