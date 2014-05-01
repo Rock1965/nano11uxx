@@ -53,15 +53,14 @@ bool PID::Compute()
    if(!inAuto) return false;
 
 #ifdef __arm__
-   if ( lastTime.isExpired(SampleTime) )
-
+   lastTime.wait(SampleTime);
 #else
    unsigned long now = millis();
    unsigned long timeChange = (now - lastTime);
 
    if(timeChange>=SampleTime)
-#endif
    {
+#endif
       /*Compute all the working error variables*/
 	  double input = *myInput;
       double error = *mySetpoint - input;
@@ -82,12 +81,13 @@ bool PID::Compute()
 
 #ifdef __arm__
       lastTime.reset();
+      return true;
 #else
       lastTime = now;
-#endif
 	  return true;
    }
    else return false;
+#endif
 }
 
 
