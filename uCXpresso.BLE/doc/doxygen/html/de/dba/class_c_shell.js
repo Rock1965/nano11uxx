@@ -2,6 +2,7 @@ var class_c_shell =
 [
     [ "CShell", "de/dba/class_c_shell.html#a66915a194065db1d82873d79ee6ec8c6", null ],
     [ "~CShell", "de/dba/class_c_shell.html#a342aa70c0ff0ba0f990942edfbc59bb6", null ],
+    [ "available", "de/dba/class_c_shell.html#a86ec9b3db5d7c467535064ea94e1d9c0", null ],
     [ "dbgWaitKey", "de/dba/class_c_shell.html#a7731a22b0b80a4facc431f6e07db2599", null ],
     [ "enterCriticalSection", "de/dba/class_c_shell.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
     [ "exitCriticalSection", "de/dba/class_c_shell.html#aab3a51062666552690be49b8e8027161", null ],
@@ -17,6 +18,9 @@ var class_c_shell =
     [ "onClose", "de/dba/class_c_shell.html#a27a37bf5a22eaba1426655409decc188", null ],
     [ "onDebug", "de/dba/class_c_shell.html#a74d294faaebd969b295366f4a861cf02", null ],
     [ "onQuery", "de/dba/class_c_shell.html#a16e1dae0dedda35c0be64d1c8f40e6b4", null ],
+    [ "parseFloat", "de/dba/class_c_shell.html#aa7a0f71974dae410f4b4c4d699b33666", null ],
+    [ "parseInt", "de/dba/class_c_shell.html#aeb209953ec3e9baab90925a80f9c8331", null ],
+    [ "read", "de/dba/class_c_shell.html#a441538cdd21b703cfc3c0317ec076a6e", null ],
     [ "resume", "de/dba/class_c_shell.html#ac8c53aa8c145fc4ac70fa6d825b95742", null ],
     [ "resumeAll", "de/dba/class_c_shell.html#a743d4325b7e7da494283f3292773ff77", null ],
     [ "run", "de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f", null ],
@@ -34,7 +38,5 @@ var class_c_shell =
     [ "suspendAll", "de/dba/class_c_shell.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
     [ "cmd", "de/dba/class_c_shell.html#aa5ef2d56e802b9925cf0ae7d36741bda", null ],
     [ "m_console", "de/dba/class_c_shell.html#ac555f42f70f60653dbd5e0c8ec9c4dcf", null ],
-    [ "m_dbgKey", "de/dba/class_c_shell.html#ab2b6ca1616128e6a8a05c8c235c7b011", null ],
-    [ "m_semInput", "de/dba/class_c_shell.html#aa81828c40c17f38821ec395aaf38ee98", null ],
     [ "m_sock", "de/dba/class_c_shell.html#ab0eaa18213db8965c68f978538050162", null ]
 ];

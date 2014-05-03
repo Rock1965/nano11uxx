@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : stream.h
  Author      : uCXpresso
- Version     : v1.0.1
- Date		 : 2014/3/19
+ Version     : v1.0.2
+ Date		 : 2014/5/2
  Description : Stream Base Class
  ===============================================================================
  	 	 	 	 	 	 	 	 History
@@ -12,6 +12,7 @@
  ---------+---------+--------------------------------------------+-------------
  2011/12/18	v1.0.0	First Edition									Jason
  2014/3/19	v1.0.1	Add more operators								Jason
+ 2014/5/2	v1.0.2	Add parseInt, parseFloat member functions		Jason
  ===============================================================================
  */
 
@@ -19,6 +20,7 @@
 #define STREAM_H_
 
 #include "class/object.h"
+#include "class/semaphore.h"
 
 /**An abstract class, to define the serial stream input and output interface.
  * \class CStream stream.h "class/stream.h"
@@ -145,9 +147,39 @@ public:
 		return *this;
 	}
 
+	//
+	// for Arduino User (refer from Arduino.CC)
+	//
+
+	/**Arduino available() member for serial class.
+	 */
+	inline int available() {
+		return readable();
+	}
+
+	/**Arduino parseInt() member for serial class
+	 * \brief returns the first valid (long) integer value from the current position.
+	 * initial characters that are not digits (or the minus sign) are skipped
+	 * integer is terminated by the first character that is not a digit.
+	 */
+	 virtual long parseInt(bool echo=false);
+
+	 /**Arduino parseFloat() member for serial class
+	  * \brief float version of parseInt
+	  */
+	 virtual float parseFloat(bool echo=false);
+
 	/// @cond
 	CStream();
 	virtual ~CStream();
+
+	CSemaphore *m_semESC;
+
+protected:
+	long parseInt(char skipChar, bool echo);
+	float parseFloat(char skipChar, bool echo);
+	int nextDigit(bool echo);
+
 	/// @endcond
 };
 

@@ -56,7 +56,7 @@
 #define DEF_BLE_NOTIFY_TIMEOUT	3000
 #define DEF_BLE_DATA_TIMEOUT	1500
 #define DEF_BLE_CONN_INTERVAL	10		// default connection interval 10ms
-#define DEF_BLE_CONN_TIMEOUT	1000	// default connection timeout 3sec
+#define DEF_BLE_CONN_TIMEOUT	3000	// default connection timeout 3sec
 #define DEF_BLE_MFG_DATA		0x1234
 
 /**Disconnect a BLE connection with a reason.

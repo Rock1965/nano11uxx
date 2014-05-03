@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.5</span>
+   &#160;<span id="projectnumber">v1.0.6</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -190,6 +190,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbaa22d4608c1a015a20104fde6c8ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc833c2eea18af67b57ba641ec58fea7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7">operator char</a> ()</td></tr>
 <tr class="separator:acc833c2eea18af67b57ba641ec58fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbf8d786e4aac9b06afe3447427a2ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#afdbf8d786e4aac9b06afe3447427a2ae">available</a> ()</td></tr>
+<tr class="separator:afdbf8d786e4aac9b06afe3447427a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60d539c037589ae50b495fe213dda0b"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b">parseInt</a> (bool echo=false)</td></tr>
+<tr class="memdesc:af60d539c037589ae50b495fe213dda0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the first valid (long) integer value from the current position. initial characters that are not digits (or the minus sign) are skipped integer is terminated by the first character that is not a digit.  <a href="#af60d539c037589ae50b495fe213dda0b">More...</a><br/></td></tr>
+<tr class="separator:af60d539c037589ae50b495fe213dda0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4">parseFloat</a> (bool echo=false)</td></tr>
+<tr class="memdesc:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">float version of parseInt  <a href="#a9c936febcbe2cd33c2857f37ed04f2f4">More...</a><br/></td></tr>
+<tr class="separator:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebabcc071634508511ae2fc7b868ab7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a3ebabcc071634508511ae2fc7b868ab7">start</a> (const char *name, int stack=DEF_THREAD_STACK, <a class="el" href="../../db/dff/group___enumerations.html#ga51e24e4c0498282f564e92975e020c1d">PRIORITIES_T</a> priority=<a class="el" href="../../db/dff/group___enumerations.html#gga51e24e4c0498282f564e92975e020c1daf8a2513dc9a78bb09c0520af65a3f402">PRI_LOW</a>)</td></tr>
@@ -329,6 +337,30 @@ Protected Member Functions</h2></td></tr>
 <dl class="section remark"><dt>Remarks</dt><dd>advertising(...) have to call before the <a class="el" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable()</a> member. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The connection interval must be between 8 ms and 4 s. </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec" title="bleSerial constructor with a GAT device name. ">bleSerial()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afdbf8d786e4aac9b06afe3447427a2ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CStream::available </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Arduino <a class="el" href="../../d4/d16/class_c_stream.html#afdbf8d786e4aac9b06afe3447427a2ae">available()</a> member for serial class. </p>
 
 </div>
 </div>
@@ -1063,6 +1095,60 @@ Protected Member Functions</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
+<a class="anchor" id="a9c936febcbe2cd33c2857f37ed04f2f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float CStream::parseFloat </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>echo</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>float version of parseInt </p>
+<p>Arduino <a class="el" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4" title="float version of parseInt ">parseFloat()</a> member for serial class </p>
+
+</div>
+</div>
+<a class="anchor" id="af60d539c037589ae50b495fe213dda0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual long CStream::parseInt </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>echo</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the first valid (long) integer value from the current position. initial characters that are not digits (or the minus sign) are skipped integer is terminated by the first character that is not a digit. </p>
+<p>Arduino <a class="el" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b" title="returns the first valid (long) integer value from the current position. initial characters that are n...">parseInt()</a> member for serial class </p>
+
+</div>
+</div>
 <a class="anchor" id="af56764abe8954430eede10e253f8994f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1684,7 +1770,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d03/classble_serial.html">bleSerial</a></li>
-    <li class="footer">Generated on Sat Apr 26 2014 08:34:41 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun May 4 2014 00:27:11 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : shell.h
  Author      : uCXpresso
- Version     : v1.0.0
- Date		 : 2014/1/1
+ Version     : v1.0.1
+ Date		 : 2014/5/2
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : sell class
  ===============================================================================
@@ -11,7 +11,8 @@
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
- 2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
+ 2014/1/1	v1.0.0	First Edition for nano11Uxx							Jason
+ 2014/5/2	v1.0.1	Add parseInt() and parseFloat() member functions	Jason
  ===============================================================================
  */
 
@@ -39,8 +40,25 @@ public:
 	virtual void show_version();
 	virtual void show_clear();
 
+	//
+	// for Debug Mode
+	//
 	bool isDebugMode();
-	int  dbgWaitKey(uint32_t t=MAX_DELAY_TIME);
+
+	// in debug mode, check serial input available.
+	int available();
+
+	inline uint8_t read() {
+		return m_console.iStream()->read();
+	}
+
+	inline long	parseInt() {
+		return m_console.iStream()->parseInt();
+	}
+
+	inline float parseFloat() {
+		return m_console.iStream()->parseFloat();
+	}
 
 // internal use
 public:
@@ -53,8 +71,6 @@ public:
 protected:
 	CStream 	*m_sock;
 	CString 	cmd;
-	CSemaphore	m_semInput;
-	int			m_dbgKey;
 };
 
 #endif /* SHELL_H_ */

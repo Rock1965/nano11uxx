@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.5</span>
+   &#160;<span id="projectnumber">v1.0.6</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -129,8 +129,8 @@ Inheritance diagram for CTimeout:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a663a09bb51c1de8f8d83bd62fdc1a688"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5b/class_c_timeout.html#a663a09bb51c1de8f8d83bd62fdc1a688">reset</a> ()</td></tr>
 <tr class="separator:a663a09bb51c1de8f8d83bd62fdc1a688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05315e59fa44ceafe8c9e444af0ac9e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5b/class_c_timeout.html#a05315e59fa44ceafe8c9e444af0ac9e8">wait</a> (int ms)</td></tr>
-<tr class="separator:a05315e59fa44ceafe8c9e444af0ac9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdf45170cb38c2997fd944977178e42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5b/class_c_timeout.html#a9fdf45170cb38c2997fd944977178e42">wait</a> (uint32_t ms)</td></tr>
+<tr class="separator:a9fdf45170cb38c2997fd944977178e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2edd08150efbd3ef36766c7e02f7792"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5b/class_c_timeout.html#ab2edd08150efbd3ef36766c7e02f7792">wait</a> (float sec)</td></tr>
 <tr class="separator:ab2edd08150efbd3ef36766c7e02f7792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1858ddcad4e18f8056441072616a457f"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5b/class_c_timeout.html#a1858ddcad4e18f8056441072616a457f">elapsed</a> ()</td></tr>
@@ -283,7 +283,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a05315e59fa44ceafe8c9e444af0ac9e8"></a>
+<a class="anchor" id="a9fdf45170cb38c2997fd944977178e42"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void CTimeout::wait </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>ms</em></td><td>)</td>
           <td></td>
         </tr>
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the <a class="el" href="../../d5/d5b/class_c_timeout.html#a05315e59fa44ceafe8c9e444af0ac9e8">wait()</a> member to wait the timeout count expired. </p>
+<p>Call the <a class="el" href="../../d5/d5b/class_c_timeout.html#a9fdf45170cb38c2997fd944977178e42">wait()</a> member to block current thread until a specified time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ms</td><td>is an integer value to indicate the waiting time in millisecond. </td></tr>
@@ -335,7 +335,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the <a class="el" href="../../d5/d5b/class_c_timeout.html#a05315e59fa44ceafe8c9e444af0ac9e8">wait()</a> member to wait the timeout count expired. </p>
+<p>Call the <a class="el" href="../../d5/d5b/class_c_timeout.html#a9fdf45170cb38c2997fd944977178e42">wait()</a> member to wait the timeout count expired. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sec</td><td>is a floating value to indicate the waiting time in second. </td></tr>
@@ -351,7 +351,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d5b/class_c_timeout.html">CTimeout</a></li>
-    <li class="footer">Generated on Sat Apr 26 2014 08:34:42 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun May 4 2014 00:27:12 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

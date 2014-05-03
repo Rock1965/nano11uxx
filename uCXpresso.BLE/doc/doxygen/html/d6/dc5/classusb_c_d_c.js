@@ -1,6 +1,7 @@
 var classusb_c_d_c =
 [
     [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4", null ],
+    [ "available", "d6/dc5/classusb_c_d_c.html#afdbf8d786e4aac9b06afe3447427a2ae", null ],
     [ "connect", "d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2", null ],
     [ "disable", "d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9", null ],
     [ "disconnect", "d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95", null ],
@@ -15,6 +16,8 @@ var classusb_c_d_c =
     [ "operator<<", "d6/dc5/classusb_c_d_c.html#a2c6130bd65b00f278045d8b7b8ea7f84", null ],
     [ "operator<<", "d6/dc5/classusb_c_d_c.html#ad2f2d74f0924caa2e863d049fe9ada80", null ],
     [ "operator>>", "d6/dc5/classusb_c_d_c.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
+    [ "parseFloat", "d6/dc5/classusb_c_d_c.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
+    [ "parseInt", "d6/dc5/classusb_c_d_c.html#af60d539c037589ae50b495fe213dda0b", null ],
     [ "read", "d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799", null ],
     [ "read", "d6/dc5/classusb_c_d_c.html#af56764abe8954430eede10e253f8994f", null ],
     [ "readable", "d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80", null ],

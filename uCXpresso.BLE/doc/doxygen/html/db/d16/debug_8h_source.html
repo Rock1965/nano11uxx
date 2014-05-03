@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.5</span>
+   &#160;<span id="projectnumber">v1.0.6</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -152,100 +152,117 @@ $(document).ready(function(){initNavTree('db/d16/debug_8h_source.html','../../')
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a69b3be339e7fe9c991b39ef0f0e452c6">println</a>(uint32_t value);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a69b3be339e7fe9c991b39ef0f0e452c6">println</a>(<span class="keywordtype">float</span> value);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d37/class_c_debug.html#a260233f4b1d98901555a249c3f7ad7be">breakpoint</a>(LPCTSTR desc=NULL);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ae83e3ecc41e21c19d2cfbea15459a7c9">   53</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#ae83e3ecc41e21c19d2cfbea15459a7c9">println</a>(<a class="code" href="../../df/d99/class_c_string.html">CString</a> &amp;str){</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d4/d37/class_c_debug.html#a69b3be339e7fe9c991b39ef0f0e452c6">println</a>((LPCTSTR)str);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">   56</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">isDebugMode</a>() {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#ae0f6cb34ee627c44b1690d16d76d628f">isDebugMode</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ad4b4b7f29bf53500532e00aabb62deab">   59</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d37/class_c_debug.html#ad4b4b7f29bf53500532e00aabb62deab">isAnyKey</a>() {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> k;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span>  ((k=<a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#a7731a22b0b80a4facc431f6e07db2599">dbgWaitKey</a>(0))!=0x1b? k : 0);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a8135b97d1fbae13f5a4952e3bbf50d34">putc</a>(<span class="keywordtype">int</span> c);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a3c07626045ffa3227794e7cc080f5e36">   65</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d37/class_c_debug.html#a3c07626045ffa3227794e7cc080f5e36">bp</a>() {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a260233f4b1d98901555a249c3f7ad7be">breakpoint</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a5a1359725fca8337c5967a3c1811c460">   69</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool () {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">isDebugMode</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// internal use</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ab0e3c0c44f27c27a9fafa30866854cbe">   79</a></span>&#160;    <a class="code" href="../../d4/d16/class_c_stream.html">CStream</a> *<a class="code" href="../../d4/d37/class_c_debug.html#ab0e3c0c44f27c27a9fafa30866854cbe">m_stream</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">   80</a></span>&#160;    <a class="code" href="../../de/dba/class_c_shell.html">CShell</a>   <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">   81</a></span>&#160;    <a class="code" href="../../d3/d0d/class_c_mutex.html">CMutex</a>  <a class="code" href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">m_mutex</a>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/******************************************************************************</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * for Debug Build</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <a class="code" href="../../d4/d37/class_c_debug.html">CDebug</a> *gpDBG;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">// show message in Debug Mode</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> dbg_printf(LPCTSTR format, ...);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// show message in Debug Mode with condition, if condition is false,</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// and press any key to continue.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> ASSERT(<span class="keywordtype">bool</span> condition, LPCTSTR format, ...);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span><span class="comment">/******************************************************************************</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * for Release Build</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define dbg_printf(...)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ASSERT(...)</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif  // _CDEBUG_H</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ae83e3ecc41e21c19d2cfbea15459a7c9">   51</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#ae83e3ecc41e21c19d2cfbea15459a7c9">println</a>(<a class="code" href="../../df/d99/class_c_string.html">CString</a> &amp;str){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="../../d4/d37/class_c_debug.html#a69b3be339e7fe9c991b39ef0f0e452c6">println</a>((LPCTSTR)str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">   55</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">isDebugMode</a>() {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#ae0f6cb34ee627c44b1690d16d76d628f">isDebugMode</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a5a1359725fca8337c5967a3c1811c460">   59</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool () {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">isDebugMode</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a8135b97d1fbae13f5a4952e3bbf50d34">putc</a>(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#aa40d190a9b54263c662f10a8e5c187ce">   66</a></span>&#160;    <span class="keyword">inline</span> uint8_t <a class="code" href="../../d4/d37/class_c_debug.html#aa40d190a9b54263c662f10a8e5c187ce">read</a>() {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#a441538cdd21b703cfc3c0317ec076a6e">read</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a827154464e68d9073884d7eee2325ce7">   70</a></span>&#160;    <span class="keyword">inline</span> uint8_t <a class="code" href="../../d4/d37/class_c_debug.html#a827154464e68d9073884d7eee2325ce7">wait</a>() {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#aa40d190a9b54263c662f10a8e5c187ce">read</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a494ace9d46f8353fa6980ca0ff1e5065">   74</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d37/class_c_debug.html#a494ace9d46f8353fa6980ca0ff1e5065">available</a>() {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#a86ec9b3db5d7c467535064ea94e1d9c0">available</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ae672458ef356e3c208f43397b2dd81d4">   78</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="../../d4/d37/class_c_debug.html#ae672458ef356e3c208f43397b2dd81d4">parseInt</a>() {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#aeb209953ec3e9baab90925a80f9c8331">parseInt</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#aefdc613a47e84ca260e6ba9ad14889b1">   82</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="../../d4/d37/class_c_debug.html#aefdc613a47e84ca260e6ba9ad14889b1">parseFloat</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>.<a class="code" href="../../de/dba/class_c_shell.html#aa7a0f71974dae410f4b4c4d699b33666">parseFloat</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// internal use</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">run</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#ab0e3c0c44f27c27a9fafa30866854cbe">   92</a></span>&#160;    <a class="code" href="../../d4/d16/class_c_stream.html">CStream</a> *<a class="code" href="../../d4/d37/class_c_debug.html#ab0e3c0c44f27c27a9fafa30866854cbe">m_stream</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">   93</a></span>&#160;    <a class="code" href="../../de/dba/class_c_shell.html">CShell</a>   <a class="code" href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">m_shell</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">   94</a></span>&#160;    <a class="code" href="../../d3/d0d/class_c_mutex.html">CMutex</a>  <a class="code" href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">m_mutex</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * for Debug Build</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <a class="code" href="../../d4/d37/class_c_debug.html">CDebug</a> *gpDBG;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">// show message in Debug Mode</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> dbg_printf(LPCTSTR format, ...);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// show message in Debug Mode with condition, if condition is false,</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// and press any key to continue.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> ASSERT(<span class="keywordtype">bool</span> condition, LPCTSTR format, ...);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> * for Release Build</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#define dbg_printf(...)</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ASSERT(...)</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif  // _CDEBUG_H</span></div>
+<div class="ttc" id="class_c_shell_html_a441538cdd21b703cfc3c0317ec076a6e"><div class="ttname"><a href="../../de/dba/class_c_shell.html#a441538cdd21b703cfc3c0317ec076a6e">CShell::read</a></div><div class="ttdeci">uint8_t read()</div><div class="ttdef"><b>Definition:</b> shell.h:50</div></div>
+<div class="ttc" id="class_c_shell_html_aeb209953ec3e9baab90925a80f9c8331"><div class="ttname"><a href="../../de/dba/class_c_shell.html#aeb209953ec3e9baab90925a80f9c8331">CShell::parseInt</a></div><div class="ttdeci">long parseInt()</div><div class="ttdef"><b>Definition:</b> shell.h:54</div></div>
 <div class="ttc" id="class_c_debug_html_a9a3e40cc8ee5d0c2a41577f658779c71"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a9a3e40cc8ee5d0c2a41577f658779c71">CDebug::run</a></div><div class="ttdeci">virtual void run()</div></div>
-<div class="ttc" id="class_c_shell_html"><div class="ttname"><a href="../../de/dba/class_c_shell.html">CShell</a></div><div class="ttdef"><b>Definition:</b> shell.h:28</div></div>
-<div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:27</div></div>
+<div class="ttc" id="class_c_shell_html"><div class="ttname"><a href="../../de/dba/class_c_shell.html">CShell</a></div><div class="ttdef"><b>Definition:</b> shell.h:29</div></div>
+<div class="ttc" id="class_c_shell_html_a86ec9b3db5d7c467535064ea94e1d9c0"><div class="ttname"><a href="../../de/dba/class_c_shell.html#a86ec9b3db5d7c467535064ea94e1d9c0">CShell::available</a></div><div class="ttdeci">int available()</div><div class="ttdef"><b>Definition:</b> shell.h:46</div></div>
+<div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:29</div></div>
+<div class="ttc" id="class_c_debug_html_ae672458ef356e3c208f43397b2dd81d4"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ae672458ef356e3c208f43397b2dd81d4">CDebug::parseInt</a></div><div class="ttdeci">long parseInt()</div><div class="ttdef"><b>Definition:</b> debug.h:78</div></div>
 <div class="ttc" id="class_c_shell_html_ae0f6cb34ee627c44b1690d16d76d628f"><div class="ttname"><a href="../../de/dba/class_c_shell.html#ae0f6cb34ee627c44b1690d16d76d628f">CShell::isDebugMode</a></div><div class="ttdeci">bool isDebugMode()</div></div>
 <div class="ttc" id="class_c_debug_html_a525c9b7e5f56eca7017ee8a519f86a3e"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a525c9b7e5f56eca7017ee8a519f86a3e">CDebug::waitToDebugMode</a></div><div class="ttdeci">virtual void waitToDebugMode()</div></div>
-<div class="ttc" id="class_c_debug_html_ae83e3ecc41e21c19d2cfbea15459a7c9"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ae83e3ecc41e21c19d2cfbea15459a7c9">CDebug::println</a></div><div class="ttdeci">virtual void println(CString &amp;str)</div><div class="ttdef"><b>Definition:</b> debug.h:53</div></div>
-<div class="ttc" id="class_c_debug_html_a1e4ada8bb77d3cbcfaf614f0a657d6c7"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">CDebug::m_shell</a></div><div class="ttdeci">CShell m_shell</div><div class="ttdef"><b>Definition:</b> debug.h:80</div></div>
+<div class="ttc" id="class_c_debug_html_a827154464e68d9073884d7eee2325ce7"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a827154464e68d9073884d7eee2325ce7">CDebug::wait</a></div><div class="ttdeci">uint8_t wait()</div><div class="ttdef"><b>Definition:</b> debug.h:70</div></div>
+<div class="ttc" id="class_c_debug_html_ae83e3ecc41e21c19d2cfbea15459a7c9"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ae83e3ecc41e21c19d2cfbea15459a7c9">CDebug::println</a></div><div class="ttdeci">virtual void println(CString &amp;str)</div><div class="ttdef"><b>Definition:</b> debug.h:51</div></div>
+<div class="ttc" id="class_c_debug_html_a1e4ada8bb77d3cbcfaf614f0a657d6c7"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a1e4ada8bb77d3cbcfaf614f0a657d6c7">CDebug::m_shell</a></div><div class="ttdeci">CShell m_shell</div><div class="ttdef"><b>Definition:</b> debug.h:93</div></div>
 <div class="ttc" id="class_c_debug_html_a69b3be339e7fe9c991b39ef0f0e452c6"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a69b3be339e7fe9c991b39ef0f0e452c6">CDebug::println</a></div><div class="ttdeci">virtual void println(LPCTSTR format,...)</div></div>
-<div class="ttc" id="class_c_debug_html_ad4b4b7f29bf53500532e00aabb62deab"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ad4b4b7f29bf53500532e00aabb62deab">CDebug::isAnyKey</a></div><div class="ttdeci">virtual int isAnyKey()</div><div class="ttdef"><b>Definition:</b> debug.h:59</div></div>
-<div class="ttc" id="class_c_shell_html_a7731a22b0b80a4facc431f6e07db2599"><div class="ttname"><a href="../../de/dba/class_c_shell.html#a7731a22b0b80a4facc431f6e07db2599">CShell::dbgWaitKey</a></div><div class="ttdeci">int dbgWaitKey(uint32_t t=MAX_DELAY_TIME)</div></div>
+<div class="ttc" id="class_c_shell_html_aa7a0f71974dae410f4b4c4d699b33666"><div class="ttname"><a href="../../de/dba/class_c_shell.html#aa7a0f71974dae410f4b4c4d699b33666">CShell::parseFloat</a></div><div class="ttdeci">float parseFloat()</div><div class="ttdef"><b>Definition:</b> shell.h:58</div></div>
+<div class="ttc" id="class_c_debug_html_aa40d190a9b54263c662f10a8e5c187ce"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#aa40d190a9b54263c662f10a8e5c187ce">CDebug::read</a></div><div class="ttdeci">uint8_t read()</div><div class="ttdef"><b>Definition:</b> debug.h:66</div></div>
 <div class="ttc" id="class_c_thread_html"><div class="ttname"><a href="../../d0/d26/class_c_thread.html">CThread</a></div><div class="ttdef"><b>Definition:</b> thread.h:64</div></div>
+<div class="ttc" id="class_c_debug_html_aefdc613a47e84ca260e6ba9ad14889b1"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#aefdc613a47e84ca260e6ba9ad14889b1">CDebug::parseFloat</a></div><div class="ttdeci">float parseFloat()</div><div class="ttdef"><b>Definition:</b> debug.h:82</div></div>
 <div class="ttc" id="class_c_debug_html_a89c983c24d2a2934187d25a27f6c1aa9"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a89c983c24d2a2934187d25a27f6c1aa9">CDebug::printf</a></div><div class="ttdeci">virtual void printf(LPCTSTR format, va_list varg)</div></div>
-<div class="ttc" id="class_c_debug_html_a260233f4b1d98901555a249c3f7ad7be"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a260233f4b1d98901555a249c3f7ad7be">CDebug::breakpoint</a></div><div class="ttdeci">virtual int breakpoint(LPCTSTR desc=NULL)</div></div>
-<div class="ttc" id="class_c_debug_html_ab90cf9f4b16af5e740ac6a503f612224"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">CDebug::isDebugMode</a></div><div class="ttdeci">virtual bool isDebugMode()</div><div class="ttdef"><b>Definition:</b> debug.h:56</div></div>
-<div class="ttc" id="class_c_debug_html_a5c8a50a383cc0f5ddd26efb72d6b4794"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">CDebug::m_mutex</a></div><div class="ttdeci">CMutex m_mutex</div><div class="ttdef"><b>Definition:</b> debug.h:81</div></div>
+<div class="ttc" id="class_c_debug_html_ab90cf9f4b16af5e740ac6a503f612224"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ab90cf9f4b16af5e740ac6a503f612224">CDebug::isDebugMode</a></div><div class="ttdeci">virtual bool isDebugMode()</div><div class="ttdef"><b>Definition:</b> debug.h:55</div></div>
+<div class="ttc" id="class_c_debug_html_a5c8a50a383cc0f5ddd26efb72d6b4794"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a5c8a50a383cc0f5ddd26efb72d6b4794">CDebug::m_mutex</a></div><div class="ttdeci">CMutex m_mutex</div><div class="ttdef"><b>Definition:</b> debug.h:94</div></div>
 <div class="ttc" id="class_c_debug_html"><div class="ttname"><a href="../../d4/d37/class_c_debug.html">CDebug</a></div><div class="ttdef"><b>Definition:</b> debug.h:28</div></div>
 <div class="ttc" id="class_c_mutex_html"><div class="ttname"><a href="../../d3/d0d/class_c_mutex.html">CMutex</a></div><div class="ttdef"><b>Definition:</b> mutex.h:31</div></div>
+<div class="ttc" id="class_c_debug_html_a494ace9d46f8353fa6980ca0ff1e5065"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a494ace9d46f8353fa6980ca0ff1e5065">CDebug::available</a></div><div class="ttdeci">int available()</div><div class="ttdef"><b>Definition:</b> debug.h:74</div></div>
 <div class="ttc" id="class_c_debug_html_a8135b97d1fbae13f5a4952e3bbf50d34"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a8135b97d1fbae13f5a4952e3bbf50d34">CDebug::putc</a></div><div class="ttdeci">virtual void putc(int c)</div></div>
-<div class="ttc" id="class_c_debug_html_a3c07626045ffa3227794e7cc080f5e36"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a3c07626045ffa3227794e7cc080f5e36">CDebug::bp</a></div><div class="ttdeci">int bp()</div><div class="ttdef"><b>Definition:</b> debug.h:65</div></div>
 <div class="ttc" id="class_c_string_html"><div class="ttname"><a href="../../df/d99/class_c_string.html">CString</a></div><div class="ttdoc">a string class inherit from CSmallPrintf. </div><div class="ttdef"><b>Definition:</b> string.h:46</div></div>
 <div class="ttc" id="class_c_debug_html_a5e5390068e9a979029fc6df202ad8b6e"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a5e5390068e9a979029fc6df202ad8b6e">CDebug::CDebug</a></div><div class="ttdeci">CDebug(CStream &amp;s)</div></div>
 <div class="ttc" id="class_c_debug_html_a40d1b7f50b76311b3a7fb148e5b7e2ea"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#a40d1b7f50b76311b3a7fb148e5b7e2ea">CDebug::start</a></div><div class="ttdeci">virtual bool start()</div></div>
-<div class="ttc" id="class_c_debug_html_ab0e3c0c44f27c27a9fafa30866854cbe"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ab0e3c0c44f27c27a9fafa30866854cbe">CDebug::m_stream</a></div><div class="ttdeci">CStream * m_stream</div><div class="ttdef"><b>Definition:</b> debug.h:79</div></div>
+<div class="ttc" id="class_c_debug_html_ab0e3c0c44f27c27a9fafa30866854cbe"><div class="ttname"><a href="../../d4/d37/class_c_debug.html#ab0e3c0c44f27c27a9fafa30866854cbe">CDebug::m_stream</a></div><div class="ttdeci">CStream * m_stream</div><div class="ttdef"><b>Definition:</b> debug.h:92</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><b>debug.h</b></li>
-    <li class="footer">Generated on Sat Apr 26 2014 08:34:41 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun May 4 2014 00:27:11 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

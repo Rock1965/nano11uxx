@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : debug.h
- Author      : Jason
+ Author      : uCXpresso
  Version     : 1.0.5
  Date		 : 2014/2/28
  Copyright   : Copyright (C) www.embeda.com.tw
@@ -48,26 +48,39 @@ public:
 	virtual void println(uint32_t value);
 	virtual void println(float value);
 
-	virtual int  breakpoint(LPCTSTR desc=NULL);
-
 	virtual inline void println(CString &str){
 		println((LPCTSTR)str);
 	}
+
 	virtual inline bool isDebugMode() {
 		return m_shell.isDebugMode();
-	}
-	virtual inline int isAnyKey() {
-		int k;
-		return  ((k=m_shell.dbgWaitKey(0))!=0x1b? k : 0);
-	}
-	virtual void putc(int c);
-
-	inline int bp() {
-		return breakpoint();
 	}
 
 	inline operator bool () {
 		return isDebugMode();
+	}
+
+
+	virtual void putc(int c);
+
+	inline uint8_t read() {
+		return m_shell.read();
+	}
+
+	inline uint8_t wait() {
+		return read();
+	}
+
+	inline int available() {
+		return m_shell.available();
+	}
+
+	inline long parseInt() {
+		return m_shell.parseInt();
+	}
+
+	inline float parseFloat() {
+		return m_shell.parseFloat();
 	}
 
 	//
@@ -79,7 +92,6 @@ protected:
 	CStream *m_stream;
 	CShell   m_shell;
 	CMutex  m_mutex;
-
 };
 
 /******************************************************************************

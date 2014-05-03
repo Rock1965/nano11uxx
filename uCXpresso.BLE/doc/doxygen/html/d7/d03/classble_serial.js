@@ -2,6 +2,7 @@ var classble_serial =
 [
     [ "bleSerial", "d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec", null ],
     [ "advertising", "d7/d03/classble_serial.html#a0ee4ea2d6d4a38bbd64968336f85c2e9", null ],
+    [ "available", "d7/d03/classble_serial.html#afdbf8d786e4aac9b06afe3447427a2ae", null ],
     [ "disable", "d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4", null ],
     [ "disconnect", "d7/d03/classble_serial.html#a5e63823fd7ff0ef0ac5447cd265b5a5c", null ],
     [ "enable", "d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4", null ],
@@ -29,6 +30,8 @@ var classble_serial =
     [ "operator<<", "d7/d03/classble_serial.html#a2c6130bd65b00f278045d8b7b8ea7f84", null ],
     [ "operator<<", "d7/d03/classble_serial.html#ad2f2d74f0924caa2e863d049fe9ada80", null ],
     [ "operator>>", "d7/d03/classble_serial.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
+    [ "parseFloat", "d7/d03/classble_serial.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
+    [ "parseInt", "d7/d03/classble_serial.html#af60d539c037589ae50b495fe213dda0b", null ],
     [ "read", "d7/d03/classble_serial.html#af56764abe8954430eede10e253f8994f", null ],
     [ "read", "d7/d03/classble_serial.html#a186e09706d9b6e58a6213ac0b6a220ad", null ],
     [ "readable", "d7/d03/classble_serial.html#a59dca8e3e2d6945a699347f4c4708fd4", null ],

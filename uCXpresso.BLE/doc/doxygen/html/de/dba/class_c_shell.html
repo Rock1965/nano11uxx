@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.5</span>
+   &#160;<span id="projectnumber">v1.0.6</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -155,6 +155,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae0f6cb34ee627c44b1690d16d76d628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7731a22b0b80a4facc431f6e07db2599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#a7731a22b0b80a4facc431f6e07db2599">dbgWaitKey</a> (uint32_t t=MAX_DELAY_TIME)</td></tr>
 <tr class="separator:a7731a22b0b80a4facc431f6e07db2599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ec9b3db5d7c467535064ea94e1d9c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#a86ec9b3db5d7c467535064ea94e1d9c0">available</a> ()</td></tr>
+<tr class="separator:a86ec9b3db5d7c467535064ea94e1d9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441538cdd21b703cfc3c0317ec076a6e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#a441538cdd21b703cfc3c0317ec076a6e">read</a> ()</td></tr>
+<tr class="separator:a441538cdd21b703cfc3c0317ec076a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb209953ec3e9baab90925a80f9c8331"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#aeb209953ec3e9baab90925a80f9c8331">parseInt</a> ()</td></tr>
+<tr class="separator:aeb209953ec3e9baab90925a80f9c8331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a0f71974dae410f4b4c4d699b33666"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#aa7a0f71974dae410f4b4c4d699b33666">parseFloat</a> ()</td></tr>
+<tr class="separator:aa7a0f71974dae410f4b4c4d699b33666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1565a93fad9a1e35e05a597889ad130f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#a1565a93fad9a1e35e05a597889ad130f">run</a> ()</td></tr>
 <tr class="separator:a1565a93fad9a1e35e05a597889ad130f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d294faaebd969b295366f4a861cf02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#a74d294faaebd969b295366f4a861cf02">onDebug</a> ()</td></tr>
@@ -210,10 +218,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab0eaa18213db8965c68f978538050162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ef2d56e802b9925cf0ae7d36741bda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d99/class_c_string.html">CString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#aa5ef2d56e802b9925cf0ae7d36741bda">cmd</a></td></tr>
 <tr class="separator:aa5ef2d56e802b9925cf0ae7d36741bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81828c40c17f38821ec395aaf38ee98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#aa81828c40c17f38821ec395aaf38ee98">m_semInput</a></td></tr>
-<tr class="separator:aa81828c40c17f38821ec395aaf38ee98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2b6ca1616128e6a8a05c8c235c7b011"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dba/class_c_shell.html#ab2b6ca1616128e6a8a05c8c235c7b011">m_dbgKey</a></td></tr>
-<tr class="separator:ab2b6ca1616128e6a8a05c8c235c7b011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a66915a194065db1d82873d79ee6ec8c6"></a>
@@ -256,6 +260,29 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a86ec9b3db5d7c467535064ea94e1d9c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CShell::available </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7731a22b0b80a4facc431f6e07db2599"></a>
 <div class="memitem">
 <div class="memproto">
@@ -597,6 +624,75 @@ Protected Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7a0f71974dae410f4b4c4d699b33666"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CShell::parseFloat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb209953ec3e9baab90925a80f9c8331"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long CShell::parseInt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a441538cdd21b703cfc3c0317ec076a6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CShell::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1091,46 +1187,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab2b6ca1616128e6a8a05c8c235c7b011"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int CShell::m_dbgKey</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa81828c40c17f38821ec395aaf38ee98"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a> CShell::m_semInput</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ab0eaa18213db8965c68f978538050162"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1157,7 +1213,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dba/class_c_shell.html">CShell</a></li>
-    <li class="footer">Generated on Sat Apr 26 2014 08:34:42 for uCXpresso.BLE by
+    <li class="footer">Generated on Sun May 4 2014 00:27:12 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
