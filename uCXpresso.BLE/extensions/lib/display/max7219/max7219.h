@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : main.cpp
  Author      : uCXpresso
- Version     : v1.0.0
- Date		 : 2014/5/3
+ Version     : v1.0.1
+ Date		 : 2014/5/5
  License   	 : MIT
  Description : MAX7219 control
  ===============================================================================
@@ -12,6 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/5/3	v1.0.0	Initialization									Jason
+ 2014/5/5	v1.0.1	Add bitmap member function						Jason
  ===============================================================================
  */
 
@@ -42,6 +43,8 @@ public:
 	void disable();
 
 	void write(uint8_t reg, uint8_t data);
+
+	void bitmap(const uint8_t *bmp);
 
 	inline void shutdown() {
 		write(max7219_reg_shutdown, 0x00);

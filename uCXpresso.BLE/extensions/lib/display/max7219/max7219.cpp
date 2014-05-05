@@ -55,3 +55,9 @@ void max7219::write(uint8_t reg, uint8_t data) {
 	m_spi << data;
 	m_cs = HIGH;
 }
+
+void max7219::bitmap(const uint8_t *bmp) {
+	for (int i=1; i<=8; i++) {
+		write(i, bmp[i-1]);
+	}
+}
