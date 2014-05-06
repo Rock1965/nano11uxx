@@ -2,7 +2,7 @@
  ===============================================================================
  Name        : pwm.h
  Author      : uCXpresso
- Version     : v1.0.0
+ Version     : v1.0.1
  Date		 : 2014/1/1
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : PWM class
@@ -12,6 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
+ 2014/5/6	v1.0.1	Fully LOW level for duty-cycle zero.			Jason
  ===============================================================================
  */
 
@@ -107,10 +108,12 @@ public:
 	virtual ~CPwm();
 
 protected:
+	uint32_t	m_flag;
 	uint32_t 	m_nPeriod;
 	uint8_t		m_timer_num;
 	uint8_t		m_match_num;
 	uint8_t		m_ch;
+	void		pin_func(bool pwm);
 	/*! \endcond */
 };
 
