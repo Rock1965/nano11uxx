@@ -124,6 +124,9 @@ extern uint32_t MAIN_STACK_SIZE;
 #define USB_MEM_BASE	0x20004000
 #define USB_MEM_SIZE	0x7FC
 
+extern void gotoISP(void);
+extern size_t heapAvailableSize(void);
+
 //
 // RTOS
 //
