@@ -2,7 +2,7 @@ nano11Uxx (LPC11U3x + nRF BLE)
 ===============================
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
-v1.0.6 rc2 16th May 2014
+v1.0.6 rc2 18th May 2014
 --------------------------------
 ###Details:
 	1. Updata PWM precision. (Frequency range: 20Hz ~ 25KHz)
