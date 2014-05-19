@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : pwm.h
  Author      : uCXpresso
- Version     : v1.0.1
- Date		 : 2014/1/1
+ Version     : v1.0.2
+ Date		 : 2014/5/19
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : PWM class
  ===============================================================================
@@ -13,6 +13,7 @@
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
  2014/5/6	v1.0.1	Fully LOW level for duty-cycle zero.			Jason
+ 2014/5/19	v1.0.2	Add PWM Group									Jason
  ===============================================================================
  */
 
@@ -30,6 +31,15 @@ typedef enum {
 	PWM3,		///< PWM3 (P22)
 	PWM4,		///< PWM4 (P23)
 }PWM_CH_T;
+
+/**PWM GROUP
+ * \ingroup Enumerations
+ */
+typedef enum {
+	PG_ALL = 0,	///< All group for PWM1, PWM2, PWM3, PWM4
+	PG_1,		///< PWM Group 1 for PWM1 and PWM2
+	PG_2		///< PWM Group 2 for PWM3 and PWM4
+}PWM_GROUP_T;
 
 /*! \def Max frequency
  */
@@ -96,8 +106,8 @@ public:
 	/**A static member function.
 	 * Set the PWM MAIN period (or frequency), specified in seconds (float).
 	 */
-	static void period(float sec);
-	static void frequency(uint32_t f);
+	static void period(float sec, PWM_GROUP_T pg=PG_ALL);
+	static void frequency(uint32_t f, PWM_GROUP_T pg=PG_ALL);
 
 	/**inline functions for ARDUINO
 	 */
