@@ -283,6 +283,10 @@ public:
 	virtual void onBleSend(uint8_t ack);
 	virtual void onAckTimeout();
 	virtual bool isReadyForNotify();
+
+	virtual void onTestMode() {}		// Event for Enter Test Mode
+	virtual void onStandbyMode() {}		// Event for Enter Standby Mode
+
 	LPCTSTR	 m_deviceName;
 	uint16_t m_advInterval;
 	uint16_t m_conInterval;
@@ -297,8 +301,6 @@ public:
 	 * \param ctrl if 1, resets the value of the Energy Expended field in the Heart Rate Measurement. otherwise reserved.
 	 */
 	virtual void onHeartRateControl(uint8_t ctrl);
-
-
 protected:
 	//
 	// Implement the virtual function of CThread class
@@ -324,11 +326,13 @@ private:
 #include "class/ble_proximity.h"
 #include "class/ble_heartrate.h"
 #include "class/ble_devinfo.h"
+#include "class/ble_test.h"
 friend class bleBatteryLevel;
 friend class bleHealthThermometer;
 friend class bleProximity;
 friend class bleHeartRate;
 friend class bleDeviceInfo;
+friend class bleTest;
 	class bleProximity	*m_proximity;
 	class bleHeartRate	*m_heartrate;
 
@@ -337,6 +341,7 @@ friend class bleDeviceInfo;
 #undef BLE_PROXIMITY_H_
 #undef BLE_HEARTRATE_H_
 #undef BLE_DEVINFO_H_
+#undef BLE_TEST_H_
 	/*! \endcond */
 };
 
