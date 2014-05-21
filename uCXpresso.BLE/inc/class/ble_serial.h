@@ -284,6 +284,9 @@ public:
 	virtual void onAckTimeout();
 	virtual bool isReadyForNotify();
 
+	virtual bool isActiveMode();
+	virtual void inActiveMode(bool enable);
+
 	virtual void onTestMode() {}		// Event for Enter Test Mode
 	virtual void onStandbyMode() {}		// Event for Enter Standby Mode
 
