@@ -2,14 +2,16 @@ nano11Uxx (LPC11U3x + nRF BLE)
 ===============================
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
-v1.0.6 rc3 21th May 2014
+v1.0.6 rc4 22th May 2014
 --------------------------------
 ###Details:
-	1. Add "bleTest" class for Bluetooth "Direct Test Mode". 
-	2. Add PWM GROUP (GROUP-1: PWM1 & PWM2, GROUP-2: PWM3 & PWM4)
-	3. Updata PWM precision. (Frequency range: 20Hz ~ 25KHz)
-	4. Update PWM to support the fully LOW level in duty-cycle zero.
-	5. Add the parseInt, parseFloat, available member functions in CStream and CDebug classes.
+	1. Update kernel to v8.0.1
+	2. Add PID and Kalman algorithms from ARM Limited.
+	3. Add "bleTest" class for Bluetooth "Direct Test Mode". 
+	4. Add PWM GROUP (GROUP-1: PWM1 & PWM2, GROUP-2: PWM3 & PWM4)
+	5. Updata PWM precision. (Frequency range: 20Hz ~ 25KHz)
+	6. Update PWM to support the fully LOW level in duty-cycle zero.
+	7. Add the parseInt, parseFloat, available member functions in CStream and CDebug classes.
 
 v1.0.5 released 26th April 2014
 --------------------------------
