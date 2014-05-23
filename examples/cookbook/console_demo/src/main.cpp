@@ -36,12 +36,16 @@
 //
 class myMenu: public CThread {
 public:
+	//
+	// show welcoem and main-menu
+	//
 	void show_welcome() {
-		while(isAlive() && m_usb.isConnected() ) {
+		while( isAlive() && m_usb.isConnected() ) {
 			m_con.clear();
 			m_con << "Welcome to Main Menu" << endl;
 			m_con << "[1] Menu1" << endl;
 			m_con << "[2] Menu2" << endl;
+			m_con << "[3] Stack Highwater Mark" << endl;
 			switch( m_con.getc() ) {
 			case '1':
 				menu1();
@@ -49,12 +53,19 @@ public:
 			case '2':
 				menu2();
 				break;
+			case '3':
+				m_con.printf("Stack Highwater Mark = %d\n", getStackHighWaterMark());
+				m_con.getc();
+				break;
 			}
 		}
 	}
 
+	//
+	// sub-menu (menu-1)
+	//
 	void menu1() {
-		while(isAlive() && m_usb.isConnected() ) {
+		while( isAlive() && m_usb.isConnected() ) {
 			m_con.clear();
 			m_con << "Menu-1" << endl;
 			m_con << "[1] Say Hello" << endl;
@@ -70,18 +81,31 @@ public:
 		}
 	}
 
+	//
+	// sub-menu (menu-2)
+	//
 	void menu2() {
-		while(isAlive() && m_usb.isConnected() ) {
+		while( isAlive() && m_usb.isConnected() ) {
 			m_con.clear();
 			m_con << "Menu-2" << endl;
 			m_con << "[1] Say Awesome" << endl;
-			m_con << "[2] Go Back" << endl;
-			switch(m_con.getc() ) {
+			m_con.printf("[2] Input Integer (%d)\n", nVal);
+			m_con.printf("[3] Input Float (%0.2f)\n", fVal);
+			m_con << "[4] Go Back" << endl;
+			switch( m_con.getc() ) {
 			case '1' :
 				m_con << "Awesome" << endl;
 				m_con.getc();	// wait a key
 				break;
 			case '2' :
+				m_con << "Input integer:" << flush;
+				nVal = m_usb.parseInt(true);	// input & parse integer with echo
+				break;
+			case '3' :
+				m_con << "Input floating:" << flush;
+				fVal = m_usb.parseFloat(true);	// input & parse floating with echo
+				break;
+			case '4' :
 				return;
 			}
 		}
@@ -91,9 +115,18 @@ protected:
 	usbCDC 	m_usb;
 	Console m_con;
 
+	int nVal;
+	float fVal;
+
+	//
+	// implement CThread::run() loop
+	//
 	virtual void run() {
 		m_usb.enable();
 		m_con.assign(m_usb, m_usb);
+
+		nVal = 0;
+		fVal = 0;
 		while(isAlive()) {
 			if ( m_usb.isConnected() ) {
 				show_welcome();
@@ -139,8 +172,11 @@ int main(void) {
 	CBus port(LED1, LED2, LED3, LED4, END);
 	port.output();	// set all pins as output
 
+	//
+	// start menu task
+	//
 	myMenu menu;
-	menu.start("Menu", 128);
+	menu.start("Menu", 142);
 
 	while(1) {
 		/**********************************************************************
