@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['sf_5flsbfirst',['SF_LSBFIRST',['../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18',1,'shift.h']]],
+  ['sf_5fmsbfirst',['SF_MSBFIRST',['../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa891202950a9401e5be78bcc9de77527e',1,'shift.h']]],
   ['spi0',['SPI0',['../db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4',1,'spi.h']]],
   ['spi1',['SPI1',['../db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185',1,'spi.h']]],
   ['spi_5fdatabit_5f10',['SPI_DATABIT_10',['../db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a61458c0785d8b1c087c058d209b14132',1,'spi.h']]],

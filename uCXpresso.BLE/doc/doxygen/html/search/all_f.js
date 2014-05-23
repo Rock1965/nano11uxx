@@ -28,8 +28,11 @@ var searchData=
   ['parsefloat',['parseFloat',['../de/dba/class_c_shell.html#aa7a0f71974dae410f4b4c4d699b33666',1,'CShell::parseFloat()'],['../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4',1,'CStream::parseFloat()'],['../d4/d37/class_c_debug.html#aefdc613a47e84ca260e6ba9ad14889b1',1,'CDebug::parseFloat()']]],
   ['parseint',['parseInt',['../de/dba/class_c_shell.html#aeb209953ec3e9baab90925a80f9c8331',1,'CShell::parseInt()'],['../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b',1,'CStream::parseInt()'],['../d4/d37/class_c_debug.html#ae672458ef356e3c208f43397b2dd81d4',1,'CDebug::parseInt()']]],
   ['peek',['peek',['../d8/d26/class_c_mail_box.html#adc923a33209756bb2ed9e1838b12b68c',1,'CMailBox']]],
-  ['period',['period',['../d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366',1,'CPwm']]],
+  ['period',['period',['../d1/d9f/class_c_pwm.html#a6758234bea27a676b55501d91b13744b',1,'CPwm']]],
   ['peripherals',['Peripherals',['../d1/d6c/group___peripherals.html',1,'']]],
+  ['pg_5f1',['PG_1',['../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca31dfdc5fbca1c9c952d8496c3fa0c8b4',1,'pwm.h']]],
+  ['pg_5f2',['PG_2',['../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca93f5efbda2bb2726800554789a62e18b',1,'pwm.h']]],
+  ['pg_5fall',['PG_ALL',['../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a',1,'pwm.h']]],
   ['pin',['pin',['../de/d89/class_c_bus.html#a94da38619defc1c41c16c04c4c7991f8',1,'CBus']]],
   ['pin_5finput_5fmode_5ft',['PIN_INPUT_MODE_T',['../db/dff/group___enumerations.html#ga9f8f32709b482732d6e377ff26da36ef',1,'pin.h']]],
   ['pin_5flevel_5ft',['PIN_LEVEL_T',['../db/dff/group___enumerations.html#ga6f24594071a026b31238ab8cb80d6a80',1,'pin.h']]],
@@ -55,5 +58,6 @@ var searchData=
   ['pwm2',['PWM2',['../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93af39c2e46e9e25532f62e9967768bba0c',1,'pwm.h']]],
   ['pwm3',['PWM3',['../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93aec8dabc6a499fe64be322a93f441503e',1,'pwm.h']]],
   ['pwm4',['PWM4',['../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93a99bf79473a462fcf944a8ffb941bd7ae',1,'pwm.h']]],
-  ['pwm_5fch_5ft',['PWM_CH_T',['../db/dff/group___enumerations.html#ga8b06d2bf1a2f8d7cd5e4bd6e1191ce93',1,'pwm.h']]]
+  ['pwm_5fch_5ft',['PWM_CH_T',['../db/dff/group___enumerations.html#ga8b06d2bf1a2f8d7cd5e4bd6e1191ce93',1,'pwm.h']]],
+  ['pwm_5fgroup_5ft',['PWM_GROUP_T',['../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c',1,'pwm.h']]]
 ];

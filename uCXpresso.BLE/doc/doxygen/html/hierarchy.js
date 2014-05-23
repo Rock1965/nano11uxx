@@ -16,6 +16,7 @@ var hierarchy =
         [ "bleHealthThermometer", "d9/d26/classble_health_thermometer.html", null ],
         [ "bleHeartRate", "d3/d81/classble_heart_rate.html", null ],
         [ "bleProximity", "de/d67/classble_proximity.html", null ],
+        [ "bleTest", "d2/df2/classble_test.html", null ],
         [ "CAdc", "d7/d0f/class_c_adc.html", null ],
         [ "CBus", "de/d89/class_c_bus.html", null ],
         [ "CI2C", "d0/dce/class_c_i2_c.html", [
@@ -26,6 +27,7 @@ var hierarchy =
         ] ],
         [ "CPowerSave", "d5/d3e/class_c_power_save.html", null ],
         [ "CPwm", "d1/d9f/class_c_pwm.html", null ],
+        [ "CShift", "d6/d1c/class_c_shift.html", null ],
         [ "CSPI", "d2/d3f/class_c_s_p_i.html", [
           [ "CSpiMaster", "d9/d9b/class_c_spi_master.html", null ]
         ] ],

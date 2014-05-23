@@ -21,6 +21,7 @@ var searchData=
   ['csemaphore',['CSemaphore',['../d0/d06/class_c_semaphore.html',1,'']]],
   ['cserial',['CSerial',['../d8/d1d/class_c_serial.html',1,'']]],
   ['cshell',['CShell',['../de/dba/class_c_shell.html',1,'']]],
+  ['cshift',['CShift',['../d6/d1c/class_c_shift.html',1,'']]],
   ['csmallprintf',['CSmallPrintf',['../de/db4/class_c_small_printf.html',1,'']]],
   ['cspi',['CSPI',['../d2/d3f/class_c_s_p_i.html',1,'']]],
   ['cspimaster',['CSpiMaster',['../d9/d9b/class_c_spi_master.html',1,'']]],

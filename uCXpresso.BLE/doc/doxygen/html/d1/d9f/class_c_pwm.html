@@ -156,10 +156,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aff0df75ef798c102015abedf86998366"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366">period</a> (float sec)</td></tr>
-<tr class="separator:aff0df75ef798c102015abedf86998366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21081698744ec8596a9e922d3bedc8ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9f/class_c_pwm.html#a21081698744ec8596a9e922d3bedc8ed">frequency</a> (uint32_t f)</td></tr>
-<tr class="separator:a21081698744ec8596a9e922d3bedc8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6758234bea27a676b55501d91b13744b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9f/class_c_pwm.html#a6758234bea27a676b55501d91b13744b">period</a> (float sec, <a class="el" href="../../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c">PWM_GROUP_T</a> pg=<a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a">PG_ALL</a>)</td></tr>
+<tr class="separator:a6758234bea27a676b55501d91b13744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc887b85e492bc73f6b1e4b7ddfbf51a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9f/class_c_pwm.html#adc887b85e492bc73f6b1e4b7ddfbf51a">frequency</a> (uint32_t f, <a class="el" href="../../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c">PWM_GROUP_T</a> pg=<a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a">PG_ALL</a>)</td></tr>
+<tr class="separator:adc887b85e492bc73f6b1e4b7ddfbf51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pulse-width modulated output. </p>
@@ -185,7 +185,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <div class="fragment"><div class="line">Example:</div>
-<div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366">CPwm::period</a>(0.02);     <span class="comment">// Set global PWM period time = 20ms</span></div>
+<div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html#a6758234bea27a676b55501d91b13744b">CPwm::period</a>(0.02);     <span class="comment">// Set global PWM period time = 20ms</span></div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="../../d1/d9f/class_c_pwm.html">CPwm</a> servo(<a class="code" href="../../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93acc6ab0fb66c5ba52524e32ea2ad0bd1a">PWM1</a>);       <span class="comment">// create a servo objecj</span></div>
 <div class="line">        servo.dutyCycle(0.8);   <span class="comment">// set servo object to 80% dutyCycle</span></div>
@@ -314,7 +314,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a21081698744ec8596a9e922d3bedc8ed"></a>
+<a class="anchor" id="adc887b85e492bc73f6b1e4b7ddfbf51a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -325,8 +325,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static void CPwm::frequency </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c">PWM_GROUP_T</a>&#160;</td>
+          <td class="paramname"><em>pg</em> = <code><a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a">PG_ALL</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -413,7 +423,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aff0df75ef798c102015abedf86998366"></a>
+<a class="anchor" id="a6758234bea27a676b55501d91b13744b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -424,8 +434,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static void CPwm::period </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>sec</em></td><td>)</td>
+          <td class="paramname"><em>sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c">PWM_GROUP_T</a>&#160;</td>
+          <td class="paramname"><em>pg</em> = <code><a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a">PG_ALL</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -517,7 +537,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></li>
-    <li class="footer">Generated on Sun May 4 2014 00:27:12 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri May 23 2014 11:25:53 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

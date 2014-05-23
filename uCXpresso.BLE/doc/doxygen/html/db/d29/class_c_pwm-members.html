@@ -119,11 +119,11 @@ $(document).ready(function(){initNavTree('d1/d9f/class_c_pwm.html','../../');});
   <tr><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#ae0cb5e7e45453fb3fc049bada896c151">dutyCycle</a>(float percentage)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#a640f06df704cc299e45fafb9c1a1972e">enable</a>()</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#aea8cdf467fe4d3e1b3c1547dbfbce4ce">end</a>()</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#a21081698744ec8596a9e922d3bedc8ed">frequency</a>(uint32_t f)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#adc887b85e492bc73f6b1e4b7ddfbf51a">frequency</a>(uint32_t f, PWM_GROUP_T pg=PG_ALL)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a>()</td><td class="entry"><a class="el" href="../../dc/dac/class_c_object.html">CObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#a34dc590715ddb4b118132c69dad1140f">operator float</a>()</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#aadc2ad3efd1afe9ae32919462c8286cb">operator=</a>(float sec)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366">period</a>(float sec)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#a6758234bea27a676b55501d91b13744b">period</a>(float sec, PWM_GROUP_T pg=PG_ALL)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#ae6ea4c5209e4f1360861371c7bf744e7">pulseWidth</a>(float sec)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#af69709834f0c179df1a6d8e7ad314930">read</a>()</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html#a57cbfceb20e1f2970f45b5d1571431d1">write</a>(float percentage)</td><td class="entry"><a class="el" href="../../d1/d9f/class_c_pwm.html">CPwm</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('d1/d9f/class_c_pwm.html','../../');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 4 2014 00:27:12 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri May 23 2014 11:25:53 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

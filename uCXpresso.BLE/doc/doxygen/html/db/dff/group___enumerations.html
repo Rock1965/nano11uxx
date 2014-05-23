@@ -263,6 +263,15 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93a99bf79473a462fcf944a8ffb941bd7ae">PWM4</a>
  }</td></tr>
 <tr class="separator:ga8b06d2bf1a2f8d7cd5e4bd6e1191ce93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e532f9900a273ed24b167718d31d97c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c">PWM_GROUP_T</a> { <a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a">PG_ALL</a> = 0, 
+<a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca31dfdc5fbca1c9c952d8496c3fa0c8b4">PG_1</a>, 
+<a class="el" href="../../db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca93f5efbda2bb2726800554789a62e18b">PG_2</a>
+ }</td></tr>
+<tr class="separator:ga5e532f9900a273ed24b167718d31d97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9e770e9654a338545bfbb2e17cb4ada"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/group___enumerations.html#gac9e770e9654a338545bfbb2e17cb4ada">SF_BIT_ORDER_T</a> { <a class="el" href="../../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa891202950a9401e5be78bcc9de77527e">SF_MSBFIRST</a> = 0, 
+<a class="el" href="../../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18">SF_LSBFIRST</a> = 1
+ }</td></tr>
+<tr class="separator:gac9e770e9654a338545bfbb2e17cb4ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1adbe6bf70e3880dc6b9f86e58bb7f98"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/group___enumerations.html#ga1adbe6bf70e3880dc6b9f86e58bb7f98">SPI_PORT_T</a> { <a class="el" href="../../db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4">SPI0</a> = 0, 
 <a class="el" href="../../db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185">SPI1</a> = 1
  }</td></tr>
@@ -907,6 +916,53 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga5e532f9900a273ed24b167718d31d97c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c">PWM_GROUP_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;pwm.h&gt;</code></p>
+<p>PWM GROUP </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a"></a>PG_ALL</em>&#160;</td><td class="fielddoc">
+<p>All group for PWM1, PWM2, PWM3, PWM4. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5e532f9900a273ed24b167718d31d97ca31dfdc5fbca1c9c952d8496c3fa0c8b4"></a>PG_1</em>&#160;</td><td class="fielddoc">
+<p>PWM Group 1 for PWM1 and PWM2. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5e532f9900a273ed24b167718d31d97ca93f5efbda2bb2726800554789a62e18b"></a>PG_2</em>&#160;</td><td class="fielddoc">
+<p>PWM Group 2 for PWM3 and PWM4. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="gac9e770e9654a338545bfbb2e17cb4ada"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../db/dff/group___enumerations.html#gac9e770e9654a338545bfbb2e17cb4ada">SF_BIT_ORDER_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;shift.h&gt;</code></p>
+<p>Shift In/Out bit order. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggac9e770e9654a338545bfbb2e17cb4adaa891202950a9401e5be78bcc9de77527e"></a>SF_MSBFIRST</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18"></a>SF_LSBFIRST</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="ga0d0ec25638f753b00013a2a99fed1ef4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1137,7 +1193,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 4 2014 00:27:11 for uCXpresso.BLE by
+    <li class="footer">Generated on Fri May 23 2014 11:25:52 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

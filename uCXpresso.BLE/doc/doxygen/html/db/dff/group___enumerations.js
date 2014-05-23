@@ -133,6 +133,15 @@ var group___enumerations =
       [ "PWM3", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93aec8dabc6a499fe64be322a93f441503e", null ],
       [ "PWM4", "db/dff/group___enumerations.html#gga8b06d2bf1a2f8d7cd5e4bd6e1191ce93a99bf79473a462fcf944a8ffb941bd7ae", null ]
     ] ],
+    [ "PWM_GROUP_T", "db/dff/group___enumerations.html#ga5e532f9900a273ed24b167718d31d97c", [
+      [ "PG_ALL", "db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97cae968ff891fc3c2aa98a4113ebf90af5a", null ],
+      [ "PG_1", "db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca31dfdc5fbca1c9c952d8496c3fa0c8b4", null ],
+      [ "PG_2", "db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca93f5efbda2bb2726800554789a62e18b", null ]
+    ] ],
+    [ "SF_BIT_ORDER_T", "db/dff/group___enumerations.html#gac9e770e9654a338545bfbb2e17cb4ada", [
+      [ "SF_MSBFIRST", "db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa891202950a9401e5be78bcc9de77527e", null ],
+      [ "SF_LSBFIRST", "db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18", null ]
+    ] ],
     [ "SPI_BIT_ORDER_T", "db/dff/group___enumerations.html#ga0d0ec25638f753b00013a2a99fed1ef4", [
       [ "SPI_MSBFIRST", "db/dff/group___enumerations.html#gga0d0ec25638f753b00013a2a99fed1ef4a3fa35f661bf7fbb96c05ff70827553be", null ],
       [ "SPI_LSBFIRST", "db/dff/group___enumerations.html#gga0d0ec25638f753b00013a2a99fed1ef4a183d076e845f5ea5d99465cd6aff505f", null ]

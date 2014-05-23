@@ -115,11 +115,11 @@ var group___peripherals =
       [ "dutyCycle", "d1/d9f/class_c_pwm.html#ae0cb5e7e45453fb3fc049bada896c151", null ],
       [ "enable", "d1/d9f/class_c_pwm.html#a640f06df704cc299e45fafb9c1a1972e", null ],
       [ "end", "d1/d9f/class_c_pwm.html#aea8cdf467fe4d3e1b3c1547dbfbce4ce", null ],
-      [ "frequency", "d1/d9f/class_c_pwm.html#a21081698744ec8596a9e922d3bedc8ed", null ],
+      [ "frequency", "d1/d9f/class_c_pwm.html#adc887b85e492bc73f6b1e4b7ddfbf51a", null ],
       [ "isThread", "d1/d9f/class_c_pwm.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
       [ "operator float", "d1/d9f/class_c_pwm.html#a34dc590715ddb4b118132c69dad1140f", null ],
       [ "operator=", "d1/d9f/class_c_pwm.html#aadc2ad3efd1afe9ae32919462c8286cb", null ],
-      [ "period", "d1/d9f/class_c_pwm.html#aff0df75ef798c102015abedf86998366", null ],
+      [ "period", "d1/d9f/class_c_pwm.html#a6758234bea27a676b55501d91b13744b", null ],
       [ "pulseWidth", "d1/d9f/class_c_pwm.html#ae6ea4c5209e4f1360861371c7bf744e7", null ],
       [ "read", "d1/d9f/class_c_pwm.html#af69709834f0c179df1a6d8e7ad314930", null ],
       [ "write", "d1/d9f/class_c_pwm.html#a57cbfceb20e1f2970f45b5d1571431d1", null ]
@@ -171,6 +171,16 @@ var group___peripherals =
       [ "write", "d8/d1d/class_c_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
       [ "write", "d8/d1d/class_c_serial.html#adef6d3e77843c65617b7cb555c2f8732", null ],
       [ "writeable", "d8/d1d/class_c_serial.html#ac59cfe80216e1fb7eb479017f0bb8e7f", null ]
+    ] ],
+    [ "CShift", "d6/d1c/class_c_shift.html", [
+      [ "CShift", "d6/d1c/class_c_shift.html#a643a8054e3eb2b37fecbaf9d32c8c049", null ],
+      [ "input", "d6/d1c/class_c_shift.html#a065237baa62662dd2fba5da295e76d19", null ],
+      [ "isThread", "d6/d1c/class_c_shift.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
+      [ "operator uint8_t", "d6/d1c/class_c_shift.html#a7f949f971df9bf380bbb3051c28e99fd", null ],
+      [ "operator<<", "d6/d1c/class_c_shift.html#ae5c6d17fca42bf98ba18b9429d67df83", null ],
+      [ "operator=", "d6/d1c/class_c_shift.html#ade1e09c636e2512740547dafaf09186c", null ],
+      [ "operator>>", "d6/d1c/class_c_shift.html#a2ecc1b524768840afc82a5351b1031cb", null ],
+      [ "output", "d6/d1c/class_c_shift.html#a18ea5aa8b8932cb42bf0746ed4716923", null ]
     ] ],
     [ "CSPI", "d2/d3f/class_c_s_p_i.html", [
       [ "CSPI", "d2/d3f/class_c_s_p_i.html#a45ebc1852b74f5f0ccfbb97b302cf5e9", null ],

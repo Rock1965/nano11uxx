@@ -10,5 +10,5 @@ var searchData=
   ['format',['format',['../d2/d3f/class_c_s_p_i.html#accc9a5c831ee85e95f0bb5567de5f529',1,'CSPI']]],
   ['freeextra',['freeExtra',['../df/d99/class_c_string.html#a9cb7e6111fd46dd4d16a111ffe4af39d',1,'CString']]],
   ['frequence',['frequence',['../d3/d75/class_c_watchdog.html#a231300cd97144342d7d3d9606cb9b60c',1,'CWatchdog']]],
-  ['frequency',['frequency',['../d0/dce/class_c_i2_c.html#ab5158b0fe99495c186200ac1d6ef4e52',1,'CI2C::frequency()'],['../d1/d9f/class_c_pwm.html#a21081698744ec8596a9e922d3bedc8ed',1,'CPwm::frequency()'],['../d2/d3f/class_c_s_p_i.html#ad8143fa5be48bc62762fda52b86d630a',1,'CSPI::frequency()']]]
+  ['frequency',['frequency',['../d0/dce/class_c_i2_c.html#ab5158b0fe99495c186200ac1d6ef4e52',1,'CI2C::frequency()'],['../d1/d9f/class_c_pwm.html#adc887b85e492bc73f6b1e4b7ddfbf51a',1,'CPwm::frequency()'],['../d2/d3f/class_c_s_p_i.html#ad8143fa5be48bc62762fda52b86d630a',1,'CSPI::frequency()']]]
 ];

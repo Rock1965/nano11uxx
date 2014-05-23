@@ -3,7 +3,6 @@ var class_c_shell =
     [ "CShell", "de/dba/class_c_shell.html#a66915a194065db1d82873d79ee6ec8c6", null ],
     [ "~CShell", "de/dba/class_c_shell.html#a342aa70c0ff0ba0f990942edfbc59bb6", null ],
     [ "available", "de/dba/class_c_shell.html#a86ec9b3db5d7c467535064ea94e1d9c0", null ],
-    [ "dbgWaitKey", "de/dba/class_c_shell.html#a7731a22b0b80a4facc431f6e07db2599", null ],
     [ "enterCriticalSection", "de/dba/class_c_shell.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
     [ "exitCriticalSection", "de/dba/class_c_shell.html#aab3a51062666552690be49b8e8027161", null ],
     [ "getName", "de/dba/class_c_shell.html#aa291909bc3ff7cc0decf46c885a7a725", null ],
