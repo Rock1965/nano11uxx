@@ -51,13 +51,13 @@ public:
 	CShift(PIN_NAME_T pinDAT, PIN_NAME_T pinCLK, SF_BIT_ORDER_T order=SF_MSBFIRST);
 
 	/**Input the shift data
-	 *	\return a uint8_t (8 bits) data;
+	 *	\return a uint8_t (8 bits) type data;
 	 */
 	virtual uint8_t input();
 
 
 	/**Output the shift data
-	 *	\return a uint8_t (8 bits) data;
+	 *	\param a uint8_t (8 bits) type data;
 	 */
 	virtual void output(uint8_t val);
 
