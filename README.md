@@ -2,8 +2,13 @@ nano11Uxx (LPC11U3x + nRF BLE)
 ===============================
 
 uCXpresso.BLE RTOS C/C++ Framework for Bluetooth Low Energy
-v1.0.6 rc4 22th May 2014
+v1.0.6 released 24th May 2014
 --------------------------------
+###Features:
+	1. Kernel update to v8.0.1
+	2. Update PWM precisions.
+	3. Add BLE "Direct Test Mode" for ODM customer.
+	
 ###Details:
 	1. Update kernel to v8.0.1
 	2. Add PID and Kalman algorithms from ARM Limited.
