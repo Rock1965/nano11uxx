@@ -57,6 +57,10 @@ public:
 	 */
 	void onCtrlLineState(uint16_t state);
 
+	/**
+	 */
+	static bool isVBUS();
+
 	//
 	// old style function call
 	//
