@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.6</span>
+   &#160;<span id="projectnumber">v1.0.7</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('d6/dc5/classusb_c_d_c.html','../../');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d0/d94/classusb_c_d_c-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">usbCDC Class Reference<div class="ingroups"><a class="el" href="../../d1/d6c/group___peripherals.html">Peripherals</a></div></div>  </div>
@@ -176,8 +177,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4">parseFloat</a> (bool echo=false)</td></tr>
 <tr class="memdesc:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">float version of parseInt  <a href="#a9c936febcbe2cd33c2857f37ed04f2f4">More...</a><br/></td></tr>
 <tr class="separator:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa314dfe6e8cf3c1da9ad6a6de2d2618e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e">parseString</a> (LPTSTR buf, size_t size, bool echo=false)</td></tr>
+<tr class="memdesc:aa314dfe6e8cf3c1da9ad6a6de2d2618e"><td class="mdescLeft">&#160;</td><td class="mdescRight">input a string to specify buffer.  <a href="#aa314dfe6e8cf3c1da9ad6a6de2d2618e">More...</a><br/></td></tr>
+<tr class="separator:aa314dfe6e8cf3c1da9ad6a6de2d2618e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a70a6b129ad9c838f7260013f8153c5db"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db">isVBUS</a> ()</td></tr>
+<tr class="separator:a70a6b129ad9c838f7260013f8153c5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a> class provides the USB CDC virtual COM. port. </p>
@@ -392,6 +401,30 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">CThread</a>.</p>
 
+</div>
+</div>
+<a class="anchor" id="a70a6b129ad9c838f7260013f8153c5db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool usbCDC::isVBUS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/df3/_2ble_2ble_multiple_2src_2main_8cpp-example.html#a36">/ble/ble_multiple/src/main.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ad20e467624da633a79b150a435667619"></a>
@@ -625,6 +658,58 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa314dfe6e8cf3c1da9ad6a6de2d2618e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CStream::parseString </td>
+          <td>(</td>
+          <td class="paramtype">LPTSTR&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>echo</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>input a string to specify buffer. </p>
+<p>parseString member for stream class </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>a string buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>of the string buffer. </td></tr>
+    <tr><td class="paramname">echo</td><td>to enable the echo to console. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string length, if zero, no string input. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a65831ad4bfa85bf83f467c63b9f22799"></a>
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +934,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></li>
-    <li class="footer">Generated on Fri May 23 2014 15:51:05 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Jun 23 2014 22:55:18 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

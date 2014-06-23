@@ -11,6 +11,7 @@ var class_c_stream =
     [ "operator>>", "d4/d16/class_c_stream.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
     [ "parseFloat", "d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
     [ "parseInt", "d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b", null ],
+    [ "parseString", "d4/d16/class_c_stream.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
     [ "read", "d4/d16/class_c_stream.html#a80977482ffb2f7b626a9f29f437b7d8d", null ],
     [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
     [ "readable", "d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4", null ],

@@ -52,12 +52,12 @@ public:
 		return m_console.iStream()->read();
 	}
 
-	inline long	parseInt() {
-		return m_console.iStream()->parseInt();
+	inline long	parseInt(bool echo=true) {
+		return m_console.iStream()->parseInt(echo);
 	}
 
-	inline float parseFloat() {
-		return m_console.iStream()->parseFloat();
+	inline float parseFloat(bool echo=true) {
+		return m_console.iStream()->parseFloat(echo);
 	}
 
 // internal use

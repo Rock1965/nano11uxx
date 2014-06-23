@@ -39,6 +39,7 @@ var class_c_serial =
     [ "operator>>", "d8/d1d/class_c_serial.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
     [ "parseFloat", "d8/d1d/class_c_serial.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
     [ "parseInt", "d8/d1d/class_c_serial.html#af60d539c037589ae50b495fe213dda0b", null ],
+    [ "parseString", "d8/d1d/class_c_serial.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
     [ "read", "d8/d1d/class_c_serial.html#af56764abe8954430eede10e253f8994f", null ],
     [ "read", "d8/d1d/class_c_serial.html#a9b658bf4bc4d81413627bc2fe81e1471", null ],
     [ "readable", "d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917", null ],

@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : stream.h
  Author      : uCXpresso
- Version     : v1.0.2
- Date		 : 2014/5/2
+ Version     : v1.0.3
+ Date		 : 2014/6/22
  Description : Stream Base Class
  ===============================================================================
  	 	 	 	 	 	 	 	 History
@@ -13,6 +13,7 @@
  2011/12/18	v1.0.0	First Edition									Jason
  2014/3/19	v1.0.1	Add more operators								Jason
  2014/5/2	v1.0.2	Add parseInt, parseFloat member functions		Jason
+ 2014/6/22	v1.0.3	Add parseString member function					Jason
  ===============================================================================
  */
 
@@ -168,6 +169,15 @@ public:
 	  * \brief float version of parseInt
 	  */
 	 virtual float parseFloat(bool echo=false);
+
+	 /**parseString member for stream class
+	  * \brief input a string to specify buffer.
+	  * \param buf a string buffer.
+	  * \param size of the string buffer.
+	  * \param echo to enable the echo to console.
+	  * \return string length, if zero, no string input.
+	  */
+	 virtual int parseString(LPTSTR buf, size_t size, bool echo=false);
 
 	/// @cond
 	CStream();

@@ -28,5 +28,6 @@ var searchData=
   ['issuspend',['isSuspend',['../d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965',1,'CThread']]],
   ['isthread',['isThread',['../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f',1,'CObject::isThread()'],['../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984',1,'CThread::isThread()']]],
   ['istream',['iStream',['../d6/d56/class_console.html#ad4d21815c5cbc33e9015ba5babf5bf09',1,'Console']]],
-  ['isvalid',['isValid',['../d4/ddd/classgc_handle_t.html#ab35bfc017cd77053934dd6badb162acd',1,'gcHandleT']]]
+  ['isvalid',['isValid',['../d4/ddd/classgc_handle_t.html#ab35bfc017cd77053934dd6badb162acd',1,'gcHandleT']]],
+  ['isvbus',['isVBUS',['../d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db',1,'usbCDC']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.6</span>
+   &#160;<span id="projectnumber">v1.0.7</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -146,49 +146,51 @@ $(document).ready(function(){initNavTree('d5/d64/usb__cdc_8h_source.html','../..
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#ad20e467624da633a79b150a435667619">onCtrlLineState</a>(uint16_t state);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// old style function call</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">   64</a></span>&#160;<span class="comment"></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">connect</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697">enable</a>(); }</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">   66</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">disconnect</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9">disable</a>(); }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// implement the CStream virtual functions</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80">readable</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a">writeable</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">read</a>(<span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32">isConnected</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72">flush</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//private:</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span>    ~<a class="code" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span>  on_usb_send();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> on_usb_recv();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    xHandle     m_hUsb;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semIrq;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>      m_txFiFo;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>      m_rxFiFo;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    uint16_t    m_state;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    uint32_t    m_flag;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    xHandle     m_hCdc;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    xHandle     m_irqTask;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    uint8_t     *abBulkBuf;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    uint32_t    pbuf;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semTx;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semRx;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USB_CDC_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db">isVBUS</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// old style function call</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">   68</a></span>&#160;<span class="comment"></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">connect</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697">enable</a>(); }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">   70</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">disconnect</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9">disable</a>(); }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// implement the CStream virtual functions</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80">readable</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a">writeable</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">read</a>(<span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> len, <span class="keywordtype">bool</span> block=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32">isConnected</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72">flush</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//private:</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span>    ~<a class="code" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span>  on_usb_send();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> on_usb_recv();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    xHandle     m_hUsb;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semIrq;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>      m_txFiFo;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">FIFO_T</a>      m_rxFiFo;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    uint16_t    m_state;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    uint32_t    m_flag;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    xHandle     m_hCdc;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    xHandle     m_irqTask;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    uint8_t     *abBulkBuf;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    uint32_t    pbuf;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semTx;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semRx;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USB_CDC_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="struct_p_a_c_k___s_t_r_u_c_t_html_af0dec498fcd576e9db6b4447f5715c0a"><div class="ttname"><a href="../../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html#af0dec498fcd576e9db6b4447f5715c0a">PACK_STRUCT::bCharFormat</a></div><div class="ttdeci">uint8_t bCharFormat</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:28</div></div>
 <div class="ttc" id="class_c_semaphore_html"><div class="ttname"><a href="../../d0/d06/class_c_semaphore.html">CSemaphore</a></div><div class="ttdef"><b>Definition:</b> semaphore.h:33</div></div>
 <div class="ttc" id="classusb_c_d_c_html_a340c728ca722a61a3a457a546a301dec"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec">usbCDC::write</a></div><div class="ttdeci">virtual int write(const void *buf, int len, bool block=true)</div></div>
-<div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:29</div></div>
+<div class="ttc" id="class_c_stream_html"><div class="ttname"><a href="../../d4/d16/class_c_stream.html">CStream</a></div><div class="ttdef"><b>Definition:</b> stream.h:30</div></div>
 <div class="ttc" id="struct_p_a_c_k___s_t_r_u_c_t_html_a177009e8452a6c785662e422cc457824"><div class="ttname"><a href="../../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html#a177009e8452a6c785662e422cc457824">PACK_STRUCT::bDataBits</a></div><div class="ttdeci">uint8_t bDataBits</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:30</div></div>
 <div class="ttc" id="struct_p_a_c_k___s_t_r_u_c_t_html_aa92cdd7b41d7748edc3695fd95fea81c"><div class="ttname"><a href="../../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html#aa92cdd7b41d7748edc3695fd95fea81c">PACK_STRUCT::bParityType</a></div><div class="ttdeci">uint8_t bParityType</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:29</div></div>
 <div class="ttc" id="classusb_c_d_c_html_ad20e467624da633a79b150a435667619"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#ad20e467624da633a79b150a435667619">usbCDC::onCtrlLineState</a></div><div class="ttdeci">void onCtrlLineState(uint16_t state)</div></div>
@@ -200,12 +202,13 @@ $(document).ready(function(){initNavTree('d5/d64/usb__cdc_8h_source.html','../..
 <div class="ttc" id="struct_p_a_c_k___s_t_r_u_c_t_html_af565415de305bf011dc318681d3d3b1c"><div class="ttname"><a href="../../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html#af565415de305bf011dc318681d3d3b1c">PACK_STRUCT::dwDTERate</a></div><div class="ttdeci">uint32_t dwDTERate</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:27</div></div>
 <div class="ttc" id="classusb_c_d_c_html_a0c0cb27d108bed8763e68a4121efee32"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32">usbCDC::isConnected</a></div><div class="ttdeci">virtual bool isConnected()</div></div>
 <div class="ttc" id="classusb_c_d_c_html_ae45acb09392fedde912a5dba6fc3b88a"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a">usbCDC::writeable</a></div><div class="ttdeci">virtual int writeable()</div></div>
-<div class="ttc" id="classusb_c_d_c_html_a49d431de50da7ccacf91ef33b04e99d2"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">usbCDC::connect</a></div><div class="ttdeci">bool connect()</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:64</div></div>
-<div class="ttc" id="classusb_c_d_c_html_aa95f819926a8da40f12eebc62adf6f95"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">usbCDC::disconnect</a></div><div class="ttdeci">bool disconnect()</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:66</div></div>
+<div class="ttc" id="classusb_c_d_c_html_a49d431de50da7ccacf91ef33b04e99d2"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">usbCDC::connect</a></div><div class="ttdeci">bool connect()</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:68</div></div>
+<div class="ttc" id="classusb_c_d_c_html_aa95f819926a8da40f12eebc62adf6f95"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">usbCDC::disconnect</a></div><div class="ttdeci">bool disconnect()</div><div class="ttdef"><b>Definition:</b> usb_cdc.h:70</div></div>
 <div class="ttc" id="struct_p_a_c_k___s_t_r_u_c_t_html"><div class="ttname"><a href="../../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html">PACK_STRUCT</a></div><div class="ttdef"><b>Definition:</b> ble_devinfo.h:36</div></div>
 <div class="ttc" id="classusb_c_d_c_html_afebca0ce341d46537cc6e2a811bede72"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72">usbCDC::flush</a></div><div class="ttdeci">virtual void flush()</div></div>
 <div class="ttc" id="structfifo__t_html"><div class="ttname"><a href="../../db/d53/structfifo__t.html">fifo_t</a></div><div class="ttdef"><b>Definition:</b> fifo.h:10</div></div>
 <div class="ttc" id="class_c_stream_html_af56764abe8954430eede10e253f8994f"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">CStream::read</a></div><div class="ttdeci">virtual uint8_t read()</div></div>
+<div class="ttc" id="classusb_c_d_c_html_a70a6b129ad9c838f7260013f8153c5db"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db">usbCDC::isVBUS</a></div><div class="ttdeci">static bool isVBUS()</div></div>
 <div class="ttc" id="classusb_c_d_c_html_a806fa3a4be9e6cfaab51b8621cb70697"><div class="ttname"><a href="../../d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697">usbCDC::enable</a></div><div class="ttdeci">bool enable()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -213,7 +216,7 @@ $(document).ready(function(){initNavTree('d5/d64/usb__cdc_8h_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>usb_cdc.h</b></li>
-    <li class="footer">Generated on Fri May 23 2014 15:51:04 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Jun 23 2014 22:55:17 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -20,7 +20,7 @@ var searchData=
   ['settimeout',['setTimeout',['../d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e',1,'CWatchdog']]],
   ['settings',['settings',['../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233',1,'CSerial']]],
   ['settxpowerlevel',['setTxPowerLevel',['../de/d67/classble_proximity.html#a177463a01974a439c9f8d90b36cf15e1',1,'bleProximity']]],
-  ['setup',['setup',['../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74',1,'bleSerial']]],
+  ['setup',['setup',['../d7/d03/classble_serial.html#ad9d7db801a626adfa9c637397999e0d9',1,'bleSerial']]],
   ['show_5fclear',['show_clear',['../de/dba/class_c_shell.html#a8cb6ac07d2290e4d51c641af1d152b1f',1,'CShell']]],
   ['show_5fheap',['show_heap',['../de/dba/class_c_shell.html#a99cd1946dd501dd788accc421ffb883c',1,'CShell']]],
   ['show_5fmenu',['show_menu',['../de/dba/class_c_shell.html#ab499caffc2baf478802c3f89d606fc6c',1,'CShell']]],

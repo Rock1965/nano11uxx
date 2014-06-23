@@ -20,7 +20,7 @@ var searchData=
   ['settimeout',['setTimeout',['../d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e',1,'CWatchdog']]],
   ['settings',['settings',['../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233',1,'CSerial']]],
   ['settxpowerlevel',['setTxPowerLevel',['../de/d67/classble_proximity.html#a177463a01974a439c9f8d90b36cf15e1',1,'bleProximity']]],
-  ['setup',['setup',['../d7/d03/classble_serial.html#acc1e214474c9e98705fb7f363a3eee74',1,'bleSerial']]],
+  ['setup',['setup',['../d7/d03/classble_serial.html#ad9d7db801a626adfa9c637397999e0d9',1,'bleSerial']]],
   ['sf_5fbit_5forder_5ft',['SF_BIT_ORDER_T',['../db/dff/group___enumerations.html#gac9e770e9654a338545bfbb2e17cb4ada',1,'shift.h']]],
   ['sf_5flsbfirst',['SF_LSBFIRST',['../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18',1,'shift.h']]],
   ['sf_5fmsbfirst',['SF_MSBFIRST',['../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa891202950a9401e5be78bcc9de77527e',1,'shift.h']]],

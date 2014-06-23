@@ -2,7 +2,7 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : uCXpresso
- Version     : 1.0.14
+ Version     : 1.0.15
  Date		 : 2014/4/10
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
@@ -30,6 +30,7 @@
  	 	 	 	 	Rename member onHrControl to onHeartRateControl
  2014/3/15	v1.0.13 Change BLE polling to interrupt method.				Jason
  2014/4/10	v1.0.14 Remove isActived() member for power save features.	Jason
+ 2014/6/14	v1.0.15	Update manufactureData to 24 bits					Jason
  ===============================================================================
  */
 
@@ -57,7 +58,7 @@
 #define DEF_BLE_DATA_TIMEOUT	1500
 #define DEF_BLE_CONN_INTERVAL	10		// default connection interval 10ms
 #define DEF_BLE_CONN_TIMEOUT	3000	// default connection timeout 3sec
-#define DEF_BLE_MFG_DATA		0x1234
+#define DEF_BLE_MFG_DATA		0x123456
 
 /**Disconnect a BLE connection with a reason.
  * \ingroup Enumerations
@@ -128,7 +129,7 @@ public:
 			   int8_t txPowerLevel=DEF_BLE_TXPOWER,
 			   uint16_t connInterval=DEF_BLE_CONN_INTERVAL,
 			   uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,
-			   uint16_t manufactureData=DEF_BLE_MFG_DATA);
+			   uint32_t manufactureData=DEF_BLE_MFG_DATA);
 
 	/**An inline function redirect to advertising() member function.
 	 * \see advertising
@@ -137,7 +138,7 @@ public:
 			   int8_t txPowerLevel=DEF_BLE_TXPOWER,
 			   uint16_t connInterval=DEF_BLE_CONN_INTERVAL,
 			   uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT,
-			   uint16_t manufactureData=DEF_BLE_MFG_DATA) {
+			   uint32_t manufactureData=DEF_BLE_MFG_DATA) {
 		advertising(advInterval, txPowerLevel, connInterval, connTimeout, manufactureData);
 	}
 
@@ -294,7 +295,7 @@ public:
 	uint16_t m_advInterval;
 	uint16_t m_conInterval;
 	uint16_t m_conTimeout;
-	uint16_t m_mfgData;
+	uint32_t m_mfgData;
 	int8_t	 m_txPowerLevel;
 
 	virtual void onAlert(uint8_t level);
