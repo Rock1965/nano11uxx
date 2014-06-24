@@ -45,7 +45,7 @@ void Configure::run() {
 		if ( m_usb.isConnected() ) {
 			main_menu();
 		}
-		sleep(1000);
+		sleep(3000);
 	}
 }
 
