@@ -2,16 +2,17 @@
  ===============================================================================
  Name        : ble_test.h
  Author      : uCXpresso
- Version     : 1.0.0
- Date		 : 2014/5/21
+ Version     : 1.0.1
+ Date		 : 2014/6/25
  Copyright   : Copyright (C) www.embeda.com.tw
- Description : BLE Test Mode
+ Description : BLE Direct Test Mode
  ===============================================================================
  History
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/5/21	v1.0.0	Initialize										Jason
+ 2014/6/25	v1.0.1	Update command member function.					Jason
  ===============================================================================
  */
 
@@ -31,8 +32,8 @@ class bleTest: public CPeripheral {
 public:
 	bleTest(bleSerial &ble);
 
-	bool interface(BLE_TEST_IF If);	// select interface
-	bool command(uint16_t dtm);		// send DTM command when IF=ACI !!
+	bool interface(BLE_TEST_IF If);					// select interface
+	bool command(uint8_t &msb, uint8_t &lsb);		// send DTM command when IF=ACI !!
 
 	/// @cond PRIVATE
 protected:
