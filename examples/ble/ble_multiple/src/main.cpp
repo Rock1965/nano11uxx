@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : main.cpp
  Author      : Jason
- Version     : 1.0.5
- Date		 : 2014/3/20
+ Version     : 1.1.0
+ Date		 : 2014/7/1
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : a BLE Firmat & multiple services Demo
@@ -19,6 +19,7 @@
  2014/3/2	v1.0.4	Add onWatchdog() event in myBLE class.			Jason
  	 	 	 	 	Add onError() event in myBLE class.
  2014/3/20	v1.0.5	Add Servo Motor for BLE Arduino Firmata Demo.	Jason
+ 2014/7/1	v1.1.0	Add configure class.							Jason
  ===============================================================================
  */
 
@@ -49,6 +50,8 @@
 #include "MyFirmata.h"
 #include "callback.h"
 #include "arduino/tone.h"
+#include "configure.h"
+
 //
 // TODO: insert other definitions and declarations here
 //
@@ -74,7 +77,7 @@ public:
 	// Construct for myBLE class
 	//     set the Vendor Name, Device Name, Device Version
 	//
-	myBLE(): bleSerial("BLE-Multiple") {
+	myBLE(LPCTSTR name="BLE-Multiple"): bleSerial(name) {
 		// nothing
 	}
 
@@ -216,11 +219,27 @@ int main(void) {
 	 *                         your setup code here
 	 *
 	 **************************************************************************/
+#ifndef DEBUG
+	//
+	// Configure
+	//
+	Configure cfg;	// load configure data from EEPROM
+
+	//
+	// BLE Engine (Serial Stream)
+	//
+	myBLE ble(cfg.m_ble.name);
+	ble.advertising(cfg.m_ble.advInterval,
+					cfg.m_ble.txPowerLevel,
+					cfg.m_ble.conInterval,
+					cfg.m_ble.mfgCode);
+#else
 	//
 	// BLE Engine (Serial Stream)
 	//
 	myBLE ble;
 	ble.advertising(100, -59);	// set adv. interval = 100ms, calibrater tx power = -59dBm
+#endif
 	ble.enable();					// start the ble engine first!!
 
 	//
@@ -279,6 +298,8 @@ int main(void) {
 	// Power Save Feature
 	//
 	myPowerSave ps;						// use power Save feature
+
+	cfg.start();						// start configure task (via usbCDC)
 #endif
 
 	float 	value;
@@ -291,14 +312,6 @@ int main(void) {
 		 *
 		 **********************************************************************/
 		if ( ble.isConnected() ) {
-#ifndef DEBUG
-			//
-			// Power On
-			//
-			ps.disable(); // disable power save mode
-#else
-			ledACT = !ledACT;
-#endif
 			//
 			// UART Service
 			//
@@ -377,15 +390,14 @@ int main(void) {
 
 		}	// isConnected
 		else {
-#ifndef DEBUG
-			//
-			// Power Save
-			//
-			ps.enable(POWER_DOWN);	// enable power save mode
-#else
+			sleep(2000);
+		}
+
+		if ( usbCDC::isVBUS() ) {
 			ledACT = LED_ON;
-#endif
-			sleep(1000);
+			ps.disable();
+		} else {
+			ps.enable(POWER_DOWN);
 		}
 	}
     return 0 ;
