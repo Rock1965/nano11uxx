@@ -233,6 +233,9 @@ int main(void) {
 					cfg.m_ble.txPowerLevel,
 					cfg.m_ble.conInterval,
 					cfg.m_ble.mfgCode);
+	ble.enable();					// start the ble engine first!!
+	ble.setRadioTxPower(cfg.m_ble.power);
+
 #else
 	//
 	// BLE Engine (Serial Stream)
@@ -240,7 +243,6 @@ int main(void) {
 	myBLE ble;
 	ble.advertising(100, -59);	// set adv. interval = 100ms, calibrater tx power = -59dBm
 #endif
-	ble.enable();					// start the ble engine first!!
 
 	//
 	// Device Information Service
