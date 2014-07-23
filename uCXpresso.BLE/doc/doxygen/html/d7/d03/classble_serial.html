@@ -154,6 +154,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acddad359ad714bd31358c96966839a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aea16b265aa98f0a540f71b75965408"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a6aea16b265aa98f0a540f71b75965408">getPhyVersion</a> ()</td></tr>
 <tr class="separator:a6aea16b265aa98f0a540f71b75965408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f60452e47fe4ecf98539bf14cd9b34c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a9f60452e47fe4ecf98539bf14cd9b34c">sleep</a> ()</td></tr>
+<tr class="separator:a9f60452e47fe4ecf98539bf14cd9b34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012d20295fb8f48433c7e5b00760e266"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a012d20295fb8f48433c7e5b00760e266">wakeup</a> ()</td></tr>
+<tr class="separator:a012d20295fb8f48433c7e5b00760e266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb930ce55295ff7eb6ab5bdbeb702749"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#adb930ce55295ff7eb6ab5bdbeb702749">onConnected</a> ()</td></tr>
 <tr class="separator:adb930ce55295ff7eb6ab5bdbeb702749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f5116c8bcf05011a05ad5e2967c318"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#aa6f5116c8bcf05011a05ad5e2967c318">onDisconnected</a> ()</td></tr>
@@ -1530,6 +1534,30 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9f60452e47fe4ecf98539bf14cd9b34c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bleSerial::sleep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set BLE core into sleep mode </p>
+
+</div>
+</div>
 <a class="anchor" id="a3ebabcc071634508511ae2fc7b868ab7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1686,6 +1714,30 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a012d20295fb8f48433c7e5b00760e266"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bleSerial::wakeup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Weakup BLE core from sleep mode </p>
+
+</div>
+</div>
 <a class="anchor" id="a2588b21bf80d35a866dc7e47f97142df"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1828,7 +1880,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d03/classble_serial.html">bleSerial</a></li>
-    <li class="footer">Generated on Mon Jun 23 2014 22:55:17 for uCXpresso.BLE by
+    <li class="footer">Generated on Wed Jul 23 2014 13:23:10 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

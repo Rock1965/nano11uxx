@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15d235836f03a59a8d3a12ad5df78cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20e467624da633a79b150a435667619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#ad20e467624da633a79b150a435667619">onCtrlLineState</a> (uint16_t state)</td></tr>
 <tr class="separator:ad20e467624da633a79b150a435667619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e0f98a34b9562dfdad74d17e2af35c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a86e0f98a34b9562dfdad74d17e2af35c">asWeakupSource</a> ()</td></tr>
+<tr class="memdesc:a86e0f98a34b9562dfdad74d17e2af35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interrupt will weakup the MCU from power down mode.  <a href="#a86e0f98a34b9562dfdad74d17e2af35c">More...</a><br/></td></tr>
+<tr class="separator:a86e0f98a34b9562dfdad74d17e2af35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d431de50da7ccacf91ef33b04e99d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2">connect</a> ()</td></tr>
 <tr class="separator:a49d431de50da7ccacf91ef33b04e99d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa95f819926a8da40f12eebc62adf6f95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95">disconnect</a> ()</td></tr>
@@ -216,6 +219,24 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a86e0f98a34b9562dfdad74d17e2af35c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usbCDC::asWeakupSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The interrupt will weakup the MCU from power down mode. </p>
+<p>As a weakup source for Power Save Feature </p>
+
+</div>
+</div>
 <a class="anchor" id="afdbf8d786e4aac9b06afe3447427a2ae"></a>
 <div class="memitem">
 <div class="memproto">
@@ -710,6 +731,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af56764abe8954430eede10e253f8994f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint8_t CStream::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read a byte from stream </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t (8 bits) data from the stream </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a65831ad4bfa85bf83f467c63b9f22799"></a>
 <div class="memitem">
 <div class="memproto">
@@ -763,31 +809,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af56764abe8954430eede10e253f8994f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual uint8_t CStream::read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Read a byte from stream </p>
-<dl class="section return"><dt>Returns</dt><dd>uint8_t (8 bits) data from the stream </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a7182c4dfdad0293bba73a82056d43e80"></a>
 <div class="memitem">
 <div class="memproto">
@@ -813,6 +834,37 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">CStream</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48041fea5cad32feaeef543bcaa2d37d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CStream::write </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write a byte to stream </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>is a uint8_t data to send to the stream. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -869,37 +921,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a48041fea5cad32feaeef543bcaa2d37d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void CStream::write </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Write a byte to stream </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c</td><td>is a uint8_t data to send to the stream. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ae45acb09392fedde912a5dba6fc3b88a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -934,7 +955,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></li>
-    <li class="footer">Generated on Mon Jun 23 2014 22:55:18 for uCXpresso.BLE by
+    <li class="footer">Generated on Wed Jul 23 2014 13:23:11 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

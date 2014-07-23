@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a05a14e85d7a32342c06225296365c88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0129b8ff5e006da86032441f8e97706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df2/classble_test.html#ae0129b8ff5e006da86032441f8e97706">interface</a> (BLE_TEST_IF If)</td></tr>
 <tr class="separator:ae0129b8ff5e006da86032441f8e97706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37de51e48418d11af6b949ef7ee2564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df2/classble_test.html#ac37de51e48418d11af6b949ef7ee2564">command</a> (uint16_t dtm)</td></tr>
-<tr class="separator:ac37de51e48418d11af6b949ef7ee2564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1236a9b1e19977109d6102e625e59366"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df2/classble_test.html#a1236a9b1e19977109d6102e625e59366">command</a> (uint8_t &amp;msb, uint8_t &amp;lsb)</td></tr>
+<tr class="separator:a1236a9b1e19977109d6102e625e59366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">isThread</a> ()</td></tr>
 <tr class="separator:a26a76c241a4d62d2efdac57d2cfe4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -155,16 +155,26 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac37de51e48418d11af6b949ef7ee2564"></a>
+<a class="anchor" id="a1236a9b1e19977109d6102e625e59366"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool bleTest::command </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>dtm</em></td><td>)</td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>msb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>lsb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,7 +230,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/df2/classble_test.html">bleTest</a></li>
-    <li class="footer">Generated on Mon Jun 23 2014 22:55:17 for uCXpresso.BLE by
+    <li class="footer">Generated on Wed Jul 23 2014 13:23:10 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

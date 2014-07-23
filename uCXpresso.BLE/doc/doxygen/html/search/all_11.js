@@ -32,6 +32,7 @@ var searchData=
   ['show_5fversion',['show_version',['../de/dba/class_c_shell.html#a4aed8c6a1e01a50595d9e8da8d1f88b2',1,'CShell']]],
   ['show_5fwelcome',['show_welcome',['../de/dba/class_c_shell.html#a34dfa6d370ce6fb517e1307d38a4982b',1,'CShell']]],
   ['size',['size',['../db/d53/structfifo__t.html#adfe58cd24e80a0d62cf830bcc83f5c01',1,'fifo_t']]],
+  ['sleep',['sleep',['../d7/d03/classble_serial.html#a9f60452e47fe4ecf98539bf14cd9b34c',1,'bleSerial']]],
   ['spi0',['SPI0',['../db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98a7add1e0588a075d9385b10fcbb2010f4',1,'spi.h']]],
   ['spi1',['SPI1',['../db/dff/group___enumerations.html#gga1adbe6bf70e3880dc6b9f86e58bb7f98add83ddb396fbcb33f2d61248e5c4a185',1,'spi.h']]],
   ['spi_5fbit_5forder_5ft',['SPI_BIT_ORDER_T',['../db/dff/group___enumerations.html#ga0d0ec25638f753b00013a2a99fed1ef4',1,'spi.h']]],

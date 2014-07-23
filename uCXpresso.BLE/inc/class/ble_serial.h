@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : uCXpresso
- Version     : 1.0.15
- Date		 : 2014/4/10
+ Version     : 1.0.16
+ Date		 : 2014/7/23
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -31,6 +31,7 @@
  2014/3/15	v1.0.13 Change BLE polling to interrupt method.				Jason
  2014/4/10	v1.0.14 Remove isActived() member for power save features.	Jason
  2014/6/14	v1.0.15	Update manufactureData to 24 bits					Jason
+ 2014/7/23	v1.0.16	Add sleep & weakup member functions.				Jason
  ===============================================================================
  */
 
@@ -196,6 +197,14 @@ public:
 	 * \return An uint8_t type value.
 	 */
 	uint8_t getPhyVersion();
+
+	/**Set BLE core into sleep mode
+	 */
+	virtual void sleep();
+
+	/**Weakup BLE core from sleep mode
+	 */
+	virtual void wakeup();
 
 	//
 	// Events
