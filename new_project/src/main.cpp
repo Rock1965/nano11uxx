@@ -5,6 +5,7 @@
  Version     : v1.0.0
  Date		 :
  Copyright   :
+ License	 :
  Description :
  ===============================================================================
   	 	 	 	 	 	 	 	 History
@@ -67,7 +68,6 @@ int main(void) {
 	//
 	// LED Demo (can be removed)
 	//
-	DBG("Hello I'm in debug mode\n");
 	uint8_t i = 0;
 	CBus port(LED1, LED2, LED3, LED4, END);
 	port.output();	// set all pins as output
@@ -86,23 +86,6 @@ int main(void) {
 		i = (i+1) < (int)sizeof(led_scripts) ? i+1 : 0;
 		sleep(100);
 
-
 	}
     return 0 ;
 }
-
-//
-// default memory pool
-//
-static uint8_t mem_pool[DEFAULT_POOL_SIZE];
-
-//
-// setup before the system startup
-//
-extern "C" void sys_setup(void) {
-	pool_memadd((uint32_t)mem_pool, sizeof(mem_pool));
-#if __USE_USB==0
-	pool_memadd(USB_MEM_BASE, USB_MEM_SIZE);
-#endif
-}
-
