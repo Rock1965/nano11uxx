@@ -13,7 +13,7 @@
 #include <class/usb_cdc.h>
 #include <class/ble_serial.h>
 
-typedef struct PACK_STRUCT _ble_cfg_ {
+typedef struct _ble_cfg_ {
 	int				length;
 	char 			name[13];
 	int8_t 			txPowerLevel;
@@ -21,7 +21,7 @@ typedef struct PACK_STRUCT _ble_cfg_ {
 	uint16_t		conInterval;
 	BLE_TX_POWER_T 	power;
 	uint32_t		mfgCode;
-}BLE_CFG_T ;
+}BLE_CFG_T;
 
 
 class Configure: public CThread {

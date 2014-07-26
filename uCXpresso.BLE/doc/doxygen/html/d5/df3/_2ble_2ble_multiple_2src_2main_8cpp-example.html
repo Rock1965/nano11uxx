@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('d5/df3/_2ble_2ble_multiple_2src_2main_
 <div class="line"><span class="comment"> ===============================================================================</span></div>
 <div class="line"><span class="comment"> Name        : main.cpp</span></div>
 <div class="line"><span class="comment"> Author      : Jason</span></div>
-<div class="line"><span class="comment"> Version     : 1.1.0</span></div>
-<div class="line"><span class="comment"> Date        : 2014/7/1</span></div>
+<div class="line"><span class="comment"> Version     : 1.1.1</span></div>
+<div class="line"><span class="comment"> Date        : 2014/7/25</span></div>
 <div class="line"><span class="comment"> Copyright   : Copyright (C) www.embeda.com.tw</span></div>
 <div class="line"><span class="comment"> License     : MIT</span></div>
 <div class="line"><span class="comment"> Description : a BLE Firmat &amp; multiple services Demo</span></div>
@@ -125,6 +125,7 @@ $(document).ready(function(){initNavTree('d5/df3/_2ble_2ble_multiple_2src_2main_
 <div class="line"><span class="comment">                    Add onError() event in myBLE class.</span></div>
 <div class="line"><span class="comment"> 2014/3/20  v1.0.5  Add Servo Motor for BLE Arduino Firmata Demo.   Jason</span></div>
 <div class="line"><span class="comment"> 2014/7/1   v1.1.0  Add configure class.                            Jason</span></div>
+<div class="line"><span class="comment"> 2014/7/25  v1.1.1  Add ble.wait() to block and waiting a BLE event.Jason</span></div>
 <div class="line"><span class="comment"> ===============================================================================</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"></div>
@@ -419,6 +420,7 @@ $(document).ready(function(){initNavTree('d5/df3/_2ble_2ble_multiple_2src_2main_
 <div class="line"><span class="comment">         *</span></div>
 <div class="line"><span class="comment">         **********************************************************************/</span></div>
 <div class="line">        <span class="keywordflow">if</span> ( ble.isConnected() ) {</div>
+<div class="line">            ps.disable();       <span class="comment">// disable power save features  when ble connected</span></div>
 <div class="line">            <span class="comment">//</span></div>
 <div class="line">            <span class="comment">// UART Service</span></div>
 <div class="line">            <span class="comment">//</span></div>
@@ -497,14 +499,13 @@ $(document).ready(function(){initNavTree('d5/df3/_2ble_2ble_multiple_2src_2main_
 <div class="line"></div>
 <div class="line">        }   <span class="comment">// isConnected</span></div>
 <div class="line">        <span class="keywordflow">else</span> {</div>
-<div class="line">            sleep(2000);</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="keywordflow">if</span> ( <a name="a36"></a><a class="code" href="../../d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db">usbCDC::isVBUS</a>() ) {</div>
-<div class="line">            ledACT = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d">LED_ON</a>;</div>
-<div class="line">            ps.disable();</div>
-<div class="line">        } <span class="keywordflow">else</span> {</div>
-<div class="line">            ps.enable(<a name="a37"></a><a class="code" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa">POWER_DOWN</a>);</div>
+<div class="line">            ble.wait(2000);             <span class="comment">// block and wait a BLE event within 2000ms</span></div>
+<div class="line">            <span class="keywordflow">if</span> ( <a name="a36"></a><a class="code" href="../../d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db">usbCDC::isVBUS</a>() ) {</div>
+<div class="line">                ledACT = <a class="code" href="../../db/dff/group___enumerations.html#gga6f24594071a026b31238ab8cb80d6a80add01b80eb93658fb4cf7eb9aceb89a1d">LED_ON</a>;</div>
+<div class="line">                ps.disable();           <span class="comment">// disable power save features when USB connected</span></div>
+<div class="line">            } <span class="keywordflow">else</span> {</div>
+<div class="line">                ps.enable(<a name="a37"></a><a class="code" href="../../db/dff/group___enumerations.html#ggab0f874168f0e852de8b43f54553826d5a2abda45f1b1e5bbe193611fb41ae7dfa">POWER_DOWN</a>);  <span class="comment">// enable power save features when 3.3V only</span></div>
+<div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0 ;</div>
@@ -513,7 +514,7 @@ $(document).ready(function(){initNavTree('d5/df3/_2ble_2ble_multiple_2src_2main_
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="comment">// default memory pool</span></div>
 <div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="keyword">static</span> uint8_t mem_pool[DEFAULT_POOL_SIZE-512]; <span class="comment">// reduce pool size to increase the global stack</span></div>
+<div class="line"><span class="keyword">static</span> uint8_t mem_pool[DEFAULT_POOL_SIZE-532]; <span class="comment">// reduce pool size to increase the global stack</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="comment">// setup before the system startup</span></div>
@@ -530,7 +531,7 @@ $(document).ready(function(){initNavTree('d5/df3/_2ble_2ble_multiple_2src_2main_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 23 2014 13:23:10 for uCXpresso.BLE by
+    <li class="footer">Generated on Sat Jul 26 2014 15:33:15 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -22,9 +22,9 @@ var classusb_c_d_c =
     [ "parseInt", "d6/dc5/classusb_c_d_c.html#af60d539c037589ae50b495fe213dda0b", null ],
     [ "parseString", "d6/dc5/classusb_c_d_c.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
     [ "read", "d6/dc5/classusb_c_d_c.html#af56764abe8954430eede10e253f8994f", null ],
-    [ "read", "d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799", null ],
+    [ "read", "d6/dc5/classusb_c_d_c.html#a9fa7e27caa79287ee1c97557f654e3f4", null ],
     [ "readable", "d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80", null ],
     [ "write", "d6/dc5/classusb_c_d_c.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-    [ "write", "d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec", null ],
+    [ "write", "d6/dc5/classusb_c_d_c.html#afa2fcf4990ec48ccb9e257e3cff80256", null ],
     [ "writeable", "d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a", null ]
 ];

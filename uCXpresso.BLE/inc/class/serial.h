@@ -118,14 +118,14 @@ public:
 	 * \param[in] len is a integer to specified the buffer length.
 	 * \param[in] block is a boolean value to specified to wait for reading.
 	 */
-	virtual int	read(void *buf, int len, bool block=true);
+	virtual int	read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
 
 	/**Call the member function to write a data block to serial port
 	 * \param[in] buf is a pointer which data block want to send to serial port.
 	 * \param[in] len is a integer value to specified the buffer length.
 	 * \param[in] block is a boolean value to specified to wait for writing.
 	 */
-	virtual int	write(const void *buf, int len, bool block=true);
+	virtual int	write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
 
 	/**Call the member function to wait for transmission  of outgoing serial data to complete.
 	 */

@@ -84,8 +84,8 @@ public:
 	//
 	virtual int readable();
 	virtual int writeable();
-	virtual int read(void *buf, int len, bool block = true);
-	virtual int write(const void *buf, int len, bool block = true);
+	virtual int read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
+	virtual int write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
 	virtual bool isConnected();
 	virtual void flush();
 

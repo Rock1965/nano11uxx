@@ -90,7 +90,7 @@ var group___b_l_e =
       [ "parseInt", "d7/d03/classble_serial.html#af60d539c037589ae50b495fe213dda0b", null ],
       [ "parseString", "d7/d03/classble_serial.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
       [ "read", "d7/d03/classble_serial.html#af56764abe8954430eede10e253f8994f", null ],
-      [ "read", "d7/d03/classble_serial.html#a186e09706d9b6e58a6213ac0b6a220ad", null ],
+      [ "read", "d7/d03/classble_serial.html#aca730475669428ac765ca9453082d625", null ],
       [ "readable", "d7/d03/classble_serial.html#a59dca8e3e2d6945a699347f4c4708fd4", null ],
       [ "resume", "d7/d03/classble_serial.html#ac8c53aa8c145fc4ac70fa6d825b95742", null ],
       [ "resumeAll", "d7/d03/classble_serial.html#a743d4325b7e7da494283f3292773ff77", null ],
@@ -103,10 +103,11 @@ var group___b_l_e =
       [ "start", "d7/d03/classble_serial.html#aacf955d1852e74da1f989251955ee6ec", null ],
       [ "suspend", "d7/d03/classble_serial.html#a53e71e6db2221cd1c45aec21953d4aad", null ],
       [ "suspendAll", "d7/d03/classble_serial.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
+      [ "wait", "d7/d03/classble_serial.html#a224a4403bd5690b5e818dc79da85d2ef", null ],
       [ "wakeup", "d7/d03/classble_serial.html#a012d20295fb8f48433c7e5b00760e266", null ],
       [ "watchdog", "d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df", null ],
       [ "write", "d7/d03/classble_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-      [ "write", "d7/d03/classble_serial.html#ab9d147e7dcb9436f390f2ad29d539930", null ],
+      [ "write", "d7/d03/classble_serial.html#aecd8677236ce7ba7e0bcadd4e249018c", null ],
       [ "writeable", "d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1", null ]
     ] ]
 ];

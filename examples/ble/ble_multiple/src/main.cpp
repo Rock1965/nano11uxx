@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : main.cpp
  Author      : Jason
- Version     : 1.1.0
- Date		 : 2014/7/1
+ Version     : 1.1.1
+ Date		 : 2014/7/25
  Copyright   : Copyright (C) www.embeda.com.tw
  License	 : MIT
  Description : a BLE Firmat & multiple services Demo
@@ -20,6 +20,7 @@
  	 	 	 	 	Add onError() event in myBLE class.
  2014/3/20	v1.0.5	Add Servo Motor for BLE Arduino Firmata Demo.	Jason
  2014/7/1	v1.1.0	Add configure class.							Jason
+ 2014/7/25	v1.1.1	Add ble.wait() to block and waiting a BLE event.Jason
  ===============================================================================
  */
 
@@ -314,6 +315,7 @@ int main(void) {
 		 *
 		 **********************************************************************/
 		if ( ble.isConnected() ) {
+			ps.disable();		// disable power save features  when ble connected
 			//
 			// UART Service
 			//
@@ -392,14 +394,13 @@ int main(void) {
 
 		}	// isConnected
 		else {
-			sleep(2000);
-		}
-
-		if ( usbCDC::isVBUS() ) {
-			ledACT = LED_ON;
-			ps.disable();
-		} else {
-			ps.enable(POWER_DOWN);
+			ble.wait(2000);				// block and wait a BLE event within 2000ms
+			if ( usbCDC::isVBUS() ) {
+				ledACT = LED_ON;
+				ps.disable();			// disable power save features when USB connected
+			} else {
+				ps.enable(POWER_DOWN);	// enable power save features when 3.3V only
+			}
 		}
 	}
     return 0 ;
@@ -408,7 +409,7 @@ int main(void) {
 //
 // default memory pool
 //
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-512];	// reduce pool size to increase the global stack
+static uint8_t mem_pool[DEFAULT_POOL_SIZE-532];	// reduce pool size to increase the global stack
 
 //
 // setup before the system startup

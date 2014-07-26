@@ -3,7 +3,7 @@
  Name        : stream.h
  Author      : uCXpresso
  Version     : v1.0.3
- Date		 : 2014/6/22
+ Date		 : 2014/7/25
  Description : Stream Base Class
  ===============================================================================
  	 	 	 	 	 	 	 	 History
@@ -14,6 +14,7 @@
  2014/3/19	v1.0.1	Add more operators								Jason
  2014/5/2	v1.0.2	Add parseInt, parseFloat member functions		Jason
  2014/6/22	v1.0.3	Add parseString member function					Jason
+ 2014/7/25	v1.0.4	Change read/write block to delay time			Jason
  ===============================================================================
  */
 
@@ -44,11 +45,11 @@ public:
 	/**To read the stream to buffer.
 	 * \param[in] buf Destination buffer.
 	 * \param[in] len Length of destination buffer.
-	 * \param[in] block If true, to block in the read function unit to the indication length (len) be read.
+	 * \param[in] block to block in the read function unit to the indication length (len) be read.
 	 * \return A value to indicate how many data bytes to read.
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual int  read(void *buf, int len, bool block=true) = PURE_VIRTUAL_FUNC;
+	virtual int  read(void *buf, int len, uint32_t block=MAX_DELAY_TIME) = PURE_VIRTUAL_FUNC;
 
 	/**To write the buffer to stream.
 	 * \param[out] buf Source buffer.
@@ -57,7 +58,7 @@ public:
 	 * \return A value to indicate how many data bytes to write.
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual int  write(const void *buf, int len, bool block=true) = PURE_VIRTUAL_FUNC;
+	virtual int  write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME) = PURE_VIRTUAL_FUNC;
 
 	/**Check the current connection is valid or not.
 	 * \return true if current connection is valid.

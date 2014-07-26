@@ -166,11 +166,11 @@ var group___peripherals =
       [ "parseInt", "d8/d1d/class_c_serial.html#af60d539c037589ae50b495fe213dda0b", null ],
       [ "parseString", "d8/d1d/class_c_serial.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
       [ "read", "d8/d1d/class_c_serial.html#af56764abe8954430eede10e253f8994f", null ],
-      [ "read", "d8/d1d/class_c_serial.html#a9b658bf4bc4d81413627bc2fe81e1471", null ],
+      [ "read", "d8/d1d/class_c_serial.html#a340c425302cc426a381f9d699ef836b0", null ],
       [ "readable", "d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917", null ],
       [ "settings", "d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233", null ],
       [ "write", "d8/d1d/class_c_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-      [ "write", "d8/d1d/class_c_serial.html#adef6d3e77843c65617b7cb555c2f8732", null ],
+      [ "write", "d8/d1d/class_c_serial.html#ae232a9cb6109e96be22a3356b2abbeda", null ],
       [ "writeable", "d8/d1d/class_c_serial.html#ac59cfe80216e1fb7eb479017f0bb8e7f", null ]
     ] ],
     [ "CShift", "d6/d1c/class_c_shift.html", [
@@ -238,10 +238,10 @@ var group___peripherals =
       [ "parseFloat", "d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
       [ "parseInt", "d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b", null ],
       [ "parseString", "d4/d16/class_c_stream.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
-      [ "read", "d4/d16/class_c_stream.html#a80977482ffb2f7b626a9f29f437b7d8d", null ],
+      [ "read", "d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
       [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
       [ "readable", "d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4", null ],
-      [ "write", "d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552", null ],
+      [ "write", "d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860", null ],
       [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
       [ "writeable", "d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5", null ]
     ] ],
@@ -280,10 +280,10 @@ var group___peripherals =
       [ "parseInt", "d6/dc5/classusb_c_d_c.html#af60d539c037589ae50b495fe213dda0b", null ],
       [ "parseString", "d6/dc5/classusb_c_d_c.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
       [ "read", "d6/dc5/classusb_c_d_c.html#af56764abe8954430eede10e253f8994f", null ],
-      [ "read", "d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799", null ],
+      [ "read", "d6/dc5/classusb_c_d_c.html#a9fa7e27caa79287ee1c97557f654e3f4", null ],
       [ "readable", "d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80", null ],
       [ "write", "d6/dc5/classusb_c_d_c.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-      [ "write", "d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec", null ],
+      [ "write", "d6/dc5/classusb_c_d_c.html#afa2fcf4990ec48ccb9e257e3cff80256", null ],
       [ "writeable", "d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a", null ]
     ] ],
     [ "CWatchdog", "d3/d75/class_c_watchdog.html", [

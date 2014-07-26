@@ -3,7 +3,7 @@
  Name        : ble_serial.h
  Author      : uCXpresso
  Version     : 1.0.16
- Date		 : 2014/7/23
+ Date		 : 2014/7/25
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -32,6 +32,7 @@
  2014/4/10	v1.0.14 Remove isActived() member for power save features.	Jason
  2014/6/14	v1.0.15	Update manufactureData to 24 bits					Jason
  2014/7/23	v1.0.16	Add sleep & weakup member functions.				Jason
+ 2014/7/25	v1.0.17 Add wait() member to block and wait a BLE event.	Jason
  ===============================================================================
  */
 
@@ -206,6 +207,10 @@ public:
 	 */
 	virtual void wakeup();
 
+	/**Block & waiting for a BLE event, the task will be blocked until a BLE event arrived.
+	 */
+	virtual bool wait(uint32_t timeout=MAX_DELAY_TIME);
+
 	//
 	// Events
 	//
@@ -263,7 +268,7 @@ public:
 	// Implement the virtual functions of CStream class
 	//
 
-	/**Use isAvailable to check the service whether opened by remote (App).
+	/**Use isAvailable to check the Serial service whether opened by remote (App).
 	 * \return true, if service is available. otherwise, the service is not in used.
 	 * \note This isAvailable member is an inline function to redirect to the writeable() member.
 	 * \see writeable
@@ -275,8 +280,8 @@ public:
 	//
 	virtual int	 readable();
 	virtual int	 writeable();
-	virtual int  read(void *buf, int len, bool block=true);
-	virtual int  write(const void *buf, int len, bool block=true);
+	virtual int  read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
+	virtual int  write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
 	virtual bool isConnected();
 	virtual void flush();
 
@@ -325,6 +330,8 @@ protected:
 	CSemaphore		m_semResponse;
 	CSemaphore		m_semTransaction;
 	CSemaphore		m_semDataCredit;
+	CSemaphore		m_semTX;
+	CSemaphore		m_semRX;
 	xHandle			m_event;
 
 private:

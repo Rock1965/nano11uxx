@@ -125,10 +125,10 @@ $(document).ready(function(){initNavTree('d4/d16/class_c_stream.html','../../');
   <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4">parseFloat</a>(bool echo=false)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b">parseInt</a>(bool echo=false)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e">parseString</a>(LPTSTR buf, size_t size, bool echo=false)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a80977482ffb2f7b626a9f29f437b7d8d">read</a>(void *buf, int len, bool block=true)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38">read</a>(void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">read</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">readable</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">write</a>(const void *buf, int len, bool block=true)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860">write</a>(const void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d">write</a>(uint8_t c)</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5">writeable</a>()</td><td class="entry"><a class="el" href="../../d4/d16/class_c_stream.html">CStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d4/d16/class_c_stream.html','../../');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 23 2014 13:23:10 for uCXpresso.BLE by
+    <li class="footer">Generated on Sat Jul 26 2014 15:33:16 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

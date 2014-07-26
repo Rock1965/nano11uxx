@@ -150,10 +150,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7182c4dfdad0293bba73a82056d43e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45acb09392fedde912a5dba6fc3b88a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a">writeable</a> ()</td></tr>
 <tr class="separator:ae45acb09392fedde912a5dba6fc3b88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65831ad4bfa85bf83f467c63b9f22799"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a65831ad4bfa85bf83f467c63b9f22799">read</a> (void *buf, int len, bool block=true)</td></tr>
-<tr class="separator:a65831ad4bfa85bf83f467c63b9f22799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340c728ca722a61a3a457a546a301dec"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a340c728ca722a61a3a457a546a301dec">write</a> (const void *buf, int len, bool block=true)</td></tr>
-<tr class="separator:a340c728ca722a61a3a457a546a301dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa7e27caa79287ee1c97557f654e3f4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a9fa7e27caa79287ee1c97557f654e3f4">read</a> (void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td></tr>
+<tr class="separator:a9fa7e27caa79287ee1c97557f654e3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2fcf4990ec48ccb9e257e3cff80256"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#afa2fcf4990ec48ccb9e257e3cff80256">write</a> (const void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td></tr>
+<tr class="separator:afa2fcf4990ec48ccb9e257e3cff80256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0cb27d108bed8763e68a4121efee32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32">isConnected</a> ()</td></tr>
 <tr class="separator:a0c0cb27d108bed8763e68a4121efee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afebca0ce341d46537cc6e2a811bede72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72">flush</a> ()</td></tr>
@@ -756,7 +756,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a65831ad4bfa85bf83f467c63b9f22799"></a>
+<a class="anchor" id="a9fa7e27caa79287ee1c97557f654e3f4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -778,8 +778,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>block</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block</em> = <code>MAX_DELAY_TIME</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -798,14 +798,14 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Destination buffer. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Length of destination buffer. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>If true, to block in the read function unit to the indication length (len) be read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>to block in the read function unit to the indication length (len) be read. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A value to indicate how many data bytes to read. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a80977482ffb2f7b626a9f29f437b7d8d">CStream</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38">CStream</a>.</p>
 
 </div>
 </div>
@@ -868,7 +868,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a340c728ca722a61a3a457a546a301dec"></a>
+<a class="anchor" id="afa2fcf4990ec48ccb9e257e3cff80256"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -890,8 +890,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>block</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block</em> = <code>MAX_DELAY_TIME</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -917,7 +917,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A value to indicate how many data bytes to write. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552">CStream</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860">CStream</a>.</p>
 
 </div>
 </div>
@@ -955,7 +955,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dc5/classusb_c_d_c.html">usbCDC</a></li>
-    <li class="footer">Generated on Wed Jul 23 2014 13:23:11 for uCXpresso.BLE by
+    <li class="footer">Generated on Sat Jul 26 2014 15:33:16 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

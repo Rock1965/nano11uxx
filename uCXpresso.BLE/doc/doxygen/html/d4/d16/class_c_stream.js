@@ -12,10 +12,10 @@ var class_c_stream =
     [ "parseFloat", "d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
     [ "parseInt", "d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b", null ],
     [ "parseString", "d4/d16/class_c_stream.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
-    [ "read", "d4/d16/class_c_stream.html#a80977482ffb2f7b626a9f29f437b7d8d", null ],
+    [ "read", "d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
     [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
     [ "readable", "d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4", null ],
-    [ "write", "d4/d16/class_c_stream.html#a172fe857c74488b881007c65cc2e9552", null ],
+    [ "write", "d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860", null ],
     [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
     [ "writeable", "d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5", null ]
 ];

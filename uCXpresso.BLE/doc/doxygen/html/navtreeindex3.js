@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"dc/dac/class_c_object.html":[0,2,4],
 "dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f":[0,2,4,0],
 "dd/d60/class_c_event_bit.html":[0,4,0],
 "dd/d60/class_c_event_bit.html#a0b05da65aa8bb0b77dd75f0a84b8fbb0":[0,4,0,4],
@@ -159,8 +160,8 @@ var NAVTREEINDEX3 =
 "df/dee/class__gc__.html#ab889108bb8c0dfe3eabb6e9509f38c12":[0,4,1,3],
 "df/dee/class__gc__.html#ac58b2d3e3a3762528fffe36dcfa4f0c2":[0,4,1,4],
 "examples.html":[2],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_b.html":[1,3,0,1],
 "functions_c.html":[1,3,0,2],
 "functions_d.html":[1,3,0,3],

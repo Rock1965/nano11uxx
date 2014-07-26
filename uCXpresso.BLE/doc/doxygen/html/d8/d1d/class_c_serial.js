@@ -41,10 +41,10 @@ var class_c_serial =
     [ "parseInt", "d8/d1d/class_c_serial.html#af60d539c037589ae50b495fe213dda0b", null ],
     [ "parseString", "d8/d1d/class_c_serial.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
     [ "read", "d8/d1d/class_c_serial.html#af56764abe8954430eede10e253f8994f", null ],
-    [ "read", "d8/d1d/class_c_serial.html#a9b658bf4bc4d81413627bc2fe81e1471", null ],
+    [ "read", "d8/d1d/class_c_serial.html#a340c425302cc426a381f9d699ef836b0", null ],
     [ "readable", "d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917", null ],
     [ "settings", "d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233", null ],
     [ "write", "d8/d1d/class_c_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-    [ "write", "d8/d1d/class_c_serial.html#adef6d3e77843c65617b7cb555c2f8732", null ],
+    [ "write", "d8/d1d/class_c_serial.html#ae232a9cb6109e96be22a3356b2abbeda", null ],
     [ "writeable", "d8/d1d/class_c_serial.html#ac59cfe80216e1fb7eb479017f0bb8e7f", null ]
 ];
