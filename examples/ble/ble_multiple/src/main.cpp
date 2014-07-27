@@ -394,13 +394,13 @@ int main(void) {
 
 		}	// isConnected
 		else {
-			ble.wait(2000);				// block and wait a BLE event within 2000ms
 			if ( usbCDC::isVBUS() ) {
 				ledACT = LED_ON;
 				ps.disable();			// disable power save features when USB connected
 			} else {
 				ps.enable(POWER_DOWN);	// enable power save features when 3.3V only
 			}
+			ble.wait();				// block and wait a BLE event
 		}
 	}
     return 0 ;

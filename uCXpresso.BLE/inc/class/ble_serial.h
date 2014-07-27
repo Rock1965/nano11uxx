@@ -58,7 +58,7 @@
 #define DEF_BLE_TXPOWER			-65		// default tx power level -65dbm @ 1M
 #define DEF_BLE_NOTIFY_TIMEOUT	3000
 #define DEF_BLE_DATA_TIMEOUT	1500
-#define DEF_BLE_CONN_INTERVAL	10		// default connection interval 10ms
+#define DEF_BLE_CONN_INTERVAL	100		// default connection interval 100ms
 #define DEF_BLE_CONN_TIMEOUT	3000	// default connection timeout 3sec
 #define DEF_BLE_MFG_DATA		0x123456
 
@@ -332,6 +332,7 @@ protected:
 	CSemaphore		m_semDataCredit;
 	CSemaphore		m_semTX;
 	CSemaphore		m_semRX;
+	CSemaphore		m_semWait;
 	xHandle			m_event;
 
 private:
