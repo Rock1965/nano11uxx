@@ -128,8 +128,8 @@ public:
 	//
 	// Override the bleSerial::onBleRecv(...)
 	//
-	virtual void onBleRecv(uint8_t *buf, int len) {
-		bleSerial::onBleRecv(buf, len);
+	virtual void onRecv(uint8_t *buf, int len) {
+		bleSerial::onRecv(buf, len);
 
 		// your onBleRecv code here
 		ledRXD.invert();	// to invert the RXD LED
@@ -138,8 +138,8 @@ public:
 	//
 	// Override the bleSerial::onBleSend()
 	//
-	virtual void onBleSend(uint8_t ack) {
-		bleSerial::onBleSend(ack);
+	virtual void onACK(uint8_t flag) {
+		bleSerial::onACK(flag);
 
 		// your onBleSend code here
 		ledTXD.invert();	// to invert the TXD Ack LED
@@ -211,8 +211,6 @@ int main(void) {
 	#endif
 	CDebug dbg(ser);
 	dbg.start();
-#else
-	#undef __USE_USB
 #endif
 
 	/*************************************************************************
@@ -234,6 +232,7 @@ int main(void) {
 					cfg.m_ble.txPowerLevel,
 					cfg.m_ble.conInterval,
 					cfg.m_ble.mfgCode);
+
 	ble.enable();					// start the ble engine first!!
 	ble.setRadioTxPower(cfg.m_ble.power);
 
@@ -243,6 +242,7 @@ int main(void) {
 	//
 	myBLE ble;
 	ble.advertising(100, -59);	// set adv. interval = 100ms, calibrater tx power = -59dBm
+	ble.enable();
 #endif
 
 	//
@@ -315,7 +315,9 @@ int main(void) {
 		 *
 		 **********************************************************************/
 		if ( ble.isConnected() ) {
+#ifndef DEBUG
 			ps.disable();		// disable power save features  when ble connected
+#endif
 			//
 			// UART Service
 			//
@@ -394,6 +396,7 @@ int main(void) {
 
 		}	// isConnected
 		else {
+#ifndef DEBUG
 			if ( usbCDC::isVBUS() ) {
 				ledACT = LED_ON;
 				ps.disable();			// disable power save features when USB connected
@@ -401,23 +404,10 @@ int main(void) {
 				ps.enable(POWER_DOWN);	// enable power save features when 3.3V only
 			}
 			ble.wait();				// block and wait a BLE event
+#else
+			ledACT = LED_ON;
+#endif
 		}
 	}
     return 0 ;
 }
-
-//
-// default memory pool
-//
-static uint8_t mem_pool[DEFAULT_POOL_SIZE-532];	// reduce pool size to increase the global stack
-
-//
-// setup before the system startup
-//
-extern "C" void sys_setup(void) {
-	pool_memadd((uint32_t)mem_pool, sizeof(mem_pool));
-#if __USE_USB==0
-	pool_memadd(USB_MEM_BASE, USB_MEM_SIZE);
-#endif
-}
-

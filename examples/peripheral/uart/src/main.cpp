@@ -111,18 +111,3 @@ int main(void) {
     return 0 ;
 }
 
-//
-// default memory pool
-//
-static uint8_t mem_pool[DEFAULT_POOL_SIZE];
-
-//
-// setup before the system startup
-//
-extern "C" void sys_setup(void) {
-	pool_memadd((uint32_t)mem_pool, sizeof(mem_pool));
-#if __USE_USB==0
-	pool_memadd(USB_MEM_BASE, USB_MEM_SIZE);
-#endif
-}
-

@@ -24,8 +24,6 @@
 
 #include "class/stream.h"
 #include "class/pin.h"
-#include "utils/fifo.h"
-#include "class/semaphore.h"
 
 #define DEF_UART_BAUDRATE	9600
 
@@ -79,7 +77,7 @@ public:
 	/**Constructs a CSerial object.
 	 * \param fifo_size
 	 */
-	CSerial(size_t fifo_size=32);
+	CSerial(size_t tx_fifo_size=32, size_t rx_fifo_size=32);
 
 	/**Call the member function to enable the serial port.
 	 * \param baudrate is a unsigned long integer to specified the data baud-rate.
@@ -103,34 +101,6 @@ public:
 		enable(baudrate, parity, databits, stopbits, level);
 	}
 
-	/**Call the member function to check that receive buffer is ready to read.
-	 * \return greater than zero if receive data from serial port.
-	 */
-	virtual int	readable();
-
-	/**Call the member function to check that transmit buffer is ready to write.
-	 * \return how many bytes can be write to transmit buffer.
-	 */
-	virtual int	writeable();
-
-	/**Call the member function to read a data block from serial port.
-	 * \param[out] buf is a pointer which contain the data block from serial port.
-	 * \param[in] len is a integer to specified the buffer length.
-	 * \param[in] block is a boolean value to specified to wait for reading.
-	 */
-	virtual int	read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
-
-	/**Call the member function to write a data block to serial port
-	 * \param[in] buf is a pointer which data block want to send to serial port.
-	 * \param[in] len is a integer value to specified the buffer length.
-	 * \param[in] block is a boolean value to specified to wait for writing.
-	 */
-	virtual int	write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
-
-	/**Call the member function to wait for transmission  of outgoing serial data to complete.
-	 */
-	virtual void flush();
-
 	// for Arduino user
 	inline void begin(uint32_t speed) {
 		enable(speed);
@@ -139,13 +109,6 @@ public:
 	// for Arduino user
 	inline void end() {
 		// nothing
-	}
-
-	/**Call the member function to check that receive buffer is ready.
-	 * \note The 'available' is an inline code to call the exist readable() member function.
-	 */
-	inline virtual int available() {
-		return readable();
 	}
 
 	/**Call the member function to check that serial port is ready.
@@ -159,21 +122,12 @@ public:
 	void handshaking();
 
 	/*! \cond PRIVATE */
-public:
 	virtual ~CSerial();
-	virtual void onUartRecv();
-	virtual void onUartSend();
+	virtual void onSend(bool fromISR);
 	virtual void onLineStatus(uint32_t reg);	// bitwise line status
 	virtual void onCharTimeout();
 
-	CSemaphore	m_semIrq;
 protected:
-	FIFO_T 	 m_txFifo;
-	FIFO_T 	 m_rxFifo;
-	CSemaphore	m_semRx;	// rx fifo buffer semaphore
-	CSemaphore	m_semTx;	// tx fifo buffer semaphore
-private:
-	xHandle  m_handle;
 	uint32_t m_flag;
 	/*! \endcond */
 };

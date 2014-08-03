@@ -28,5 +28,6 @@ extern "C" void sys_setup(void) {
 #if __USE_USB==0
 	pool_memadd(USB_MEM_BASE, USB_MEM_SIZE);
 #endif
-	MAIN_STACK_SIZE = DEF_MAIN_STACK_SIZE;	// default stack size for main-task
+//	MAIN_STACK_SIZE = DEF_MAIN_STACK_SIZE;	// default stack size for main-task
+	MAIN_STACK_SIZE = 145;
 }

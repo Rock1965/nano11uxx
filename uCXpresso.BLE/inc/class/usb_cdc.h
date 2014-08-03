@@ -21,8 +21,8 @@
 #define _USB_CDC_H_
 
 #include "class/stream.h"
-#include "class/semaphore.h"
-#include "utils/fifo.h"
+
+#define USE_USB_TASK	0
 
 typedef struct {
 	uint32_t dwDTERate; /* Data terminal rate in bits per second */
@@ -40,7 +40,7 @@ public:
 	/**usbCDC constructor
 	 * \param FIFO_SIZE is an integer value to indicate the RX/TX fifo size
 	 */
-	usbCDC(int FIFO_SIZE = 32);
+	usbCDC(size_t tx_fifo_size = 64, size_t rx_fifo_size = 64);
 
 	/**Enable the usb cdc in core
 	 */
@@ -49,6 +49,8 @@ public:
 	/**Disable the usb cdc in core
 	 */
 	bool disable();
+
+	virtual bool isConnected();
 
 	/**On line code change event
 	 */
@@ -79,37 +81,24 @@ public:
 		return disable();
 	}
 
-	//
-	// implement the CStream virtual functions
-	//
-	virtual int readable();
-	virtual int writeable();
-	virtual int read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
-	virtual int write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
-	virtual bool isConnected();
-	virtual void flush();
-
 //
 //private:
 //
 	/// @cond
 	~usbCDC();
-	int on_usb_send();
-	void on_usb_recv();
+	virtual void onSend(bool fromISR);
+	virtual void onRecv(bool fromISR, uint8_t data);
 
 	xHandle m_hUsb;
-	CSemaphore m_semIrq;
-	FIFO_T m_txFiFo;
-	FIFO_T m_rxFiFo;
 	uint16_t m_state;
-	uint32_t m_flag;
-protected:
-	xHandle m_hCdc;
+#if USE_USB_TASK
+	CSemaphore m_semIrq;
 	xHandle m_irqTask;
+#endif
+protected:
+	uint32_t m_flag;
+	xHandle m_hCdc;
 	uint8_t *abBulkBuf;
-	uint32_t pbuf;
-	CSemaphore m_semTx;
-	CSemaphore m_semRx;
 	/// @endcond
 };
 

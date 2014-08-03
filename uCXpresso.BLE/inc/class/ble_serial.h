@@ -278,12 +278,9 @@ public:
 	//
 	// Implement the virtual functions from CStream class
 	//
-	virtual int	 readable();
-	virtual int	 writeable();
-	virtual int  read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
-	virtual int  write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
+	virtual int readable();
+	virtual int writeable();
 	virtual bool isConnected();
-	virtual void flush();
 
 	//
 	// PRIVATE, internal used
@@ -291,11 +288,14 @@ public:
 	/*! \cond PRIVATE */
 	virtual ~bleSerial();
 			void reset();
+
+	virtual void onRecv(uint8_t *buf, int len);
+	virtual void onSend(bool fromISR);
+	virtual void onACK(uint8_t data);
+
 	virtual void onResponseCommandHook(void *data);
 	virtual void onTransactionFinishedHook();
 	virtual void onDataCreditHook();
-	virtual void onBleRecv(uint8_t *buf, int len);
-	virtual void onBleSend(uint8_t ack);
 	virtual void onAckTimeout();
 	virtual bool isReadyForNotify();
 
@@ -326,12 +326,11 @@ protected:
 	virtual void run();
 
 protected:
+	void releaseAll();
 	CMutex			m_mxSender;
 	CSemaphore		m_semResponse;
 	CSemaphore		m_semTransaction;
 	CSemaphore		m_semDataCredit;
-	CSemaphore		m_semTX;
-	CSemaphore		m_semRX;
 	CSemaphore		m_semWait;
 	xHandle			m_event;
 

@@ -2,27 +2,24 @@
  ===============================================================================
  Name        : stream.h
  Author      : uCXpresso
- Version     : v1.0.3
- Date		 : 2014/7/25
+ Version     : v1.0.0
+ Date		 : 2014/8/1
  Description : Stream Base Class
  ===============================================================================
  	 	 	 	 	 	 	 	 History
  ---------+---------+--------------------------------------------+-------------
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
- 2011/12/18	v1.0.0	First Edition									Jason
- 2014/3/19	v1.0.1	Add more operators								Jason
- 2014/5/2	v1.0.2	Add parseInt, parseFloat member functions		Jason
- 2014/6/22	v1.0.3	Add parseString member function					Jason
- 2014/7/25	v1.0.4	Change read/write block to delay time			Jason
+ 2014/8/1	v1.0.0	First Edition									Jason
  ===============================================================================
  */
 
 #ifndef STREAM_H_
 #define STREAM_H_
 
-#include "class/object.h"
-#include "class/semaphore.h"
+#include <class/object.h>
+#include <class/semaphore.h>
+#include <utils/fifo.h>
 
 /**An abstract class, to define the serial stream input and output interface.
  * \class CStream stream.h "class/stream.h"
@@ -30,17 +27,19 @@
  */
 class CStream: public CObject {
 public:
+	CStream(size_t tx_fifo_size, size_t rx_fifo_size);
+
 	/**Determine how many data bytes are available to read.
 	 * \return A value to indicate how many data byte is available in the input buffer.
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual int	 readable() = PURE_VIRTUAL_FUNC;
+	virtual int	 readable();
 
 	/**Determine how many data space are available to write.
 	 * \return A value to indicate how many data space is available in the output buffer.
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual int	 writeable() = PURE_VIRTUAL_FUNC;
+	virtual int	 writeable();
 
 	/**To read the stream to buffer.
 	 * \param[in] buf Destination buffer.
@@ -49,7 +48,7 @@ public:
 	 * \return A value to indicate how many data bytes to read.
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual int  read(void *buf, int len, uint32_t block=MAX_DELAY_TIME) = PURE_VIRTUAL_FUNC;
+	virtual int  read(void *buf, int len, uint32_t block=MAX_DELAY_TIME);
 
 	/**To write the buffer to stream.
 	 * \param[out] buf Source buffer.
@@ -58,7 +57,7 @@ public:
 	 * \return A value to indicate how many data bytes to write.
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual int  write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME) = PURE_VIRTUAL_FUNC;
+	virtual int  write(const void *buf, int len, uint32_t block=MAX_DELAY_TIME);
 
 	/**Check the current connection is valid or not.
 	 * \return true if current connection is valid.
@@ -69,7 +68,7 @@ public:
 	/**Flush the stream the both input and output buffer
 	 * \remark the pure virtual function have to implement by child class.
 	 */
-	virtual void flush() = PURE_VIRTUAL_FUNC;
+	virtual void flush();
 
 	//
 	// read/write for a byte
@@ -185,12 +184,19 @@ public:
 	virtual ~CStream();
 
 	CSemaphore *m_semESC;
-
+	virtual void onSend(bool fromISR) = PURE_VIRTUAL_FUNC;
+	virtual void onRecv(bool fromISR, uint8_t data);
 protected:
 	long parseInt(char skipChar, bool echo);
 	float parseFloat(char skipChar, bool echo);
 	int nextDigit(bool echo);
 
+	CSemaphore	m_semTx;
+	CSemaphore	m_semRx;
+	fifo_t		m_tx_fifo;
+	fifo_t		m_rx_fifo;
+	uint8_t		*m_p_tx_buf;
+	uint8_t		*m_p_rx_buf;
 	/// @endcond
 };
 

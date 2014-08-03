@@ -34,7 +34,7 @@ void Configure::save() {
 }
 
 bool Configure::start() {
-	return CThread::start("Config", 148);
+	return CThread::start("Config", 168);
 }
 
 void Configure::run() {
@@ -103,6 +103,7 @@ void Configure::main_menu() {
 			break;
 
 		case 'h':
+//			m_con.printf("Heap Available:%d\n", heapAvailableSize());
 			m_con.printf("Stack High-Water Mark:%d", getStackHighWaterMark());
 			m_con.getc();
 			break;
