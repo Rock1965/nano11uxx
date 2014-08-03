@@ -29,9 +29,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1892729631" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
-									<listOptionValue builtIn="false" value="CORE_M0"/>
 									<listOptionValue builtIn="false" value="__USE_CMSIS=CMSISv2p00_LPC11Uxx"/>
-									<listOptionValue builtIn="false" value="CPP_NO_HEAP"/>
 									<listOptionValue builtIn="false" value="__LPC11UXX__"/>
 									<listOptionValue builtIn="false" value="__USE_USB=0"/>
 								</option>
@@ -43,7 +41,7 @@
 								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.328512438" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.optimization.flags.19059095" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-Os" valueType="string"/>
 								<option id="com.crt.advproject.cpp.exe.debug.option.debugging.level.493667998" name="Debug Level" superClass="com.crt.advproject.cpp.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
-								<option id="com.crt.advproject.cpp.misc.dialect.430952092" name="C++ Dialect" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.430952092" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1258414338" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.207295104" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
@@ -51,12 +49,10 @@
 								<option id="com.crt.advproject.gcc.thumb.1813030609" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.gcc.hdrlib.175539547" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.511216365" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
-									<listOptionValue builtIn="false" value="CORE_M0"/>
 									<listOptionValue builtIn="false" value="__USE_CMSIS=CMSISv2p00_LPC11Uxx"/>
-									<listOptionValue builtIn="false" value="CPP_NO_HEAP"/>
 									<listOptionValue builtIn="false" value="__LPC11UXX__"/>
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.957718621" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.1105652372" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
@@ -95,9 +91,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.BLE/Release}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.crpenable.1981323490" name="Enable Code Read Protect" superClass="com.crt.advproject.link.cpp.crpenable"/>
-								<option id="com.crt.advproject.link.cpp.multicore.slave.416250988" name="Multicore slave" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
+								<option id="com.crt.advproject.link.cpp.multicore.slave.416250988" name="Multicore configuration" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
 								<option id="com.crt.advproject.link.cpp.scriptdir.1257986004" name="Script path" superClass="com.crt.advproject.link.cpp.scriptdir" value="&quot;${workspace_loc:/uCXpresso.BLE/linkscripts/}&quot;" valueType="string"/>
-								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.425504504" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.425504504" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.2087935764" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -139,9 +135,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1876881315" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
-									<listOptionValue builtIn="false" value="CORE_M0"/>
 									<listOptionValue builtIn="false" value="__USE_CMSIS=CMSISv2p00_LPC11Uxx"/>
-									<listOptionValue builtIn="false" value="CPP_NO_HEAP"/>
 									<listOptionValue builtIn="false" value="__LPC11UXX__"/>
 									<listOptionValue builtIn="false" value="__USE_USB=1"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -154,7 +148,7 @@
 								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.611847975" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.optimization.flags.189277211" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-Os" valueType="string"/>
 								<option id="com.crt.advproject.cpp.exe.debug.option.debugging.level.729189909" name="Debug Level" superClass="com.crt.advproject.cpp.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
-								<option id="com.crt.advproject.cpp.misc.dialect.235028859" name="C++ Dialect" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.235028859" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.2080294902" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.807923399" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
@@ -162,12 +156,11 @@
 								<option id="com.crt.advproject.gcc.thumb.1221585605" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.gcc.hdrlib.951473669" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.764355975" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
-									<listOptionValue builtIn="false" value="CORE_M0"/>
 									<listOptionValue builtIn="false" value="__USE_CMSIS=CMSISv2p00_LPC11Uxx"/>
-									<listOptionValue builtIn="false" value="CPP_NO_HEAP"/>
 									<listOptionValue builtIn="false" value="__LPC11UXX__"/>
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.1914032159" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.1642570845" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
@@ -206,9 +199,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uCXpresso.BLE/Release}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.crpenable.1533750228" name="Enable Code Read Protect" superClass="com.crt.advproject.link.cpp.crpenable"/>
-								<option id="com.crt.advproject.link.cpp.multicore.slave.1961396415" name="Multicore slave" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
+								<option id="com.crt.advproject.link.cpp.multicore.slave.1961396415" name="Multicore configuration" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
 								<option id="com.crt.advproject.link.cpp.scriptdir.1739522054" name="Script path" superClass="com.crt.advproject.link.cpp.scriptdir" value="&quot;${workspace_loc:/uCXpresso.BLE/linkscripts/}&quot;" valueType="string"/>
-								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.670566191" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.670566191" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.154109590" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
