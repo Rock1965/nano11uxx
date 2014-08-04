@@ -1,13 +1,13 @@
 var classusb_c_d_c =
 [
-    [ "usbCDC", "d6/dc5/classusb_c_d_c.html#a1972ca9b45b41d0e419a3e1263ddaac4", null ],
+    [ "usbCDC", "d6/dc5/classusb_c_d_c.html#ac2b63b1e2f5b2a2c7cb267e6b5fa909d", null ],
     [ "asWeakupSource", "d6/dc5/classusb_c_d_c.html#a86e0f98a34b9562dfdad74d17e2af35c", null ],
     [ "available", "d6/dc5/classusb_c_d_c.html#afdbf8d786e4aac9b06afe3447427a2ae", null ],
     [ "connect", "d6/dc5/classusb_c_d_c.html#a49d431de50da7ccacf91ef33b04e99d2", null ],
     [ "disable", "d6/dc5/classusb_c_d_c.html#a7ded774547bd49ca5f73257914a1f1f9", null ],
     [ "disconnect", "d6/dc5/classusb_c_d_c.html#aa95f819926a8da40f12eebc62adf6f95", null ],
     [ "enable", "d6/dc5/classusb_c_d_c.html#a806fa3a4be9e6cfaab51b8621cb70697", null ],
-    [ "flush", "d6/dc5/classusb_c_d_c.html#afebca0ce341d46537cc6e2a811bede72", null ],
+    [ "flush", "d6/dc5/classusb_c_d_c.html#a5bd707b33627e01c2069b14bbf10694a", null ],
     [ "isConnected", "d6/dc5/classusb_c_d_c.html#a0c0cb27d108bed8763e68a4121efee32", null ],
     [ "isThread", "d6/dc5/classusb_c_d_c.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
     [ "isVBUS", "d6/dc5/classusb_c_d_c.html#a70a6b129ad9c838f7260013f8153c5db", null ],
@@ -19,12 +19,13 @@ var classusb_c_d_c =
     [ "operator<<", "d6/dc5/classusb_c_d_c.html#ad2f2d74f0924caa2e863d049fe9ada80", null ],
     [ "operator>>", "d6/dc5/classusb_c_d_c.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
     [ "parseFloat", "d6/dc5/classusb_c_d_c.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
+    [ "parseHex", "d6/dc5/classusb_c_d_c.html#a4dd59862c18090fb2b9256154439feef", null ],
     [ "parseInt", "d6/dc5/classusb_c_d_c.html#af60d539c037589ae50b495fe213dda0b", null ],
     [ "parseString", "d6/dc5/classusb_c_d_c.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
+    [ "read", "d6/dc5/classusb_c_d_c.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
     [ "read", "d6/dc5/classusb_c_d_c.html#af56764abe8954430eede10e253f8994f", null ],
-    [ "read", "d6/dc5/classusb_c_d_c.html#a9fa7e27caa79287ee1c97557f654e3f4", null ],
-    [ "readable", "d6/dc5/classusb_c_d_c.html#a7182c4dfdad0293bba73a82056d43e80", null ],
+    [ "readable", "d6/dc5/classusb_c_d_c.html#a96328807241e15017868b845b06fd9e4", null ],
+    [ "write", "d6/dc5/classusb_c_d_c.html#ac8d31702e9e03eb0856583ba16764860", null ],
     [ "write", "d6/dc5/classusb_c_d_c.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-    [ "write", "d6/dc5/classusb_c_d_c.html#afa2fcf4990ec48ccb9e257e3cff80256", null ],
-    [ "writeable", "d6/dc5/classusb_c_d_c.html#ae45acb09392fedde912a5dba6fc3b88a", null ]
+    [ "writeable", "d6/dc5/classusb_c_d_c.html#a56ec27ee664f1a4eb9910988b78833d5", null ]
 ];

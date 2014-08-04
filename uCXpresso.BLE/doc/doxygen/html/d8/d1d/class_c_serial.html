@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
    &#160;<span id="projectnumber">v1.0.7</span>
@@ -162,36 +161,34 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad528b7355f527eabc415f6a8017745f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#ad528b7355f527eabc415f6a8017745f4">CSerial</a> (size_t fifo_size=32)</td></tr>
-<tr class="separator:ad528b7355f527eabc415f6a8017745f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc794de44b9459333f3d5224408f0e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#acdc794de44b9459333f3d5224408f0e2">CSerial</a> (size_t tx_fifo_size=32, size_t rx_fifo_size=32)</td></tr>
+<tr class="separator:acdc794de44b9459333f3d5224408f0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7c822bada51065ad52542fb9515be6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#aff7c822bada51065ad52542fb9515be6">enable</a> (uint32_t baudrate, <a class="el" href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40">UART_PARITY_T</a> parity=<a class="el" href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4">UART_PARITY_NONE</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3">UART_DATABIT_T</a> databits=<a class="el" href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25">UART_DATABIT_8</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04b">UART_STOPBIT_T</a> stopbits=<a class="el" href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907">UART_STOPBIT_1</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1">UART_FITO_LEVEL_T</a> level=<a class="el" href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de">UART_FIFO_TRGLEV0</a>)</td></tr>
 <tr class="separator:aff7c822bada51065ad52542fb9515be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c80ea521e310305579e787f21a55233"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233">settings</a> (uint32_t baudrate, <a class="el" href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40">UART_PARITY_T</a> parity=<a class="el" href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4">UART_PARITY_NONE</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3">UART_DATABIT_T</a> databits=<a class="el" href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25">UART_DATABIT_8</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04b">UART_STOPBIT_T</a> stopbits=<a class="el" href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907">UART_STOPBIT_1</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1">UART_FITO_LEVEL_T</a> level=<a class="el" href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de">UART_FIFO_TRGLEV0</a>)</td></tr>
 <tr class="separator:a0c80ea521e310305579e787f21a55233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0748723f610ddcfdc34286dbbfbd4917"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917">readable</a> ()</td></tr>
-<tr class="separator:a0748723f610ddcfdc34286dbbfbd4917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59cfe80216e1fb7eb479017f0bb8e7f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#ac59cfe80216e1fb7eb479017f0bb8e7f">writeable</a> ()</td></tr>
-<tr class="separator:ac59cfe80216e1fb7eb479017f0bb8e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340c425302cc426a381f9d699ef836b0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a340c425302cc426a381f9d699ef836b0">read</a> (void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td></tr>
-<tr class="separator:a340c425302cc426a381f9d699ef836b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae232a9cb6109e96be22a3356b2abbeda"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#ae232a9cb6109e96be22a3356b2abbeda">write</a> (const void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td></tr>
-<tr class="separator:ae232a9cb6109e96be22a3356b2abbeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aecf6351423ae0e8791870c9e694bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a68aecf6351423ae0e8791870c9e694bf">flush</a> ()</td></tr>
-<tr class="separator:a68aecf6351423ae0e8791870c9e694bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130edee149575f50f62013180a1b5bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef">begin</a> (uint32_t speed)</td></tr>
 <tr class="separator:a130edee149575f50f62013180a1b5bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d6a27113d6370eb3a69c26b28b232a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a21d6a27113d6370eb3a69c26b28b232a">end</a> ()</td></tr>
 <tr class="separator:a21d6a27113d6370eb3a69c26b28b232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c142221c0841e7c961e962c45bd2db7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a5c142221c0841e7c961e962c45bd2db7">available</a> ()</td></tr>
-<tr class="separator:a5c142221c0841e7c961e962c45bd2db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c133c4586cd5ca729cd026f813a8a0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#ae7c133c4586cd5ca729cd026f813a8a0">isConnected</a> ()</td></tr>
 <tr class="separator:ae7c133c4586cd5ca729cd026f813a8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc5498e6cae5a2d0d12cb57fc6ee335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a9dc5498e6cae5a2d0d12cb57fc6ee335">handshaking</a> ()</td></tr>
 <tr class="separator:a9dc5498e6cae5a2d0d12cb57fc6ee335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96328807241e15017868b845b06fd9e4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">readable</a> ()</td></tr>
+<tr class="separator:a96328807241e15017868b845b06fd9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ec27ee664f1a4eb9910988b78833d5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5">writeable</a> ()</td></tr>
+<tr class="separator:a56ec27ee664f1a4eb9910988b78833d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5870bec2c7c5f6be1e59c83d555d38"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38">read</a> (void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td></tr>
+<tr class="separator:a5c5870bec2c7c5f6be1e59c83d555d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af56764abe8954430eede10e253f8994f"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f">read</a> ()</td></tr>
 <tr class="separator:af56764abe8954430eede10e253f8994f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d31702e9e03eb0856583ba16764860"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860">write</a> (const void *buf, int len, uint32_t block=MAX_DELAY_TIME)</td></tr>
+<tr class="separator:ac8d31702e9e03eb0856583ba16764860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48041fea5cad32feaeef543bcaa2d37d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d">write</a> (uint8_t c)</td></tr>
 <tr class="separator:a48041fea5cad32feaeef543bcaa2d37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd707b33627e01c2069b14bbf10694a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a">flush</a> ()</td></tr>
+<tr class="separator:a5bd707b33627e01c2069b14bbf10694a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6130bd65b00f278045d8b7b8ea7f84"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d16/class_c_stream.html">CStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a2c6130bd65b00f278045d8b7b8ea7f84">operator&lt;&lt;</a> (uint8_t c)</td></tr>
 <tr class="separator:a2c6130bd65b00f278045d8b7b8ea7f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2f2d74f0924caa2e863d049fe9ada80"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d16/class_c_stream.html">CStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#ad2f2d74f0924caa2e863d049fe9ada80">operator&lt;&lt;</a> (<a class="el" href="../../d4/d16/class_c_stream.html">CStream</a> &amp;s)</td></tr>
@@ -202,9 +199,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbaa22d4608c1a015a20104fde6c8ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc833c2eea18af67b57ba641ec58fea7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7">operator char</a> ()</td></tr>
 <tr class="separator:acc833c2eea18af67b57ba641ec58fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbf8d786e4aac9b06afe3447427a2ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#afdbf8d786e4aac9b06afe3447427a2ae">available</a> ()</td></tr>
+<tr class="separator:afdbf8d786e4aac9b06afe3447427a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af60d539c037589ae50b495fe213dda0b"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b">parseInt</a> (bool echo=false)</td></tr>
 <tr class="memdesc:af60d539c037589ae50b495fe213dda0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the first valid (long) integer value from the current position. initial characters that are not digits (or the minus sign) are skipped integer is terminated by the first character that is not a digit.  <a href="#af60d539c037589ae50b495fe213dda0b">More...</a><br/></td></tr>
 <tr class="separator:af60d539c037589ae50b495fe213dda0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd59862c18090fb2b9256154439feef"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a4dd59862c18090fb2b9256154439feef">parseHex</a> (bool echo=false)</td></tr>
+<tr class="memdesc:a4dd59862c18090fb2b9256154439feef"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the first valid (hex) integer value from the current position.  <a href="#a4dd59862c18090fb2b9256154439feef">More...</a><br/></td></tr>
+<tr class="separator:a4dd59862c18090fb2b9256154439feef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4">parseFloat</a> (bool echo=false)</td></tr>
 <tr class="memdesc:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">float version of parseInt  <a href="#a9c936febcbe2cd33c2857f37ed04f2f4">More...</a><br/></td></tr>
 <tr class="separator:a9c936febcbe2cd33c2857f37ed04f2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,7 +330,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad528b7355f527eabc415f6a8017745f4"></a>
+<a class="anchor" id="acdc794de44b9459333f3d5224408f0e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -336,8 +338,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">CSerial::CSerial </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>fifo_size</em> = <code>32</code></td><td>)</td>
+          <td class="paramname"><em>tx_fifo_size</em> = <code>32</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>rx_fifo_size</em> = <code>32</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -352,7 +364,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5c142221c0841e7c961e962c45bd2db7"></a>
+<a class="anchor" id="afdbf8d786e4aac9b06afe3447427a2ae"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -360,7 +372,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int CSerial::available </td>
+          <td class="memname">int CStream::available </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -368,12 +380,11 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the member function to check that receive buffer is ready. </p>
-<dl class="section note"><dt>Note</dt><dd>The 'available' is an inline code to call the exist <a class="el" href="../../d8/d1d/class_c_serial.html#a0748723f610ddcfdc34286dbbfbd4917">readable()</a> member function. </dd></dl>
+<p>Arduino <a class="el" href="../../d4/d16/class_c_stream.html#afdbf8d786e4aac9b06afe3447427a2ae">available()</a> member for serial class. </p>
 
 </div>
 </div>
@@ -488,7 +499,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a68aecf6351423ae0e8791870c9e694bf"></a>
+<a class="anchor" id="a5bd707b33627e01c2069b14bbf10694a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -496,7 +507,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void CSerial::flush </td>
+          <td class="memname">virtual void CStream::flush </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -504,13 +515,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the member function to wait for transmission of outgoing serial data to complete. </p>
-
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a5bd707b33627e01c2069b14bbf10694a">CStream</a>.</p>
+<p>Flush the stream the both input and output buffer </p>
+<dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
 
 </div>
 </div>
@@ -753,6 +763,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4dd59862c18090fb2b9256154439feef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual long CStream::parseHex </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>echo</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return the first valid (hex) integer value from the current position. </p>
+<p>parseHex member for stream class </p>
+
+</div>
+</div>
 <a class="anchor" id="af60d539c037589ae50b495fe213dda0b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -832,6 +869,57 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5c5870bec2c7c5f6be1e59c83d555d38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CStream::read </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block</em> = <code>MAX_DELAY_TIME</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>To read the stream to buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Destination buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Length of destination buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>to block in the read function unit to the indication length (len) be read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value to indicate how many data bytes to read. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="af56764abe8954430eede10e253f8994f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -857,7 +945,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a340c425302cc426a381f9d699ef836b0"></a>
+<a class="anchor" id="a96328807241e15017868b845b06fd9e4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -865,58 +953,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int CSerial::read </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>block</em> = <code>MAX_DELAY_TIME</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Call the member function to read a data block from serial port. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>is a pointer which contain the data block from serial port. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is a integer to specified the buffer length. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>is a boolean value to specified to wait for reading. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38">CStream</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0748723f610ddcfdc34286dbbfbd4917"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int CSerial::readable </td>
+          <td class="memname">virtual int CStream::readable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -924,14 +961,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the member function to check that receive buffer is ready to read. </p>
-<dl class="section return"><dt>Returns</dt><dd>greater than zero if receive data from serial port. </dd></dl>
+<p>Determine how many data bytes are available to read. </p>
+<dl class="section return"><dt>Returns</dt><dd>A value to indicate how many data byte is available in the input buffer. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4">CStream</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d03/classble_serial.html#a59dca8e3e2d6945a699347f4c4708fd4">bleSerial</a>.</p>
 
 </div>
 </div>
@@ -989,6 +1027,58 @@ Public Member Functions</h2></td></tr>
 </dl>
 </div>
 </div>
+<a class="anchor" id="ac8d31702e9e03eb0856583ba16764860"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CStream::write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block</em> = <code>MAX_DELAY_TIME</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>To write the buffer to stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Source buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Length of source buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>If true, to block in the write function unit to the indication length (len) be sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value to indicate how many data bytes to write. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/d0a/_2peripheral_2uart_2src_2main_8cpp-example.html#a5">/peripheral/uart/src/main.cpp</a>.</dd>
+</dl>
+</div>
+</div>
 <a class="anchor" id="a48041fea5cad32feaeef543bcaa2d37d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1020,7 +1110,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae232a9cb6109e96be22a3356b2abbeda"></a>
+<a class="anchor" id="a56ec27ee664f1a4eb9910988b78833d5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1028,59 +1118,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int CSerial::write </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>block</em> = <code>MAX_DELAY_TIME</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Call the member function to write a data block to serial port </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>is a pointer which data block want to send to serial port. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is a integer value to specified the buffer length. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>is a boolean value to specified to wait for writing. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860">CStream</a>.</p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/d0a/_2peripheral_2uart_2src_2main_8cpp-example.html#a5">/peripheral/uart/src/main.cpp</a>.</dd>
-</dl>
-</div>
-</div>
-<a class="anchor" id="ac59cfe80216e1fb7eb479017f0bb8e7f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int CSerial::writeable </td>
+          <td class="memname">virtual int CStream::writeable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1088,14 +1126,15 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call the member function to check that transmit buffer is ready to write. </p>
-<dl class="section return"><dt>Returns</dt><dd>how many bytes can be write to transmit buffer. </dd></dl>
+<p>Determine how many data space are available to write. </p>
+<dl class="section return"><dt>Returns</dt><dd>A value to indicate how many data space is available in the output buffer. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the pure virtual function have to implement by child class. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5">CStream</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1">bleSerial</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1144,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d1d/class_c_serial.html">CSerial</a></li>
-    <li class="footer">Generated on Sat Jul 26 2014 15:33:16 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Aug 4 2014 14:03:25 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

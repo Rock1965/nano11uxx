@@ -1,7 +1,7 @@
 var structfifo__t =
 [
-    [ "buf", "db/d53/structfifo__t.html#a6179dabda649717df17b5a38dbf0d744", null ],
-    [ "head", "db/d53/structfifo__t.html#ae93028e986799fceacecbd153729f855", null ],
-    [ "size", "db/d53/structfifo__t.html#adfe58cd24e80a0d62cf830bcc83f5c01", null ],
-    [ "tail", "db/d53/structfifo__t.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
+    [ "buf_size_mask", "db/d53/structfifo__t.html#ac7d3bf66daf7c5c0a7634dfbe3a5b879", null ],
+    [ "p_buf", "db/d53/structfifo__t.html#afd22f37434edd54af1420edd740f6e9e", null ],
+    [ "read_pos", "db/d53/structfifo__t.html#ae13b41b47f6fd1227437145c04d45102", null ],
+    [ "write_pos", "db/d53/structfifo__t.html#a245382333db4bc13d80da4ca0cadece0", null ]
 ];

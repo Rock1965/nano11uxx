@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
    &#160;<span id="projectnumber">v1.0.7</span>
@@ -114,62 +113,67 @@ $(document).ready(function(){initNavTree('db/d53/structfifo__t.html','../../');}
 </div><!--header-->
 <div class="contents">
 
+<p>A FIFO instance structure. Keeps track of which bytes to read and write next. Also it keeps the information about which memory is allocated for the buffer and its size. This needs to be initialized by app_fifo_init() before use.  
+ <a href="../../db/d53/structfifo__t.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d0/dd8/fifo_8h_source.html">fifo.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:adfe58cd24e80a0d62cf830bcc83f5c01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#adfe58cd24e80a0d62cf830bcc83f5c01">size</a></td></tr>
-<tr class="separator:adfe58cd24e80a0d62cf830bcc83f5c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93028e986799fceacecbd153729f855"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#ae93028e986799fceacecbd153729f855">head</a></td></tr>
-<tr class="separator:ae93028e986799fceacecbd153729f855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe914ae9dd92644d8a53a4b99d89b487"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#abe914ae9dd92644d8a53a4b99d89b487">tail</a></td></tr>
-<tr class="separator:abe914ae9dd92644d8a53a4b99d89b487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6179dabda649717df17b5a38dbf0d744"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#a6179dabda649717df17b5a38dbf0d744">buf</a></td></tr>
-<tr class="separator:a6179dabda649717df17b5a38dbf0d744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd22f37434edd54af1420edd740f6e9e"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#afd22f37434edd54af1420edd740f6e9e">p_buf</a></td></tr>
+<tr class="separator:afd22f37434edd54af1420edd740f6e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d3bf66daf7c5c0a7634dfbe3a5b879"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#ac7d3bf66daf7c5c0a7634dfbe3a5b879">buf_size_mask</a></td></tr>
+<tr class="separator:ac7d3bf66daf7c5c0a7634dfbe3a5b879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13b41b47f6fd1227437145c04d45102"><td class="memItemLeft" align="right" valign="top">volatile uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#ae13b41b47f6fd1227437145c04d45102">read_pos</a></td></tr>
+<tr class="separator:ae13b41b47f6fd1227437145c04d45102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245382333db4bc13d80da4ca0cadece0"><td class="memItemLeft" align="right" valign="top">volatile uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/structfifo__t.html#a245382333db4bc13d80da4ca0cadece0">write_pos</a></td></tr>
+<tr class="separator:a245382333db4bc13d80da4ca0cadece0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a6179dabda649717df17b5a38dbf0d744"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A FIFO instance structure. Keeps track of which bytes to read and write next. Also it keeps the information about which memory is allocated for the buffer and its size. This needs to be initialized by app_fifo_init() before use. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac7d3bf66daf7c5c0a7634dfbe3a5b879"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* fifo_t::buf</td>
+          <td class="memname">uint16_t fifo_t::buf_size_mask</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ae93028e986799fceacecbd153729f855"></a>
+<a class="anchor" id="afd22f37434edd54af1420edd740f6e9e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fifo_t::head</td>
+          <td class="memname">uint8_t* fifo_t::p_buf</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="adfe58cd24e80a0d62cf830bcc83f5c01"></a>
+<a class="anchor" id="ae13b41b47f6fd1227437145c04d45102"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fifo_t::size</td>
+          <td class="memname">volatile uint32_t fifo_t::read_pos</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="abe914ae9dd92644d8a53a4b99d89b487"></a>
+<a class="anchor" id="a245382333db4bc13d80da4ca0cadece0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fifo_t::tail</td>
+          <td class="memname">volatile uint32_t fifo_t::write_pos</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,7 +186,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d53/structfifo__t.html">fifo_t</a></li>
-    <li class="footer">Generated on Sat Jul 26 2014 15:33:16 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Aug 4 2014 14:03:25 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

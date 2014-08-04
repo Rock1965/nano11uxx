@@ -1,6 +1,7 @@
 var searchData=
 [
   ['parsefloat',['parseFloat',['../de/dba/class_c_shell.html#a5849f8062a856b34cfb2b574d086a86c',1,'CShell::parseFloat()'],['../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4',1,'CStream::parseFloat()'],['../d4/d37/class_c_debug.html#aefdc613a47e84ca260e6ba9ad14889b1',1,'CDebug::parseFloat()']]],
+  ['parsehex',['parseHex',['../d4/d16/class_c_stream.html#a4dd59862c18090fb2b9256154439feef',1,'CStream']]],
   ['parseint',['parseInt',['../de/dba/class_c_shell.html#a0d9864ff2c6b6a993caf83cf8b8c91bc',1,'CShell::parseInt()'],['../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b',1,'CStream::parseInt()'],['../d4/d37/class_c_debug.html#ae672458ef356e3c208f43397b2dd81d4',1,'CDebug::parseInt()']]],
   ['parsestring',['parseString',['../d4/d16/class_c_stream.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e',1,'CStream']]],
   ['peek',['peek',['../d8/d26/class_c_mail_box.html#adc923a33209756bb2ed9e1838b12b68c',1,'CMailBox']]],

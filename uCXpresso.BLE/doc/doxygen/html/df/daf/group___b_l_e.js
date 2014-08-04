@@ -64,7 +64,7 @@ var group___b_l_e =
       [ "enable", "d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4", null ],
       [ "enterCriticalSection", "d7/d03/classble_serial.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
       [ "exitCriticalSection", "d7/d03/classble_serial.html#aab3a51062666552690be49b8e8027161", null ],
-      [ "flush", "d7/d03/classble_serial.html#ad41b78cc1b0fc02ce65248147b32ffa8", null ],
+      [ "flush", "d7/d03/classble_serial.html#a5bd707b33627e01c2069b14bbf10694a", null ],
       [ "getName", "d7/d03/classble_serial.html#aa291909bc3ff7cc0decf46c885a7a725", null ],
       [ "getPhyVersion", "d7/d03/classble_serial.html#a6aea16b265aa98f0a540f71b75965408", null ],
       [ "getPriority", "d7/d03/classble_serial.html#ac30b0a1f51549a97b88771692319c0e4", null ],
@@ -87,10 +87,11 @@ var group___b_l_e =
       [ "operator<<", "d7/d03/classble_serial.html#ad2f2d74f0924caa2e863d049fe9ada80", null ],
       [ "operator>>", "d7/d03/classble_serial.html#af2bd1778d5f5cfab469e5df615e1c8fc", null ],
       [ "parseFloat", "d7/d03/classble_serial.html#a9c936febcbe2cd33c2857f37ed04f2f4", null ],
+      [ "parseHex", "d7/d03/classble_serial.html#a4dd59862c18090fb2b9256154439feef", null ],
       [ "parseInt", "d7/d03/classble_serial.html#af60d539c037589ae50b495fe213dda0b", null ],
       [ "parseString", "d7/d03/classble_serial.html#aa314dfe6e8cf3c1da9ad6a6de2d2618e", null ],
+      [ "read", "d7/d03/classble_serial.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
       [ "read", "d7/d03/classble_serial.html#af56764abe8954430eede10e253f8994f", null ],
-      [ "read", "d7/d03/classble_serial.html#aca730475669428ac765ca9453082d625", null ],
       [ "readable", "d7/d03/classble_serial.html#a59dca8e3e2d6945a699347f4c4708fd4", null ],
       [ "resume", "d7/d03/classble_serial.html#ac8c53aa8c145fc4ac70fa6d825b95742", null ],
       [ "resumeAll", "d7/d03/classble_serial.html#a743d4325b7e7da494283f3292773ff77", null ],
@@ -106,8 +107,8 @@ var group___b_l_e =
       [ "wait", "d7/d03/classble_serial.html#a224a4403bd5690b5e818dc79da85d2ef", null ],
       [ "wakeup", "d7/d03/classble_serial.html#a012d20295fb8f48433c7e5b00760e266", null ],
       [ "watchdog", "d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df", null ],
+      [ "write", "d7/d03/classble_serial.html#ac8d31702e9e03eb0856583ba16764860", null ],
       [ "write", "d7/d03/classble_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
-      [ "write", "d7/d03/classble_serial.html#aecd8677236ce7ba7e0bcadd4e249018c", null ],
       [ "writeable", "d7/d03/classble_serial.html#ac42a8f805e6784e0fa2064270b5288a1", null ]
     ] ]
 ];
