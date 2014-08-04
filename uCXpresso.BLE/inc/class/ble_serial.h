@@ -290,6 +290,7 @@ public:
 			void reset();
 
 	virtual void onRecv(uint8_t *buf, int len);
+	virtual void onRecv(bool fromISR);
 	virtual void onSend(bool fromISR);
 	virtual void onACK(uint8_t data);
 

@@ -87,7 +87,7 @@ public:
 	/// @cond
 	~usbCDC();
 	virtual void onSend(bool fromISR);
-	virtual void onRecv(bool fromISR, uint8_t data);
+	virtual void onRecv(bool fromISR);
 
 	xHandle m_hUsb;
 	uint16_t m_state;

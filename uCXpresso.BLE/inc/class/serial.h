@@ -124,6 +124,7 @@ public:
 	/*! \cond PRIVATE */
 	virtual ~CSerial();
 	virtual void onSend(bool fromISR);
+	virtual void onRecv(bool fromISR);
 	virtual void onLineStatus(uint32_t reg);	// bitwise line status
 	virtual void onCharTimeout();
 

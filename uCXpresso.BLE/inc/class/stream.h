@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : stream.h
  Author      : uCXpresso
- Version     : v1.0.0
- Date		 : 2014/8/1
+ Version     : v1.0.1
+ Date		 : 2014/8/4
  Description : Stream Base Class
  ===============================================================================
  	 	 	 	 	 	 	 	 History
@@ -11,6 +11,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/8/1	v1.0.0	First Edition									Jason
+ 2014/8/4	v1.0.1	Add parseHex() member function.					Jason
  ===============================================================================
  */
 
@@ -165,6 +166,11 @@ public:
 	 */
 	 virtual long parseInt(bool echo=false);
 
+	 /**parseHex member for stream class
+	  *\brief return the first valid (hex) integer value from the current position.
+	  */
+	 virtual long parseHex(bool echo=false);
+
 	 /**Arduino parseFloat() member for serial class
 	  * \brief float version of parseInt
 	  */
@@ -185,11 +191,10 @@ public:
 
 	CSemaphore *m_semESC;
 	virtual void onSend(bool fromISR) = PURE_VIRTUAL_FUNC;
-	virtual void onRecv(bool fromISR, uint8_t data);
+	virtual void onRecv(bool fromISR) = PURE_VIRTUAL_FUNC;
 protected:
-	long parseInt(char skipChar, bool echo);
+	long parseInt(char skipChar, uint8_t base, bool echo);
 	float parseFloat(char skipChar, bool echo);
-	int nextDigit(bool echo);
 
 	CSemaphore	m_semTx;
 	CSemaphore	m_semRx;
