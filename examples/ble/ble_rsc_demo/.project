@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ble_proximity</name>
+	<name>ble_rsc_demo</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -24,11 +24,4 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/tone.cpp</name>
-			<type>1</type>
-			<locationURI>WORKSPACE_LOC/uCXpresso.BLE/extensions/lib/arduino/tone.cpp</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>

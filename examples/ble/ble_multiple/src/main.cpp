@@ -45,7 +45,7 @@
 #include "class/ble_serial.h"
 #include "class/ble_battery.h"
 #include "class/ble_ht.h"
-#include "class/ble_proximity.h"
+//#include "class/ble_proximity.h"	// remove from uCXpresso.BLE v1.0.7
 #include "class/ble_devinfo.h"
 
 #include "MyFirmata.h"
@@ -165,6 +165,7 @@ public:
 //
 // myProximity Class
 //
+#if 0	// remove from uCXpresso.BLE v1.0.7
 class myProximity : public bleProximity {
 public:
 	myProximity(bleSerial &ble) :
@@ -195,6 +196,7 @@ public:
 protected:
 	CPin m_ledAlert;
 };
+#endif
 
 //
 // main loop
@@ -265,7 +267,7 @@ int main(void) {
 	//
 	// Proximity Service
 	//
-	myProximity alert(ble);	// declare Proximity Service (Immediate alert + Lose Link)
+//	myProximity alert(ble);	// declare Proximity Service (Immediate alert + Lose Link)
 
 	//
 	// Battery Level Service
@@ -349,6 +351,7 @@ int main(void) {
 			//
 			// Proximity Service
 			//
+#if 0
 			if ( alert.isAvailable() ) {
 					//
 					// push button check (Proximity Service)
@@ -358,7 +361,7 @@ int main(void) {
 						alert.sendEvent(keyAlert.read()==LOW ? 1 : 0);
 					}
 			}
-
+#endif
 			//
 			// Health Thermometer Service
 			//

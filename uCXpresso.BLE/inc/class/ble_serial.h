@@ -290,7 +290,6 @@ public:
 			void reset();
 
 	virtual void onRecv(uint8_t *buf, int len);
-	virtual void onRecv(bool fromISR);
 	virtual void onSend(bool fromISR);
 	virtual void onACK(uint8_t data);
 
@@ -313,8 +312,10 @@ public:
 	uint32_t m_mfgData;
 	int8_t	 m_txPowerLevel;
 
+#if 0	// removed from uCXpresso.BLE v1.0.7
 	virtual void onAlert(uint8_t level);
 	virtual void onLinkLoss(uint8_t level);
+#endif
 
 	/**onHeartRateControl is call by BLE task.
 	 * \param ctrl if 1, resets the value of the Energy Expended field in the Heart Rate Measurement. otherwise reserved.
@@ -344,13 +345,15 @@ private:
 	//
 #include "class/ble_battery.h"
 #include "class/ble_ht.h"
-#include "class/ble_proximity.h"
+//#include "class/ble_proximity.h"	// removed from uCXpresso.BLE v1.0.7
+#include "class/ble_rsc.h"
 #include "class/ble_heartrate.h"
 #include "class/ble_devinfo.h"
 #include "class/ble_test.h"
 friend class bleBatteryLevel;
 friend class bleHealthThermometer;
-friend class bleProximity;
+//friend class bleProximity;		// removed from uCXpresso.BLE v1.0.7
+friend class bleRSC;				// Add @ uCXpresso.BLE v1.0.7
 friend class bleHeartRate;
 friend class bleDeviceInfo;
 friend class bleTest;
@@ -363,6 +366,7 @@ friend class bleTest;
 #undef BLE_HEARTRATE_H_
 #undef BLE_DEVINFO_H_
 #undef BLE_TEST_H_
+#undef BLE_RSC_H_
 	/*! \endcond */
 };
 

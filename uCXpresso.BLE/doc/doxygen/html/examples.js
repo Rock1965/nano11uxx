@@ -2,7 +2,6 @@ var examples =
 [
     [ "/ble/ble_heartrate/src/main.cpp", "d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html", null ],
     [ "/ble/ble_multiple/src/main.cpp", "d5/df3/_2ble_2ble_multiple_2src_2main_8cpp-example.html", null ],
-    [ "/ble/ble_proximity/src/main.cpp", "d7/d19/_2ble_2ble_proximity_2src_2main_8cpp-example.html", null ],
     [ "/misc/garbage_collector/src/main.cpp", "db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/adc/src/main.cpp", "d5/dec/_2peripheral_2adc_2src_2main_8cpp-example.html", null ],
     [ "/peripheral/eeprom/src/main.cpp", "de/dd2/_2peripheral_2eeprom_2src_2main_8cpp-example.html", null ],

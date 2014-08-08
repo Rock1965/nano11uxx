@@ -28,6 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
    &#160;<span id="projectnumber">v1.0.7</span>
@@ -196,20 +197,19 @@ $(document).ready(function(){initNavTree('d8/d95/stream_8h_source.html','../../'
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a> *m_semESC;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onSend(<span class="keywordtype">bool</span> fromISR) = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRecv(<span class="keywordtype">bool</span> fromISR) = PURE_VIRTUAL_FUNC;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b">parseInt</a>(<span class="keywordtype">char</span> skipChar, uint8_t base, <span class="keywordtype">bool</span> echo);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4">parseFloat</a>(<span class="keywordtype">char</span> skipChar, <span class="keywordtype">bool</span> echo);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semTx;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semRx;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">fifo_t</a>      m_tx_fifo;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">fifo_t</a>      m_rx_fifo;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    uint8_t     *m_p_tx_buf;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    uint8_t     *m_p_rx_buf;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STREAM_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b">parseInt</a>(<span class="keywordtype">char</span> skipChar, uint8_t base, <span class="keywordtype">bool</span> echo);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d4/d16/class_c_stream.html#a9c936febcbe2cd33c2857f37ed04f2f4">parseFloat</a>(<span class="keywordtype">char</span> skipChar, <span class="keywordtype">bool</span> echo);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semTx;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>  m_semRx;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">fifo_t</a>      m_tx_fifo;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="../../db/d53/structfifo__t.html">fifo_t</a>      m_rx_fifo;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    uint8_t     *m_p_tx_buf;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    uint8_t     *m_p_rx_buf;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STREAM_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_c_stream_html_af2bd1778d5f5cfab469e5df615e1c8fc"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#af2bd1778d5f5cfab469e5df615e1c8fc">CStream::operator&gt;&gt;</a></div><div class="ttdeci">virtual CStream &amp; operator&gt;&gt;(uint8_t c)</div><div class="ttdef"><b>Definition:</b> stream.h:114</div></div>
 <div class="ttc" id="class_c_semaphore_html"><div class="ttname"><a href="../../d0/d06/class_c_semaphore.html">CSemaphore</a></div><div class="ttdef"><b>Definition:</b> semaphore.h:33</div></div>
 <div class="ttc" id="class_c_stream_html_a4dd59862c18090fb2b9256154439feef"><div class="ttname"><a href="../../d4/d16/class_c_stream.html#a4dd59862c18090fb2b9256154439feef">CStream::parseHex</a></div><div class="ttdeci">virtual long parseHex(bool echo=false)</div><div class="ttdoc">return the first valid (hex) integer value from the current position. </div></div>
@@ -234,8 +234,8 @@ $(document).ready(function(){initNavTree('d8/d95/stream_8h_source.html','../../'
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_876e20253dd94088d1e4a3305ab3da19.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_409789b7f9e7d7e9fee6f43329cdb30a.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_050654509779614f44cd513279547c67.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_9aa95172879586a547054fde7c39339b.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_229e17feccdb17dbabe666e693150830.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_98db78583cafc4fad0f564e3148ae794.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_b87ebe5b8723d0b7116dfdbcd05b6a79.html">class</a></li><li class="navelem"><b>stream.h</b></li>
-    <li class="footer">Generated on Mon Aug 4 2014 14:03:24 for uCXpresso.BLE by
+    <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>stream.h</b></li>
+    <li class="footer">Generated on Fri Aug 8 2014 17:15:58 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

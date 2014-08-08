@@ -138,6 +138,10 @@ var group___enumerations =
       [ "PG_1", "db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca31dfdc5fbca1c9c952d8496c3fa0c8b4", null ],
       [ "PG_2", "db/dff/group___enumerations.html#gga5e532f9900a273ed24b167718d31d97ca93f5efbda2bb2726800554789a62e18b", null ]
     ] ],
+    [ "RSC_STATUS_T", "db/dff/group___enumerations.html#ga3cf86d5824f710be6f3ea37cab97f8da", [
+      [ "RSC_WALKING", "db/dff/group___enumerations.html#gga3cf86d5824f710be6f3ea37cab97f8daa59cbf919dfeb3a959fe068663ba5a928", null ],
+      [ "RSC_RUNNING", "db/dff/group___enumerations.html#gga3cf86d5824f710be6f3ea37cab97f8daa0aec77c90c048e22b4effd9bf9863bcc", null ]
+    ] ],
     [ "SF_BIT_ORDER_T", "db/dff/group___enumerations.html#gac9e770e9654a338545bfbb2e17cb4ada", [
       [ "SF_MSBFIRST", "db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa891202950a9401e5be78bcc9de77527e", null ],
       [ "SF_LSBFIRST", "db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18", null ]

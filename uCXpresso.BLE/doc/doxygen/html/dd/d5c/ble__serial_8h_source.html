@@ -28,6 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
    &#160;<span id="projectnumber">v1.0.7</span>
@@ -261,82 +262,86 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordtype">void</span> reset();</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRecv(uint8_t *buf, <span class="keywordtype">int</span> len);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRecv(<span class="keywordtype">bool</span> fromISR);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onSend(<span class="keywordtype">bool</span> fromISR);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onACK(uint8_t data);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onResponseCommandHook(<span class="keywordtype">void</span> *data);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onTransactionFinishedHook();</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onDataCreditHook();</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onAckTimeout();</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isReadyForNotify();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isActiveMode();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> inActiveMode(<span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable</a>);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onTestMode() {}        <span class="comment">// Event for Enter Test Mode</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onStandbyMode() {}     <span class="comment">// Event for Enter Standby Mode</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    LPCTSTR  m_deviceName;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    uint16_t m_advInterval;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    uint16_t m_conInterval;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    uint16_t m_conTimeout;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    uint32_t m_mfgData;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    int8_t   m_txPowerLevel;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onAlert(uint8_t level);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onSend(<span class="keywordtype">bool</span> fromISR);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onACK(uint8_t data);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onResponseCommandHook(<span class="keywordtype">void</span> *data);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onTransactionFinishedHook();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onDataCreditHook();</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onAckTimeout();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isReadyForNotify();</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isActiveMode();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> inActiveMode(<span class="keywordtype">bool</span> <a class="code" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onTestMode() {}        <span class="comment">// Event for Enter Test Mode</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onStandbyMode() {}     <span class="comment">// Event for Enter Standby Mode</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    LPCTSTR  m_deviceName;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    uint16_t m_advInterval;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    uint16_t m_conInterval;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    uint16_t m_conTimeout;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    uint32_t m_mfgData;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    int8_t   m_txPowerLevel;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#if 0   // removed from uCXpresso.BLE v1.0.7</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onAlert(uint8_t level);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onLinkLoss(uint8_t level);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onHeartRateControl(uint8_t ctrl);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="comment">// Implement the virtual function of CThread class</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run</a>();</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">void</span> releaseAll();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <a class="code" href="../../d3/d0d/class_c_mutex.html">CMutex</a>          m_mxSender;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semResponse;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semTransaction;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semDataCredit;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semWait;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    xHandle         m_event;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="../../d5/d5b/class_c_timeout.html">CTimeout</a>    m_tmACK;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    uint32_t    m_tmWatch;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">// Friend Classes</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#include &quot;class/ble_battery.h&quot;</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#include &quot;class/ble_ht.h&quot;</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor">#include &quot;class/ble_proximity.h&quot;</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#include &quot;class/ble_heartrate.h&quot;</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#include &quot;class/ble_devinfo.h&quot;</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#include &quot;class/ble_test.h&quot;</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d3b/classble_battery_level.html">bleBatteryLevel</a>;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d9/d26/classble_health_thermometer.html">bleHealthThermometer</a>;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../de/d67/classble_proximity.html">bleProximity</a>;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/d81/classble_heart_rate.html">bleHeartRate</a>;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/dc5/classble_device_info.html">bleDeviceInfo</a>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d2/df2/classble_test.html">bleTest</a>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/d67/classble_proximity.html">bleProximity</a>  *m_proximity;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">class </span><a class="code" href="../../d3/d81/classble_heart_rate.html">bleHeartRate</a>  *m_heartrate;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#undef BLE_BATTERY_H_</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_HT_H_</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_PROXIMITY_H_</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_HEARTRATE_H_</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_DEVINFO_H_</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_TEST_H_</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;};</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d7/d03/classble_serial.html">bleSerial</a> *objBLE;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BLE_SERIAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onHeartRateControl(uint8_t ctrl);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// Implement the virtual function of CThread class</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7">run</a>();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">void</span> releaseAll();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <a class="code" href="../../d3/d0d/class_c_mutex.html">CMutex</a>          m_mxSender;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semResponse;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semTransaction;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semDataCredit;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="../../d0/d06/class_c_semaphore.html">CSemaphore</a>      m_semWait;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    xHandle         m_event;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <a class="code" href="../../d5/d5b/class_c_timeout.html">CTimeout</a>    m_tmACK;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    uint32_t    m_tmWatch;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// Friend Classes</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#include &quot;class/ble_battery.h&quot;</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor">#include &quot;class/ble_ht.h&quot;</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">//#include &quot;class/ble_proximity.h&quot;  // removed from uCXpresso.BLE v1.0.7</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#include &quot;class/ble_rsc.h&quot;</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#include &quot;class/ble_heartrate.h&quot;</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#include &quot;class/ble_devinfo.h&quot;</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#include &quot;class/ble_test.h&quot;</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d3b/classble_battery_level.html">bleBatteryLevel</a>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d9/d26/classble_health_thermometer.html">bleHealthThermometer</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">//friend class bleProximity;        // removed from uCXpresso.BLE v1.0.7</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../df/d25/classble_r_s_c.html">bleRSC</a>;                <span class="comment">// Add @ uCXpresso.BLE v1.0.7</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/d81/classble_heart_rate.html">bleHeartRate</a>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/dc5/classble_device_info.html">bleDeviceInfo</a>;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d2/df2/classble_test.html">bleTest</a>;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">class </span>bleProximity  *m_proximity;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keyword">class </span><a class="code" href="../../d3/d81/classble_heart_rate.html">bleHeartRate</a>  *m_heartrate;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#undef BLE_BATTERY_H_</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_HT_H_</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_PROXIMITY_H_</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_HEARTRATE_H_</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_DEVINFO_H_</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_TEST_H_</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#undef BLE_RSC_H_</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;};</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../d7/d03/classble_serial.html">bleSerial</a> *objBLE;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BLE_SERIAL_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classble_battery_level_html"><div class="ttname"><a href="../../d8/d3b/classble_battery_level.html">bleBatteryLevel</a></div><div class="ttdef"><b>Definition:</b> ble_battery.h:32</div></div>
 <div class="ttc" id="group___enumerations_html_ga6c00522f6a8c33135ee0414877d42c04"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ga6c00522f6a8c33135ee0414877d42c04">BLE_ERR_T</a></div><div class="ttdeci">BLE_ERR_T</div><div class="ttdef"><b>Definition:</b> ble_serial.h:86</div></div>
 <div class="ttc" id="group___enumerations_html_gga3b6d6db9e13e93ae21f2a383d9903617a1db610898779c31e5fe4b7cda75c8b4e"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga3b6d6db9e13e93ae21f2a383d9903617a1db610898779c31e5fe4b7cda75c8b4e">BLE_TX_m6dBm</a></div><div class="ttdoc">-6dBm </div><div class="ttdef"><b>Definition:</b> ble_serial.h:79</div></div>
@@ -350,8 +355,8 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <div class="ttc" id="classble_serial_html_a1691c5c5655043512bf1c462e6928488"><div class="ttname"><a href="../../d7/d03/classble_serial.html#a1691c5c5655043512bf1c462e6928488">bleSerial::isAvailable</a></div><div class="ttdeci">bool isAvailable()</div><div class="ttdef"><b>Definition:</b> ble_serial.h:276</div></div>
 <div class="ttc" id="group___enumerations_html_gga3b6d6db9e13e93ae21f2a383d9903617a5c98a88cfa9a664b8d96aa6a03ba53d9"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga3b6d6db9e13e93ae21f2a383d9903617a5c98a88cfa9a664b8d96aa6a03ba53d9">BLE_TX_m18dBm</a></div><div class="ttdoc">-18dBm (Low) </div><div class="ttdef"><b>Definition:</b> ble_serial.h:77</div></div>
 <div class="ttc" id="group___enumerations_html_ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b"><div class="ttname"><a href="../../db/dff/group___enumerations.html#ggafdc7d73c1364c4d42f80cfdc702de294a3aaba90cbef710f140a4f7e70d1f0d5b">BLE_TERMINATED</a></div><div class="ttdoc">Request termination of the connection with the peer device with the reason &quot;Remote user terminated co...</div><div class="ttdef"><b>Definition:</b> ble_serial.h:69</div></div>
-<div class="ttc" id="classble_proximity_html"><div class="ttname"><a href="../../de/d67/classble_proximity.html">bleProximity</a></div><div class="ttdef"><b>Definition:</b> ble_proximity.h:34</div></div>
 <div class="ttc" id="classble_serial_html_aa6f5116c8bcf05011a05ad5e2967c318"><div class="ttname"><a href="../../d7/d03/classble_serial.html#aa6f5116c8bcf05011a05ad5e2967c318">bleSerial::onDisconnected</a></div><div class="ttdeci">virtual void onDisconnected()</div></div>
+<div class="ttc" id="classble_r_s_c_html"><div class="ttname"><a href="../../df/d25/classble_r_s_c.html">bleRSC</a></div><div class="ttdef"><b>Definition:</b> ble_rsc.h:51</div></div>
 <div class="ttc" id="group___enumerations_html_gga6c00522f6a8c33135ee0414877d42c04a1cf05a76d9f21338d5297bbc4bcbc355"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga6c00522f6a8c33135ee0414877d42c04a1cf05a76d9f21338d5297bbc4bcbc355">BLE_ERR_RSP_TIMEOUT</a></div><div class="ttdoc">Response timeout. </div><div class="ttdef"><b>Definition:</b> ble_serial.h:91</div></div>
 <div class="ttc" id="class_c_thread_html"><div class="ttname"><a href="../../d0/d26/class_c_thread.html">CThread</a></div><div class="ttdef"><b>Definition:</b> thread.h:64</div></div>
 <div class="ttc" id="group___enumerations_html_gga6c00522f6a8c33135ee0414877d42c04aaa3bd3b90312f5e85fc132b5d4a1a62a"><div class="ttname"><a href="../../db/dff/group___enumerations.html#gga6c00522f6a8c33135ee0414877d42c04aaa3bd3b90312f5e85fc132b5d4a1a62a">BLE_ERR_ACK_TIMEOUT</a></div><div class="ttdoc">ACK timeout. </div><div class="ttdef"><b>Definition:</b> ble_serial.h:90</div></div>
@@ -390,8 +395,8 @@ $(document).ready(function(){initNavTree('dd/d5c/ble__serial_8h_source.html','..
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_876e20253dd94088d1e4a3305ab3da19.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_409789b7f9e7d7e9fee6f43329cdb30a.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_050654509779614f44cd513279547c67.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_9aa95172879586a547054fde7c39339b.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_229e17feccdb17dbabe666e693150830.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_98db78583cafc4fad0f564e3148ae794.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_b87ebe5b8723d0b7116dfdbcd05b6a79.html">class</a></li><li class="navelem"><b>ble_serial.h</b></li>
-    <li class="footer">Generated on Mon Aug 4 2014 14:03:24 for uCXpresso.BLE by
+    <li class="navelem"><a class="el" href="../../dir_d9ab3e09413249e340719d1c246acc66.html">Jason Project</a></li><li class="navelem"><a class="el" href="../../dir_e60b0d0338763df7a227cbecf5ac6106.html">Firmware</a></li><li class="navelem"><a class="el" href="../../dir_c8ef7bdfc8622ceb56fdbfff8f44a6b4.html">lpcxpresso</a></li><li class="navelem"><a class="el" href="../../dir_bc2544560b94a5512f672a61310393b1.html">ucxpresso.lite</a></li><li class="navelem"><a class="el" href="../../dir_89b485e3174b4ad30c1cd4b50a79dec9.html">uCXpresso.BLE</a></li><li class="navelem"><a class="el" href="../../dir_ef35519cefd621f663612ebad34cbfc9.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_23b8956a4518e3beec6402c1bb795b19.html">class</a></li><li class="navelem"><b>ble_serial.h</b></li>
+    <li class="footer">Generated on Fri Aug 8 2014 17:15:58 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -46,14 +46,12 @@ var group___b_l_e =
       [ "unit_c", "d9/d26/classble_health_thermometer.html#a0f00efd291e5b91fef286071d3441172", null ],
       [ "unit_f", "d9/d26/classble_health_thermometer.html#aafe2468db4033c905394da1d58c83620", null ]
     ] ],
-    [ "bleProximity", "de/d67/classble_proximity.html", [
-      [ "bleProximity", "de/d67/classble_proximity.html#a3cbf3bd31cac77037d623ef9c8098a71", null ],
-      [ "isAvailable", "de/d67/classble_proximity.html#adc2ab90789ee61d11031ce816b3db11c", null ],
-      [ "isThread", "de/d67/classble_proximity.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
-      [ "onAlert", "de/d67/classble_proximity.html#a43c9187ddcb7237099ff414b74c5b0bd", null ],
-      [ "onLinkLoss", "de/d67/classble_proximity.html#a193eb5410fc4cf4b35613ad931ae61ff", null ],
-      [ "sendEvent", "de/d67/classble_proximity.html#a6d3426d21b9182c5b3e135dd783e097d", null ],
-      [ "setTxPowerLevel", "de/d67/classble_proximity.html#a177463a01974a439c9f8d90b36cf15e1", null ]
+    [ "bleRSC", "df/d25/classble_r_s_c.html", [
+      [ "bleRSC", "df/d25/classble_r_s_c.html#afe7e04b3e0c66fecc9405d77537c249d", null ],
+      [ "features", "df/d25/classble_r_s_c.html#a0e0a5221f28e0d56c725fa2bd7addb2f", null ],
+      [ "isAvailable", "df/d25/classble_r_s_c.html#a48b791dd22355cb15572ae739566f970", null ],
+      [ "isThread", "df/d25/classble_r_s_c.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
+      [ "send", "df/d25/classble_r_s_c.html#a35052bc0a12456f6f53f9ec4e17fa4c7", null ]
     ] ],
     [ "bleSerial", "d7/d03/classble_serial.html", [
       [ "bleSerial", "d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec", null ],

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['second',['second',['../db/de1/class_c_timer.html#aa4d48f568d057eccc1842748034fadbf',1,'CTimer']]],
+  ['send',['send',['../df/d25/classble_r_s_c.html#a35052bc0a12456f6f53f9ec4e17fa4c7',1,'bleRSC']]],
   ['sendbatterylevel',['sendBatteryLevel',['../d8/d3b/classble_battery_level.html#ad770083f87f2f193b897ca767593e716',1,'bleBatteryLevel']]],
-  ['sendevent',['sendEvent',['../de/d67/classble_proximity.html#a6d3426d21b9182c5b3e135dd783e097d',1,'bleProximity']]],
   ['sendmeasure',['sendMeasure',['../d3/d81/classble_heart_rate.html#a2b7329b1756f03c99334b6575e14c090',1,'bleHeartRate::sendMeasure(uint8_t meas_hr)'],['../d3/d81/classble_heart_rate.html#a9f69ad22553dabc5b992bf9a15aa6667',1,'bleHeartRate::sendMeasure(uint16_t meas_hr)'],['../d3/d81/classble_heart_rate.html#ac0bd83937f2997c2451918a421c277c2',1,'bleHeartRate::sendMeasure(uint8_t meas_hr, uint16_t expended_energy)'],['../d3/d81/classble_heart_rate.html#a34a055d4b926b2447ca78a4f63691d30',1,'bleHeartRate::sendMeasure(uint16_t meas_hr, uint16_t expended_energy)'],['../d3/d81/classble_heart_rate.html#ab511f6fcb6b7b57c09132911b5f87cb7',1,'bleHeartRate::sendMeasure(uint8_t meas_hr, uint16_t *p_rr_intervals, uint8_t nb_intervals)'],['../d3/d81/classble_heart_rate.html#a1d3fd3348703d304cd445620e7bb4998',1,'bleHeartRate::sendMeasure(uint16_t meas_hr, uint16_t *p_rr_intervals, uint8_t nb_intervals)'],['../d3/d81/classble_heart_rate.html#a2a6d1f10ea9a92ad5a953fc683125c50',1,'bleHeartRate::sendMeasure(uint8_t meas_hr, uint16_t expended_energy, uint16_t *p_rr_intervals, uint8_t nb_intervals)'],['../d3/d81/classble_heart_rate.html#ab5cf3fd6c2e5909af4d51150c865d8b0',1,'bleHeartRate::sendMeasure(uint16_t meas_hr, uint16_t expended_energy, uint16_t *p_rr_intervals, uint8_t nb_intervals)'],['../d9/d26/classble_health_thermometer.html#a09413d493022f3c52dfd269cf01bacd1',1,'bleHealthThermometer::sendMeasure()']]],
   ['set',['set',['../dd/d60/class_c_event_bit.html#a0b05da65aa8bb0b77dd75f0a84b8fbb0',1,'CEventBit']]],
   ['setat',['setAt',['../df/d99/class_c_string.html#a99eaccef0daa453bf36ec886ae9b42c4',1,'CString']]],
@@ -19,7 +19,6 @@ var searchData=
   ['setsystemid',['setSystemId',['../d3/dc5/classble_device_info.html#a372ab0246f7e19548fcef771e06dc407',1,'bleDeviceInfo']]],
   ['settimeout',['setTimeout',['../d3/d75/class_c_watchdog.html#af9dc7eb09403e54c36ffce01e1932f1e',1,'CWatchdog']]],
   ['settings',['settings',['../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233',1,'CSerial']]],
-  ['settxpowerlevel',['setTxPowerLevel',['../de/d67/classble_proximity.html#a177463a01974a439c9f8d90b36cf15e1',1,'bleProximity']]],
   ['setup',['setup',['../d7/d03/classble_serial.html#ad9d7db801a626adfa9c637397999e0d9',1,'bleSerial']]],
   ['sf_5fbit_5forder_5ft',['SF_BIT_ORDER_T',['../db/dff/group___enumerations.html#gac9e770e9654a338545bfbb2e17cb4ada',1,'shift.h']]],
   ['sf_5flsbfirst',['SF_LSBFIRST',['../db/dff/group___enumerations.html#ggac9e770e9654a338545bfbb2e17cb4adaa168a609e3f078a29759512f56afc0d18',1,'shift.h']]],
