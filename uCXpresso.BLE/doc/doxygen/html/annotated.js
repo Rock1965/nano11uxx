@@ -2,6 +2,7 @@ var annotated =
 [
     [ "_gc_", "df/dee/class__gc__.html", "df/dee/class__gc__" ],
     [ "bleBatteryLevel", "d8/d3b/classble_battery_level.html", "d8/d3b/classble_battery_level" ],
+    [ "bleCSC", "d4/dc4/classble_c_s_c.html", "d4/dc4/classble_c_s_c" ],
     [ "bleDeviceInfo", "d3/dc5/classble_device_info.html", "d3/dc5/classble_device_info" ],
     [ "bleHealthThermometer", "d9/d26/classble_health_thermometer.html", "d9/d26/classble_health_thermometer" ],
     [ "bleHeartRate", "d3/d81/classble_heart_rate.html", "d3/d81/classble_heart_rate" ],

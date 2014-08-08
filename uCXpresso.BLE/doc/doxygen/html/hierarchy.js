@@ -12,6 +12,7 @@ var hierarchy =
       [ "CMutex", "d3/d0d/class_c_mutex.html", null ],
       [ "CPeripheral", "d9/db6/class_c_peripheral.html", [
         [ "bleBatteryLevel", "d8/d3b/classble_battery_level.html", null ],
+        [ "bleCSC", "d4/dc4/classble_c_s_c.html", null ],
         [ "bleDeviceInfo", "d3/dc5/classble_device_info.html", null ],
         [ "bleHealthThermometer", "d9/d26/classble_health_thermometer.html", null ],
         [ "bleHeartRate", "d3/d81/classble_heart_rate.html", null ],

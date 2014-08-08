@@ -1,6 +1,7 @@
 var searchData=
 [
   ['blebatterylevel',['bleBatteryLevel',['../d8/d3b/classble_battery_level.html',1,'']]],
+  ['blecsc',['bleCSC',['../d4/dc4/classble_c_s_c.html',1,'']]],
   ['bledeviceinfo',['bleDeviceInfo',['../d3/dc5/classble_device_info.html',1,'']]],
   ['blehealththermometer',['bleHealthThermometer',['../d9/d26/classble_health_thermometer.html',1,'']]],
   ['bleheartrate',['bleHeartRate',['../d3/d81/classble_heart_rate.html',1,'']]],

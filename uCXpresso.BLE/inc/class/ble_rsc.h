@@ -35,8 +35,8 @@ typedef enum {
 #define RSC_SUPPORT_STRIDE_LENGTH	(1<<0)
 #define RSC_SUPPORT_DISTANCE		(1<<1)
 #define RSC_SUPPORT_STATUS			(1<<2)	// for walking or running status
-#define RSC_SUPPORT_CALIBRATION		(1<<3)
-#define RSC_SUPPORT_MULTIPLE_SENSOR	(1<<4)
+//#define RSC_SUPPORT_CALIBRATION		(1<<3)
+//#define RSC_SUPPORT_MULTIPLE_SENSOR	(1<<4)
 
 //
 // RSC Speed
@@ -44,7 +44,7 @@ typedef enum {
 #define RSC_SPEED_KMH(x)	((uint16_t)(x*71.1f))	// speed for Km/h
 #define RSC_SPEED_MS(x)		((uint16_t)(x*256.0f))	// speed for m/s
 
-/**The bleRSC class exposes running speed and cadence data from sensor for healthcare and fitness applications.
+/**The bleRSC class exposes speed, cadence and other data from a Running Speed and Cadence Sensor intended for fitness applications.
  * \class bleRSC ble_rsc.h "class/ble_rsc.h"
  * \ingroup BLE
  */

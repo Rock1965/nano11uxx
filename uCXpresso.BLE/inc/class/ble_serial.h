@@ -347,6 +347,7 @@ private:
 #include "class/ble_ht.h"
 //#include "class/ble_proximity.h"	// removed from uCXpresso.BLE v1.0.7
 #include "class/ble_rsc.h"
+#include "class/ble_csc.h"
 #include "class/ble_heartrate.h"
 #include "class/ble_devinfo.h"
 #include "class/ble_test.h"
@@ -354,6 +355,7 @@ friend class bleBatteryLevel;
 friend class bleHealthThermometer;
 //friend class bleProximity;		// removed from uCXpresso.BLE v1.0.7
 friend class bleRSC;				// Add @ uCXpresso.BLE v1.0.7
+friend class bleCSC;
 friend class bleHeartRate;
 friend class bleDeviceInfo;
 friend class bleTest;

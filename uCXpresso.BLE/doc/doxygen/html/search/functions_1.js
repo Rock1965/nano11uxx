@@ -4,6 +4,7 @@ var searchData=
   ['binary',['binary',['../d0/d06/class_c_semaphore.html#a0fc078dfd286cb3321c6cbaf7bcbb7b2',1,'CSemaphore']]],
   ['bitorder',['bitOrder',['../d2/d3f/class_c_s_p_i.html#aa7a160dad74689b9afb720c78d63558f',1,'CSPI']]],
   ['blebatterylevel',['bleBatteryLevel',['../d8/d3b/classble_battery_level.html#a212d349975b73b6f6020ce496ed68834',1,'bleBatteryLevel']]],
+  ['blecsc',['bleCSC',['../d4/dc4/classble_c_s_c.html#a33b0cd8f3fe4ce26b3e07f1a583fcf61',1,'bleCSC']]],
   ['bledeviceinfo',['bleDeviceInfo',['../d3/dc5/classble_device_info.html#ae5f10713f4db98be9245aff3d482d51d',1,'bleDeviceInfo']]],
   ['blehealththermometer',['bleHealthThermometer',['../d9/d26/classble_health_thermometer.html#a92480888b6ed2b0fe354cc4a5404a63d',1,'bleHealthThermometer']]],
   ['bleheartrate',['bleHeartRate',['../d3/d81/classble_heart_rate.html#af5e0bc81b5d2f8e290b6cba8050f80c2',1,'bleHeartRate']]],
