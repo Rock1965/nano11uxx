@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d6/d1c/class_c_shift.html#a18ea5aa8b8932cb42bf0746ed4716923":[0,3,11,7],
 "d6/d1c/class_c_shift.html#a26a76c241a4d62d2efdac57d2cfe4c0f":[0,3,11,2],
 "d6/d1c/class_c_shift.html#a2ecc1b524768840afc82a5351b1031cb":[0,3,11,6],
 "d6/d1c/class_c_shift.html#a643a8054e3eb2b37fecbaf9d32c8c049":[0,3,11,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "d9/d9b/class_c_spi_master.html#a26a76c241a4d62d2efdac57d2cfe4c0f":[0,3,13,9],
 "d9/d9b/class_c_spi_master.html#a272f5e518d21194dbc996f5f5475ae02":[0,3,13,11],
 "d9/d9b/class_c_spi_master.html#a3ce438bee4e3c087e44b3cf2b1690ecd":[0,3,13,10],
-"d9/d9b/class_c_spi_master.html#a4d0cd48d0bba271fd72df43d7528e2a0":[0,3,13,12]
+"d9/d9b/class_c_spi_master.html#a4d0cd48d0bba271fd72df43d7528e2a0":[0,3,13,12],
+"d9/d9b/class_c_spi_master.html#a5009ac7cc08bcf2b1d1be19b320424e6":[0,3,13,3]
 };

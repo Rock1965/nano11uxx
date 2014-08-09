@@ -291,7 +291,7 @@ int main(void) {
 	//
 	CPin keyAlert(P8);					// define P8 as a push button
 	keyAlert.input();
-	PIN_LEVEL_T	pinVal = keyAlert;
+//	PIN_LEVEL_T	pinVal = keyAlert;
 
 	//
 	// Timeout for time interval

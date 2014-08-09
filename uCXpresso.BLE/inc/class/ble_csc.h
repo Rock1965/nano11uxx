@@ -5,7 +5,7 @@
  Version     : 1.0.0
  Date		 : 2014/8/8
  Copyright   : Copyright (C) www.embeda.com.tw
- Description : Cycling Speed and Cadence
+ Description : Cycling Speed and Cadence Service
  ===============================================================================
  History
  ---------+---------+--------------------------------------------+-------------
@@ -21,17 +21,20 @@
 #include <class/peripheral.h>
 #include <class/ble_serial.h>
 
+//
+// CSC Flasg
+//
 #define CSC_FLAG_WHEEL	(1<<0)
 #define CSC_FLAG_CRANK	(1<<1)
 
 //
 // CSC Features
 //
-#define CSC_SUPPORT_WHEEL_DATA		(1<<0)
-#define CSC_SUPPORT_CRANK_DATA		(1<<1)
+#define CSC_SUPPORT_WHEEL_DATA		(1<<0)	///< CSC feature support the wheel data
+#define CSC_SUPPORT_CRANK_DATA		(1<<1)	///< CSC feature support the crank data
 //#define CSC_SUPPORT_MULTIPLE_SENSOR	(1<<2)
 
-/**The bleRSC class exposes speed-related and cadence-related data from a Cycling Speed and Cadence sensor intended for fitness applications.
+/**The bleCSC class exposes speed-related and cadence-related data from a Cycling Speed and Cadence sensor intended for fitness applications.
  * \class bleCSC ble_csc.h "class/ble_csc.h"
  * \ingroup BLE
  */
@@ -51,23 +54,31 @@ public:
 	 */
 	virtual bool isAvailable();
 
-	/**\brief Function	send the RSC Measurement data
+	/**\brief Overload Function, send the CSC Measurement data for wheel.
+	 * \param cumulative_wheel_revolutions
+	 * \param last_wheel_event_time	Unit has a resolution of 1/1024s.
 	 * \return true, if send the data successful.
 	 */
-	virtual bool send(uint8_t flag,
-					  uint32_t cumulative_wheel_revolutions,
-					  uint16_t last_wheel_event_time,
-					  uint16_t cumulative_crank_revolutions,
-					  uint16_t last_crank_event_time);
-
 	inline bool send(uint32_t cumulative_wheel_revolutions, uint16_t last_wheel_event_time) {
 		return send(CSC_FLAG_WHEEL, cumulative_wheel_revolutions, last_wheel_event_time, 0, 0);
 	}
 
+	/**\brief Overload function, send the CSC Measurement data for crank.
+	 * \param cumulative_crank_revolutions
+	 * \param last_crank_event_time	Unit has a resolution of 1/1024s.
+	 * \return true, if send the data successful.
+	 */
 	inline bool send(uint16_t cumulative_crank_revolutions, uint16_t last_crank_event_time) {
 		return send(CSC_FLAG_CRANK, 0, 0, cumulative_crank_revolutions, last_crank_event_time);
 	}
 
+	/**\brief Overload function, send the CSC Measurement data for wheel and crank.
+	 * \param cumulative_wheel_revolutions
+	 * \param last_wheel_event_time	Unit has a resolution of 1/1024s.
+	 * \param cumulative_crank_revolutions
+	 * \param last_crank_event_time	Unit has a resolution of 1/1024s.
+	 * \return true, if send the data successful.
+	 */
 	inline bool send(uint32_t cumulative_wheel_revolutions,
 					 uint16_t last_wheel_event_time,
 					 uint16_t cumulative_crank_revolutions,
@@ -82,7 +93,14 @@ public:
 	/// @cond PRIVATE
 	//
 	virtual ~bleCSC();
+
 protected:
+	virtual bool send(uint8_t flag,
+					  uint32_t cumulative_wheel_revolutions,
+					  uint16_t last_wheel_event_time,
+					  uint16_t cumulative_crank_revolutions,
+					  uint16_t last_crank_event_time);
+
 	bleSerial *m_ble;
 	/// @endcond
 };
