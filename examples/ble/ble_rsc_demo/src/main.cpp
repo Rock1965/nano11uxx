@@ -86,7 +86,7 @@ int main(void) {
 		 **********************************************************************/
 		if ( rsc.isAvailable() ) {
 			// speed = 3m/s, cadence=2rpm, distance=2m
-			rsc.send( RSC_SPEED_MS(3), 2, RSC_RUNNING);
+			rsc.send( RSC_SPEED_KMH(6.5), 50, RSC_RUNNING);
 		}
 
 		if ( bl.isAvailable() ) {
