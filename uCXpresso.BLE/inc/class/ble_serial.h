@@ -33,6 +33,7 @@
  2014/6/14	v1.0.15	Update manufactureData to 24 bits					Jason
  2014/7/23	v1.0.16	Add sleep & weakup member functions.				Jason
  2014/7/25	v1.0.17 Add wait() member to block and wait a BLE event.	Jason
+ 2014/8/13	v1.0.18	Add Configurable FiFo Size for BLE serial.			Jason
  ===============================================================================
  */
 
@@ -92,6 +93,8 @@ typedef enum {
 	BLE_ERR_DAT_TIMEOUT		///< Core data timeout
 }BLE_ERR_T;
 
+#define DEF_BLE_FIFO_SIZE	32
+
 /**\class bleSerial ble_serial.h "class/ble_serial.h"
  * \brief bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual functions for serial input and output.
  * the bleSerial class also inherits from the CThread class and can be work in background.
@@ -115,7 +118,9 @@ public:
 	 * \param deviceName point to a LPCTSTR string to indicate
 	 * the GAT device name of Bluetooth.
 	 */
-	bleSerial(LPCTSTR deviceName=DEF_BLE_DEVICENAME);
+	bleSerial(LPCTSTR deviceName=DEF_BLE_DEVICENAME,
+			  size_t tx_fifo_size=DEF_BLE_FIFO_SIZE,
+			  size_t rx_fifo_size=DEF_BLE_FIFO_SIZE);
 
 	/**Broadcast the advertising message when device is not in BLE connection.
 	 * \param advInterval To broadcast the advertising message with the interval time in millisecond.
