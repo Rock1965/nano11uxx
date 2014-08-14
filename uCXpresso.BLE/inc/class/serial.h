@@ -101,6 +101,10 @@ public:
 		enable(baudrate, parity, databits, stopbits, level);
 	}
 
+	virtual void enable();	// keep old setting
+
+	virtual void disable();
+
 	// for Arduino user
 	inline void begin(uint32_t speed) {
 		enable(speed);
