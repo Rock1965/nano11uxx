@@ -166,12 +166,9 @@ public:
 	LPCTSTR getName();
 
 	/**isAlive is to check the thread is in alive (for run-loop)
+	 * \return false if the thread is deleted.
 	 */
 	virtual bool isAlive();
-
-	/**kill the thread and the isAlive() will return false
-	 */
-	virtual void kill();
 
 	/**isThread(), check the class is inherited from CThread
 	 */
