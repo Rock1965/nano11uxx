@@ -189,8 +189,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa291909bc3ff7cc0decf46c885a7a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0f0727be4714cef1e24150a869d403"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a> ()</td></tr>
 <tr class="separator:a4a0f0727be4714cef1e24150a869d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15041136818470124d097d790d55a6e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a15041136818470124d097d790d55a6e5">kill</a> ()</td></tr>
-<tr class="separator:a15041136818470124d097d790d55a6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2513fd0fcad30e2e6605609c91f1984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread</a> ()</td></tr>
 <tr class="separator:ab2513fd0fcad30e2e6605609c91f1984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -440,6 +438,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>isAlive is to check the thread is in alive (for run-loop) </p>
+<dl class="section return"><dt>Returns</dt><dd>false if the thread is deleted. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html#a9">/ble/ble_heartrate/src/main.cpp</a>, <a class="el" href="../../db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html#a4">/misc/garbage_collector/src/main.cpp</a>, and <a class="el" href="../../da/da9/_2rtos_2blink_thread_2src_2main_8cpp-example.html#a4">/rtos/blink_thread/src/main.cpp</a>.</dd>
 </dl>
 </div>
@@ -507,30 +506,6 @@ Protected Attributes</h2></td></tr>
 <p><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread()</a>, check the class is inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> </p>
 
 <p>Reimplemented from <a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">CObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a15041136818470124d097d790d55a6e5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void CThread::kill </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>kill the thread and the <a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive()</a> will return false </p>
 
 </div>
 </div>
@@ -1189,7 +1164,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dba/class_c_shell.html">CShell</a></li>
-    <li class="footer">Generated on Sat Aug 9 2014 16:06:44 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Aug 18 2014 09:46:51 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

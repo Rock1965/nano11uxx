@@ -18,6 +18,7 @@ var class_c_pin_i_n_t =
     [ "output", "db/d2c/class_c_pin_i_n_t.html#a84cd9c4613a9b53f00e52c23b4eed050", null ],
     [ "read", "db/d2c/class_c_pin_i_n_t.html#a02060b0c9bbf0f75dead7bef1c75ce6b", null ],
     [ "release", "db/d2c/class_c_pin_i_n_t.html#abe0ce7ac090423e11d460e75c8838128", null ],
+    [ "reset", "db/d2c/class_c_pin_i_n_t.html#a60df7e76cce70eee426fac5d166a4124", null ],
     [ "wait", "db/d2c/class_c_pin_i_n_t.html#a45e9fb4b6e6300e4c1c2ed6c13cfc062", null ],
     [ "write", "db/d2c/class_c_pin_i_n_t.html#a1fc3486f4afea4de56ae677c20600551", null ]
 ];

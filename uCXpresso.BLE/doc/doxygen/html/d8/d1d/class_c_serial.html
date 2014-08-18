@@ -168,6 +168,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aff7c822bada51065ad52542fb9515be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c80ea521e310305579e787f21a55233"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233">settings</a> (uint32_t baudrate, <a class="el" href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40">UART_PARITY_T</a> parity=<a class="el" href="../../d8/d1d/class_c_serial.html#ad38b0926868c6cfabb59e2da94f1cf40a77e567bbd57497e51b0161ed1cd855a4">UART_PARITY_NONE</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3">UART_DATABIT_T</a> databits=<a class="el" href="../../d8/d1d/class_c_serial.html#a628c8c9be04f0315c4dae70ce8ccc5b3a196b716ca31d23301c1059b53ac35f25">UART_DATABIT_8</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04b">UART_STOPBIT_T</a> stopbits=<a class="el" href="../../d8/d1d/class_c_serial.html#af02af389f5596b7b40cf0d2ece57b04ba6351eeac6c2e865ed9019323e2491907">UART_STOPBIT_1</a>, <a class="el" href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1">UART_FITO_LEVEL_T</a> level=<a class="el" href="../../d8/d1d/class_c_serial.html#a767bb157f0f469eb5bf5c99b8ada42f1aec8c4b69719ee6b1dc43cf6ccdd999de">UART_FIFO_TRGLEV0</a>)</td></tr>
 <tr class="separator:a0c80ea521e310305579e787f21a55233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be207d970b61cc8fa137711cbacd673"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a7be207d970b61cc8fa137711cbacd673">enable</a> ()</td></tr>
+<tr class="separator:a7be207d970b61cc8fa137711cbacd673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4d7a798ba0f8ec09c7f5b20b6e3134"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a1d4d7a798ba0f8ec09c7f5b20b6e3134">disable</a> ()</td></tr>
+<tr class="separator:a1d4d7a798ba0f8ec09c7f5b20b6e3134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130edee149575f50f62013180a1b5bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a130edee149575f50f62013180a1b5bef">begin</a> (uint32_t speed)</td></tr>
 <tr class="separator:a130edee149575f50f62013180a1b5bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d6a27113d6370eb3a69c26b28b232a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/class_c_serial.html#a21d6a27113d6370eb3a69c26b28b232a">end</a> ()</td></tr>
@@ -413,6 +417,29 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1d4d7a798ba0f8ec09c7f5b20b6e3134"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CSerial::disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aff7c822bada51065ad52542fb9515be6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -475,6 +502,29 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/d0a/_2peripheral_2uart_2src_2main_8cpp-example.html#a12">/peripheral/uart/src/main.cpp</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a7be207d970b61cc8fa137711cbacd673"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CSerial::enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="a21d6a27113d6370eb3a69c26b28b232a"></a>
@@ -1023,7 +1073,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Outmoded, redirect to <a class="el" href="../../d8/d1d/class_c_serial.html#aff7c822bada51065ad52542fb9515be6">enable()</a> </p>
+<p>Outmoded, redirect to <a class="el" href="../../d8/d1d/class_c_serial.html#a7be207d970b61cc8fa137711cbacd673">enable()</a> </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html#a15">/ble/ble_heartrate/src/main.cpp</a>, <a class="el" href="../../d5/df3/_2ble_2ble_multiple_2src_2main_8cpp-example.html#a20">/ble/ble_multiple/src/main.cpp</a>, <a class="el" href="../../db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html#a14">/misc/garbage_collector/src/main.cpp</a>, <a class="el" href="../../d5/dec/_2peripheral_2adc_2src_2main_8cpp-example.html#a3">/peripheral/adc/src/main.cpp</a>, <a class="el" href="../../de/dd2/_2peripheral_2eeprom_2src_2main_8cpp-example.html#a3">/peripheral/eeprom/src/main.cpp</a>, <a class="el" href="../../df/dd4/_2peripheral_2i2c_scanner_2src_2main_8cpp-example.html#a3">/peripheral/i2c_scanner/src/main.cpp</a>, <a class="el" href="../../d9/da4/_2peripheral_2power_2src_2main_8cpp-example.html#a9">/peripheral/power/src/main.cpp</a>, <a class="el" href="../../d5/d72/_2peripheral_2spi_2src_2main_8cpp-example.html#a3">/peripheral/spi/src/main.cpp</a>, <a class="el" href="../../d3/d38/_2peripheral_2timer_2src_2main_8cpp-example.html#a3">/peripheral/timer/src/main.cpp</a>, <a class="el" href="../../d1/d0a/_2peripheral_2uart_2src_2main_8cpp-example.html#a9">/peripheral/uart/src/main.cpp</a>, <a class="el" href="../../d0/d46/_2peripheral_2watchdog_2src_2main_8cpp-example.html#a11">/peripheral/watchdog/src/main.cpp</a>, and <a class="el" href="../../da/da9/_2rtos_2blink_thread_2src_2main_8cpp-example.html#a11">/rtos/blink_thread/src/main.cpp</a>.</dd>
 </dl>
 </div>
@@ -1145,7 +1195,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d1d/class_c_serial.html">CSerial</a></li>
-    <li class="footer">Generated on Sat Aug 9 2014 16:06:44 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Aug 18 2014 09:46:51 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

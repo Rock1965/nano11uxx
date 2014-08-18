@@ -9,6 +9,6 @@ var searchData=
   ['blehealththermometer',['bleHealthThermometer',['../d9/d26/classble_health_thermometer.html#a92480888b6ed2b0fe354cc4a5404a63d',1,'bleHealthThermometer']]],
   ['bleheartrate',['bleHeartRate',['../d3/d81/classble_heart_rate.html#af5e0bc81b5d2f8e290b6cba8050f80c2',1,'bleHeartRate']]],
   ['blersc',['bleRSC',['../df/d25/classble_r_s_c.html#afe7e04b3e0c66fecc9405d77537c249d',1,'bleRSC']]],
-  ['bleserial',['bleSerial',['../d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec',1,'bleSerial']]],
+  ['bleserial',['bleSerial',['../d7/d03/classble_serial.html#a2ae13b4a846b0b4c7271d6b997a3d096',1,'bleSerial']]],
   ['bletest',['bleTest',['../d2/df2/classble_test.html#a05a14e85d7a32342c06225296365c88a',1,'bleTest']]]
 ];

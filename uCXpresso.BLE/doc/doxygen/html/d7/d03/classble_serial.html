@@ -135,9 +135,9 @@ Inheritance diagram for bleSerial:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a835c884c9209b074cf82e5a3f0a322ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec">bleSerial</a> (LPCTSTR deviceName=DEF_BLE_DEVICENAME)</td></tr>
-<tr class="memdesc:a835c884c9209b074cf82e5a3f0a322ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> constructor with a GAT device name.  <a href="#a835c884c9209b074cf82e5a3f0a322ec">More...</a><br/></td></tr>
-<tr class="separator:a835c884c9209b074cf82e5a3f0a322ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae13b4a846b0b4c7271d6b997a3d096"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a2ae13b4a846b0b4c7271d6b997a3d096">bleSerial</a> (LPCTSTR deviceName=DEF_BLE_DEVICENAME, size_t tx_fifo_size=DEF_BLE_FIFO_SIZE, size_t rx_fifo_size=DEF_BLE_FIFO_SIZE)</td></tr>
+<tr class="memdesc:a2ae13b4a846b0b4c7271d6b997a3d096"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> constructor with a GAT device name.  <a href="#a2ae13b4a846b0b4c7271d6b997a3d096">More...</a><br/></td></tr>
+<tr class="separator:a2ae13b4a846b0b4c7271d6b997a3d096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89416931d4a4f7500f59fa4c98eb6fd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#a89416931d4a4f7500f59fa4c98eb6fd1">advertising</a> (uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint32_t manufactureData=DEF_BLE_MFG_DATA)</td></tr>
 <tr class="separator:a89416931d4a4f7500f59fa4c98eb6fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d7db801a626adfa9c637397999e0d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/classble_serial.html#ad9d7db801a626adfa9c637397999e0d9">setup</a> (uint16_t advInterval, int8_t txPowerLevel=DEF_BLE_TXPOWER, uint16_t connInterval=DEF_BLE_CONN_INTERVAL, uint16_t connTimeout=DEF_BLE_CONN_TIMEOUT, uint32_t manufactureData=DEF_BLE_MFG_DATA)</td></tr>
@@ -234,8 +234,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa291909bc3ff7cc0decf46c885a7a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0f0727be4714cef1e24150a869d403"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive</a> ()</td></tr>
 <tr class="separator:a4a0f0727be4714cef1e24150a869d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15041136818470124d097d790d55a6e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#a15041136818470124d097d790d55a6e5">kill</a> ()</td></tr>
-<tr class="separator:a15041136818470124d097d790d55a6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2513fd0fcad30e2e6605609c91f1984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread</a> ()</td></tr>
 <tr class="separator:ab2513fd0fcad30e2e6605609c91f1984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -261,7 +259,7 @@ Protected Member Functions</h2></td></tr>
  2.The <a class="el" href="../../d7/d03/classble_serial.html" title="bleSerial class is a ble core, and inherits from CStream class to provide the stream virtual function...">bleSerial</a> will become to a Weakup Source for Power Save Features. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html#_a17">/ble/ble_heartrate/src/main.cpp</a>, and <a class="el" href="../../d5/df3/_2ble_2ble_multiple_2src_2main_8cpp-example.html#_a6">/ble/ble_multiple/src/main.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a835c884c9209b074cf82e5a3f0a322ec"></a>
+<a class="anchor" id="a2ae13b4a846b0b4c7271d6b997a3d096"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -269,8 +267,24 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">bleSerial::bleSerial </td>
           <td>(</td>
           <td class="paramtype">LPCTSTR&#160;</td>
-          <td class="paramname"><em>deviceName</em> = <code>DEF_BLE_DEVICENAME</code></td><td>)</td>
+          <td class="paramname"><em>deviceName</em> = <code>DEF_BLE_DEVICENAME</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tx_fifo_size</em> = <code>DEF_BLE_FIFO_SIZE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>rx_fifo_size</em> = <code>DEF_BLE_FIFO_SIZE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -348,7 +362,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section remark"><dt>Remarks</dt><dd>advertising(...) have to call before the <a class="el" href="../../d7/d03/classble_serial.html#a3ff1e4b271a7d225e73abd337043d8e4">enable()</a> member. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The connection interval must be between 8 ms and 4 s. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec" title="bleSerial constructor with a GAT device name. ">bleSerial()</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d7/d03/classble_serial.html#a2ae13b4a846b0b4c7271d6b997a3d096" title="bleSerial constructor with a GAT device name. ">bleSerial()</a> </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/df3/_2ble_2ble_multiple_2src_2main_8cpp-example.html#a22">/ble/ble_multiple/src/main.cpp</a>.</dd>
 </dl>
 </div>
@@ -659,6 +673,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>isAlive is to check the thread is in alive (for run-loop) </p>
+<dl class="section return"><dt>Returns</dt><dd>false if the thread is deleted. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d70/_2ble_2ble_heartrate_2src_2main_8cpp-example.html#a9">/ble/ble_heartrate/src/main.cpp</a>, <a class="el" href="../../db/de1/_2misc_2garbage_collector_2src_2main_8cpp-example.html#a4">/misc/garbage_collector/src/main.cpp</a>, and <a class="el" href="../../da/da9/_2rtos_2blink_thread_2src_2main_8cpp-example.html#a4">/rtos/blink_thread/src/main.cpp</a>.</dd>
 </dl>
 </div>
@@ -793,30 +808,6 @@ Protected Member Functions</h2></td></tr>
 <p><a class="el" href="../../d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984">isThread()</a>, check the class is inherited from <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a> </p>
 
 <p>Reimplemented from <a class="el" href="../../dc/dac/class_c_object.html#a26a76c241a4d62d2efdac57d2cfe4c0f">CObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a15041136818470124d097d790d55a6e5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void CThread::kill </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>kill the thread and the <a class="el" href="../../d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403">isAlive()</a> will return false </p>
 
 </div>
 </div>
@@ -1677,7 +1668,7 @@ Protected Member Functions</h2></td></tr>
 <p>Call the member function to start the thread. </p>
 <dl class="section note"><dt>Note</dt><dd>the <a class="el" href="../../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec">start()</a> is an overload member function of <a class="el" href="../../d0/d26/class_c_thread.html">CThread</a>. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d4/d37/class_c_debug.html#a40d1b7f50b76311b3a7fb148e5b7e2ea">CDebug</a>, and <a class="el" href="../../de/dba/class_c_shell.html#a670f66f552494dfce94ee297ae0f659a">CShell</a>.</p>
+<p>Reimplemented in <a class="el" href="../../de/dba/class_c_shell.html#a670f66f552494dfce94ee297ae0f659a">CShell</a>.</p>
 
 </div>
 </div>
@@ -1932,7 +1923,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d03/classble_serial.html">bleSerial</a></li>
-    <li class="footer">Generated on Sat Aug 9 2014 16:06:43 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Aug 18 2014 09:46:51 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

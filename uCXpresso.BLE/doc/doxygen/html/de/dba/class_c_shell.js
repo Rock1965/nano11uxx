@@ -13,7 +13,6 @@ var class_c_shell =
     [ "isDebugMode", "de/dba/class_c_shell.html#ae0f6cb34ee627c44b1690d16d76d628f", null ],
     [ "isSuspend", "de/dba/class_c_shell.html#a51dbe9909ce528b4113d2cc27314e965", null ],
     [ "isThread", "de/dba/class_c_shell.html#ab2513fd0fcad30e2e6605609c91f1984", null ],
-    [ "kill", "de/dba/class_c_shell.html#a15041136818470124d097d790d55a6e5", null ],
     [ "onClose", "de/dba/class_c_shell.html#a27a37bf5a22eaba1426655409decc188", null ],
     [ "onDebug", "de/dba/class_c_shell.html#a74d294faaebd969b295366f4a861cf02", null ],
     [ "onQuery", "de/dba/class_c_shell.html#a16e1dae0dedda35c0be64d1c8f40e6b4", null ],

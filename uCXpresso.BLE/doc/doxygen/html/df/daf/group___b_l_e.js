@@ -63,7 +63,7 @@ var group___b_l_e =
       [ "send", "df/d25/classble_r_s_c.html#a35052bc0a12456f6f53f9ec4e17fa4c7", null ]
     ] ],
     [ "bleSerial", "d7/d03/classble_serial.html", [
-      [ "bleSerial", "d7/d03/classble_serial.html#a835c884c9209b074cf82e5a3f0a322ec", null ],
+      [ "bleSerial", "d7/d03/classble_serial.html#a2ae13b4a846b0b4c7271d6b997a3d096", null ],
       [ "advertising", "d7/d03/classble_serial.html#a89416931d4a4f7500f59fa4c98eb6fd1", null ],
       [ "available", "d7/d03/classble_serial.html#afdbf8d786e4aac9b06afe3447427a2ae", null ],
       [ "disable", "d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4", null ],
@@ -83,7 +83,6 @@ var group___b_l_e =
       [ "isSuspend", "d7/d03/classble_serial.html#a51dbe9909ce528b4113d2cc27314e965", null ],
       [ "isThread", "d7/d03/classble_serial.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
       [ "isThread", "d7/d03/classble_serial.html#ab2513fd0fcad30e2e6605609c91f1984", null ],
-      [ "kill", "d7/d03/classble_serial.html#a15041136818470124d097d790d55a6e5", null ],
       [ "onConnected", "d7/d03/classble_serial.html#adb930ce55295ff7eb6ab5bdbeb702749", null ],
       [ "onDisconnected", "d7/d03/classble_serial.html#aa6f5116c8bcf05011a05ad5e2967c318", null ],
       [ "onError", "d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4", null ],

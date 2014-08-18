@@ -84,7 +84,6 @@ var group___r_t_o_s =
       [ "isAlive", "d0/d26/class_c_thread.html#a4a0f0727be4714cef1e24150a869d403", null ],
       [ "isSuspend", "d0/d26/class_c_thread.html#a51dbe9909ce528b4113d2cc27314e965", null ],
       [ "isThread", "d0/d26/class_c_thread.html#ab2513fd0fcad30e2e6605609c91f1984", null ],
-      [ "kill", "d0/d26/class_c_thread.html#a15041136818470124d097d790d55a6e5", null ],
       [ "resume", "d0/d26/class_c_thread.html#ac8c53aa8c145fc4ac70fa6d825b95742", null ],
       [ "resumeAll", "d0/d26/class_c_thread.html#a743d4325b7e7da494283f3292773ff77", null ],
       [ "run", "d0/d26/class_c_thread.html#a071c3d3b3c19a7bd6a01aca073a9b4d7", null ],
