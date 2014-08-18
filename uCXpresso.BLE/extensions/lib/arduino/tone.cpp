@@ -144,7 +144,7 @@ bool tone(PIN_NAME_T pin, uint32_t frequency, uint32_t duration, uint16_t count)
 void noTone(PIN_NAME_T pin) {
 	CTone *tone = find(pin);
 	if ( tone ) {
-		tone->kill();
+		delete tone;
 	}
 }
 
