@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : pinint.h
  Author      : uCXpresso
- Version     : v1.0.0
- Date		 : 2014/1/1
+ Version     : v1.0.1
+ Date		 : 2014/8/21
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : Pin Interrupt Class
  ===============================================================================
@@ -12,6 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
+ 2014/8/21	v1.0.1	Add clear() member to clear pending interrupt.	Jason
  ===============================================================================
  */
 
@@ -59,6 +60,10 @@ public:
 	/**disable the interrupt object
 	 */
 	virtual void disable();
+
+	/**Clear pending interrupt
+	 */
+	virtual void clear();
 
 	/**Waiting for interrupt active
 	 * \param tm is a waiting timeout and unit in millisecond.
