@@ -12,7 +12,7 @@
  DATE     |	VERSION |	DESCRIPTIONS							 |	By
  ---------+---------+--------------------------------------------+-------------
  2014/1/1	v1.0.0	First Edition for nano11Uxx						Jason
- 2014/8/21	v1.0.1	Add clear() member to clear pending interrupt.	Jason
+ 2014/8/21	v1.0.1	Add clear/status member functions.				Jason
  ===============================================================================
  */
 
@@ -60,6 +60,11 @@ public:
 	/**disable the interrupt object
 	 */
 	virtual void disable();
+
+	/**Return the interrupt status,
+	 * \return ture, if an interrupt in pending.
+	 */
+	virtual bool status();
 
 	/**Clear pending interrupt
 	 */
