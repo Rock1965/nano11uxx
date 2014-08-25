@@ -2,7 +2,7 @@
  ===============================================================================
  Name        : stream.h
  Author      : uCXpresso
- Version     : v1.0.1
+ Version     : v1.0.2
  Date		 : 2014/8/4
  Description : Stream Base Class
  ===============================================================================
@@ -12,6 +12,7 @@
  ---------+---------+--------------------------------------------+-------------
  2014/8/1	v1.0.0	First Edition									Jason
  2014/8/4	v1.0.1	Add parseHex() member function.					Jason
+ 2014/8/22	v1.0.2	Add waitTxEmpty() member function.				Jason
  ===============================================================================
  */
 
@@ -149,6 +150,12 @@ public:
 		return *this;
 	}
 
+	/**Wait for Tx buffer empty.
+	 * \param timeout	set the block timeout in millisecond.
+	 * \return true, if transmit buffer is empty. false, if timeout.
+	 */
+	virtual bool waitTxEmpty(uint32_t timeout=500);
+
 	//
 	// for Arduino User (refer from Arduino.CC)
 	//
@@ -158,6 +165,7 @@ public:
 	inline int available() {
 		return readable();
 	}
+
 
 	/**Arduino parseInt() member for serial class
 	 * \brief returns the first valid (long) integer value from the current position.

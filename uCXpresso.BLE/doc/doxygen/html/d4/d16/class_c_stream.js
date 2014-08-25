@@ -17,6 +17,7 @@ var class_c_stream =
     [ "read", "d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
     [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
     [ "readable", "d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4", null ],
+    [ "waitTxEmpty", "d4/d16/class_c_stream.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
     [ "write", "d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860", null ],
     [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
     [ "writeable", "d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5", null ]

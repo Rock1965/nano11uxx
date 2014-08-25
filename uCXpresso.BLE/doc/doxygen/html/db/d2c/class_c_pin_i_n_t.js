@@ -4,6 +4,7 @@ var class_c_pin_i_n_t =
     [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html#a48e6afdca1e70de51e292d1d3c4bafc5", null ],
     [ "asWeakupSource", "db/d2c/class_c_pin_i_n_t.html#ae30634b8f9107d2ce4b6c3a52aeb380a", null ],
     [ "begin", "db/d2c/class_c_pin_i_n_t.html#a811526191ebf7ba17f0f51dea004d37b", null ],
+    [ "clear", "db/d2c/class_c_pin_i_n_t.html#a772e196c68a5da53ac5a894da5ea6fbf", null ],
     [ "disable", "db/d2c/class_c_pin_i_n_t.html#a08521d6d6892b7a80452bfce7db03e2b", null ],
     [ "enable", "db/d2c/class_c_pin_i_n_t.html#a36d2301b10290741be6d3dd86dbc534b", null ],
     [ "end", "db/d2c/class_c_pin_i_n_t.html#a9f65ac4a7485b63e46b232f8d7ab385f", null ],
@@ -19,6 +20,7 @@ var class_c_pin_i_n_t =
     [ "read", "db/d2c/class_c_pin_i_n_t.html#a02060b0c9bbf0f75dead7bef1c75ce6b", null ],
     [ "release", "db/d2c/class_c_pin_i_n_t.html#abe0ce7ac090423e11d460e75c8838128", null ],
     [ "reset", "db/d2c/class_c_pin_i_n_t.html#a60df7e76cce70eee426fac5d166a4124", null ],
+    [ "status", "db/d2c/class_c_pin_i_n_t.html#a1806de7f83e1a3be9a9e5e1a1e18a3af", null ],
     [ "wait", "db/d2c/class_c_pin_i_n_t.html#a45e9fb4b6e6300e4c1c2ed6c13cfc062", null ],
     [ "write", "db/d2c/class_c_pin_i_n_t.html#a1fc3486f4afea4de56ae677c20600551", null ]
 ];

@@ -7,7 +7,7 @@ var searchData=
   ['chklength',['chkLength',['../df/d99/class_c_string.html#a5f5361665c7568d502d058992b14c016',1,'CString']]],
   ['ci2c',['CI2C',['../d0/dce/class_c_i2_c.html',1,'']]],
   ['ci2cmaster',['CI2CMaster',['../d7/db9/class_c_i2_c_master.html',1,'']]],
-  ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
+  ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../db/d2c/class_c_pin_i_n_t.html#a772e196c68a5da53ac5a894da5ea6fbf',1,'CPinINT::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
   ['clist',['CList',['../df/db6/class_c_list.html',1,'']]],
   ['clistt',['CListT',['../da/d59/class_c_list_t.html',1,'']]],
   ['clone',['clone',['../d4/ddd/classgc_handle_t.html#adea057fa184e0afd46abc0b6e9d4b762',1,'gcHandleT::clone()'],['../df/d99/class_c_string.html#aeebb301ee8968688fd6ea8029a95ce9c',1,'CString::clone()']]],

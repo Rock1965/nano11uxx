@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.7</span>
+   &#160;<span id="projectnumber">v1.0.8</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -196,6 +196,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbaa22d4608c1a015a20104fde6c8ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc833c2eea18af67b57ba641ec58fea7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#acc833c2eea18af67b57ba641ec58fea7">operator char</a> ()</td></tr>
 <tr class="separator:acc833c2eea18af67b57ba641ec58fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6259540dbdf87dffc659b44e2ea80e36"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#a6259540dbdf87dffc659b44e2ea80e36">waitTxEmpty</a> (uint32_t timeout=500)</td></tr>
+<tr class="separator:a6259540dbdf87dffc659b44e2ea80e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdbf8d786e4aac9b06afe3447427a2ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#afdbf8d786e4aac9b06afe3447427a2ae">available</a> ()</td></tr>
 <tr class="separator:afdbf8d786e4aac9b06afe3447427a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af60d539c037589ae50b495fe213dda0b"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d16/class_c_stream.html#af60d539c037589ae50b495fe213dda0b">parseInt</a> (bool echo=false)</td></tr>
@@ -1758,6 +1760,38 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6259540dbdf87dffc659b44e2ea80e36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CStream::waitTxEmpty </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>500</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wait for Tx buffer empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>set the block timeout in millisecond. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if transmit buffer is empty. false, if timeout. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a012d20295fb8f48433c7e5b00760e266"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1923,7 +1957,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d03/classble_serial.html">bleSerial</a></li>
-    <li class="footer">Generated on Mon Aug 18 2014 09:46:51 for uCXpresso.BLE by
+    <li class="footer">Generated on Mon Aug 25 2014 16:48:49 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -25,6 +25,7 @@ var classusb_c_d_c =
     [ "read", "d6/dc5/classusb_c_d_c.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
     [ "read", "d6/dc5/classusb_c_d_c.html#af56764abe8954430eede10e253f8994f", null ],
     [ "readable", "d6/dc5/classusb_c_d_c.html#a96328807241e15017868b845b06fd9e4", null ],
+    [ "waitTxEmpty", "d6/dc5/classusb_c_d_c.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
     [ "write", "d6/dc5/classusb_c_d_c.html#ac8d31702e9e03eb0856583ba16764860", null ],
     [ "write", "d6/dc5/classusb_c_d_c.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
     [ "writeable", "d6/dc5/classusb_c_d_c.html#a56ec27ee664f1a4eb9910988b78833d5", null ]

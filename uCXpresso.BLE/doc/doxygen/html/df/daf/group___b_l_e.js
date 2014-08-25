@@ -111,6 +111,7 @@ var group___b_l_e =
       [ "suspend", "d7/d03/classble_serial.html#a53e71e6db2221cd1c45aec21953d4aad", null ],
       [ "suspendAll", "d7/d03/classble_serial.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
       [ "wait", "d7/d03/classble_serial.html#a224a4403bd5690b5e818dc79da85d2ef", null ],
+      [ "waitTxEmpty", "d7/d03/classble_serial.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
       [ "wakeup", "d7/d03/classble_serial.html#a012d20295fb8f48433c7e5b00760e266", null ],
       [ "watchdog", "d7/d03/classble_serial.html#a2588b21bf80d35a866dc7e47f97142df", null ],
       [ "write", "d7/d03/classble_serial.html#ac8d31702e9e03eb0856583ba16764860", null ],

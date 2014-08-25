@@ -21,9 +21,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d6/d1c/class_c_shift.html#a2ecc1b524768840afc82a5351b1031cb",
-"d9/d9b/class_c_spi_master.html#a5009ac7cc08bcf2b1d1be19b320424e6",
-"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a64705286435d5114a76f86a968ef8792"
+"d6/d1c/class_c_shift.html#a26a76c241a4d62d2efdac57d2cfe4c0f",
+"d9/d9b/class_c_spi_master.html#a26a76c241a4d62d2efdac57d2cfe4c0f",
+"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1fdcee481a470c70530db784d721d226"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

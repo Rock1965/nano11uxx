@@ -60,6 +60,7 @@ var searchData=
   ['spi_5frole_5ft',['SPI_ROLE_T',['../db/dff/group___enumerations.html#ga422c6f9cdd9566ccf18ef0b43bcbc654',1,'spi.h']]],
   ['spi_5fslave',['SPI_SLAVE',['../db/dff/group___enumerations.html#gga422c6f9cdd9566ccf18ef0b43bcbc654abc98c1546fe12d3fceb1f86cf670faa9',1,'spi.h']]],
   ['start',['start',['../de/dba/class_c_shell.html#a670f66f552494dfce94ee297ae0f659a',1,'CShell::start()'],['../d0/d26/class_c_thread.html#a3ebabcc071634508511ae2fc7b868ab7',1,'CThread::start(const char *name, int stack=DEF_THREAD_STACK, PRIORITIES_T priority=PRI_LOW)'],['../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec',1,'CThread::start()'],['../d4/d37/class_c_debug.html#aa79f7a4c6b55229f360a0db7e2767ca4',1,'CDebug::start()']]],
+  ['status',['status',['../db/d2c/class_c_pin_i_n_t.html#a1806de7f83e1a3be9a9e5e1a1e18a3af',1,'CPinINT']]],
   ['supportcontact',['supportContact',['../d3/d81/classble_heart_rate.html#acd5a0148a2df6692893a274a18710431',1,'bleHeartRate']]],
   ['suspend',['suspend',['../d0/d26/class_c_thread.html#a53e71e6db2221cd1c45aec21953d4aad',1,'CThread']]],
   ['suspendall',['suspendAll',['../d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a',1,'CThread']]],

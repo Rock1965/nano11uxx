@@ -47,6 +47,7 @@ var class_c_serial =
     [ "read", "d8/d1d/class_c_serial.html#af56764abe8954430eede10e253f8994f", null ],
     [ "readable", "d8/d1d/class_c_serial.html#a96328807241e15017868b845b06fd9e4", null ],
     [ "settings", "d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233", null ],
+    [ "waitTxEmpty", "d8/d1d/class_c_serial.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
     [ "write", "d8/d1d/class_c_serial.html#ac8d31702e9e03eb0856583ba16764860", null ],
     [ "write", "d8/d1d/class_c_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
     [ "writeable", "d8/d1d/class_c_serial.html#a56ec27ee664f1a4eb9910988b78833d5", null ]

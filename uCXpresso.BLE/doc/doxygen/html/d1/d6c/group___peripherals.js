@@ -87,6 +87,7 @@ var group___peripherals =
       [ "CPinINT", "db/d2c/class_c_pin_i_n_t.html#a48e6afdca1e70de51e292d1d3c4bafc5", null ],
       [ "asWeakupSource", "db/d2c/class_c_pin_i_n_t.html#ae30634b8f9107d2ce4b6c3a52aeb380a", null ],
       [ "begin", "db/d2c/class_c_pin_i_n_t.html#a811526191ebf7ba17f0f51dea004d37b", null ],
+      [ "clear", "db/d2c/class_c_pin_i_n_t.html#a772e196c68a5da53ac5a894da5ea6fbf", null ],
       [ "disable", "db/d2c/class_c_pin_i_n_t.html#a08521d6d6892b7a80452bfce7db03e2b", null ],
       [ "enable", "db/d2c/class_c_pin_i_n_t.html#a36d2301b10290741be6d3dd86dbc534b", null ],
       [ "end", "db/d2c/class_c_pin_i_n_t.html#a9f65ac4a7485b63e46b232f8d7ab385f", null ],
@@ -102,6 +103,7 @@ var group___peripherals =
       [ "read", "db/d2c/class_c_pin_i_n_t.html#a02060b0c9bbf0f75dead7bef1c75ce6b", null ],
       [ "release", "db/d2c/class_c_pin_i_n_t.html#abe0ce7ac090423e11d460e75c8838128", null ],
       [ "reset", "db/d2c/class_c_pin_i_n_t.html#a60df7e76cce70eee426fac5d166a4124", null ],
+      [ "status", "db/d2c/class_c_pin_i_n_t.html#a1806de7f83e1a3be9a9e5e1a1e18a3af", null ],
       [ "wait", "db/d2c/class_c_pin_i_n_t.html#a45e9fb4b6e6300e4c1c2ed6c13cfc062", null ],
       [ "write", "db/d2c/class_c_pin_i_n_t.html#a1fc3486f4afea4de56ae677c20600551", null ]
     ] ],
@@ -174,6 +176,7 @@ var group___peripherals =
       [ "read", "d8/d1d/class_c_serial.html#af56764abe8954430eede10e253f8994f", null ],
       [ "readable", "d8/d1d/class_c_serial.html#a96328807241e15017868b845b06fd9e4", null ],
       [ "settings", "d8/d1d/class_c_serial.html#a0c80ea521e310305579e787f21a55233", null ],
+      [ "waitTxEmpty", "d8/d1d/class_c_serial.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
       [ "write", "d8/d1d/class_c_serial.html#ac8d31702e9e03eb0856583ba16764860", null ],
       [ "write", "d8/d1d/class_c_serial.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
       [ "writeable", "d8/d1d/class_c_serial.html#a56ec27ee664f1a4eb9910988b78833d5", null ]
@@ -248,6 +251,7 @@ var group___peripherals =
       [ "read", "d4/d16/class_c_stream.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
       [ "read", "d4/d16/class_c_stream.html#af56764abe8954430eede10e253f8994f", null ],
       [ "readable", "d4/d16/class_c_stream.html#a96328807241e15017868b845b06fd9e4", null ],
+      [ "waitTxEmpty", "d4/d16/class_c_stream.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
       [ "write", "d4/d16/class_c_stream.html#ac8d31702e9e03eb0856583ba16764860", null ],
       [ "write", "d4/d16/class_c_stream.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
       [ "writeable", "d4/d16/class_c_stream.html#a56ec27ee664f1a4eb9910988b78833d5", null ]
@@ -290,6 +294,7 @@ var group___peripherals =
       [ "read", "d6/dc5/classusb_c_d_c.html#a5c5870bec2c7c5f6be1e59c83d555d38", null ],
       [ "read", "d6/dc5/classusb_c_d_c.html#af56764abe8954430eede10e253f8994f", null ],
       [ "readable", "d6/dc5/classusb_c_d_c.html#a96328807241e15017868b845b06fd9e4", null ],
+      [ "waitTxEmpty", "d6/dc5/classusb_c_d_c.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
       [ "write", "d6/dc5/classusb_c_d_c.html#ac8d31702e9e03eb0856583ba16764860", null ],
       [ "write", "d6/dc5/classusb_c_d_c.html#a48041fea5cad32feaeef543bcaa2d37d", null ],
       [ "writeable", "d6/dc5/classusb_c_d_c.html#a56ec27ee664f1a4eb9910988b78833d5", null ]
