@@ -95,24 +95,26 @@ int main(void) {
 		// Scan I2C Device
 		//
 #ifdef DEBUG
-		switch( dbg.isAnyKey() ) {
-		case 't':
-		case 'T':
-			DBG("Start I2C Scanner:\n");
-			devAddr = 1;	// set address =1 to start the scnner.
-			break;
-		}
-
-		//
-		// start to scan when devAddr >0 with timeout 200ms
-		//
-		if ( devAddr ) {
-			if ( i2c.readByte(devAddr, 0, &data)==I2C_OK ) {
-				DBG("I2C device found at address 0x%02X\n", devAddr);
+		if ( dbg.isDebugMode() ) {
+			switch( dbg.read() ) {
+			case 't':
+			case 'T':
+				DBG("Start I2C Scanner:\n");
+				devAddr = 1;	// set address =1 to start the scnner.
+				break;
 			}
-			devAddr = (devAddr+1)<127 ? devAddr+1 : 0;
-			if (devAddr==0 ) {
-				DBG("Stop I2C Scanner.\n");
+
+			//
+			// start to scan when devAddr >0 with timeout 200ms
+			//
+			if ( devAddr ) {
+				if ( i2c.readByte(devAddr, 0, &data)==I2C_OK ) {
+					DBG("I2C device found at address 0x%02X\n", devAddr);
+				}
+				devAddr = (devAddr+1)<127 ? devAddr+1 : 0;
+				if (devAddr==0 ) {
+					DBG("Stop I2C Scanner.\n");
+				}
 			}
 		}
 #endif
