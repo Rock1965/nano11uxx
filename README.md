@@ -2,6 +2,12 @@ nano11Uxx (LPC11U3x + nRF BLE)
 ===============================
 uCXpresso.BLE C/C++ RTOS Framework for Bluetooth Low Energy
 
+v1.1.0 rc0 27th September 2014
+--------------------------------
+###Features: (Beta)
+	1. RTOS update to v8.1.2.
+	2. Improve the watchdog of BLE. 
+
 v1.0.8a released 26th August 2014
 --------------------------------
 ###Features:
