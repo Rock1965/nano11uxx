@@ -293,6 +293,7 @@ public:
 	/*! \cond PRIVATE */
 	virtual ~bleSerial();
 			void reset();
+			uint16_t status();
 
 	virtual void onRecv(uint8_t *buf, int len);
 	virtual void onSend(bool fromISR);
@@ -303,6 +304,7 @@ public:
 	virtual void onDataCreditHook();
 	virtual void onAckTimeout();
 	virtual bool isReadyForNotify();
+
 
 	virtual bool isActiveMode();
 	virtual void inActiveMode(bool enable);
