@@ -191,7 +191,7 @@ public:
 	 * \param reason is a BLE_DISCONNECT_REASON_T enumeration.
 	 * \return true if disconnect successful, otherwise, disconnect failed.
 	 */
-	bool	disconnect(BLE_DISCONNECT_REASON_T reason=BLE_TERMINATED);
+	bool	disconnect(BLE_DISCONNECT_REASON_T reason=BLE_TERMINATED, bool internal=false);
 
 	/**Set the ouptut power level of the Bluetooth Low Energy radio.
 	 * \param power is a BLE_TX_POWER_T enumeration.
@@ -305,7 +305,6 @@ public:
 	virtual void onAckTimeout();
 	virtual bool isReadyForNotify();
 
-
 	virtual bool isActiveMode();
 	virtual void inActiveMode(bool enable);
 
@@ -336,6 +335,7 @@ protected:
 
 protected:
 	void releaseAll();
+	bool waitForResponse();
 	CMutex			m_mxSender;
 	CSemaphore		m_semResponse;
 	CSemaphore		m_semTransaction;
