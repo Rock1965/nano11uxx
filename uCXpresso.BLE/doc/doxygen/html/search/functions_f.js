@@ -27,7 +27,7 @@ var searchData=
   ['show_5ftask',['show_task',['../de/dba/class_c_shell.html#ac9f0aa22624f3168256f6b6c851ec885',1,'CShell']]],
   ['show_5fversion',['show_version',['../de/dba/class_c_shell.html#a4aed8c6a1e01a50595d9e8da8d1f88b2',1,'CShell']]],
   ['show_5fwelcome',['show_welcome',['../de/dba/class_c_shell.html#a34dfa6d370ce6fb517e1307d38a4982b',1,'CShell']]],
-  ['sleep',['sleep',['../d7/d03/classble_serial.html#a9f60452e47fe4ecf98539bf14cd9b34c',1,'bleSerial']]],
+  ['sleep',['sleep',['../d7/d03/classble_serial.html#a72bb43831f45b046cca525c3d030e161',1,'bleSerial']]],
   ['start',['start',['../de/dba/class_c_shell.html#a670f66f552494dfce94ee297ae0f659a',1,'CShell::start()'],['../d0/d26/class_c_thread.html#a3ebabcc071634508511ae2fc7b868ab7',1,'CThread::start(const char *name, int stack=DEF_THREAD_STACK, PRIORITIES_T priority=PRI_LOW)'],['../d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec',1,'CThread::start()'],['../d4/d37/class_c_debug.html#aa79f7a4c6b55229f360a0db7e2767ca4',1,'CDebug::start()']]],
   ['status',['status',['../db/d2c/class_c_pin_i_n_t.html#a1806de7f83e1a3be9a9e5e1a1e18a3af',1,'CPinINT']]],
   ['supportcontact',['supportContact',['../d3/d81/classble_heart_rate.html#acd5a0148a2df6692893a274a18710431',1,'bleHeartRate']]],

@@ -6,5 +6,6 @@ var searchData=
   ['timer1',['TIMER1',['../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6',1,'timer.h']]],
   ['timer_5fbusy',['TIMER_BUSY',['../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1',1,'timer.h']]],
   ['timer_5ft',['TIMER_T',['../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3',1,'timer.h']]],
-  ['trylock',['tryLock',['../d3/d0d/class_c_mutex.html#adb89cb4258a492458db9fb614c1681a9',1,'CMutex']]]
+  ['trylock',['tryLock',['../d3/d0d/class_c_mutex.html#adb89cb4258a492458db9fb614c1681a9',1,'CMutex']]],
+  ['txdflowcontrol',['txdFlowControl',['../d7/d03/classble_serial.html#ab7dcd90a0d960a364404305c0e38ffd9',1,'bleSerial']]]
 ];

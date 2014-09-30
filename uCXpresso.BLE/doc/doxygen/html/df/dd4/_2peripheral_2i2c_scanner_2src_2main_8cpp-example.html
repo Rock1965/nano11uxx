@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../upnp.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">uCXpresso.BLE
-   &#160;<span id="projectnumber">v1.0.8</span>
+   &#160;<span id="projectnumber">v1.1.0</span>
    </div>
    <div id="projectbrief">RTOS C++ Framework for Bluetooth Low Energy</div>
   </td>
@@ -200,24 +200,26 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <div class="line">        <span class="comment">// Scan I2C Device</span></div>
 <div class="line">        <span class="comment">//</span></div>
 <div class="line"><span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">switch</span>( dbg.isAnyKey() ) {</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>:</div>
-<div class="line">            DBG(<span class="stringliteral">&quot;Start I2C Scanner:\n&quot;</span>);</div>
-<div class="line">            devAddr = 1;    <span class="comment">// set address =1 to start the scnner.</span></div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">//</span></div>
-<div class="line">        <span class="comment">// start to scan when devAddr &gt;0 with timeout 200ms</span></div>
-<div class="line">        <span class="comment">//</span></div>
-<div class="line">        <span class="keywordflow">if</span> ( devAddr ) {</div>
-<div class="line">            <span class="keywordflow">if</span> ( i2c.<a name="a13"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html#a748148275878f4899f2b3f588e823e0b">readByte</a>(devAddr, 0, &amp;data)==<a name="a14"></a><a class="code" href="../../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a">I2C_OK</a> ) {</div>
-<div class="line">                DBG(<span class="stringliteral">&quot;I2C device found at address 0x%02X\n&quot;</span>, devAddr);</div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">if</span> ( dbg.isDebugMode() ) {</div>
+<div class="line">            <span class="keywordflow">switch</span>( dbg.read() ) {</div>
+<div class="line">            <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line">            <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>:</div>
+<div class="line">                DBG(<span class="stringliteral">&quot;Start I2C Scanner:\n&quot;</span>);</div>
+<div class="line">                devAddr = 1;    <span class="comment">// set address =1 to start the scnner.</span></div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">            }</div>
-<div class="line">            devAddr = (devAddr+1)&lt;127 ? devAddr+1 : 0;</div>
-<div class="line">            <span class="keywordflow">if</span> (devAddr==0 ) {</div>
-<div class="line">                DBG(<span class="stringliteral">&quot;Stop I2C Scanner.\n&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">//</span></div>
+<div class="line">            <span class="comment">// start to scan when devAddr &gt;0 with timeout 200ms</span></div>
+<div class="line">            <span class="comment">//</span></div>
+<div class="line">            <span class="keywordflow">if</span> ( devAddr ) {</div>
+<div class="line">                <span class="keywordflow">if</span> ( i2c.<a name="a13"></a><a class="code" href="../../d7/db9/class_c_i2_c_master.html#a748148275878f4899f2b3f588e823e0b">readByte</a>(devAddr, 0, &amp;data)==<a name="a14"></a><a class="code" href="../../db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a">I2C_OK</a> ) {</div>
+<div class="line">                    DBG(<span class="stringliteral">&quot;I2C device found at address 0x%02X\n&quot;</span>, devAddr);</div>
+<div class="line">                }</div>
+<div class="line">                devAddr = (devAddr+1)&lt;127 ? devAddr+1 : 0;</div>
+<div class="line">                <span class="keywordflow">if</span> (devAddr==0 ) {</div>
+<div class="line">                    DBG(<span class="stringliteral">&quot;Stop I2C Scanner.\n&quot;</span>);</div>
+<div class="line">                }</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -246,7 +248,7 @@ $(document).ready(function(){initNavTree('df/dd4/_2peripheral_2i2c_scanner_2src_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Aug 25 2014 16:48:49 for uCXpresso.BLE by
+    <li class="footer">Generated on Tue Sep 30 2014 16:30:35 for uCXpresso.BLE by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

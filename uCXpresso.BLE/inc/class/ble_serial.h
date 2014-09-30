@@ -2,8 +2,8 @@
  ===============================================================================
  Name        : ble_serial.h
  Author      : uCXpresso
- Version     : 1.0.16
- Date		 : 2014/7/25
+ Version     : 1.0.19
+ Date		 : 2014/9/30
  Copyright   : Copyright (C) www.embeda.com.tw
  Description : UART (Serial Stream) service for BLE
  ===============================================================================
@@ -34,6 +34,8 @@
  2014/7/23	v1.0.16	Add sleep & weakup member functions.				Jason
  2014/7/25	v1.0.17 Add wait() member to block and wait a BLE event.	Jason
  2014/8/13	v1.0.18	Add Configurable FiFo Size for BLE serial.			Jason
+ 2014/9/30	v1.0.19 Add txdFlowControl member to enable/disable the TXD Jason
+ 	 	 	 	 	Flow-Control.
  ===============================================================================
  */
 

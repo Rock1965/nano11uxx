@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"d9/d9b/class_c_spi_master.html#a24ca202a0494b84a92ff56d10725ce40":[0,3,13,13],
 "d9/d9b/class_c_spi_master.html#a26a76c241a4d62d2efdac57d2cfe4c0f":[0,3,13,9],
 "d9/d9b/class_c_spi_master.html#a272f5e518d21194dbc996f5f5475ae02":[0,3,13,11],
 "d9/d9b/class_c_spi_master.html#a3ce438bee4e3c087e44b3cf2b1690ecd":[0,3,13,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177a8d4a8c183322e67bcce1a4d662618923":[0,1,9,1],
 "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177ac7449bc5b9560aca15fd4e9079737bde":[0,1,9,3],
 "db/dff/group___enumerations.html#ggae2de52b3324336037756b7c011706177aeceba296bdda2b90e8835c431fe7a72a":[0,1,9,6],
-"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a0df5bd143f03fd13eb9473e72e809a65":[0,1,21,8],
-"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a1e09b3d06036c301c246ed91e5d525f3":[0,1,21,11]
+"db/dff/group___enumerations.html#ggae74cec5e96015c8083810d69358f8f08a0df5bd143f03fd13eb9473e72e809a65":[0,1,21,8]
 };
