@@ -237,7 +237,7 @@ int main(void) {
 
 	ble.enable();		// start the ble engine first!!
 	ble.setRadioTxPower(cfg.m_ble.power);
-	ble.watchdog(10);	// set watchdog timeout 10 seconds
+	ble.watchdog(10000);	// set watchdog timeout 10 seconds
 
 #else
 	//

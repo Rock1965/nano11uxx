@@ -169,7 +169,7 @@ public:
 #ifdef DEBUG
 	bool enable(uint32_t stack=190);
 #else
-	bool enable(uint32_t stack=128);
+	bool enable(uint32_t stack=136);
 #endif
 
 	/**The disable member is to suspend the bleSerail task.
@@ -206,15 +206,22 @@ public:
 
 	/**Set BLE core into sleep mode
 	 */
-	virtual void sleep();
+	void sleep();
 
 	/**Weakup BLE core from sleep mode
 	 */
-	virtual void wakeup();
+	void wakeup();
 
 	/**Block & waiting for a BLE event, the task will be blocked until a BLE event arrived.
 	 */
-	virtual bool wait(uint32_t timeout=MAX_DELAY_TIME);
+	bool wait(uint32_t timeout=MAX_DELAY_TIME);
+
+	/**TXD flow control
+	 * \param Set true to enable the TXD flow control, false otherwise.
+	 * \note The TXD flow control default is enabled.
+	 * \warn If enable the TXD flow control, the App have to response ACK for each BLE TXD package from device.
+	 */
+	 void txdFlowControl(bool value);
 
 	//
 	// Events
