@@ -171,7 +171,7 @@ public:
 #ifdef DEBUG
 	bool enable(uint32_t stack=190);
 #else
-	bool enable(uint32_t stack=136);
+	bool enable(uint32_t stack=132);
 #endif
 
 	/**The disable member is to suspend the bleSerail task.
