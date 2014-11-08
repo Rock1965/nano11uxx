@@ -36,6 +36,7 @@
  2014/8/13	v1.0.18	Add Configurable FiFo Size for BLE serial.			Jason
  2014/9/30	v1.0.19 Add txdFlowControl member to enable/disable the TXD Jason
  	 	 	 	 	Flow-Control.
+ 2014/11/8	v2.0.0	Use Nordic UART over BLE service replaced RedBearLab Jason
  ===============================================================================
  */
 
@@ -221,9 +222,9 @@ public:
 	/**TXD flow control
 	 * \param Set true to enable the TXD flow control, false otherwise.
 	 * \note The TXD flow control default is enabled.
-	 * \warn If enable the TXD flow control, the App have to response ACK for each BLE TXD package from device.
+	 * \warning Don't supported in V2.
 	 */
-	 void txdFlowControl(bool value);
+//	 void txdFlowControl(bool value); // Mask in V2
 
 	//
 	// Events
@@ -306,12 +307,12 @@ public:
 
 	virtual void onRecv(uint8_t *buf, int len);
 	virtual void onSend(bool fromISR);
-	virtual void onACK(uint8_t data);
+//	virtual void onACK(uint8_t data);
 
 	virtual void onResponseCommandHook(void *data);
 	virtual void onTransactionFinishedHook();
 	virtual void onDataCreditHook();
-	virtual void onAckTimeout();
+//	virtual void onAckTimeout();		// Mask in V2
 	virtual bool isReadyForNotify();
 
 	virtual bool isActiveMode();
@@ -353,7 +354,7 @@ protected:
 	xHandle			m_event;
 
 private:
-	CTimeout	m_tmACK;
+//	CTimeout	m_tmACK;	// Mask in V2
 	uint32_t	m_tmWatch;
 
 	//
