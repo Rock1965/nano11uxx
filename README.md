@@ -2,7 +2,7 @@ nano11Uxx (LPC11U3x + nRF BLE)
 ===============================
 uCXpresso.BLE C/C++ RTOS Framework for Bluetooth Low Energy
 
-v2.0.0 released 1th October 2014
+v2.0.0 released 8th November 2014
 --------------------------------
 ###Features: 
 	1. Support Nordic UART over BLE profile to replace the RedbearLab UART.
