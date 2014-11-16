@@ -66,6 +66,8 @@
 #define DEF_BLE_CONN_TIMEOUT	3000	// default connection timeout 3sec
 #define DEF_BLE_MFG_DATA		0x123456
 
+#define SUPPORT_BLE_PROXIMITY	0
+
 /**Disconnect a BLE connection with a reason.
  * \ingroup Enumerations
  */
@@ -327,12 +329,10 @@ public:
 	uint16_t m_conTimeout;
 	uint32_t m_mfgData;
 	int8_t	 m_txPowerLevel;
-
-#if 0	// removed from uCXpresso.BLE v1.0.7
+#if SUPPORT_BLE_PROXIMITY
 	virtual void onAlert(uint8_t level);
 	virtual void onLinkLoss(uint8_t level);
 #endif
-
 	/**onHeartRateControl is call by BLE task.
 	 * \param ctrl if 1, resets the value of the Energy Expended field in the Heart Rate Measurement. otherwise reserved.
 	 */
@@ -362,7 +362,9 @@ private:
 	//
 #include "class/ble_battery.h"
 #include "class/ble_ht.h"
-//#include "class/ble_proximity.h"	// removed from uCXpresso.BLE v1.0.7
+#if SUPPORT_BLE_PROXIMITY
+#include "class/ble_proximity.h"	// Add @ V2
+#endif
 #include "class/ble_rsc.h"
 #include "class/ble_csc.h"
 #include "class/ble_heartrate.h"
@@ -370,13 +372,15 @@ private:
 #include "class/ble_test.h"
 friend class bleBatteryLevel;
 friend class bleHealthThermometer;
-//friend class bleProximity;		// removed from uCXpresso.BLE v1.0.7
+friend class bleProximity;		// Add @ V2
 friend class bleRSC;				// Add @ uCXpresso.BLE v1.0.7
 friend class bleCSC;
 friend class bleHeartRate;
 friend class bleDeviceInfo;
 friend class bleTest;
+#if SUPPORT_BLE_PROXIMITY
 	class bleProximity	*m_proximity;
+#endif
 	class bleHeartRate	*m_heartrate;
 
 #undef BLE_BATTERY_H_

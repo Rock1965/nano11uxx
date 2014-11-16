@@ -2,7 +2,7 @@
  ===============================================================================
  Name        : thread.h
  Author      : uCXpresso
- Version     : 1.0.7
+ Version     : 1.1.0
  Date		 : 2014/1/5
  Copyright   : Copyright (C) www.embeda.com.tw
  Description :
@@ -19,6 +19,7 @@
  2013/05/31 v1.0.5  add isAlive() and kill() member functions		 Jason
  2013/07/05	v1.0.6	override the isThread() from CObject		 	 Jason
  2014/1/5	v1.0.7	reduce PRI_HARDWARE value to 4					 Jason
+ 2014/11/15	v1.1.0	Add task_handle to replace the run()			 Jason
   ===============================================================================
  */
 
@@ -62,7 +63,19 @@ typedef enum
  * \ingroup RTOS
  */
 class CThread: virtual public CObject {
+	/**@brief Health Thermometer Service event handler type. */
+	typedef void (*task_handle_t) (CThread * p_thread, xHandle p_param);
+
 public:
+	/**
+	 * @brief CThread constructor.
+	 * @param p_task_handle Pointer to the task function @ref task_handle_t.
+	 * @param p_param		Pointer to the parameter of task function.
+	 *
+	 * @note The run() member will be called when thread start, if task_handle is null. (default)
+	 */
+	CThread(task_handle_t task_handle=NULL, xHandle p_param=NULL);
+
 	/**Call the member function to start the thread.
 	 * \param name is a descriptive name for the task.
 	 * \param stack is a integer value to specified as the number of stack can hold-not the number of bytes.
@@ -223,9 +236,10 @@ protected:
 
 	/*! \cond PRIVATE */
 public:
-	CThread();
 	~CThread();
 	uint32_t	m_flag;
+	task_handle_t	m_task_handle;
+	xHandle			m_p_param;
 
 private:
 	xHandle	 	m_xHandle;

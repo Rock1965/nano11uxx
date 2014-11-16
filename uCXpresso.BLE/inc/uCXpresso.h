@@ -18,10 +18,10 @@ extern "C" {
 /*! \cond PRIVATE */
 #define uCXpresso_VER_MAJOR		2
 #define uCXpresso_VER_MINOR		0
-#define uCXpresso_VER_REV		0
-#define uCXpresso_VER_RC		RELEASED
-#define uCXpresso_VER_BUILD		"2014/11/8"
-#define uCXpresso_VER_STR		"V2.0.0"
+#define uCXpresso_VER_REV		1
+#define uCXpresso_VER_RC		1
+#define uCXpresso_VER_BUILD		"2014/11/15"
+#define uCXpresso_VER_STR		"V2.0.1"
 
 //
 // Device
