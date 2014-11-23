@@ -19,8 +19,8 @@ extern "C" {
 #define uCXpresso_VER_MAJOR		2
 #define uCXpresso_VER_MINOR		0
 #define uCXpresso_VER_REV		1
-#define uCXpresso_VER_RC		1
-#define uCXpresso_VER_BUILD		"2014/11/15"
+#define uCXpresso_VER_RC		2
+#define uCXpresso_VER_BUILD		"2014/11/24"
 #define uCXpresso_VER_STR		"V2.0.1"
 
 //
@@ -175,7 +175,7 @@ extern void *tryMalloc(size_t size);	// try to malloc a memory with
 #define MAX_UINT32			0xffffffff
 #define CRLF				"\r\n"
 #define NO_EFFECT			{}
-
+#define NOTHING
 
 extern const unsigned char _zero_[];
 

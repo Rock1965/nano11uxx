@@ -24,7 +24,6 @@
 #include <class/object.h>
 #include <class/mutex.h>
 
-#define NOTHING					((xHandle) NULL)
 #define GC_FOR_MULTITASKING		1
 
 /**GC Base Class

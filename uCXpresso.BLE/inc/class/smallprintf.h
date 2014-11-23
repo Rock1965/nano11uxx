@@ -16,6 +16,11 @@
 #include <cstdarg>
 #include "class/object.h"
 
+/**
+ * @brief Provides a small size of printf library for MCU base.
+ * @class CSmallPrintf smallprintf.h "class/smallprintf.h"
+ * @ingroup Miscellaneous
+ */
 class CSmallPrintf: public CObject {
 public:
 	CSmallPrintf();
@@ -35,8 +40,8 @@ public:
 //	int scanf(LPCTSTR format, va_list args);
 
 protected:
-	virtual void alloc(int bufsize=256) {}
-	virtual void free() {}
+	virtual void alloc(int bufsize=256) { NOTHING }
+	virtual void free() { NOTHING }
 	int		 m_base;
 	/*! \endcond */
 };
