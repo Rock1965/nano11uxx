@@ -205,6 +205,10 @@ public:
 	 */
 	static void exitCriticalSection();
 
+	/**Suspend current task which call the static member function.
+	 */
+	static void suspendCurrentTask();
+
 protected:
 	/**The run member function is the task main procedure, and callback by RTOS when task start.
 	 *

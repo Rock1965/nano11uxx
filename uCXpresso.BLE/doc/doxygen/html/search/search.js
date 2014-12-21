@@ -11,9 +11,10 @@ var indexSectionsWithContent =
   1: "_bcefgpu",
   2: "abcdefghilmnoprstuw~",
   3: "bcdefmoprtw",
-  4: "abehiprstuv",
-  5: "abdefhilnoprstuv",
-  6: "bempr"
+  4: "t",
+  5: "abehiprstuv",
+  6: "abdefhilnoprstuv",
+  7: "bempr"
 };
 
 var indexSectionNames =
@@ -22,9 +23,10 @@ var indexSectionNames =
   1: "classes",
   2: "functions",
   3: "variables",
-  4: "enums",
-  5: "enumvalues",
-  6: "groups"
+  4: "typedefs",
+  5: "enums",
+  6: "enumvalues",
+  7: "groups"
 };
 
 function convertToId(search)

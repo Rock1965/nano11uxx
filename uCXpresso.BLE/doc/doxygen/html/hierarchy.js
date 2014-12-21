@@ -16,6 +16,7 @@ var hierarchy =
         [ "bleDeviceInfo", "d3/dc5/classble_device_info.html", null ],
         [ "bleHealthThermometer", "d9/d26/classble_health_thermometer.html", null ],
         [ "bleHeartRate", "d3/d81/classble_heart_rate.html", null ],
+        [ "bleProximity", "de/d67/classble_proximity.html", null ],
         [ "bleRSC", "df/d25/classble_r_s_c.html", null ],
         [ "bleTest", "d2/df2/classble_test.html", null ],
         [ "CAdc", "d7/d0f/class_c_adc.html", null ],

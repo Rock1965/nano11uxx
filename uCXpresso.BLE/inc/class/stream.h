@@ -194,7 +194,6 @@ public:
 	 virtual int parseString(LPTSTR buf, size_t size, bool echo=false);
 
 	/// @cond
-	CStream();
 	virtual ~CStream();
 
 	CSemaphore *m_semESC;

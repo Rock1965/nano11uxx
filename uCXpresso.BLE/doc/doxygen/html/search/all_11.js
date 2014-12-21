@@ -1,11 +1,11 @@
 var searchData=
 [
+  ['task_5fhandle_5ft',['task_handle_t',['../d0/d26/class_c_thread.html#a328fa92e5811527475320d305f266abf',1,'CThread']]],
   ['task_5fstate_5ft',['TASK_STATE_T',['../db/dff/group___enumerations.html#ga25ee4013cc565a18ac2f4039b4ad441b',1,'thread.h']]],
   ['time_5ftype',['time_type',['../dc/d53/struct_p_a_c_k___s_t_r_u_c_t.html#a671fc205705b6a76b9a4edeb56f990e6',1,'PACK_STRUCT']]],
   ['timer0',['TIMER0',['../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3aa73b8bf071cada8f26f46555396534e0',1,'timer.h']]],
   ['timer1',['TIMER1',['../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a78900d10bb4d349f1403fbd090e66cd6',1,'timer.h']]],
   ['timer_5fbusy',['TIMER_BUSY',['../db/dff/group___enumerations.html#gga17f00bfa542197547c31260bf04f9ab3a7ad5c45d63700aebbba56992f6df21c1',1,'timer.h']]],
   ['timer_5ft',['TIMER_T',['../db/dff/group___enumerations.html#ga17f00bfa542197547c31260bf04f9ab3',1,'timer.h']]],
-  ['trylock',['tryLock',['../d3/d0d/class_c_mutex.html#adb89cb4258a492458db9fb614c1681a9',1,'CMutex']]],
-  ['txdflowcontrol',['txdFlowControl',['../d7/d03/classble_serial.html#ab7dcd90a0d960a364404305c0e38ffd9',1,'bleSerial']]]
+  ['trylock',['tryLock',['../d3/d0d/class_c_mutex.html#adb89cb4258a492458db9fb614c1681a9',1,'CMutex']]]
 ];

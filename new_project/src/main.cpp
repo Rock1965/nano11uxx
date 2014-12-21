@@ -23,8 +23,10 @@
 
 #ifdef DEBUG
 #define DBG		dbg_printf
+#define ASSERT	dbg_assert
 #else
 #define DBG(...)
+#define ASSERT(...)
 #endif
 
 //

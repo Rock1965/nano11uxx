@@ -34,6 +34,7 @@ var class_c_shell =
     [ "start", "de/dba/class_c_shell.html#a3ebabcc071634508511ae2fc7b868ab7", null ],
     [ "suspend", "de/dba/class_c_shell.html#a53e71e6db2221cd1c45aec21953d4aad", null ],
     [ "suspendAll", "de/dba/class_c_shell.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
+    [ "suspendCurrentTask", "de/dba/class_c_shell.html#addc1c069ea8a8c981c746828c5c68358", null ],
     [ "cmd", "de/dba/class_c_shell.html#aa5ef2d56e802b9925cf0ae7d36741bda", null ],
     [ "m_console", "de/dba/class_c_shell.html#ac555f42f70f60653dbd5e0c8ec9c4dcf", null ],
     [ "m_sock", "de/dba/class_c_shell.html#ab0eaa18213db8965c68f978538050162", null ]

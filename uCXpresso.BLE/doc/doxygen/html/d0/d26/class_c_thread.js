@@ -1,5 +1,7 @@
 var class_c_thread =
 [
+    [ "task_handle_t", "d0/d26/class_c_thread.html#a328fa92e5811527475320d305f266abf", null ],
+    [ "CThread", "d0/d26/class_c_thread.html#a5e280f17da1aac80993f6b35d0089870", null ],
     [ "enterCriticalSection", "d0/d26/class_c_thread.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
     [ "exitCriticalSection", "d0/d26/class_c_thread.html#aab3a51062666552690be49b8e8027161", null ],
     [ "getName", "d0/d26/class_c_thread.html#aa291909bc3ff7cc0decf46c885a7a725", null ],
@@ -16,5 +18,6 @@ var class_c_thread =
     [ "start", "d0/d26/class_c_thread.html#a3ebabcc071634508511ae2fc7b868ab7", null ],
     [ "start", "d0/d26/class_c_thread.html#aacf955d1852e74da1f989251955ee6ec", null ],
     [ "suspend", "d0/d26/class_c_thread.html#a53e71e6db2221cd1c45aec21953d4aad", null ],
-    [ "suspendAll", "d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a", null ]
+    [ "suspendAll", "d0/d26/class_c_thread.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
+    [ "suspendCurrentTask", "d0/d26/class_c_thread.html#addc1c069ea8a8c981c746828c5c68358", null ]
 ];

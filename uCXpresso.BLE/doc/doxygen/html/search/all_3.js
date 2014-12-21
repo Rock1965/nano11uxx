@@ -4,7 +4,6 @@ var searchData=
   ['cbus',['CBus',['../de/d89/class_c_bus.html',1,'CBus'],['../de/d89/class_c_bus.html#a5f859ac1582a6cbe9b5b420c6c051e63',1,'CBus::CBus()']]],
   ['cdebug',['CDebug',['../d4/d37/class_c_debug.html',1,'CDebug'],['../d4/d37/class_c_debug.html#a5e5390068e9a979029fc6df202ad8b6e',1,'CDebug::CDebug()']]],
   ['ceventbit',['CEventBit',['../dd/d60/class_c_event_bit.html',1,'CEventBit'],['../dd/d60/class_c_event_bit.html#afaccf4ea2315ce05229a3a0ae37ba6af',1,'CEventBit::CEventBit()']]],
-  ['chklength',['chkLength',['../df/d99/class_c_string.html#a5f5361665c7568d502d058992b14c016',1,'CString']]],
   ['ci2c',['CI2C',['../d0/dce/class_c_i2_c.html',1,'']]],
   ['ci2cmaster',['CI2CMaster',['../d7/db9/class_c_i2_c_master.html',1,'']]],
   ['clear',['clear',['../d6/d56/class_console.html#a61f9d57ebeecfd8553f02a84b4939e69',1,'Console::clear()'],['../db/d2c/class_c_pin_i_n_t.html#a772e196c68a5da53ac5a894da5ea6fbf',1,'CPinINT::clear()'],['../df/d99/class_c_string.html#a86bdac885b2d28689a62cbb6ae8b9ee4',1,'CString::clear()']]],
@@ -37,8 +36,8 @@ var searchData=
   ['cspi',['CSPI',['../d2/d3f/class_c_s_p_i.html',1,'CSPI'],['../d2/d3f/class_c_s_p_i.html#a45ebc1852b74f5f0ccfbb97b302cf5e9',1,'CSPI::CSPI()']]],
   ['cspimaster',['CSpiMaster',['../d9/d9b/class_c_spi_master.html',1,'CSpiMaster'],['../d9/d9b/class_c_spi_master.html#ad84a4c9c901f4c1793b9d1dfcfa754b0',1,'CSpiMaster::CSpiMaster()']]],
   ['cstream',['CStream',['../d4/d16/class_c_stream.html',1,'CStream'],['../d4/d16/class_c_stream.html#a147900f253c57d3223ae1220e0336808',1,'CStream::CStream()']]],
-  ['cstring',['CString',['../df/d99/class_c_string.html',1,'CString'],['../df/d99/class_c_string.html#a3cb66b8f688676f29cdb51c914a15cf7',1,'CString::CString(int size=DEF_STRBUF_SIZE)'],['../df/d99/class_c_string.html#a4866844f29a912ee7eb7afcb641ffb8f',1,'CString::CString(const CString &amp;str)'],['../df/d99/class_c_string.html#a233297b331dbc4c342745d67ad166b97',1,'CString::CString(LPCTSTR str, int length=0)'],['../df/d99/class_c_string.html#a4cc7726fc9fbaa450876ffd98e3e6ff4',1,'CString::CString(LPTSTR buf)']]],
-  ['cthread',['CThread',['../d0/d26/class_c_thread.html',1,'']]],
+  ['cstring',['CString',['../df/d99/class_c_string.html',1,'CString'],['../df/d99/class_c_string.html#a3cb66b8f688676f29cdb51c914a15cf7',1,'CString::CString(int size=DEF_STRBUF_SIZE)'],['../df/d99/class_c_string.html#a4866844f29a912ee7eb7afcb641ffb8f',1,'CString::CString(const CString &amp;str)'],['../df/d99/class_c_string.html#a233297b331dbc4c342745d67ad166b97',1,'CString::CString(LPCTSTR str, int length=0)'],['../df/d99/class_c_string.html#ab0859c28af0a02e422bca9a39fe705e7',1,'CString::CString(LPTSTR str)']]],
+  ['cthread',['CThread',['../d0/d26/class_c_thread.html',1,'CThread'],['../d0/d26/class_c_thread.html#a5e280f17da1aac80993f6b35d0089870',1,'CThread::CThread()']]],
   ['ctimeout',['CTimeout',['../d5/d5b/class_c_timeout.html',1,'']]],
   ['ctimer',['CTimer',['../db/de1/class_c_timer.html',1,'CTimer'],['../db/de1/class_c_timer.html#a01988907cb23d887bf9db237ecac1d8f',1,'CTimer::CTimer()']]],
   ['cwatchdog',['CWatchdog',['../d3/d75/class_c_watchdog.html',1,'CWatchdog'],['../d3/d75/class_c_watchdog.html#ab2859bc21e221a86d73e1dc3877b8f86',1,'CWatchdog::CWatchdog()']]]

@@ -55,6 +55,15 @@ var group___b_l_e =
       [ "unit_c", "d9/d26/classble_health_thermometer.html#a0f00efd291e5b91fef286071d3441172", null ],
       [ "unit_f", "d9/d26/classble_health_thermometer.html#aafe2468db4033c905394da1d58c83620", null ]
     ] ],
+    [ "bleProximity", "de/d67/classble_proximity.html", [
+      [ "bleProximity", "de/d67/classble_proximity.html#a3cbf3bd31cac77037d623ef9c8098a71", null ],
+      [ "isAvailable", "de/d67/classble_proximity.html#adc2ab90789ee61d11031ce816b3db11c", null ],
+      [ "isThread", "de/d67/classble_proximity.html#a26a76c241a4d62d2efdac57d2cfe4c0f", null ],
+      [ "onAlert", "de/d67/classble_proximity.html#a43c9187ddcb7237099ff414b74c5b0bd", null ],
+      [ "onLinkLoss", "de/d67/classble_proximity.html#a193eb5410fc4cf4b35613ad931ae61ff", null ],
+      [ "sendEvent", "de/d67/classble_proximity.html#a6d3426d21b9182c5b3e135dd783e097d", null ],
+      [ "setTxPowerLevel", "de/d67/classble_proximity.html#a177463a01974a439c9f8d90b36cf15e1", null ]
+    ] ],
     [ "bleRSC", "df/d25/classble_r_s_c.html", [
       [ "bleRSC", "df/d25/classble_r_s_c.html#afe7e04b3e0c66fecc9405d77537c249d", null ],
       [ "features", "df/d25/classble_r_s_c.html#a0e0a5221f28e0d56c725fa2bd7addb2f", null ],
@@ -68,7 +77,7 @@ var group___b_l_e =
       [ "available", "d7/d03/classble_serial.html#afdbf8d786e4aac9b06afe3447427a2ae", null ],
       [ "disable", "d7/d03/classble_serial.html#a08b3a82e95aa527433c04b4a6a3d81d4", null ],
       [ "disconnect", "d7/d03/classble_serial.html#a20ce9f7f9128707c9dbe5096c76b57d2", null ],
-      [ "enable", "d7/d03/classble_serial.html#a2b99b7d8650e3a421b088f57ed963790", null ],
+      [ "enable", "d7/d03/classble_serial.html#a27435da70c5b3e0cce59c2b34907011c", null ],
       [ "enterCriticalSection", "d7/d03/classble_serial.html#aeb4cafe42d6cfc41294cf5dedcee8678", null ],
       [ "exitCriticalSection", "d7/d03/classble_serial.html#aab3a51062666552690be49b8e8027161", null ],
       [ "flush", "d7/d03/classble_serial.html#a5bd707b33627e01c2069b14bbf10694a", null ],
@@ -110,7 +119,7 @@ var group___b_l_e =
       [ "start", "d7/d03/classble_serial.html#aacf955d1852e74da1f989251955ee6ec", null ],
       [ "suspend", "d7/d03/classble_serial.html#a53e71e6db2221cd1c45aec21953d4aad", null ],
       [ "suspendAll", "d7/d03/classble_serial.html#a2c09328581bd4e4a3e9e793f3376a92a", null ],
-      [ "txdFlowControl", "d7/d03/classble_serial.html#ab7dcd90a0d960a364404305c0e38ffd9", null ],
+      [ "suspendCurrentTask", "d7/d03/classble_serial.html#addc1c069ea8a8c981c746828c5c68358", null ],
       [ "wait", "d7/d03/classble_serial.html#a702f549f5f4f12912ae9f2b34403595f", null ],
       [ "waitTxEmpty", "d7/d03/classble_serial.html#a6259540dbdf87dffc659b44e2ea80e36", null ],
       [ "wakeup", "d7/d03/classble_serial.html#a9f7a27c83fbacf389e6cfc3253b07b7a", null ],

@@ -1,11 +1,13 @@
 var searchData=
 [
+  ['onalert',['onAlert',['../de/d67/classble_proximity.html#a43c9187ddcb7237099ff414b74c5b0bd',1,'bleProximity']]],
   ['onclose',['onClose',['../de/dba/class_c_shell.html#a27a37bf5a22eaba1426655409decc188',1,'CShell']]],
   ['onconnected',['onConnected',['../d7/d03/classble_serial.html#adb930ce55295ff7eb6ab5bdbeb702749',1,'bleSerial']]],
   ['onctrllinestate',['onCtrlLineState',['../d6/dc5/classusb_c_d_c.html#ad20e467624da633a79b150a435667619',1,'usbCDC']]],
   ['ondebug',['onDebug',['../de/dba/class_c_shell.html#a74d294faaebd969b295366f4a861cf02',1,'CShell']]],
   ['ondisconnected',['onDisconnected',['../d7/d03/classble_serial.html#aa6f5116c8bcf05011a05ad5e2967c318',1,'bleSerial']]],
   ['onerror',['onError',['../d7/d03/classble_serial.html#a8a0622f5d10fe2242978a16b2d1e6ee4',1,'bleSerial']]],
+  ['onlinkloss',['onLinkLoss',['../de/d67/classble_proximity.html#a193eb5410fc4cf4b35613ad931ae61ff',1,'bleProximity']]],
   ['onquery',['onQuery',['../de/dba/class_c_shell.html#a16e1dae0dedda35c0be64d1c8f40e6b4',1,'CShell']]],
   ['onresetenergyexpended',['onResetEnergyExpended',['../d3/d81/classble_heart_rate.html#a4764687c0e158518141b3dba9103b5d2',1,'bleHeartRate']]],
   ['onsetlinecode',['onSetLineCode',['../d6/dc5/classusb_c_d_c.html#a15d235836f03a59a8d3a12ad5df78cd7',1,'usbCDC']]],

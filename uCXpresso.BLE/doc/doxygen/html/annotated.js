@@ -6,6 +6,7 @@ var annotated =
     [ "bleDeviceInfo", "d3/dc5/classble_device_info.html", "d3/dc5/classble_device_info" ],
     [ "bleHealthThermometer", "d9/d26/classble_health_thermometer.html", "d9/d26/classble_health_thermometer" ],
     [ "bleHeartRate", "d3/d81/classble_heart_rate.html", "d3/d81/classble_heart_rate" ],
+    [ "bleProximity", "de/d67/classble_proximity.html", "de/d67/classble_proximity" ],
     [ "bleRSC", "df/d25/classble_r_s_c.html", "df/d25/classble_r_s_c" ],
     [ "bleSerial", "d7/d03/classble_serial.html", "d7/d03/classble_serial" ],
     [ "bleTest", "d2/df2/classble_test.html", "d2/df2/classble_test" ],
