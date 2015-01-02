@@ -235,7 +235,7 @@ protected:
 	 * \remark The run() is a pure virtual function, must implement by inheritor.
 	 * \note if end the run() member function, the CThread object will be destroyed and collected.
 	 */
-	virtual void run()=PURE_VIRTUAL_FUNC;
+	virtual void run() { NOTHING };
 
 
 	/*! \cond PRIVATE */

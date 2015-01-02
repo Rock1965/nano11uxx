@@ -20,7 +20,7 @@ extern "C" {
 #define uCXpresso_VER_MINOR		0
 #define uCXpresso_VER_REV		2
 #define uCXpresso_VER_RC		RELEASED
-#define uCXpresso_VER_BUILD		"2014/12/30"
+#define uCXpresso_VER_BUILD		"2014/1/2"
 #define uCXpresso_VER_STR		"V2.0.2"
 
 //
@@ -34,88 +34,83 @@ extern "C" {
 #define DEFAULT_POOL_SIZE	(7*1024)
 
 #if __GNUC__				// GCC
-	#if __bool_true_false_are_defined==0
-		typedef enum BOOLEAN
-		{
-			false = 0,
-			true = !false
-		}bool;
-	#endif
+#if __bool_true_false_are_defined==0
+typedef enum BOOLEAN
+{
+	false = 0,
+	true = !false
+}bool;
+#endif
 //	#define TRUE	true
 //	#define FALSE	false
 //	#define BOOL	bool
-	#define PACK_STRUCT __attribute__ ((__packed__))
+#define PACK_STRUCT __attribute__ ((__packed__))
 #endif
 
-typedef const char*			LPCTSTR;
-typedef char*				LPTSTR;
+typedef const char* LPCTSTR;
+typedef char* LPTSTR;
 
 /* These types must be 16-bit, 32-bit or larger integer */
-typedef int					INT;
-typedef unsigned int		UINT;
+typedef int INT;
+typedef unsigned int UINT;
 
 /* These types must be 8-bit integer  */
 #ifndef CHAR
-typedef char				CHAR;
+typedef char CHAR;
 #endif
 
 #ifndef TCHAR
 typedef char TCHAR;
 #endif
 
-typedef unsigned char		UCHAR;
-typedef unsigned char		BYTE;
+typedef unsigned char UCHAR;
+typedef unsigned char BYTE;
 
 /* These types must be 16-bit integer */
-typedef short				SHORT;
-typedef unsigned short		USHORT;
-typedef unsigned short		WORD;
-typedef unsigned short		WCHAR;
+typedef short SHORT;
+typedef unsigned short USHORT;
+typedef unsigned short WORD;
+typedef unsigned short WCHAR;
 
 /* These types must be 32-bit integer */
-typedef long				LONG;
-typedef unsigned long		ULONG;
-typedef unsigned long		DWORD;
+typedef long LONG;
+typedef unsigned long ULONG;
+typedef unsigned long DWORD;
 
-typedef unsigned char		byte;
-typedef unsigned short		word;
-typedef unsigned long		dword;
-typedef bool 				boolean;
-
-
+typedef unsigned char byte;
+typedef unsigned short word;
+typedef unsigned long dword;
+typedef bool boolean;
 
 /*! \cond PRIVATE */
 /*! \union _u16_u ucxpresso.h "uCXpresso.h"
  */
-typedef union _u16_u
-{
-	uint16_t   Int;
-	uint8_t	Char[2];
-}u16_u;
+typedef union _u16_u {
+	uint16_t Int;
+	uint8_t Char[2];
+} u16_u;
 
 /*! \union _u132_u ucxpresso.h "uCXpresso.h"
  */
-typedef union _u32_u
-{
-	uint32_t	Long;
-	uint16_t	Int[2];
-	uint8_t	Char[4];
-}u32_u;
+typedef union _u32_u {
+	uint32_t Long;
+	uint16_t Int[2];
+	uint8_t Char[4];
+} u32_u;
 
 /*! \union _u64_u ucxpresso.h "uCXpresso.h"
  */
-typedef union _u64_u
-{
-	uint64_t	Int64;
-    uint32_t   	Long[2];
-    uint16_t   	Int[4];
-	uint8_t		Char[8];
-}u64_u;
+typedef union _u64_u {
+	uint64_t Int64;
+	uint32_t Long[2];
+	uint16_t Int[4];
+	uint8_t Char[8];
+} u64_u;
 /*! \endcond */
 
 #define null_str			((const char *)0)
 #define PURE_VIRTUAL_FUNC	0
-typedef void* 				xHandle;
+typedef void* xHandle;
 
 //
 // Core
@@ -159,7 +154,7 @@ extern void pool_memadd(uint32_t base, size_t size);
 //#define memset(x,y,z)	xMemset(x,y,z)
 #define IS_FLASH_MEM(x)	(((uint32_t)x)<0x100000)	// Max flash memory 1MB
 
-extern size_t heapAvailableSize();		// return the available size of heap memory
+extern size_t heapAvailableSize();	// return the available size of heap memory
 extern void *tryMalloc(size_t size);	// try to malloc a memory with
 
 //
@@ -199,5 +194,37 @@ extern const unsigned char _zero_[];
 //
 #define map(value, fromLow, fromHigh, toLow, toHigh)	((value-fromLow) * (toHigh-toLow) / (fromHigh-fromLow) + toLow)
 #define constrain(x, a, b) 								((x<a) ? a : (x>b) ? b : x)
+
+static inline void delay_us(uint32_t volatile number_of_us) {
+	do {
+		__asm volatile (
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+				"NOP\n\t"
+		);
+	} while (--number_of_us);
+}
 
 #endif // NANO_H

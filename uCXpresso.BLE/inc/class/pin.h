@@ -173,6 +173,7 @@ public:
 	inline bool operator ==(PIN_LEVEL_T val) { return (this->read()==val ? true : false); }
 	inline bool operator !=(PIN_LEVEL_T val) { return (this->read()!=val ? true : false); }
 	inline void reset() { output(OPEN_DRAIN, HIGH); }
+	inline void toggle() { invert(); }
 
 	/**Call the name() member to retrieve the Pin Name of Object
 	 * \return PIN_NAME_T name
