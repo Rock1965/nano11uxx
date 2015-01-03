@@ -134,10 +134,9 @@ PIN_LEVEL_T OneWire::reset(void) {
 	PIN_LEVEL_T r;
 	uint8_t retries = 125;
 
-	CThread::enterCriticalSection();
 	m_pin.input();	// set pin as input pin with internal pull-up
-	CThread::exitCriticalSection();
 
+	CThread::suspendAll();
 	// wait until the wire is high... just in case
 	do {
 		if (--retries == 0)
@@ -145,17 +144,13 @@ PIN_LEVEL_T OneWire::reset(void) {
 		delay_us(2);
 	} while (m_pin == LOW);
 
-	CThread::enterCriticalSection();
 	m_pin.output(NOT_OPEN, LOW);	// drive output low
-	CThread::exitCriticalSection();
-
 	delay_us(480);
 
-	CThread::enterCriticalSection();
 	m_pin.input(NEITHER);	// allow it to float
 	delay_us(70);
 	r = m_pin.read();
-	CThread::exitCriticalSection();
+	CThread::resumeAll();
 
 	delay_us(410);
 	return r;
@@ -166,22 +161,18 @@ PIN_LEVEL_T OneWire::reset(void) {
 // more certain timing.
 //
 void OneWire::write_bit(PIN_LEVEL_T v) {
+	CThread::enterCriticalSection();
+	m_pin.output(NOT_OPEN, LOW);
 	if (v == HIGH) {
-		CThread::enterCriticalSection();
-		m_pin.output(NOT_OPEN, LOW);
 		delay_us(10);
 		m_pin = HIGH;	// drive output high
-		CThread::exitCriticalSection();
-		;
 		delay_us(55);
 	} else {
-		CThread::enterCriticalSection();
-		m_pin.output(NOT_OPEN, LOW);
 		delay_us(65);
 		m_pin = HIGH;	// drive output high
-		CThread::exitCriticalSection();
 		delay_us(5);
 	}
+	CThread::exitCriticalSection();
 }
 
 //
